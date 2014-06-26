@@ -1,0 +1,2085 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="8f943d51-45f9-3f3e-8d61-536f284ac87b" revision="1" gameSystemId="dea5da1e-8b51-b068-a829-a7b0a88b17d4" gameSystemRevision="6" battleScribeVersion="1.14b" name="Dominion of Canada" authorName="Josiah McMillan" authorContact="battlescribe@omts.org.nz" authorUrl="http://www.omts.org.nz" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entries>
+    <entry id="2f5b93fa-1805-bbb9-963c-3e36191269bb" name="Archer Attachment" points="0.0" categoryId="25737efc-adbc-dc3c-7248-99ee6d9a6e72" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="0" collective="false" hidden="true" page="0">
+      <entries>
+        <entry id="e1e582e0-4fbf-3d66-1701-626696782b9f" name="Archer" points="45.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries>
+            <entry id="5201d12e-1b57-b570-3958-8cae9ae2ef62" name="Heavy Ack-Ack" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="322c1eb7-d94a-1b67-d234-cbf7d4ed9877" name="Attachment (DoC, Large/Massive, Armoured, 1)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="6ee70a50-aaf9-5de1-d58d-24b294e04038" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Archer Volley Gun Battery (S)" hidden="false" page="0">
+              <characteristics>
+                <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="6"/>
+                <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="5"/>
+                <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="-"/>
+                <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="-"/>
+                <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="360"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+            <profile id="b449912a-ec80-6457-35cb-1c3a5fcd3fe5" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Archer" hidden="false" page="0">
+              <characteristics>
+                <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="5"/>
+                <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="6"/>
+                <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="8&quot; (0&quot; min)"/>
+                <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="3"/>
+                <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="2"/>
+                <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="4"/>
+                <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="2"/>
+                <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="2"/>
+                <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Medium Armoured"/>
+                <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="45/0&quot;"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Regular"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links>
+            <link id="ab3b3edf-b412-9f05-7f2e-c5d2f84d399b" targetId="522d78e0-5658-94dd-4e5e-829986e9c24c" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="fceac5ed-0b4c-d492-9fa7-9b7ce7df48c2" field="selections" type="at least" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="maxInRoster" value="1.0" repeat="true" numRepeats="1" incrementParentId="roster" incrementChildId="fceac5ed-0b4c-d492-9fa7-9b7ce7df48c2" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="6c3209b8-fbab-bd52-9780-2ae8f1ae782c" name="Archer Class Flak Tank" points="0.0" categoryId="25737efc-adbc-dc3c-7248-99ee6d9a6e72" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+      <entries>
+        <entry id="be84409e-e393-b569-30ba-8861a2455d52" name="Archer" points="45.0" categoryId="(No Category)" type="model" minSelections="2" maxSelections="3" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries>
+            <entry id="b2e997c4-fa15-56b7-2ae3-3b39688b9ff2" name="Heavy Ack-Ack" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="d293b8bb-30a2-393e-2276-57b7c237de76" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Archer Volley Gun Battery (S)" hidden="false" page="0">
+              <characteristics>
+                <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="6"/>
+                <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="5"/>
+                <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="-"/>
+                <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="-"/>
+                <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="360"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+            <profile id="7a2f9d59-3077-1669-edc8-0da02e76f1f3" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Archer" hidden="false" page="0">
+              <characteristics>
+                <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="5"/>
+                <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="6"/>
+                <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="8&quot; (0&quot; min)"/>
+                <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="3"/>
+                <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="2"/>
+                <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="4"/>
+                <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="2"/>
+                <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="2"/>
+                <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Medium Armoured"/>
+                <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="45/0&quot;"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Regular"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links>
+            <link id="f23fc0e7-048b-99db-969a-b2f4349ae5c2" targetId="522d78e0-5658-94dd-4e5e-829986e9c24c" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="68c596a0-1b22-f29d-7f26-6970124951b2" name="Bunker Complex" points="150.0" categoryId="5f451611-a1b8-b700-7ab9-effaa3788fc9" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+      <entries>
+        <entry id="14656685-96a0-c6ec-1355-fe1fd6162119" name="Long Range Assault" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="5e592b9e-d02f-6716-f2a8-9acf33f4cd51" name="Long Range Assault" hidden="false" page="0">
+              <description>May initiate a boarding action upto 8&quot; away and up to TWO height levels difference</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="105d3b72-1e20-cf38-40ef-96e21718a3e3" name="Minefield (AD5, 5)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="c58f0593-5438-5f72-d25f-333ddf3a5120" name="Minefield (AD, Number)" hidden="false" page="0">
+              <description>Deploy up to the listed number of mines with the AD listed within 8&quot; of the centre but not within 4&quot; of each other</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="a1ec6bec-314d-275d-915a-eadc207467d5" name="Redoutable" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="f2d6ac12-45ed-d277-ed2c-7464fc29a9fd" name="Redoutable" hidden="false" page="0">
+              <description>Weapons take AD loss at 2 HP instead of 1</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="3893599c-d3fa-b59c-d1d0-f4b392e0926e" name="Rugged Construction (2)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="18d1e96c-2754-7d71-a8af-e2750f2f9f93" name="Rugged Construction (Value)" hidden="false" page="0">
+              <description>Any Attack or Counter attack must reduce it&apos;s dice pool by the listed value</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="ba294e0b-e774-fdda-e266-1ab4c995df18" name="Security Posts (3)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="089c24f3-e211-a26d-8986-a66b05603a9c" name="Security Posts (Value)" hidden="false" page="0">
+              <description>If targeted by a boarding assault ignore the number of hits equal to Value, has no effect against Robots</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="631cf4e4-cec2-ffe0-5e53-b117c68e0567" name="Strategic Value (50)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="a6990e63-0931-06c2-967c-e8afb7e01cdd" name="Stoic Crew" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles>
+        <profile id="78c28397-c096-cd2d-9e0e-9b8e2ad73a4c" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Bunker Complex Main Turret (P)" hidden="false" page="0">
+          <characteristics>
+            <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="9"/>
+            <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="7"/>
+            <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="6"/>
+            <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="4"/>
+            <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="180 Fore"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="e6b11630-52e6-559b-842a-bc3a5ec85f5f" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Bunker Complex Bunker Guns (P)" hidden="false" page="0">
+          <characteristics>
+            <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="9"/>
+            <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="7"/>
+            <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="6"/>
+            <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="4"/>
+            <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="90 2 Fore"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="41287b2a-2c84-61c8-9926-25eecd902be8" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Bunker Complex" hidden="false" page="0">
+          <characteristics>
+            <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="6"/>
+            <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="14"/>
+            <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="-"/>
+            <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="12"/>
+            <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="9"/>
+            <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="7"/>
+            <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="-"/>
+            <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="14"/>
+            <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Massive Capital Universal Fortification"/>
+            <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="-"/>
+            <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Defensive"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" field="9fa5ecaf-6733-fc53-1ba1-264a272aae04" value="Stoic" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="68c596a0-1b22-f29d-7f26-6970124951b2" childId="a6990e63-0931-06c2-967c-e8afb7e01cdd" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <links/>
+    </entry>
+    <entry id="69056c41-5faf-299e-e9c0-3267b1a1b65d" name="Defiance Class Robot" points="0.0" categoryId="fdf35b4a-4c7e-9453-df50-c226441a6cf8" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+      <entries>
+        <entry id="9d699a87-6332-bdf0-07e5-0b18912c29e4" name="Defiance" points="25.0" categoryId="(No Category)" type="model" minSelections="3" maxSelections="5" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries>
+            <entry id="d55e8a9a-b7c4-a510-4252-2eda025a3987" name="Altered Silhouette (Medium)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="5f9fb25a-a5e7-f2cc-19dd-5634c0e0d135" name="Small Target" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="d78edc3d-2239-89da-ac39-7214d6ead2a6" name="Spotter (Inept)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="1eac851a-7b46-09ee-b37b-993f4a475b00" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Defiance Volley Guns (S)" hidden="false" page="0">
+              <characteristics>
+                <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="5"/>
+                <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="4"/>
+                <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="-"/>
+                <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="-"/>
+                <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="90 Fore"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+            <profile id="4e506f8a-90d1-1542-5bfe-2f1296592cbf" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Defiance" hidden="false" page="0">
+              <characteristics>
+                <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="4"/>
+                <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="5"/>
+                <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="6&quot; (0&quot; min)"/>
+                <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="2"/>
+                <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="1"/>
+                <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="2"/>
+                <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="1"/>
+                <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="1"/>
+                <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Small Armoured Robot"/>
+                <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="360"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Regular"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links>
+            <link id="f4c43919-4932-f8d6-ed69-016e1d28e0c3" targetId="522d78e0-5658-94dd-4e5e-829986e9c24c" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="8f12391d-ba28-f751-7daa-11f3a00cec4e" name="DoC SAS" points="0.0" categoryId="3722544c-21bf-627f-e093-4c3b52ddb5ce" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="1" maxInRoster="1" collective="false" hidden="false" page="0">
+      <entries>
+        <entry id="38765eeb-e4f7-4635-b1c1-8a58c71767e1" name="Fighter" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries>
+            <entry id="0f26f95a-0792-0ac4-52cb-5fe15a5a6032" name="Big Fuel Tanks" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="ff693280-efdd-492f-6258-64d8e0a0e547" name="Hunter (Aerial, +1)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="49c5bc9d-dfff-5efa-85ca-ffc290d758cc" profileTypeId="e6f24835-9239-a214-a96b-bebc0e76892d" name="Fighter" hidden="false" page="0">
+              <characteristics>
+                <characteristic characteristicId="9f32af11-22cb-6b5a-7012-e9efec14c90d" name="MV" value="16&quot;"/>
+                <characteristic characteristicId="a881cd63-0a07-1d42-d5d4-ed4d54c662bd" name="AD" value="-"/>
+                <characteristic characteristicId="4983fc1a-4e24-4646-bd39-384d2271c197" name="AA" value="2"/>
+                <characteristic characteristicId="c7cee3aa-e6fb-dee6-5146-5117a69eb14c" name="DR" value="2"/>
+                <characteristic characteristicId="fa73e67b-b706-226c-baf9-083cc38a1211" name="HP" value="1"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="f496ae97-c863-dedd-d167-e7f4e7786dea" name="Dive" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries>
+            <entry id="94e21523-4be0-9ed4-980b-9899165ccbf9" name="Hunter (Surface, +1)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="530b3bdf-6e41-8e0d-1611-595c306a5d6c" profileTypeId="e6f24835-9239-a214-a96b-bebc0e76892d" name="Dive Bombers" hidden="false" page="0">
+              <characteristics>
+                <characteristic characteristicId="9f32af11-22cb-6b5a-7012-e9efec14c90d" name="MV" value="12&quot;"/>
+                <characteristic characteristicId="a881cd63-0a07-1d42-d5d4-ed4d54c662bd" name="AD" value="3"/>
+                <characteristic characteristicId="4983fc1a-4e24-4646-bd39-384d2271c197" name="AA" value="2"/>
+                <characteristic characteristicId="c7cee3aa-e6fb-dee6-5146-5117a69eb14c" name="DR" value="2"/>
+                <characteristic characteristicId="fa73e67b-b706-226c-baf9-083cc38a1211" name="HP" value="1"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="574bab9b-58bb-eb59-6a3e-0346c5556f49" name="Torpedo" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries>
+            <entry id="67861cd9-6680-4065-9f84-ef9511ffc77b" name="Hunter (Submerged/Deep Diving, +2)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="17beba57-29d5-ab48-1471-fab0f2e11566" profileTypeId="e6f24835-9239-a214-a96b-bebc0e76892d" name="Torpedo Bombers" hidden="false" page="0">
+              <characteristics>
+                <characteristic characteristicId="9f32af11-22cb-6b5a-7012-e9efec14c90d" name="MV" value="12&quot;"/>
+                <characteristic characteristicId="a881cd63-0a07-1d42-d5d4-ed4d54c662bd" name="AD" value="3"/>
+                <characteristic characteristicId="4983fc1a-4e24-4646-bd39-384d2271c197" name="AA" value="1"/>
+                <characteristic characteristicId="c7cee3aa-e6fb-dee6-5146-5117a69eb14c" name="DR" value="2"/>
+                <characteristic characteristicId="fa73e67b-b706-226c-baf9-083cc38a1211" name="HP" value="1"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="39afbe91-b42f-3fe1-a36c-64b04bf9a288" name="Recon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries>
+            <entry id="867d3562-1929-c826-f696-e27a2256fce0" name="Spotter (Regular)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="ff96bf40-19e9-29f4-2acb-a4256c09ef61" profileTypeId="e6f24835-9239-a214-a96b-bebc0e76892d" name="Recon" hidden="false" page="0">
+              <characteristics>
+                <characteristic characteristicId="9f32af11-22cb-6b5a-7012-e9efec14c90d" name="MV" value="16&quot;"/>
+                <characteristic characteristicId="a881cd63-0a07-1d42-d5d4-ed4d54c662bd" name="AD" value="-"/>
+                <characteristic characteristicId="4983fc1a-4e24-4646-bd39-384d2271c197" name="AA" value="2"/>
+                <characteristic characteristicId="c7cee3aa-e6fb-dee6-5146-5117a69eb14c" name="DR" value="2"/>
+                <characteristic characteristicId="fa73e67b-b706-226c-baf9-083cc38a1211" name="HP" value="1"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="5a818a80-5e62-bcbf-9e38-9f4ac89533c3" name="Forward Landing Field" points="115.0" categoryId="5f451611-a1b8-b700-7ab9-effaa3788fc9" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+      <entries>
+        <entry id="2e2054e9-1818-af36-74ea-cea2e5b79abc" name="Altered Silhouette (Large)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="4efb04bc-3efc-bc84-31b6-2cc0faa891cb" name="Carrier (6)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="93d6bca3-8bdd-062d-140d-82f3cab96226" name="High Angle (Quad Turret)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="722edba8-4600-851f-82ed-fc6292da5412" name="High Angle (Weapon)" hidden="false" page="0">
+              <description>May shoot at aerial models in RB1</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="3df68b1c-42fa-1c99-39cd-5767820eb346" name="Strategic Value (75)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="1b051318-ed1d-1362-9bc1-4a844060ca1c" name="Vulnerable" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="f020e4de-20d8-333d-e3f5-a28ab06e7911" name="Vulnerable" hidden="false" page="0">
+              <description>The opponent may re-roll the crit</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="f5561635-8bd9-6f9a-45e6-a9279537ff57" name="Fuel Reserves" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="583d2898-96f6-97cb-e4a8-65c8654a5e39" name="Wing Ace" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles>
+        <profile id="1fb9d7dd-3875-a95e-eac0-34d855aeeb91" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Forward Landing Field Quad Turret (S)" hidden="false" page="0">
+          <characteristics>
+            <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="8"/>
+            <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="6"/>
+            <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="4"/>
+            <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="2"/>
+            <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="270 1 Fore and 1 Aft"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="44203f05-0dcc-5605-cfa4-3ee83c3175a4" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Forward Landing Field" hidden="false" page="0">
+          <characteristics>
+            <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="5"/>
+            <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="8"/>
+            <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="-"/>
+            <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="9"/>
+            <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="7"/>
+            <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="5"/>
+            <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="2"/>
+            <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="8"/>
+            <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Massive Capital Universal Fortification"/>
+            <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc"/>
+            <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links/>
+    </entry>
+    <entry id="1a9623e3-7b8f-5bab-7e0c-7b32bce4c06e" name="Heavy Infantry Bunker" points="140.0" categoryId="5f451611-a1b8-b700-7ab9-effaa3788fc9" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+      <entries>
+        <entry id="a4e74e4b-a569-d011-17a6-1f0038ddb732" name="Stoic Crew" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="354eb160-267e-826c-3389-3eb1ac246bc0" name="Combat Deployment (DoC, Line Infantry, 3, Standard)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries>
+            <entry id="cc108165-4ac1-bc5c-150f-c86bd50d500a" name="Line Infantry Company" points="0.0" categoryId="(No Category)" type="model" minSelections="3" maxSelections="3" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries>
+                <entry id="5008cf71-5859-cd65-1b5c-427dcacc38fc" name="Difficult Target" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="2e4be72c-7e0c-e578-94a9-acfc75a956ea" name="Elusive Target" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups>
+                <entryGroup id="a56b3820-b183-637e-87e9-ee75c1f93516" name="Upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="true" hidden="false">
+                  <entries>
+                    <entry id="224b36a4-8d34-5bcf-8e3b-8c2466a685d2" name="Assault Infantry" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                      <entries>
+                        <entry id="3b198456-ebba-aad5-01ad-79bf140e179f" name="Sustained Assault (2)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules>
+                            <rule id="8ce41caa-221f-bcbb-4c6e-73eca1d11cb2" name="Sustained Assault (Value)" hidden="false" page="0">
+                              <description>May re-roll up to the listed value when boarding</description>
+                              <modifiers/>
+                            </rule>
+                          </rules>
+                          <profiles/>
+                          <links/>
+                        </entry>
+                      </entries>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles>
+                        <profile id="60303bc0-db97-1d48-178f-89b0a2b8b12d" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Assault Infantry" hidden="false" page="0">
+                          <characteristics>
+                            <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="3"/>
+                            <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="5"/>
+                            <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="5&quot; (0&quot; min)"/>
+                            <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="3"/>
+                            <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="4"/>
+                            <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="1"/>
+                            <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="-"/>
+                            <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="-"/>
+                            <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Tiny Armoured Infantry"/>
+                            <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="360"/>
+                            <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Reckless"/>
+                          </characteristics>
+                          <modifiers/>
+                        </profile>
+                      </profiles>
+                      <links/>
+                    </entry>
+                    <entry id="6e4b5692-82b7-d817-09c6-2b33eb9ea76f" name="Reserve Infantry" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                      <entries>
+                        <entry id="5d71a8c6-5f24-cffc-0ae8-987b2822ea96" name="Troop Reinforcment" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules>
+                            <rule id="6b29db70-6ae2-1f99-e701-88056edf9784" name="Troop Reinforcment" hidden="false" page="0">
+                              <description>This model may Re-Crew Board any Non-Robot model in the same force</description>
+                              <modifiers/>
+                            </rule>
+                          </rules>
+                          <profiles/>
+                          <links/>
+                        </entry>
+                      </entries>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles>
+                        <profile id="bfb9b104-25a0-716b-429d-bd6f98271238" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Reserve Infantry" hidden="false" page="0">
+                          <characteristics>
+                            <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="3"/>
+                            <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="4"/>
+                            <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="5&quot; (0&quot; min)"/>
+                            <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="4"/>
+                            <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="5"/>
+                            <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="4"/>
+                            <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="-"/>
+                            <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="-"/>
+                            <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Tiny Armoured Infantry"/>
+                            <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="360"/>
+                            <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Conscripted"/>
+                          </characteristics>
+                          <modifiers/>
+                        </profile>
+                      </profiles>
+                      <links/>
+                    </entry>
+                    <entry id="cd0b6f6f-e93b-726b-36ab-af5cb0ab15e0" name="Engineer Infantry" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles>
+                        <profile id="c2d18375-a64b-2b93-c61b-8c94daf1a165" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Engineer Infantry" hidden="false" page="0">
+                          <characteristics>
+                            <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="3"/>
+                            <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="5"/>
+                            <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="5&quot; (0&quot; min)"/>
+                            <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="4"/>
+                            <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="3"/>
+                            <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="1"/>
+                            <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="2"/>
+                            <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="-"/>
+                            <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Tiny Armoured Repair Infantry"/>
+                            <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="360"/>
+                            <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Defensive"/>
+                          </characteristics>
+                          <modifiers/>
+                        </profile>
+                      </profiles>
+                      <links/>
+                    </entry>
+                    <entry id="79c399f6-b1d0-d39f-f953-2e04e39fc75f" name="Close Support Infantry" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                      <entries>
+                        <entry id="234a86d8-ba9c-74a3-1e73-6eb2d7ff8b8e" name="Sustained Fire (Close Mortars, 2)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules>
+                            <rule id="dcef5d1b-e550-3d58-bd30-30f8d5198144" name="Sustained Fire (Weapon, Value)" hidden="false" page="0">
+                              <description>May re-roll up to the listed value in the attack with the listed weapon</description>
+                              <modifiers/>
+                            </rule>
+                          </rules>
+                          <profiles/>
+                          <links/>
+                        </entry>
+                      </entries>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles>
+                        <profile id="8c3f81e7-5117-99ec-87d4-79b491dbbeb6" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Close Support Infantry Mortars (S)" hidden="false" page="0">
+                          <characteristics>
+                            <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="4"/>
+                            <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="5"/>
+                            <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="-"/>
+                            <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="-"/>
+                            <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="360"/>
+                          </characteristics>
+                          <modifiers/>
+                        </profile>
+                        <profile id="3df0daaf-67f7-3609-a744-44dcc5b67764" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Close Support Infantry" hidden="false" page="0">
+                          <characteristics>
+                            <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="3"/>
+                            <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="4"/>
+                            <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="3&quot; (0&quot; min)"/>
+                            <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="3"/>
+                            <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="2"/>
+                            <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="3"/>
+                            <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="-"/>
+                            <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="-"/>
+                            <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Tiny Armoured Infantry"/>
+                            <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="360"/>
+                            <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Conscripted"/>
+                          </characteristics>
+                          <modifiers/>
+                        </profile>
+                      </profiles>
+                      <links/>
+                    </entry>
+                  </entries>
+                  <entryGroups/>
+                  <modifiers/>
+                  <links/>
+                </entryGroup>
+              </entryGroups>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="e65d6a07-f2d7-9ad9-308c-d2affd55c2c0" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Line Infantry" hidden="false" page="0">
+                  <characteristics>
+                    <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="3"/>
+                    <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="4"/>
+                    <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="5&quot; (0&quot; min)"/>
+                    <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="3"/>
+                    <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="3"/>
+                    <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="3"/>
+                    <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="-"/>
+                    <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="-"/>
+                    <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Tiny Armoured Infantry"/>
+                    <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="360"/>
+                    <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Stoic"/>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="hide" field="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="cc108165-4ac1-bc5c-150f-c86bd50d500a" childId="a56b3820-b183-637e-87e9-ee75c1f93516" field="selections" type="at least" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="cf62f00b-8267-6c27-e192-6064aca42874" name="Troop Reinforcement" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="ba3b6503-4722-da57-d1c0-f5aff1da7dc4" name="Troop Reinforcment" hidden="false" page="0">
+              <description>This model may Re-Crew Board any Non-Robot model in the same force</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="7ad122f7-6359-b8b8-8f81-6610bc243f99" name="Long Range Assault" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="4a937a93-dd3d-0c80-2914-cfcc9680575d" name="Long Range Assault" hidden="false" page="0">
+              <description>May initiate a boarding action upto 8&quot; away and up to TWO height levels difference</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="11d92290-83a9-681b-4108-e40bd80609d7" name="Minefield (AD5, 5)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="c0e9cd82-9548-cc1e-c586-a4f24d52445a" name="Minefield (AD, Number)" hidden="false" page="0">
+              <description>Deploy up to the listed number of mines with the AD listed within 8&quot; of the centre but not within 4&quot; of each other</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="51f510b0-a0b5-e93a-708b-94ae3ade6af8" name="Redoutable" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="f4231bdd-1d9e-432d-912c-d58c386727b8" name="Redoutable" hidden="false" page="0">
+              <description>Weapons take AD loss at 2 HP instead of 1</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="df87c221-3ee5-b4b3-9ddc-bb086550bac1" name="Rugged Construction (2)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="522d53bb-7dc3-d47c-0fa8-4bdf76054b93" name="Rugged Construction (Value)" hidden="false" page="0">
+              <description>Any Attack or Counter attack must reduce it&apos;s dice pool by the listed value</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="3616c8df-5deb-bb1a-067d-35231a57bb34" name="Security Posts (3)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="f03cbd89-eaa8-a9f2-366a-ae493ce57764" name="Security Posts (Value)" hidden="false" page="0">
+              <description>If targeted by a boarding assault ignore the number of hits equal to Value, has no effect against Robots</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles>
+        <profile id="78145b68-efb2-71f6-7d79-604c58c5453b" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Heavy Infantry Bunker Turret (P)" hidden="false" page="0">
+          <characteristics>
+            <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="10"/>
+            <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="8"/>
+            <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="6"/>
+            <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="4"/>
+            <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="360"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="d891be53-6d04-1333-9dde-ce3f9b7bcece" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Heavy Infantry Bunker" hidden="false" page="0">
+          <characteristics>
+            <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="5"/>
+            <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="12"/>
+            <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="-"/>
+            <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="10"/>
+            <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="7"/>
+            <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="4"/>
+            <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="-"/>
+            <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="12"/>
+            <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Large Capital Land Fortification"/>
+            <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="-"/>
+            <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Defensive"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" field="9fa5ecaf-6733-fc53-1ba1-264a272aae04" value="Stoic" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="1a9623e3-7b8f-5bab-7e0c-7b32bce4c06e" childId="a4e74e4b-a569-d011-17a6-1f0038ddb732" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <links/>
+    </entry>
+    <entry id="2cdd80d4-8e02-63c5-819d-fc028dee35cb" name="Huntsman Class Tank Destroyer" points="0.0" categoryId="25737efc-adbc-dc3c-7248-99ee6d9a6e72" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+      <entries>
+        <entry id="3399e5e9-49dc-ff8e-13be-3df74504fa51" name="Huntsman" points="60.0" categoryId="(No Category)" type="model" minSelections="2" maxSelections="3" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries>
+            <entry id="a9af2726-db50-7869-c2e2-83758fb10852" name="Piercing (Anti-Tank Gun)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="e2d755c1-62de-ef90-6af2-e94432741b3d" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Huntsman Anti-Tank Gun (P)" hidden="false" page="0">
+              <characteristics>
+                <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="7"/>
+                <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="7"/>
+                <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="5"/>
+                <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="5"/>
+                <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="Fixed Fore"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+            <profile id="8294a5c5-92ac-80b9-14c4-7810fcbdc58d" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Huntsman" hidden="false" page="0">
+              <characteristics>
+                <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="5"/>
+                <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="6"/>
+                <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="7&quot; (0&quot; min)"/>
+                <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="3"/>
+                <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="2"/>
+                <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="1"/>
+                <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="2"/>
+                <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="2"/>
+                <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Medium Armoured"/>
+                <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="45/0&quot;"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Regular"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links>
+            <link id="bce0b331-b7cf-e1ec-877d-d0198cfd6206" targetId="522d78e0-5658-94dd-4e5e-829986e9c24c" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="286c9877-54b2-fcf4-5dff-de25e919cb91" name="Medium Infantry Bunker" points="50.0" categoryId="5f451611-a1b8-b700-7ab9-effaa3788fc9" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+      <entries>
+        <entry id="738680a3-52fb-bbb6-2f1c-0178f10632f9" name="Combat Deployment (DoC, Line Infantry, 2, Standard)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries>
+            <entry id="972b4079-91be-4bf1-112c-e0da189f6de7" name="Line Infantry Company" points="0.0" categoryId="(No Category)" type="model" minSelections="2" maxSelections="2" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries>
+                <entry id="d00788ec-6793-8df7-a087-834794ed22fd" name="Difficult Target" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="84e1b924-9841-1b2e-047e-f57f5cbd1e49" name="Elusive Target" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups>
+                <entryGroup id="d9ce5774-8fac-eadd-602a-fc60be7bf7c9" name="Upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="true" hidden="false">
+                  <entries>
+                    <entry id="33824751-08a3-efa4-d99c-a3a82e9ca008" name="Assault Infantry" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                      <entries>
+                        <entry id="ac3222f1-92f1-9af6-ea8c-f06be3e76fc4" name="Sustained Assault (2)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules>
+                            <rule id="811d72f5-3b66-6eb4-efe5-7feadd0c4d11" name="Sustained Assault (Value)" hidden="false" page="0">
+                              <description>May re-roll up to the listed value when boarding</description>
+                              <modifiers/>
+                            </rule>
+                          </rules>
+                          <profiles/>
+                          <links/>
+                        </entry>
+                      </entries>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles>
+                        <profile id="ada66337-8568-4f38-6142-fdc7dae7ad8e" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Assault Infantry" hidden="false" page="0">
+                          <characteristics>
+                            <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="3"/>
+                            <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="5"/>
+                            <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="5&quot; (0&quot; min)"/>
+                            <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="3"/>
+                            <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="4"/>
+                            <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="1"/>
+                            <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="-"/>
+                            <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="-"/>
+                            <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Tiny Armoured Infantry"/>
+                            <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="360"/>
+                            <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Reckless"/>
+                          </characteristics>
+                          <modifiers/>
+                        </profile>
+                      </profiles>
+                      <links/>
+                    </entry>
+                    <entry id="08a1d746-a8ae-f922-517f-1a4f7feb2821" name="Reserve Infantry" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                      <entries>
+                        <entry id="7dcdbd31-3d87-25d3-ce48-104908890fb9" name="Troop Reinforcment" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules>
+                            <rule id="630923a0-c866-fc88-eb8a-f435321820fe" name="Troop Reinforcment" hidden="false" page="0">
+                              <description>This model may Re-Crew Board any Non-Robot model in the same force</description>
+                              <modifiers/>
+                            </rule>
+                          </rules>
+                          <profiles/>
+                          <links/>
+                        </entry>
+                      </entries>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles>
+                        <profile id="4424a15f-29ec-f75a-eba7-0c7afbdc2d0d" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Reserve Infantry" hidden="false" page="0">
+                          <characteristics>
+                            <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="3"/>
+                            <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="4"/>
+                            <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="5&quot; (0&quot; min)"/>
+                            <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="4"/>
+                            <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="5"/>
+                            <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="4"/>
+                            <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="-"/>
+                            <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="-"/>
+                            <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Tiny Armoured Infantry"/>
+                            <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="360"/>
+                            <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Conscripted"/>
+                          </characteristics>
+                          <modifiers/>
+                        </profile>
+                      </profiles>
+                      <links/>
+                    </entry>
+                    <entry id="57249011-5c1b-6e8b-3656-5fa815d95b9f" name="Engineer Infantry" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles>
+                        <profile id="7380d727-82d3-d479-feff-081333c864d4" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Engineer Infantry" hidden="false" page="0">
+                          <characteristics>
+                            <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="3"/>
+                            <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="5"/>
+                            <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="5&quot; (0&quot; min)"/>
+                            <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="4"/>
+                            <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="3"/>
+                            <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="1"/>
+                            <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="2"/>
+                            <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="-"/>
+                            <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Tiny Armoured Repair Infantry"/>
+                            <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="360"/>
+                            <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Defensive"/>
+                          </characteristics>
+                          <modifiers/>
+                        </profile>
+                      </profiles>
+                      <links/>
+                    </entry>
+                    <entry id="f85b0600-2e06-370c-ff1f-33e435a51a6c" name="Close Support Infantry" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                      <entries>
+                        <entry id="4a885c85-8cca-0035-1a17-798ef6b1d223" name="Sustained Fire (Close Mortars, 2)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules>
+                            <rule id="6bd558b9-e91c-57bb-7971-5cdb439dc981" name="Sustained Fire (Weapon, Value)" hidden="false" page="0">
+                              <description>May re-roll up to the listed value in the attack with the listed weapon</description>
+                              <modifiers/>
+                            </rule>
+                          </rules>
+                          <profiles/>
+                          <links/>
+                        </entry>
+                      </entries>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles>
+                        <profile id="cee0c1e1-c880-a680-f6b2-a6cbd820655e" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Close Support Infantry Mortars (S)" hidden="false" page="0">
+                          <characteristics>
+                            <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="4"/>
+                            <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="5"/>
+                            <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="-"/>
+                            <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="-"/>
+                            <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="360"/>
+                          </characteristics>
+                          <modifiers/>
+                        </profile>
+                        <profile id="6ef90644-7896-9ca1-dde9-d7f5a70bdd52" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Close Support Infantry" hidden="false" page="0">
+                          <characteristics>
+                            <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="3"/>
+                            <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="4"/>
+                            <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="3&quot; (0&quot; min)"/>
+                            <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="3"/>
+                            <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="2"/>
+                            <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="3"/>
+                            <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="-"/>
+                            <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="-"/>
+                            <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Tiny Armoured Infantry"/>
+                            <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="360"/>
+                            <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Conscripted"/>
+                          </characteristics>
+                          <modifiers/>
+                        </profile>
+                      </profiles>
+                      <links/>
+                    </entry>
+                  </entries>
+                  <entryGroups/>
+                  <modifiers/>
+                  <links/>
+                </entryGroup>
+              </entryGroups>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="bbfa3f86-6fc2-25b4-5082-832837fb310d" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Line Infantry" hidden="false" page="0">
+                  <characteristics>
+                    <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="3"/>
+                    <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="4"/>
+                    <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="5&quot; (0&quot; min)"/>
+                    <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="3"/>
+                    <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="3"/>
+                    <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="3"/>
+                    <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="-"/>
+                    <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="-"/>
+                    <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Tiny Armoured Infantry"/>
+                    <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="360"/>
+                    <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Stoic"/>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="hide" field="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="972b4079-91be-4bf1-112c-e0da189f6de7" childId="d9ce5774-8fac-eadd-602a-fc60be7bf7c9" field="selections" type="at least" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="61264fd8-4608-6b71-284b-5583203c04b2" name="Long Range Assault" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="6dbd54a8-31d7-68cd-4cec-74131b274822" name="Long Range Assault" hidden="false" page="0">
+              <description>May initiate a boarding action upto 8&quot; away and up to TWO height levels difference</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="da0f84f9-7ad5-d407-bb86-67032fe9dcc9" name="Redoutable" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="f3d3c870-276e-95c5-a201-725b97d60bc6" name="Redoutable" hidden="false" page="0">
+              <description>Weapons take AD loss at 2 HP instead of 1</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="b2d63e96-c6c6-759f-b589-5ca7cc2b0515" name="Rugged Construction (1)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="41001bb2-36df-b216-f8c9-540b2e74c3bc" name="Rugged Construction (Value)" hidden="false" page="0">
+              <description>Any Attack or Counter attack must reduce it&apos;s dice pool by the listed value</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="ab565699-23b8-7983-cb34-c45689eef2ff" name="Security Posts (1)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="3bfaa77c-bf72-c40b-c143-9e0fede25490" name="Security Posts (Value)" hidden="false" page="0">
+              <description>If targeted by a boarding assault ignore the number of hits equal to Value, has no effect against Robots</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="fd3057c0-3370-0e92-c5b7-8e8f611127c7" name="Troop Reinforcement" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="e55d62cb-4a79-76a7-03dd-a90bee1011cb" name="Troop Reinforcment" hidden="false" page="0">
+              <description>This model may Re-Crew Board any Non-Robot model in the same force</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles>
+        <profile id="6d26d342-d76d-7907-c04e-b40d8f47df9d" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Medium Infantry Bunker" hidden="false" page="0">
+          <characteristics>
+            <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="4"/>
+            <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="6"/>
+            <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="-"/>
+            <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="4"/>
+            <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="4"/>
+            <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="3"/>
+            <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="3"/>
+            <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="6"/>
+            <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Medium Land Fortification"/>
+            <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="-"/>
+            <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Defensive"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links/>
+    </entry>
+    <entry id="c2939697-24c8-8783-a638-4f1af81efe5b" name="Resolution Class Land Ship" points="0.0" categoryId="d5ba74a7-9dab-51a4-fd40-2083fe2c3f1d" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+      <entries>
+        <entry id="18405626-0aab-e944-f1f4-71d124cf9f30" name="Altered Silhouette (Massive)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups>
+        <entryGroup id="2f2a0f21-b5c2-2a4a-4e08-28c63c324a39" name="Type" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+          <entries>
+            <entry id="35c8f692-1c23-b98c-8a90-fc350afdcd89" name="Mk1" points="120.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries>
+                <entry id="fb67d79e-574e-ac29-1a75-168810cc4d37" name="Combat Coordinator (DoC, 8&quot;, Die Hard Attitude)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="015a6079-5617-a34f-3abc-86b6bd6ba305" name="Combat Deployment (Line Infantry, 3, Regular)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="01ec947b-1cea-bce1-909e-f567023d1249" name="Mk2" points="110.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries>
+                <entry id="7043ace0-6752-6600-f6cc-72a2ab466d85" name="High Payload (Mortar)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="1689f257-af46-4eb1-9630-07f828455c0f" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Resolution Mortar (P)" hidden="false" page="0">
+                  <characteristics>
+                    <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="-"/>
+                    <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="9"/>
+                    <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="9"/>
+                    <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="-"/>
+                    <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="270 Fore"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="a49d369d-22e8-d7d6-e93b-92729f127454" name="Mk3" points="120.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="1d6a2e71-7298-a0dc-7048-317637ee2838" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Resolution Raised Turrets (S)" hidden="false" page="0">
+                  <characteristics>
+                    <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="6"/>
+                    <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="5"/>
+                    <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="4"/>
+                    <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="-"/>
+                    <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="4 at 180 Off-Set"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules/>
+      <profiles>
+        <profile id="ff70b436-7a3e-1354-923f-0b2470345fd9" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Resolution" hidden="false" page="0">
+          <characteristics>
+            <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="5"/>
+            <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="7"/>
+            <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="6&quot; (0&quot; min)"/>
+            <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="6"/>
+            <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="6"/>
+            <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="4"/>
+            <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="2"/>
+            <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="4"/>
+            <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Large Capital Armoured"/>
+            <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="45/1&quot;"/>
+            <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Regular"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="5728ecfb-f14d-b029-2dfc-9dd4bb5add05" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Resolution Broadsides (S)" hidden="false" page="0">
+          <characteristics>
+            <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="8"/>
+            <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="6"/>
+            <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="4"/>
+            <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="2"/>
+            <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="P/S Broadsides"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links>
+        <link id="01a35425-cb9c-779d-302a-150ca7ddea87" targetId="522d78e0-5658-94dd-4e5e-829986e9c24c" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="81241c93-67a0-2191-dac9-201db2373a3d" targetId="081d2c39-a9d0-6019-4e4c-d216e39acf1c" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="348e67bb-d01d-fd5c-f965-f4df24bd5e6a" targetId="fceac5ed-0b4c-d492-9fa7-9b7ce7df48c2" linkType="entry">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="963d34df-1220-851b-b897-50f1c17249be" name="Steele Class Medium Robot" points="0.0" categoryId="25737efc-adbc-dc3c-7248-99ee6d9a6e72" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+      <entries>
+        <entry id="4926707f-ead3-5330-ff02-c8adcd88ab14" name="Steele" points="60.0" categoryId="(No Category)" type="model" minSelections="2" maxSelections="3" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries>
+            <entry id="96d950b9-6ca3-b0a3-44bd-4f3c392aeebe" name="Altered Silhouette (Large)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="347e7a5d-71b8-6ce1-7538-5ee7c6d18de4" name="Flame Retardant Armour (2)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="f565f413-3059-6809-ca07-e399ae02052a" name="Rugged Construction (1)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups>
+            <entryGroup id="86b7f55d-c040-ebaa-c5e3-8f286bac398b" name="Type" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+              <entries>
+                <entry id="0c738c18-ffc7-f428-5dc8-11c1280cf740" name="Rockets" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles>
+                    <profile id="68497774-e406-d691-cdfa-5b310e5350c7" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Steele Right Arm Rockets (T)" hidden="false" page="0">
+                      <characteristics>
+                        <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="4"/>
+                        <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="5"/>
+                        <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="6"/>
+                        <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="-"/>
+                        <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="270 Fore"/>
+                      </characteristics>
+                      <modifiers/>
+                    </profile>
+                  </profiles>
+                  <links/>
+                </entry>
+                <entry id="8fc68637-9305-c638-be5d-532c8d025bb0" name="Flame Thrower" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries>
+                    <entry id="c7dc0dc0-139a-ac4a-5190-25124a9fd439" name="Fuel Reserves" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links/>
+                    </entry>
+                  </entries>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles>
+                    <profile id="251f5870-e4b8-1f72-7f9c-052452f191a8" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Steele Right Arm Flame Thrower (S)" hidden="false" page="0">
+                      <characteristics>
+                        <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="5"/>
+                        <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="-"/>
+                        <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="-"/>
+                        <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="-"/>
+                        <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="270 Fore"/>
+                      </characteristics>
+                      <modifiers/>
+                    </profile>
+                  </profiles>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <links/>
+            </entryGroup>
+          </entryGroups>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="271088f1-a541-c306-3a9b-a1914890d7af" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Steele Left Arm Cannon (S)" hidden="false" page="0">
+              <characteristics>
+                <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="7"/>
+                <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="6"/>
+                <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="5"/>
+                <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="-"/>
+                <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="270 Fore"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+            <profile id="b6b00f81-31de-67f8-0770-43c4c82d9096" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Steele" hidden="false" page="0">
+              <characteristics>
+                <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="4"/>
+                <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="6"/>
+                <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="6&quot; (0&quot; min)"/>
+                <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="4"/>
+                <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="4"/>
+                <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="3"/>
+                <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="1"/>
+                <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="3"/>
+                <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Medium Capital Armoured Robot"/>
+                <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="45/0&quot;"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Regular"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links>
+            <link id="67f2796d-a1bf-1425-6eba-e47367661056" targetId="522d78e0-5658-94dd-4e5e-829986e9c24c" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="0fab7d69-35b9-667c-915d-044cd89b6a2c" name="Thunderer Class Assault Gun" points="0.0" categoryId="25737efc-adbc-dc3c-7248-99ee6d9a6e72" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+      <entries>
+        <entry id="5207b8ef-a85d-6f0a-48f6-b1928a63659d" name="Thunderer" points="60.0" categoryId="(No Category)" type="model" minSelections="2" maxSelections="3" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries>
+            <entry id="cf3f82db-ed74-fdbe-b28c-50ba8a67d5f8" name="High Payload (Assault Cannon)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="4403e4fb-dca8-f35f-98c8-75d75d2474e4" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Thunderer Assault Cannon (P)" hidden="false" page="0">
+              <characteristics>
+                <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="8"/>
+                <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="7"/>
+                <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="3"/>
+                <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="-"/>
+                <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="Fixed Fore"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+            <profile id="f9e6c978-3c31-64cd-9101-ee8acd179e6b" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Thunderer" hidden="false" page="0">
+              <characteristics>
+                <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="5"/>
+                <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="6"/>
+                <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="7&quot; (0&quot; min)"/>
+                <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="3"/>
+                <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="2"/>
+                <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="1"/>
+                <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="2"/>
+                <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="2"/>
+                <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Medium Armoured"/>
+                <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="45/0&quot;"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Regular"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links>
+            <link id="d7baabd3-1dc7-3242-aedb-fc66ac2daaae" targetId="522d78e0-5658-94dd-4e5e-829986e9c24c" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="69ef3d37-befe-1948-82e7-85106bd79314" name="Tower Defensive Line" points="0.0" categoryId="5f451611-a1b8-b700-7ab9-effaa3788fc9" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+      <entries>
+        <entry id="0bfd6dfc-96e8-6470-1149-8c1bf516cdf7" name="Tower" points="35.0" categoryId="(No Category)" type="model" minSelections="2" maxSelections="4" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries>
+            <entry id="e698f2a2-24d4-6dec-405b-7990ad963de6" name="Altered Silhouette (Massive)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="c41a985a-7c4c-2871-6a0c-42ecc766b946" name="Redoutable" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules>
+                <rule id="8d184261-d67d-6e6c-3210-8084bd0e964e" name="Redoutable" hidden="false" page="0">
+                  <description>Weapons take AD loss at 2 HP instead of 1</description>
+                  <modifiers/>
+                </rule>
+              </rules>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="4fd538d5-0941-c986-8716-ff0b706db0f6" name="Rugged Construction (2)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules>
+                <rule id="b52b2d71-e75e-91a7-dfa2-ed42933bab53" name="Rugged Construction (Value)" hidden="false" page="0">
+                  <description>Any Attack or Counter attack must reduce it&apos;s dice pool by the listed value</description>
+                  <modifiers/>
+                </rule>
+              </rules>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="daaf8f1b-1d3a-1331-34a2-66302080d059" name="Security Posts (1)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules>
+                <rule id="fcb658b9-38f9-38ef-29a7-883b86f74a09" name="Security Posts (Value)" hidden="false" page="0">
+                  <description>If targeted by a boarding assault ignore the number of hits equal to Value, has no effect against Robots</description>
+                  <modifiers/>
+                </rule>
+              </rules>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups>
+            <entryGroup id="4953b102-6ba6-170a-7e2b-7d34ac6c58a8" name="Type" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+              <entries>
+                <entry id="5c5fdb4f-834c-d6fd-47d5-f36c4a1f0af0" name="Generator" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups>
+                    <entryGroup id="e473f971-9e1f-8480-75b7-87c8222bf73e" name="Internal Generator" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+                      <entries>
+                        <entry id="f0f21e7c-169d-3b82-1c92-a0cd8de075c8" name="Shield (2)" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links/>
+                        </entry>
+                        <entry id="2ba427f7-cfbe-4161-2d35-248a3ef837cc" name="Guardian (2, 12&quot; Protective=1)" points="40.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links/>
+                        </entry>
+                      </entries>
+                      <entryGroups/>
+                      <modifiers/>
+                      <links/>
+                    </entryGroup>
+                  </entryGroups>
+                  <modifiers/>
+                  <rules/>
+                  <profiles>
+                    <profile id="428751f0-b39f-9c81-1754-524f79bac7b2" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Tower Main Turret (P)" hidden="false" page="0">
+                      <characteristics>
+                        <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="10"/>
+                        <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="8"/>
+                        <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="6"/>
+                        <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="4"/>
+                        <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="360"/>
+                      </characteristics>
+                      <modifiers/>
+                    </profile>
+                  </profiles>
+                  <links/>
+                </entry>
+                <entry id="6630f537-334d-dafd-c4df-d650a13e5fd5" name="Communications" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries>
+                    <entry id="71962295-9758-fb0a-848e-71f46b8c295e" name="Combat Coordinator (DoC, Die Hard Attitude, 12&quot;)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links/>
+                    </entry>
+                  </entries>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="187f3802-0762-f26a-361b-e7be4a173b9b" name="Flak Tower" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries>
+                    <entry id="0bb4da55-bae8-88ad-5280-4ef8c2d05aab" name="Heavy Ack Ack" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules>
+                        <rule id="89ed37fa-efd3-1ca6-07c0-9055adeb0ab8" name="Heavy Ack Ack" hidden="false" page="0">
+                          <description>AA uses Red dice against SAS</description>
+                          <modifiers/>
+                        </rule>
+                      </rules>
+                      <profiles/>
+                      <links/>
+                    </entry>
+                    <entry id="72346cde-40de-db51-42ef-4a54367f9e65" name="Sustained Fire (Ack Ack, 2)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules>
+                        <rule id="eed56bd5-fe17-008f-776a-7dd55005edfa" name="Sustained Fire (Weapon, Value)" hidden="false" page="0">
+                          <description>May re-roll up to the listed value in the attack with the listed weapon</description>
+                          <modifiers/>
+                        </rule>
+                      </rules>
+                      <profiles/>
+                      <links/>
+                    </entry>
+                  </entries>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="9cda46ec-0a7e-1297-7498-ceafe63acf1d" name="Torpedo" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries>
+                    <entry id="9c9308bf-32a9-be68-44aa-7543a6014d7e" name="Internal Pulse (16&quot;)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links/>
+                    </entry>
+                  </entries>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles>
+                    <profile id="65fb4eab-8c28-8b74-994a-51ac548f8d65" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Tower Torpedo Turret" hidden="false" page="0">
+                      <characteristics>
+                        <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="7"/>
+                        <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="6"/>
+                        <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="4"/>
+                        <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="3"/>
+                        <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="90 Fore"/>
+                      </characteristics>
+                      <modifiers/>
+                    </profile>
+                    <profile id="64b954a9-ef61-eafc-23ce-0c31ffdcfa2d" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Tower P/S Torpedoes" hidden="false" page="0">
+                      <characteristics>
+                        <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="6"/>
+                        <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="5"/>
+                        <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="3"/>
+                        <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="2"/>
+                        <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="90 P/S"/>
+                      </characteristics>
+                      <modifiers/>
+                    </profile>
+                  </profiles>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <links/>
+            </entryGroup>
+          </entryGroups>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="7f3e6386-3c97-432c-ab1f-6fac5262e5c9" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Tower" hidden="false" page="0">
+              <characteristics>
+                <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="4"/>
+                <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="6"/>
+                <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="-"/>
+                <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="5"/>
+                <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="4"/>
+                <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="2"/>
+                <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="-"/>
+                <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="7"/>
+                <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Medium Capital Universal Fortification"/>
+                <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="-"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Defensive"/>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" field="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" value="5" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="0bfd6dfc-96e8-6470-1149-8c1bf516cdf7" childId="187f3802-0762-f26a-361b-e7be4a173b9b" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="ddd81ab7-65ce-cbf8-d89a-90935a212283" name="Wolfe Class Medium Tank" points="0.0" categoryId="25737efc-adbc-dc3c-7248-99ee6d9a6e72" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+      <entries>
+        <entry id="e428c24a-6c56-ae52-5a0b-b642f8d0f8e1" name="Wolfe" points="40.0" categoryId="(No Category)" type="model" minSelections="2" maxSelections="3" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="a57483e8-e8e4-eaa7-c4e7-818e56e8c17b" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Wolfe Main Turret (S)" hidden="false" page="0">
+              <characteristics>
+                <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="6"/>
+                <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="5"/>
+                <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="4"/>
+                <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="-"/>
+                <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="360"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+            <profile id="70a12bfe-554f-ddcd-9bee-9d5c9be9b72f" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Wolfe" hidden="false" page="0">
+              <characteristics>
+                <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="5"/>
+                <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="6"/>
+                <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="8&quot; (0&quot; min)"/>
+                <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="3"/>
+                <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="4"/>
+                <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="2"/>
+                <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="2"/>
+                <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="2"/>
+                <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Medium Armoured"/>
+                <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="45/0&quot;"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Regular"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links>
+            <link id="0fd99316-a9e2-6056-d6ac-49667153daea" targetId="522d78e0-5658-94dd-4e5e-829986e9c24c" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="d16b4902-01b4-6bd8-4fdc-ea08ba542c2e" name="Valkyrie&apos;s Fury" points="125.0" categoryId="d5ba74a7-9dab-51a4-fd40-2083fe2c3f1d" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
+      <entries>
+        <entry id="5159f214-0033-de9d-65ab-9c747f5cd558" name="PLC: SAS Fighters" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="4" maxSelections="4" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="e2a2bd89-76dc-27d9-ccad-43f35aa14ac2" name="Hunter (Surface, Bombs, +1)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="2ac2e2d6-cd3c-7952-e795-5ac648bcbac4" name="Internal Shield (2)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="8ae942e1-ac0d-f56a-5abe-2f9a2fa64ed8" name="Area Bombardment (Bombs)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="8615f95c-7263-b4a2-6275-8129082a9f61" name="Combat Patrol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="981d472b-2be5-b417-ba54-92e2a8573068" name="Incendiary (Bombs)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="fdc655c6-87fa-2d0c-958a-3a87aef5775f" name="Momentum" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="edd4539a-51fe-d563-2834-66cf0ff1e9e6" name="Piercing (Fore Cannon)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="c31d696a-ea72-8926-41af-9f09c1d39589" name="Strategic Value (25)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules>
+        <rule id="979b08b3-4130-dd05-77e5-fbbc0c31c086" name="Lady of Fortune" hidden="false" page="0">
+          <description>Esmerelda and the Valkyrie’s Fury are available to all Dystopian Wars factions, and may only be taken as part of the 40% Non-Core element of a Force. Unlike other Mercenaries, Esmerelda and her Heavy Bomber may ignore the stipulation regarding Capital and Non-Capital elements within a Mercenary Battle Group</description>
+          <modifiers/>
+        </rule>
+        <rule id="d07d130d-d099-19db-63a3-184ef71d138b" name="Into The Clouds" hidden="false" page="0">
+          <description>ONCE per game, the Valkyrie’s Fury may choose to automatically succeed when taking its Evasive Manoeuvre Test.</description>
+          <modifiers/>
+        </rule>
+        <rule id="1b395a8e-19cd-212d-6deb-7da05b9acc7b" name="Focused Bombing" hidden="false" page="0">
+          <description>When performing an Area Bombardment with the Valkyrie’s Fury, the owning player may elect to re-roll the initial direction determined by any template after the first. However, the second result of each template placement MUST be accepted.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="fa96e661-a4fd-11d9-f3ce-d561bf1002a3" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Valkyrie&apos;s Fury Fore Cannon (P)" hidden="false" page="0">
+          <characteristics>
+            <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="10"/>
+            <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="10"/>
+            <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="5"/>
+            <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="5"/>
+            <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="Fixed Fore"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="5b9ffb29-21d7-baae-ae44-05b3150e7a2e" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Valkyrie&apos;s Fury Wing Guns (S)" hidden="false" page="0">
+          <characteristics>
+            <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="6"/>
+            <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="5"/>
+            <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="-"/>
+            <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="-"/>
+            <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="90 Fore on each wing"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="b98496d2-b9ec-e92b-fc65-e6554088d384" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Valkyrie&apos;s Fury Aft Guns (S)" hidden="false" page="0">
+          <characteristics>
+            <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="6"/>
+            <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="5"/>
+            <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="-"/>
+            <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="-"/>
+            <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="90 Aft centre"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="0aec0d14-6fe3-cac0-5a0d-b84bd3b3c135" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Valkyrie&apos;s Fury Bombs x3" hidden="false" page="0">
+          <characteristics>
+            <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="5"/>
+            <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="-"/>
+            <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="-"/>
+            <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="-"/>
+            <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="2&quot; 360"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="8819cedb-5775-e040-ae3d-645fd2689198" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Valkyrie&apos;s Fury" hidden="false" page="0">
+          <characteristics>
+            <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="5"/>
+            <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="7"/>
+            <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="10&quot; (4&quot; min)"/>
+            <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="6"/>
+            <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="5"/>
+            <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="6"/>
+            <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="4"/>
+            <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="4"/>
+            <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Large Capital Aerial"/>
+            <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="45/1&quot;"/>
+            <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Stoic"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links/>
+    </entry>
+  </entries>
+  <rules/>
+  <links/>
+  <sharedEntries>
+    <entry id="522d78e0-5658-94dd-4e5e-829986e9c24c" name="All-Terrain" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="fceac5ed-0b4c-d492-9fa7-9b7ce7df48c2" name="Attached Archer" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="081d2c39-a9d0-6019-4e4c-d216e39acf1c" name="DoC Commodore" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules>
+        <rule id="69fce366-693f-bc21-e1d7-dbd75ac94e4a" name="DoC Commodore" hidden="false" page="0">
+          <description>Each Game Turn, the controlling player may have the Commodore perform ONE of the following Command Abilities:
+
+* Safe Passage (Within 8” of the Commodore’s Model) – Re-roll one Treacherous Terrain Test for a Model in their fleet.
+
+* Fix it Lads (Within 8” of the Commodore’s Model) – Re-roll one Damage Repair Test for a Model in their fleet.
+
+* Stand Up and Be Counted (Within 8” of the Commodore’s Model) – Re-roll one die after a failed Disorder Test.
+
+COMMODORE DOCTRINES
+
+* Forward Observers: - In addition to the standard two Companies of Line Infantry Local Infantry Support, the Dominion of Canada ALSO has TWO Companies of Reconnaissance Infantry Local Infantry Support. These free Infantry Formations have the Attachment (DoC, Armoured, 2) MAR, and must be attached to other Dominion of Canada Armoured Squadrons.
+
+* Skilled Drivers: This Ability may be activated during the Command Segment of a Non-Disordered Squadron Activation with a member within 16” of the Commodore&apos;s Model. For this activation, the Squadron may move through Treacherous Terrain at full speed WITHOUT taking a Treacherous Terrain Test.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links/>
+    </entry>
+  </sharedEntries>
+  <sharedEntryGroups/>
+  <sharedRules/>
+  <sharedProfiles/>
+</catalogue>
