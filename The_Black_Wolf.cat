@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="dd700b70-49c8-4d90-b786-65aff05508ca" revision="2" gameSystemId="dea5da1e-8b51-b068-a829-a7b0a88b17d4" gameSystemRevision="6" battleScribeVersion="1.14b" name="The Black Wolf" authorName="Josiah McMillan" authorContact="battlescribe@omts.org.nz" authorUrl="http://www.omts.org.nz" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="dd700b70-49c8-4d90-b786-65aff05508ca" revision="3" gameSystemId="dea5da1e-8b51-b068-a829-a7b0a88b17d4" gameSystemRevision="6" battleScribeVersion="1.14b" name="The Black Wolf" authorName="Josiah McMillan" authorContact="battlescribe@omts.org.nz" authorUrl="http://www.omts.org.nz" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="f9edcb83-cc04-8e9b-d713-df44e447356b" name="BW SAS" points="0.0" categoryId="3722544c-21bf-627f-e093-4c3b52ddb5ce" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="1" maxInRoster="1" collective="false" hidden="false" page="0">
       <entries>
@@ -593,14 +593,6 @@
               <profiles/>
               <links/>
             </entry>
-            <entry id="082e2650-02f9-91e6-5a9c-ae412947891c" name="Elite Crew" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
             <entry id="71fb27b7-ccbe-0683-7237-71c6fdf5a1f6" name="Incendiary (P)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
@@ -658,16 +650,9 @@
                 <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="8"/>
                 <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Large Capital Naval"/>
                 <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="Large"/>
-                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Regular"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Elite"/>
               </characteristics>
-              <modifiers>
-                <modifier type="set" field="9fa5ecaf-6733-fc53-1ba1-264a272aae04" value="Elite" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="258b8577-ec51-6f81-76e4-8c531de64168" childId="082e2650-02f9-91e6-5a9c-ae412947891c" field="selections" type="equal to" value="1.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
+              <modifiers/>
             </profile>
             <profile id="c905f994-9ef8-ed2f-66e9-cc40bb419045" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Kaiju Main Turrets (P)" hidden="false" page="0">
               <characteristics>
@@ -1244,7 +1229,7 @@
                 <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="7"/>
                 <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Large Capital Naval"/>
                 <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="Large"/>
-                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Regular"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Elite"/>
               </characteristics>
               <modifiers/>
             </profile>
@@ -1373,73 +1358,6 @@
         </entry>
         <entry id="161c151b-f199-7677-b823-dc248e6b6b2b" name="Boston Class Attack Submarine" points="145.0" categoryId="d5ba74a7-9dab-51a4-fd40-2083fe2c3f1d" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
           <entries>
-            <entry id="da2ca43d-b236-a90e-3cf8-f2a569a96bc3" name="Squadron Support (FSA, Turtle Assault Submarine, 6)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries>
-                <entry id="644b10ed-3429-0924-c4a8-f49136ec365d" name="Turtle Assault Submarine" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="6" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-                  <entries>
-                    <entry id="6f98411f-afb4-d665-d429-3b1d4b9ff403" name="Difficult Target" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="c62a6ea8-150b-ce59-7ce1-c86d3de5112d" name="Elusive Target" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="d1638ce1-0fcc-0a21-e540-ff7b244c51c7" name="Specialised Defences (1)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="bb412749-ab6c-e538-824e-f4f5967d0e30" name="Terror Tactics (1)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                  </entries>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles>
-                    <profile id="09303c66-7cf2-8960-d74e-d424167a949c" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Turtle Assault Submarine" hidden="false" page="0">
-                      <characteristics>
-                        <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="3"/>
-                        <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="-"/>
-                        <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="10&quot; (0&quot; min)"/>
-                        <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="1"/>
-                        <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="1"/>
-                        <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="-"/>
-                        <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="1"/>
-                        <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="-"/>
-                        <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Tiny Naval Diving"/>
-                        <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="360"/>
-                        <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Reckless"/>
-                      </characteristics>
-                      <modifiers/>
-                    </profile>
-                  </profiles>
-                  <links/>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
             <entry id="9dfab943-4fe8-c3bf-e6ef-ea616ab5cdae" name="Evasive Manoeuvres (+1)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
@@ -1505,7 +1423,7 @@
                 <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="4"/>
                 <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Large Capital Naval Diving"/>
                 <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="45/0&quot;"/>
-                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Aggressive"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Elite"/>
               </characteristics>
               <modifiers/>
             </profile>
@@ -1535,14 +1453,6 @@
         <entry id="c00fa061-6294-f48f-4124-46122a0068e4" name="Independence Class Battleship" points="180.0" categoryId="d5ba74a7-9dab-51a4-fd40-2083fe2c3f1d" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
           <entries>
             <entry id="2911c7b1-9fe9-9665-41dc-6b956f5b49cc" name="Sustained Fire (Main Turrets, 1)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="db4334c5-4092-1ada-abe9-7e58858047fe" name="Elite Crew" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -1618,16 +1528,9 @@
                 <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="5"/>
                 <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Large Capital Naval"/>
                 <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="Large"/>
-                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Aggressive"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Elite"/>
               </characteristics>
-              <modifiers>
-                <modifier type="set" field="9fa5ecaf-6733-fc53-1ba1-264a272aae04" value="Elite" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="c00fa061-6294-f48f-4124-46122a0068e4" childId="db4334c5-4092-1ada-abe9-7e58858047fe" field="selections" type="equal to" value="1.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
+              <modifiers/>
             </profile>
             <profile id="34d110e4-f796-cdd5-3674-9bc17fdac0d2" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Independence Main Turrets (P)" hidden="false" page="0">
               <characteristics>
@@ -1665,14 +1568,6 @@
         <entry id="8a8dc916-67dd-0d04-fa50-7314c1e930cd" name="Liberty Class Heavy Battleship" points="215.0" categoryId="d5ba74a7-9dab-51a4-fd40-2083fe2c3f1d" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
           <entries>
             <entry id="b1cce769-5c0b-154a-e491-c5d2264eea0a" name="Sustained Fire (Main Turrets, 3)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="e8049d9d-3ae7-73f0-23d5-d41452fdf2f4" name="Elite Crew" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -1748,16 +1643,9 @@
                 <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="7"/>
                 <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Large Capital Naval"/>
                 <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="Large"/>
-                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Regular"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Elite"/>
               </characteristics>
-              <modifiers>
-                <modifier type="set" field="9fa5ecaf-6733-fc53-1ba1-264a272aae04" value="Elite" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="8a8dc916-67dd-0d04-fa50-7314c1e930cd" childId="e8049d9d-3ae7-73f0-23d5-d41452fdf2f4" field="selections" type="equal to" value="1.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
+              <modifiers/>
             </profile>
             <profile id="6aa19f7f-ca78-e028-7ef0-33ddca9c8973" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Liberty Main Turrets (P)" hidden="false" page="0">
               <characteristics>
@@ -1851,7 +1739,7 @@
                 <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="6"/>
                 <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Large Capital Repair Aerial Low Level Flyer"/>
                 <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="45/2&quot;"/>
-                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Defensive"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Elite"/>
               </characteristics>
               <modifiers/>
             </profile>
@@ -1896,14 +1784,6 @@
               <profiles/>
               <links/>
             </entry>
-            <entry id="770aa437-d98a-e38e-04da-ce08b5bbf3c7" name="Elite Crew" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
             <entry id="e0c4c530-151e-8680-ca83-9e3290c78301" name="Sharpshooters" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
@@ -1929,16 +1809,9 @@
                 <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="5"/>
                 <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Large Captial Aerial"/>
                 <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="45/2&quot;"/>
-                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Aggressive"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Elite"/>
               </characteristics>
-              <modifiers>
-                <modifier type="set" field="9fa5ecaf-6733-fc53-1ba1-264a272aae04" value="Elite" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="dcd0ef5e-7f7c-8375-6808-5be6c5c12231" childId="770aa437-d98a-e38e-04da-ce08b5bbf3c7" field="selections" type="equal to" value="1.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
+              <modifiers/>
             </profile>
             <profile id="1b6df1b2-5131-a0aa-9264-c8791f4eba29" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Valley Rockets x2" hidden="false" page="0">
               <characteristics>
@@ -2044,7 +1917,7 @@
                 <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="5"/>
                 <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Large Capital Multi-Purpose"/>
                 <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="45/1&quot;"/>
-                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Regular"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Elite"/>
               </characteristics>
               <modifiers/>
             </profile>
@@ -2162,14 +2035,6 @@
         </entry>
         <entry id="0361ad4c-69b6-e2b6-9883-9c0edb14cff0" name="Mornarch Class Heavy Battleship" points="220.0" categoryId="d5ba74a7-9dab-51a4-fd40-2083fe2c3f1d" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
           <entries>
-            <entry id="ee527508-9106-d739-95be-64a5c2d67656" name="Elite Crew" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
             <entry id="eef67f1a-80ab-6476-5eab-f86e196e7a89" name="Internal (2) Shield" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
@@ -2227,16 +2092,9 @@
                 <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="7"/>
                 <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Large Capital Naval"/>
                 <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="Large"/>
-                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Regular"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Elite"/>
               </characteristics>
-              <modifiers>
-                <modifier type="set" field="9fa5ecaf-6733-fc53-1ba1-264a272aae04" value="Elite" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="0361ad4c-69b6-e2b6-9883-9c0edb14cff0" childId="ee527508-9106-d739-95be-64a5c2d67656" field="selections" type="equal to" value="1.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
+              <modifiers/>
             </profile>
             <profile id="66cbd95d-f9dc-8084-dde0-8d529827bf9c" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Mornarch Main Turret (P)" hidden="false" page="0">
               <characteristics>
@@ -2293,14 +2151,6 @@
         </entry>
         <entry id="d3bf5e06-7508-ea16-e074-8ce1a4644c62" name="Ruler Class Battleship" points="195.0" categoryId="d5ba74a7-9dab-51a4-fd40-2083fe2c3f1d" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
           <entries>
-            <entry id="cf0f8660-1127-c4ff-7405-7ad7dcb24dcb" name="Stoic Crew" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
             <entry id="da117440-183a-4f1a-8978-619626bbf00c" name="Engineers (Experienced)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
@@ -2366,16 +2216,9 @@
                 <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="6"/>
                 <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Large Capital Naval"/>
                 <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="Large"/>
-                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Regular"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Elite"/>
               </characteristics>
-              <modifiers>
-                <modifier type="set" field="9fa5ecaf-6733-fc53-1ba1-264a272aae04" value="Stoic" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="d3bf5e06-7508-ea16-e074-8ce1a4644c62" childId="cf0f8660-1127-c4ff-7405-7ad7dcb24dcb" field="selections" type="equal to" value="1.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
+              <modifiers/>
             </profile>
             <profile id="c1530ab3-873e-bd4f-1185-bef0005acede" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Ruler Main Turret (P)" hidden="false" page="0">
               <characteristics>
@@ -2546,14 +2389,6 @@
               <profiles/>
               <links/>
             </entry>
-            <entry id="bbc5b28e-93c3-011c-02d5-d7075d21bffe" name="Elite Crew" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
             <entry id="f7034941-4a21-8a6a-ace2-f6d1142bcadc" name="Rugged Construction (1)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
@@ -2603,16 +2438,9 @@
                 <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="6"/>
                 <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Large Capital Naval"/>
                 <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="Large"/>
-                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Aggressive"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Elite"/>
               </characteristics>
-              <modifiers>
-                <modifier type="set" field="9fa5ecaf-6733-fc53-1ba1-264a272aae04" value="Elite" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="399dcbbc-3642-8782-9340-a36e093633c2" childId="bbc5b28e-93c3-011c-02d5-d7075d21bffe" field="selections" type="equal to" value="1.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
+              <modifiers/>
             </profile>
             <profile id="bc6ae57f-077f-38eb-fb45-49c82ae6f1b1" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Emperor Main Turret (P)" hidden="false" page="0">
               <characteristics>
@@ -2683,14 +2511,6 @@
               <profiles/>
               <links/>
             </entry>
-            <entry id="4423d1ea-63f4-02e6-f521-536eb2cc537b" name="Elite Crew" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
           </entries>
           <entryGroups>
             <entryGroup id="9ea61954-62be-fdc0-e429-3e8706680c18" name="Replace a Turret" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
@@ -2732,16 +2552,9 @@
                 <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="7"/>
                 <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Large Capital Naval"/>
                 <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="Large"/>
-                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Regular"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Elite"/>
               </characteristics>
-              <modifiers>
-                <modifier type="set" field="9fa5ecaf-6733-fc53-1ba1-264a272aae04" value="Elite" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="514f4b83-f1bb-91d0-08d3-5a9ee0fa22b2" childId="4423d1ea-63f4-02e6-f521-536eb2cc537b" field="selections" type="equal to" value="1.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
+              <modifiers/>
             </profile>
             <profile id="df89ab7b-1205-e10b-995f-e273ce394849" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Kaiser Karl Main Turret (P)" hidden="false" page="0">
               <characteristics>
@@ -3146,14 +2959,6 @@
               <profiles/>
               <links/>
             </entry>
-            <entry id="615faa89-e348-3c09-cef8-9ec0f98a8c42" name="Stoic Crew" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
             <entry id="e30b2616-9925-ee2e-7ba2-b40c4bc13e76" name="Redoutable (AA)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
@@ -3259,16 +3064,9 @@
                 <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="6"/>
                 <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Large Capital Surface Skimmer"/>
                 <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="Large"/>
-                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Regular"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Elite"/>
               </characteristics>
-              <modifiers>
-                <modifier type="set" field="9fa5ecaf-6733-fc53-1ba1-264a272aae04" value="Stoic" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="fa346b1e-2503-3dfa-2309-0b994a9629a6" childId="615faa89-e348-3c09-cef8-9ec0f98a8c42" field="selections" type="equal to" value="1.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
+              <modifiers/>
             </profile>
           </profiles>
           <links/>
@@ -3276,14 +3074,6 @@
         <entry id="9604cfec-799d-ee8c-bf7f-c7d729ee539a" name="Magenta Class Battleship" points="165.0" categoryId="d5ba74a7-9dab-51a4-fd40-2083fe2c3f1d" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
           <entries>
             <entry id="4273021f-4ddc-02d0-e4bf-a7dad589a4de" name="Retardant Armour (1)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="1b53a6bc-2475-d2a8-b0ae-19371b974428" name="Aggressive Crew" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -3447,18 +3237,12 @@
                 <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="6"/>
                 <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Large Capital Naval"/>
                 <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="Large"/>
-                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Regular"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Elite"/>
               </characteristics>
               <modifiers>
                 <modifier type="set" field="abd884ba-477b-2dff-74c2-6a907e019bdb" value="Large Capital Surface Skimmer" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
                     <condition parentId="9604cfec-799d-ee8c-bf7f-c7d729ee539a" childId="a14a8500-0579-93f8-d5ab-c9f6153d41f9" field="selections" type="equal to" value="1.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-                <modifier type="set" field="9fa5ecaf-6733-fc53-1ba1-264a272aae04" value="Aggressive" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="9604cfec-799d-ee8c-bf7f-c7d729ee539a" childId="1b53a6bc-2475-d2a8-b0ae-19371b974428" field="selections" type="equal to" value="1.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -3477,91 +3261,6 @@
               <profiles/>
               <links/>
             </entry>
-            <entry id="92948b0b-7d73-0497-9bbd-b1efeaa1c310" name="Squadron Support (RoF, Moustique, 6)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries>
-                <entry id="ccd1bcb8-8500-ff50-2331-f7ae4e9d3238" name="Mostique" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="6" maxSelections="6" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-                  <entries>
-                    <entry id="371660c1-6e25-85b8-4e1e-457cc7ae8b09" name="Difficult Target" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="7189f8ce-90b5-626c-98ec-74cf0c45f0b2" name="Directed Fire (Concussion Charges)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="ff3f0c0b-326a-830b-8a05-0f637851ebf1" name="Elusive Target" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="73e3329b-aca7-08cc-31b8-96f169443be7" name="Hit and Run" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="1a54c208-9b3b-0a10-4319-8ddcc31777eb" name="Specialised Defences (1)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                  </entries>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles>
-                    <profile id="34164829-14da-762a-cd16-d7c1eba43e24" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Mostique Torpedoes" hidden="false" page="0">
-                      <characteristics>
-                        <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="3"/>
-                        <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="-"/>
-                        <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value=""/>
-                        <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="-"/>
-                        <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="Fixed Fore"/>
-                      </characteristics>
-                      <modifiers/>
-                    </profile>
-                    <profile id="94499ab6-9425-84f0-45e4-c0e91e45025a" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Mostique" hidden="false" page="0">
-                      <characteristics>
-                        <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="3"/>
-                        <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="-"/>
-                        <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="10&quot; (0&quot; min)"/>
-                        <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="1"/>
-                        <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="-"/>
-                        <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="-"/>
-                        <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="1"/>
-                        <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="-"/>
-                        <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Tiny Diving"/>
-                        <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="360"/>
-                        <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="N/A"/>
-                      </characteristics>
-                      <modifiers/>
-                    </profile>
-                  </profiles>
-                  <links/>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
             <entry id="f2f49658-e851-02d2-6160-51eb1ed4cc6b" name="Internal Cloud" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
@@ -3571,14 +3270,6 @@
               <links/>
             </entry>
             <entry id="c8a2175d-ed5f-6cfc-4040-037974546aff" name="Corrosive (Bombards)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="b35b3965-5061-9223-8d85-459f02e3fc74" name="Elite Crew" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -3667,16 +3358,9 @@
                 <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="8"/>
                 <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Large Capital Naval"/>
                 <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="Large"/>
-                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Stoic"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Elite"/>
               </characteristics>
-              <modifiers>
-                <modifier type="set" field="9fa5ecaf-6733-fc53-1ba1-264a272aae04" value="Elite" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="d98cb60e-b5d9-aa6d-e760-e312baa2e2f4" childId="b35b3965-5061-9223-8d85-459f02e3fc74" field="selections" type="equal to" value="1.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
+              <modifiers/>
             </profile>
           </profiles>
           <links/>
@@ -3805,7 +3489,7 @@
                 <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="5"/>
                 <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Large Capital Naval"/>
                 <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="Large"/>
-                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Regular"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Elite"/>
               </characteristics>
               <modifiers/>
             </profile>
@@ -3957,7 +3641,7 @@
                 <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="4"/>
                 <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Large Capital Aerial"/>
                 <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="45/0&quot;"/>
-                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Regular"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Elite"/>
               </characteristics>
               <modifiers/>
             </profile>
@@ -4057,7 +3741,7 @@ When the Front Turret is slid foward the generator is an External Guardian (2, 8
                 <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="5"/>
                 <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Large Capital Naval"/>
                 <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="Large"/>
-                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Aggressive"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Elite"/>
               </characteristics>
               <modifiers/>
             </profile>
@@ -4151,7 +3835,7 @@ When the Front Turret is slid foward the generator is an External Guardian (2, 8
                 <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="5"/>
                 <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Large Capital Aerial"/>
                 <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="45/0&quot;"/>
-                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Aggressive"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Elite"/>
               </characteristics>
               <modifiers/>
             </profile>
@@ -4245,7 +3929,7 @@ When the Front Turret is slid foward the generator is an External Guardian (2, 8
                 <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="5"/>
                 <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Large Capital Aerial"/>
                 <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="45/0&quot;"/>
-                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Aggressive"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Elite"/>
               </characteristics>
               <modifiers/>
             </profile>
@@ -4327,7 +4011,7 @@ When the Front Turret is slid foward the generator is an External Guardian (2, 8
                 <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="5"/>
                 <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Large Capital Naval"/>
                 <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="Large"/>
-                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Aggressive"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Elite"/>
               </characteristics>
               <modifiers/>
             </profile>
@@ -4338,136 +4022,6 @@ When the Front Turret is slid foward the generator is an External Guardian (2, 8
                 <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="8"/>
                 <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="8"/>
                 <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="270 1 Fore and 1 Aft"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
-        </entry>
-        <entry id="97fff664-a823-7a8d-8465-2cfb1bab18f6" name="Kanuni Class Dreadnought" points="300.0" categoryId="d5ba74a7-9dab-51a4-fd40-2083fe2c3f1d" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-          <entries>
-            <entry id="69c99246-3925-3bb3-a3ae-02dad4360956" name="Squadron Suport (SAW, 5)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="7b78a45a-9914-5d8b-6cc1-95ffad988212" name="Strategic Value (100)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="42cebe2e-f0f4-abcc-12a0-f6f3eb7a1e86" name="Sustained Fire (Upper/Lower Broadsides, 2)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="29838f13-95e3-961a-e0b4-ab1f289b72ee" name="Internal Weather Manipulation (3, 24&quot;)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="7867a908-445d-121d-a82d-5e03f84e5eb0" name="Internal Mine Controller (12&quot;)" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="3fe066e5-1286-d2d4-0a5c-50036714319c" name="Corrosive (P)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="5e673ed1-5eea-537c-22a6-53c539420025" name="Redoutable (Broadsides)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="32eb5bde-3ca2-2b65-4875-1e58ac6fb7be" name="Sharpshooters" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles>
-            <profile id="4d54698d-edb5-653a-94d1-da21f3df595a" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Kanuni Main Turret (P)" hidden="false" page="0">
-              <characteristics>
-                <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="11"/>
-                <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="9"/>
-                <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="7"/>
-                <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="5"/>
-                <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="270 1 Fore and 1 Aft"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-            <profile id="7b80a6af-247d-ee8e-8663-136770fdefb5" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Kanuni Fore Bombards (P)" hidden="false" page="0">
-              <characteristics>
-                <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="-"/>
-                <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="10"/>
-                <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="8"/>
-                <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="6"/>
-                <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="2 Fixed Fore"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-            <profile id="74d4b6de-34d5-57a5-0a3a-9b1fe2826b77" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Kanuni Upper Broadsides (S)" hidden="false" page="0">
-              <characteristics>
-                <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="8"/>
-                <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="6"/>
-                <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="4"/>
-                <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="2"/>
-                <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="P/S Broadsides"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-            <profile id="5f303242-173e-174e-843b-5a8c1fac56b7" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Kanuni Lower Bradsides (S)" hidden="false" page="0">
-              <characteristics>
-                <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="12"/>
-                <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="10"/>
-                <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="8"/>
-                <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="6"/>
-                <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="P/S Broadsides"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-            <profile id="a2707a40-3e02-c1e8-30af-cf93d06f717c" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Kanuni" hidden="false" page="0">
-              <characteristics>
-                <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="7"/>
-                <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="13"/>
-                <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="6&quot; (2&quot; min)"/>
-                <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="10"/>
-                <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="10"/>
-                <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="8"/>
-                <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="5"/>
-                <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="8"/>
-                <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Massive Capital Naval"/>
-                <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="Large"/>
-                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Elite"/>
               </characteristics>
               <modifiers/>
             </profile>
@@ -4571,118 +4125,6 @@ When the Front Turret is slid foward the generator is an External Guardian (2, 8
                 <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="5"/>
                 <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Large Capital Surface Skimmer"/>
                 <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="Large"/>
-                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Elite"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
-        </entry>
-        <entry id="8e3e58b7-57f6-a8be-61c8-202cc6f7b18f" name="Hisar Class Mobile Airfield" points="225.0" categoryId="d5ba74a7-9dab-51a4-fd40-2083fe2c3f1d" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-          <entries>
-            <entry id="1ea15d5f-64ae-e398-0183-d41d2fc66e79" name="Carrier (9)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="3f584520-cd50-1236-bb16-10ce5a1eb38a" name="Fuel Reserves" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="88dcc9e3-7a4b-8c9a-feea-cf14b86887a9" name="Strategic Value (75)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="9388bfe0-c1a5-e356-95d6-1a5cabbd1258" name="Internal Weather Manipulation (3, 24&quot;)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="0b337710-d2ba-a61d-c701-6e59e5e0e288" name="Internal Mine Controller (16&quot;)" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="5ca4c328-f216-a9f4-bb3f-18f72c0a3449" name="Sharpshooters" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="193d0f56-eb3c-c77d-e90d-44edb1637940" name="Corrosive (P)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles>
-            <profile id="3b81a76e-b361-ec6d-fafb-39fee12bc5e8" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Hisar Main Turrets (P)" hidden="false" page="0">
-              <characteristics>
-                <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="9"/>
-                <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="7"/>
-                <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="5"/>
-                <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="3"/>
-                <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="180 1 Port and 1 Starboard"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-            <profile id="3bd6bda3-2afc-db59-16c5-d5b5f448066d" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Hisar Fore Bombard (P)" hidden="false" page="0">
-              <characteristics>
-                <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="-"/>
-                <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="10"/>
-                <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="8"/>
-                <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="6"/>
-                <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="2 Fixed Fore"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-            <profile id="c4447b9e-56b1-8c84-bf86-bf7d93611d91" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Hisar Volley Gun Broadside (S)" hidden="false" page="0">
-              <characteristics>
-                <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="10"/>
-                <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="9"/>
-                <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="-"/>
-                <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="-"/>
-                <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="P/S Broadside"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-            <profile id="9730036c-93b9-a8b9-1e90-49c8741b744c" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Hisar" hidden="false" page="0">
-              <characteristics>
-                <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="6"/>
-                <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="10"/>
-                <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="5&quot; (1&quot; min)"/>
-                <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="10"/>
-                <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="7"/>
-                <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="5"/>
-                <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="4"/>
-                <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="4"/>
-                <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="4"/>
-                <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="Massive Capital Multi Purpose Armoured"/>
                 <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Elite"/>
               </characteristics>
               <modifiers/>
@@ -4908,6 +4350,56 @@ When the Front Turret is slid foward the generator is an External Guardian (2, 8
                 <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="4"/>
                 <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="-"/>
                 <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="1x 270 Fore and 1x 270 Aft"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="63bfa087-9bdd-5904-9805-053b4f123c4a" name="Titan Troop Transport" points="100.0" categoryId="d5ba74a7-9dab-51a4-fd40-2083fe2c3f1d" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries>
+            <entry id="5472a874-4134-bf70-20c8-acd2a6611a0b" name="Advanced Engines (+2&quot;)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="bcb3ffe1-be9e-a1c0-90b8-f637bc0d2b09" name="Long Range Assault" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="182ed330-7966-2401-faaa-97c1058892af" name="Troop Reinforcement" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="055f214d-ca37-1039-2d2f-538f5073c716" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Titan" hidden="false" page="0">
+              <characteristics>
+                <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="6"/>
+                <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="9"/>
+                <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="6&quot; (2&quot; min)"/>
+                <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="7"/>
+                <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="12"/>
+                <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="4"/>
+                <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="4"/>
+                <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="6"/>
+                <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Large Capital Naval"/>
+                <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="Large"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Elite"/>
               </characteristics>
               <modifiers/>
             </profile>
