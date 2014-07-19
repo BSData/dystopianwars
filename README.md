@@ -1,4 +1,4 @@
-dystopianwars
+Dystopian Wars 2.0
 ================
 
 ####Contents####
