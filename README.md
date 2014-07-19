@@ -20,7 +20,7 @@ BSData organisation created this project. It's GitHub repository of datafiles. M
 __Still to Finish__
 
 The following is still to be added to the files and will be done in the coming months;
-* MAR descriptions
+* MAR Descriptions
 * Generator Descriptions
 * Munitions Descriptions
 * And any new waves released each month
