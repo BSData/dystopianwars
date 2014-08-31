@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="480d537e-775a-a43c-dfb1-059c7b8c82b7" revision="9" gameSystemId="dea5da1e-8b51-b068-a829-a7b0a88b17d4" gameSystemRevision="1" battleScribeVersion="1.14b" name="Russian Coalition" authorName="Josiah McMillan" authorContact="battlescribe@omts.org.nz" authorUrl="http://www.omts.org.nz" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="480d537e-775a-a43c-dfb1-059c7b8c82b7" revision="10" gameSystemId="dea5da1e-8b51-b068-a829-a7b0a88b17d4" gameSystemRevision="1" battleScribeVersion="1.14b" name="Russian Coalition" authorName="Josiah McMillan" authorContact="battlescribe@omts.org.nz" authorUrl="http://www.omts.org.nz" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="082d3cea-ee92-9d45-05c2-46f469d2dad0" name="Alexander Nevski Class Land Dreadnought" points="280.0" categoryId="d5ba74a7-9dab-51a4-fd40-2083fe2c3f1d" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries>
@@ -2964,9 +2964,9 @@
             </entry>
           </entries>
           <entryGroups>
-            <entryGroup id="7bd3851c-3b72-f68b-15b2-eca8c7bd7363" name="External Generator" defaultEntryId="f759a106-174e-1e08-fbe8-21f85d2286b4" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+            <entryGroup id="7bd3851c-3b72-f68b-15b2-eca8c7bd7363" name="External Generator" defaultEntryId="f759a106-174e-1e08-fbe8-21f85d2286b4" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries>
-                <entry id="f759a106-174e-1e08-fbe8-21f85d2286b4" name="Target Painter (Mortar, 8&quot;)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                <entry id="f759a106-174e-1e08-fbe8-21f85d2286b4" name="Target Painter (Mortar, 8&quot;)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false" page="0">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
@@ -2974,7 +2974,7 @@
                   <profiles/>
                   <links/>
                 </entry>
-                <entry id="b22dda61-3007-3aa2-5342-0c744d192a8a" name="Target Painter (Primaries, 8&quot;)" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                <entry id="b22dda61-3007-3aa2-5342-0c744d192a8a" name="Target Painter (Primaries, 8&quot;)" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false" page="0">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
@@ -3131,7 +3131,7 @@
           <profiles>
             <profile id="371c7ef0-9b7f-bcbe-153a-b6f63c9374dd" profileTypeId="e6f24835-9239-a214-a96b-bebc0e76892d" name="RC Fighter" hidden="false" page="0">
               <characteristics>
-                <characteristic characteristicId="9f32af11-22cb-6b5a-7012-e9efec14c90d" name="MV" value="14&quot;"/>
+                <characteristic characteristicId="9f32af11-22cb-6b5a-7012-e9efec14c90d" name="MV" value="16&quot;"/>
                 <characteristic characteristicId="a881cd63-0a07-1d42-d5d4-ed4d54c662bd" name="AD" value="-"/>
                 <characteristic characteristicId="4983fc1a-4e24-4646-bd39-384d2271c197" name="AA" value="2"/>
                 <characteristic characteristicId="c7cee3aa-e6fb-dee6-5146-5117a69eb14c" name="DR" value="2"/>
@@ -3140,7 +3140,11 @@
               <modifiers/>
             </profile>
           </profiles>
-          <links/>
+          <links>
+            <link id="1d689a37-a5e3-b7dc-342c-252ee40027ef" targetId="407ae177-e088-c926-00d4-d8580e1facd9" linkType="rule">
+              <modifiers/>
+            </link>
+          </links>
         </entry>
         <entry id="ad608365-1df2-1f56-d5d2-d67d645ebfff" name="RC Torpedo Bomber" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="1" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries>
@@ -3243,11 +3247,7 @@
       <modifiers/>
       <rules/>
       <profiles/>
-      <links>
-        <link id="66a6207a-5494-bd3c-e0d5-634e061f2f43" targetId="407ae177-e088-c926-00d4-d8580e1facd9" linkType="rule">
-          <modifiers/>
-        </link>
-      </links>
+      <links/>
     </entry>
     <entry id="da314709-8b1d-ae1c-8fbb-a3cde3d744e1" name="Rostov Class Destroyer" points="0.0" categoryId="fdf35b4a-4c7e-9453-df50-c226441a6cf8" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries>
