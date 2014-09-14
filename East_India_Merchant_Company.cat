@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4d723016-628b-707e-31d5-8ef7a16b8de7" revision="2" gameSystemId="dea5da1e-8b51-b068-a829-a7b0a88b17d4" gameSystemRevision="6" battleScribeVersion="1.14b" name="East India Trading Company" authorName="Josiah McMillan" authorContact="battlescribe@omts.org.nz" authorUrl="http://www.omts.org.nz" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4d723016-628b-707e-31d5-8ef7a16b8de7" revision="3" gameSystemId="dea5da1e-8b51-b068-a829-a7b0a88b17d4" gameSystemRevision="6" battleScribeVersion="1.14b" name="East India Trading Company" authorName="Josiah McMillan" authorContact="battlescribe@omts.org.nz" authorUrl="http://www.omts.org.nz" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a87e557d-53a2-1813-c967-27c708c6ae31" name="Athea Class Battleship" points="145.0" categoryId="d5ba74a7-9dab-51a4-fd40-2083fe2c3f1d" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries>
@@ -144,7 +144,7 @@
         </link>
       </links>
     </entry>
-    <entry id="1e3d9567-e1f6-a0c4-5e26-93e35b3c89fa" name="Banks Class Escort" points="0.0" categoryId="fdf35b4a-4c7e-9453-df50-c226441a6cf8" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
+    <entry id="1e3d9567-e1f6-a0c4-5e26-93e35b3c89fa" name="Attached Banks Escort" points="0.0" categoryId="fdf35b4a-4c7e-9453-df50-c226441a6cf8" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="0" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
       <entries>
         <entry id="c404e722-736a-e569-3379-6dc32c0bfd02" name="Banks" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries>
@@ -203,6 +203,10 @@
           <conditions>
             <condition parentId="roster" childId="7cbd4ae9-13f2-1129-5688-8d92bdaeeed3" field="selections" type="at least" value="1.0"/>
           </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="maxInRoster" value="1.0" repeat="true" numRepeats="1" incrementParentId="roster" incrementChildId="7cbd4ae9-13f2-1129-5688-8d92bdaeeed3" incrementField="selections" incrementValue="1.0">
+          <conditions/>
           <conditionGroups/>
         </modifier>
       </modifiers>
