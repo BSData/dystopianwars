@@ -9,7 +9,11 @@
           <modifiers/>
           <rules/>
           <profiles/>
-          <links/>
+          <links>
+            <link id="8824b986-d930-a94d-3029-e4c40dd9a49b" targetId="12625ff6-ac40-2eb6-61a1-33ceda58451d" linkType="rule">
+              <modifiers/>
+            </link>
+          </links>
         </entry>
         <entry id="1010b3f3-1cdb-d3e4-9de5-c589a1af0f08" name="Hull Breaker (Boarding, +D3)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -17,7 +21,11 @@
           <modifiers/>
           <rules/>
           <profiles/>
-          <links/>
+          <links>
+            <link id="ee7a5ea8-dcc1-59d0-f66e-667c9ed84734" targetId="22c2f513-de4a-fc56-dde0-b233be3029d7" linkType="rule">
+              <modifiers/>
+            </link>
+          </links>
         </entry>
         <entry id="742b692d-970b-4296-ccf2-2f3797a70911" name="Inventive Scientists" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -33,7 +41,11 @@
           <modifiers/>
           <rules/>
           <profiles/>
-          <links/>
+          <links>
+            <link id="28adc480-a874-b1a3-fca6-cea4bd11e7a0" targetId="01196bdb-3964-46ca-9670-ef6200fbab70" linkType="rule">
+              <modifiers/>
+            </link>
+          </links>
         </entry>
         <entry id="e76d6e56-9d19-1f38-8086-09b749eff643" name="Internal Disruption (8&quot;)" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -5534,6 +5546,84 @@ Portal, facing a random direction (use the Random Determination Template) and ma
     <rule id="b415ded7-6863-eae7-2293-c8012f5f60dc" name="Time Flow Generator" hidden="false" page="0">
       <description>The Time Flow Generator may be activated during the Consolidation Step of the Command Segment of the Model’s Activiation. Place a Large Effect Template with the listed Range” of the Model Activating the Generator. All Models regardless of Height Level that make contact with the Template will have their Maximum MV increased or
 decreased by D3+1” with the player Activating the Generator deciding. The effect of this Generator lasts until the Consolidation Step of the End Phase at which point the Template is removed.</description>
+      <modifiers/>
+    </rule>
+    <rule id="12625ff6-ac40-2eb6-61a1-33ceda58451d" name="Crushing Impact (Weapon/Action)" hidden="false">
+      <description>Weapons or Actions with this MAR only use the Target’s DR when determining Damage.
+If the number of hits taken by a Model equals or exceeds its DR, the Model is considered to have suffered a Critical Hit. If the number of hits is DOUBLE the DR the model is considered to have suffered TWO Critical Hits, and so on.</description>
+      <modifiers/>
+    </rule>
+    <rule id="b04dc5bd-4318-7dc8-a30b-39abde1ebfb9" name="Difficult Target" hidden="false">
+      <description>Capital Models suffer a -2 To Hit modifier when targeting this Model with a Targeted Attacks.</description>
+      <modifiers/>
+    </rule>
+    <rule id="711e10e2-9237-5f85-5757-d2f971022c63" name="Elusive Target" hidden="false">
+      <description>Non-Capital Models suffer a -1 To Hit modifier when targeting this Model with Targeted Attacks.</description>
+      <modifiers/>
+    </rule>
+    <rule id="508a6cd1-d739-88ed-bfff-301a20dab84b" name="Fuel Reserves" hidden="false" page="0">
+      <description>If this Model suffers a Critical Hit roll 1D6. On a 5 or 6 place a Raging Fire Marker on the Model.</description>
+      <modifiers/>
+    </rule>
+    <rule id="22c2f513-de4a-fc56-dde0-b233be3029d7" name="Hull Breaker (Weapon/Action, Value)" hidden="false">
+      <description>If this Model performs the Action or an Attack using the Weapon listed in the bracket and causes a Critical Hit on its target, the target loses additional HP equal to the Value listed in the bracket as well as suffering the full effect of the Critical Hit.</description>
+      <modifiers/>
+    </rule>
+    <rule id="43e3ee3a-7c5c-06e6-046d-db5f1740e7fc" name="Hunter (Height Levels, Weapons, +Modifier)" hidden="false" page="0">
+      <description>Coherency MAR: This Model gains a positive To Hit Modifier to its AD when using the Weapon against a Target Model that occupies the Height Level or Band listed in the bracket.</description>
+      <modifiers/>
+    </rule>
+    <rule id="fc2ec83a-4e7a-4ac5-1b3f-297ff8527892" name="Long Range Assault" hidden="false">
+      <description>This Model can initiate a Boarding Action against a target within 8”. In addition, this Model may initiate a Boarding Action at a target that is TWO Height Levels away, rather than just ONE</description>
+      <modifiers/>
+    </rule>
+    <rule id="3751b0c8-4cd8-7431-f58c-d76d3baf2719" name="Minefield (Number, AD)" hidden="false">
+      <description>A player with this Model in their Force can also place a number of Mines with the AD listed in the bracket. Each Mine MUST be Deployed within 8” of the centre line of the Tabletop during the Model’s Deployment. The Mine Markers CANNOT be placed within 4” of a Model or other Mine Marker and may not be Linked.</description>
+      <modifiers/>
+    </rule>
+    <rule id="24d7a142-c30c-fc75-cb82-a81c976e4d92" name="Redoutable (Weapon)" hidden="false" page="0">
+      <description>This Model only reduces its AD by 1 for every 2 HP of Damage taken when using the Weapon/Statistic listed in the bracket. If NO Weapon/Statistic is listed, the Redoubtable MAR is applied to ALL weapons and statistics on the Model where relevant.</description>
+      <modifiers/>
+    </rule>
+    <rule id="8f6adb59-f0ac-748e-fb3c-879cd4a6eb5f" name="Rugged Construction (Value)" hidden="false" page="0">
+      <description>Armour MAR: Any Targeted Attack or Counter Attack against a Model with the Rugged
+Construction MAR must reduce the number of AD to be rolled by the Value listed in the bracket. These AD are removed from the Total Attack Dice Pool.</description>
+      <modifiers/>
+    </rule>
+    <rule id="00c1bcfa-1ce0-d748-06da-a7e27205301e" name="Security Posts (Value)" hidden="false" page="0">
+      <description>If this Model is the target of an Aggressive Boarding Action, it ignores the number of hits, noted in the bracket, scored against it during the CQB step. This MAR has no effect during a Robot Boarding Action.</description>
+      <modifiers/>
+    </rule>
+    <rule id="d12aa27e-2bc2-09e5-cebb-b054a0c9018f" name="Small Target" hidden="false" page="0">
+      <description>Capital Models suffer a -1 To Hit modifier when targeting this model with Targeted Attacks.</description>
+      <modifiers/>
+    </rule>
+    <rule id="e8327a33-f64d-12c9-ec31-b6158270c9b3" name="Spotter (type)" hidden="false" page="0">
+      <description>During the Movement Consolidation Step, this Model may make a single Spotting Action against a Capital Model or Fortification, within 32” and in Line of Sight. To perform a Spotting Action roll a Basic D6:
+Inept requires a 6 to Spot; 
+Regular requires a 4, 5 or 6 to Spot 
+and Expert will spot on 2+.
+On a successful Spotting Action, the Target Model is Spotted and gains a Spotted! Game Marker. The Target Model retains the Spotted! Game Marker until the Consolidation Step of the current Game Turn’s End Phase.</description>
+      <modifiers/>
+    </rule>
+    <rule id="2f9a5c5b-2635-9c3b-4498-4236778ce149" name="Strategic Value (VP)" hidden="false" page="0">
+      <description>If this Model is Lost, the opposing player adds an additional number of Victory Points to their Total equal to the Value listed in the bracket. This modification to the VP score is done AFTER a Model’s VP are doubled or halved by Prize or Salvage conditions.</description>
+      <modifiers/>
+    </rule>
+    <rule id="97d5c211-238d-1990-e297-e7340bbd9b77" name="Sustained Assault (Value)" hidden="false">
+      <description>If this Model initiates an Aggressive Boarding Action, during the CQB Step of the Boarding Segment, the Model’s Assault Group can re-roll any of the INITIAL AD up to the Value listed in the bracket. The second roll MUST be accepted.</description>
+      <modifiers/>
+    </rule>
+    <rule id="bf93f0f2-e036-9019-45a4-ebe83d23fcec" name="Sustained Fire (Weapon, Value)" hidden="false">
+      <description>If this Model makes an Attack using the Weapon listed in the bracket, it can re-roll any INITIAL AD up to the value listed in the bracket. The second roll MUST be accepted. Multiple instances of Sustained Fire in a Squadron do not have a cumulative effect to the AD totals used in any single Attack</description>
+      <modifiers/>
+    </rule>
+    <rule id="04159c6c-4693-aec4-11e7-1345a63af0d0" name="Troop Reinforcment" hidden="false">
+      <description>This Model may initiate a Re-Crew Boarding Action against any friendly Non-Robot Model in the same Force.</description>
+      <modifiers/>
+    </rule>
+    <rule id="2881dbd0-7722-e877-4e17-361d14914ca2" name="Inventive Scientists" hidden="false">
+      <description>If this Model uses a Generator, you can re-roll ONE of the INITIAL D6 rolled, but must accept the new result. If a 1 is rolled as a result of using this MAR, this Model gains a Raging Fire Game Marker, which can be repaired as normal during the End Phase.</description>
       <modifiers/>
     </rule>
   </sharedRules>
