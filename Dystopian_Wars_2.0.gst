@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="dea5da1e-8b51-b068-a829-a7b0a88b17d4" revision="7" battleScribeVersion="1.14b" name="Dystopian Wars 2.0" authorName="Josiah McMillan" authorContact="battlescribe@omts.org.nz" authorUrl="http://www.omts.org.nz" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<?xml version="1.0" encoding="UTF-8"?><gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="dea5da1e-8b51-b068-a829-a7b0a88b17d4" revision="7" battleScribeVersion="1.15" name="Dystopian Wars 2.0" authorName="Josiah McMillan" authorContact="battlescribe@omts.org.nz" authorUrl="http://www.omts.org.nz">
   <forceTypes>
     <forceType id="cea5441f-f4ba-68bd-696c-39a69e0d2a4a" name="Open" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
       <categories>

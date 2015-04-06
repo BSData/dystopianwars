@@ -1,6 +1,78 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="dd700b70-49c8-4d90-b786-65aff05508ca" revision="4" gameSystemId="dea5da1e-8b51-b068-a829-a7b0a88b17d4" gameSystemRevision="6" battleScribeVersion="1.14b" name="The Black Wolf" authorName="Josiah McMillan" authorContact="battlescribe@omts.org.nz" authorUrl="http://www.omts.org.nz" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="dd700b70-49c8-4d90-b786-65aff05508ca" revision="5" gameSystemId="dea5da1e-8b51-b068-a829-a7b0a88b17d4" gameSystemRevision="6" battleScribeVersion="1.15" name="The Black Wolf" authorName="Josiah McMillan" authorContact="battlescribe@omts.org.nz" authorUrl="http://www.omts.org.nz" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
+    <entry id="6c1f4ea4-834d-9b67-f105-1dfb8dfd4ba2" name="Attached Fury" points="0.0" categoryId="fdf35b4a-4c7e-9453-df50-c226441a6cf8" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="0" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
+      <entries>
+        <entry id="214d3b37-2fe0-7471-bde6-840eb631ca03" name="Fury" points="25.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+          <entries>
+            <entry id="efe53b76-b20b-475b-8831-6dcf1c2b39ab" name="Attachment (BW, Medium Naval, 3)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="d26497d3-20f0-b8c5-8cac-82f3bf3cabaa" name="Small Target" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="7651c90e-2684-1764-82a0-fc7bb11b751f" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Fury Fore Guns (S)" hidden="false" page="0">
+              <characteristics>
+                <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="5"/>
+                <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="4"/>
+                <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="-"/>
+                <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="-"/>
+                <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="Fixed Fore"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+            <profile id="e15c3da3-6bec-ea5b-6ea1-2b2e05e7070a" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Fury" hidden="false" page="0">
+              <characteristics>
+                <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="3"/>
+                <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="5"/>
+                <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="12&quot; (2&quot; min)"/>
+                <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="2"/>
+                <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="2"/>
+                <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="1"/>
+                <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="1"/>
+                <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="1"/>
+                <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Small Naval"/>
+                <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="Small"/>
+                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Reckless"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="98a93fe1-1d68-ac92-3152-2fcdb74df0ef" field="selections" type="at least" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="maxInRoster" value="1.0" repeat="true" numRepeats="1" incrementParentId="roster" incrementChildId="98a93fe1-1d68-ac92-3152-2fcdb74df0ef" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
     <entry id="f9edcb83-cc04-8e9b-d713-df44e447356b" name="BW SAS" points="0.0" categoryId="3722544c-21bf-627f-e093-4c3b52ddb5ce" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="1" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries>
         <entry id="ffd03dc4-adca-cbb2-1aeb-2742dad43a27" name="BW Recon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="1" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
@@ -350,78 +422,6 @@
           <modifiers/>
         </profile>
       </profiles>
-      <links/>
-    </entry>
-    <entry id="6c1f4ea4-834d-9b67-f105-1dfb8dfd4ba2" name="Attached Fury" points="0.0" categoryId="fdf35b4a-4c7e-9453-df50-c226441a6cf8" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="0" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
-      <entries>
-        <entry id="214d3b37-2fe0-7471-bde6-840eb631ca03" name="Fury" points="25.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-          <entries>
-            <entry id="efe53b76-b20b-475b-8831-6dcf1c2b39ab" name="Attachment (BW, Medium Naval, 3)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="d26497d3-20f0-b8c5-8cac-82f3bf3cabaa" name="Small Target" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles>
-            <profile id="7651c90e-2684-1764-82a0-fc7bb11b751f" profileTypeId="28d3b074-45c4-5c92-58a6-b92f6b242b4f" name="Fury Fore Guns (S)" hidden="false" page="0">
-              <characteristics>
-                <characteristic characteristicId="f3391043-6ab5-a123-0426-00755af327cc" name="1" value="5"/>
-                <characteristic characteristicId="347da438-725c-e23c-b02d-7cd0d4d32324" name="2" value="4"/>
-                <characteristic characteristicId="24ec4650-4d9d-afb5-f960-3a16fed14727" name="3" value="-"/>
-                <characteristic characteristicId="3183d18a-895e-8c15-5381-c33fb31158d5" name="4" value="-"/>
-                <characteristic characteristicId="06a664bd-1a2c-bc3a-1407-d38618835877" name="Arc" value="Fixed Fore"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-            <profile id="e15c3da3-6bec-ea5b-6ea1-2b2e05e7070a" profileTypeId="bc0a2ff0-f138-cfc5-dd1e-edb498265efb" name="Fury" hidden="false" page="0">
-              <characteristics>
-                <characteristic characteristicId="74e0740c-a580-19f9-4d3d-a49ebaa0ef97" name="DR" value="3"/>
-                <characteristic characteristicId="6cecf2d1-c38b-7c32-980f-928bfcfd72dd" name="CR" value="5"/>
-                <characteristic characteristicId="42e40079-b4ea-86b3-13c3-781234be5776" name="MV" value="12&quot; (2&quot; min)"/>
-                <characteristic characteristicId="b7ed9b8e-0f0f-58e5-fcf4-0a6bdc956889" name="HP" value="2"/>
-                <characteristic characteristicId="d6b8e359-4e9e-c9e0-383b-36965f458d1c" name="AP" value="2"/>
-                <characteristic characteristicId="6bd13e0e-522a-f8ec-e56c-c8d22a736bfb" name="AA" value="1"/>
-                <characteristic characteristicId="6007a7be-354f-4f15-7571-114f4a501d2d" name="CC" value="1"/>
-                <characteristic characteristicId="c5fbe310-6d37-3ab2-33cc-5f248f3051df" name="IR" value="1"/>
-                <characteristic characteristicId="abd884ba-477b-2dff-74c2-6a907e019bdb" name="Class" value="Small Naval"/>
-                <characteristic characteristicId="022912c0-2c6c-a9b1-d91f-07798ca1bd83" name="Turn Arc" value="Small"/>
-                <characteristic characteristicId="9fa5ecaf-6733-fc53-1ba1-264a272aae04" name="Crew Type" value="Reckless"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
-        </entry>
-      </entries>
-      <entryGroups/>
-      <modifiers>
-        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="98a93fe1-1d68-ac92-3152-2fcdb74df0ef" field="selections" type="at least" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-        <modifier type="increment" field="maxInRoster" value="1.0" repeat="true" numRepeats="1" incrementParentId="roster" incrementChildId="98a93fe1-1d68-ac92-3152-2fcdb74df0ef" incrementField="selections" incrementValue="1.0">
-          <conditions/>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <rules/>
-      <profiles/>
       <links/>
     </entry>
     <entry id="2fedab4e-f887-e10f-8e6b-91458aea5565" name="Fury Class Frigate" points="0.0" categoryId="fdf35b4a-4c7e-9453-df50-c226441a6cf8" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
@@ -4552,7 +4552,7 @@ If it already has Strategic Value (Value) then increase the (Value) by 100</desc
               </profiles>
               <links/>
             </entry>
-            <entry id="b964edd6-5985-8dcb-af05-70c3ee56f2fb" name="Main Turret" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+            <entry id="b964edd6-5985-8dcb-af05-70c3ee56f2fb" name="Main Turret" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries>
                 <entry id="1ee37d2e-1c88-0fac-5079-fbf589901c0b" name="Devastating Munitions (Main Turret)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
