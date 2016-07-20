@@ -4,12 +4,10 @@ Dystopian Wars 2.0
 ####Contents####
 
 * [Overview][]
-* [Still to Finish] []
 * [Links][]
 
 
 [Overview]: #overview
-[Still to Finish]: #Still to Finish
 [Links]: #links
 
 
@@ -20,7 +18,6 @@ __What's this?__
 BSData organisation created this project. It's GitHub repository of datafiles. Maintained by community, in no way endorsed by BattleScribe. If you want to develop - cool! We need you! Take a look at [Getting Started wiki][]
 
 
-##Still to Finish##
 __Still to Finish__
 
 The following is still to be added to the files and will be done in the coming months;
