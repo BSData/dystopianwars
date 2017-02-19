@@ -1,4 +1,4 @@
-Dystopian Wars 2.0
+Dystopian Wars 2.0 - Still usable in BS 1.15 - 
 ================
 
 ####Contents####
@@ -20,11 +20,7 @@ BSData organisation created this project. It's GitHub repository of datafiles. M
 
 __Still to Finish__
 
-The following is still to be added to the files and will be done in the coming months;
-* MAR Descriptions
-* Generator Descriptions
-* Munitions Descriptions
-* And any new waves released each month
+Since BS 2.0 has been released I started rewriting the entire lot, after getting 2 fleets finished on my end Spartan announced the 2.5 release of the Rules with their kickstarter. And working varying shifts each week I would rather wait till the 2.5 book releases and update the entire game to it's latest version then rather than upgrading to work perfectly with BS2.0 then rewriting the whole thing again with the new Game Rules releasing in less than a month
 
 __Okay, nice project. Is it actually working?__ _I just want those files..._
 
