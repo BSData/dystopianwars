@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="1242-c30b-419f-8229" name="Dystopian Wars 3.0" revision="1" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="1242-c30b-419f-8229" name="Dystopian Wars 3.0" revision="2" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+  <comment>Revision 1.01: added all ORBAT Publication</comment>
   <publications>
-    <publication id="7f09-e243-2307-78d0" name="Rolebook"/>
+    <publication id="7f09-e243-2307-78d0" name="The Empire ORBAT"/>
     <publication id="e265-8c7f-a4b2-a48e" name="Commonwhealth ORBAT"/>
+    <publication id="908d-6feb-2e9e-843b" name="Covenant of the Enlightened ORBAT"/>
+    <publication id="33cf-b4a6-bff0-0d70" name="The Imperium ORBAT"/>
+    <publication id="129d-da97-caec-1ddd" name="The Alliance ORBAT"/>
+    <publication id="dbca-8d57-b848-457e" name="The Crown ORBAT"/>
   </publications>
   <costTypes>
     <costType id="7c9b-6b09-b5ac-2249" name="Points" defaultCostLimit="-1.0" hidden="false"/>
