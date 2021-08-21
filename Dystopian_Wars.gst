@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="1242-c30b-419f-8229" name="Dystopian Wars 3.0" revision="3" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="1242-c30b-419f-8229" name="Dystopian Wars 3.0" revision="5" battleScribeVersion="2.03" authorName="Riccardo Sipone / Ruslan Zakirov" authorContact="siponeric@hotmail.com /
+ruslan.zakirov.2000@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>Revision 1.01: added all ORBAT Publication
-Revision 1.02: managed correctlly Publication, corrected Command Reroll bonus</comment>
+Revision 1.02: managed correctlly Publication, corrected Command Reroll bonus
+Revision 1.03: update common weapon charatteristic after new Orbat pubbication</comment>
+  <readme>The Dystopian Wars datafile are editied and mantained with Ruslan Zakirov, that with patience has start to managed all profile and debugging.  
+</readme>
   <publications>
     <publication id="7f09-e243-2307-78d0" name="Dystopian Rulebook"/>
     <publication id="e265-8c7f-a4b2-a48e" name="Commonwhealth ORBAT"/>
@@ -10,6 +14,9 @@ Revision 1.02: managed correctlly Publication, corrected Command Reroll bonus</c
     <publication id="129d-da97-caec-1ddd" name="The Alliance ORBAT"/>
     <publication id="dbca-8d57-b848-457e" name="The Crown ORBAT"/>
     <publication id="5a03-1c6f-8fc8-2be1" name="Common Rules"/>
+    <publication id="7b2b-0f56-3962-5ec1" name="The Empire ORBAT"/>
+    <publication id="d854-a2d6-3d52-44c4" name="The Sultanate ORBAT"/>
+    <publication id="e6a1-85d3-8979-7880" name="The Union ORBAT"/>
   </publications>
   <costTypes>
     <costType id="7c9b-6b09-b5ac-2249" name="Points" defaultCostLimit="-1.0" hidden="false"/>
@@ -17,15 +24,15 @@ Revision 1.02: managed correctlly Publication, corrected Command Reroll bonus</c
   <profileTypes>
     <profileType id="4cb0-515e-e6e0-153a" name="Standard Model    ">
       <characteristicTypes>
-        <characteristicType id="9e4a-2ba1-f396-74b9" name="Speed"/>
-        <characteristicType id="ff43-364b-8da9-bce9" name="Hull"/>
         <characteristicType id="dbde-866b-70b0-d5e9" name="Mass"/>
-        <characteristicType id="c141-3bcf-41f5-6c24" name="Citadel"/>
+        <characteristicType id="9e4a-2ba1-f396-74b9" name="Speed"/>
+        <characteristicType id="b9f6-2f65-e8c8-b906" name="Turn Limit"/>
         <characteristicType id="29a3-02bb-e7f3-0ddb" name="Armour"/>
-        <characteristicType id="b9f6-2f65-e8c8-b906" name="Turn Linit"/>
+        <characteristicType id="c141-3bcf-41f5-6c24" name="Citadel"/>
+        <characteristicType id="6428-9828-bb2e-f923" name="ADV"/>
+        <characteristicType id="b001-8ebf-b7fe-74da" name="SDV"/>
         <characteristicType id="4c54-804a-8993-7325" name="Fray"/>
-        <characteristicType id="6428-9828-bb2e-f923" name="Aerial Defense"/>
-        <characteristicType id="b001-8ebf-b7fe-74da" name="Subnerded Defence"/>
+        <characteristicType id="ff43-364b-8da9-bce9" name="Hull"/>
       </characteristicTypes>
     </profileType>
     <profileType id="6c9b-5228-c790-9c90" name="Weapon">
@@ -44,7 +51,7 @@ Revision 1.02: managed correctlly Publication, corrected Command Reroll bonus</c
         <characteristicType id="069f-2943-24c0-7448" name="Mass"/>
         <characteristicType id="52ea-47a6-8066-02ae" name="Citadel"/>
         <characteristicType id="ec04-1e4b-e5ee-2d65" name="Armour"/>
-        <characteristicType id="6a2b-666e-81f1-1b40" name="Turn Linit"/>
+        <characteristicType id="6a2b-666e-81f1-1b40" name="Turn Limit"/>
         <characteristicType id="b5cb-f42f-459e-1566" name="Fray"/>
         <characteristicType id="e108-6ed3-80ad-1c9d" name="Aerial Defense"/>
         <characteristicType id="4c28-f25b-4c5d-0eb8" name="Subnerded Defence"/>
@@ -75,8 +82,22 @@ Revision 1.02: managed correctlly Publication, corrected Command Reroll bonus</c
     <categoryEntry id="4c92-14f3-4e29-84c0" name="Hunter Killer Submarine" hidden="false"/>
     <categoryEntry id="ebb4-f3b0-c051-b94e" name="Vanguard Cruiser" hidden="false"/>
     <categoryEntry id="d216-bc05-71f1-0fb4" name="Unit" publicationId="7f09-e243-2307-78d0" page="" hidden="false"/>
-    <categoryEntry id="11d2-f561-163c-722c" name="Aereal" publicationId="7f09-e243-2307-78d0" hidden="false"/>
+    <categoryEntry id="11d2-f561-163c-722c" name="Aerial" publicationId="7f09-e243-2307-78d0" hidden="false"/>
     <categoryEntry id="25b9-7f26-cbd9-e68f" name="Generator" hidden="false"/>
+    <categoryEntry id="4307-fa1c-3d84-dba5" name="Battlecruiser" hidden="false"/>
+    <categoryEntry id="1fe5-12b2-2e30-7802" name="Heavy Battleship" publicationId="7f09-e243-2307-78d0" hidden="false"/>
+    <categoryEntry id="b50a-9409-1fb4-0491" name="Assault Carrier" publicationId="7f09-e243-2307-78d0" hidden="false"/>
+    <categoryEntry id="32fd-997a-72b6-f5cb" name="Hunter Submarine" hidden="false"/>
+    <categoryEntry id="df3f-7b38-7940-f11e" name="Submerged Unit" hidden="false"/>
+    <categoryEntry id="2ab9-9b85-528f-d800" name="Attack Submarine" hidden="false"/>
+    <categoryEntry id="75af-d360-cca8-6162" name="Grand Submarine" hidden="false"/>
+    <categoryEntry id="c8e2-2661-07e3-b75a" name="Assault Cruiser" hidden="false"/>
+    <categoryEntry id="9566-ae5c-ce6d-637b" name="Bombardment Cruiser" hidden="false"/>
+    <categoryEntry id="ec0f-66dd-f28e-e778" name="Strike Cruiser" hidden="false"/>
+    <categoryEntry id="7b4f-81a5-4fc3-6856" name="Elite Crew" hidden="false"/>
+    <categoryEntry id="022b-08af-c874-e3f1" name="Aerial Unit" hidden="false"/>
+    <categoryEntry id="2887-0c9e-2349-2859" name="Heavy Destroyer" hidden="false"/>
+    <categoryEntry id="333d-eff4-a9bd-7666" name="Logistics Cruiser" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="44e8-1fde-db6e-20f6" name="Battlefleet (generic don&apos;t use)" publicationId="7f09-e243-2307-78d0" hidden="false">
@@ -163,9 +184,31 @@ Revision 1.02: managed correctlly Publication, corrected Command Reroll bonus</c
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="aae0-e2ef-7700-4fae" name="Corvette" publicationId="7f09-e243-2307-78d0" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2311-93d9-3152-06bb" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="bae6-17b1-0aa4-1a94" name="Corvette" hidden="false" targetId="aec8-fcde-7862-1b9d" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9cc1-48f6-f9ea-943f" name="Escort" publicationId="7f09-e243-2307-78d0" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83c7-82d0-3723-c934" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="70f7-8385-8849-7986" name="Escort" hidden="false" targetId="da59-69f4-e562-8990" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
-    <rule id="c475-4c4f-de22-9080" name="Aereal" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
+    <rule id="c475-4c4f-de22-9080" name="Aerial" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
       <description>Attacks made with this Quality cannot usually be used against Initial Targets that are  Submerged Units (unless the Attack also has the Submerged Quality). The Initial Target may use Aerial Defences against Attacks from this weapon.</description>
     </rule>
     <rule id="6d56-fa67-1d6d-022b" name="Arc" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
@@ -190,7 +233,7 @@ to the Attacker completely blocked can still be damaged by the blast.</descripti
     <rule id="d3ac-5484-ad1a-0c87" name="Extreme Range" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
       <description>Attacks made with this quality treat the Long Range Band as 20” - 40”.</description>
     </rule>
-    <rule id="ee84-8367-93d5-8d3f" name="Hazardous" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
+    <rule id="ee84-8367-93d5-8d3f" name="Hazard" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
       <description>Should the Initial Target suffer one or more Points of Damage in an Attack made by a  weapon with this quality it gains a Disorder Condition.</description>
     </rule>
     <rule id="5b8e-71d1-641d-73f9" name="High Velocity" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
@@ -251,10 +294,67 @@ arms fire close to the vessel. Any Hits or Heavy Hits by Enemy SRS Tokens agains
       <description>If this Battlefleet includes at least one Unit (in addition to the Flagship), the Player gains a Command Re-roll. Each Command Re-roll may be used once per game. It allows all the dice in the Player’s Action Dice Pool (regardless of results) to be re-rolled. You may not re-roll part of the Action Dice Pool or another Player’s Action Dice Pool using this rule, it must be all the dice and only in your own Dice Pool.</description>
     </rule>
     <rule id="112e-82cb-42a3-83d2" name="Pack Hunter" publicationId="7f09-e243-2307-78d0" hidden="false">
-      <description>This rule applies when the Unit numbers three or more Models. Each Model in the Unit gains +1 to its Attack and Assault Action Dice Pools if it contributes to the same Dice Pool as at least two other Models.</description>
+      <description>This rule applies while the Unit numbers three or more Models. The Unit gains and additional +2 to its Attack and Assault Action Dice Pools provided at least three models in the Unit contribute to that Dice Pool.</description>
     </rule>
-    <rule id="3084-616e-7ef2-e260" name="Supply Vessel" publicationId="33cf-b4a6-bff0-0d70" hidden="false">
+    <rule id="5eca-214c-5274-55db" name="Combat Air Patrol" hidden="false">
+      <description>Units with this rule may start the Encounter with their SRS Tokens on a Long Range Sortie. In the Operations Step of their Activation, these tokens may be stacked in base contact anywhere in the Play Area as normal for a Long Range Sortie. With longer than usual to react, enemy units double their ADV against the Attack Runs by Long Range Sorties in the first round. Combat Air Patrol does not apply to Special SRS Tokens.</description>
+    </rule>
+    <rule id="0d99-00ae-4c22-20b7" name="Giant Slayer" publicationId="129d-da97-caec-1ddd" hidden="false">
+      <description>Each Model in the Unit may re-roll Blank Results in Attacks against an Initial Target with a Mass of 3 or more.</description>
+    </rule>
+    <rule id="93e6-1c0e-ac6b-0fc8" name="Agile" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+      <description>Unless suffering from a Navigation Lock Critical Damage Marker, this Unit may make turns during Drift movement in the same way as it usually would during normal Movement.</description>
+    </rule>
+    <rule id="0b7c-6003-8433-2817" name="Maritime Patrol" hidden="false">
+      <description>Models with this rule may re-roll blank results when attacking Submerged Units provided the target has at least one friendly SRS unit within 5”.</description>
+    </rule>
+    <rule id="1ea8-5ef6-de30-f3ae" name="Temperamental Design" hidden="false">
+      <description>This Unit counts any Heavy Counter rolled as a Counter instead whilst making Repair Tests.</description>
+    </rule>
+    <rule id="f4aa-042e-34e5-1938" name="Unexpected Arrival" hidden="false">
+      <description>Emerging suddenly, this Unit appears to wreak havoc on the enemy. This Unit is always held in Reserve (see Operations for details). The player may re-roll the Action Die to determine the Reserve result. When it is available for deployment, it is placed at any point in the Play Area that is at least 3&quot; from the nearest terrain feature. The Model cannot be deployed under another Model.</description>
+    </rule>
+    <rule id="6381-3c0e-84c8-6b3b" name="Advanced Repair Facilities" publicationId="129d-da97-caec-1ddd" hidden="false">
+      <description>This Unit may add an additional Action Dice to its Repair Test. This is in addition to those given by the Model’s Mass. Furthermore, this bonus to the Action Dice Pool for Repair Tests may also be gained by any friendly Models within 10&quot; of a Model in this Unit.</description>
+    </rule>
+    <rule id="cfe8-adc4-4866-0bc8" name="Cloud Hunting" hidden="false">
+      <description>Models in this Unit gain +2 to Attack Dice Pools when shooting at Aerial Units.</description>
+    </rule>
+    <rule id="9ec9-dd04-5a42-6864" name="Focused Gunnery" hidden="false">
+      <description>If this unit declares all its Gunnery Attacks in the Shooting Step against a single Initial Target, it receives +2 to all Gunnery Action Dice Pools for the Activation.</description>
+    </rule>
+    <rule id="9111-7f5e-6eac-7cbe" name="Full Steam Ahead" publicationId="908d-6feb-2e9e-843b" hidden="false">
+      <description>his Unit may double its Drift during its Movement Step provided that it makes no turns.</description>
+    </rule>
+    <rule id="063a-3229-1f27-a3c2" name="Spotter" hidden="false">
+      <description>This Unit gains the Sustained quality to any weapons with the Extreme Range quality if the Initial Target is within 3” of a friendly SRS Token.</description>
+    </rule>
+    <rule id="482d-5802-96ca-bd80" name="Ignores Shield Generator" hidden="false">
+      <description>The weapon ignores shield generetor effect</description>
+    </rule>
+    <rule id="b48d-b4e0-19e8-d85a" name="Inspirational" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+      <description>Any friendly Unit (excluding this Unit) within 10&quot; may re-roll a single Action dice in their Activation.</description>
+    </rule>
+    <rule id="ecf0-d255-3339-4a1b" name="Disciplined" hidden="false">
+      <description>Models in this Unit ignore the effects of the Emergency Disorder Condition, though still count as having Disorder at that level.</description>
+    </rule>
+    <rule id="4f7a-f51a-a60e-e6ba" name="Elite Crew" hidden="false">
+      <description>While making or defending from an Assault, this Unit may re-roll Blank dice results.</description>
+    </rule>
+    <rule id="db6c-61a0-22a6-0d7a" name="Linear Dsh" hidden="false">
+      <description>This Unit gains +2 Speed during its Movement Step provided that it makes no turns.</description>
+    </rule>
+    <rule id="4028-cfc7-f428-5413" name="Aggressive Crew" hidden="false">
+      <description>While making an Assault, this Unit may re-roll Blank dice results.</description>
+    </rule>
+    <rule id="b23f-e421-17ec-862c" name="Supply Vessel" hidden="false">
       <description>Once per turn on their Activation, this Unit may look at the top card from their Victory and Valour Deck. They may discard the card or return it to the top of the deck.</description>
+    </rule>
+    <rule id="f721-8318-3875-0140" name="Vanguard" publicationId="908d-6feb-2e9e-843b" hidden="false">
+      <description>Starting with Player B, after both sides are deployed, each player may choose one of their units with the Vanguard rule and make a free Move of up to 5&quot;. This is not an Activation and does not have Drift or Turn Limit. Vanguard alternates between Players until all such units have been selected.</description>
+    </rule>
+    <rule id="1d20-a887-16ac-7f4c" name="Amphibious" hidden="false">
+      <description>The Unit can move across Land terrain at normal Speed. It has a Drift of zero when on Land.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -265,7 +365,7 @@ arms fire close to the vessel. Any Hits or Heavy Hits by Enemy SRS Tokens agains
         <characteristic name="Mass" typeId="069f-2943-24c0-7448"/>
         <characteristic name="Citadel" typeId="52ea-47a6-8066-02ae">+1</characteristic>
         <characteristic name="Armour" typeId="ec04-1e4b-e5ee-2d65"/>
-        <characteristic name="Turn Linit" typeId="6a2b-666e-81f1-1b40"/>
+        <characteristic name="Turn Limit" typeId="6a2b-666e-81f1-1b40"/>
         <characteristic name="Fray" typeId="b5cb-f42f-459e-1566"/>
         <characteristic name="Aerial Defense" typeId="e108-6ed3-80ad-1c9d"/>
         <characteristic name="Subnerded Defence" typeId="4c28-f25b-4c5d-0eb8"/>
@@ -280,7 +380,7 @@ arms fire close to the vessel. Any Hits or Heavy Hits by Enemy SRS Tokens agains
         <characteristic name="Mass" typeId="069f-2943-24c0-7448"/>
         <characteristic name="Citadel" typeId="52ea-47a6-8066-02ae"/>
         <characteristic name="Armour" typeId="ec04-1e4b-e5ee-2d65"/>
-        <characteristic name="Turn Linit" typeId="6a2b-666e-81f1-1b40"/>
+        <characteristic name="Turn Limit" typeId="6a2b-666e-81f1-1b40"/>
         <characteristic name="Fray" typeId="b5cb-f42f-459e-1566">+3</characteristic>
         <characteristic name="Aerial Defense" typeId="e108-6ed3-80ad-1c9d"/>
         <characteristic name="Subnerded Defence" typeId="4c28-f25b-4c5d-0eb8"/>
@@ -290,7 +390,7 @@ arms fire close to the vessel. Any Hits or Heavy Hits by Enemy SRS Tokens agains
     <profile id="dce3-33ce-753a-8647" name="Shield generator" publicationId="7f09-e243-2307-78d0" page="" hidden="false" typeId="0397-3287-82a2-e086" typeName="Upgrade Generator"/>
     <profile id="0da4-5ad0-1f5c-dd3e" name="Heavy Gun Battery" publicationId="5a03-1c6f-8fc8-2be1" page="" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">6(3) / 4(2)</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">8(4) / 5(2)</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">10(5) / 6(3)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">6(3) / 4(2)</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery</characteristic>
@@ -325,7 +425,7 @@ arms fire close to the vessel. Any Hits or Heavy Hits by Enemy SRS Tokens agains
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">7(2) / 5(-)</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">7(5) / 5(3)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">7(5) / 5(3)</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Submerged, Torpedo</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Submerged, Torpedo, Extreme Range</characteristic>
       </characteristics>
     </profile>
     <profile id="f2a2-257c-e91a-1f66" name="Heavy Prow Ram" publicationId="e265-8c7f-a4b2-a48e" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
@@ -352,20 +452,64 @@ arms fire close to the vessel. Any Hits or Heavy Hits by Enemy SRS Tokens agains
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial</characteristic>
       </characteristics>
     </profile>
-    <profile id="561b-526b-dc19-585d" name="Heavy Torpedo Salvo" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="561b-526b-dc19-585d" name="Light Torpedo Salvo" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">12(4) / 8(-)</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">12(7) / 8(5)</characteristic>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">12(7) / 8(5)</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Submerged, Torpedo</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">5(2) / 3(-)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">5(3) / 4(2)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">4(3) / 2(2)</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Submerged, Torpedo, Extreme Range</characteristic>
       </characteristics>
     </profile>
     <profile id="5bce-67f7-d1f7-d682" name="Rocket Battery" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">7(2) / 4(-)</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">7(3) / 4(2)</characteristic>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">7(3) / 4(2)</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">6(2) / 4(-)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">6(3) / 4(2)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">6(3) / 4(2)</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="345c-11ed-780f-4059" name="Heavy Torpedo Salvo" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">12(4) / 8(-)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">12(7) / 8(5)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">12(7) / 8(5)</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Submerged, Torpedo, Extreme Range</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ae52-9f38-6808-37dd" name="SRS" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="6c8c-519d-ebdd-9439" typeName="Upgrade SRS">
+      <characteristics>
+        <characteristic name="Capacity" typeId="38e6-209c-1587-2cd0">8/4</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bc55-e501-b84f-23ff" name="Special SRS" publicationId="e265-8c7f-a4b2-a48e" hidden="false" typeId="6c8c-519d-ebdd-9439" typeName="Upgrade SRS">
+      <characteristics>
+        <characteristic name="Capacity" typeId="38e6-209c-1587-2cd0">3/2</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="da59-69f4-e562-8990" name="Escort" publicationId="7f09-e243-2307-78d0" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
+      <characteristics>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">-</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">-</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">-</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">3</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">-</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">+1</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">+1</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325"/>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">1</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="aec8-fcde-7862-1b9d" name="Corvette" publicationId="7f09-e243-2307-78d0" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
+      <characteristics>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">-</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">-</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">-</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">3</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">-</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">+1</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">+1</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">+1</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">1</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
