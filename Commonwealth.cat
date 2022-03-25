@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6719-1f83-56dd-91fe" name="Commonwealth v1.06" revision="5" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <comment>Review 1.02.01: correct Rurik and Oleg unit max size
+<catalogue id="6719-1f83-56dd-91fe" name="Commonwealth v1.06" revision="7" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>Review 1.02.01: correct Rurik and Oleg unit max size
 Review 1.03.00: add new unit and new profile from ORBAT 1.03, fixed Battlefleet bonus managment
 Review 1.04.a0: review after the v1.04a
 Review 1.05.00: review after the v1.05
-Review 1.06.00: review after the v1.06</comment>
+Review 1.06.00: review after the v1.06
+Review 1.06.01: small correction based on ORBAT v1.06</readme>
   <categoryEntries>
     <categoryEntry id="c7ca-90d2-5214-ece9" name="Commonwealth" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
     <categoryEntry id="43a2-7e77-ff29-fb5c" name="Russian" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
@@ -33,42 +34,30 @@ Review 1.06.00: review after the v1.06</comment>
     <categoryEntry id="2cae-ee19-07e0-4e12" name="Pravda Class" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
     <categoryEntry id="5625-c43e-31ec-824f" name="Stoletov Class Full" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
     <categoryEntry id="499a-e4a3-bc0e-a795" name="Anastasia Class" hidden="false"/>
+    <categoryEntry id="fc27-b4f3-efbb-bf89" name="Death Bringer" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
+    <categoryEntry id="603c-3f8b-41b0-353e" name="Pravda Class Full" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
+    <categoryEntry id="712c-402f-7f42-a4d9" name="Rurik Class Full" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
+    <categoryEntry id="09ec-046e-ac6d-f208" name="Morozko Class Full" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
+    <categoryEntry id="fbad-f5c2-d2f3-b32f" name="Khatanga Class Full" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
+    <categoryEntry id="4b26-379b-0169-bd86" name="Sineus Class Full" hidden="false"/>
+    <categoryEntry id="4ca5-2f6f-ccec-fdad" name="Khyzhak Class Full" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="4ca2-058e-2ae4-364f" name="Borondino Battlefleet" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
-      <constraints>
-        <constraint field="selections" scope="11d2-f561-163c-722c" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c92-d201-a89f-4a9a" type="min"/>
-        <constraint field="selections" scope="d7b3-10bd-20f0-4832" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2b2-d6f7-f303-f3b6" type="min"/>
-        <constraint field="selections" scope="79fe-c00f-c7c0-3c7a" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="245c-997c-fa7a-e7a5" type="min"/>
-        <constraint field="selections" scope="43a2-7e77-ff29-fb5c" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b500-4b2e-8a6e-ddc3" type="max"/>
-      </constraints>
+      <rules>
+        <rule id="5661-376c-6aa4-0500" name="Borondino Battlefleet bonus" publicationId="e265-8c7f-a4b2-a48e" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5607-735b-1517-fc52" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>All Units in the Battlefleet receive a Ramming bonus of +3 for Hammer Sweep rather than the usual +2.</description>
+        </rule>
+      </rules>
       <infoLinks>
-        <infoLink id="7554-0d01-7540-c2a7" name="Hammer Sweep bonus" hidden="true" targetId="7096-16ad-09cb-b28f" type="rule">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="5607-735b-1517-fc52" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </infoLink>
-        <infoLink id="b1ba-eae1-d459-3582" name="Command Re-Roll" hidden="true" targetId="baf3-c66b-7e9a-8002" type="rule">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="any" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </infoLink>
+        <infoLink id="b1ba-eae1-d459-3582" name="Command Re-Roll" hidden="true" targetId="baf3-c66b-7e9a-8002" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0996-5b16-103b-039b" name="Borodino Class" hidden="false" targetId="10f8-2a4a-0324-de9d" primary="false">
@@ -80,7 +69,6 @@ Review 1.06.00: review after the v1.06</comment>
         <categoryLink id="266c-98a7-f282-5e7d" name="Flagship" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fef3-1842-580c-4bef" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d0a-d5f6-09ea-3d2c" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e46-92f7-0bbc-81e8" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="823a-7697-59cf-f9b0" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="false">
@@ -92,11 +80,6 @@ Review 1.06.00: review after the v1.06</comment>
         <categoryLink id="e55f-1388-d857-f8f7" name="Kutsov Class" hidden="false" targetId="0a00-d349-874e-5599" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da20-bdf9-b50f-08b2" type="min"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="d4a8-4589-22c3-6d8f" name="Stoletov Class" hidden="false" targetId="6ec4-945d-24b0-9afb" primary="false">
-          <constraints>
-            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1899-1e30-ce89-e924" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="eb59-77c0-61d7-38a9" name="Oleg Class" hidden="false" targetId="8acf-93d1-8b6d-33a5" primary="false">
@@ -129,47 +112,53 @@ Review 1.06.00: review after the v1.06</comment>
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a714-d9ad-4d17-f1f4" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="0633-2dfb-4a75-a870" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a0c-f7ef-a514-1033" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="9d95-d2bc-5351-890a" name="Ukrainian" hidden="false" targetId="d7b3-10bd-20f0-4832" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51ca-6d80-8bd4-5984" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="9f3c-cbdb-23fa-c1ac" name="Black Wolf" hidden="false" targetId="79fe-c00f-c7c0-3c7a" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da18-937f-14e3-a185" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="0ae7-4754-ae55-d2f4" name="Rurik Class" hidden="false" targetId="9573-ce70-b55f-58e8" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d1c-d986-edd5-d1ab" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="151b-55a6-aedf-b69f" name="Mozhayski Battlefleet" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
-      <constraints>
-        <constraint field="selections" scope="d7b3-10bd-20f0-4832" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf4c-3a15-781c-ab54" type="min"/>
-        <constraint field="selections" scope="79fe-c00f-c7c0-3c7a" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e436-f367-d528-7a51" type="min"/>
-      </constraints>
+      <rules>
+        <rule id="2fd7-4b57-63b0-7e27" name="Mozhayski Battlefleet bonus" publicationId="e265-8c7f-a4b2-a48e" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="712c-402f-7f42-a4d9" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="603c-3f8b-41b0-353e" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Pravda class Units do not have their SRS Capacity reduced when Crippled..</description>
+        </rule>
+      </rules>
       <infoLinks>
-        <infoLink id="c2cd-0ead-5cb8-7f27" name="Command Re-Roll" hidden="true" targetId="baf3-c66b-7e9a-8002" type="rule">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="any" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </infoLink>
-        <infoLink id="0022-91e0-3a37-067d" name="Homing Quality bonus" hidden="false" targetId="eb4a-9271-af4f-bb93" type="rule">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="089c-4a03-c59f-41af" type="atLeast"/>
-                    <condition field="selections" scope="force" value="8.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5259-4042-09aa-6402" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </infoLink>
+        <infoLink id="c2cd-0ead-5cb8-7f27" name="Command Re-Roll" hidden="true" targetId="baf3-c66b-7e9a-8002" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9ca4-30bf-b258-efe0" name="Flagship" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fef3-1842-580c-4bef" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d97-cdaa-f842-f92e" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d62e-8729-c3de-168a" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="b42b-d40a-32ad-a9b5" name="Unit" publicationId="7f09-e243-2307-78d0" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="false">
@@ -220,11 +209,6 @@ Review 1.06.00: review after the v1.06</comment>
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebfc-dac5-8175-585a" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="6f9e-1580-c296-edf5" name="Stoletov Class" hidden="false" targetId="6ec4-945d-24b0-9afb" primary="false">
-          <constraints>
-            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d94d-3c49-acda-d551" type="max"/>
-          </constraints>
-        </categoryLink>
         <categoryLink id="ccd8-ae81-64a4-cec4" name="Piranya Class" hidden="false" targetId="3030-3da1-a547-b7cf" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3559-2a08-68f7-a86e" type="max"/>
@@ -242,12 +226,14 @@ Review 1.06.00: review after the v1.06</comment>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0be6-62da-2a9c-eabf" type="min"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="6807-0d0a-74cc-8086" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51fa-76aa-e139-772c" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="f8d5-fb9d-e4a5-33ec" name="Commonwealth Battlefleet" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
-      <constraints>
-        <constraint field="selections" scope="c7ca-90d2-5214-ece9" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03d4-0d7d-e121-b4a8" type="max"/>
-      </constraints>
       <infoLinks>
         <infoLink id="7e2c-8f57-3f17-90bc" name="Command Re-Roll" hidden="true" targetId="baf3-c66b-7e9a-8002" type="rule">
           <modifiers>
@@ -334,23 +320,447 @@ Review 1.06.00: review after the v1.06</comment>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4df-b030-7368-d356" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="822a-68f9-879e-04d7" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76dc-73af-d875-e76e" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="2286-183c-9545-9e58" name="Icebreaker Battlefleet " publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+      <rules>
+        <rule id="5686-479c-d751-6940" name="Icebreaker Battlefleet bonus" publicationId="e265-8c7f-a4b2-a48e" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="09ec-046e-ac6d-f208" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f5c2-d2f3-b32f" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Cryo Generators in the Battlefleet may re-roll the die for determining Iceberg formation.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="2876-b158-7183-e7a1" name="Command Re-Roll" hidden="true" targetId="baf3-c66b-7e9a-8002" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="886f-edb5-3684-59bb" name="Borodino Class" hidden="false" targetId="10f8-2a4a-0324-de9d" primary="false">
+          <modifiers>
+            <modifier type="set" field="f6b0-2ece-a181-fa98" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ee49-24cd-d342-d93f" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6b0-2ece-a181-fa98" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="5842-b84f-71ef-62b6" name="Tobolsk Class" hidden="false" targetId="ee49-24cd-d342-d93f" primary="false">
+          <modifiers>
+            <modifier type="set" field="7dda-433e-d232-7ec1" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="10f8-2a4a-0324-de9d" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7dda-433e-d232-7ec1" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="207d-11a3-30fd-5939" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da1f-88e3-27e3-f16a" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="4f5e-d4f2-e93b-94a1" name="Morozko Class" hidden="false" targetId="4b76-e4b0-9958-2155" primary="false">
+          <modifiers>
+            <modifier type="set" field="bb2b-a7e0-4abb-b322" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a437-c808-f047-cd5c" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb2b-a7e0-4abb-b322" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="d620-8665-b68f-41a0" name="Khatanga Class" hidden="false" targetId="a437-c808-f047-cd5c" primary="false">
+          <modifiers>
+            <modifier type="set" field="37ee-0892-3602-45c1" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b76-e4b0-9958-2155" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37ee-0892-3602-45c1" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="56f9-3ea1-8184-d930" name="Aerial Unit" hidden="false" targetId="022b-08af-c874-e3f1" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d17-c8f8-210d-d335" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="91b9-322f-7b57-d01e" name="Ukrainian" hidden="false" targetId="d7b3-10bd-20f0-4832" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c789-0e7d-663e-7cd1" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="5ffd-a7e6-ddae-5d94" name="Black Wolf" hidden="false" targetId="79fe-c00f-c7c0-3c7a" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64f8-1e98-e13d-3e01" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="95f0-1b00-6065-2bd9" name="Flagship" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fef3-1842-580c-4bef" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e54-1e9d-2db3-a7e2" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="8613-73a2-de08-8324" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b219-a5fb-58e7-8ec8" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddf3-96a6-0bae-1bf8" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="7af0-2230-aec4-568f" name="Norilsk Class" hidden="false" targetId="ec1a-6d4c-408c-2e43" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7b8-c0a8-8673-e62f" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="7e0a-c165-d60a-7fe0" name="Oleg Class" hidden="false" targetId="8acf-93d1-8b6d-33a5" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4604-1ce9-55b1-7f96" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="5de8-b06c-3a73-c9d6" name="Pravda Class" hidden="false" targetId="2cae-ee19-07e0-4e12" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3748-e600-b8fa-ee25" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="77b0-7d31-6898-28ed" name="Sineus Class" hidden="false" targetId="ed0a-242d-6092-8471" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5d1-5fea-496e-1e55" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="c0ce-dcdc-8cf3-9b63" name="Rurik Class" hidden="false" targetId="9573-ce70-b55f-58e8" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86c1-f53a-df92-64ba" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="1c03-4ace-59f3-9637" name="Ukranian Battlefleet " publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+      <rules>
+        <rule id="4edb-688f-f43c-c42e" name="Ukranian Battlefleet Bonus" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca5-2f6f-ccec-fdad" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>All Units in this Battlefleet gain the following Special Rule
+
+VANGUARD: Starting with Player B, after both sides are deployed, each player may choose one of their Units with the Vanguard rule and make a free Move of up to 5&quot;. This is not an Activation and does not have Drift or Turn Limit. Vanguard alternates between Players until all such Units have been selected.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="80ac-2359-5db0-f969" name="Command Re-Roll" hidden="false" targetId="baf3-c66b-7e9a-8002" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3d3c-a41a-e90c-981a" name="Flagship" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fef3-1842-580c-4bef" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0432-46d0-2bcb-46a2" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="acbc-d62c-b90a-d62a" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c68-0e72-f1ea-61e2" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="4d86-18e4-8fa1-8063" name="Ukrainian" hidden="false" targetId="d7b3-10bd-20f0-4832" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a53-c2a2-2f79-2a53" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="ba57-9f04-0fe9-1430" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0977-8b31-7cdb-3391" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="be78-a512-ca0e-2baf" name="Khyzhak Class" hidden="false" targetId="3459-052a-42ef-7113" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b7b-91c5-c229-0a09" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="1dbb-e1d2-11a5-61da" name="Akula Class" hidden="false" targetId="6fa0-565c-d833-b014" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7dbf-b7f0-2ff4-5603" type="min"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="daec-c7fc-4ab4-114d" name="Caspian Battlefleet " publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+      <rules>
+        <rule id="8349-b55b-b011-4f7b" name="Caspian Battlefleet bonus" publicationId="e265-8c7f-a4b2-a48e" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5625-c43e-31ec-824f" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b26-379b-0169-bd86" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>All Stoletov or Sineus Units in the Battlefleet gain the High Velocity Quality to their Rocket Batteries and Heavy Rocket Batteries.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="789a-03b1-4240-f13f" name="Command Re-Roll" hidden="true" targetId="baf3-c66b-7e9a-8002" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4505-892b-2721-6410" name="Flagship" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fef3-1842-580c-4bef" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de02-1ab6-b95a-3448" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="7f8a-945c-f141-6fdb" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29cd-04ad-8099-48cc" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2837-9bac-34bb-d897" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="db82-e243-5082-d8c6" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61ec-4e88-4177-39a8" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="efbe-ca9b-07e3-adb5" name="Black Wolf" hidden="false" targetId="79fe-c00f-c7c0-3c7a" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b97b-c6e1-11b4-28d6" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="a225-f51d-38bd-8e76" name="Ukrainian" hidden="false" targetId="d7b3-10bd-20f0-4832" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f195-10b7-56d4-9bf6" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="f9ed-76f2-8ac8-5546" name="Stoletov Class" hidden="false" targetId="6ec4-945d-24b0-9afb" primary="false">
+          <modifiers>
+            <modifier type="set" field="9813-cd5f-359a-ee98" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed0a-242d-6092-8471" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9813-cd5f-359a-ee98" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="a860-1222-6fba-7595" name="Sineus Class" hidden="false" targetId="ed0a-242d-6092-8471" primary="false">
+          <modifiers>
+            <modifier type="set" field="1e71-d377-07fa-5b4d" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6ec4-945d-24b0-9afb" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1e71-d377-07fa-5b4d" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="2112-4f07-47c0-4ea7" name="Mozhayski Class" hidden="false" targetId="9bad-609b-b3cd-cd89" primary="false">
+          <modifiers>
+            <modifier type="set" field="c59c-73a0-0954-0e0f" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11c8-1798-393c-0395" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c59c-73a0-0954-0e0f" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="b8d4-43f1-b6a1-b37f" name="Murmansk Class" hidden="false" targetId="11c8-1798-393c-0395" primary="false">
+          <modifiers>
+            <modifier type="set" field="0427-ac93-3e75-9165" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9bad-609b-b3cd-cd89" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0427-ac93-3e75-9165" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="ac8b-9b59-0cea-0068" name="Kutsov Class" hidden="false" targetId="0a00-d349-874e-5599" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f765-3147-e59f-630d" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="3462-d2a9-6230-caf7" name="Morozko Class" hidden="false" targetId="4b76-e4b0-9958-2155" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c23b-05de-8343-f8a2" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="9f36-6595-7d02-c449" name="Norilsk Class" hidden="false" targetId="ec1a-6d4c-408c-2e43" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f2d-5c56-4973-7937" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="b756-81eb-76b6-3666" name="Oleg Class" hidden="false" targetId="8acf-93d1-8b6d-33a5" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3023-e9cc-1044-db10" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="8746-c2b0-acc1-58df" name="Pravda Class" hidden="false" targetId="2cae-ee19-07e0-4e12" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1da3-2171-ef02-df8d" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="4c1f-ed6b-083d-31fc" name="Rurik Class" hidden="false" targetId="9573-ce70-b55f-58e8" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61fc-2fe9-a7ad-02bb" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="1022-4484-f676-a003" name="Black Wolf Battlefleet" hidden="false">
+      <infoLinks>
+        <infoLink id="6763-1de4-9050-d042" name="Command Re-Roll" hidden="false" targetId="baf3-c66b-7e9a-8002" type="rule"/>
+        <infoLink id="75f5-bb99-e102-d5e6" name="Black Wolf Mercenaries" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d234-0841-e8df-d525" name="Death Bringer" hidden="false" targetId="fc27-b4f3-efbb-bf89" primary="false">
+          <modifiers>
+            <modifier type="set" field="4227-feb7-30de-148e" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bc7d-a835-c739-dddf" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4227-feb7-30de-148e" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="e6c3-2b57-1767-4104" name="Khyzhak Class" hidden="false" targetId="3459-052a-42ef-7113" primary="false">
+          <modifiers>
+            <modifier type="set" field="69e0-94b9-efd0-5d92" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="87c9-33c5-227d-05fa" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69e0-94b9-efd0-5d92" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="144e-22c4-843a-ffd4" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b600-3dcd-6571-4ebe" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="13af-de7e-a2d5-7ac0" name="Anastasia Class" hidden="false" targetId="499a-e4a3-bc0e-a795" primary="false">
+          <modifiers>
+            <modifier type="set" field="3dad-9174-73bf-5e6a" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5339-1208-1df4-bf7f" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3dad-9174-73bf-5e6a" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="67c5-dde6-7dc0-29dc" name="Akula Class" hidden="false" targetId="6fa0-565c-d833-b014" primary="false">
+          <modifiers>
+            <modifier type="set" field="fdb2-a691-e6d5-6e86" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a626-ab88-4937-5d45" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdb2-a691-e6d5-6e86" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="e5c5-e29c-818f-d80f" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f235-e885-6d30-ef52" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
   <selectionEntries>
     <selectionEntry id="5a06-ba01-c487-4075" name="Borodino Battleship" publicationId="e265-8c7f-a4b2-a48e" page="" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c03-4ace-59f3-9637" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="3f5c-a015-1ba8-f4d4" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="df03-0c3d-46e5-25d6" name="Borodino Class" hidden="false" targetId="10f8-2a4a-0324-de9d" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="6c7d-1779-4525-5466" name="Support Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="ed02-b8a2-a0cf-240d" name="Support Model" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2403-e54b-ca6f-0174" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b79-ad13-b6eb-4260" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="b0af-e8d1-9a44-16e3" name="Corvette" hidden="false" collective="false" import="true" targetId="aae0-e2ef-7700-4fae" type="selectionEntry"/>
-            <entryLink id="490a-e081-cac0-0647" name="Escort" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry"/>
+            <entryLink id="4943-3274-d127-bf30" name="Corvette" hidden="false" collective="false" import="true" targetId="aae0-e2ef-7700-4fae" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="132a-fd9c-14fc-e66e" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9cc1-48f6-f9ea-943f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be55-9656-33e6-a035" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="132a-fd9c-14fc-e66e" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="432d-2610-2a8c-62ec" name="Corvette Class" hidden="false" targetId="dfce-ed39-89c4-47a9" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink id="44c3-4a7f-2bce-fa0d" name="Escort" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="a6e4-2987-5215-1dd9" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aae0-e2ef-7700-4fae" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b49-d333-f955-e37b" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6e4-2987-5215-1dd9" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="4842-ea58-67b6-239e" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -362,6 +772,18 @@ Review 1.06.00: review after the v1.06</comment>
       </costs>
     </selectionEntry>
     <selectionEntry id="de9c-fa7e-4b80-ed55" name="Mozhayski Fleet Carrier" publicationId="e265-8c7f-a4b2-a48e" page="5" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c03-4ace-59f3-9637" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="c5a5-ace2-bf56-961d" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="false"/>
         <categoryLink id="48ac-4502-e92d-b679" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
@@ -370,13 +792,43 @@ Review 1.06.00: review after the v1.06</comment>
         <categoryLink id="c5c7-a437-a7d8-02e9" name="Mozhayski Class" hidden="false" targetId="9bad-609b-b3cd-cd89" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="0229-13bf-4ac2-c221" name="Support Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="4644-9d87-957f-21ca" name="Support Model" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7b3-4a0a-f651-169d" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c8b-30e1-b4f0-729a" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="799f-aa49-5363-6569" name="Corvette" hidden="false" collective="false" import="true" targetId="aae0-e2ef-7700-4fae" type="selectionEntry"/>
-            <entryLink id="a0a7-f234-7144-b882" name="Escort" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry"/>
+            <entryLink id="2b03-5c4a-7840-5bb6" name="Corvette" hidden="false" collective="false" import="true" targetId="aae0-e2ef-7700-4fae" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="e097-1b8d-ffd1-2ec8" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9cc1-48f6-f9ea-943f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a35-74af-a883-ecf7" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e097-1b8d-ffd1-2ec8" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="be84-4b68-a830-13c5" name="Corvette Class" hidden="false" targetId="dfce-ed39-89c4-47a9" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink id="ad83-c8d2-fb1f-c1d2" name="Escort" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="0e05-a988-2d6b-641d" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aae0-e2ef-7700-4fae" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcec-0b6e-3da6-0487" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e05-a988-2d6b-641d" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="f11c-10b8-464a-abfa" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -388,6 +840,18 @@ Review 1.06.00: review after the v1.06</comment>
       </costs>
     </selectionEntry>
     <selectionEntry id="b3de-b63c-7d42-25f3" name="Pakhtusov Battleship" publicationId="e265-8c7f-a4b2-a48e" page="" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c03-4ace-59f3-9637" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="30d9-25ea-1e0b-cf4c" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="c39a-c322-8cba-4b6b" name="Borodino Class" hidden="false" targetId="10f8-2a4a-0324-de9d" primary="false"/>
@@ -396,12 +860,27 @@ Review 1.06.00: review after the v1.06</comment>
         <categoryLink id="2d91-1187-974b-1be0" name="Battleship" hidden="false" targetId="f53b-304b-cb90-6535" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1360-49c7-67ce-f155" name="Support Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="4967-f8f1-5f34-5e3e" name="Support Model" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28ab-9e0c-fc01-8733" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="caf6-1883-a763-bcfe" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="fcf9-73b8-1915-6775" name="Corvette" hidden="false" collective="false" import="true" targetId="aae0-e2ef-7700-4fae" type="selectionEntry"/>
+            <entryLink id="44f0-c5f2-e519-c8c6" name="Corvette" hidden="false" collective="false" import="true" targetId="aae0-e2ef-7700-4fae" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="2329-072c-8b69-c243" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9cc1-48f6-f9ea-943f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad35-f491-21ab-14ee" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2329-072c-8b69-c243" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="d13e-30d0-d5d6-1bd5" name="Corvette Class" hidden="false" targetId="dfce-ed39-89c4-47a9" primary="false"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -420,6 +899,8 @@ Review 1.06.00: review after the v1.06</comment>
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4ca2-058e-2ae4-364f" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="151b-55a6-aedf-b69f" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2286-183c-9545-9e58" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="daec-c7fc-4ab4-114d" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -427,6 +908,7 @@ Review 1.06.00: review after the v1.06</comment>
       </modifiers>
       <categoryLinks>
         <categoryLink id="29c3-5793-14f7-c194" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+        <categoryLink id="b6ab-c4f6-4474-1b61" name="Piranya Class" hidden="false" targetId="3030-3da1-a547-b7cf" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="153f-9031-6552-962e" name="Escort duty [Ukranian]" hidden="false" collective="false" import="true" type="upgrade">
@@ -456,6 +938,22 @@ Review 1.06.00: review after the v1.06</comment>
       </costs>
     </selectionEntry>
     <selectionEntry id="d17c-4903-d96e-3042" name="Khatanga Cryo Assault Cruiser Squadron" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="fbad-f5c2-d2f3-b32f">
+          <conditions>
+            <condition field="selections" scope="self" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c03-4ace-59f3-9637" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="5da3-7d37-1a6b-a40b" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
         <categoryLink id="04c2-18fe-c8ff-709b" name="Khatanga Class" hidden="false" targetId="a437-c808-f047-cd5c" primary="false"/>
@@ -468,8 +966,26 @@ Review 1.06.00: review after the v1.06</comment>
       </costs>
     </selectionEntry>
     <selectionEntry id="20b5-4bce-4337-d98c" name="Sineus Fast Cruiser Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c03-4ace-59f3-9637" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="4b26-379b-0169-bd86">
+          <conditions>
+            <condition field="selections" scope="self" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="647c-06c0-e0c6-5dc9" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+        <categoryLink id="53de-5a28-2040-576b" name="Sineus Class" hidden="false" targetId="ed0a-242d-6092-8471" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="4d2f-b988-5c0e-b171" name="Sineus" hidden="false" collective="false" import="true" targetId="a2c8-dcfb-9b72-fbe0" type="selectionEntry">
@@ -484,8 +1000,21 @@ Review 1.06.00: review after the v1.06</comment>
       </costs>
     </selectionEntry>
     <selectionEntry id="e9be-d7db-3d28-df3a" name="Oleg Monitor Squadron" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c03-4ace-59f3-9637" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="68ba-ed4b-624e-b953" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+        <categoryLink id="72c0-99f1-b535-493f" name="Oleg Class" hidden="false" targetId="8acf-93d1-8b6d-33a5" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="5087-eec3-ce99-f004" name="Oleg" hidden="false" collective="false" import="true" targetId="06be-2972-f4da-58f0" type="selectionEntry"/>
@@ -495,6 +1024,23 @@ Review 1.06.00: review after the v1.06</comment>
       </costs>
     </selectionEntry>
     <selectionEntry id="2a52-3bfa-ce73-7b37" name="Pravda Support Carrier Squadron" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c03-4ace-59f3-9637" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="603c-3f8b-41b0-353e">
+          <conditions>
+            <condition field="selections" scope="self" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="32db-7b2e-3fed-78a0" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
         <categoryLink id="500a-eb6e-da42-e15a" name="Pravda Class" hidden="false" targetId="2cae-ee19-07e0-4e12" primary="false"/>
@@ -514,6 +1060,16 @@ Review 1.06.00: review after the v1.06</comment>
             <condition field="selections" scope="self" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c03-4ace-59f3-9637" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="e39a-38d3-2e50-8b6b" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
@@ -527,8 +1083,21 @@ Review 1.06.00: review after the v1.06</comment>
       </costs>
     </selectionEntry>
     <selectionEntry id="485e-08bb-eaa2-0f45" name="Norilsk Heavy Cruiser Squadron" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c03-4ace-59f3-9637" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="be54-05af-58cc-4b13" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+        <categoryLink id="dce0-7548-b2f7-349a" name="Norilsk Class" hidden="false" targetId="ec1a-6d4c-408c-2e43" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="45d3-6aaf-990b-fa6c" name="Norilsk" hidden="false" collective="false" import="true" targetId="df76-9315-5ef1-fe86" type="selectionEntry"/>
@@ -538,8 +1107,21 @@ Review 1.06.00: review after the v1.06</comment>
       </costs>
     </selectionEntry>
     <selectionEntry id="03d9-73a2-0d8c-dfed" name="Murmansk Mobile Stronghold" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c03-4ace-59f3-9637" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="e313-0ebb-54cc-d95a" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
+        <categoryLink id="21e7-7978-30ba-7a89" name="Murmansk Class" hidden="false" targetId="11c8-1798-393c-0395" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="eed2-3273-00c9-248c" name="Support Model" hidden="false" collective="false" import="true">
@@ -560,8 +1142,26 @@ Review 1.06.00: review after the v1.06</comment>
       </costs>
     </selectionEntry>
     <selectionEntry id="120f-a155-442e-e9bd" name="Morozko Heavy Cryo Cruiser Squadron" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c03-4ace-59f3-9637" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="09ec-046e-ac6d-f208">
+          <conditions>
+            <condition field="selections" scope="self" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="348b-976c-8a26-a3c9" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+        <categoryLink id="a73d-451f-1761-916d" name="Morozko Class" hidden="false" targetId="4b76-e4b0-9958-2155" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="0715-fa55-7540-8e0a" name="Morozko" hidden="false" collective="false" import="true" targetId="8290-2bfb-8673-33ca" type="selectionEntry"/>
@@ -576,11 +1176,15 @@ Review 1.06.00: review after the v1.06</comment>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4ca2-058e-2ae4-364f" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="151b-55a6-aedf-b69f" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c03-4ace-59f3-9637" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="5625-c43e-31ec-824f">
+          <conditions>
+            <condition field="selections" scope="self" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -605,6 +1209,23 @@ Review 1.06.00: review after the v1.06</comment>
       </costs>
     </selectionEntry>
     <selectionEntry id="fc08-88fc-3496-d534" name="Rurik Frigate Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c03-4ace-59f3-9637" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="712c-402f-7f42-a4d9">
+          <conditions>
+            <condition field="selections" scope="self" value="8.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="a10c-e5d9-f580-1560" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
         <categoryLink id="08fa-0e2e-a75f-0f94" name="Rurik Class" hidden="false" targetId="9573-ce70-b55f-58e8" primary="false"/>
@@ -644,16 +1265,24 @@ Review 1.06.00: review after the v1.06</comment>
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4ca2-058e-2ae4-364f" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="151b-55a6-aedf-b69f" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2286-183c-9545-9e58" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="daec-c7fc-4ab4-114d" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="4ca5-2f6f-ccec-fdad">
+          <conditions>
+            <condition field="selections" scope="self" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="0f61-a7b6-8a24-a346" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+        <categoryLink id="59b2-ed3f-8f0c-a014" name="Khyzhak Class" hidden="false" targetId="3459-052a-42ef-7113" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="b9c4-e149-caa4-da1b" name="Kyyzhak" hidden="false" collective="false" import="true" targetId="f106-de7d-1dfd-01b2" type="selectionEntry"/>
+        <entryLink id="b9c4-e149-caa4-da1b" name="Khyzhak" hidden="false" collective="false" import="true" targetId="f106-de7d-1dfd-01b2" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
@@ -666,10 +1295,17 @@ Review 1.06.00: review after the v1.06</comment>
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4ca2-058e-2ae4-364f" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2286-183c-9545-9e58" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="151b-55a6-aedf-b69f" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="daec-c7fc-4ab4-114d" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set-primary" field="category" value="fef3-1842-580c-4bef">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c03-4ace-59f3-9637" type="instanceOf"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -692,6 +1328,9 @@ Review 1.06.00: review after the v1.06</comment>
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4ca2-058e-2ae4-364f" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="151b-55a6-aedf-b69f" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2286-183c-9545-9e58" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="daec-c7fc-4ab4-114d" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c03-4ace-59f3-9637" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -700,6 +1339,8 @@ Review 1.06.00: review after the v1.06</comment>
       <categoryLinks>
         <categoryLink id="3d2e-79c6-a1b3-4ae2" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="ecf9-2d64-4124-be70" name="Akula Class" hidden="false" targetId="6fa0-565c-d833-b014" primary="false"/>
+        <categoryLink id="0a08-61b9-9dd1-cd76" name="Death Bringer" hidden="false" targetId="fc27-b4f3-efbb-bf89" primary="false"/>
+        <categoryLink id="e0e1-115e-7db1-bfeb" name="Black Wolf" hidden="false" targetId="79fe-c00f-c7c0-3c7a" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="bfb8-2745-5794-953e" name="Death Bringer" hidden="false" collective="false" import="true" targetId="a5e5-8778-95de-ef55" type="selectionEntry"/>
@@ -720,9 +1361,20 @@ Review 1.06.00: review after the v1.06</comment>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c03-4ace-59f3-9637" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="7774-0b69-1d04-0853" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
+        <categoryLink id="a74e-fc88-e9ef-720d" name="Tobolsk Class" hidden="false" targetId="ee49-24cd-d342-d93f" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="06bc-033b-a43b-a989" name="Support Model" hidden="false" collective="false" import="true">
@@ -750,6 +1402,9 @@ Review 1.06.00: review after the v1.06</comment>
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4ca2-058e-2ae4-364f" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="151b-55a6-aedf-b69f" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2286-183c-9545-9e58" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="daec-c7fc-4ab4-114d" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c03-4ace-59f3-9637" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -759,6 +1414,7 @@ Review 1.06.00: review after the v1.06</comment>
         <categoryLink id="f3bb-2831-698c-c04d" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="6c64-bb88-7967-fd9f" name="Black Wolf" hidden="false" targetId="79fe-c00f-c7c0-3c7a" primary="false"/>
         <categoryLink id="f694-02c5-5340-81d9" name="Unique" hidden="false" targetId="293e-b55a-bcfa-95c3" primary="false"/>
+        <categoryLink id="5a03-c395-58e2-2131" name="Anastasia Class" hidden="false" targetId="499a-e4a3-bc0e-a795" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="e0f0-3bb6-7d21-edcd" name="Anastasia" hidden="false" collective="false" import="true" targetId="01de-cadd-072c-1368" type="selectionEntry"/>
@@ -1063,6 +1719,18 @@ Review 1.06.00: review after the v1.06</comment>
       </costs>
     </selectionEntry>
     <selectionEntry id="7ed3-64f6-5da3-dc59" name="Khatanga" publicationId="e265-8c7f-a4b2-a48e" page="" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b955-9fa8-910e-3008" type="min"/>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7fd-9f13-6760-bb5b" type="max"/>
@@ -1398,6 +2066,18 @@ Review 1.06.00: review after the v1.06</comment>
       </costs>
     </selectionEntry>
     <selectionEntry id="76b0-be0d-7a9c-c9d6" name="Stoletov Ekranoplans" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="remove" field="category" value="d7b3-10bd-20f0-4832">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5065-9d04-3782-3a20" type="min"/>
         <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8e05-8069-8f3a-28de" type="max"/>
@@ -1616,7 +2296,7 @@ Review 1.06.00: review after the v1.06</comment>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="4aee-670a-3f3f-7269" name="Front" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="4aee-670a-3f3f-7269" name="Front" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" defaultSelectionEntryId="3fed-3fc3-e174-1bed">
               <modifiers>
                 <modifier type="set" field="44f7-2620-a02b-2fa1" value="0.0">
                   <conditions>
@@ -1683,7 +2363,7 @@ Review 1.06.00: review after the v1.06</comment>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup id="f0eb-335f-4044-50b6" name="Secondary Weapon" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="f0eb-335f-4044-50b6" name="Secondary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="f46e-5e83-2a35-c685">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d30-5252-eb6a-6921" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73eb-31b5-0956-0044" type="max"/>
@@ -1950,6 +2630,7 @@ Review 1.06.00: review after the v1.06</comment>
         <categoryLink id="3259-c255-c0b7-de8c" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
         <categoryLink id="3d49-448b-7bb4-4dc1" name="Pravda Class" hidden="false" targetId="2cae-ee19-07e0-4e12" primary="false"/>
         <categoryLink id="77ed-1e2f-3b5b-3124" name="Support Carrier" hidden="false" targetId="dc06-6d22-be64-c6eb" primary="false"/>
+        <categoryLink id="a488-7dc2-ae24-808e" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="1515-cc70-77bc-a8a4" name="Rocket Battery - (360°)" hidden="false" collective="true" import="true" type="upgrade">
@@ -2324,7 +3005,7 @@ Review 1.06.00: review after the v1.06</comment>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="d664-6f5b-3a03-4cfe" name="Main Weapon" publicationId="e265-8c7f-a4b2-a48e" page="4" hidden="false" collective="true" import="true">
+        <selectionEntryGroup id="d664-6f5b-3a03-4cfe" name="Main Weapon" publicationId="e265-8c7f-a4b2-a48e" page="4" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c4f-eb29-6f50-32ca" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8f3-6f80-596c-7db1" type="max"/>
@@ -2443,7 +3124,7 @@ Review 1.06.00: review after the v1.06</comment>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb2b-343c-7c3d-2423" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="d55b-2ed5-a13d-0bec" name="Heavy Gun battery - (F/P/S)" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="d55b-2ed5-a13d-0bec" name="Heavy Gun battery - (F/P/S)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02d1-5552-7982-24c1" type="max"/>
                   </constraints>
@@ -2459,7 +3140,7 @@ Review 1.06.00: review after the v1.06</comment>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="26a3-50a2-6c43-5889" name="Tri-Railgun - (F/P/S)" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="26a3-50a2-6c43-5889" name="Tri-Railgun - (F/P/S)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dce-b1b3-6e2e-0e5d" type="max"/>
                   </constraints>
@@ -2474,10 +3155,10 @@ Review 1.06.00: review after the v1.06</comment>
                     <infoLink id="65cc-20aa-148c-8d5b" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8.0"/>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="6.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="ac19-2544-953e-5a8e" name="Heavy Rocket Battery - (F/P/S)" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="ac19-2544-953e-5a8e" name="Heavy Rocket Battery - (F/P/S)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d841-dbdb-9c86-7e9d" type="max"/>
                   </constraints>
@@ -2508,7 +3189,7 @@ Review 1.06.00: review after the v1.06</comment>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5a4-929f-7635-ba3c" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="5ea7-78af-df82-f1aa" name="Heavy Gun battery - (A/P/S)" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="5ea7-78af-df82-f1aa" name="Heavy Gun battery - (A/P/S)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e539-f33b-7aca-f5b4" type="max"/>
                   </constraints>
@@ -2524,7 +3205,7 @@ Review 1.06.00: review after the v1.06</comment>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="829e-8106-3311-b7f3" name="Tri-Railgun - (A/P/S)" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="829e-8106-3311-b7f3" name="Tri-Railgun - (A/P/S)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c3f-afb7-eefa-afe3" type="max"/>
                   </constraints>
@@ -2539,10 +3220,10 @@ Review 1.06.00: review after the v1.06</comment>
                     <infoLink id="ecad-56be-55c3-b0e9" name="Rail" hidden="false" targetId="6872-22a2-ca02-4c30" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8.0"/>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="6.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="ee71-0a78-ca7d-8b8c" name="Heavy Rocket Battery - (A/P/S)" hidden="false" collective="true" import="true" type="upgrade">
+                <selectionEntry id="ee71-0a78-ca7d-8b8c" name="Heavy Rocket Battery - (A/P/S)" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21e5-a5fe-cb90-7877" type="max"/>
                   </constraints>
@@ -2709,7 +3390,7 @@ Review 1.06.00: review after the v1.06</comment>
                 <selectionEntry id="38f9-a94b-4e1c-2f36" name="Atomic generator" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="upgrade">
                   <infoLinks>
                     <infoLink id="229b-f479-8e42-a0e6" name="Atomic generator" hidden="false" targetId="bf4f-f520-1b65-3bfd" type="profile"/>
-                    <infoLink id="82e7-99fc-bf8f-86a6" name="Atomic generator" hidden="false" targetId="1892-b471-89bc-1ab6" type="rule"/>
+                    <infoLink id="82e7-99fc-bf8f-86a6" name="Atomic generator" hidden="false" targetId="3fe1-73f5-bc98-7db7" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
@@ -2718,7 +3399,7 @@ Review 1.06.00: review after the v1.06</comment>
                 <selectionEntry id="dac7-8896-99c2-0152" name="Fury generator" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="upgrade">
                   <infoLinks>
                     <infoLink id="4416-7b8c-be54-f3c5" name="Fury generator" hidden="false" targetId="87f0-a822-7ea9-7287" type="profile"/>
-                    <infoLink id="b148-4c33-0e5d-ada9" name="Fury generator" hidden="false" targetId="e3e3-342b-63df-28cb" type="rule"/>
+                    <infoLink id="b148-4c33-0e5d-ada9" name="Fury generator" hidden="false" targetId="f743-5a58-7d27-2ceb" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
@@ -2727,7 +3408,7 @@ Review 1.06.00: review after the v1.06</comment>
                 <selectionEntry id="8f7c-b920-6f8d-1162" name="Magnetic generator" hidden="false" collective="false" import="true" type="upgrade">
                   <infoLinks>
                     <infoLink id="b08c-2c7d-c32b-f6ac" name="Magnetic generator" hidden="false" targetId="586f-fde9-3d38-02d0" type="profile"/>
-                    <infoLink id="5b03-2cd1-b68c-2a87" name="Magnetic generator" hidden="false" targetId="5d02-4526-36bc-27ae" type="rule"/>
+                    <infoLink id="5b03-2cd1-b68c-2a87" name="Magnetic generator" hidden="false" targetId="b4ba-a474-4872-aa00" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
@@ -2736,7 +3417,7 @@ Review 1.06.00: review after the v1.06</comment>
                 <selectionEntry id="d293-7190-7edb-e312" name="Shield generator" hidden="false" collective="false" import="true" type="upgrade">
                   <infoLinks>
                     <infoLink id="c1c2-f6ca-fd55-2da9" name="Shield generator" hidden="false" targetId="2086-333f-c525-6c88" type="profile"/>
-                    <infoLink id="3403-3246-2f17-7907" name="Shield generator" hidden="false" targetId="a450-34be-1ffc-5ff3" type="rule"/>
+                    <infoLink id="3403-3246-2f17-7907" name="Shield generator" hidden="false" targetId="2c2f-ebec-49d2-ae7d" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
@@ -2745,7 +3426,7 @@ Review 1.06.00: review after the v1.06</comment>
                 <selectionEntry id="6c33-ab3b-0ba0-50ba" name="Shroud generator" hidden="false" collective="false" import="true" type="upgrade">
                   <infoLinks>
                     <infoLink id="154b-bfc1-f058-014c" name="Shroud generator" hidden="false" targetId="1873-22df-b3ba-49db" type="profile"/>
-                    <infoLink id="1276-62cf-36f8-c8a7" name="Shroud generator" hidden="false" targetId="8dc5-989b-0ad0-83a3" type="rule"/>
+                    <infoLink id="1276-62cf-36f8-c8a7" name="Shroud generator" hidden="false" targetId="ef22-2b56-207c-7d3f" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
@@ -3692,6 +4373,13 @@ Review 1.06.00: review after the v1.06</comment>
         <infoLink id="6e0e-32a4-9be6-f4be" name="Shallow Draught" hidden="false" targetId="fa17-b06d-fb18-8978" type="rule"/>
         <infoLink id="945a-9f3a-acbf-645c" name="Rurik" hidden="false" targetId="d106-113f-fe34-c060" type="profile"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5335-84be-107d-1b17" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+        <categoryLink id="6d0a-6032-4b20-db7d" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
+        <categoryLink id="9f2b-ed58-4ce7-1b8a" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="false"/>
+        <categoryLink id="f402-9c28-c668-3d6e" name="Rurik Class" hidden="false" targetId="9573-ce70-b55f-58e8" primary="false"/>
+        <categoryLink id="4043-607b-c515-3d25" name="Frigate" hidden="false" targetId="34e1-40d5-5011-e3c5" primary="false"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="1673-3594-0908-5185" name="Light Broadside - (P &amp; S)" hidden="false" collective="true" import="true" type="upgrade">
           <modifiers>
@@ -3745,6 +4433,16 @@ Review 1.06.00: review after the v1.06</comment>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="153f-9031-6552-962e" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="remove" field="category" value="d7b3-10bd-20f0-4832">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1e65-73e4-c1af-dee0" type="min"/>
@@ -3793,6 +4491,18 @@ Review 1.06.00: review after the v1.06</comment>
       </costs>
     </selectionEntry>
     <selectionEntry id="f106-de7d-1dfd-01b2" name="Khyzhak" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="remove" field="category" value="d7b3-10bd-20f0-4832">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a880-46f6-9c02-6362" type="min"/>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="50d1-e0e5-3969-6fb3" type="max"/>
@@ -3884,6 +4594,18 @@ Review 1.06.00: review after the v1.06</comment>
       </costs>
     </selectionEntry>
     <selectionEntry id="7e7b-cc93-5aaf-b438" name="Akula" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="d7b3-10bd-20f0-4832">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8a14-5ce1-5686-ad7e" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7aad-ae5d-d77e-db61" type="max"/>
@@ -4138,6 +4860,7 @@ Review 1.06.00: review after the v1.06</comment>
         <categoryLink id="5a95-99df-b736-ef0c" name="Grand Submarine" hidden="false" targetId="75af-d360-cca8-6162" primary="false"/>
         <categoryLink id="0429-10c6-b3a7-a81d" name="Akula Class" hidden="false" targetId="6fa0-565c-d833-b014" primary="false"/>
         <categoryLink id="a777-0c34-4a54-65af" name="Black Wolf" hidden="false" targetId="79fe-c00f-c7c0-3c7a" primary="false"/>
+        <categoryLink id="fd1e-9774-caa2-d1e4" name="Death Bringer" hidden="false" targetId="fc27-b4f3-efbb-bf89" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="5c12-d110-8398-0995" name="Heavy Torpedo Salvo - (A)" hidden="false" collective="false" import="true" type="upgrade">
@@ -4994,12 +5717,6 @@ Review 1.06.00: review after the v1.06</comment>
     </rule>
     <rule id="47ce-8e6e-6852-3904" name="Logistical Support" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <description>This Unit adds +1 to the number of Victory and Valour Cards in a player’s hand. Should this Unit be destroyed, the bonus is lost at the end of the Round. This ability does not stack, so multiple Units with this rule still only confers +1 to the hand size in total.</description>
-    </rule>
-    <rule id="7096-16ad-09cb-b28f" name="Hammer Sweep bonus" publicationId="e265-8c7f-a4b2-a48e" hidden="true">
-      <description>If this Battlefleet includes at least three Units (in addition to the Flagship), then all Units in the Battlefleet have a Hammer Sweep Ramming bonus of +3 rather than the usual +2 for the duration of the Encounter.</description>
-    </rule>
-    <rule id="eb4a-9271-af4f-bb93" name="Homing Quality bonus" publicationId="e265-8c7f-a4b2-a48e" hidden="true">
-      <description>If this Battlefleet includes at least two maximum sized Units of Ekranoplans, then any Ekranoplans in the Battlefleet gain the Homing Quality to their Rocket Batteries and Heavy Rocket Batteries for the duration of the Encounter.</description>
     </rule>
     <rule id="ee96-2771-5a22-42bd" name="Cryo-Kometa" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <description>SRS Tokens launched by Units with this rule may re-roll Blank Results on Attack Runs.</description>

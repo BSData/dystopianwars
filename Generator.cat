@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f69c-988c-fae3-e664" name="Generator" revision="1" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f69c-988c-fae3-e664" name="Generator" revision="1" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Generator collection</readme>
   <sharedRules>
     <rule id="99d4-4010-e285-3397" name="Solex Generator" publicationId="129d-da97-caec-1ddd" hidden="false">
@@ -61,6 +61,9 @@
     </rule>
     <rule id="c8ce-067f-fea8-42b3" name="Guardian generator" hidden="false">
       <description>Generator removes 1 Action Dice from the Dice Pool of each Attack against this Model. If this Model has both a Shield and Guardian Generators, then this is in addition to the Action Dice removed by the Shield Generator. The Guardian Generator cannot be used against attacks that are unaffected by Shield Generators.</description>
+    </rule>
+    <rule id="0bab-bd34-0b75-76b1" name="Tesla-Huston Arc Generator" publicationId="e6a1-85d3-8979-7880" hidden="false">
+      <description>This Generator provides +2 to the Model’s Speed Attribute. Furthermore, this Generator may be used in the Shooting Phase to Attack an Initial Target within 15&quot; of this Model. The Attack is for 13 Action Dice and has the Arc and Devastating Quality and cannot be combined with any other weapon. A Model that uses its Arc Generator to make an attack gains a level of Disorder.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -132,5 +135,18 @@
     <profile id="bbcb-e6ac-1e89-35d2" name="Portal generator" publicationId="d854-a2d6-3d52-44c4" page="" hidden="false" typeId="0397-3287-82a2-e086" typeName="Upgrade Generator"/>
     <profile id="9512-f063-fbc2-a039" name="Trident generator" publicationId="33cf-b4a6-bff0-0d70" hidden="false" typeId="0397-3287-82a2-e086" typeName="Upgrade Generator"/>
     <profile id="1877-35d1-b915-2b6b" name="Guardian generator" publicationId="33cf-b4a6-bff0-0d70" hidden="false" typeId="0397-3287-82a2-e086" typeName="Upgrade Generator"/>
+    <profile id="0261-b767-cd91-14ae" name="Tesla-Huston Arc Generator" publicationId="e6a1-85d3-8979-7880" hidden="false" typeId="f5d9-cb1c-6514-45c8" typeName="Stats Generator">
+      <characteristics>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9"/>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">+2</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906"/>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb"/>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24"/>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923"/>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da"/>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325"/>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9"/>
+      </characteristics>
+    </profile>
   </sharedProfiles>
 </catalogue>

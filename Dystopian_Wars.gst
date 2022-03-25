@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="1242-c30b-419f-8229" name="Dystopian Wars 3.0" revision="5" battleScribeVersion="2.03" authorName="Riccardo Sipone / Ruslan Zakirov" authorContact="siponeric@hotmail.com / ruslan.zakirov.2000@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
-  <comment>Revision 1.01: added all ORBAT Publication
+<gameSystem id="1242-c30b-419f-8229" name="Dystopian Wars 3.0" revision="4" battleScribeVersion="2.03" authorName="Riccardo Sipone / Ruslan Zakirov" authorContact="siponeric@hotmail.com / ruslan.zakirov.2000@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+  <readme>The Dystopian Wars datafile are editied and mantained with Ruslan Zakirov, that with patience has start to managed all profile and debugging.
+Revision 1.01: added all ORBAT Publication
 Revision 1.02: managed correctlly Publication, corrected Command Reroll bonus
-Revision 1.03: update common weapon charatteristic after new Orbat pubbication</comment>
-  <readme>The Dystopian Wars datafile are editied and mantained with Ruslan Zakirov, that with patience has start to managed all profile and debugging.  
-</readme>
+Revision 1.03: update common weapon charatteristic after new Orbat pubbication
+Revision 1.04: review of datafile logic</readme>
   <publications>
     <publication id="7f09-e243-2307-78d0" name="Dystopian Rulebook"/>
     <publication id="e265-8c7f-a4b2-a48e" name="Commonwhealth ORBAT"/>
@@ -63,6 +63,7 @@ Revision 1.03: update common weapon charatteristic after new Orbat pubbication</
     </profileType>
   </profileTypes>
   <categoryEntries>
+    <categoryEntry id="f143-0c0d-137b-1745" name="Automata" hidden="false"/>
     <categoryEntry id="f53b-304b-cb90-6535" name="Battleship" hidden="false"/>
     <categoryEntry id="fef3-1842-580c-4bef" name="Flagship" hidden="false"/>
     <categoryEntry id="408c-1732-73f9-379d" name="Fleet Carrier" hidden="false"/>
@@ -134,9 +135,16 @@ Revision 1.03: update common weapon charatteristic after new Orbat pubbication</
     <categoryEntry id="f69c-ba63-7c93-a71f" name="Assault Submarine" publicationId="dbca-8d57-b848-457e" hidden="false"/>
     <categoryEntry id="884d-f947-5522-d6e7" name="Attack Cruiser" publicationId="dbca-8d57-b848-457e" hidden="false"/>
     <categoryEntry id="acf0-1a05-7d4a-faab" name="Auxiliary Cruiser" publicationId="dbca-8d57-b848-457e" hidden="false"/>
+    <categoryEntry id="efd3-b9c9-b144-de57" name="Paddlewheel" publicationId="7b2b-0f56-3962-5ec1" hidden="false"/>
+    <categoryEntry id="6418-4b93-61d8-78b7" name="Missile Cruiser" hidden="false"/>
+    <categoryEntry id="5c0f-4774-0eb5-1238" name="Strike Carrier" hidden="false"/>
+    <categoryEntry id="0951-b2e8-6dc1-0cb1" name="Support Ship" hidden="false"/>
+    <categoryEntry id="7db7-a182-45aa-0f1b" name="Arc Cruiser" hidden="false"/>
+    <categoryEntry id="3402-a080-c0bb-dcfc" name="Supply Cruiser" hidden="false"/>
+    <categoryEntry id="c8a0-0265-d83f-fe12" name="Battlefleet Flagship" hidden="false"/>
   </categoryEntries>
   <forceEntries>
-    <forceEntry id="44e8-1fde-db6e-20f6" name="Battlefleet (generic don&apos;t use)" publicationId="7f09-e243-2307-78d0" hidden="false">
+    <forceEntry id="44e8-1fde-db6e-20f6" name="Battlefleet (generic don&apos;t use)" publicationId="7f09-e243-2307-78d0" hidden="true">
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88de-fb71-a971-9098" type="min"/>
       </constraints>
@@ -228,6 +236,14 @@ Revision 1.03: update common weapon charatteristic after new Orbat pubbication</
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="5a6f-0182-7ad2-b986" name="Battlefleet Flagship" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="add" field="category" value="c8a0-0265-d83f-fe12"/>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21cf-7e56-4c4b-33a7" type="max"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -418,8 +434,18 @@ arms fire close to the vessel. Any Hits or Heavy Hits by Enemy SRS Tokens agains
     <rule id="1083-2af1-7bfc-7a55" name="Skyfire" publicationId="7b2b-0f56-3962-5ec1" page="1" hidden="false">
       <description>Models in this Unit may re-roll blanks when shooting at Aerial Units with weapons that have the Aerial Quality.</description>
     </rule>
+    <rule id="2ae7-9b96-fd1d-ef29" name="Inductorium" publicationId="33cf-b4a6-bff0-0d70" hidden="false">
+      <description>When this Unit makes an Attack with a weapon with the Voltaic or Arc Quality, count the number of Exploding Hits results once all Attack Dice have been rolled, including additional dice from Exploding Hits. If the number of Exploding Hits exceeds the number of Models in the Target Unit (not including Escorts), the Attack gains a bonus number of Action Dice equal to the number of Models in the Target Unit (not including Escorts). SRS Tokens and Special SRS Tokens do not benefit from this rule.</description>
+    </rule>
+    <rule id="177e-3490-5f5e-f4b9" name="Contra Rotation" publicationId="7b2b-0f56-3962-5ec1" page="1" hidden="false">
+      <description>This is a Special Operations Action that may be made by any Model in the Unit with the Paddlewheel Trait unless it has a Navigation Lock Critical Damage Marker. The Model making a Contra Rotation
+Action has a Drift of zero and reduces its Speed Attribute by its Mass for the Activation. At any point during its Movement Step the Model may make a single turn on the spot of up to 90 degrees. It may Move and Turn normally in addition to this Action.</description>
+    </rule>
+    <rule id="a278-bd16-046d-acb6" name="Mechanical Soul" publicationId="908d-6feb-2e9e-843b" hidden="false">
+      <description>This Unit ignores the effects of the Emergency Condition, but counts has having the Disorder Level. Models in the Unit can only support with +1 AD to Fray.</description>
+    </rule>
   </sharedRules>
-    <sharedProfiles>
+  <sharedProfiles>
     <profile id="761e-3d83-8f4e-ad4c" name="Atomic generator" publicationId="7f09-e243-2307-78d0" page="" hidden="false" typeId="f5d9-cb1c-6514-45c8" typeName="Stats Generator">
       <characteristics>
         <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7b3f-8541-c5c8-b666" name="The Sultanate v.0.03a" revision="1" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7b3f-8541-c5c8-b666" name="Sultanate v.0.03a" revision="1" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Review 0.03.a0: First version published</comment>
   <categoryEntries>
     <categoryEntry id="24d7-a2ac-a5bb-a77d" name="Temir Class" publicationId="d854-a2d6-3d52-44c4" hidden="false"/>
@@ -17,6 +17,9 @@
   </categoryEntries>
   <forceEntries>
     <forceEntry id="c266-4567-b6b7-ffa4" name="Anatolia Battlefleet" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+      <infoLinks>
+        <infoLink id="2ae3-95dc-5eb9-4d1d" name="Command Re-Roll" hidden="true" targetId="baf3-c66b-7e9a-8002" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="f9e5-7348-6405-1584" name="Iskandar Class" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="6a18-ecc8-6c5b-fc1a" primary="false">
           <constraints>
@@ -36,8 +39,8 @@
         </categoryLink>
         <categoryLink id="3e17-017f-a9fe-c127" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="401f-b82c-49bc-09b6" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba99-5000-a908-18dd" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a6b-151f-4416-06fd" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="c69b-63b1-81d9-e071" name="Turkish" hidden="false" targetId="03eb-089a-0c01-5751" primary="false">
@@ -57,12 +60,12 @@
         </categoryLink>
         <categoryLink id="df2b-0d33-592b-33be" name="Hashashin Class" hidden="false" targetId="739a-f65a-92e7-ad8a" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3399-4be3-9bb7-a578" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3399-4be3-9bb7-a578" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="db6d-51e6-c191-8e75" name="Mehmed Class" hidden="false" targetId="30d4-a502-0c25-e14d" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5f2-1afb-e20d-af3d" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5f2-1afb-e20d-af3d" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="4636-4970-9a58-62a0" name="Temir Class" hidden="false" targetId="24d7-a2ac-a5bb-a77d" primary="false">
@@ -72,7 +75,7 @@
         </categoryLink>
         <categoryLink id="3342-5862-3b14-0aef" name="Hurrem Class" hidden="false" targetId="e8d0-17bb-5709-2709" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f64-503d-ff17-2215" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f64-503d-ff17-2215" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="0fc0-69f4-3a5f-61d1" name="Suleiman Class" hidden="false" targetId="cd59-6fc0-8df9-ea18" primary="false">
@@ -160,6 +163,18 @@
           </constraints>
           <entryLinks>
             <entryLink id="ae99-2e66-c9d1-b1c4" name="Corvette Skiff" hidden="false" collective="false" import="true" targetId="b35e-ec76-7056-958d" type="selectionEntry">
+              <modifiers>
+                <modifier type="decrement" field="7c9b-6b09-b5ac-2249" value="10.0">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c266-4567-b6b7-ffa4" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4c70-9c3e-3e2a-5de0" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a4c-a525-68fc-e2dc" type="min"/>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dd3-37f0-bd5a-2d5c" type="max"/>
@@ -889,8 +904,8 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="b940-447f-b9a7-e294" name="Main Weapon" publicationId="e265-8c7f-a4b2-a48e" page="4" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e52f-26e0-70a8-2196" type="min"/>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="505b-d4ea-4532-04e8" type="max"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e52f-26e0-70a8-2196" type="min"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="505b-d4ea-4532-04e8" type="max"/>
           </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup id="bd67-3db5-25a9-7bc7" name="Port First" hidden="false" collective="false" import="true" defaultSelectionEntryId="479d-d50c-73c1-4fcc">
@@ -1121,123 +1136,123 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup id="d2e4-ee46-b7ac-5eea" name="Generator" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e467-88cb-40fc-ae72" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="61a0-6435-3b8b-e72c" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="3732-59ad-464f-a0c4" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry id="1d2e-c596-a325-8d0b" name="Atomic generator" publicationId="7f09-e243-2307-78d0" page="4" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e2f9-76f3-3d73-d69a" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="c9a2-d65f-6c8a-2834" name="Atomic generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" targetId="761e-3d83-8f4e-ad4c" type="profile"/>
+                    <infoLink id="efdc-da44-5f28-251a" name="Atomic generator" hidden="false" targetId="1892-b471-89bc-1ab6" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="c1a8-f322-b027-1d4f" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f62c-753f-e691-b5db" name="Fury generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7c42-c416-e288-e5a7" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="6283-fa65-678f-b122" name="Fury generator" hidden="false" targetId="dfd6-5ab4-09d4-2c3a" type="profile"/>
+                    <infoLink id="2605-3f65-e989-3247" name="Fury generator" hidden="false" targetId="e3e3-342b-63df-28cb" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="43ca-e978-76f6-c589" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="90d6-e7db-6e39-47ab" name="Magnetic generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e351-52e7-9fe2-a1a8" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="6952-0c34-7aeb-f851" name="Magnetic generator" hidden="false" targetId="500f-6824-b8ce-b222" type="profile"/>
+                    <infoLink id="9746-d141-ebd7-91d6" name="Magnetic generator" hidden="false" targetId="5d02-4526-36bc-27ae" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="9550-4a96-2345-55cb" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3815-6acd-9594-f92c" name="Shield generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="db38-c305-2a3a-c935" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="618d-68b8-d8b0-4a46" name="Shield generator" hidden="false" targetId="dce3-33ce-753a-8647" type="profile"/>
+                    <infoLink id="761d-32d6-5844-c516" name="Shield generator" hidden="false" targetId="a450-34be-1ffc-5ff3" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="30d5-b481-326f-7984" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="06c3-aa6d-7a58-ac17" name="Repulsion generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="808d-f78a-d263-9fbc" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="6612-add0-d053-d91d" name="Repulsion generator" hidden="false" targetId="260e-2d03-fa1e-8137" type="profile"/>
+                    <infoLink id="bc9b-8bff-6bc6-a997" name="Repulsion generator" hidden="false" targetId="67a0-4bf1-a4e1-f28e" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="39a5-57d7-07ea-eeb3" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="478e-4977-12b0-7d1d" name="Mirage generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cf54-8708-bf55-b4bd" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="138e-5af9-527d-f420" name="Mirage Generator" hidden="false" targetId="0c80-8c19-6348-9a6c" type="profile"/>
+                    <infoLink id="b10c-3264-f144-d4fa" name="Mirage generator" hidden="false" targetId="8466-6d75-968e-c1e7" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="8147-9753-3518-6780" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9648-c3b0-99d2-b7c1" name="Shroud generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cf46-47ea-84ff-4c8f" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="d4ef-bc08-5a81-9bfa" name="Shroud generator" hidden="false" targetId="d49a-9023-5668-0f54" type="profile"/>
+                    <infoLink id="64b5-e56f-2e24-92f8" name="Shroud generator" hidden="false" targetId="8dc5-989b-0ad0-83a3" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="3786-f6bf-e180-c654" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
           </selectionEntryGroups>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="54f9-bde6-cfda-68d0" name="Generator" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="88be-248d-bf15-fd74" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="695d-26bc-1744-0614" type="max"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="d224-f897-fe20-2e95" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="b4c5-98d5-82f3-82fb" name="Atomic generator" publicationId="7f09-e243-2307-78d0" page="4" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4000-55ab-c956-9568" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="5e38-7dbc-3312-c2e0" name="Atomic generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" targetId="761e-3d83-8f4e-ad4c" type="profile"/>
-                <infoLink id="e2d6-b88d-50dd-1b6d" name="Atomic generator" hidden="false" targetId="1892-b471-89bc-1ab6" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="4568-0f2d-eed6-df6d" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="4877-9bfb-83ec-9cf6" name="Fury generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="37ee-31bd-82c1-7cbe" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="6e3c-7fed-403a-358d" name="Fury generator" hidden="false" targetId="dfd6-5ab4-09d4-2c3a" type="profile"/>
-                <infoLink id="35e6-329d-5ee9-8f97" name="Fury generator" hidden="false" targetId="e3e3-342b-63df-28cb" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="4887-2fbf-522a-1fd1" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="512a-8e67-ef7d-9518" name="Magnetic generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4019-e6db-b372-5fd5" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="868e-9835-58eb-d716" name="Magnetic generator" hidden="false" targetId="500f-6824-b8ce-b222" type="profile"/>
-                <infoLink id="aadb-128e-584e-15d7" name="Magnetic generator" hidden="false" targetId="5d02-4526-36bc-27ae" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="1648-d6c0-8066-5721" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9ef2-efcb-f6bd-7179" name="Shield generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8e18-3169-d8e4-7868" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="c035-8beb-7671-5fdf" name="Shield generator" hidden="false" targetId="dce3-33ce-753a-8647" type="profile"/>
-                <infoLink id="ccc7-936e-a3cf-8712" name="Shield generator" hidden="false" targetId="a450-34be-1ffc-5ff3" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="d16c-bfc8-234c-394b" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c41f-7fac-3405-c9ba" name="Repulsion generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e3d8-94bf-4fa8-e51d" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="a36e-2bb2-48dd-e023" name="Repulsion generator" hidden="false" targetId="260e-2d03-fa1e-8137" type="profile"/>
-                <infoLink id="f901-236c-cec4-2566" name="Repulsion generator" hidden="false" targetId="67a0-4bf1-a4e1-f28e" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="6232-1d09-c64a-d054" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="cbc2-6427-930e-fd57" name="Mirage generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5788-efe8-e661-49ad" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="3f04-99af-c727-7044" name="Mirage Generator" hidden="false" targetId="0c80-8c19-6348-9a6c" type="profile"/>
-                <infoLink id="a877-e2c7-7fc9-53ac" name="Mirage generator" hidden="false" targetId="8466-6d75-968e-c1e7" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="a1bd-f675-ebd1-2910" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="dc31-fe84-23e2-d46c" name="Shroud generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="90ff-dd6f-e036-f42d" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="d2e3-3708-a6b3-191b" name="Shroud generator" hidden="false" targetId="d49a-9023-5668-0f54" type="profile"/>
-                <infoLink id="c248-a77f-3d27-5889" name="Shroud generator" hidden="false" targetId="8dc5-989b-0ad0-83a3" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="b0b5-ac9d-19d9-d0ea" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="606e-a551-c0fa-e545" name="Secondary Weapon" hidden="false" collective="false" import="true">
           <constraints>
@@ -1413,7 +1428,7 @@
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="45.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="190c-7bec-e837-5ce4" name="Hashashin" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="190c-7bec-e837-5ce4" name="Hashashin" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="true" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49ed-cb40-82fe-15cb" type="min"/>
         <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e4b-90b4-a3a6-1d95" type="max"/>

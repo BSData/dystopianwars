@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4724-2577-5b2d-0bfe" name="The Crown v1.02a" revision="1" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4724-2577-5b2d-0bfe" name="Crown v1.02a" revision="2" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Review 1.02.a0: Initial release</comment>
   <categoryEntries>
     <categoryEntry id="6427-c580-219d-c874" name="Britannia Class" publicationId="dbca-8d57-b848-457e" hidden="false"/>
@@ -30,6 +30,7 @@
     <categoryEntry id="d4a3-52d1-9941-7ffb" name="Canadian" publicationId="dbca-8d57-b848-457e" hidden="false"/>
     <categoryEntry id="fffb-149d-6db1-4439" name="British" publicationId="dbca-8d57-b848-457e" hidden="false"/>
     <categoryEntry id="1e28-4ab8-662e-f4c3" name="Privateer" publicationId="dbca-8d57-b848-457e" hidden="false"/>
+    <categoryEntry id="1ed7-e280-a0e5-78b8" name="Sabre squadron" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="7b54-608f-353d-8628" name="Britannia Battlefleet" publicationId="dbca-8d57-b848-457e" hidden="false">
@@ -52,7 +53,6 @@
         <categoryLink id="69c3-5478-9c8f-da09" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f13-024d-f25c-0aad" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d15-67cc-3588-72b8" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="a200-5ab1-ed72-ecc4" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="false">
@@ -63,6 +63,7 @@
         <categoryLink id="cde7-f5a3-2134-6437" name="Britannia Class" hidden="false" targetId="6427-c580-219d-c874" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b29-f93d-bb71-9fd4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1ed-a24a-3e84-9ff4" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="ca36-4427-ce7e-cb44" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false">
@@ -80,14 +81,78 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56c0-c8b0-6d19-d391" type="min"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="e5d4-4302-ff12-180f" name="Sabre squadron" hidden="false" targetId="1ed7-e280-a0e5-78b8" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf4a-3a07-7fd5-f9c5" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="c0b4-eae1-cb2f-a89f" name="Bedivere Class" hidden="false" targetId="d50a-ca78-5e3b-8fb7" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bc0-b26d-6196-e795" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="8a54-0b0f-93c8-76c1" name="Athelstan Class" hidden="false" targetId="a4c7-ed2c-6f9a-1a54" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4bc-ba7c-9e1d-ee55" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="adf1-30df-f502-800a" name="Excalibur Class" hidden="false" targetId="ce49-79cb-7795-08b2" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8eb7-b2ed-b72d-0392" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="a207-7677-6974-beff" name="Hotspur Class" hidden="false" targetId="a683-0b8f-09f3-7880" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f512-8384-a523-9c3b" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="4a8d-c60c-ae2f-15c1" name="Lancelot Class" hidden="false" targetId="2315-8265-0cb0-b2a7" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7931-0d9d-50f7-4f90" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="5f88-bb6a-69ed-1bf5" name="Morgana Class" hidden="false" targetId="cb90-9d6d-4a1b-d87e" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1873-0400-f252-3689" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="0414-1378-decf-c096" name="Picton Class" hidden="false" targetId="d3ce-dad9-4684-d657" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8430-2825-ed37-09fe" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="6a1e-2493-383e-4dbf" name="Victory Class" hidden="false" targetId="3c0e-3931-32d5-b795" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b3b-ec95-f8ff-3336" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="74f8-a93e-d127-d4f7" name="Victory Battlefleet" publicationId="dbca-8d57-b848-457e" hidden="false">
+      <rules>
+        <rule id="1750-ae51-70ca-df54" name="Victory Battlefleet Bonus" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4a0b-4560-3f25-f677" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7de2-7c84-504e-ad97" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>Hotspur class Units do not have their SRS Capacity reduced when Crippled.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="76ee-753b-47dc-5508" name="Command Re-Roll" hidden="false" targetId="baf3-c66b-7e9a-8002" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="e6f9-5bc6-f909-bc7f" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4269-8835-2914-4a67" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bc3-50a1-7046-78b7" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="4ba5-6c1f-9c0c-9360" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="false">
@@ -95,19 +160,78 @@
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64f3-c415-22f1-b4f7" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="36e6-99fd-7e13-3ba1" name="• Victory Class�" hidden="false" targetId="3c0e-3931-32d5-b795" primary="false">
+        <categoryLink id="36e6-99fd-7e13-3ba1" name="Victory Class" hidden="false" targetId="3c0e-3931-32d5-b795" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6615-6603-55f8-0885" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00a9-0c75-34d9-5eab" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="a0e7-279d-e6b6-dcb8" name="Excalibur Class" hidden="false" targetId="ce49-79cb-7795-08b2" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf3b-accb-eac3-0a2a" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="3dcb-5a24-9c68-126e" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="7.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2506-c1eb-6172-ff17" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="0fd6-07c2-ac61-7423" name="Aerial" hidden="false" targetId="11d2-f561-163c-722c" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce04-33a3-bc89-5a21" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="d127-ca1f-cb02-451c" name="Albion Class" hidden="false" targetId="b6a5-4bf0-cc7d-cef0" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2635-ac88-bbbb-531e" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="e117-bf1c-9e7f-78c9" name="Athelstan Class" hidden="false" targetId="a4c7-ed2c-6f9a-1a54" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e934-055c-89a4-135d" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="cf4b-7eb4-d612-42c2" name="Bedivere Class" hidden="false" targetId="d50a-ca78-5e3b-8fb7" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79c0-a1c0-1d6a-7b59" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="7dc8-9699-6221-f30a" name="Britannia Class" hidden="false" targetId="6427-c580-219d-c874" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4f8-e786-3408-2101" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="a8af-2693-4ca8-e8c7" name="Lancelot Class" hidden="false" targetId="2315-8265-0cb0-b2a7" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b48-4d30-444b-392a" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="d2c0-6457-843e-bb20" name="Morgana Class" hidden="false" targetId="cb90-9d6d-4a1b-d87e" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd31-46ef-43f1-8d77" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="a5f4-38ad-1663-353e" name="Picton Class" hidden="false" targetId="d3ce-dad9-4684-d657" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae75-389e-a2b9-b167" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="afb9-bb19-87f2-a7b1" name="Sabre squadron" hidden="false" targetId="1ed7-e280-a0e5-78b8" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e40-1a95-f65f-a24c" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="f771-8c4b-877d-735f" name="Protecteur Battlefleet" publicationId="dbca-8d57-b848-457e" hidden="false">
+      <infoLinks>
+        <infoLink id="004c-5281-201f-b361" name="Command Re-Roll" hidden="false" targetId="baf3-c66b-7e9a-8002" type="rule"/>
+        <infoLink id="22c0-eae6-5767-c366" name="Snowbird Strike" hidden="false" targetId="d3de-889d-63a3-56bb" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="f9c1-6887-ce47-70a0" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94ce-f36b-cdc2-7415" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="981d-5eb6-802b-2580" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="b8f8-fe3e-17bd-3344" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="false">
@@ -115,9 +239,20 @@
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0af-cdd3-3d91-b372" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="e0d4-7be1-19c7-b3f7" name="• Protecteur Class�" hidden="false" targetId="ddb5-f0d6-665c-3ac4" primary="false">
+        <categoryLink id="e0d4-7be1-19c7-b3f7" name="Protecteur Class" hidden="false" targetId="ddb5-f0d6-665c-3ac4" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e83-84ab-a7c4-7939" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3957-b55b-065a-d639" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="db9b-dd70-0c37-216e" name="Orca Class" hidden="false" targetId="67f5-80e9-aef2-3097" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9010-a4e7-1f0c-3928" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="91e7-acee-c63e-da62" name="Canadian" hidden="false" targetId="d4a3-52d1-9941-7ffb" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b750-c25a-78e4-d556" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -130,7 +265,6 @@
         <categoryLink id="a455-945f-8351-23e7" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09f9-2dd5-35cc-8422" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="755a-7c40-ccc8-3dac" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="f527-e13f-b533-f629" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="false">
@@ -223,9 +357,37 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90d5-4c59-e0a1-02f6" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="999c-f21b-9277-2a67" name="Britannia Class" hidden="false" targetId="6427-c580-219d-c874" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2246-7b02-6a57-0738" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="6126-d345-e0d8-9e8b" name="Victory Class" hidden="false" targetId="3c0e-3931-32d5-b795" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15cb-bd31-d6d1-06e2" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="cfe9-eb31-33b4-b6e0" name="Protecteur Class" hidden="false" targetId="ddb5-f0d6-665c-3ac4" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d05-31a7-68f9-2caa" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="4ebf-2414-84a4-a00d" name="Sabre squadron" hidden="false" targetId="1ed7-e280-a0e5-78b8" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2359-ae0d-4eba-89f4" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="14d5-677b-4323-a2c5" name="Toronto Class" hidden="false" targetId="01d6-2c71-3552-49ae" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb2d-8494-9a2e-e290" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="655a-768e-4dd7-479e" name="Nautilus Battlefleet" publicationId="dbca-8d57-b848-457e" hidden="false">
+      <infoLinks>
+        <infoLink id="af16-76c0-d77f-a1be" name="Command Re-Roll" hidden="false" targetId="baf3-c66b-7e9a-8002" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="face-1177-2472-3c03" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="false">
           <constraints>
@@ -243,6 +405,18 @@
   </forceEntries>
   <selectionEntries>
     <selectionEntry id="0e8c-af8d-bfbe-868f" name="Orca Hunter Submarines Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74f8-a93e-d127-d4f7" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b54-608f-353d-8628" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="bd95-63d1-0158-ad27" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
         <categoryLink id="e70b-9ec4-822e-2a7b" name="Orca Class" hidden="false" targetId="67f5-80e9-aef2-3097" primary="false"/>
@@ -275,6 +449,19 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="6dea-f7e3-41e1-168f" name="Yukon Auxiliary Cruiser Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74f8-a93e-d127-d4f7" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b54-608f-353d-8628" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="7ce8-91dd-b267-0b5a" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
         <categoryLink id="8e59-42d8-b0b2-55a8" name="Yukon Class" hidden="false" targetId="ac46-6066-cc04-9c42" primary="false"/>
@@ -287,6 +474,19 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="eb92-c6b0-0fc6-a87f" name="Newfoundland Attack Cruiser Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b54-608f-353d-8628" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74f8-a93e-d127-d4f7" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="741b-926c-996e-aba3" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
         <categoryLink id="42f0-37f6-a677-5cff" name="Newfoundland Class" hidden="false" targetId="3f99-efd1-acc8-e530" primary="false"/>
@@ -299,6 +499,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="5312-23bb-62de-36b1" name="Picton Light Cruiser Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="4de0-8f7f-5877-9d6b" name="Picton Class" hidden="false" targetId="d3ce-dad9-4684-d657" primary="false"/>
         <categoryLink id="6484-67c4-f57e-ca45" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
@@ -311,6 +523,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="9fd2-991a-98d0-18b4" name="Morgana Assault Submarine Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="1c91-3fb1-bdb8-8887" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
         <categoryLink id="7f94-2d4a-6d12-d94f" name="Morgana Class" hidden="false" targetId="cb90-9d6d-4a1b-d87e" primary="false"/>
@@ -323,6 +546,29 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="0120-ea7e-c671-982a" name="Nautilus" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b54-608f-353d-8628" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74f8-a93e-d127-d4f7" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="fef3-1842-580c-4bef">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set-primary" field="category" value="fef3-1842-580c-4bef">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="e128-6432-f2c1-45d6" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
         <categoryLink id="0247-c655-d773-ebbb" name="Privateer" hidden="false" targetId="1e28-4ab8-662e-f4c3" primary="false"/>
@@ -336,6 +582,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="9838-4fe7-31b7-f0a6" name="Lancelot Heavy Cruiser Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="7f1e-7da9-ea62-cd0b" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
         <categoryLink id="bc0e-ad9c-8f11-a765" name="Lancelot Class" hidden="false" targetId="2315-8265-0cb0-b2a7" primary="false"/>
@@ -348,6 +606,23 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="baf7-53c3-dd00-7ca4" name="Hotspur Support Carrier Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="4a0b-4560-3f25-f677">
+          <conditions>
+            <condition field="selections" scope="self" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="5437-deac-9d58-e2bb" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
         <categoryLink id="170d-b409-c313-810d" name="Hotspur Class" hidden="false" targetId="a683-0b8f-09f3-7880" primary="false"/>
@@ -374,12 +649,37 @@
       </selectionEntries>
       <entryLinks>
         <entryLink id="25f1-d840-4f0e-7b9c" name="Hotspur" hidden="false" collective="false" import="true" targetId="fd72-a8a0-a24d-349e" type="selectionEntry"/>
+        <entryLink id="9fd0-f417-e27e-c1c9" name="No. 1 Squadron" hidden="true" collective="false" import="true" targetId="20a2-2b29-a51e-0077" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4a0b-4560-3f25-f677" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d748-f73d-5fee-cffb" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1cb-ae84-fa6c-bf70" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="321b-83e8-0c2c-0326" name="Excalibur Heavy Destroyers Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="079e-49c2-8707-2bf2" name="Excalibur Class" hidden="false" targetId="ce49-79cb-7795-08b2" primary="false"/>
         <categoryLink id="fe8d-cb62-88ad-2d13" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
@@ -392,6 +692,19 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="24dd-489f-2132-224d" name="Halifax Shield Cruiser" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b54-608f-353d-8628" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74f8-a93e-d127-d4f7" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="37fe-906e-d44a-d669" name="Halifax Class" hidden="false" targetId="b0b9-9e5b-dd34-c930" primary="false"/>
         <categoryLink id="572d-b777-b1fe-a07d" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
@@ -427,10 +740,18 @@
       <modifiers>
         <modifier type="add" field="category" value="f528-7730-c362-7796">
           <conditions>
-            <condition field="selections" scope="c3ed-2e1c-5aaf-8ca0" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3391-de44-4f50-9776" type="equalTo">
-              <comment></comment>
-            </condition>
+            <condition field="selections" scope="c3ed-2e1c-5aaf-8ca0" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3391-de44-4f50-9776" type="equalTo"/>
           </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -465,6 +786,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="98dc-de0c-7988-992f" name="Caliburn Frigates Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="245d-2a15-4bde-8db8" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
         <categoryLink id="56cc-67fa-80ba-8b17" name="Caliburn Class" hidden="false" targetId="6404-9e52-94ad-87cd" primary="false"/>
@@ -477,6 +810,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="8fd8-cbe5-e866-96c1" name="Agincourt Bombardment Cruiser Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="71fb-4cee-a574-1b4c" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
         <categoryLink id="7764-2744-ae33-687a" name="Agincourt Class" hidden="false" targetId="eedb-3308-3474-4f3b" primary="false"/>
@@ -489,6 +834,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="d7a3-c95d-0129-9e48" name="Bedivere Monitor Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="661e-1b62-31a1-55f9" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
         <categoryLink id="c4b7-c779-18f1-c2de" name="Bedivere Class" hidden="false" targetId="d50a-ca78-5e3b-8fb7" primary="false"/>
@@ -501,6 +858,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="f07e-57a0-80d8-c9f9" name="Athelstan Flak Cruiser Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="7f5d-66b4-acfe-f548" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
         <categoryLink id="e6ad-5688-7331-1d2c" name="Athelstan Class" hidden="false" targetId="a4c7-ed2c-6f9a-1a54" primary="false"/>
@@ -533,6 +902,19 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="4dac-69da-5402-0fc9" name="Bonaventure Strike Cruiser Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b54-608f-353d-8628" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74f8-a93e-d127-d4f7" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="2091-09a1-b45c-b8b4" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
         <categoryLink id="d1ef-91be-7d9e-0e43" name="Bonaventure Class" hidden="false" targetId="6e57-abee-d1b8-c2e0" primary="false"/>
@@ -545,9 +927,22 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="abef-346e-d0cd-6a8d" name="Sabre Command Cruisers Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="0c29-a81a-866a-35ec" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="41bd-608d-9168-7ede" name="Victory Class" hidden="false" targetId="3c0e-3931-32d5-b795" primary="false"/>
+        <categoryLink id="b421-1b69-7fb3-008d" name="Sabre squadron" hidden="false" targetId="1ed7-e280-a0e5-78b8" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="e26c-9a02-27a9-cca0" name="Sabre" hidden="false" collective="false" import="true" targetId="e34f-b439-2980-93ea" type="selectionEntry"/>
@@ -557,6 +952,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="920f-8fbf-50eb-c5ea" name="HMS Ark Royal" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="3c90-9021-4dd5-9bc5" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="2d12-b974-6c3e-62c1" name="Victory Class" hidden="false" targetId="3c0e-3931-32d5-b795" primary="false"/>
@@ -569,6 +976,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="6bd8-9163-7912-a9ae" name="Britannia Heavy Battleship" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="e632-f553-367c-8b56" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="9c25-22a2-912f-7e7b" name="Britannia Class" hidden="false" targetId="6427-c580-219d-c874" primary="false"/>
@@ -592,6 +1011,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="43c9-d9d4-3577-ccd5" name="Victory Heavy Carrier" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="a4e5-8dae-611c-75b4" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="6a51-2630-dddf-4ed1" name="Victory Class" hidden="false" targetId="3c0e-3931-32d5-b795" primary="false"/>
@@ -604,9 +1035,22 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="34bd-52eb-4994-0bdf" name="The Lord&apos;s Hood" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="2dbf-814f-40c5-7c00" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="d8ff-1690-cd8f-b7af" name="Sabre Class" hidden="false" targetId="27ee-3bf4-f5b4-ea57" primary="false"/>
+        <categoryLink id="dfb9-f262-08c0-c023" name="Sabre squadron" hidden="false" targetId="1ed7-e280-a0e5-78b8" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="a82d-8e3e-fee2-9a38" name="HMS Lord Alexander Hood" hidden="false" collective="false" import="true" targetId="36c0-10f7-153f-33b7" type="selectionEntry"/>
@@ -618,6 +1062,19 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="3881-4fc3-c278-3aa2" name="Toronto Control Cruisers Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74f8-a93e-d127-d4f7" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b54-608f-353d-8628" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="bdd2-2477-fdfd-a0d5" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="4d57-e6f3-d5eb-066a" name="Toronto Class" hidden="false" targetId="01d6-2c71-3552-49ae" primary="false"/>
@@ -630,6 +1087,19 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="68f6-058b-4271-c693" name="Protecteur Submersible Carrier" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74f8-a93e-d127-d4f7" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b54-608f-353d-8628" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="85d6-f17f-f98c-7cdd" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="2337-91ef-efcd-9ac1" name="Protecteur Class" hidden="false" targetId="ddb5-f0d6-665c-3ac4" primary="false"/>
@@ -643,7 +1113,7 @@
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
-    <selectionEntry id="3919-a80d-c0f2-d6e6" name="Agincourt" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="3919-a80d-c0f2-d6e6" name="Agincourt" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4b1-488e-c7de-2c53" type="min"/>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1d3-5936-0797-d3d7" type="max"/>
@@ -823,7 +1293,7 @@
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="130.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3391-de44-4f50-9776" name="Albion" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="3391-de44-4f50-9776" name="Albion" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="e3bb-7676-dcf0-db3b" value="1.0">
           <conditions>
@@ -2825,7 +3295,7 @@
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="125.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fd72-a8a0-a24d-349e" name="Hotspur" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="fd72-a8a0-a24d-349e" name="Hotspur" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="add" field="category" value="9ab6-c624-d0ae-dd32">
           <conditions>
@@ -4000,6 +4470,9 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             <infoLink id="4163-ee88-6db5-3852" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
             <infoLink id="4d03-6c20-89b4-ff55" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="77a7-e31b-e877-223e" name="Heavy Torpedo Salvo - (F)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -4100,6 +4573,8 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <categoryLink id="b6bd-2d24-62d5-354a" name="Hunter Submarine" hidden="false" targetId="32fd-997a-72b6-f5cb" primary="false"/>
         <categoryLink id="f3f2-23e2-a2d9-1eee" name="Orca Class�" hidden="false" targetId="67f5-80e9-aef2-3097" primary="false"/>
         <categoryLink id="f276-8ef4-74cc-7525" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="false"/>
+        <categoryLink id="fba4-96be-8045-006f" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="false"/>
+        <categoryLink id="4a24-a765-3a60-1940" name="Canadian" hidden="false" targetId="d4a3-52d1-9941-7ffb" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="94a8-c843-25fa-7a34" name="Torpedo Salvo - (F)" hidden="false" collective="false" import="true" type="upgrade">
@@ -4162,6 +4637,9 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             <infoLink id="4bb5-0a62-51e7-f56f" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
             <infoLink id="611e-b574-db20-e30c" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="972a-4b8f-1551-8e8c" name="Heavy Torpedo Salvo - (F)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -5390,6 +5868,9 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0a2b-fc3c-ba73-79a4" name="HMS Lord Arthur Hood" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -5562,8 +6043,11 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="e9fc-b568-6bf1-e7cc" name="HMS Lord Samuel Hood" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="e9fc-b568-6bf1-e7cc" name="HMS Lord Samuel Hood" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f222-867b-61ef-4402" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e60-1e07-1456-fc76" type="max"/>
@@ -5734,6 +6218,9 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="2f7c-749d-c7c3-9464" name="Toronto" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -5987,6 +6474,14 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="132.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="20a2-2b29-a51e-0077" name="No. 1 Squadron" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2c54-8fc2-352f-aae7" name="No.1 Squadron" hidden="false" targetId="e4c0-65b1-6461-2f51" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="20.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="20dc-3eb1-0ca3-5a54" name="Lionhearted Crew" publicationId="dbca-8d57-b848-457e" hidden="false">
@@ -6024,6 +6519,9 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
     </rule>
     <rule id="806d-f937-7b54-eae9" name="Sharpnel" publicationId="dbca-8d57-b848-457e" hidden="false">
       <description>The first Critical damage result caused by an attack from this Unit is Shredded Defences. If the target is already suffering from Shredded Defences then the Critical damage die must be rolled as normal.</description>
+    </rule>
+    <rule id="d3de-889d-63a3-56bb" name="Snowbird Strike" publicationId="dbca-8d57-b848-457e" hidden="false">
+      <description>A Snowbird Strike may be made at the start of the Second and Fourth Rounds of the Encounter for each Battlefleet has this rule. In a Snowbird Strike, the Crown player creates a stack of SRS Tokens, one Token for each Unit in that Battlefleet in the Play Area at the start of that Round. Each stack is placed on a ship card of a Unit in each Battlefleet. They may be used exactly as though they had been launched by the Unit (allowing them to be placed against targets in the Play Area within 20” of the Unit). They may not carry out SRS Missions such as Long Range Sorties and cannot benefit from the Tail Gunners special rule. All SRS Tokens used with this rule are discarded at the end of the Second and Fourth Rounds.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

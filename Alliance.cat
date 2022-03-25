@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="aab7-88e9-70f7-d7f1" name="The Alliance V0.05a" revision="3" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <comment>0.03.00: Initial publication
-0.04.00: updated to the the ORBAT v0.04
-0.05.00: updated to the the ORBAT v0.05a</comment>
+<catalogue id="aab7-88e9-70f7-d7f1" name="Alliance v0.05a" revision="3" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Datafile history:
 0.03.00: Initial publication
 0.04.00: updated to the the ORBAT v0.04
-0.05.00: updated to the the ORBAT v0.05a</readme>
+0.05.a0: updated to the the ORBAT v0.05a</readme>
   <categoryEntries>
     <categoryEntry id="534c-9506-e470-8b7c" name="Alliance" publicationId="129d-da97-caec-1ddd" hidden="false"/>
     <categoryEntry id="9aab-6794-6d2b-c1a8" name="French" publicationId="129d-da97-caec-1ddd" hidden="false"/>
@@ -31,31 +28,22 @@
   <forceEntries>
     <forceEntry id="5271-9000-49cf-7fff" name="Alliance Battlefleet" hidden="false">
       <infoLinks>
-        <infoLink id="a01b-3e4e-c578-80e0" name="Command Re-Roll" hidden="true" targetId="baf3-c66b-7e9a-8002" type="rule">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="fef3-1842-580c-4bef" type="atLeast"/>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="d216-bc05-71f1-0fb4" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </infoLink>
+        <infoLink id="a01b-3e4e-c578-80e0" name="Command Re-Roll" hidden="true" targetId="baf3-c66b-7e9a-8002" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e5b4-d681-0460-2b68" name="Flagship" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fef3-1842-580c-4bef" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e9f-05c9-c8c3-c0d7" type="min"/>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81d8-39ea-44b3-2c80" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="911e-6117-280c-306e" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f18-3480-29fa-84f5" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="63ae-6715-6784-cb8e" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47e3-91c0-52c2-7537" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -66,6 +54,7 @@
       <categoryLinks>
         <categoryLink id="6edd-0a75-1d9b-59db" name="Oriflamme Class" hidden="false" targetId="7d92-3a3b-5e20-7609" primary="false"/>
         <categoryLink id="306f-e3e4-a55a-9524" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
+        <categoryLink id="9cf3-6ce0-aebe-e1f7" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="dcb3-90e6-b6d5-e899" name="Support Model" hidden="false" collective="false" import="true">
@@ -119,6 +108,7 @@
       <categoryLinks>
         <categoryLink id="5eb8-0319-5f8b-6fb7" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="1aeb-38aa-7320-20c4" name="Minerva Class" hidden="false" targetId="bc97-f77c-1035-83e5" primary="false"/>
+        <categoryLink id="f3ae-a4dc-2e31-b1fd" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="6108-ab5b-61bc-19e4" name="Support Model" hidden="false" collective="false" import="true">
@@ -172,6 +162,7 @@
       <categoryLinks>
         <categoryLink id="202e-bbeb-5547-6074" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
         <categoryLink id="b64a-bc61-02db-eed3" name="Chevalier Class" hidden="false" targetId="0177-7075-63bf-8514" primary="false"/>
+        <categoryLink id="efdb-70bd-818a-8120" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8d28-25b0-cc25-7bc9" name="Chevalier Cruiser" hidden="false" collective="false" import="true" targetId="a5a8-3c6a-6e3a-9db3" type="selectionEntry"/>
@@ -185,6 +176,7 @@
         <categoryLink id="c347-20e8-acf9-7b3f" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="2678-36e8-8f4b-e529" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
         <categoryLink id="0ef1-ac7d-e599-c60d" name="Couronne Class" hidden="false" targetId="639e-c3c4-f6d2-d6b6" primary="false"/>
+        <categoryLink id="4fb2-eacc-c116-a69f" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="cbe8-b3c8-d0ca-dddc" name="Support Model" hidden="false" collective="false" import="true">
@@ -208,6 +200,7 @@
       <categoryLinks>
         <categoryLink id="520d-4a66-14bc-2ce6" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="ad46-af68-d05e-f85f" name="Mars Class" hidden="false" targetId="b319-ae06-1a91-ad5c" primary="false"/>
+        <categoryLink id="86f1-1284-00e9-3f11" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="7715-d9fa-1a9f-58fb" name="Support Model" hidden="false" collective="false" import="true">
@@ -261,6 +254,7 @@
       <categoryLinks>
         <categoryLink id="8105-ba57-277c-2595" name="Ecuyere Class" hidden="false" targetId="b340-0d07-c45f-d5a4" primary="false"/>
         <categoryLink id="6bae-5e7d-e3f1-34c2" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+        <categoryLink id="ec11-fbeb-7f75-899d" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="ddff-0f5a-10b5-6760" name="Ecuyere" hidden="false" collective="false" import="true" targetId="4cac-c4a1-3eaf-e0fe" type="selectionEntry"/>
@@ -273,6 +267,7 @@
       <categoryLinks>
         <categoryLink id="4555-eb2a-cdb2-36ef" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="20c4-c150-af43-751e" name="Magenta Class" hidden="false" targetId="e017-3a2c-e3fd-8787" primary="false"/>
+        <categoryLink id="b080-e040-df4d-a562" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="b342-9bf9-60c4-dd7f" name="Magenta" hidden="false" collective="false" import="true" targetId="bc8d-b98d-d9f7-0907" type="selectionEntry"/>
@@ -285,6 +280,7 @@
       <categoryLinks>
         <categoryLink id="6227-a776-ab10-5df4" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="6214-da5a-cbd9-0a6b" name="Saint-Michel Class" hidden="false" targetId="b93e-ddb9-f38e-39f8" primary="false"/>
+        <categoryLink id="d14d-6d59-b610-bc6b" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="97c8-7eef-83ec-4d4e" name="Saint-Michel" hidden="false" collective="false" import="true" targetId="92a8-37f8-895a-8541" type="selectionEntry"/>
@@ -297,6 +293,7 @@
       <categoryLinks>
         <categoryLink id="59eb-6ba5-c30e-0adb" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
         <categoryLink id="5909-48c1-21ba-dde6" name="Voliere Class" hidden="false" targetId="fe3e-cf0f-1abe-e7af" primary="false"/>
+        <categoryLink id="9a66-af38-4420-fbaa" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8fea-5ac8-cddb-3e28" name="Voliere" hidden="false" collective="false" import="true" targetId="8dcf-6140-39e4-c577" type="selectionEntry"/>
@@ -309,6 +306,7 @@
       <categoryLinks>
         <categoryLink id="c4ed-d6d3-0513-09a4" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
         <categoryLink id="3637-4763-1020-62ea" name="Chasseur Class" hidden="false" targetId="d1f3-f1e2-00b8-ccaf" primary="false"/>
+        <categoryLink id="7ec5-d206-bb6f-1863" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="975f-7c54-7a59-4ed2" name="Chasseur" hidden="false" collective="false" import="true" targetId="0a0d-8f93-a5ef-a7cd" type="selectionEntry"/>
@@ -321,6 +319,7 @@
       <categoryLinks>
         <categoryLink id="df62-b4ff-c83b-98bd" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
         <categoryLink id="bfc0-2bcb-65d7-730e" name="Epaulard Class" hidden="false" targetId="ae74-6fbc-8c0a-022b" primary="false"/>
+        <categoryLink id="36e1-adcd-7e88-12b2" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="cb20-78fa-88b3-896e" name="Epaulard" hidden="false" collective="false" import="true" targetId="2067-72c0-3fe7-03b9" type="selectionEntry"/>
@@ -333,6 +332,7 @@
       <categoryLinks>
         <categoryLink id="53fe-f58b-9971-4ebb" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
         <categoryLink id="1d91-5009-29fb-d407" name="Furieux Class" hidden="false" targetId="498a-eb65-a773-e629" primary="false"/>
+        <categoryLink id="c1b0-5f0d-c14c-5dd3" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="3700-b0e1-de5f-c8f4" name="Furieux" hidden="false" collective="false" import="true" targetId="e63a-73d1-c314-2c3e" type="selectionEntry"/>
@@ -345,6 +345,7 @@
       <categoryLinks>
         <categoryLink id="2b44-65ae-d5e3-3e75" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
         <categoryLink id="1aca-6b37-5a0e-6ac6" name="Requin Class" hidden="false" targetId="ea59-ae5e-56ee-9309" primary="false"/>
+        <categoryLink id="2c40-6527-9a75-a36a" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="212e-dbb4-14bb-bd93" name="Escort duty [French]" hidden="false" collective="false" import="true" type="upgrade">
@@ -377,6 +378,7 @@
       <categoryLinks>
         <categoryLink id="4c45-fa11-553e-6fee" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
         <categoryLink id="d7f5-5391-6ba3-3018" name="Sirene Class" hidden="false" targetId="f178-bbbd-5205-7294" primary="false"/>
+        <categoryLink id="f32c-66bd-1a92-8e0d" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="eeca-871f-3c3b-1529" name="Sirene" hidden="false" collective="false" import="true" targetId="9685-3e4b-51f3-a0a2" type="selectionEntry"/>
@@ -389,6 +391,7 @@
       <categoryLinks>
         <categoryLink id="575c-0963-6a71-236a" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
         <categoryLink id="1fc4-e0b6-4bec-e7d1" name="Victoriex Class" hidden="false" targetId="0473-2ac8-d91d-92ae" primary="false"/>
+        <categoryLink id="b465-70ef-890a-fc17" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="2e33-93d4-be57-b290" name="Victorieux" hidden="false" collective="false" import="true" targetId="e034-c137-1baf-87d0" type="selectionEntry"/>
@@ -713,93 +716,97 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup id="1c40-18f3-7a6d-c4cb" name="Secondary Weapon (F/P/A)" hidden="false" collective="false" import="true" defaultSelectionEntryId="eebc-db98-8257-c810">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1275-d5c4-4b36-0e77" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29eb-5f60-fde9-7273" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="bcf1-18f1-95a9-6e71" name="Heat Lancette - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntryGroup id="036f-c467-b352-c335" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="f72c-d281-50c2-61b9" name="Port" hidden="false" collective="false" import="true" defaultSelectionEntryId="1a17-2a21-c09a-df11">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0a4b-ade6-599d-70b0" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f33-52a4-9621-78b0" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3f9-28b9-f00b-95d2" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="2a79-95f7-b193-6d61" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="187b-e616-dcc4-b298" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="141a-2c22-0433-a557" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-                <infoLink id="4a82-2b6c-05c2-df5c" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="eebc-db98-8257-c810" name="Torpedo Turret - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="cafb-640d-9cfe-cfee" name="Heat Lancette - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="59b8-b203-b6d1-9f0e" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="394d-8103-2e9b-abc1" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="ede0-9fce-f466-769e" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="be54-0e9d-d988-2753" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+                    <infoLink id="3991-1483-7693-a4f0" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1a17-2a21-c09a-df11" name="Torpedo Turret - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0bdd-2b9e-4d66-2c0d" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="aee2-9cfc-1754-0ade" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+                    <infoLink id="0fd9-c599-f02b-db2d" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="e285-802c-92af-1a24" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+                    <infoLink id="9d21-e44a-3d10-fa8b" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="5b41-4b58-0efb-4977" name="Starboard" hidden="false" collective="false" import="true" defaultSelectionEntryId="cb13-5bff-ab3d-aa0e">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="25ef-007b-1944-8672" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fe0-9d73-ad60-3a04" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2397-9911-4fcb-18eb" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="fd9a-2486-05b5-b4e8" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-                <infoLink id="8c9a-d1d1-ebf5-6ccc" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="40a8-b894-34c4-30ee" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
-                <infoLink id="b3ab-fae4-c84b-0bac" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="9c87-1d21-c146-29d0" name="Secondary Weapon (F/S/A)" hidden="false" collective="false" import="true" defaultSelectionEntryId="da13-0b17-f154-4eb4">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10d6-7ee4-ffdc-1696" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45d7-b1dc-9229-f1d4" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="f00d-eac2-252c-d3c0" name="Heat Lancette - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b34d-6027-ed6c-00f0" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="d034-0979-e0c5-c016" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="cfb5-ea00-34e8-b907" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/S/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="1f5e-4e08-034f-78c0" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-                <infoLink id="12dc-0378-0630-df63" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="da13-0b17-f154-4eb4" name="Torpedo Turret - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd7a-bb07-de8d-6314" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="c847-3b34-2f60-a7c3" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-                <infoLink id="c0bf-2767-a68d-d8e8" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/S/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="b4b1-9631-c949-e24c" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
-                <infoLink id="618b-f8df-48eb-939d" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+              <selectionEntries>
+                <selectionEntry id="5393-cabf-c04e-f014" name="Heat Lancette - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4249-def4-ab1b-a15a" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="7214-a76e-0eb4-0222" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="de3a-b5aa-a528-8622" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="66a8-7d52-b24b-424c" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+                    <infoLink id="9808-1200-fea6-a833" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="cb13-5bff-ab3d-aa0e" name="Torpedo Turret - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5d8c-fd89-7b44-ce65" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="72f3-9636-b70d-9c84" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+                    <infoLink id="9d95-f292-b2bb-2e6d" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="4fe6-6af6-9c44-4611" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+                    <infoLink id="6c88-fc54-92d1-20f8" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -1596,94 +1603,6 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="430e-5592-3bfc-a49b" name="Secondary Weapon (F/P/A)" hidden="false" collective="false" import="true" defaultSelectionEntryId="e76a-244e-cdff-d6c7">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a74-44b1-373b-18b6" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88a5-6f2c-68c2-8902" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="8a5e-669a-c335-0b5b" name="Heat Lancette - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a54-c89b-801c-e319" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="be86-41e1-954d-3ec3" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="c81d-2305-42e8-03a1" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="0bac-449b-de05-e27c" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-                <infoLink id="3167-ae4f-9cad-b4c7" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="e76a-244e-cdff-d6c7" name="Torpedo Turret - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e5eb-6410-e92b-38e9" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="145d-06fc-8fde-4bd9" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-                <infoLink id="1932-1b87-a0e9-bf58" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="6aa8-05cc-e695-863f" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
-                <infoLink id="3fce-ec21-ada0-622c" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="4c91-56c2-5e36-48b0" name="Secondary Weapon (F/S/A)" hidden="false" collective="false" import="true" defaultSelectionEntryId="3a03-9eb5-91aa-6343">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20c8-fecf-d958-5dbe" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5191-737e-d5f8-bd8a" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="f360-11a5-2fb7-2881" name="Heat Lancette - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="26f2-996a-f8b5-b1b5" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="e1fb-e741-071f-b06c" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="b38e-bcbf-bab3-294c" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/S/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="e6f6-a7d0-2f42-6dda" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-                <infoLink id="2ee3-a777-857c-4fd1" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="3a03-9eb5-91aa-6343" name="Torpedo Turret - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0edb-b1bd-78f5-e258" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="c9e3-5c7c-b585-c6be" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-                <infoLink id="b438-0cea-c888-3ac6" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/S/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="a552-c4d9-fb1d-361b" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
-                <infoLink id="253c-4766-e4ab-bb12" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
         <selectionEntryGroup id="32ac-8ec3-be64-4798" name="Main Weapon" publicationId="e265-8c7f-a4b2-a48e" page="4" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2886-67dd-56e1-16aa" type="min"/>
@@ -1869,6 +1788,98 @@
                   </categoryLinks>
                   <costs>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="a1f3-1522-93f0-b908" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="f8d4-8121-569b-8a48" name="Port" hidden="false" collective="false" import="true" defaultSelectionEntryId="4562-935d-4925-3b99">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3eff-e14b-2ec2-7a5e" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d219-4618-752b-934b" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="9044-47bd-e85e-12aa" name="Heat Lancette - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0d3d-6ed1-08bf-ff42" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="923d-a991-d746-8fd5" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="a52d-940d-1c11-52e9" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="5198-9eb6-a8b3-ae82" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+                    <infoLink id="4334-0cb2-b313-7ce0" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4562-935d-4925-3b99" name="Torpedo Turret - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6671-a3ce-9ff0-e418" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="af78-3718-4990-3b19" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+                    <infoLink id="9c11-4bc8-1a64-470e" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="a6d6-2802-2591-f6fa" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+                    <infoLink id="e1f8-44be-f0ce-9353" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="9d70-757d-072e-cc64" name="Starboard" hidden="false" collective="false" import="true" defaultSelectionEntryId="8adc-dba8-c93d-9449">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fb6-3146-e6b2-8421" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9ac-af7c-e4f4-6893" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="7be9-0217-d89c-261c" name="Heat Lancette - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="19aa-3852-df90-2a1f" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="3675-7646-899a-5577" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="9ced-787c-9422-8681" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="9a30-2b19-92b9-eb0f" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+                    <infoLink id="9f23-64ef-b0f1-a71a" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8adc-dba8-c93d-9449" name="Torpedo Turret - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c500-81cb-7a45-ec04" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="2ea3-7dc8-9480-40b0" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+                    <infoLink id="da8c-2c88-1578-a679" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="3464-5ef5-18b0-a7b1" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+                    <infoLink id="683d-8202-609b-279d" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -2194,93 +2205,97 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup id="cd26-1ac4-ab40-f3c9" name="Secondary Weapon (F/P/A)" hidden="false" collective="false" import="true" defaultSelectionEntryId="9f40-bfba-aa38-1352">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c260-5ca9-a347-3022" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="413c-eeeb-ba19-4037" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="7354-ef94-8282-0b73" name="Heat Lancette - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntryGroup id="f241-2c21-634d-dbcd" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="d055-2a3b-ad50-4505" name="Port" hidden="false" collective="false" import="true" defaultSelectionEntryId="a744-531c-9e82-4372">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e411-8c20-37bc-19fa" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="752a-fea5-8e04-4d43" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32c9-51e5-2043-19b1" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="8299-e4de-cfb7-843e" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="ea6d-d38e-4f85-d2bd" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="ccee-733b-5cbd-c5c2" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-                <infoLink id="24f2-3c4a-1165-b0b6" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9f40-bfba-aa38-1352" name="Torpedo Turret - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="48da-7f6f-59bc-75e3" name="Heat Lancette - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1210-8356-a6eb-e78b" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="8939-0d2b-edc3-cefe" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="de56-3614-c5b7-1bea" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="9121-d794-5025-f916" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+                    <infoLink id="e934-7a18-ab2b-87e2" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a744-531c-9e82-4372" name="Torpedo Turret - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cc0a-7449-06d8-8f65" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="53c3-9428-140d-e5df" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+                    <infoLink id="ae10-4756-9a26-d7d9" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="9406-f3dd-3035-e00f" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+                    <infoLink id="17e0-b09d-5b98-d863" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="74ce-e5ad-8d90-9980" name="Starboard" hidden="false" collective="false" import="true" defaultSelectionEntryId="513c-9a30-4f65-c27e">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2194-252f-3516-6471" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="386b-39e4-c547-093e" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f48d-d222-7d10-2bd5" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="c426-b92f-6784-492d" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-                <infoLink id="b975-19ed-f759-5ef2" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="3bfd-01e6-729c-2b5b" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
-                <infoLink id="833d-bdc1-ab21-0054" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="37f6-07be-5efc-b13b" name="Secondary Weapon (F/S/A)" hidden="false" collective="false" import="true" defaultSelectionEntryId="7a3f-f3a5-505b-e0bb">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c453-23a9-24e5-ce20" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f68a-93fd-9ad9-e7a2" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="a59e-d8e8-fa88-bfe4" name="Heat Lancette - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ae16-2d87-2245-96c0" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="a2a9-cc38-ae85-37dd" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="c8b2-a13e-5007-9433" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/S/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="644b-890b-415a-6cb8" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-                <infoLink id="5268-e5b7-c43f-8ce8" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7a3f-f3a5-505b-e0bb" name="Torpedo Turret - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a16f-5892-8929-1dc7" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="b142-cffa-dd6a-01d0" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-                <infoLink id="ee0b-0515-968f-453f" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/S/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="15a4-e29d-1734-3553" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
-                <infoLink id="c630-3ce5-94b9-9328" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+              <selectionEntries>
+                <selectionEntry id="3db2-6209-6fba-f2d2" name="Heat Lancette - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7277-20b2-45ab-b902" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="a9b1-8805-6a5b-0875" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="58dc-5772-fce8-4dcc" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="5a4d-b4d8-db26-0dfa" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+                    <infoLink id="23c6-5d0a-4903-9865" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="513c-9a30-4f65-c27e" name="Torpedo Turret - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5ee1-7649-019f-2a34" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="2731-3cfa-cf7d-ae1b" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+                    <infoLink id="b825-8e17-9032-130a" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="7bc7-cc21-3835-3b6d" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+                    <infoLink id="ced9-b3ce-259a-635f" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -2601,185 +2616,189 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup id="5050-af14-414c-81e3" name="Secondary Weapon (F/P/S)" hidden="false" collective="false" import="true" defaultSelectionEntryId="2a46-3927-368f-0246">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c60-380e-f444-d4e4" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4908-5560-afc6-064b" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="2a46-3927-368f-0246" name="Gun Battery - (F/P/S)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntryGroup id="2a27-288a-72d5-05b6" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="a009-a6e0-8fc0-ff9f" name="Port" hidden="false" collective="false" import="true" defaultSelectionEntryId="9933-ad40-8c5a-9eba">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="79b3-5051-a5a7-2294" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a795-11d5-7719-c677" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37a3-0eb4-ac50-81a9" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="21cd-5c60-1055-753d" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/S)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="8d91-d7ed-61aa-028d" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="682e-8071-d27d-6a08" name="Heat Lancette - (F/P/S)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="9933-ad40-8c5a-9eba" name="Gun Battery - (F/P/A)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="20e7-0dbe-4fff-d6ff" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="5d50-1cce-5379-1eb4" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="abff-8aef-731e-3915" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="b176-bd59-bc11-2aef" name="Heat Lancette - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5a2e-5e39-013f-b181" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="aac7-24da-791a-ba87" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="b58a-783e-82e1-8a5d" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="e9c1-5105-3c58-6a32" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+                    <infoLink id="a095-afcd-158d-f91d" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="30f9-a48e-00e2-5b14" name="Torpedo Turret - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fb66-1f2c-edd7-bf40" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="348a-02a5-a55b-0773" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+                    <infoLink id="ce42-806b-dae2-a3c6" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="ae3c-f19a-d6af-12c2" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+                    <infoLink id="83bc-e536-c773-775f" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="809f-2eaf-d45c-9daf" name="Front" hidden="false" collective="false" import="true" defaultSelectionEntryId="c390-d097-1efc-acf5">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b816-ecba-e891-e277" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ed1-7bdc-00ac-cca6" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9a6-8677-e7a7-520d" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="7099-96f7-c128-7862" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="ce7d-23a8-0893-4bdb" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/S)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="7cf6-964a-e398-c801" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-                <infoLink id="2151-95da-7af7-8a58" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="be9c-a3ad-370d-2afe" name="Torpedo Turret - (F/P/S)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="c390-d097-1efc-acf5" name="Gun Battery - (F/P/S)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="137d-1669-7f46-2dde" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="5b3c-1f33-c9d7-5991" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/S)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="e89a-5567-c14d-0fcc" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9702-d6aa-3342-9844" name="Heat Lancette - (F/P/S)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6e53-6273-0d82-2ad2" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="16ad-655a-1459-21aa" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="ef76-21ce-5a52-d1ee" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/S)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="02ef-c1dd-2844-86b4" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+                    <infoLink id="aea2-a22d-8f0f-8010" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="fd30-e9b0-9f46-4a3e" name="Torpedo Turret - (F/P/S)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8e6a-1cdd-fe35-9baa" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="e0f3-bc35-c7e9-faa8" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+                    <infoLink id="9b81-a4e6-eade-3894" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/S)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="7549-2db7-3863-ced4" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+                    <infoLink id="db6e-4290-949e-0620" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="d6d7-cb72-16b8-a905" name="Starboard" hidden="false" collective="false" import="true" defaultSelectionEntryId="ba5e-3402-bd82-0873">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9646-cd6f-21de-ed9e" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d08c-c9e6-9d73-aa95" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1571-eedf-ba42-696d" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="f313-4ab3-1ab5-0654" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-                <infoLink id="b73e-8849-8d5a-ba74" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/S)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="9a26-5006-c592-e2d7" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
-                <infoLink id="f97b-f2dc-44d6-e56e" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="d602-a309-b1e6-c862" name="Secondary Weapon (F/P/A)" hidden="false" collective="false" import="true" defaultSelectionEntryId="8783-f411-d1e2-9a88">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcc8-622b-bd25-b283" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3a3-d225-8c59-8eb7" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="8783-f411-d1e2-9a88" name="Gun Battery - (F/P/A)" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d58b-fd4d-4689-c485" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="91f6-2369-a1f8-6b93" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="e63f-b080-3af1-743e" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="67c7-4e6f-9139-5aab" name="Heat Lancette - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f479-4f6d-1a8b-bc8b" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="92ab-1bed-4fa9-e106" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="26ed-5e29-6228-2bee" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="03a3-9bfc-f82b-895a" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-                <infoLink id="adde-9d79-4c17-85c2" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6e71-c31c-a490-78b3" name="Torpedo Turret - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c900-9e5d-1052-5bca" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="01e1-24e0-fa5c-48c9" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-                <infoLink id="e238-6de7-999e-46ef" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="b5a1-64d5-8bd2-dcee" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
-                <infoLink id="8022-5f8f-7257-90e5" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="fc9e-4d81-0916-1614" name="Secondary Weapon (F/S/A)" hidden="false" collective="false" import="true" defaultSelectionEntryId="34ee-bb87-cf95-4c17">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d7f-c97d-8fd4-cfcc" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c939-de8a-2582-ad79" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="34ee-bb87-cf95-4c17" name="Gun Battery - (F/S/A)" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="76ce-ec66-c56f-0907" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="5a91-56da-6db2-0838" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/S/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="5a4a-1d30-8110-8f68" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8f7a-718b-783a-e8ea" name="Heat Lancette - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="71de-2772-c932-dd60" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="350d-9e8a-4774-cc1a" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="ea0a-3908-02ed-40fb" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/S/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="68b6-87a6-4f31-53b7" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-                <infoLink id="f47e-5574-bf94-0a83" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="3a88-c4b3-31a7-c8fc" name="Torpedo Turret - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bb98-4c35-ce85-966d" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="a3bf-fff6-d885-c3f6" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-                <infoLink id="1389-a109-469e-6e9d" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/S/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="ac2c-4558-7d2f-3255" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
-                <infoLink id="e850-6128-cd6c-84b4" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+              <selectionEntries>
+                <selectionEntry id="ba5e-3402-bd82-0873" name="Gun Battery - (F/S/A)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3a57-cbb5-c591-2972" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="b76d-a44e-a0ca-4d2f" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="ae76-b95c-03de-4ffa" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="943c-8c10-7b0a-3450" name="Heat Lancette - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c25c-b5cd-c96f-6e43" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="4110-8fc7-5680-9d10" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="ebb9-2516-52bc-7c0b" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="9e90-eb59-623d-6bf5" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+                    <infoLink id="268a-3e06-a227-5923" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8f7b-1305-8d3c-b50a" name="Torpedo Turret - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ca5a-69a9-a893-71a6" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="03f6-388c-8b6e-569a" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+                    <infoLink id="0e3a-189e-1937-0168" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="0143-2d23-fa66-7fa5" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+                    <infoLink id="6843-367c-2573-ba5f" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -2810,9 +2829,6 @@
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="a689-e0a5-bb30-bfc3" name="SRS" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="ad5a-9acb-23f3-fdff" value="1.0"/>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad5a-9acb-23f3-fdff" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ec58-9a14-9bbc-f110" type="max"/>
@@ -2830,94 +2846,6 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="cf77-5292-22cf-6633" name="Secondary Weapon (F/P/A)" hidden="false" collective="false" import="true" defaultSelectionEntryId="21b1-8e87-6a1d-4d7e">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e432-ab8d-b507-6d3d" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9793-29b0-64fe-526d" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="21b1-8e87-6a1d-4d7e" name="Heat Lancette - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="483f-ff7f-38d5-972d" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="164e-1c14-d2d0-bb4d" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="71ef-7667-db0d-a2f7" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="18a6-2d2e-15e9-f2db" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-                <infoLink id="fa05-aacd-49c9-bfe8" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="44ad-c60d-0ad7-4ce7" name="Torpedo Turret - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8bbe-9697-abc3-a90c" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="1be0-7f66-ea88-417f" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-                <infoLink id="3539-0d12-935e-196e" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="5dd4-f240-1987-ace2" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
-                <infoLink id="33bf-6302-6d6b-fd5b" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="0a55-5df0-4655-db69" name="Secondary Weapon (F/S/A)" hidden="false" collective="false" import="true" defaultSelectionEntryId="54dc-9fad-abee-c698">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="906e-b809-d3c0-d178" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c069-74dc-c32d-b8e5" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="54dc-9fad-abee-c698" name="Heat Lancette - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f7e0-5a0e-f6ab-feda" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="cd6d-99a3-f29a-747a" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="e553-5ecd-faf9-6478" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/S/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="8566-6238-d466-40de" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-                <infoLink id="32b1-fcb7-078a-a258" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="66eb-a4e9-3d62-2397" name="Torpedo Turret - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="18c0-de16-0d81-933a" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="af86-0491-5867-1b81" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-                <infoLink id="d02d-8365-0340-da66" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/S/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="37e2-bdba-8feb-7b90" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
-                <infoLink id="c316-3a4b-b7cf-3f5b" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
         <selectionEntryGroup id="596f-c1f8-b485-8ae9" name="Main Weapon" publicationId="e265-8c7f-a4b2-a48e" page="4" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e16-4315-9a9e-1eaf" type="min"/>
@@ -3002,6 +2930,130 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
+        <selectionEntryGroup id="8745-d0c5-4655-42bb" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="dccb-21a7-d4fe-52b0" name="Port" hidden="false" collective="false" import="true" defaultSelectionEntryId="1083-529e-6fc6-2e8d">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="085b-d30c-2da9-ef87" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8810-6db2-8eb6-7342" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="1083-529e-6fc6-2e8d" name="Heat Lancette - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="08ec-1f40-2f73-ba9d" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="b085-43cd-ac07-f0b0" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="ee5f-24d2-b40b-9c03" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="9514-b595-314c-8b19" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+                    <infoLink id="851f-108b-92e6-a5b3" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0a60-06d0-49a1-b9ed" name="Torpedo Turret - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="acdf-1c82-e921-db30" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="70fa-af75-78c7-34db" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+                    <infoLink id="d1db-ad2b-bcc7-cf72" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="209d-ed4a-530f-e574" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+                    <infoLink id="0d61-fcd8-bc85-6391" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6b55-c7e4-a2b8-e60e" name="Gun Battery - (F/P/A)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0572-5d46-58ef-c1fc" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="8258-e016-25a8-1011" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="c51c-3076-d8d6-6f27" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="0389-749f-2a00-2277" name="Starboard" hidden="false" collective="false" import="true" defaultSelectionEntryId="03bb-a378-7d0d-bb0d">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="622d-4088-c19f-55aa" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b87-feed-2cb2-ce76" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="03bb-a378-7d0d-bb0d" name="Heat Lancette - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ffc5-3271-c1da-db7f" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="99f0-ec3f-24f3-1802" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="0919-e71f-d1e8-80bb" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="7cc7-7b61-abe8-06a6" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+                    <infoLink id="d067-3e89-6fc9-6222" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f5d5-9899-07bd-45b4" name="Torpedo Turret - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f92f-5d89-cf0a-05b3" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="afcc-b157-51b3-9734" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+                    <infoLink id="4082-d7db-be94-34db" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="9e63-4022-165d-0e78" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+                    <infoLink id="8ee1-06ef-ef28-53f5" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="dec0-e914-7bff-2bd8" name="Gun Battery - (F/S/A)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2972-67a4-2020-a0ab" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="5e39-f376-f703-4f07" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="a2be-e2cf-4448-1b9f" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="240.0"/>
@@ -3052,125 +3104,129 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="d601-74e6-d044-b56b" name="Secondary Weapon (F/P/A)" hidden="false" collective="false" import="true" defaultSelectionEntryId="9655-5551-6eef-4d14">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7e7-a84d-fa8a-e796" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78fb-3395-5b93-7a1e" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="5279-ac80-7337-15c8" name="Heat Lancette - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntryGroup id="9fb9-bc1b-4786-d77f" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="84a6-ba4f-17d2-7b3c" name="Port" hidden="false" collective="false" import="true" defaultSelectionEntryId="e217-f06f-b170-891c">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="118a-e9d2-ab8a-b2d5" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5609-83c6-326b-2a06" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7bb-38c7-adc0-9579" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="b36d-290d-e3f7-a09b" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="c5eb-1537-1a02-f367" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="c20b-7a3d-8b0a-7474" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-                <infoLink id="8dc7-85c0-564e-a3e2" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7f5d-a8d5-e224-ba31" name="Torpedo Turret - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="e217-f06f-b170-891c" name="Gun Battery - (F/P/A)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4c99-f77e-28f0-83f4" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="e0c4-64e2-e911-57fc" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="eae3-651a-4bd7-0cf6" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="06dd-f81e-ee18-9f6b" name="Heat Lancette - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1bac-695c-f660-ada4" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="69f0-8c4b-d8e3-626f" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="07c9-daef-291a-cba0" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="9816-63da-bb2c-97e6" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+                    <infoLink id="ab91-042d-25f9-f7d7" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e91e-8c94-ee66-0865" name="Torpedo Turret - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9e84-1016-15dd-ec69" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="9dc5-f589-0540-2ed5" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+                    <infoLink id="9ba1-4a27-7289-82d2" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="93cc-ea26-c6e2-c19d" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+                    <infoLink id="dd67-14e4-14d2-9abb" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="5bd4-f7e2-a1c4-9f81" name="Starboard" hidden="false" collective="false" import="true" defaultSelectionEntryId="df9d-1360-9345-781f">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="948e-43d9-8f66-45b1" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6ca-104e-efff-5f31" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5663-a0b3-8686-a7a0" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="9792-171f-9ab5-9b16" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-                <infoLink id="3d48-2e47-3070-e6da" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="e229-6187-76a6-021a" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
-                <infoLink id="102d-2db3-b3e4-f8b2" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9655-5551-6eef-4d14" name="Gun Battery - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c184-c4ee-6ad0-a50c" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="2c7e-0885-9e8e-e097" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="41da-c753-fbeb-de09" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/A)"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="ed88-322c-52d9-5a7f" name="Secondary Weapon (F/S/A)" hidden="false" collective="false" import="true" defaultSelectionEntryId="5885-c1ff-4fb9-7c8d">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4bb-18c3-a5b2-5e80" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10a8-97f4-5101-9ed1" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="8d1c-0905-c91d-cfde" name="Heat Lancette - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="53db-2b07-6ea5-86cc" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="c207-ee1c-7b48-99e6" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="dffc-e9c9-ff5a-45c6" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/S/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="1072-a1fc-d796-616f" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-                <infoLink id="897b-42a6-708d-1680" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="54cf-9e13-d761-c7e9" name="Torpedo Turret - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b10-3053-756c-c49c" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="6195-b6b5-a2ac-bb9e" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-                <infoLink id="fa12-a75c-39c2-7f10" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/S/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="0957-ef2e-8bc3-cb66" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
-                <infoLink id="bcbc-d512-82cc-824b" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="5885-c1ff-4fb9-7c8d" name="Gun Battery - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e3e6-91cf-6570-f021" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="060c-d4f6-20b3-cefa" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="955c-3a7c-159a-e36f" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/S/A)"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+              <selectionEntries>
+                <selectionEntry id="df9d-1360-9345-781f" name="Gun Battery - (F/S/A)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2b92-168f-245e-781e" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="cad1-ae11-4c15-d985" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="9516-9b7b-f7a1-f073" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4b54-4dbf-5145-ceb0" name="Heat Lancette - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d64d-5f6c-2bfb-4b3b" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="5768-2356-32a9-d494" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="226b-2b7d-7e67-12ca" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="1f22-3b14-2b6b-7b32" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+                    <infoLink id="5879-eb80-627d-8710" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1d14-028a-ba32-af44" name="Torpedo Turret - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ea5b-2efb-772c-c46b" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="e87d-8d88-fa62-cc58" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+                    <infoLink id="6a76-03e6-072f-8661" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="3aa7-87f8-add4-d70b" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+                    <infoLink id="69a1-bed2-c9d7-1463" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -3387,185 +3443,189 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup id="169f-7884-3f2f-a4ee" name="Secondary Weapon (F/P/A)" hidden="false" collective="false" import="true" defaultSelectionEntryId="38cc-dda2-e29c-ad7a">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc88-ace6-21dd-5969" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="524a-1ad6-d737-004c" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="2b0e-5d10-e5a3-754d" name="Heat Lancette - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntryGroup id="d342-91e3-ff8e-4bc8" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="d9cb-9697-2552-4d0a" name="Port" hidden="false" collective="false" import="true" defaultSelectionEntryId="d605-9ddc-8538-9ec9">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bd43-277b-e74e-3ff1" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6cf-834c-1f16-abac" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7fa-8b69-168b-663b" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="e77c-8658-c044-f933" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="76d2-af58-d2d9-0ebc" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="d29a-7ad7-c078-7add" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-                <infoLink id="f1a3-4b2e-53f2-a4f9" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a6ef-7471-4942-a13e" name="Torpedo Turret - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="d605-9ddc-8538-9ec9" name="Gun Battery - (F/P/A)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a98a-e7ea-19ae-3f88" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="78b8-b12c-7a09-36a3" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="7b9d-dee7-0300-3ecd" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="fdde-2291-a530-72c7" name="Heat Lancette - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5d29-328a-7c72-e42e" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="2dce-b242-abb7-0134" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="1107-f90c-eadc-dc5a" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="8c82-627b-4fd8-f3fd" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+                    <infoLink id="e76e-811e-7951-2947" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d859-8261-eb07-6579" name="Torpedo Turret - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="af77-795d-33d1-6555" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="cbe3-9b90-2e9b-238a" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+                    <infoLink id="1f50-cf75-32fa-f806" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="7ba3-26a2-73d1-41be" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+                    <infoLink id="783a-f4c4-ba7c-0eb3" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="22ef-781a-881b-e15d" name="Front" hidden="false" collective="false" import="true" defaultSelectionEntryId="9bdc-e965-63bd-832f">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="549b-1084-fd4f-e325" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="097a-5796-d46b-4ee2" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b544-4c6d-cee9-95a9" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="7e96-581a-2381-940e" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-                <infoLink id="010d-f1d5-6e56-b92a" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="7341-5ac4-68a0-3937" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
-                <infoLink id="7c87-5802-565a-66bf" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="38cc-dda2-e29c-ad7a" name="Gun Battery - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="9bdc-e965-63bd-832f" name="Gun Battery - (F/P/S)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="13b5-b732-c660-89d7" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="bd6b-7b9d-e089-f6ed" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/S)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="585b-fe9a-78b2-f594" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5b7b-95ce-f0d2-cff1" name="Heat Lancette - (F/P/S)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="43e4-19c6-2809-7c1b" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="1739-2970-d8fe-791e" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="7ba1-1d9e-8f32-c91e" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/S)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="4740-3070-4f36-1bb8" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+                    <infoLink id="f0ba-e132-6586-1e1d" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a702-d54b-955a-388c" name="Torpedo Turret - (F/P/S)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b66-87d5-70b0-89e7" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="4afa-3c72-dd43-ad6d" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+                    <infoLink id="6f4c-6c73-5356-3357" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/S)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="8ef4-681c-e376-d6a0" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+                    <infoLink id="b06d-1eda-73cb-778d" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="59df-f8df-5c96-0730" name="Starboard" hidden="false" collective="false" import="true" defaultSelectionEntryId="dcb5-16f5-2221-75d3">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c2b6-ac8a-3467-4cc5" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a3a-c0ea-ca40-9b3f" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4101-beb0-4a1e-463f" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="3d05-14c2-11d3-04b8" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="5227-5cf3-591f-5add" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/A)"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="c988-b034-e548-a5cb" name="Secondary Weapon (F/S/A)" hidden="false" collective="false" import="true" defaultSelectionEntryId="1708-ba04-6cb3-90e4">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ceb-996b-1080-9f96" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ed8-cd3b-564f-84d8" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="e456-b19b-01a4-24e7" name="Heat Lancette - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8208-ea3e-84d8-167f" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="6d62-7c11-c2d8-0dcf" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="40a8-7574-a5cc-1566" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/S/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="697b-a5e3-5881-dd55" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-                <infoLink id="c0cd-d38f-1121-1ae3" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="e5aa-2156-d5c2-ea51" name="Torpedo Turret - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cd55-68ca-01a5-9ae2" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="906f-2baf-9ddd-4694" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-                <infoLink id="70d5-442e-24b0-0a40" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/S/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="2cc4-8b7d-d5a9-cb77" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
-                <infoLink id="dbbd-89f1-ec27-d626" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="1708-ba04-6cb3-90e4" name="Gun Battery - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="04b4-9f3e-b187-5a3f" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="d6e1-a39a-c5d4-cf49" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="6c27-66c6-1cf0-32bc" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/S/A)"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="5747-8c09-6f54-102b" name="Secondary Weapon (F/P/S)" hidden="false" collective="false" import="true" defaultSelectionEntryId="098a-0042-d294-2f1c">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae94-92f7-ef54-1e80" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8443-6d64-8aec-9c2a" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="db14-2fae-434e-24f5" name="Heat Lancette - (F/P/S)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bc29-d8d3-7e30-48bc" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="d618-0ab7-943b-da60" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="b83d-fa45-4445-22f3" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/S)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="6a76-8f8f-5fa4-6caa" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-                <infoLink id="4f1e-e10d-41e0-f809" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="0d24-001d-0113-99fe" name="Torpedo Turret - (F/P/S)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b95e-98d2-ccf0-678b" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="c248-b160-7ccf-d1b5" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-                <infoLink id="cf22-ef6f-b17b-fe5a" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/S)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="0483-1848-4a35-8766" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
-                <infoLink id="0bbb-fd89-dd8a-d4eb" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="098a-0042-d294-2f1c" name="Gun Battery - (F/P/S)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="027d-a90d-0628-4e66" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="417e-3a19-45c9-70fe" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="5662-61e5-87d6-e19c" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/S)"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+              <selectionEntries>
+                <selectionEntry id="dcb5-16f5-2221-75d3" name="Gun Battery - (F/S/A)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ca70-2716-8b3f-1ad8" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="4dc5-0bb3-5e9c-cc68" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="4d35-96bc-06f9-32da" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8f19-3d9d-9e72-09ff" name="Heat Lancette - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b37f-a5a4-9cab-dce6" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="5342-6891-af98-a15d" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="b1b2-06b4-a0c3-a086" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="fedf-240e-1f49-ac6d" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+                    <infoLink id="db5e-9c5c-0b58-baea" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5d01-7b70-5785-4c2a" name="Torpedo Turret - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5d4b-dd7a-a6b8-e9f3" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="2028-5af3-a72d-e357" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+                    <infoLink id="0a2f-36d8-7c4c-ba62" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="f384-a973-c627-859f" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+                    <infoLink id="d5c7-86da-7652-816a" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -3664,185 +3724,189 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1726-3be1-43e3-5ef8" name="Secondary Weapon (F/P/A)" hidden="false" collective="false" import="true" defaultSelectionEntryId="b96e-5953-903e-413c">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e686-fa0f-6f5f-066a" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6646-1f85-1980-6974" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="48f4-2e6f-9d7a-1f1b" name="Heat Lancette - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntryGroup id="427f-413e-cfd9-a7ea" name="Main Weapon" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="92cb-a5ea-d533-33eb" name="Port" hidden="false" collective="false" import="true" defaultSelectionEntryId="a44d-dc97-f8c6-b745">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ef4-c5f8-f881-6aec" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c02-bd60-26ec-28e5" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f9d-8a92-74ec-069f" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="8ddb-641b-b125-f1fb" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="e777-0d44-49bc-de4e" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="d18d-03e0-8309-26e6" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-                <infoLink id="2d16-ebd1-4fd5-5445" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="68d8-c1bb-6333-8f1a" name="Torpedo Turret - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="a44d-dc97-f8c6-b745" name="Gun Battery - (F/P/A)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f623-990f-0750-53d3" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="4ba0-f1d7-4d43-4aa7" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="7c9a-c327-ffcb-2331" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="192a-3769-9702-83cf" name="Heat Lancette - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bcfc-998c-3ba1-f064" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="5979-9b29-c65b-38e2" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="5521-fa57-6795-39c1" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="b278-70d7-ec9b-54b5" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+                    <infoLink id="d350-ccc7-455e-88b4" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e055-7741-d6a9-e586" name="Torpedo Turret - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="46bb-08ac-393b-0afa" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="28ed-ba32-fa8c-b697" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+                    <infoLink id="79bf-f90e-8031-06c0" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="d5af-6071-4f78-f78f" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+                    <infoLink id="01cb-42fb-2fce-cf17" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="5e06-6233-2c69-438a" name="Front" hidden="false" collective="false" import="true" defaultSelectionEntryId="2df8-7916-73c6-7fbf">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="557f-c5be-5266-6483" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f47-ba78-a87e-6165" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4eba-79d6-1568-d145" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="db6f-81ae-34c5-b7c3" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-                <infoLink id="c25e-256a-dfe0-503e" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="6adf-9dab-78ee-42aa" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
-                <infoLink id="d866-ac55-3e38-c178" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b96e-5953-903e-413c" name="Gun Battery - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="2df8-7916-73c6-7fbf" name="Gun Battery - (F/P/S)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="64e3-5dc4-73ff-b4d0" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="f49a-fa9f-9ff5-ef51" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/S)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="c54e-77cd-937b-e2ad" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f8bc-3dcf-8b1e-7d48" name="Heat Lancette - (F/P/S)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b382-db63-de04-1348" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="3a1e-082c-b76b-8fde" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="adb5-317e-43a4-bd30" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/S)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="9f0e-754c-b324-5474" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+                    <infoLink id="5d63-ae16-e8c7-1b88" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="098e-eb3a-56ec-0eed" name="Torpedo Turret - (F/P/S)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5e5f-e878-b5d5-9d77" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="033b-66b5-9d16-a9a1" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+                    <infoLink id="7888-9ced-25e0-2ab7" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/S)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="fc42-d387-1d1b-68ad" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+                    <infoLink id="8a7a-f364-be97-6074" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="9fdd-ce2f-c681-8e6a" name="Starboard" hidden="false" collective="false" import="true" defaultSelectionEntryId="d06b-b8ca-b622-18ab">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="214e-da9c-52b2-1e14" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0de5-e426-efeb-4913" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf1a-bd83-ced2-d257" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="6e80-6d81-6de9-4d8a" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="ce7a-fcc0-4158-18c6" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/A)"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="0870-1adc-348e-43f4" name="Secondary Weapon (F/S/A)" hidden="false" collective="false" import="true" defaultSelectionEntryId="6d21-cf2b-2b9f-7fa9">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a864-287d-c4f4-8565" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65f2-1fe8-b888-4f9d" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="34fc-b2e9-c8a1-f932" name="Heat Lancette - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f36e-444e-afe8-72e5" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="257c-f309-1c38-6b06" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="d2e8-e866-6ca6-d47d" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/S/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="ea82-75aa-353a-da9c" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-                <infoLink id="c761-2d1a-5998-e0d3" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a360-0027-ce08-0147" name="Torpedo Turret - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="26d0-d5c3-1743-beed" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="7bf2-e15a-dd67-31e0" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-                <infoLink id="9812-faa4-0199-aef2" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/S/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="f274-1900-d0c2-d8b0" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
-                <infoLink id="ec76-fffa-1c32-a7f5" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6d21-cf2b-2b9f-7fa9" name="Gun Battery - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f6cb-0ae9-de9f-f1c0" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="fd90-6ea9-af2e-d62f" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="dc05-5abd-1ece-86b9" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/S/A)"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="2e20-7661-f4f0-ff3f" name="Secondary Weapon (F/P/S)" hidden="false" collective="false" import="true" defaultSelectionEntryId="d6f6-260d-810c-710e">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbee-8228-63b4-c115" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bf0-bf22-f7e0-53be" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="3a73-7996-3eae-35fe" name="Heat Lancette - (F/P/S)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2e1f-8459-5f98-da3e" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="2475-e8ad-e64a-a860" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="d159-f7aa-8157-f077" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/S)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="254c-d295-3166-ac6d" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-                <infoLink id="bcfe-8869-f2ed-064d" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c449-05a8-3de0-ec27" name="Torpedo Turret - (F/P/S)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2d51-5165-3be6-d522" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="abe7-4c94-8242-fc79" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-                <infoLink id="ac81-508d-a986-31c1" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/S)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="0e8c-641e-c61e-59a5" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
-                <infoLink id="3a89-2555-8a5f-7232" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d6f6-260d-810c-710e" name="Gun Battery - (F/P/S)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e224-13ee-1ea6-6435" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="f4bc-2ee7-6c7c-95b4" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="6f61-f4ad-5a7f-fc3b" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/S)"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+              <selectionEntries>
+                <selectionEntry id="d06b-b8ca-b622-18ab" name="Gun Battery - (F/S/A)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="68f6-ac33-e662-c6c0" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="3625-74d8-3d3f-272f" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="2506-ab26-b008-ace3" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1d30-26eb-f0fb-b8a4" name="Heat Lancette - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6c30-cf31-280e-c275" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="43e3-c036-d8b6-22de" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="493e-0da4-1ef7-c6aa" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="e59e-15b2-db19-8796" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+                    <infoLink id="4143-5490-2cdc-503a" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1c39-1b6b-8965-a8de" name="Torpedo Turret - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2218-3cf2-8a89-90fe" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="7690-3fae-5e85-5547" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+                    <infoLink id="9b7a-9df7-0d92-4f15" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="1ebc-0902-f270-882e" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+                    <infoLink id="c57d-1a1e-1d0a-2ebe" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -4307,93 +4371,97 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup id="7691-dd8c-ce1f-7e2b" name="Secondary Weapon (F/P/A)" hidden="false" collective="false" import="true" defaultSelectionEntryId="d84d-d257-a09b-5477">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b995-a244-5a28-7bc3" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c54-6c46-a59c-94d3" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="7550-0139-7c3c-6a35" name="Heat Lancette - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntryGroup id="dce9-bf32-7e85-a21c" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="8d63-77f1-d49b-e348" name="Port" hidden="false" collective="false" import="true" defaultSelectionEntryId="a6b1-383a-c34c-8f9b">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a84e-8dc1-5f60-9549" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3dd9-f4e6-33ca-0c18" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="600e-397e-b41e-80cf" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="587f-adcf-eac9-47e9" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="fba8-a631-55d7-1613" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="7e54-abff-e31e-009e" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-                <infoLink id="1bcb-536b-c2aa-43de" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d84d-d257-a09b-5477" name="Torpedo Turret - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="268a-3c75-504d-3061" name="Heat Lancette - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4f9b-6ee9-29fc-f3a7" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="2894-2ff9-950e-f1f4" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="5fde-31ae-fef4-9599" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="fd23-39d8-ba2e-b3c3" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+                    <infoLink id="9bc5-8f6e-2a0c-f46f" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a6b1-383a-c34c-8f9b" name="Torpedo Turret - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="13e1-ec64-dbc8-2069" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="dbe7-2b31-a24a-93fe" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+                    <infoLink id="eca0-0ed6-9ff6-4485" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="8838-9a7e-6ae4-bf8f" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+                    <infoLink id="30ee-161e-4da1-ddd4" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="612b-4536-75d1-f7bf" name="Starboard" hidden="false" collective="false" import="true" defaultSelectionEntryId="0d73-5181-ecac-24a2">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="265f-b4cd-42f0-2339" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3446-992e-1cfb-a22e" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c967-fac4-3660-67db" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="13b2-4fbd-69e1-f5f5" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-                <infoLink id="a517-9a14-d732-51ec" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/P/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="5d96-e2e2-6db7-0453" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
-                <infoLink id="c158-f5e3-c40a-e12f" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="9394-d3ca-0f91-6837" name="Secondary Weapon (F/S/A)" hidden="false" collective="false" import="true" defaultSelectionEntryId="a7e8-d675-3271-91d5">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95fb-f226-c07e-e58f" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5191-953d-8fe8-9015" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="73a4-ed9f-af56-8452" name="Heat Lancette - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="373d-30fd-90e0-a8c3" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="3a7a-7b43-b914-998d" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-                <infoLink id="b220-4716-d3d9-b611" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/S/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="c238-3533-fc49-8d5b" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-                <infoLink id="9367-75b0-b0f6-de64" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a7e8-d675-3271-91d5" name="Torpedo Turret - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bac3-7423-35be-d3a5" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="beb7-97cb-9792-4eba" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-                <infoLink id="2a08-094e-8c40-8312" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - (F/S/A)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="cfb3-3d2c-1b40-f2f5" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
-                <infoLink id="e768-4a5e-488a-1cae" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+              <selectionEntries>
+                <selectionEntry id="ed73-0998-a356-0a06" name="Heat Lancette - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7ce6-31f5-31bc-8cba" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="d987-4184-a577-7c39" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="cbfe-1018-7b55-b09c" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="a4c2-d423-a8d8-4e07" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+                    <infoLink id="7d0d-1761-5610-c1f7" name="Hazard" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0d73-5181-ecac-24a2" name="Torpedo Turret - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c6fa-a10a-1e45-3f4d" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="330e-2fc7-fbba-c8f6" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+                    <infoLink id="38e4-9cf3-6ca3-694c" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S/A)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="c9ff-7554-5853-29a2" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+                    <infoLink id="cda9-cdb7-7688-0bbc" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
