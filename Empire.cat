@@ -207,14 +207,14 @@ Review 1.04.a0: add new unit and new profile from ORBAT 1.03, fixed Battlefleet 
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c56-70b7-61c1-935f" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="ee4b-d24a-35fb-7458" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="false">
-          <constraints>
-            <constraint field="selections" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58b6-05e9-326a-93f5" type="max"/>
-          </constraints>
-        </categoryLink>
         <categoryLink id="cc10-5f48-8274-a22f" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7ba-cfc4-39ae-5fdb" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="b74a-537b-bd33-13f9" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="666a-9d10-d9bb-a4ba" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -558,6 +558,11 @@ Bonus:
         <selectionEntry id="3e7e-ce6e-3b1d-146c" name="Escort duty [Chinese]" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="add" field="category" value="9ab6-c624-d0ae-dd32"/>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bf89-ff21-760f-4a4e" type="instanceOf"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5cd-9763-5b7a-83d8" type="max"/>
@@ -1577,6 +1582,55 @@ Bonus:
       </categoryLinks>
       <entryLinks>
         <entryLink id="7427-01bf-46ca-43e4" name="Ziwei" hidden="false" collective="false" import="true" targetId="27e6-c65d-77cf-f999" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4077-91d9-74dc-7768" name="Tianlong Draconic Colossus" publicationId="7b2b-0f56-3962-5ec1" page="16" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2398-62dd-9ccd-b030" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2aab-c54a-2c66-4b1a" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="773e-b1de-0f86-fbc2" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1102-cab9-95d2-dc54" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="e82c-dbdf-aed1-74cb" name="Chinese" hidden="false" targetId="0ad5-d3e2-dc61-f333" primary="false"/>
+        <categoryLink id="6f6b-08e2-060c-7128" name="Empire" hidden="false" targetId="ce97-a91c-c2c9-c566" primary="false"/>
+        <categoryLink id="0ff5-d39e-0d2c-183e" name="Aerial Unit" hidden="false" targetId="022b-08af-c874-e3f1" primary="false"/>
+        <categoryLink id="92c5-5c24-f9db-e671" name="Tianlong Class" hidden="false" targetId="33f5-001e-d7ac-f6d6" primary="false"/>
+        <categoryLink id="e3f0-6b02-5800-0e07" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="29cf-791a-c81e-964c" name="Escort duty [Chinese]" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="add" field="category" value="9ab6-c624-d0ae-dd32"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8051-d8cf-9b0f-800f" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="a2df-756f-108d-3a3c" name="Escort Duty" hidden="false" targetId="ff81-8189-a8d2-5be2" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Aereal Escort Duty [Chinese]"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="6a43-70c9-f57d-1972" name="Tianlong" hidden="false" collective="false" import="true" targetId="306f-c7b2-ca4f-e62a" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
@@ -5523,6 +5577,16 @@ Bonus:
           <conditions>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e7e-ce6e-3b1d-146c" type="atLeast"/>
           </conditions>
+        </modifier>
+        <modifier type="set" field="81c7-c87b-c72d-800e" value="3.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bf89-ff21-760f-4a4e" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fef3-1842-580c-4bef" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
