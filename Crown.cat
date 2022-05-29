@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="4724-2577-5b2d-0bfe" name="Crown v1.02a" revision="2" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <comment>Review 1.02.a0: Initial release</comment>
+  <readme>Review 1.02.a0: Initial release
+Review 1.02.a1: minor point correction</readme>
   <categoryEntries>
     <categoryEntry id="6427-c580-219d-c874" name="Britannia Class" publicationId="dbca-8d57-b848-457e" hidden="false"/>
     <categoryEntry id="ddb5-f0d6-665c-3ac4" name="Protecteur Class" publicationId="dbca-8d57-b848-457e" hidden="false"/>
@@ -467,7 +468,7 @@
         <categoryLink id="8e59-42d8-b0b2-55a8" name="Yukon Class" hidden="false" targetId="ac46-6066-cc04-9c42" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="67a0-bd1c-35d8-a5c1" name="Youkon" hidden="false" collective="false" import="true" targetId="1561-753f-2beb-4cfb" type="selectionEntry"/>
+        <entryLink id="67a0-bd1c-35d8-a5c1" name="Yukon" hidden="false" collective="false" import="true" targetId="1561-753f-2beb-4cfb" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
@@ -545,7 +546,7 @@
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0120-ea7e-c671-982a" name="Nautilus" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="0120-ea7e-c671-982a" name="Nautilus" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -806,7 +807,7 @@
         <entryLink id="3c68-27c2-3cf8-ca9e" name="Caliburn" hidden="false" collective="false" import="true" targetId="9482-5ed0-b7b8-e060" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8fd8-cbe5-e866-96c1" name="Agincourt Bombardment Cruiser Squadron" hidden="false" collective="false" import="true" type="unit">
@@ -951,7 +952,7 @@
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="20.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="920f-8fbf-50eb-c5ea" name="HMS Ark Royal" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="920f-8fbf-50eb-c5ea" name="HMS Ark Royal" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -968,6 +969,47 @@
         <categoryLink id="3c90-9021-4dd5-9bc5" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="2d12-b974-6c3e-62c1" name="Victory Class" hidden="false" targetId="3c0e-3931-32d5-b795" primary="false"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2b34-4796-d110-0b18" name="Support Model" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b57e-1a89-6a1f-dc93" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="91b5-2a61-92b5-85f1" name="Corvette" hidden="false" collective="false" import="true" targetId="aae0-e2ef-7700-4fae" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="a0e9-b9ad-824b-f41e" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9cc1-48f6-f9ea-943f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="251b-61b5-d32e-0af1" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0e9-b9ad-824b-f41e" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="52d9-c6d6-024f-da19" name="Corvette Class" hidden="false" targetId="dfce-ed39-89c4-47a9" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink id="e81a-f3e9-12a0-0c0d" name="Escort" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="83c7-82d0-3723-c934" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aae0-e2ef-7700-4fae" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ac4-d6c5-6c61-55cb" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9a0-252f-73cd-bd88" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="c0cc-f4d8-7c69-2275" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="5abe-d613-37c1-2bbe" name="HMS Ark Royal" hidden="false" collective="false" import="true" targetId="63e6-88d2-9d8d-98b4" type="selectionEntry"/>
       </entryLinks>
@@ -975,7 +1017,7 @@
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6bd8-9163-7912-a9ae" name="Britannia Heavy Battleship" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="6bd8-9163-7912-a9ae" name="Britannia Heavy Battleship" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -993,13 +1035,43 @@
         <categoryLink id="9c25-22a2-912f-7e7b" name="Britannia Class" hidden="false" targetId="6427-c580-219d-c874" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="cc6c-7105-8636-b943" name="Support Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="b867-d4d3-1240-428a" name="Support Model" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1728-0b02-afb9-69c2" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b52a-ca15-2cf6-8de3" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="131c-a478-64ef-6a43" name="Corvette" hidden="false" collective="false" import="true" targetId="aae0-e2ef-7700-4fae" type="selectionEntry"/>
-            <entryLink id="b12b-d688-0e68-b7da" name="Escort" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry"/>
+            <entryLink id="7e17-ee91-a9c9-3de6" name="Corvette" hidden="false" collective="false" import="true" targetId="aae0-e2ef-7700-4fae" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="5f38-d8dd-c5f6-849e" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9cc1-48f6-f9ea-943f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f75-d2f1-1076-f681" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f38-d8dd-c5f6-849e" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="6c2b-d3a8-d9b5-39a8" name="Corvette Class" hidden="false" targetId="dfce-ed39-89c4-47a9" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink id="fd75-a57e-3359-2dee" name="Escort" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="15ed-bc5f-fe7e-0952" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aae0-e2ef-7700-4fae" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c6c-c481-c57b-9d88" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15ed-bc5f-fe7e-0952" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="5443-3a02-238a-28bd" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1010,7 +1082,7 @@
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="43c9-d9d4-3577-ccd5" name="Victory Heavy Carrier" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="43c9-d9d4-3577-ccd5" name="Victory Heavy Carrier" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -1027,6 +1099,47 @@
         <categoryLink id="a4e5-8dae-611c-75b4" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="6a51-2630-dddf-4ed1" name="Victory Class" hidden="false" targetId="3c0e-3931-32d5-b795" primary="false"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="cad1-8316-3973-d13e" name="Support Model" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45bf-77f8-3925-be0b" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="1cb2-2c01-345e-382a" name="Corvette" hidden="false" collective="false" import="true" targetId="aae0-e2ef-7700-4fae" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="4f78-1f58-312d-165a" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9cc1-48f6-f9ea-943f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8af3-834d-93b4-7a5e" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f78-1f58-312d-165a" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="5ce7-ea61-c7a3-e666" name="Corvette Class" hidden="false" targetId="dfce-ed39-89c4-47a9" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink id="516f-3c5c-fb6b-1822" name="Escort" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="5227-97b2-b2b9-e29d" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aae0-e2ef-7700-4fae" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10b8-476d-97a7-6f08" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5227-97b2-b2b9-e29d" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="9f86-7365-2f11-2e75" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="92c9-a94a-9362-0b5d" name="Victory" hidden="false" collective="false" import="true" targetId="7398-33a3-a716-2e51" type="selectionEntry"/>
       </entryLinks>
@@ -1317,7 +1430,7 @@
         <infoLink id="2bf2-130c-c22d-8ead" name="Albion" hidden="false" targetId="601f-0d50-16b6-b76c" type="profile"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry id="188e-ca55-633d-f10c" name="Prove Ram - (F)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="188e-ca55-633d-f10c" name="Prow Ram - (F)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e087-596e-3397-384a" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="22ab-c48a-3c83-5fb5" type="max"/>
@@ -1636,7 +1749,7 @@
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="105.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dcca-9848-0265-fdcb" name="Athelstan" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="dcca-9848-0265-fdcb" name="Athelstan" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="add" field="category" value="9ab6-c624-d0ae-dd32">
           <conditions>
@@ -1810,14 +1923,14 @@
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="145.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="484b-a2ff-e4b5-c4c5" name="Bonaventure" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="484b-a2ff-e4b5-c4c5" name="Bonaventure" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f642-5f7a-f5ef-3d9d" type="min"/>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf12-d927-64e3-7d6c" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="dd9a-d3b8-6c91-8856" name="Bonaventure" hidden="false" targetId="836a-e8ad-8cc4-1481" type="profile"/>
-        <infoLink id="dd19-9cff-4983-957f" name="Ablative Prow Armour" hidden="false" targetId="f54d-298c-80cf-320c" type="rule"/>
+        <infoLink id="dd19-9cff-4983-957f" name="Ablative Prow Armour" hidden="false" targetId="2823-33a9-a62b-e29a" type="rule"/>
         <infoLink id="a79f-7bc3-36e6-cc49" name="Armour of Contempt" hidden="false" targetId="b5f3-e99d-c5c2-5670" type="rule"/>
         <infoLink id="0d7d-3887-1367-6721" name="Lionhearted Crew" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
         <infoLink id="68e8-7a69-c559-96e3" name="Royal Engineers" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
@@ -2181,7 +2294,7 @@
             <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3bef-3633-75a6-39e3" name="Heavy Prove Ram - (F)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="3bef-3633-75a6-39e3" name="Heavy Prow Ram - (F)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4b69-1c53-6f4b-f9c4" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0db8-ea13-8b86-3e19" type="max"/>
@@ -2209,7 +2322,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="382b-70b5-8fdc-86c1" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="ced3-fbd6-a95a-e0a1" name="Heavy Torped Turret" hidden="false" targetId="c4fc-e39d-2c42-c337" type="profile">
+            <infoLink id="ced3-fbd6-a95a-e0a1" name="Heavy Torpedo Salvo" hidden="false" targetId="5ce5-2226-6c2d-fb48" type="profile">
               <modifiers>
                 <modifier type="append" field="name" value=" - (F)"/>
               </modifiers>
@@ -2548,7 +2661,7 @@
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="265.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9482-5ed0-b7b8-e060" name="Caliburn" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="9482-5ed0-b7b8-e060" name="Caliburn" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b61-bdab-1f3e-8c56" type="min"/>
         <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e99-b1f4-4a22-0885" type="max"/>
@@ -2608,7 +2721,7 @@
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="22.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2f17-6256-56c3-1725" name="Excalibur" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="2f17-6256-56c3-1725" name="Excalibur" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a47c-f1fb-fae1-fd82" type="min"/>
         <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e7e-4b13-865e-a4a9" type="max"/>
@@ -2685,7 +2798,7 @@
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="35.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0170-c308-289d-ff01" name="Picton" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="0170-c308-289d-ff01" name="Picton" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0efe-5cee-1fa0-371d" type="min"/>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ddc-cb6d-2047-f86e" type="max"/>
@@ -2705,7 +2818,7 @@
         <categoryLink id="09f7-b6da-1dbd-c243" name="British�" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="86b6-102e-e221-1cb6" name="Prove Ram - (F)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="86b6-102e-e221-1cb6" name="Prow Ram - (F)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cec9-a39a-2ce9-7397" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="69ef-99f8-6dab-3597" type="max"/>
@@ -2800,8 +2913,8 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="1ab5-ba8a-dd74-2e78" name="Main Weapon" page="" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6052-ac45-3315-a8d6" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4a4-053d-4df2-9419" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6052-ac45-3315-a8d6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4a4-053d-4df2-9419" type="max"/>
           </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup id="119e-8dda-9f04-6286" name="Front First" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" defaultSelectionEntryId="a2b9-f794-45f0-d8d7">
@@ -2976,14 +3089,14 @@
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="90.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1561-753f-2beb-4cfb" name="Youkon" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="1561-753f-2beb-4cfb" name="Yukon" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c6f-cf60-d3d4-58d3" type="min"/>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2573-3c64-fd25-bdd6" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="cfaa-3a30-d317-5721" name="Yukon" hidden="false" targetId="30c1-b306-afed-4c4e" type="profile"/>
-        <infoLink id="00d8-0877-afdf-8a50" name="Ablative Prow Armour" hidden="false" targetId="f54d-298c-80cf-320c" type="rule"/>
+        <infoLink id="00d8-0877-afdf-8a50" name="Ablative Prow Armour" hidden="false" targetId="2823-33a9-a62b-e29a" type="rule"/>
         <infoLink id="fe6c-59d8-ad74-f190" name="Armour of Contempt" hidden="false" targetId="b5f3-e99d-c5c2-5670" type="rule"/>
         <infoLink id="29aa-7d6b-2aec-12d8" name="Lionhearted Crew" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
         <infoLink id="397a-99a1-c0fc-0578" name="Mine Layer" hidden="false" targetId="940f-44f3-71bf-f26c" type="rule"/>
@@ -3407,7 +3520,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="135.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="943e-b81d-2fd2-b2af" name="Halifax" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="943e-b81d-2fd2-b2af" name="Halifax" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="add" field="category" value="9ab6-c624-d0ae-dd32">
           <conditions>
@@ -3421,8 +3534,8 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="13db-db40-4074-7087" name="Halifax" hidden="false" targetId="22a9-52fd-a014-e9cf" type="profile"/>
-        <infoLink id="c309-ebad-cda4-8996" name="Ablative Prow Armour�" hidden="false" targetId="f54d-298c-80cf-320c" type="rule"/>
-        <infoLink id="5a2d-e87e-ad62-21bb" name="Armour of Contempt�" hidden="false" targetId="b5f3-e99d-c5c2-5670" type="rule"/>
+        <infoLink id="c309-ebad-cda4-8996" name="Ablative Prow Armour" hidden="false" targetId="2823-33a9-a62b-e29a" type="rule"/>
+        <infoLink id="5a2d-e87e-ad62-21bb" name="Armour of Contempt" hidden="false" targetId="b5f3-e99d-c5c2-5670" type="rule"/>
         <infoLink id="1ca2-ce81-384d-cfd5" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
         <infoLink id="c2f3-efa5-4b0a-4d0d" name="McCurdy Shield Projector�" hidden="false" targetId="4e80-1d7c-8f72-bb13" type="rule"/>
         <infoLink id="86c2-fe2d-75ba-a39f" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
@@ -3618,7 +3731,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="130.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9ef8-3212-8fb5-4b55" name="Morgana" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="9ef8-3212-8fb5-4b55" name="Morgana" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1dd3-d7db-362b-a7d9" type="min"/>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7dfb-7fd4-cd2f-ded9" type="max"/>
@@ -3646,7 +3759,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90d5-77e9-85ae-f3fb" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="1fc0-b9f7-e36e-bbd3" name="Heavy Torpedo Salvo" hidden="false" targetId="5ce5-2226-6c2d-fb48" type="profile">
+            <infoLink id="1fc0-b9f7-e36e-bbd3" name="Torpedo Salvo" hidden="false" targetId="cda4-a338-5f16-6220" type="profile">
               <modifiers>
                 <modifier type="append" field="name" value=" - (A)"/>
               </modifiers>
@@ -3655,10 +3768,10 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             <infoLink id="2a5d-157f-71c5-de3a" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="80.0"/>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="fe57-0eec-b356-343f" name="Torpedo Salvo - (F)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="fe57-0eec-b356-343f" name="Heavy Torpedo Salvo - (F)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fb69-6438-feb3-c551" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95bb-a38e-8f0d-b55b" type="min"/>
@@ -3701,10 +3814,10 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="80.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="55c5-8998-e45f-3d6f" name="Lancelot" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="55c5-8998-e45f-3d6f" name="Lancelot" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="969e-e409-1a0f-f560" type="min"/>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="690b-ffa0-0a94-27dc" type="max"/>
@@ -3758,7 +3871,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5092-91b3-9899-1902" name="Prove Ram - (F)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5092-91b3-9899-1902" name="Prow Ram - (F)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0435-083f-009d-1c34" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0523-d26f-6d45-b83d" type="max"/>
@@ -4056,10 +4169,10 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="120.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="128.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e34f-b439-2980-93ea" name="Sabre" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="e34f-b439-2980-93ea" name="Sabre" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98ec-603f-2e52-269d" type="min"/>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d59d-1f77-8743-3424" type="max"/>
@@ -4079,7 +4192,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <categoryLink id="a263-f32a-7e8e-3993" name="Sabre Class" hidden="false" targetId="27ee-3bf4-f5b4-ea57" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="8975-d279-5710-674a" name="Prove Ram - (F)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="8975-d279-5710-674a" name="Prow Ram - (F)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9e3e-2bfe-2164-bdd8" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="afec-afb8-a293-1efc" type="max"/>
@@ -4415,7 +4528,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="130.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7263-7d2c-2295-3a5b" name="Protecteur" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="7263-7d2c-2295-3a5b" name="Protecteur" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cf7-8591-055e-f7d8" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9c6-ab60-f6f1-f7fb" type="max"/>
@@ -4543,7 +4656,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="255.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9bdd-872b-dbfb-4a53" name="Orca" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="9bdd-872b-dbfb-4a53" name="Orca" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="add" field="category" value="9ab6-c624-d0ae-dd32">
           <conditions>
@@ -4687,13 +4800,13 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="135.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="85d9-4e54-71fa-2362" name="Newfoundland" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="85d9-4e54-71fa-2362" name="Newfoundland" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d06f-902f-46a5-015c" type="min"/>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ae8-12fc-4300-1d42" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="43b2-017e-360e-ce6a" name="Ablative Prow Armour�" hidden="false" targetId="f54d-298c-80cf-320c" type="rule"/>
+        <infoLink id="43b2-017e-360e-ce6a" name="Ablative Prow Armour" hidden="false" targetId="2823-33a9-a62b-e29a" type="rule"/>
         <infoLink id="bf54-158b-bea3-4a8d" name="Newfoundland" hidden="false" targetId="841c-c422-2f0a-6a19" type="profile"/>
         <infoLink id="11a3-f2af-1e54-86ac" name="Armour of Contempt�" hidden="false" targetId="b5f3-e99d-c5c2-5670" type="rule"/>
         <infoLink id="35b4-1230-d980-d206" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
@@ -5004,7 +5117,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="114.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="36b8-c29d-c7c7-9d48" name="Bedivere" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="36b8-c29d-c7c7-9d48" name="Bedivere" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="feaf-baa4-0afe-d537" type="min"/>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7362-40a4-d6a0-1a92" type="max"/>
@@ -5024,7 +5137,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <categoryLink id="bb4e-b2f0-507b-4950" name="British�" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="235c-e54c-2439-ec65" name="Prove Ram - (F)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="235c-e54c-2439-ec65" name="Prow Ram - (F)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4565-9474-c37a-8f51" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bc31-32a5-0a45-6187" type="max"/>
@@ -5102,8 +5215,8 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       <selectionEntryGroups>
         <selectionEntryGroup id="48d3-9493-9f13-7e25" name="Main Weapon" page="" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7e7-fb05-24df-7280" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="effd-3dcb-3318-00eb" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7e7-fb05-24df-7280" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="effd-3dcb-3318-00eb" type="max"/>
           </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup id="5f57-9218-c74e-73c1" name="Front First" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" defaultSelectionEntryId="a7dd-5a13-3fdb-04ac">
@@ -5278,7 +5391,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="87.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7398-33a3-a716-2e51" name="Victory" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="7398-33a3-a716-2e51" name="Victory" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a7f-70da-4ff6-d4b3" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21cd-8708-751a-610f" type="max"/>
@@ -5514,7 +5627,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="335.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="63e6-88d2-9d8d-98b4" name="HMS Ark Royal" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="63e6-88d2-9d8d-98b4" name="HMS Ark Royal" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b40-5680-a21a-d94c" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10a3-47e8-5f69-cc76" type="max"/>
@@ -5618,7 +5731,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="800e-a281-1450-5550" type="max"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup id="4e45-ffb8-5aa3-5830" name="Port" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="4e45-ffb8-5aa3-5830" name="Port" hidden="false" collective="false" import="true" defaultSelectionEntryId="b68f-4b48-cb97-b62a">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32bf-0db0-08ed-fc0e" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d88-40cb-fafb-b639" type="max"/>
@@ -5697,7 +5810,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="380.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="36c0-10f7-153f-33b7" name="HMS Lord Alexander Hood" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="36c0-10f7-153f-33b7" name="HMS Lord Alexander Hood" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01d4-e369-e506-5683" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ef2-e431-8c12-38be" type="max"/>
@@ -5718,7 +5831,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <categoryLink id="cf64-205f-d8b7-5940" name="Sabre Class" hidden="false" targetId="27ee-3bf4-f5b4-ea57" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="f352-d291-0ea0-bb27" name="Prove Ram - (F)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="f352-d291-0ea0-bb27" name="Prow Ram - (F)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f7a1-3861-6308-b5a2" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f242-443c-e86a-82fc" type="max"/>
@@ -5872,7 +5985,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0a2b-fc3c-ba73-79a4" name="HMS Lord Arthur Hood" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="0a2b-fc3c-ba73-79a4" name="HMS Lord Arthur Hood" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac55-5226-6ba5-f628" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6691-5718-4b01-a201" type="max"/>
@@ -5893,7 +6006,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <categoryLink id="1d13-08f8-df0c-21a5" name="Sabre Class" hidden="false" targetId="27ee-3bf4-f5b4-ea57" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="6856-6670-9816-4f49" name="Prove Ram - (F)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="6856-6670-9816-4f49" name="Prow Ram - (F)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f0c0-c165-d8a4-e5d6" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="35bb-b786-bba1-e3d1" type="max"/>
@@ -6068,7 +6181,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <categoryLink id="4fab-6cab-b4f3-1d31" name="Sabre Class" hidden="false" targetId="27ee-3bf4-f5b4-ea57" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="f064-029e-a3fa-ffcc" name="Prove Ram - (F)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="f064-029e-a3fa-ffcc" name="Prow Ram - (F)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ea8f-7422-1542-700b" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9d06-e664-41fc-7820" type="max"/>
@@ -6222,14 +6335,14 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2f7c-749d-c7c3-9464" name="Toronto" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="2f7c-749d-c7c3-9464" name="Toronto" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d78-5375-3605-34fb" type="min"/>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f1b-58b8-0b56-9ea9" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="a3e5-3360-0fd1-d935" name="Toronto" hidden="false" targetId="cd8a-4413-9e89-5497" type="profile"/>
-        <infoLink id="b0e8-e5f2-cb26-f57f" name="Ablative Flank Armour" hidden="false" targetId="2823-33a9-a62b-e29a" type="rule"/>
+        <infoLink id="b0e8-e5f2-cb26-f57f" name="Ablative Prow Armour" hidden="false" targetId="2823-33a9-a62b-e29a" type="rule"/>
         <infoLink id="1b97-036a-81f5-454d" name="Maritime Patrol" hidden="false" targetId="0b7c-6003-8433-2817" type="rule"/>
         <infoLink id="4e33-4331-cb13-dfe7" name="Skyfire" hidden="false" targetId="1083-2af1-7bfc-7a55" type="rule"/>
         <infoLink id="60a3-4d36-98cb-a030" name="Royal Engineers" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
@@ -6499,9 +6612,6 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
     <rule id="ca2c-171e-4ba8-2239" name="Tally Ho!" publicationId="dbca-8d57-b848-457e" hidden="false">
       <description>When an attack against a Model in this Unit originates from a point in its Fore, it uses this rule. Remove an Action die from the Attack Dice Pool for each weapon with the Gunnery or Fusillade Quality that Supports an attack against the Model. Attacks with Rail or Piercing Quality ignore this rule.</description>
     </rule>
-    <rule id="f54d-298c-80cf-320c" name="Ablative Prow Armour" publicationId="dbca-8d57-b848-457e" hidden="false">
-      <description>SRS Tokens launched by Units with this rule may Scramble up to 10”.</description>
-    </rule>
     <rule id="22ba-1488-2237-c913" name="Advanced Repair Teams" publicationId="dbca-8d57-b848-457e" hidden="false">
       <description>This Unit may add two additional Action Dice to its Repair Test. This is in addition to those given by the Model’s Mass.</description>
     </rule>
@@ -6684,9 +6794,9 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
     <profile id="d804-ed50-9392-66d9" name="Morgana" publicationId="dbca-8d57-b848-457e" page="" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
       <characteristics>
         <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">2/2</characteristic>
-        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">5/4</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">5/3</characteristic>
         <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">4/3</characteristic>
-        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">4/4</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">5/5</characteristic>
         <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">10/8</characteristic>
         <characteristic name="ADV" typeId="6428-9828-bb2e-f923">1/0</characteristic>
         <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">4/3</characteristic>
