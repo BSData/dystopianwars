@@ -349,7 +349,7 @@ arms fire close to the vessel. Any Hits or Heavy Hits by Enemy SRS Tokens agains
       <description>Unless suffering from a Navigation Lock Critical Damage Marker, this Unit may make turns during Drift movement in the same way as it usually would during normal Movement.</description>
     </rule>
     <rule id="0b7c-6003-8433-2817" name="Maritime Patrol" hidden="false">
-      <description>Models with this rule may re-roll blank results when attacking Submerged Units provided the target has at least one friendly SRS unit within 5”.</description>
+      <description>Models with this rule may re-roll blank results when attacking Submerged Units provided the target Unit has at least one SRS Token that is friendly to this Unit in base contact.</description>
     </rule>
     <rule id="1ea8-5ef6-de30-f3ae" name="Temperamental Design" hidden="false">
       <description>This Unit counts any Heavy Counter rolled as a Counter instead whilst making Repair Tests.</description>
@@ -370,7 +370,7 @@ arms fire close to the vessel. Any Hits or Heavy Hits by Enemy SRS Tokens agains
       <description>his Unit may double its Drift during its Movement Step provided that it makes no turns.</description>
     </rule>
     <rule id="063a-3229-1f27-a3c2" name="Spotter" hidden="false">
-      <description>This Unit gains the Sustained quality to any weapons with the Extreme Range quality if the Initial Target is within 3” of a friendly SRS Token.</description>
+      <description>This Unit gains the Sustained quality to any weapons with the Extreme Range quality if the Initial Target has at least one SRS Token friendly to this Unit in base contact with it. Special SRS Tokens cannot be used for this Special Rule.</description>
     </rule>
     <rule id="482d-5802-96ca-bd80" name="Ignores Shield Generator" hidden="false">
       <description>The weapon ignores shield generetor effect</description>
@@ -453,6 +453,12 @@ Action has a Drift of zero and reduces its Speed Attribute by its Mass for the A
     </rule>
     <rule id="23f5-7a90-116f-cba1" name="Supply Depot" hidden="false">
       <description>Any Friendly Model within 7” may remove a single level of Disorder at the start of their Activation. Weapons on Friendly Units lose the Limited Quality while within 7” of this Unit.</description>
+    </rule>
+    <rule id="7078-4031-0b1f-1971" name="Auxiliary Mine Layer" hidden="false">
+      <description>After Deployment, the controlling Player of this Unit may place a single Minefield Marker anywhere in the Play Area provided that it is at least 10” from any Deployment Zone and 5” of a Model. The First Model that touches a Minefield Marker suffers a hit with an Attack Dice Pool equal to five times their Mass. Remove the Minefield Marker after resolving the hit. Minefields cannot be triggered or affect Aerial Units.</description>
+    </rule>
+    <rule id="1d26-a2a2-5fe2-1ff1" name="Shallow Draught" hidden="false">
+      <description>This Unit treats Treacherous Water as Open Water.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
