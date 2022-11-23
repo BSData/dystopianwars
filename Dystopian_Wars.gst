@@ -251,59 +251,56 @@ Revision 1.04: review of datafile logic</readme>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
-    <rule id="c475-4c4f-de22-9080" name="Aerial" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
+    <rule id="c475-4c4f-de22-9080" name="Aerial" publicationId="7f09-e243-2307-78d0" page="36" hidden="false">
       <description>Attacks made with this Quality cannot usually be used against Initial Targets that are  Submerged Units (unless the Attack also has the Submerged Quality). The Initial Target may use Aerial Defences against Attacks from this weapon.</description>
     </rule>
-    <rule id="6d56-fa67-1d6d-022b" name="Arc" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
-      <description>Shield Generators are ignored when making Attacks with this weapon. Should the Initial Target suffer a Critical Hit from this weapon it also gains a Disorder Condition.</description>
+    <rule id="6d56-fa67-1d6d-022b" name="Arc" publicationId="7f09-e243-2307-78d0" page="36" hidden="false">
+      <description>Shield Generators are ignored when making actions with this Quality. Should the Initial Target suffer Critical Damage from actions with this Quality, it also gains a Disorder Condition in addition to any others that may be applied by the Action.</description>
     </rule>
     <rule id="89d8-2e21-11be-005d" name="Blast" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
-      <description>This weapon uses the circular Blast Template. The centre point of the template must be placed over any part of the Initial Target. All Models touched by the template (excluding the Attacking Model) are automatically Hit. Roll the Action Dice Pool and apply the result to every Model touched by the template, including friendly ones! Models that have their Line of Sight
-to the Attacker completely blocked can still be damaged by the blast.</description>
+      <description>This Action uses the Blast Template. The centre point of the template must be placed over any part of the Initial Target. Resolve the Action against the Initial Target as normal. The resulting Hits are applied to the Initial Target and to all Models touched by the template automatically without further modification (Hits are applied to any Friendly Models but exclude the Attacking Model). Models that have their Line of Sight to the Attacker completely blocked can still be Hit by the blast.</description>
     </rule>
-    <rule id="cec9-6349-719c-e293" name="Bomb" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
+    <rule id="cec9-6349-719c-e293" name="Bomb" publicationId="7f09-e243-2307-78d0" page="36" hidden="false">
       <description>Attacks made with this Quality cannot be used against Aerial Units. Furthermore, bombs ignore the Initial Target’s Shield Generators.</description>
     </rule>
-    <rule id="4ec1-3aa3-001e-f8f6" name="Fusillade" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
-      <description>Attacks made at Point Blank Range with this weapon may re-roll Heavy Counter and Counter results. This Quality has no effect on Aerial Units unless this Attack also has the Aerial Quality.</description>
+    <rule id="4ec1-3aa3-001e-f8f6" name="Fusillade" publicationId="7f09-e243-2307-78d0" page="36" hidden="false">
+      <description>Actions may re-roll Counter and Heavy Counter results provided the lead weapon in the Action is at Point Blank Range. This Quality has no effect on Aerial Units or Submerged Units unless this Action Dice Pool also has the relevant Aerial or Submerged Quality.</description>
     </rule>
-    <rule id="c20b-cc1d-12bf-23a8" name="Gunnery" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
+    <rule id="c20b-cc1d-12bf-23a8" name="Gunnery" publicationId="7f09-e243-2307-78d0" page="36" hidden="false">
       <description>Attacks made with this Quality count Models with a Mass of 1 as Obscured.</description>
     </rule>
-    <rule id="d633-3476-6a40-e860" name="Devastating" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
+    <rule id="d633-3476-6a40-e860" name="Devastating" publicationId="7f09-e243-2307-78d0" page="36" hidden="false">
       <description>Attacks made with this Quality treat a roll of an Exploding Hit on an Action Die as three Hits rather than the usual two.</description>
     </rule>
-    <rule id="d3ac-5484-ad1a-0c87" name="Extreme Range" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
-      <description>Attacks made with this quality treat the Long Range Band as 20” - 40”.</description>
+    <rule id="d3ac-5484-ad1a-0c87" name="Extreme Range" publicationId="7f09-e243-2307-78d0" page="36" hidden="false">
+      <description>Actions made with this Quality treat the Long Range Band as 20” - 40”.</description>
     </rule>
-    <rule id="ee84-8367-93d5-8d3f" name="Hazardous" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
-      <description>Should the Initial Target suffer one or more Points of Damage in an Attack made by a weapon with this quality it gains a Disorder Condition.</description>
+    <rule id="ee84-8367-93d5-8d3f" name="Hazardous" publicationId="7f09-e243-2307-78d0" page="36" hidden="false">
+      <description>Should the Initial Target suffer one or more Points of Damage in an action with this Quality, it gains a Level of Disorder in addition to any other effects.</description>
     </rule>
-    <rule id="5b8e-71d1-641d-73f9" name="High Velocity" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
+    <rule id="5b8e-71d1-641d-73f9" name="High Velocity" publicationId="7f09-e243-2307-78d0" page="36" hidden="false">
       <description>Heavy Counter results add a single Counter rather than the usual two in the Defence Action Dice Pool against Attacks with this Quality.</description>
     </rule>
-    <rule id="3fdf-3916-52aa-ecf7" name="Homing" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
-      <description>Models cannot be considered Obscured from Attacks with the Homing Quality. Furthermore, Attacks made with this Quality may re-roll Blanks.</description>
+    <rule id="3fdf-3916-52aa-ecf7" name="Homing" publicationId="7f09-e243-2307-78d0" page="36" hidden="false">
+      <description>Models cannot be considered Obscured from Attacks with the Homing Quality. Furthermore, Attacks made with this Quality may re-roll Blanks and ignore Shroud Generators.</description>
     </rule>
-    <rule id="a387-ad76-761a-509e" name="Indirect" publicationId="7f09-e243-2307-78d0" page="36" hidden="false">
-      <description>Attacks made with this Quality do not require Line of Sight and may select any non-Aerial enemy Unit within range and Fire Arc as an Initial Target. Attacks by Indirect Weapons count their target as Obscured for the duration of that Attack.</description>
+    <rule id="a387-ad76-761a-509e" name="Indirect" publicationId="7f09-e243-2307-78d0" page="37" hidden="false">
+      <description>Actions made with this Quality do not require Line of Sight and may select any non-Aerial enemy Unit within range and Fire Arc as an Initial Target. Actions with Indirect Quality count their target as Obscured for the duration of that Action.</description>
     </rule>
-    <rule id="3bd4-7e14-0aa2-97db" name="Limited" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
-      <description>As the name implies, these weapons may only be used in a finite or limited fashion. Each time a Model uses a weapon with this Quality roll an Action Die. On a roll of a blank it may no longer use this Weapon for the remainder of the Encounter.</description>
+    <rule id="3bd4-7e14-0aa2-97db" name="Limited" publicationId="7f09-e243-2307-78d0" page="37" hidden="false">
+      <description>As the name implies, these Actions may only be used in a finite or limited fashion. Each time after a Model uses a weapon or takes an Action with this Quality, roll an Action Die. On a result of a blank it may not use this weapon or Action for the remainder of the Encounter.</description>
     </rule>
-    <rule id="8c21-7eac-4f35-4268" name="Magnetic" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
-      <description>Models cannot be considered Obscured from Attacks with the Magnetic Quality. Furthermore, Attacks made with this Quality that cause at least one Point of Damage inflict a Navigation Lock Critical Damage Marker on the target in addition to any other effects. Models with the Non-Magnetic Special Rule are unaffected by this Quality.</description>
+    <rule id="8c21-7eac-4f35-4268" name="Magnetic" publicationId="7f09-e243-2307-78d0" page="37" hidden="false">
+      <description>Models cannot be considered Obscured from Actions with the Magnetic Quality. After any other effects or Critical Damage Markers have been applied from the Action, if at least one Point of Damage has been caused by the Action with this Quality, inflict a Navigation Lock Critical Damage Marker if the target does not already have one.</description>
     </rule>
-    <rule id="0f8e-056c-75a9-caee" name="Piercing" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
-      <description>The Initial Target suffers a Critical Damage roll if it receives one or more Points of Damage in an Attack made by a weapon with this Quality. This is in addition to any Critical Damage rolls
-caused by the Attack.</description>
+    <rule id="0f8e-056c-75a9-caee" name="Piercing" publicationId="7f09-e243-2307-78d0" page="37" hidden="false">
+      <description>The Initial Target suffers a Critical Damage roll if it receives one or more Points of Damage in an Action with this Quality. This is in addition to any Critical Damage rolls caused by the Action. Against Mass 1 Targets, this Quality also lowers their Citadel by -3 for the Action.</description>
     </rule>
-    <rule id="c92a-830a-302c-d3ab" name="Ramming" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
-      <description>A Model equipped with a weapon with this Quality may Ram enemy Models. Next to the Quality is a value which indicates the number of Action Dice added to the pool when making a Ram.</description>
+    <rule id="c92a-830a-302c-d3ab" name="Ramming" publicationId="7f09-e243-2307-78d0" page="37" hidden="false">
+      <description>A Model equipped with a Weapon with this Quality may use it to Ram enemy Models. Next to the Quality is a value which indicates the number of Action Dice added to the pool when making a Ram.</description>
     </rule>
-    <rule id="4c9f-29cc-d354-a5f9" name="Submerged" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
-      <description>Attacks with this Quality cannot usually be used against Aerial Units (unless the Attack also has the Aerial Quality). The Initial Target may use Submerged Defences against Attacks
-made from this weapon. Furthermore, Submerged weapons ignore the Initial Target’s Shield Generators.</description>
+    <rule id="4c9f-29cc-d354-a5f9" name="Submerged" publicationId="7f09-e243-2307-78d0" page="37" hidden="false">
+      <description>Actions with this Quality cannot usually be used against Aerial Units or Ground Units. The Initial Target may use Submerged Defences against Actions made from this Quality. Furthermore, Actions with the Submerged Quality ignore the Initial Target’s Shield Generators.</description>
     </rule>
     <rule id="8615-72cb-cdb5-0b1e" name="Sustained" publicationId="7f09-e243-2307-78d0" page="37" hidden="false">
       <description>A roll made with this Quality can re-roll any one result type (such as Heavy Counters or Hits) from its Action Dice Pool. You may declare after the initial roll has been made. You cannot re-roll dice generated by Exploding Hits. If the Quality specifies a Trait (such as Aerial Units) then this Action only gains the Sustained Quality against Initial Targets with that Trait.</description>
@@ -311,8 +308,8 @@ made from this weapon. Furthermore, Submerged weapons ignore the Initial Target�
     <rule id="d673-c4da-202e-fbfc" name="Torpedo" publicationId="7f09-e243-2307-78d0" page="37" hidden="false">
       <description>Attacks made with this Quality can only be used against Initial Targets that are 5” or more away. Furthermore, an Initial Target does not gain benefit from being Obscured against Attacks from Torpedoes.</description>
     </rule>
-    <rule id="8081-2eef-5594-eb78" name="Torrent" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
-      <description>This weapon uses the Torrent template. The narrow end of the template is placed touching any point of the front of the Model with the Lead Weapon and the centreline touching any part of the Initial Target. All Models touched by the template are automatically Hit. Roll the Action Dice Pool and apply its result to every Model touched by the template. This does not include the firing Model but may include friendly Models! Models that have their Line of Sight to the Attacker completely blocked can still be damaged by the torrent. You cannot Support with Torrent weapons.</description>
+    <rule id="8081-2eef-5594-eb78" name="Torrent" publicationId="7f09-e243-2307-78d0" page="37" hidden="false">
+      <description>This Action uses the full Torrent template unless the Quality is expressed as Torrent (Small) in which case the smaller part of the template is used. The narrow end of the template is placed with the centreline touching any point in the relevant Fire Arc of the Attacking Model so that the centreline touches any part of the Initial Target. Resolve the Action against the Initial Target as normal. The resulting Hits are applied to the Initial Target and to all Models touched by the template automatically without further modification (Hits are applied to any Friendly Models but exclude the Attacking Model). Models that have their Line of Sight to the Attacker completely blocked can still be Hit by the Torrent. Supporting weapons with this Quality add to the Dice Pool but use the template from the Lead weapon.</description>
     </rule>
     <rule id="1892-b471-89bc-1ab6" name="Atomic generator" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
       <description>The Model adds +2 to its Speed Attribute. It also receives a bonus of +1 to its Citadel Attribute because of the reinforced superstructure needed. However, the Model suffers an additional Point of Damage whenever it receives a Reactor Leak Critical Damage Marker.</description>
