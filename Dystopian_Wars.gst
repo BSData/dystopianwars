@@ -4,7 +4,8 @@
 Revision 1.01: added all ORBAT Publication
 Revision 1.02: managed correctlly Publication, corrected Command Reroll bonus
 Revision 1.03: update common weapon charatteristic after new Orbat pubbication
-Revision 1.04: review of datafile logic</readme>
+Revision 1.04: review of datafile logic
+Revision 1.05: November &apos;22 Weapon Update</readme>
   <publications>
     <publication id="7f09-e243-2307-78d0" name="Dystopian Rulebook"/>
     <publication id="e265-8c7f-a4b2-a48e" name="Commonwhealth ORBAT"/>
