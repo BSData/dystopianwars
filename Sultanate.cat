@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7b3f-8541-c5c8-b666" name="Sultanate v1.01a" revision="2" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <comment>Review 0.03.a0: First version published
-Review 1.01a:  Second release</comment>
+<catalogue id="7b3f-8541-c5c8-b666" name="Sultanate v1.02b" revision="3" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>Review 0.03.a0: First version published
+Review 1.01a:  Second release
+Review 1.02b: Third release</readme>
   <categoryEntries>
     <categoryEntry id="24d7-a2ac-a5bb-a77d" name="Temir Class" publicationId="d854-a2d6-3d52-44c4" hidden="false"/>
     <categoryEntry id="9c13-9a46-5ee3-4981" name="Sultanate" publicationId="d854-a2d6-3d52-44c4" hidden="false"/>
@@ -21,6 +22,15 @@ Review 1.01a:  Second release</comment>
     <categoryEntry id="ee25-ef25-c9fe-b811" name="Mihrimah Class" hidden="false"/>
     <categoryEntry id="a9a0-9753-e5bc-1ad5" name="Pasha Class" hidden="false"/>
     <categoryEntry id="9da6-652d-beb4-f5c0" name="Sadrazam Class" hidden="false"/>
+    <categoryEntry id="3d94-794c-7ebc-7074" name="Retaj Class" publicationId="d854-a2d6-3d52-44c4" hidden="false"/>
+    <categoryEntry id="b0dc-450c-d771-bc6f" name="Ikili Cruiser" publicationId="d854-a2d6-3d52-44c4" hidden="false"/>
+    <categoryEntry id="a974-e10e-3d35-30fe" name="Bayezid Class" publicationId="d854-a2d6-3d52-44c4" hidden="false"/>
+    <categoryEntry id="9a89-b1c8-493b-66b4" name="Ikili Heavy Cruiser" publicationId="d854-a2d6-3d52-44c4" hidden="false"/>
+    <categoryEntry id="2bb9-b056-8541-bce3" name="Bursa Class" publicationId="d854-a2d6-3d52-44c4" hidden="false"/>
+    <categoryEntry id="fba8-77b7-3aa5-a132" name="Egyptian" hidden="false"/>
+    <categoryEntry id="fdcf-47b3-d123-b33a" name="Konya Class" hidden="false"/>
+    <categoryEntry id="94b0-937f-c25a-a56d" name="Morea Class" hidden="false"/>
+    <categoryEntry id="2b7c-78f2-2a5a-716a" name="Nemrut Class" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="c266-4567-b6b7-ffa4" name="Anatolia Battlefleet" publicationId="d854-a2d6-3d52-44c4" hidden="false">
@@ -629,7 +639,7 @@ Review 1.01a:  Second release</comment>
         <entryLink id="7af2-c526-34eb-4504" name="Aydin" hidden="false" collective="false" import="true" targetId="eec4-fb90-1ff0-1e4c" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="50.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3d87-6f73-1507-6a82" name="Constantinople Support Carrier" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="model">
@@ -692,7 +702,7 @@ Review 1.01a:  Second release</comment>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ccf4-e047-cc90-8ecc" name="Mihrimah Bombardment Cruiser" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="ccf4-e047-cc90-8ecc" name="Mihrimah Bombardment Cruiser squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="1e17-6b18-00cc-2bb4" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
         <categoryLink id="8bb8-dfff-edad-d7f5" name="Mihrimah Class" hidden="false" targetId="ee25-ef25-c9fe-b811" primary="false"/>
@@ -782,6 +792,66 @@ Review 1.01a:  Second release</comment>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="4d0b-afa9-7cc3-7dec" name="Nemrut Supremacy Cruiser" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink id="b497-17c4-a054-06fd" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+        <categoryLink id="fade-9c9c-b375-5a75" name="Nemrut Class" hidden="false" targetId="2b7c-78f2-2a5a-716a" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9c0b-4d5f-ef6c-68c0" name="Support Model" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b9b-25d2-233f-0d18" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4365-7733-e871-b166" name="Corvette Skiff" hidden="false" collective="false" import="true" targetId="b35e-ec76-7056-958d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f5b-ec5d-7753-d2c2" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c86f-2efe-311c-6e7a" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="cf7f-577d-e305-596d" name="Corvette Class" hidden="false" targetId="dfce-ed39-89c4-47a9" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ccc9-8b59-6746-1f8c" name="Nemrut" hidden="false" collective="false" import="true" targetId="e158-808d-002d-9606" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e9e1-3c5d-9b67-ca21" name="Morea Minelayer Squadron" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="a809-cc31-2237-ed96" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+        <categoryLink id="a990-6cb8-2d4b-5264" name="Morea Class" hidden="false" targetId="94b0-937f-c25a-a56d" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5895-4d0d-9b2b-9b7c" name="Support Model" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f908-6adf-4338-c4b9" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="eb4f-c275-6f20-c219" name="Ferik Skiff" hidden="false" collective="false" import="true" targetId="b35e-ec76-7056-958d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff1e-2dc7-5f73-6896" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17f5-c4a3-1cbf-db05" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="8b61-b53c-32ef-b581" name="Corvette Class" hidden="false" targetId="dfce-ed39-89c4-47a9" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="8683-e964-0d94-2dba" name="Morea" hidden="false" collective="false" import="true" targetId="e886-b4b1-b50d-bd52" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-4.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="ebc9-c038-35ba-6b4e" name="Mehmed" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="unit">
@@ -792,13 +862,15 @@ Review 1.01a:  Second release</comment>
       <infoLinks>
         <infoLink id="3942-fbd4-234e-c724" name="Mehmed�" hidden="false" targetId="38d6-d6b1-cece-3829" type="profile"/>
         <infoLink id="395c-6a32-a6dd-8b9e" name="Elite Crew" hidden="false" targetId="4f7a-f51a-a60e-e6ba" type="rule"/>
-        <infoLink id="379a-714a-d47e-d460" name="Armoured Decking�" hidden="false" targetId="d894-52c8-4b18-f9f5" type="rule"/>
-        <infoLink id="fa0a-8d64-8bca-e6ea" name="Linear Dash" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
+        <infoLink id="379a-714a-d47e-d460" name="Armoured Decking" hidden="false" targetId="d894-52c8-4b18-f9f5" type="rule"/>
+        <infoLink id="fa0a-8d64-8bca-e6ea" name="Command &amp; Control" hidden="false" targetId="33d6-3aaa-abe5-bf80" type="rule"/>
         <infoLink id="6614-f2c4-9c15-fed5" name="Powerslide�" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
         <infoLink id="caa0-9bbf-bec1-a185" name="Orichalcite Construction�" hidden="false" targetId="797a-6783-86f3-738a" type="rule"/>
         <infoLink id="ac45-39d6-99f2-404d" name="The Sultan’s Monitor�" hidden="false" targetId="7459-7c35-54e7-3655" type="rule"/>
         <infoLink id="64a0-0937-429c-23e0" name="Agile" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
         <infoLink id="0f95-0b03-895e-5d8f" name="One Per Battlefleet�" hidden="false" targetId="ebed-2a52-5ef9-5148" type="rule"/>
+        <infoLink id="faee-7293-a184-5dca" name="Ikili Hull" hidden="false" targetId="a0e5-69d2-4798-ec1d" type="rule"/>
+        <infoLink id="36ad-dde8-cba7-8506" name="Maritime Patrol" hidden="false" targetId="0b7c-6003-8433-2817" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0e95-2a54-54ec-493c" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
@@ -880,7 +952,7 @@ Review 1.01a:  Second release</comment>
               </constraints>
               <infoLinks>
                 <infoLink id="2976-e0e6-a6ab-8892" name="Atomic generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" targetId="761e-3d83-8f4e-ad4c" type="profile"/>
-                <infoLink id="8cdd-c6f9-be0f-ace9" name="Atomic generator" hidden="false" targetId="1892-b471-89bc-1ab6" type="rule"/>
+                <infoLink id="8cdd-c6f9-be0f-ace9" name="Atomic generator" hidden="false" targetId="3fe1-73f5-bc98-7db7" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="4771-6d18-797e-66b1" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
@@ -1230,10 +1302,12 @@ Review 1.01a:  Second release</comment>
       <infoLinks>
         <infoLink id="bea8-4118-b6d8-4839" name="Hurrem" hidden="false" targetId="42ca-5f46-3494-d6bc" type="profile"/>
         <infoLink id="3cbb-c4ec-1162-dfd6" name="Agile" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
-        <infoLink id="3a6d-fecd-de4d-0ec7" name="Armoured Decking�" hidden="false" targetId="d894-52c8-4b18-f9f5" type="rule"/>
+        <infoLink id="3a6d-fecd-de4d-0ec7" name="Armoured Decking" hidden="false" targetId="d894-52c8-4b18-f9f5" type="rule"/>
         <infoLink id="6b37-3471-b182-11ab" name="Heavy Magazines" hidden="false" targetId="5cd2-f78d-8a4a-b23a" type="rule"/>
         <infoLink id="b6a4-cea6-cdca-47a0" name="Linear Dash" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
         <infoLink id="5990-40fa-c041-2501" name="Powerslide�" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
+        <infoLink id="fd74-7b6c-5137-170d" name="Ikili Hull" hidden="false" targetId="a0e5-69d2-4798-ec1d" type="rule"/>
+        <infoLink id="4ca9-733c-0d1e-b818" name="Maritime Patrol" hidden="false" targetId="0b7c-6003-8433-2817" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4501-1d73-ccb0-f84f" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
@@ -1279,6 +1353,25 @@ Review 1.01a:  Second release</comment>
             <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="fcfe-2b07-25bf-d430" name="Torpedo Salvo - (F)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="29d8-160b-1727-9a71" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="093b-200b-967b-944e" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="a538-d765-747c-2d9f" name="Torpedo Salvo" hidden="false" targetId="cda4-a338-5f16-6220" type="profile">
+              <modifiers>
+                <modifier type="append" field="name" value=" - (F)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="7b64-4757-6c85-a208" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+            <infoLink id="6c07-a291-8f05-220b" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+            <infoLink id="9116-1e1a-1542-195b" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="b940-447f-b9a7-e294" name="Main Weapon" publicationId="e265-8c7f-a4b2-a48e" page="4" hidden="false" collective="false" import="true">
@@ -1295,8 +1388,8 @@ Review 1.01a:  Second release</comment>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e52f-26e0-70a8-2196" type="min"/>
-            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="505b-d4ea-4532-04e8" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e52f-26e0-70a8-2196" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="505b-d4ea-4532-04e8" type="max"/>
           </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup id="d2e4-ee46-b7ac-5eea" name="Generator" hidden="false" collective="false" import="true">
@@ -1313,8 +1406,8 @@ Review 1.01a:  Second release</comment>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e2f9-76f3-3d73-d69a" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="c9a2-d65f-6c8a-2834" name="Atomic generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" targetId="761e-3d83-8f4e-ad4c" type="profile"/>
-                    <infoLink id="efdc-da44-5f28-251a" name="Atomic generator" hidden="false" targetId="1892-b471-89bc-1ab6" type="rule"/>
+                    <infoLink id="c9a2-d65f-6c8a-2834" name="Atomic generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" targetId="bf4f-f520-1b65-3bfd" type="profile"/>
+                    <infoLink id="efdc-da44-5f28-251a" name="Atomic generator" hidden="false" targetId="3fe1-73f5-bc98-7db7" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink id="c1a8-f322-b027-1d4f" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
@@ -1328,8 +1421,8 @@ Review 1.01a:  Second release</comment>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7c42-c416-e288-e5a7" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="6283-fa65-678f-b122" name="Fury generator" hidden="false" targetId="dfd6-5ab4-09d4-2c3a" type="profile"/>
-                    <infoLink id="2605-3f65-e989-3247" name="Fury generator" hidden="false" targetId="e3e3-342b-63df-28cb" type="rule"/>
+                    <infoLink id="6283-fa65-678f-b122" name="Fury generator" hidden="false" targetId="87f0-a822-7ea9-7287" type="profile"/>
+                    <infoLink id="2605-3f65-e989-3247" name="Fury generator" hidden="false" targetId="f743-5a58-7d27-2ceb" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink id="43ca-e978-76f6-c589" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
@@ -1343,8 +1436,8 @@ Review 1.01a:  Second release</comment>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e351-52e7-9fe2-a1a8" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="6952-0c34-7aeb-f851" name="Magnetic generator" hidden="false" targetId="500f-6824-b8ce-b222" type="profile"/>
-                    <infoLink id="9746-d141-ebd7-91d6" name="Magnetic generator" hidden="false" targetId="5d02-4526-36bc-27ae" type="rule"/>
+                    <infoLink id="6952-0c34-7aeb-f851" name="Magnetic generator" hidden="false" targetId="586f-fde9-3d38-02d0" type="profile"/>
+                    <infoLink id="9746-d141-ebd7-91d6" name="Magnetic generator" hidden="false" targetId="b4ba-a474-4872-aa00" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink id="9550-4a96-2345-55cb" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
@@ -1355,11 +1448,12 @@ Review 1.01a:  Second release</comment>
                 </selectionEntry>
                 <selectionEntry id="3815-6acd-9594-f92c" name="Shield generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="db38-c305-2a3a-c935" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c31-95bc-aaad-fc7e" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c319-1173-6d0e-423d" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="618d-68b8-d8b0-4a46" name="Shield generator" hidden="false" targetId="dce3-33ce-753a-8647" type="profile"/>
-                    <infoLink id="761d-32d6-5844-c516" name="Shield generator" hidden="false" targetId="a450-34be-1ffc-5ff3" type="rule"/>
+                    <infoLink id="618d-68b8-d8b0-4a46" name="Shield generator" hidden="false" targetId="2086-333f-c525-6c88" type="profile"/>
+                    <infoLink id="761d-32d6-5844-c516" name="Shield generator" hidden="false" targetId="2c2f-ebec-49d2-ae7d" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink id="30d5-b481-326f-7984" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
@@ -1388,7 +1482,7 @@ Review 1.01a:  Second release</comment>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cf54-8708-bf55-b4bd" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="138e-5af9-527d-f420" name="Mirage Generator" hidden="false" targetId="0c80-8c19-6348-9a6c" type="profile"/>
+                    <infoLink id="138e-5af9-527d-f420" name="Mirage generator" hidden="false" targetId="0c80-8c19-6348-9a6c" type="profile"/>
                     <infoLink id="b10c-3264-f144-d4fa" name="Mirage generator" hidden="false" targetId="8466-6d75-968e-c1e7" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
@@ -1981,18 +2075,18 @@ Review 1.01a:  Second release</comment>
       <infoLinks>
         <infoLink id="a67d-ab8b-c289-0588" name="Hashashin" hidden="false" targetId="18fb-8f1c-9a38-6871" type="profile"/>
         <infoLink id="0061-8106-f18d-ba0d" name="Agile" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
-        <infoLink id="aa47-a017-7810-b136" name="Linear Dash" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
-        <infoLink id="9d1e-fd07-2dd5-63ef" name="Powerslide�" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
+        <infoLink id="9d1e-fd07-2dd5-63ef" name="Armoured Decking" hidden="false" targetId="d894-52c8-4b18-f9f5" type="rule"/>
         <infoLink id="b905-4689-3b87-f176" name="Maritime Patrol" hidden="false" targetId="0b7c-6003-8433-2817" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6c25-348e-7ccf-ab79" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
         <categoryLink id="c722-559f-f915-bd71" name="Fast Destroyer�" hidden="false" targetId="0c4b-ff5a-f11f-a2d3" primary="false"/>
         <categoryLink id="15fa-b805-c100-6e69" name="Sultanate�" hidden="false" targetId="9c13-9a46-5ee3-4981" primary="false"/>
-        <categoryLink id="e2eb-a876-0d9a-81df" name="Turkish�" hidden="false" targetId="03eb-089a-0c01-5751" primary="false"/>
+        <categoryLink id="3275-8f34-2c8e-cc3f" name="Egyptian" hidden="false" targetId="fba8-77b7-3aa5-a132" primary="false"/>
+        <categoryLink id="6bdf-1a0c-f493-56e6" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="7436-96ee-7a95-adfe" name="Gun Battery - (F/P/S)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="true" import="true" type="upgrade">
+        <selectionEntry id="7436-96ee-7a95-adfe" name="Gun Battery - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="00e6-3ca0-49ba-6f39" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b76c-663c-73e4-c60d" type="min"/>
@@ -2009,7 +2103,7 @@ Review 1.01a:  Second release</comment>
             <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f7bd-7433-ab88-cdca" name="Gun Battery - (A/P/S)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="true" import="true" type="upgrade">
+        <selectionEntry id="f7bd-7433-ab88-cdca" name="Gun Battery - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8427-05c2-8772-849f" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb46-2b13-44e8-48b1" type="min"/>
@@ -2075,10 +2169,11 @@ Review 1.01a:  Second release</comment>
       <infoLinks>
         <infoLink id="eb47-e396-23c6-85d3" name="Iskandar" hidden="false" targetId="3c2c-e106-5263-9455" type="profile"/>
         <infoLink id="a7e1-0cce-cfd0-ac99" name="Agile" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
-        <infoLink id="1b0b-d1e7-63de-72a4" name="Armoured Decking�" hidden="false" targetId="d894-52c8-4b18-f9f5" type="rule"/>
+        <infoLink id="1b0b-d1e7-63de-72a4" name="Armoured Decking" hidden="false" targetId="d894-52c8-4b18-f9f5" type="rule"/>
         <infoLink id="3741-bbb9-94fd-394a" name="Linear Dash" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
-        <infoLink id="36b0-86fa-f666-9e6a" name="Orichalcite Construction�" hidden="false" targetId="797a-6783-86f3-738a" type="rule"/>
+        <infoLink id="36b0-86fa-f666-9e6a" name="Orichalcite Construction" hidden="false" targetId="797a-6783-86f3-738a" type="rule"/>
         <infoLink id="12d8-a836-1538-c7b2" name="Powerslide" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
+        <infoLink id="b361-2eef-b73c-3030" name="Maritime Patrol" hidden="false" targetId="0b7c-6003-8433-2817" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="25bc-dfbf-cd74-4d3b" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
@@ -2146,7 +2241,7 @@ Review 1.01a:  Second release</comment>
                   </constraints>
                   <infoLinks>
                     <infoLink id="c8dc-07f0-237c-306f" name="Atomic generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" targetId="761e-3d83-8f4e-ad4c" type="profile"/>
-                    <infoLink id="b372-442c-3918-0905" name="Atomic generator" hidden="false" targetId="1892-b471-89bc-1ab6" type="rule"/>
+                    <infoLink id="b372-442c-3918-0905" name="Atomic generator" hidden="false" targetId="3fe1-73f5-bc98-7db7" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink id="a1bb-cf9a-7fa8-3cf2" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
@@ -2437,9 +2532,28 @@ Review 1.01a:  Second release</comment>
             <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="d3ff-b9df-8f0d-8366" name="Micro Torpedo Salvo - (F)" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f9b3-eef5-a612-402a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b56-0d68-9c87-5bc6" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="dbf7-ec15-8cfb-8bdb" name="Micro Torpedo Salvo" hidden="false" targetId="56ad-d747-f32b-e8c5" type="profile">
+              <modifiers>
+                <modifier type="append" field="name" value=" - (F)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="44e4-e75b-6272-e7f2" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+            <infoLink id="39ac-3936-54d8-9477" name="Homing" hidden="false" targetId="3fdf-3916-52aa-ecf7" type="rule"/>
+            <infoLink id="bea6-8104-f893-2db9" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="25.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="26.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0caf-b349-d148-8167" name="Suleiman" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="model">
@@ -2449,15 +2563,14 @@ Review 1.01a:  Second release</comment>
       </constraints>
       <infoLinks>
         <infoLink id="c40a-d1df-f0b9-17ef" name="Suleiman" hidden="false" targetId="33bb-215a-9894-7f46" type="profile"/>
-        <infoLink id="e4e8-d202-e3c8-b20e" name="Agile" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
-        <infoLink id="7395-1934-9072-804c" name="Armoured Decking�" hidden="false" targetId="d894-52c8-4b18-f9f5" type="rule"/>
+        <infoLink id="7395-1934-9072-804c" name="Armoured Decking" hidden="false" targetId="d894-52c8-4b18-f9f5" type="rule"/>
         <infoLink id="5673-2a4a-148b-d5cb" name="Combat Air Patrol" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
         <infoLink id="4b94-ca08-0668-1b32" name="Heavy Magazines" hidden="false" targetId="5cd2-f78d-8a4a-b23a" type="rule"/>
-        <infoLink id="d355-3c22-1578-f103" name="Launch Catapults" hidden="false" targetId="565f-36a9-52bb-4e63" type="rule"/>
-        <infoLink id="6df6-f61e-243d-1566" name="Orichalcite Construction�" hidden="false" targetId="797a-6783-86f3-738a" type="rule"/>
-        <infoLink id="5c57-560c-a1ae-d5c7" name="Powerslide�" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
+        <infoLink id="6df6-f61e-243d-1566" name="Orichalcite Construction" hidden="false" targetId="797a-6783-86f3-738a" type="rule"/>
+        <infoLink id="5c57-560c-a1ae-d5c7" name="Powerslide" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
         <infoLink id="fe08-ac85-5c38-97db" name="SRS Mine Clearance" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
         <infoLink id="f002-10fb-7972-41d6" name="SRS Recon Flight" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
+        <infoLink id="ac3e-d0c1-f365-9931" name="Ikili Hull" hidden="false" targetId="a0e5-69d2-4798-ec1d" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="b618-b125-c7c9-c121" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
@@ -2570,23 +2683,19 @@ Review 1.01a:  Second release</comment>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="bba5-50c8-0e27-31e6" name="Internal Generator" hidden="false" collective="true" import="true">
+        <selectionEntryGroup id="bba5-50c8-0e27-31e6" name="Generator" hidden="false" collective="true" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55ce-33e6-1c85-93ea" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0168-3300-7e6a-ae2b" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="4c72-ad11-c227-df36" name="Internal Shield generator" page="" hidden="false" collective="true" import="true" type="upgrade">
+            <selectionEntry id="4c72-ad11-c227-df36" name="Shield generator" page="" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5d4-684c-08ed-2285" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1601-9573-c978-f8cf" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="823f-8bb2-7d38-17c0" name="Shroud generator" hidden="false" targetId="1873-22df-b3ba-49db" type="profile">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Internal Magnetic Generator"/>
-                  </modifiers>
-                </infoLink>
+                <infoLink id="823f-8bb2-7d38-17c0" name="Shield generator" hidden="false" targetId="2086-333f-c525-6c88" type="profile"/>
                 <infoLink id="6c84-8ac9-c086-97e1" name="Shield generator" hidden="false" targetId="2c2f-ebec-49d2-ae7d" type="rule"/>
               </infoLinks>
               <costs>
@@ -2681,7 +2790,7 @@ Review 1.01a:  Second release</comment>
                   </constraints>
                   <infoLinks>
                     <infoLink id="4bcb-0b65-118f-8b00" name="Atomic generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" targetId="761e-3d83-8f4e-ad4c" type="profile"/>
-                    <infoLink id="63d5-2d6c-0d87-55a5" name="Atomic generator" hidden="false" targetId="1892-b471-89bc-1ab6" type="rule"/>
+                    <infoLink id="63d5-2d6c-0d87-55a5" name="Atomic generator" hidden="false" targetId="3fe1-73f5-bc98-7db7" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink id="6e4c-fba7-f316-3cca" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
@@ -3029,7 +3138,7 @@ Review 1.01a:  Second release</comment>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="235.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="225.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b35e-ec76-7056-958d" name="Ferik Skiff" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="unit">
@@ -3062,7 +3171,7 @@ Review 1.01a:  Second release</comment>
     <selectionEntry id="eec4-fb90-1ff0-1e4c" name="Aydin" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="true" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b19-5ad7-ec62-2723" type="min"/>
-        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d785-e1a5-b462-5492" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d785-e1a5-b462-5492" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="6ea0-09ce-e84f-d407" name="Aydin" hidden="false" targetId="7395-a4be-0812-fe08" type="profile"/>
@@ -3114,6 +3223,23 @@ Review 1.01a:  Second release</comment>
             <infoLink id="9d4d-b8e0-aef4-862d" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
             <infoLink id="2708-2e37-c68e-3560" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
             <infoLink id="c171-4537-87ee-e283" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6a95-4cad-0e96-47c8" name="Rocket Battery - F" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="635f-3ca6-e77d-7086" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5739-8abd-166c-86db" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="c55f-7422-aa43-c3e0" name="Rocket Battery" hidden="false" targetId="90e8-0288-ed1a-f4fb" type="profile">
+              <modifiers>
+                <modifier type="append" field="name" value="F"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="7774-79eb-63a2-6ee3" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
@@ -3199,9 +3325,26 @@ Review 1.01a:  Second release</comment>
             <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="7dd3-2111-664e-8ec0" name="Rocket Battery - F" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6993-e78a-65f0-2236" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="95e5-1e20-7b9f-37ce" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="684d-376e-97a0-cc1d" name="Rocket Battery" hidden="false" targetId="90e8-0288-ed1a-f4fb" type="profile">
+              <modifiers>
+                <modifier type="append" field="name" value="F"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="dc86-0435-eee7-94d2" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="65.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="118.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dad1-a5fe-6d40-973f" name="Izmir" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="unit">
@@ -3284,7 +3427,7 @@ Review 1.01a:  Second release</comment>
                   </constraints>
                   <infoLinks>
                     <infoLink id="a13c-1f85-f202-bde5" name="Atomic generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" targetId="761e-3d83-8f4e-ad4c" type="profile"/>
-                    <infoLink id="78f9-035a-d852-d119" name="Atomic generator" hidden="false" targetId="1892-b471-89bc-1ab6" type="rule"/>
+                    <infoLink id="78f9-035a-d852-d119" name="Atomic generator" hidden="false" targetId="3fe1-73f5-bc98-7db7" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink id="9102-ee81-b09e-f1bf" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
@@ -3628,7 +3771,7 @@ Review 1.01a:  Second release</comment>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="125.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="135.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d405-4ee8-bca7-6cfd" name="Pasha" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="unit">
@@ -3711,7 +3854,7 @@ Review 1.01a:  Second release</comment>
                   </constraints>
                   <infoLinks>
                     <infoLink id="cd87-44ac-37ea-8b61" name="Atomic generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" targetId="761e-3d83-8f4e-ad4c" type="profile"/>
-                    <infoLink id="bc8b-a64b-ffea-6b90" name="Atomic generator" hidden="false" targetId="1892-b471-89bc-1ab6" type="rule"/>
+                    <infoLink id="bc8b-a64b-ffea-6b90" name="Atomic generator" hidden="false" targetId="3fe1-73f5-bc98-7db7" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink id="634d-be54-a29c-53c6" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
@@ -3944,6 +4087,7 @@ Review 1.01a:  Second release</comment>
         <infoLink id="85d1-f83b-73f9-2791" name="Linear Dash" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
         <infoLink id="0771-82ac-be24-40d8" name="Orichalcite Construction" hidden="false" targetId="797a-6783-86f3-738a" type="rule"/>
         <infoLink id="2920-9892-0d14-6afb" name="Powerslide" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
+        <infoLink id="8d10-7804-ff50-036a" name="Maritime Patrol" hidden="false" targetId="0b7c-6003-8433-2817" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="dbcd-3fb4-f31c-a56c" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
@@ -4011,7 +4155,7 @@ Review 1.01a:  Second release</comment>
                   </constraints>
                   <infoLinks>
                     <infoLink id="8330-037f-2d45-4312" name="Atomic generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" targetId="761e-3d83-8f4e-ad4c" type="profile"/>
-                    <infoLink id="7425-8c33-d05e-326d" name="Atomic generator" hidden="false" targetId="1892-b471-89bc-1ab6" type="rule"/>
+                    <infoLink id="7425-8c33-d05e-326d" name="Atomic generator" hidden="false" targetId="3fe1-73f5-bc98-7db7" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink id="e1d6-7f33-3285-3702" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
@@ -4296,33 +4440,1363 @@ Review 1.01a:  Second release</comment>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="115.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="5f97-b312-cfd4-64e6" name="Retaj" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f2c-036a-d645-db0d" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a77-9b28-b19e-d84c" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="af61-199f-20dd-618d" name="Retaj" hidden="false" targetId="3a62-ea9f-4ec9-9e40" type="profile"/>
+        <infoLink id="3af7-5c0c-223b-9cfb" name="Agile" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
+        <infoLink id="e888-d9bf-fbc8-4ce2" name="Armoured Decking" hidden="false" targetId="d894-52c8-4b18-f9f5" type="rule"/>
+        <infoLink id="02a1-664a-afc5-686f" name="Cor Caroli" hidden="false" targetId="f151-e7cf-bb48-e823" type="rule"/>
+        <infoLink id="7c5f-5981-487f-1876" name="Elite Crew" hidden="false" targetId="4f7a-f51a-a60e-e6ba" type="rule"/>
+        <infoLink id="fc68-79e0-05b1-925e" name="Powerslide" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
+        <infoLink id="832e-7782-02f0-aba5" name="Ikili Hull" hidden="false" targetId="a0e5-69d2-4798-ec1d" type="rule"/>
+        <infoLink id="24e8-5479-6f19-6f60" name="Orichalcite Construction" hidden="false" targetId="797a-6783-86f3-738a" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="324e-0f24-d6dd-42dc" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
+        <categoryLink id="8ae0-147c-8429-29a6" name="Sultanate�" hidden="false" targetId="9c13-9a46-5ee3-4981" primary="false"/>
+        <categoryLink id="0aed-93f2-4e80-073c" name="Portalship" hidden="false" targetId="4ea2-ac64-84ea-ff57" primary="false"/>
+        <categoryLink id="23c0-9f9c-44c7-80d7" name="Order" hidden="false" targetId="0982-cae3-3850-722a" primary="false"/>
+        <categoryLink id="64a6-7836-be3b-05c3" name="Retaj Class" hidden="false" targetId="3d94-794c-7ebc-7074" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="ff9d-82ef-75ca-024f" name="Heavy Broadside - (P &amp; S)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4d7-0395-19b9-22c1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b2e-d218-85e9-4ce7" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="b7dc-be00-8fcc-e08c" name="Heavy Broadside" hidden="false" targetId="53dd-93fd-f789-bf9e" type="profile">
+              <modifiers>
+                <modifier type="append" field="name" value=" - (P &amp; S)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="93a6-6caa-315d-be4a" name="Fusillade" hidden="false" targetId="4ec1-3aa3-001e-f8f6" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1188-8911-439a-33e5" name="Helio Blast - (F)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4682-2b8a-ae59-9959" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="830e-7e2b-6667-ce53" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="3cae-e990-6e29-8ff3" name="Helio Blast" hidden="false" targetId="1d96-9c8e-18af-b516" type="profile">
+              <modifiers>
+                <modifier type="append" field="name" value=" - (F)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="a5bd-d593-6bf6-9758" name="Bomb" hidden="false" targetId="cec9-6349-719c-e293" type="rule"/>
+            <infoLink id="6393-8a65-8edc-bc7b" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
+            <infoLink id="fd04-8c83-9e1a-fd3b" name="Blast" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7639-f9bf-9c49-6f6b" name="Torpedo Salvo - (F)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9830-cad8-3c64-5d87" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab0b-4498-17b7-49e4" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="d816-7121-a7b1-6a4b" name="Torpedo Salvo" hidden="false" targetId="cda4-a338-5f16-6220" type="profile">
+              <modifiers>
+                <modifier type="append" field="name" value=" - (F)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="f427-ce29-3871-9851" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+            <infoLink id="6a28-dbf4-889d-4f59" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+            <infoLink id="4141-4ac6-7b0b-6283" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4328-6fb1-860a-64f4" name="Torpedo Salvo - (F)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f44f-1eec-fd8e-0315" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b27-f765-da4b-0747" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="792d-bcb8-b840-5187" name="Torpedo Salvo" hidden="false" targetId="cda4-a338-5f16-6220" type="profile">
+              <modifiers>
+                <modifier type="append" field="name" value=" - (F)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="5bd6-dff0-1bd5-124b" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+            <infoLink id="99dd-4540-11b8-2735" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+            <infoLink id="540b-eae4-ccb0-7177" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7fa3-d5bf-f728-c10b" name="Main Weapon" publicationId="e265-8c7f-a4b2-a48e" page="4" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b87-9ae4-e02d-30ea" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4eb-e488-691f-0c4a" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="b4ca-2a3a-beed-876e" name="Front Port" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="488e-3afe-24ee-9175" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3b8-202f-c2bb-cd78" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="845e-87b2-a5eb-bd31" name="Judgement Lance - (F)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="25fb-ed89-344f-126f" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67ee-6185-1bd2-7109" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="78fb-ca5a-7a17-c266" name="Judgement Lance" hidden="false" targetId="8fff-6855-6e17-abc7" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="ad3b-f42e-8d51-c78c" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+                    <infoLink id="5b6d-fa74-4554-b8cd" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
+                    <infoLink id="926f-8c83-8ee0-2a7e" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="2c7d-2d3b-64d0-4705" name="Front Starboard" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e74-e452-6e80-aa31" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d792-3991-6d88-d7af" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="3300-380b-dcec-2e54" name="Judgement Lance - (F)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="93ab-fbe2-e0a7-31d1" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ea5-3d6f-5e16-c10e" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="60a9-d79c-e7cf-5878" name="Judgement Lance" hidden="false" targetId="8fff-6855-6e17-abc7" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="f5af-63be-0bb6-b21d" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="fa03-5fbe-13c6-41e4" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
+                    <infoLink id="ece9-4144-1c94-ca17" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="255.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e158-808d-002d-9606" name="Nemrut" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6edd-0fb6-61dd-577e" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d25c-4ee3-49e7-4a7c" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="7f38-16fd-bf95-fe74" name="Nemrut" hidden="false" targetId="6723-e94d-41c8-d442" type="profile"/>
+        <infoLink id="12de-3451-7aac-eff9" name="Agile" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
+        <infoLink id="141e-b771-0f80-3531" name="Armoured Decking" hidden="false" targetId="d894-52c8-4b18-f9f5" type="rule"/>
+        <infoLink id="89fb-4609-e07a-f338" name="Orichalcite Construction" hidden="false" targetId="797a-6783-86f3-738a" type="rule"/>
+        <infoLink id="0f76-44e1-c23e-5267" name="The Sultan’s Hammer" hidden="false" targetId="0621-51de-26b8-202f" type="rule"/>
+        <infoLink id="2bb2-1aea-eb5f-019b" name="Powerslide�" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
+        <infoLink id="763f-1588-acc1-f441" name="Ikili Hull" hidden="false" targetId="a0e5-69d2-4798-ec1d" type="rule"/>
+        <infoLink id="51d3-f2b2-75bb-97c8" name="One Per Battlefleet" hidden="false" targetId="ebed-2a52-5ef9-5148" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="767c-1e83-f945-496f" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
+        <categoryLink id="2486-57ed-c4c2-5f7d" name="Sultanate�" hidden="false" targetId="9c13-9a46-5ee3-4981" primary="false"/>
+        <categoryLink id="2c47-ec49-12f6-7f04" name="Turkish�" hidden="false" targetId="03eb-089a-0c01-5751" primary="false"/>
+        <categoryLink id="ad9f-2f18-083c-3c02" name="Nemrut Class" hidden="false" targetId="2b7c-78f2-2a5a-716a" primary="false"/>
+        <categoryLink id="f14e-3169-7eeb-6bdf" name="Superiority Cruiser" hidden="false" targetId="9bba-e173-1b7a-c420" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d162-6eac-4a25-9263" name="Broadside - (P &amp; S)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fad9-11d4-b12b-c62d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d24-74fc-498d-a67b" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="2f48-49dd-0f23-32c1" name="Broadside" hidden="false" targetId="da97-935b-8eea-abbf" type="profile">
+              <modifiers>
+                <modifier type="append" field="name" value=" - (P &amp; S)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="7590-f419-671e-938c" name="Fusillade" hidden="false" targetId="4ec1-3aa3-001e-f8f6" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="89f3-1b13-e932-624d" name="Torpedo Salvo - (F)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2ada-6df0-d9d7-edb8" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8b0-2cff-40fd-5737" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="67da-ac61-8168-245b" name="Torpedo Salvo" hidden="false" targetId="cda4-a338-5f16-6220" type="profile">
+              <modifiers>
+                <modifier type="append" field="name" value=" - (F)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="5c50-eaad-1a6d-e303" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+            <infoLink id="471f-9abb-a2dc-3a88" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+            <infoLink id="da1c-fee6-d80c-8dab" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="841d-8d4f-ca3e-a262" name="Torpedo Salvo - (F)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9556-2d06-2f4d-7cc3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c988-9b2f-d909-3ac3" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="c95f-199a-4d2a-ade8" name="Torpedo Salvo" hidden="false" targetId="cda4-a338-5f16-6220" type="profile">
+              <modifiers>
+                <modifier type="append" field="name" value=" - (F)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="6731-5e70-d424-38d4" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+            <infoLink id="5a99-0a3d-c27c-0651" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+            <infoLink id="fb0a-e76f-b7b7-996a" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b922-606c-76fa-6f69" name="Main Weapon" publicationId="e265-8c7f-a4b2-a48e" page="4" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b222-f003-7228-905b" type="min"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddf5-972f-30c9-76ce" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="3b6b-9a71-7595-bd9d" name="Port First" hidden="false" collective="false" import="true" defaultSelectionEntryId="c177-e1e2-915b-d2c8">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37b2-a1e1-8ac7-3765" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e456-d671-5116-8f12" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="c177-e1e2-915b-d2c8" name="Heavy Rocket Battery - (F/P)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0116-50fe-f542-e84d" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74e1-6b39-f5bc-1e6b" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="1000-a47a-e179-ea47" name="Heavy Rocket Battery" hidden="false" targetId="5aa0-82a6-e6bc-6950" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="19a9-8dd7-73b7-a063" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="31ae-31a4-5ef3-82ba" name="Starbord First" hidden="false" collective="false" import="true" defaultSelectionEntryId="00f5-df10-22e6-9fb6">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="97db-9ac4-d9cb-a783" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6670-d657-24d7-146a" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="00f5-df10-22e6-9fb6" name="Heavy Rocket Battery - (F/S)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ddd-f9aa-71c6-a9a3" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37e7-1e74-4cf9-aff5" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="fb50-d5de-324a-27ba" name="Heavy Rocket Battery" hidden="false" targetId="5aa0-82a6-e6bc-6950" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="86c8-f55f-c966-302f" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="65dd-0b06-4b37-a3f1" name="Front Port" hidden="false" collective="false" import="true" defaultSelectionEntryId="e355-ece5-df87-ba9d">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b6d-0199-ae67-275d" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60a8-4f15-2ba2-6c07" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="e355-ece5-df87-ba9d" name="Orichalcite Flechette Launcher - (F)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="311a-ce2a-93fa-137c" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="524d-7022-fdb8-2aa9" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="189d-8f7a-cd97-0e0a" name="Orichalcite Flechette Launcher" hidden="false" targetId="a76a-8df5-3648-13a9" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="884c-9ca1-d186-28d7" name="Fusillade" hidden="false" targetId="4ec1-3aa3-001e-f8f6" type="rule"/>
+                    <infoLink id="ee3d-8a55-17ab-8886" name="Blast" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
+                    <infoLink id="5b2b-6797-6d9f-b97d" name="Bomb" hidden="false" targetId="cec9-6349-719c-e293" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="dc7f-00d9-742d-f06f" name="Front Starboard" hidden="false" collective="false" import="true" defaultSelectionEntryId="9385-4b40-baa9-0a6d">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08b6-7765-dc3f-56fc" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e5b-6b28-10b9-bbc4" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="9385-4b40-baa9-0a6d" name="Orichalcite Flechette Launcher - (F)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aaf4-7b89-3fc9-02f5" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="418a-295d-0b57-729f" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="9274-a1b0-9071-5e80" name="Orichalcite Flechette Launcher" hidden="false" targetId="a76a-8df5-3648-13a9" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="168e-2f80-3e96-de71" name="Fusillade" hidden="false" targetId="4ec1-3aa3-001e-f8f6" type="rule"/>
+                    <infoLink id="ad97-9f54-c093-9bc7" name="Blast" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
+                    <infoLink id="ac4d-caa9-4f6c-71f1" name="Bomb" hidden="false" targetId="cec9-6349-719c-e293" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="920f-2649-69ce-933a" name="Generator" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0b18-a5f0-c0f4-f78a" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8b4e-03d6-edce-7c1f" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="1767-7cf9-2d9a-4eb9" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry id="b846-ffbb-829b-78a2" name="Portal generator" publicationId="7f09-e243-2307-78d0" page="" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d88b-5338-6044-13cc" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aa8c-111f-fcb5-6101" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="a22e-c95a-35aa-7f50" name="Atomic generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" targetId="bf4f-f520-1b65-3bfd" type="profile"/>
+                    <infoLink id="3e48-c83f-54b0-2227" name="Atomic generator" hidden="false" targetId="3fe1-73f5-bc98-7db7" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="2d2a-0fd9-dfd6-8894" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="459f-69cf-d4f3-2898" name="Shield generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="820d-33b0-949b-5455" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f59e-5826-0359-3037" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="9bc9-303b-4dd5-0dec" name="Shield generator" hidden="false" targetId="2086-333f-c525-6c88" type="profile"/>
+                    <infoLink id="4d75-9f8e-8c9c-5047" name="Shield generator" hidden="false" targetId="2c2f-ebec-49d2-ae7d" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="62f0-2206-fd6d-7036" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="4126-78a6-5cb0-a170" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d9f-fb67-2eaf-6d74" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="021a-7b46-f08b-8648" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="bbba-d471-52b1-15bd" name="Port" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="993b-93ad-3746-0831" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ad7-585c-805b-7b17" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="69ad-ff10-bc66-9d5d" name="Rocket Battery - (F)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="10fe-daa7-93c1-692e" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf05-9f1f-8bd2-0060" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="e6f9-d0c6-b2a4-425c" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="c6af-e7cc-5e13-df97" name="Rocket Battery" hidden="false" targetId="90e8-0288-ed1a-f4fb" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F)"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="6bd6-eed7-78f6-3bd3" name="Starborad" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbbe-2622-dcca-c064" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6466-8e3d-fce6-1fc1" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="3c17-9082-7e00-167a" name="Rocket Battery - (F)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b39-414e-1cc6-6a5b" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e9e-15a7-e9c6-d632" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="ef64-d90c-7532-4f42" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="045d-8f4b-4a10-b3dc" name="Rocket Battery" hidden="false" targetId="90e8-0288-ed1a-f4fb" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F)"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="245.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="187a-b0b4-1905-a838" name="Bayezid" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61a1-9561-e70c-fc9d" type="min"/>
+        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="588e-b11b-6598-f837" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="4eac-9ddf-330c-eff7" name="Bayezid" hidden="false" targetId="e4dc-5c75-3ddb-595f" type="profile"/>
+        <infoLink id="02d6-a0ef-6ec1-695e" name="Ikili Hull" hidden="false" targetId="a0e5-69d2-4798-ec1d" type="rule"/>
+        <infoLink id="a1db-bfb7-1bfa-9c8f" name="Armoured Decking" hidden="false" targetId="d894-52c8-4b18-f9f5" type="rule"/>
+        <infoLink id="4f66-fb63-18d5-4bde" name="Powerslide" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
+        <infoLink id="cf98-3831-4a54-5078" name="Orichalcite Construction" hidden="false" targetId="797a-6783-86f3-738a" type="rule"/>
+        <infoLink id="b03f-01f0-2793-46ed" name="Agile" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="22a6-848c-eae8-516b" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+        <categoryLink id="4901-66e0-37fd-fdf0" name="Turkish�" hidden="false" targetId="03eb-089a-0c01-5751" primary="false"/>
+        <categoryLink id="e74a-a97b-c2ae-6520" name="Sultanate�" hidden="false" targetId="9c13-9a46-5ee3-4981" primary="false"/>
+        <categoryLink id="56fc-15cd-e30f-0689" name="Ikili Cruiser" hidden="false" targetId="b0dc-450c-d771-bc6f" primary="false"/>
+        <categoryLink id="3fec-a700-2f42-8cc3" name="Bayezid Class" hidden="false" targetId="a974-e10e-3d35-30fe" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="981e-76b6-e47d-21af" name="Torpedo Salvo - (F)" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4f57-2ebb-c6ff-fc6f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78cd-7145-30c1-45a5" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="3719-560a-5fd0-5350" name="Torpedo Salvo" hidden="false" targetId="cda4-a338-5f16-6220" type="profile">
+              <modifiers>
+                <modifier type="append" field="name" value=" - (F)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="0abb-e21c-1f8d-2ec8" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+            <infoLink id="86e6-88a0-a882-38c0" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+            <infoLink id="d95b-05e4-b9eb-3d5f" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e0db-12d2-79bf-11b5" name="Torpedo Salvo - (F)" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="89d3-4224-87b0-1f48" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba2c-9d7c-7cac-44df" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="f8a7-635e-e9d2-fb86" name="Torpedo Salvo" hidden="false" targetId="cda4-a338-5f16-6220" type="profile">
+              <modifiers>
+                <modifier type="append" field="name" value=" - (F)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="835f-af7e-a2ee-2e66" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+            <infoLink id="d8e6-39d1-80a4-0154" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+            <infoLink id="09a4-9660-c8c8-578e" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="084b-1bd2-7f12-2818" name="Broadside - (P &amp; S)" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c253-7a17-28e2-11a8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0114-00f6-2319-939c" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="faf8-1049-d4bc-5df1" name="Broadside" hidden="false" targetId="da97-935b-8eea-abbf" type="profile">
+              <modifiers>
+                <modifier type="append" field="name" value=" - (P &amp; S)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="6f82-5d7a-8b15-3e62" name="Fusillade" hidden="false" targetId="4ec1-3aa3-001e-f8f6" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1978-dba0-17df-de35" name="Generator" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f645-a195-c69c-420a" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="313a-2403-874c-646b" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="9a42-44b3-50fe-5417" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="3360-dcba-81c2-999f" name="Atomic generator" publicationId="7f09-e243-2307-78d0" page="4" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2375-90c3-1ab3-d386" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="e973-7dde-10cf-1ecf" name="Atomic generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" targetId="bf4f-f520-1b65-3bfd" type="profile"/>
+                <infoLink id="fde8-f606-e63a-1209" name="Atomic generator" hidden="false" targetId="3fe1-73f5-bc98-7db7" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="bb11-6e9b-6dcf-7c9e" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cafe-8c19-0434-59de" name="Fury generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f888-fe1e-e94f-3100" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="e077-892e-69d2-8f86" name="Fury generator" hidden="false" targetId="87f0-a822-7ea9-7287" type="profile"/>
+                <infoLink id="0568-113e-966e-2c3e" name="Fury generator" hidden="false" targetId="f743-5a58-7d27-2ceb" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="680a-e499-b3c7-34dd" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="476d-9b30-e72e-18f5" name="Magnetic generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="af6b-0e2e-e768-015d" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="2f5f-afde-59e5-dcf4" name="Magnetic generator" hidden="false" targetId="586f-fde9-3d38-02d0" type="profile"/>
+                <infoLink id="7e10-a024-aaa2-397c" name="Magnetic generator" hidden="false" targetId="b4ba-a474-4872-aa00" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="0ab5-7ea9-732d-db1a" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f323-3560-3aed-6d81" name="Shield generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8e23-ccb3-8301-a093" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="985f-0394-f01c-0ccb" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="8362-1a6f-a275-4e38" name="Shield generator" hidden="false" targetId="2086-333f-c525-6c88" type="profile"/>
+                <infoLink id="3269-95fe-1ef5-d21b" name="Shield generator" hidden="false" targetId="2c2f-ebec-49d2-ae7d" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="2bdb-638e-8a08-d457" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8df7-54f0-ceae-6027" name="Repulsion generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d3d4-0e7c-8d92-0d92" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="cf45-100f-230a-4311" name="Repulsion generator" hidden="false" targetId="260e-2d03-fa1e-8137" type="profile"/>
+                <infoLink id="253c-3b0d-2835-809f" name="Repulsion generator" hidden="false" targetId="67a0-4bf1-a4e1-f28e" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="5cf8-b60a-5391-42b5" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d87a-319a-243e-3fac" name="Mirage generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6a34-8064-893a-9713" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="8d81-e2df-fa90-6f0a" name="Mirage generator" hidden="false" targetId="0c80-8c19-6348-9a6c" type="profile"/>
+                <infoLink id="fea8-0d41-3085-81df" name="Mirage generator" hidden="false" targetId="8466-6d75-968e-c1e7" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="d170-c8e0-b43b-3c0f" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8b36-a140-087a-5b28" name="Shroud generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd2d-94d3-b05f-fe6e" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="a556-8a67-271a-ed67" name="Shroud generator" hidden="false" targetId="1873-22df-b3ba-49db" type="profile"/>
+                <infoLink id="eebf-e23c-278c-8490" name="Shroud generator" hidden="false" targetId="ef22-2b56-207c-7d3f" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="ec84-ed6b-d73b-67a7" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="dc59-3bb0-6548-59a2" name="Main Weapon" publicationId="e265-8c7f-a4b2-a48e" page="4" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e56-5efa-06fe-9ea1" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a554-19f4-7762-2a62" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="171a-8ac6-f92f-cfee" name="Port" hidden="false" collective="false" import="true" defaultSelectionEntryId="6d05-15b8-0042-ce40">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5292-2a5d-823c-4bf8" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de0d-d270-0f62-9cba" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="6d05-15b8-0042-ce40" name="Heavy Gun battery - (F/P)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="658b-3e9f-cd87-7b85" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="ae4e-3514-f21a-7166" name="Heavy Gun Battery" hidden="false" targetId="4307-eab2-99cf-555e" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="b8d3-54d4-ab4d-72f1" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="54b5-1e35-6c64-4cc3" name="Particel Beamer - (F/P)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa2e-64d1-e29e-89a2" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="b0f2-b593-ff01-f344" name="Particle Beamer" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="31a4-53c0-305c-d8fb" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="15a7-a8a2-2de8-f9ac" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="1980-8024-293d-67dc" name="Susteined" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f599-229d-5424-e016" name="Heavy Rocket Battery - (F/P)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c70-4355-6d5a-42be" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="c7ba-7ce6-73b8-d373" name="Heavy Rocket Battery" hidden="false" targetId="5aa0-82a6-e6bc-6950" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="ae05-9dec-9d45-fe6e" name="Aereal" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="3a78-4e4f-38ac-8695" name="Starbord" hidden="false" collective="false" import="true" defaultSelectionEntryId="5ebe-dab9-92e8-a30d">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1f77-28cc-a991-81da" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bc7-10a2-8dcf-5ed0" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="5ebe-dab9-92e8-a30d" name="Heavy Gun battery - (F/S)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbb1-c4a6-e3be-af69" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="bd34-dea4-1d8c-8c31" name="Heavy Gun Battery" hidden="false" targetId="4307-eab2-99cf-555e" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="264a-b876-dbf6-1e10" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="006e-c820-8db6-a2e8" name="Particel Beamer - (F/S)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1df-24fb-0156-8e89" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="2dab-1602-02c9-d041" name="Particle Beamer" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="31a4-53c0-305c-d8fb" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="9f7e-5f8e-3ac2-d5eb" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="d5a3-3f46-febd-cdc7" name="Susteined" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1523-2d32-cfd1-600f" name="Heavy Rocket Battery - (F/S)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93a6-1ace-4637-6a69" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="8a3b-5cd0-2aa3-e412" name="Heavy Rocket Battery" hidden="false" targetId="5aa0-82a6-e6bc-6950" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="184c-4e87-8d1f-9042" name="Aereal" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="160.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="525d-2b73-2575-b137" name="Bursa" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adb4-8a63-2cfd-8d4f" type="min"/>
+        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e39-420f-116a-81e0" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="c962-2d95-7f61-d6cb" name="Bursa" hidden="false" targetId="9f07-f179-d243-6c9e" type="profile"/>
+        <infoLink id="99d9-2221-b9b2-3914" name="Ikili Hull" hidden="false" targetId="a0e5-69d2-4798-ec1d" type="rule"/>
+        <infoLink id="343c-4213-5a64-bddf" name="Armoured Decking" hidden="false" targetId="d894-52c8-4b18-f9f5" type="rule"/>
+        <infoLink id="d99c-0e01-a07e-1312" name="Powerslide" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
+        <infoLink id="3ad1-c742-1f3c-a5b8" name="Orichalcite Construction" hidden="false" targetId="797a-6783-86f3-738a" type="rule"/>
+        <infoLink id="abea-46fc-8fe6-bdba" name="Agile" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8233-9ae2-250a-8c70" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+        <categoryLink id="634c-2e24-3068-7227" name="Turkish�" hidden="false" targetId="03eb-089a-0c01-5751" primary="false"/>
+        <categoryLink id="bdab-ed77-4b4c-b433" name="Sultanate�" hidden="false" targetId="9c13-9a46-5ee3-4981" primary="false"/>
+        <categoryLink id="5dac-2ac5-f05f-6be5" name="Ikili Heavy Cruiser" hidden="false" targetId="9a89-b1c8-493b-66b4" primary="false"/>
+        <categoryLink id="ccf5-e46a-f824-c903" name="Bursa Class" hidden="false" targetId="2bb9-b056-8541-bce3" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9d50-0f4a-cdc4-6812" name="Torpedo Salvo - (F)" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c95c-1eeb-5172-78bb" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd9e-04e0-021e-377a" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="491d-d158-4e3c-7ac6" name="Torpedo Salvo" hidden="false" targetId="cda4-a338-5f16-6220" type="profile">
+              <modifiers>
+                <modifier type="append" field="name" value=" - (F)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="a65c-efb6-6d2f-43c3" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+            <infoLink id="4dd6-8261-3696-380f" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+            <infoLink id="b03b-b467-365d-22a1" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e1f8-7b57-85b6-09e1" name="Torpedo Salvo - (F)" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="05ee-408f-4996-36ef" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="666c-e489-6a75-499a" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="22d9-a83b-62e1-e07f" name="Torpedo Salvo" hidden="false" targetId="cda4-a338-5f16-6220" type="profile">
+              <modifiers>
+                <modifier type="append" field="name" value=" - (F)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="f2fd-a539-912e-92c0" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+            <infoLink id="2037-8497-b076-bbc3" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+            <infoLink id="adb6-4374-54a9-8f04" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="051d-ba27-0845-dced" name="Broadside - (P &amp; S)" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f945-bd35-f7ac-0fe0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bee2-8520-a115-0476" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="9f91-5083-6fe6-2fe3" name="Broadside" hidden="false" targetId="da97-935b-8eea-abbf" type="profile">
+              <modifiers>
+                <modifier type="append" field="name" value=" - (P &amp; S)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="c0e3-2aaf-5aae-e51b" name="Fusillade" hidden="false" targetId="4ec1-3aa3-001e-f8f6" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="cb03-6c8e-da55-b3e3" name="Generator" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ba0-f649-e3a6-b5bf" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b633-91dd-e864-ea96" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="849d-3a4b-76d1-73d8" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="7703-bc29-744b-d75f" name="Atomic generator" publicationId="7f09-e243-2307-78d0" page="4" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="999a-e382-7d6a-6d31" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="2f4f-0c68-f284-8b41" name="Atomic generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" targetId="bf4f-f520-1b65-3bfd" type="profile"/>
+                <infoLink id="2302-cf6e-1e6b-e246" name="Atomic generator" hidden="false" targetId="3fe1-73f5-bc98-7db7" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="3ab9-ce28-a54f-2d49" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5aa6-7d4d-a6c0-d479" name="Fury generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a64b-9f45-4ea6-59ea" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="851b-e247-c12c-5de3" name="Fury generator" hidden="false" targetId="87f0-a822-7ea9-7287" type="profile"/>
+                <infoLink id="5be2-758a-9c0f-2f07" name="Fury generator" hidden="false" targetId="f743-5a58-7d27-2ceb" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="9d5f-2147-a82a-4283" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f098-79d7-af32-90c0" name="Magnetic generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb97-a751-d713-c506" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="f2bf-34d1-f529-f128" name="Magnetic generator" hidden="false" targetId="586f-fde9-3d38-02d0" type="profile"/>
+                <infoLink id="7102-b576-4348-2b7e" name="Magnetic generator" hidden="false" targetId="b4ba-a474-4872-aa00" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="e908-5542-f5da-2b83" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7c7d-b19e-d146-caaf" name="Shield generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f1e2-6ca4-e3e8-d1bb" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0c2e-afd8-8cc5-e0cb" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="174b-5a7a-7d06-a110" name="Shield generator" hidden="false" targetId="2086-333f-c525-6c88" type="profile"/>
+                <infoLink id="da32-85e9-2658-02cc" name="Shield generator" hidden="false" targetId="2c2f-ebec-49d2-ae7d" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="f888-c380-39ab-b150" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="136c-633a-5c33-61c8" name="Repulsion generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6079-ddcc-e280-580d" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c0c9-5772-3f01-b7d8" name="Repulsion generator" hidden="false" targetId="260e-2d03-fa1e-8137" type="profile"/>
+                <infoLink id="bc93-0f65-6108-a798" name="Repulsion generator" hidden="false" targetId="67a0-4bf1-a4e1-f28e" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="dc93-6a4e-b6eb-3e87" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2dab-58f3-084d-e7c4" name="Mirage generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e6b3-e790-4852-aadb" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="190f-4a89-a1a0-64ae" name="Mirage generator" hidden="false" targetId="0c80-8c19-6348-9a6c" type="profile"/>
+                <infoLink id="8bf9-4a08-dacb-cd61" name="Mirage generator" hidden="false" targetId="8466-6d75-968e-c1e7" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="b5b0-4cac-40b7-7616" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9dbd-c119-3057-1edb" name="Shroud generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0e4c-5c12-41a8-affd" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="2882-a440-cdfc-3476" name="Shroud generator" hidden="false" targetId="1873-22df-b3ba-49db" type="profile"/>
+                <infoLink id="56d5-f2cf-da98-c398" name="Shroud generator" hidden="false" targetId="ef22-2b56-207c-7d3f" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="f162-487b-522b-d0a4" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="4093-bdd0-5a24-b5d0" name="Main Weapon" publicationId="e265-8c7f-a4b2-a48e" page="4" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0374-9395-989c-0806" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2db9-e9ef-82c7-b6d5" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="3f6f-59ac-9688-bbf9" name="Port" hidden="false" collective="false" import="true" defaultSelectionEntryId="5642-4378-2fc9-77b0">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c265-47fb-72d7-1486" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1131-0995-8d6b-7eb9" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="5642-4378-2fc9-77b0" name="Heavy Gun battery - (F/P)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8805-6cce-0dc3-cf2c" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="3754-abfb-3ae8-da65" name="Heavy Gun Battery" hidden="false" targetId="4307-eab2-99cf-555e" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="0fb7-482e-465e-7cc5" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8396-9d59-8cab-6bed" name="Particel Beamer - (F/P)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1e0-7a9d-4841-ee15" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="9c70-6729-f33e-e514" name="Particle Beamer" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="31a4-53c0-305c-d8fb" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="97f6-cf59-3a30-f6f7" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="dc3a-3029-1817-a5db" name="Susteined" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3fff-19a9-f25e-e56f" name="Heavy Rocket Battery - (F/P)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4347-36a2-5f84-53be" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="7704-5811-0fdf-6ea5" name="Heavy Rocket Battery" hidden="false" targetId="5aa0-82a6-e6bc-6950" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/P)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="4736-fad8-6c99-9629" name="Aereal" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="3599-8d45-78c8-2f9a" name="Starbord" hidden="false" collective="false" import="true" defaultSelectionEntryId="9753-74dd-671b-11d4">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cc77-5511-52f1-fccb" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec19-b58b-1529-877d" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="9753-74dd-671b-11d4" name="Heavy Gun battery - (F/S)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2568-bf43-ba4f-abbe" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="2ed6-0b86-2db8-1851" name="Heavy Gun Battery" hidden="false" targetId="4307-eab2-99cf-555e" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="a864-b5b5-7ced-f841" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4171-6ff0-2091-fd44" name="Particel Beamer - (F/S)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2948-5d76-0c25-a858" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="1831-5e49-e034-9016" name="Particle Beamer" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="31a4-53c0-305c-d8fb" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="adb5-59f2-4a8d-575f" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="8ae7-1241-efdd-2d86" name="Susteined" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="bf27-93f1-159d-e223" name="Heavy Rocket Battery - (F/S)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3497-debd-48be-a63f" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="68fa-0124-0f3e-8471" name="Heavy Rocket Battery" hidden="false" targetId="5aa0-82a6-e6bc-6950" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (F/S)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="5d03-1235-e8e3-50aa" name="Aereal" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c853-1d11-484d-586d" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2940-eb37-0145-e3a7" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a58f-5bef-de4e-af9e" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="2a91-9caa-8dd7-ee4c" name="Port" hidden="false" collective="false" import="true" defaultSelectionEntryId="baa6-ec02-7b05-6b35">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="280c-a042-f9b3-17c6" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5004-e5e7-f18d-7ecf" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="baa6-ec02-7b05-6b35" name="Gun Battery - (A/P)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f86-1320-366f-e537" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac09-051f-3f1e-58fe" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="733a-d463-542a-8af5" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="de0e-4045-6a94-03d0" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (A/P)"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="6564-ba7b-cda1-03fc" name="Starborad" hidden="false" collective="false" import="true" defaultSelectionEntryId="47e2-43e0-531b-edff">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dca-8407-6577-98e0" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="47e2-43e0-531b-edff" name="Gun Battery - (A/S)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6dc-51cc-22a9-d2b3" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8010-c228-a999-3704" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="6e20-3a0b-8b1a-826a" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+                    <infoLink id="ed29-b155-ac2b-c912" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="name" value=" - (A/S)"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="180.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="214f-c8dd-b137-8c10" name="Konya" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a29-5343-44d1-d21e" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ceb8-e2d5-ac1e-cda2" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="f77c-2c1f-6e13-05ad" name="Konya" hidden="false" targetId="792c-0905-751f-fc66" type="profile"/>
+        <infoLink id="21ae-2e55-0851-062a" name="Agile" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
+        <infoLink id="e14c-9f5c-2101-ebb6" name="Armoured Decking" hidden="false" targetId="d894-52c8-4b18-f9f5" type="rule"/>
+        <infoLink id="6d3d-e41a-e1fd-9993" name="Linear Dash" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
+        <infoLink id="cfcd-8088-dcf5-efe0" name="Orichalcite Construction" hidden="false" targetId="797a-6783-86f3-738a" type="rule"/>
+        <infoLink id="1444-0ef3-fe72-a808" name="Powerslide" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
+        <infoLink id="362e-eb23-1129-4c5c" name="Skiff Dock" hidden="false" targetId="9c22-14a9-21ca-d77f" type="rule"/>
+        <infoLink id="c713-a5ae-6b91-fd0b" name="Advanced Repair Facilities" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ffe0-afc1-634a-efb0" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+        <categoryLink id="e8c5-eedc-0d80-a576" name="Sultanate�" hidden="false" targetId="9c13-9a46-5ee3-4981" primary="false"/>
+        <categoryLink id="6c10-92bd-fc64-78ab" name="Turkish�" hidden="false" targetId="03eb-089a-0c01-5751" primary="false"/>
+        <categoryLink id="aec4-d0d0-ddde-bd40" name="Konya Class" hidden="false" targetId="fdcf-47b3-d123-b33a" primary="false"/>
+        <categoryLink id="5136-34fa-0f1c-ad49" name="Maintenance Ship" hidden="false" targetId="0891-af18-b56a-58c8" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="ad73-319f-68d4-bd2e" name="Broadside - (P &amp; S)" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c75d-6d88-17b1-bd97" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9beb-1ebd-0397-8450" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="c327-8f7b-5e9f-b5f6" name="Broadside" hidden="false" targetId="ae08-f907-00e0-6554" type="profile">
+              <modifiers>
+                <modifier type="append" field="name" value=" - (P &amp; S)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="38da-9c5d-a972-2764" name="Fusillade" hidden="false" targetId="4ec1-3aa3-001e-f8f6" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8601-632a-801c-5d67" name="Torpedo Salvo - (F)" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a52f-e863-094f-3b21" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9ae-88ef-a80a-9793" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="2810-24b3-9875-6608" name="Torpedo Salvo" hidden="false" targetId="cda4-a338-5f16-6220" type="profile">
+              <modifiers>
+                <modifier type="append" field="name" value=" - (F)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="4444-f86d-31d4-e1a6" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+            <infoLink id="2e18-f085-345f-f4cd" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+            <infoLink id="1ecd-f830-59b6-f6ea" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="921f-0878-0c8f-11d5" name="Rocket Battery - F" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4856-e5a2-e7e5-c85f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7e94-f784-4a02-7524" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="2c18-266b-bbf1-50d1" name="Rocket Battery" hidden="false" targetId="90e8-0288-ed1a-f4fb" type="profile">
+              <modifiers>
+                <modifier type="append" field="name" value="F"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="3fdc-5319-3541-ec77" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="65.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e886-b4b1-b50d-bd52" name="Morea" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="true" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="106e-1243-ece1-49d0" type="min"/>
+        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4300-dcb6-e5ba-b356" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="5236-07e5-42ee-be45" name="Morea" hidden="false" targetId="108a-b192-cc49-631c" type="profile"/>
+        <infoLink id="9a92-8fcf-95ec-3ac6" name="Agile" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
+        <infoLink id="8229-954c-1c44-edff" name="Armoured Decking" hidden="false" targetId="d894-52c8-4b18-f9f5" type="rule"/>
+        <infoLink id="51ee-5d83-de6a-f85a" name="Linear Dash" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
+        <infoLink id="d8a9-cdb0-f094-320c" name="Orichalcite Construction" hidden="false" targetId="797a-6783-86f3-738a" type="rule"/>
+        <infoLink id="23cf-c251-1524-5dd2" name="Mine Sweeper" hidden="false" targetId="3c38-dac5-4a88-5358" type="rule"/>
+        <infoLink id="2eb5-08e3-01ea-9141" name="Mine Layer" hidden="false" targetId="940f-44f3-71bf-f26c" type="rule"/>
+        <infoLink id="5d86-77dd-6f3c-dd2d" name="Powerslide" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0ac9-9644-8b30-3ea0" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+        <categoryLink id="b06a-d310-0a61-d00a" name="Sultanate�" hidden="false" targetId="9c13-9a46-5ee3-4981" primary="false"/>
+        <categoryLink id="fe6c-bcc5-dfd2-61f7" name="Turkish�" hidden="false" targetId="03eb-089a-0c01-5751" primary="false"/>
+        <categoryLink id="8426-09a6-596a-874f" name="Morea Class" hidden="false" targetId="94b0-937f-c25a-a56d" primary="false"/>
+        <categoryLink id="03a5-8b00-0c63-d035" name="Minelayer" hidden="false" targetId="fcf8-2a45-3c2e-fc65" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="2955-b43c-a6d4-203d" name="Broadside - (P &amp; S)" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed92-1caa-147a-965c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15c0-d568-7421-6e25" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="eb32-10ad-2906-6128" name="Broadside" hidden="false" targetId="ae08-f907-00e0-6554" type="profile">
+              <modifiers>
+                <modifier type="append" field="name" value=" - (P &amp; S)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="7178-89af-9acf-1bd8" name="Fusillade" hidden="false" targetId="4ec1-3aa3-001e-f8f6" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="aae8-3ed1-6d0e-e776" name="Torpedo Salvo - (F)" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="45df-fb49-50e5-02b9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30cd-1750-9e08-bd89" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="3dad-41ab-faff-bcc5" name="Torpedo Salvo" hidden="false" targetId="cda4-a338-5f16-6220" type="profile">
+              <modifiers>
+                <modifier type="append" field="name" value=" - (F)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="6406-36e9-bd1c-1a3a" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+            <infoLink id="8f77-2931-84a3-fc8a" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+            <infoLink id="fffd-a20b-4c42-af4d" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9553-a5d5-69a5-b72a" name="Rocket Battery - F" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77d3-5948-3a69-2cce" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3bb3-d441-b318-3db3" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="272e-d50b-273b-c877" name="Rocket Battery" hidden="false" targetId="90e8-0288-ed1a-f4fb" type="profile">
+              <modifiers>
+                <modifier type="append" field="name" value="F"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="c603-cbc5-3880-f476" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="25f6-d02d-7ca8-d502" name="Generator" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f44c-f83c-195b-2237" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5ca8-f3cf-fea2-29ad" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="06e4-45d2-9b44-85a6" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="4adf-c41c-0418-0f0a" name="Mirage generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4625-94d9-d8db-ee90" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9c91-1808-2008-7807" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="4e2e-ed4f-0ff1-11bd" name="Mirage Generator" hidden="false" targetId="0c80-8c19-6348-9a6c" type="profile"/>
+                <infoLink id="26a5-5818-3595-58c8" name="Mirage generator" hidden="false" targetId="8466-6d75-968e-c1e7" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="f79a-7914-d1a3-fda6" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="60.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
-  <sharedRules>
-    <rule id="d894-52c8-4b18-f9f5" name="Armoured Decking" hidden="false">
-      <description>Attacks with the Aerial Quality gain a single Hit from a Heavy Hit result rather than the usual two when attacking this Model.</description>
-    </rule>
-    <rule id="797a-6783-86f3-738a" name="Orichalcite Construction" hidden="false">
-      <description>Battle-Ready Models with this rule do not suffer damage from Catastrophic Explosions.�</description>
-    </rule>
-    <rule id="cd09-dbc0-dee4-b921" name="Powerslide" hidden="false">
-      <description>This Unit my make its Drift Movement in a direction up to 90 degrees to Port or Starboard from ahead rather than directly ahead. The Model does not physically change its heading when it does so.�</description>
-    </rule>
-    <rule id="f151-e7cf-bb48-e823" name="Cor Caroli" hidden="false">
-      <description>This Unit ignores the effects of the Emergency Condition, but counts has having the Disorder Level. Models in the Unit support Assaults with +3 AD to Fray.</description>
-    </rule>
-    <rule id="ebed-2a52-5ef9-5148" name="One Per Battlefleet" publicationId="d854-a2d6-3d52-44c4" hidden="false">
-      <description>You may only include one of this Unit in a Battlefleet.</description>
-    </rule>
-    <rule id="7459-7c35-54e7-3655" name="The Sultan’s Monitor" publicationId="d854-a2d6-3d52-44c4" hidden="false">
-      <description>Any friendly Unit (excluding this Unit) within 10&quot; may reduce a single Disorder Level at the start of their Activation.</description>
-    </rule>
-    <rule id="dcc2-5c28-d9d5-d220" name="Corvette Skiff" publicationId="d854-a2d6-3d52-44c4" hidden="false">
-      <description>The Ferik Skiff is an Escort as described on Page 32 of the Rulebook with the following exceptions: The Ferik Skiff is a Skimming Model and cannot cause a collision when it moves. Furthermore because of its small size and nimbleness, it cannot be targeted unless it is in Point Blank Range and only by weapons with the Sustained or Aerial Quality.</description>
-    </rule>
-    <rule id="144e-e747-68a2-4870" name="Escort Duty (Sultanate)" publicationId="d854-a2d6-3d52-44c4" hidden="false">
-      <description>This Model may be deployed as part of a Unit with the Sultanate and Flagship traits provided that the Flagship Unit does not include Skiffs, Escorts, Corvettes, or another Model with the Escort Duty rule. This Model does not benefit from the Special Rules, Weapons or Generators of the Unit it joins. While in a Unit together, they form a Unit of multiple Models and provide +2 to each other’s ADV and SDV. If the Flagship Model is destroyed, this Model reverts to being a Unit of its own and the Flagship Unit counts as being destroyed for Victory purposes.</description>
-    </rule>
-  </sharedRules>
   <sharedProfiles>
     <profile id="68b0-e963-9bf1-c46a" name="Anatolia" publicationId="d854-a2d6-3d52-44c4" page="4" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
       <characteristics>
@@ -4330,7 +5804,7 @@ Review 1.01a:  Second release</comment>
         <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">6/6</characteristic>
         <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">5/5</characteristic>
         <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">8/7</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">12/11</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">15/14</characteristic>
         <characteristic name="ADV" typeId="6428-9828-bb2e-f923">5/3</characteristic>
         <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">5/3</characteristic>
         <characteristic name="Fray" typeId="4c54-804a-8993-7325">11/8</characteristic>
@@ -4406,13 +5880,13 @@ Review 1.01a:  Second release</comment>
       <characteristics>
         <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">3/3</characteristic>
         <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">5/4</characteristic>
-        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">5/4</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">3/2</characteristic>
         <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">7/6</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">11/10</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">14/11</characteristic>
         <characteristic name="ADV" typeId="6428-9828-bb2e-f923">5/3</characteristic>
         <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">5/3</characteristic>
         <characteristic name="Fray" typeId="4c54-804a-8993-7325">9/8</characteristic>
-        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">7/3</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">7/5</characteristic>
       </characteristics>
     </profile>
     <profile id="33bb-215a-9894-7f46" name="Suleiman" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
@@ -4519,9 +5993,88 @@ Review 1.01a:  Second release</comment>
         <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">4/3</characteristic>
       </characteristics>
     </profile>
+    <profile id="3a62-ea9f-4ec9-9e40" name="Retaj" publicationId="d854-a2d6-3d52-44c4" page="" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
+      <characteristics>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">3/3</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">8/7</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">4/3</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">6/6</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">14/14</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">8/6</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">8/6</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">14/14</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">7/7</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6723-e94d-41c8-d442" name="Nemrut" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
+      <characteristics>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">3/3</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">6/5</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">4/3</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">6/6</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">11/11</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">4/2</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">4/2</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">8/6</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">6/5</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e4dc-5c75-3ddb-595f" name="Bayezid" publicationId="d854-a2d6-3d52-44c4" page="" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
+      <characteristics>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">3/3</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">6/5</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">4/3</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">6/6</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">12/12</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">4/2</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">4/2</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">8/6</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">6/5</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9f07-f179-d243-6c9e" name="Bursa" publicationId="d854-a2d6-3d52-44c4" page="" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
+      <characteristics>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">3/3</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">6/5</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">4/3</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">6/6</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">12/12</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">4/2</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">4/2</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">8/6</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">6/5</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="792c-0905-751f-fc66" name="Konya" publicationId="d854-a2d6-3d52-44c4" page="" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
+      <characteristics>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">2/2</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">7/6</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">6/5</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">6/6</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">10/10</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">3/2</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">3/2</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">5/3</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">4/3</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="108a-b192-cc49-631c" name="Morea" publicationId="d854-a2d6-3d52-44c4" page="8" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
+      <characteristics>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">2/2</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">7/6</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">6/5</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">6/6</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">10/10</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">3/2</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">3/2</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">5/3</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">4/3</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <catalogueLinks>
     <catalogueLink id="afab-17b3-dfb1-d211" name="Weapon" targetId="526f-06e7-edaa-02b8" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="fe75-55a1-cfd6-b2b3" name="Generator" targetId="f69c-988c-fae3-e664" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="007e-e7e1-5ac4-66f2" name="Rules" targetId="edc4-1a6a-03e6-7be9" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>
