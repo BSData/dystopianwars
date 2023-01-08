@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="1242-c30b-419f-8229" name="Dystopian Wars 3.0" revision="5" battleScribeVersion="2.03" authorName="Riccardo Sipone / Ruslan Zakirov" authorContact="siponeric@hotmail.com / ruslan.zakirov.2000@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="1242-c30b-419f-8229" name="Dystopian Wars 3.0" revision="6" battleScribeVersion="2.03" authorName="Riccardo Sipone / Ruslan Zakirov" authorContact="siponeric@hotmail.com / ruslan.zakirov.2000@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>The Dystopian Wars datafile are editied and mantained with Ruslan Zakirov, that with patience has start to managed all profile and debugging.
 Revision 1.01: added all ORBAT Publication
 Revision 1.02: managed correctlly Publication, corrected Command Reroll bonus
 Revision 1.03: update common weapon charatteristic after new Orbat pubbication
 Revision 1.04: review of datafile logic
-Revision 1.05: introduction of rules 3.03</readme>
+Revision 3.03.00: introduction of rules 3.03
+Revision 3.03.01: new feature to support 3.02 Orbat</readme>
   <publications>
     <publication id="7f09-e243-2307-78d0" name="Dystopian Rulebook"/>
     <publication id="e265-8c7f-a4b2-a48e" name="Commonwhealth ORBAT"/>
     <publication id="908d-6feb-2e9e-843b" name="Covenant of the Enlightened ORBAT"/>
     <publication id="33cf-b4a6-bff0-0d70" name="The Imperium ORBAT"/>
-    <publication id="129d-da97-caec-1ddd" name="The Alliance ORBAT"/>
+    <publication id="129d-da97-caec-1ddd" name="The Latin Alliance ORBAT"/>
     <publication id="dbca-8d57-b848-457e" name="The Crown ORBAT"/>
     <publication id="5a03-1c6f-8fc8-2be1" name="Common Rules"/>
     <publication id="7b2b-0f56-3962-5ec1" name="The Empire ORBAT"/>
@@ -203,76 +204,25 @@ Revision 1.05: introduction of rules 3.03</readme>
     <categoryEntry id="ab2d-aa2f-f7fa-e4cd" name="Dread-Naught" hidden="false"/>
     <categoryEntry id="0092-ac10-aa13-e6bd" name="High Guardian" hidden="false"/>
     <categoryEntry id="df98-2fb6-5b8f-adc1" name="Grand Indiaman" hidden="false"/>
+    <categoryEntry id="30f6-4b39-82a1-7b05" name="Sky Keep" publicationId="7b2b-0f56-3962-5ec1" hidden="false"/>
+    <categoryEntry id="34d4-efb0-1881-9c31" name="Draconic Colossus" publicationId="7b2b-0f56-3962-5ec1" hidden="false"/>
+    <categoryEntry id="4b9a-9699-2d91-f877" name="Submersible Assault Ship" publicationId="7b2b-0f56-3962-5ec1" hidden="false"/>
+    <categoryEntry id="027b-a33c-0dee-5e7c" name="Submersible Exosub Carrier" hidden="false"/>
+    <categoryEntry id="93cc-d49b-5565-a569" name="Submersible Attack Ship" hidden="false"/>
+    <categoryEntry id="7ec8-8d9c-ea48-2405" name="Battle Submarine" hidden="false"/>
+    <categoryEntry id="28c9-4b00-0800-7077" name="Submersible Magma Caster" hidden="false"/>
+    <categoryEntry id="f8c2-eefd-3524-05b6" name="Line Cruiser" hidden="false"/>
+    <categoryEntry id="a661-d022-c356-7c95" name="Scout Carrier" hidden="false"/>
+    <categoryEntry id="377b-ffa4-659c-cfd8" name="Fast Frigate" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="44e8-1fde-db6e-20f6" name="Battlefleet (generic don&apos;t use)" publicationId="7f09-e243-2307-78d0" hidden="true">
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88de-fb71-a971-9098" type="min"/>
       </constraints>
-      <categoryLinks>
-        <categoryLink id="593a-8495-09c4-36a1" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="false">
-          <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffd7-f4e2-abf6-133b" type="min"/>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ee4-4b67-da87-ee81" type="max"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="c508-4f65-63fb-3eaf" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="false">
-          <constraints>
-            <constraint field="selections" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48d5-b005-3783-4dac" type="max"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
     </forceEntry>
   </forceEntries>
   <sharedSelectionEntries>
-    <selectionEntry id="6096-649a-6b3e-6867" name="Shield generator" publicationId="7f09-e243-2307-78d0" page="" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="2e8f-2388-2056-4971" name="Shield generator" hidden="false" targetId="dce3-33ce-753a-8647" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="2364-820a-f329-5fa4" name="Repulsion generator" publicationId="7f09-e243-2307-78d0" page="" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="aa7f-1c4e-c55b-8e30" name="Repulsion generator" hidden="false" targetId="2259-c663-7bf2-2f67" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="5cce-5a54-c855-665f" name="Magnetic generator" publicationId="7f09-e243-2307-78d0" page="" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="b13e-337a-fb05-16a5" name="Magnetic generator" hidden="false" targetId="500f-6824-b8ce-b222" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="88f0-1be8-3a01-2184" name="Shroud generator" publicationId="7f09-e243-2307-78d0" page="" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="b5f4-c3a6-226c-ca5f" name="Shroud generator" hidden="false" targetId="d49a-9023-5668-0f54" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="4dfa-9782-5430-a510" name="Atomic generator" publicationId="7f09-e243-2307-78d0" page="" hidden="false" collective="false" import="true" type="model">
-      <infoLinks>
-        <infoLink id="5c17-f923-af3f-ec4e" name="Atomic generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" targetId="761e-3d83-8f4e-ad4c" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="7885-3ee9-9545-509f" name="Fury generator" publicationId="7f09-e243-2307-78d0" page="" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="ace3-8adc-e9a4-8470" name="Fury generator" hidden="false" targetId="dfd6-5ab4-09d4-2c3a" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="aae0-e2ef-7700-4fae" name="Corvette" publicationId="7f09-e243-2307-78d0" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2311-93d9-3152-06bb" type="max"/>
@@ -292,17 +242,6 @@ Revision 1.05: introduction of rules 3.03</readme>
         <infoLink id="70f7-8385-8849-7986" name="Escort" hidden="false" targetId="da59-69f4-e562-8990" type="profile"/>
         <infoLink id="c586-42af-6ae4-39b4" name="Escort Token" hidden="false" targetId="69d6-1736-e601-9751" type="rule"/>
       </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="5a6f-0182-7ad2-b986" name="Battlefleet Flagship" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="add" field="category" value="c8a0-0265-d83f-fe12"/>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21cf-7e56-4c4b-33a7" type="max"/>
-      </constraints>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
