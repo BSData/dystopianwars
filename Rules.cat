@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="edc4-1a6a-03e6-7be9" name="Rules" revision="1" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="edc4-1a6a-03e6-7be9" name="Rules" revision="2" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Rules collection</readme>
   <sharedRules>
     <rule id="e3e3-342b-63df-28cb" name="Fury generator" publicationId="7f09-e243-2307-78d0" hidden="false">
@@ -34,7 +34,7 @@ arms fire close to the vessel. Any Hits or Heavy Hits by Enemy SRS Tokens agains
       <description>Unless suffering from a Navigation Lock Critical Damage Marker, this Unit may make turns during Drift movement in the same way as it usually would during normal Movement.</description>
     </rule>
     <rule id="0b7c-6003-8433-2817" name="Maritime Patrol" hidden="false">
-      <description>Models with this rule may re-roll blank results when attacking Submerged Units provided the target Unit has at least one SRS Token that is friendly to this Unit in base contact.</description>
+      <description>Models with this rule may ignore the Submerged Unit Position Trait when making Attacks on any Initial Targets within 10” of this Unit, or against Initial Targets with at least one SRS Token in base contact that is friendly to this Unit. </description>
     </rule>
     <rule id="1ea8-5ef6-de30-f3ae" name="Temperamental Design" hidden="false">
       <description>This Unit cannot make Jury-Rigged Repairs</description>
@@ -237,7 +237,6 @@ arms fire close to the vessel. Any Hits or Heavy Hits by Enemy SRS Tokens agains
     <rule id="ee96-2771-5a22-42bd" name="Cryo-Kometa" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <description>SRS Tokens launched by Units with this rule may re-roll Blank Results on Attack Runs.</description>
     </rule>
-
     <rule id="eff5-47db-113b-2340" name="Caspian Overthruster" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <description>During its Activation, this Model may increase its Speed by the number of inches indicated by the rule. If it does so it may not make any turns during the same Activation. If this Model has Moved at least 10” the Model is Obscured, and weapons with the Aerial Quality gain the Extreme Range Quality. If the Model is Crippled these rules cannot be used.</description>
     </rule>
@@ -340,7 +339,6 @@ arms fire close to the vessel. Any Hits or Heavy Hits by Enemy SRS Tokens agains
     <rule id="ad21-8a8b-501a-f08c" name="Automata Repair Platform" hidden="false">
       <description>Roll an Action Die each time a Friendly AUTOMATA is destroyed within 10” of this Unit. On a roll of a Counter or Heavy Counter the AUTOMATA is not removed and instead remains in play with a single Hull point.</description>
     </rule>
-
     <rule id="5344-5860-afdf-57e5" name="Lightning Assault" publicationId="33cf-b4a6-bff0-0d70" hidden="false">
       <description>Any Model in this Unit attempting an Assault Action gains +1 to its Assault Action Dice Pool for each weapon listed on the Assaulting Model with the Arc or Voltaic Quality. Supporting Models cannot use this rule. If the Assaulting Model has an online Storm Generator, it gains +2 to its Assault Action Dice Pool.</description>
     </rule>
@@ -408,13 +406,13 @@ arms fire close to the vessel. Any Hits or Heavy Hits by Enemy SRS Tokens agains
       <description>Any friendly Unit (excluding this Unit) within 10&quot; may reduce a single Disorder Level at the start of their Activation.</description>
     </rule>
     <rule id="dcc2-5c28-d9d5-d220" name="Ferik Escort Skiff" publicationId="d854-a2d6-3d52-44c4" hidden="false">
-      <description>The Ferik Skiff is an Escort as described on Page 32 of the Rulebook with the following exceptions: The Ferik Skiff is a Skimming Model and cannot be collided with. Furthermore because of its small size and nimbleness, it cannot be targeted except by SRS Tokens, or unless it is in Point Blank Range by weapons with the Homing, Sustained or Aerial Qualities.</description>
+      <description>The Ferik Skiff Escort is an Escort Token. They are still removed if an Escorted Unit would suffer a Catastrophic Explosion but doesn’t due to Orichalcite Construction.</description>
     </rule>
     <rule id="144e-e747-68a2-4870" name="Escort Duty (Sultanate)" publicationId="d854-a2d6-3d52-44c4" hidden="false">
       <description>This Model may be deployed as part of a Unit with the Sultanate and Flagship traits provided that the Flagship Unit does not include Skiffs, Escorts, Corvettes, or another Model with the Escort Duty rule. This Model does not benefit from the Special Rules, Weapons or Generators of the Unit it joins. While in a Unit together, they form a Unit of multiple Models and provide +2 to each other’s ADV and SDV. If the Flagship Model is destroyed, this Model reverts to being a Unit of its own and the Flagship Unit counts as being destroyed for Victory purposes.</description>
     </rule>
     <rule id="a0e5-69d2-4798-ec1d" name="Ikili Hull" publicationId="d854-a2d6-3d52-44c4" hidden="false">
-      <description>Models with this rule have a catamaran design, common in the Sultanate. This Unit gains +3 Speed during its Movement Step provided that it makes no turns. Furthermore, the duplication of parts across the hulls allows for easier repairs. When making a Jury-Rigged Repair on a Model with this rule, roll an Action Die. On a Counter, the attempted repair is made without suffering damage.</description>
+      <description>Models with this rule have a catamaran design, common in the Sultanate. This Unit gains +3 Speed during its Movement Step provided that it makes no turns. Furthermore, the duplication of parts across the hulls allows for easier repairs. When making a Jury-Rigged Repair on a Model with this rule, a Hit or Heavy Hit is treated like an Exploding Hit. </description>
     </rule>
     <rule id="db90-0b63-d0f9-5222" name="Portal Mastery" hidden="false">
       <description>This Unit may, as a Special Operations Action, place a 50mm Portal Token within 20” of itself. During the Round, any friendly Unit making an Attack with the Bomb Quality that has a Portal Marker within 5” of that Unit may measure the range of the Attack as though being made from any other Portal Marker. The Attacking Unit still requires Line of Sight to the Initial Target, but the weapon gains a 360 degree Fire Arc if used with a Portal. Furthermore, during the Reserves Step of that Round, when a friendly Unit becomes available from Reserve, it may be deployed within 2” of any Portal Marker rather than using any other deployment options. Each Model in the Reserve Unit must be deployed within 2” of the same Portal Marker. Remove Portal Markers once a Reserve Unit has been deployed within 2” of it, or an Attack using the Bomb Quality has been made from it or finally remove all remaining Portal Markers at the start of the Maintenance Step.</description>
@@ -423,7 +421,7 @@ arms fire close to the vessel. Any Hits or Heavy Hits by Enemy SRS Tokens agains
       <description>If this unit declares all its Attacks with the Aerial Quality in the Shooting Step against a single Initial Target, it receives +2 to all Action Dice Pools with the Aerial Quality for the Activation.</description>
     </rule>
     <rule id="9c22-14a9-21ca-d77f" name="Skiff Dock" publicationId="d854-a2d6-3d52-44c4" hidden="false">
-      <description>Roll an Action Die each time a Ferik Skiff is destroyed within 10” of one or more Units with this rule. On a roll of a Counter or Heavy Counter the Skiff is not removed and is instead placed in Base contact with a Model in a Unit with this rule. The salvaged Skiff is considered part of that unit and may act normally during future Activations.</description>
+      <description>Ferik Skiff Escorts within 10” of this Model provide +2 to Attack Action Dice Pools at Point Blank Range rather than the usual +1. Furthermore, roll an Action Die each time a Ferik Skiff is destroyed within 10” of one or more Units with this rule. On a roll of a Counter or Heavy Counter the Skiff is not removed and is instead placed in Base contact with a Model in a Unit with this rule. The salvaged Skiff is considered part of that unit and may act normally during future Activations.</description>
     </rule>
     <rule id="1181-0663-f1c1-9047" name="Give Em Hell" publicationId="e6a1-85d3-8979-7880" hidden="false">
       <description>The big guns of the Union are famed for their devastating barrages. A Unit may make a Special Operations Action that it will ‘Give Em Hell’. All weapons with the Gunnery or Fusillade special rule in the Unit gain the Devastating Quality for the duration of its Activation. At the end of the Activation each Model in the Unit gains a Disorder Condition.</description>
@@ -492,8 +490,7 @@ arms fire close to the vessel. Any Hits or Heavy Hits by Enemy SRS Tokens agains
       <description>During the Shooting Step a Model with this rule may be declared to be in more than one Fire Arc, provided that the Attacking Player can draw Line of Sight from that Fire Arc.</description>
     </rule>
     <rule id="0d1b-0810-3b49-e25e" name="Valorous Conduct" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
-      <description>Once per Round, per Battlefleet with this rule, a Unit in this Force may replace the Initiative value of
-a card being used for a Valour Effect card with the Initiative value of 50.</description>
+      <description>Once per Round, per Battlefleet with this rule, a Unit in this Force may replace the Initiative value of a card being used for a Valour Effect card with the Initiative value of 50.</description>
     </rule>
     <rule id="3f21-1511-2bff-8d3b" name="Strategic Reserve" hidden="false">
       <modifiers>
@@ -513,6 +510,9 @@ a card being used for a Valour Effect card with the Initiative value of 50.</des
     <rule id="242a-ba21-5de6-5d5c" name="New Rule" hidden="false"/>
     <rule id="0054-ea91-5408-283a" name="Low Level Strike" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>In the Special Operations phase of the round, while battle Ready, this Unit may make a Low Level Strike. For the remainder of that Round, the Unit doubles its Drift Movement, ceases to be an Aerial Unit and instead becomes a Skimming Unit. The Unit has +1 Armour while it has the Skimming Unit Positional Trait. A Unit cannot be part of an Attached Unit if making a Low Level Strike. A Unit cannot make a Low Level Strike if it has already done so the previous Round.</description>
+    </rule>
+    <rule id="1c64-d581-925a-6659" name="Command Codes" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+      <description> Once per Round the Player may declare they are using Command Codes to immediately cancel all the dice results in any one Action Dice Pool generated by any Friendly Unit within 15” of this Model. The Command Codes must be played before any manipulation of the Action Dice Pool takes place by either Player. The Action Dice pool is then rolled afresh exactly as if the previous Action Dice Pool had not been rolled. You may not cancel part of the Action Dice Pool or another Player’s Action Dice Pool using this rule.</description>
     </rule>
   </sharedRules>
 </catalogue>

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="526f-06e7-edaa-02b8" name="Weapon" revision="3" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="526f-06e7-edaa-02b8" name="Weapon" revision="4" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>1.00 Datafile for all weapon profile of the game
 1.01 New weapon from Sultanate and Commonwealth
-1.02 New weapon from 3.02 ORGAT</comment>
+1.02 New weapon from 3.02 ORGAT
+1.03 New weapon from Sultanate</comment>
   <readme>Weapon collection</readme>
   <categoryEntries>
     <categoryEntry id="dbb4-72d5-bceb-70b3" name="F" hidden="false"/>
@@ -2413,9 +2414,142 @@
             <modifier type="set" field="8739-aae9-7e50-c8d0" value="F"/>
           </modifiers>
         </infoLink>
-        <infoLink id="b383-4b19-33d1-b0e5" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
         <infoLink id="67f9-5dde-7839-13a4" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
         <infoLink id="4462-dada-c951-adc0" name="High Velocity" hidden="false" targetId="5b8e-71d1-641d-73f9" type="rule"/>
+        <infoLink id="6b19-cc79-4d26-fddb" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0b90-2ec5-4a18-1c19" name="Particle Beamer" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f408-8e59-12b2-9315" name="Particle Beamer" hidden="false" targetId="31a4-53c0-305c-d8fb" type="profile"/>
+        <infoLink id="6a62-659b-8a90-c8c1" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
+        <infoLink id="8c2b-361d-86b1-901d" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b1b3-476c-c588-8b57" name="Aerial Torpedo" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e1f9-65d7-d4a9-5573" name="Aerial Torpedo" hidden="false" targetId="a0a8-dac0-e58d-85e2" type="profile">
+          <modifiers>
+            <modifier type="set" field="8739-aae9-7e50-c8d0" value="F"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="220b-a623-f8bf-b12c" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
+        <infoLink id="9e2f-c072-fbd1-81e7" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+        <infoLink id="db34-8a3c-1358-9431" name="High Velocity" hidden="false" targetId="5b8e-71d1-641d-73f9" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e967-7018-26ea-4798" name="Aerial Torpedo Salvo" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9619-8618-6027-1468" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
+        <infoLink id="663a-ecba-de37-dabf" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+        <infoLink id="f72e-1c89-48fd-870a" name="High Velocity" hidden="false" targetId="5b8e-71d1-641d-73f9" type="rule"/>
+        <infoLink id="fdfa-85e9-60d1-e99a" name="Aerial Torpedo Salvo" hidden="false" targetId="94ee-f59f-0606-1f35" type="profile">
+          <modifiers>
+            <modifier type="set" field="8739-aae9-7e50-c8d0" value="F"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e3d2-a74b-69dd-e97a" name="Aetheric Lance" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="aeb2-f501-123f-0406" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
+        <infoLink id="d41e-e254-0d93-7510" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+        <infoLink id="775b-f015-15c1-eee1" name="Aetheric Lance" hidden="false" targetId="502c-add9-c3b2-02ab" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0070-f3f0-dcf9-62b7" name="Chaska Starblade" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="272e-b51b-bb1a-7c08" name="Ramming" hidden="false" targetId="c92a-830a-302c-d3ab" type="rule">
+          <modifiers>
+            <modifier type="append" field="name" value="12"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="0b04-2330-f06a-f8ab" name="Arc" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
+        <infoLink id="de1c-7b55-5c1c-789d" name="Chaska Starblade" hidden="false" targetId="fe44-922c-9570-1f96" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="18cb-9f26-bdc9-fb3b" name="Helio Blast" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="85be-837f-e04e-80b1" name="Helio Blast" hidden="false" targetId="1d96-9c8e-18af-b516" type="profile"/>
+        <infoLink id="53bc-d503-bb42-2dfa" name="Arc" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
+        <infoLink id="4d09-6ebb-c80f-e50f" name="Blast" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
+        <infoLink id="6a67-f03e-dbe9-8a5a" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+        <infoLink id="dd00-2bb1-db42-cc2b" name="Bomb" hidden="false" targetId="cec9-6349-719c-e293" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d86c-d2c7-7964-5f8b" name="Judgement Lance" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2522-c8dd-929a-f664" name="Arc" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
+        <infoLink id="ec36-eb2f-4562-659f" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+        <infoLink id="1bfe-354b-e60c-ee0b" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+        <infoLink id="cba7-3e87-5257-1296" name="Judgement Lance" hidden="false" targetId="8fff-6855-6e17-abc7" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="86f2-c2bc-101e-700f" name="Micro Torpedo Salvo" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e4a3-5be3-3d90-6062" name="Micro Torpedo Salvo" hidden="false" targetId="56ad-d747-f32b-e8c5" type="profile"/>
+        <infoLink id="06b0-a8f3-5a8b-f38e" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+        <infoLink id="049f-bf9c-bc51-b540" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+        <infoLink id="fb47-1f5c-6677-75cb" name="Homing" hidden="false" targetId="3fdf-3916-52aa-ecf7" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="db84-1c9c-98de-aa16" name="Orichalcite Flechette Launcher" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="afa5-5683-a1b6-1e3d" name="Fusillade" hidden="false" targetId="4ec1-3aa3-001e-f8f6" type="rule"/>
+        <infoLink id="1f7f-ba4b-1fa2-7ca2" name="Blast" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
+        <infoLink id="81d4-970b-820b-44d2" name="Bomb" hidden="false" targetId="cec9-6349-719c-e293" type="rule"/>
+        <infoLink id="e0a8-95ec-17d6-15b3" name="Orichalcite Flechette Launcher" hidden="false" targetId="a76a-8df5-3648-13a9" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6a66-1016-ae4a-e291" name="Salvo Missile Silo" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="dc7e-3e7e-a65a-adbf" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
+        <infoLink id="5ac7-6b55-74b9-7b2d" name="Blast" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
+        <infoLink id="677a-1125-cd39-1c3f" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
+        <infoLink id="adca-5ecd-88ea-5260" name="Limited" hidden="false" targetId="3bd4-7e14-0aa2-97db" type="rule"/>
+        <infoLink id="986d-2381-acfa-2534" name="Salvo Missile Silo" hidden="false" targetId="10f4-a9d7-24c1-a973" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2b5a-ff6b-b80b-552a" name="Twin Judgement Lances" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="86ee-9aa0-a0c6-2926" name="Twin Judgement Lances" hidden="false" targetId="ca47-f3ab-e6cb-9165" type="profile"/>
+        <infoLink id="d140-88b8-fcb2-1ad3" name="Arc" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
+        <infoLink id="a5ea-9a8c-7a36-622d" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
+        <infoLink id="f5d7-f2de-6ad5-f886" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+        <infoLink id="2e7e-0d0e-5b4f-dbe0" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
@@ -2899,7 +3033,7 @@
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">18 (0)</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Sustained, Blast, Hazardous, Bomb</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Arc, Sustained, Blast, Hazardous, Bomb</characteristic>
       </characteristics>
     </profile>
     <profile id="3237-dbb9-e219-818f" name="Huoqiang (Blade)" publicationId="7b2b-0f56-3962-5ec1" page="4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
@@ -3430,76 +3564,40 @@
         <characteristic name="Capacity" typeId="38e6-209c-1587-2cd0">8/4</characteristic>
       </characteristics>
     </profile>
-    <profile id="f4fb-6437-44fb-1fad" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="a0a8-dac0-e58d-85e2" name="Aerial Torpedo" publicationId="d854-a2d6-3d52-44c4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
-        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0"/>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834"/>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5"/>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a"/>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf"/>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">3(1) / 2(-)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">3(2) / 2(1)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">3(2) / 2(1)</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial, Torpedo, High Velocity</characteristic>
       </characteristics>
     </profile>
-    <profile id="fbdc-b1e5-56f5-6c3f" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="10f4-a9d7-24c1-a973" name="Salvo Missile Silo" publicationId="d854-a2d6-3d52-44c4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
-        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0"/>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834"/>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5"/>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a"/>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf"/>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">10(6) / 7(4)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">10(6) / 7(4)</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial, Blast, Sustained, Limited </characteristic>
       </characteristics>
     </profile>
-    <profile id="1d67-20d7-a340-a15e" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="ca47-f3ab-e6cb-9165" name="Twin Judgement Lances" publicationId="d854-a2d6-3d52-44c4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
-        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0"/>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834"/>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5"/>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a"/>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf"/>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">8(8) / 6(5)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">8(8) / 5(5)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">8(8) / 5(5)</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Arc, Sustained, Gunnery, Hazardous</characteristic>
       </characteristics>
     </profile>
-    <profile id="ecc9-5ea1-cc7f-aee6" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="fe44-922c-9570-1f96" name="Chaska Starblade" publicationId="d854-a2d6-3d52-44c4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
-        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0"/>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834"/>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5"/>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a"/>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf"/>
-      </characteristics>
-    </profile>
-    <profile id="49ca-bca5-9ebc-718c" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0"/>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834"/>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5"/>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a"/>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf"/>
-      </characteristics>
-    </profile>
-    <profile id="9364-2b22-99ec-5c55" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0"/>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834"/>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5"/>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a"/>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf"/>
-      </characteristics>
-    </profile>
-    <profile id="f2ed-b37c-7f10-c862" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0"/>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834"/>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5"/>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a"/>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf"/>
-      </characteristics>
-    </profile>
-    <profile id="7ffc-10f4-d838-4d4c" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0"/>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834"/>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5"/>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a"/>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf"/>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 12, Arc</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
