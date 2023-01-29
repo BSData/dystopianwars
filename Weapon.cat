@@ -4,7 +4,11 @@
 1.01 New weapon from Sultanate and Commonwealth
 1.02 New weapon from 3.02 ORGAT
 1.03 New weapon from Sultanate</comment>
-  <readme>Weapon collection</readme>
+  <readme>Weapon collection
+Review v1: starting document
+Review v2: imprevment to follow ORBAT requirments
+Review v3: new weapon stats and new weapon selection method
+Review v4: Closing the weapon management for the Sultanate</readme>
   <categoryEntries>
     <categoryEntry id="dbb4-72d5-bceb-70b3" name="F" hidden="false"/>
     <categoryEntry id="372f-19f1-09ed-e694" name="P&amp;S" hidden="false"/>
@@ -29,12 +33,14 @@
     <selectionEntry id="110e-749a-0199-27be" name="Heavy Broadside" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="a9ce-8b37-23c2-2128" name="Heavy Broadside" hidden="false" targetId="53dd-93fd-f789-bf9e" type="profile">
-          <modifiers>
-            <modifier type="set" field="8739-aae9-7e50-c8d0" value="P &amp; S"/>
-          </modifiers>
           <modifierGroups>
             <modifierGroup>
               <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="P &amp; S">
+                  <conditions>
+                    <condition field="selections" scope="110e-749a-0199-27be" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="372f-19f1-09ed-e694" type="instanceOf"/>
+                  </conditions>
+                </modifier>
                 <modifier type="set" field="8739-aae9-7e50-c8d0" value="F &amp; A">
                   <conditions>
                     <condition field="selections" scope="110e-749a-0199-27be" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="afe0-b5a3-3eac-004f" type="instanceOf"/>
@@ -92,9 +98,22 @@
     <selectionEntry id="0600-8fa9-227d-91ba" name="Broadside" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="fc42-5b89-f463-fc3b" name="Broadside" hidden="false" targetId="ae08-f907-00e0-6554" type="profile">
-          <modifiers>
-            <modifier type="set" field="8739-aae9-7e50-c8d0" value="P &amp; S"/>
-          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="P &amp; S">
+                  <conditions>
+                    <condition field="selections" scope="0600-8fa9-227d-91ba" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="372f-19f1-09ed-e694" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F &amp; A">
+                  <conditions>
+                    <condition field="selections" scope="0600-8fa9-227d-91ba" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="afe0-b5a3-3eac-004f" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </infoLink>
         <infoLink id="5a2a-0b9a-c9f9-2454" name="Fusillade" hidden="false" targetId="4ec1-3aa3-001e-f8f6" type="rule"/>
         <infoLink id="c15a-749c-e7e8-83b8" name="Broadside" hidden="false" targetId="cb94-70c0-65b8-d3d0" type="rule"/>
@@ -1282,9 +1301,17 @@
     <selectionEntry id="fc11-e98a-2d7f-198c" name="Light Broadside" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="8b1f-e8dd-65be-0107" name="Light Broadside" hidden="false" targetId="c017-9b01-2262-f6e7" type="profile">
-          <modifiers>
-            <modifier type="set" field="8739-aae9-7e50-c8d0" value="P &amp; S"/>
-          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="P &amp; S">
+                  <conditions>
+                    <condition field="selections" scope="fc11-e98a-2d7f-198c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="372f-19f1-09ed-e694" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </infoLink>
         <infoLink id="a7b7-73cf-5057-00a8" name="Fusillade" hidden="false" targetId="4ec1-3aa3-001e-f8f6" type="rule"/>
         <infoLink id="ec1a-f27d-4ad8-8246" name="Broadside" hidden="false" targetId="cb94-70c0-65b8-d3d0" type="rule"/>
@@ -1675,6 +1702,16 @@
                 <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
                   <conditions>
                     <condition field="selections" scope="90c9-59e3-935f-7a20" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="ce6f-067d-9ad4-ddaa" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S/A">
+                  <conditions>
+                    <condition field="selections" scope="90c9-59e3-935f-7a20" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="5b70-4095-b55c-9745" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/A">
+                  <conditions>
+                    <condition field="selections" scope="90c9-59e3-935f-7a20" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="0cd5-1e4e-c51e-c338" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2136,7 +2173,19 @@
     </selectionEntry>
     <selectionEntry id="a695-145e-2051-86b6" name="Cryogenic Blast" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="7cc1-914d-bc0d-2da9" name="Cryogenic Blast" hidden="false" targetId="353a-9427-4f5f-a360" type="profile"/>
+        <infoLink id="7cc1-914d-bc0d-2da9" name="Cryogenic Blast" hidden="false" targetId="353a-9427-4f5f-a360" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="a695-145e-2051-86b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
         <infoLink id="2804-defc-0590-bd6c" name="Blast" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
         <infoLink id="6718-c77c-8987-82cd" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
         <infoLink id="4efb-2a8c-11e2-9cff" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
@@ -2382,9 +2431,17 @@
       </constraints>
       <infoLinks>
         <infoLink id="3b53-085c-5a39-82e6" name="Heavy Prow Ram" hidden="false" targetId="d088-251e-5c6b-83bf" type="profile">
-          <modifiers>
-            <modifier type="set" field="8739-aae9-7e50-c8d0" value="F"/>
-          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="3b69-5936-2ff8-bc08" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </infoLink>
         <infoLink id="ceba-c644-2f72-6704" name="Ramming" hidden="false" targetId="c92a-830a-302c-d3ab" type="rule">
           <modifiers>
@@ -2414,6 +2471,7 @@
             <modifier type="set" field="8739-aae9-7e50-c8d0" value="F"/>
           </modifiers>
         </infoLink>
+        <infoLink id="b383-4b19-33d1-b0e5" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
         <infoLink id="67f9-5dde-7839-13a4" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
         <infoLink id="4462-dada-c951-adc0" name="High Velocity" hidden="false" targetId="5b8e-71d1-641d-73f9" type="rule"/>
         <infoLink id="6b19-cc79-4d26-fddb" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
@@ -2422,11 +2480,724 @@
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0b90-2ec5-4a18-1c19" name="Particle Beamer" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="45e5-2e81-d438-26a6" name="Heavy Alchemical Rockets" publicationId="7b2b-0f56-3962-5ec1" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="f408-8e59-12b2-9315" name="Particle Beamer" hidden="false" targetId="31a4-53c0-305c-d8fb" type="profile"/>
-        <infoLink id="6a62-659b-8a90-c8c1" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
-        <infoLink id="8c2b-361d-86b1-901d" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+        <infoLink id="0bd6-19cd-2322-eca6" name="Heavy Alchemical Rockets" hidden="false" targetId="cbdd-4c2a-6c09-f3d6" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="45e5-2e81-d438-26a6" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="45e5-2e81-d438-26a6" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/S">
+                  <conditions>
+                    <condition field="selections" scope="45e5-2e81-d438-26a6" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="5347-4855-4421-ed77" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P">
+                  <conditions>
+                    <condition field="selections" scope="45e5-2e81-d438-26a6" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="4e9e-7862-58ad-15e6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="45e5-2e81-d438-26a6" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P/S">
+                  <conditions>
+                    <condition field="selections" scope="45e5-2e81-d438-26a6" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="f2af-2773-24ff-2e12" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
+                  <conditions>
+                    <condition field="selections" scope="45e5-2e81-d438-26a6" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="ce6f-067d-9ad4-ddaa" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P">
+                  <conditions>
+                    <condition field="selections" scope="45e5-2e81-d438-26a6" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="7c85-6cfa-131f-becf" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
+        <infoLink id="f3fb-7ec1-365a-21ce" name="Alchemical (x)" hidden="false" targetId="b69e-5981-d88e-75de" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f3cc-ecc2-59d4-aec6" name="Heavy Huoqiang" hidden="false" collective="true" import="true" type="upgrade">
+      <selectionEntries>
+        <selectionEntry id="ce4c-1571-4e57-c28f" name="Heavy Huoqiang (Blade)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a6fc-ef46-8209-2209" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7246-56ea-d67a-55f0" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="2b40-2e5e-fc71-0c8d" name="Heavy Huoqiang (Blade)" hidden="false" targetId="b8bd-0237-312d-2fee" type="profile">
+              <modifierGroups>
+                <modifierGroup>
+                  <modifiers>
+                    <modifier type="set" field="8739-aae9-7e50-c8d0" value="P &amp; S">
+                      <conditions>
+                        <condition field="selections" scope="f3cc-ecc2-59d4-aec6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="372f-19f1-09ed-e694" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="8739-aae9-7e50-c8d0" value="F &amp; A">
+                      <conditions>
+                        <condition field="selections" scope="f3cc-ecc2-59d4-aec6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="afe0-b5a3-3eac-004f" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                      <conditions>
+                        <condition field="selections" scope="f3cc-ecc2-59d4-aec6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </infoLink>
+            <infoLink id="ca19-314e-0d0c-0c91" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+            <infoLink id="83bc-cc43-eeb2-3b4e" name="Alchemical (x)" hidden="false" targetId="b69e-5981-d88e-75de" type="rule"/>
+            <infoLink id="135b-d9a1-f82f-4fe5" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7197-dd03-35ff-7fe7" name="Heavy Huoqiang (Gout)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="22e4-a236-a197-42bc" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9289-c58b-947f-1c32" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="48b2-1422-5b63-9f76" name="Heavy Huoqiang (Gout)" hidden="false" targetId="8c1e-cfa4-0886-f536" type="profile">
+              <modifierGroups>
+                <modifierGroup>
+                  <modifiers>
+                    <modifier type="set" field="8739-aae9-7e50-c8d0" value="P &amp; S">
+                      <conditions>
+                        <condition field="selections" scope="f3cc-ecc2-59d4-aec6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="372f-19f1-09ed-e694" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                      <conditions>
+                        <condition field="selections" scope="f3cc-ecc2-59d4-aec6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="8739-aae9-7e50-c8d0" value="F &amp; A">
+                      <conditions>
+                        <condition field="selections" scope="f3cc-ecc2-59d4-aec6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="afe0-b5a3-3eac-004f" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </infoLink>
+            <infoLink id="ff9c-f233-f863-932c" name="Alchemical (x)" hidden="false" targetId="b69e-5981-d88e-75de" type="rule"/>
+            <infoLink id="e53e-99f5-82f4-fc1c" name="Torrent" hidden="false" targetId="8081-2eef-5594-eb78" type="rule"/>
+            <infoLink id="db1b-73f8-65d1-e54f" name="Fusillade" hidden="false" targetId="4ec1-3aa3-001e-f8f6" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4688-bbd1-6ac5-f438" name="Heat Lancette" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0946-800a-85b1-106d" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+        <infoLink id="a90e-63c8-3559-5361" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="4688-bbd1-6ac5-f438" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="4688-bbd1-6ac5-f438" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="4688-bbd1-6ac5-f438" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P/S">
+                  <conditions>
+                    <condition field="selections" scope="4688-bbd1-6ac5-f438" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f2af-2773-24ff-2e12" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
+                  <conditions>
+                    <condition field="selections" scope="4688-bbd1-6ac5-f438" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ce6f-067d-9ad4-ddaa" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P">
+                  <conditions>
+                    <condition field="selections" scope="4688-bbd1-6ac5-f438" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P">
+                  <conditions>
+                    <condition field="selections" scope="4688-bbd1-6ac5-f438" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4e9e-7862-58ad-15e6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/S">
+                  <conditions>
+                    <condition field="selections" scope="4688-bbd1-6ac5-f438" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5347-4855-4421-ed77" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/A">
+                  <conditions>
+                    <condition field="selections" scope="4688-bbd1-6ac5-f438" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0cd5-1e4e-c51e-c338" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S/A">
+                  <conditions>
+                    <condition field="selections" scope="4688-bbd1-6ac5-f438" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5b70-4095-b55c-9745" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="8582-f39f-a396-4544" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+        <infoLink id="06a5-c7b2-3af7-c0e2" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7d6e-51f6-d5e5-200b" name="Scything Blades" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="74d7-b767-4c50-802e" name="Scything Blades" hidden="false" targetId="2bdd-d4bc-b3ec-2210" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P/S">
+                  <conditions>
+                    <condition field="selections" scope="7d6e-51f6-d5e5-200b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f2af-2773-24ff-2e12" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="7d6e-51f6-d5e5-200b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="4072-819e-88a3-061e" name="Ramming" hidden="false" targetId="c92a-830a-302c-d3ab" type="rule">
+          <modifiers>
+            <modifier type="append" field="name" value="6"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="50d6-9022-af4a-666b" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
+        <infoLink id="6a8b-0940-4b0e-94f1" name="Piercing" hidden="false" targetId="0f8e-056c-75a9-caee" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="090f-dda1-9088-84cd" name="Huoqiang" hidden="false" collective="true" import="true" type="upgrade">
+      <selectionEntries>
+        <selectionEntry id="7736-3896-222b-fef0" name="Huoqiang (Blade)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="acde-9efa-68be-e6fc" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3422-eb17-71c7-3249" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="b207-dea0-9193-6bff" name="Huoqiang (Blade)" hidden="false" targetId="3237-dbb9-e219-818f" type="profile">
+              <modifierGroups>
+                <modifierGroup>
+                  <modifiers>
+                    <modifier type="set" field="8739-aae9-7e50-c8d0" value="P &amp; S">
+                      <conditions>
+                        <condition field="selections" scope="090f-dda1-9088-84cd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="372f-19f1-09ed-e694" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="8739-aae9-7e50-c8d0" value="F &amp; A">
+                      <conditions>
+                        <condition field="selections" scope="090f-dda1-9088-84cd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="afe0-b5a3-3eac-004f" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                      <conditions>
+                        <condition field="selections" scope="090f-dda1-9088-84cd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </infoLink>
+            <infoLink id="e5b1-dc5a-bbb2-b900" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+            <infoLink id="15dc-eca9-cce4-64c4" name="Alchemical (x)" hidden="false" targetId="b69e-5981-d88e-75de" type="rule"/>
+            <infoLink id="cab5-5aa2-6b13-2625" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3290-8ce4-dd4a-65ce" name="Huoqiang (Gout)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c6b6-c681-64b3-d8c3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5298-f335-6ae7-0599" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="c7cf-b6a9-e79a-abb6" name="Huoqiang (Gout)" hidden="false" targetId="69d0-13df-715a-c7f3" type="profile">
+              <modifierGroups>
+                <modifierGroup>
+                  <modifiers>
+                    <modifier type="set" field="8739-aae9-7e50-c8d0" value="P &amp; S">
+                      <conditions>
+                        <condition field="selections" scope="090f-dda1-9088-84cd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="372f-19f1-09ed-e694" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="8739-aae9-7e50-c8d0" value="F &amp; A">
+                      <conditions>
+                        <condition field="selections" scope="090f-dda1-9088-84cd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="afe0-b5a3-3eac-004f" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                      <conditions>
+                        <condition field="selections" scope="090f-dda1-9088-84cd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </infoLink>
+            <infoLink id="b427-8bc8-f1fd-3653" name="Alchemical (x)" hidden="false" targetId="b69e-5981-d88e-75de" type="rule"/>
+            <infoLink id="6941-ae29-af5a-32b7" name="Torrent" hidden="false" targetId="8081-2eef-5594-eb78" type="rule"/>
+            <infoLink id="1f18-d821-02d4-46fc" name="Fusillade" hidden="false" targetId="4ec1-3aa3-001e-f8f6" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8831-12af-37ef-1633" name="Ryoba Prow Saw" publicationId="dbca-8d57-b848-457e" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="67d0-1d1d-ace6-5d16" name="Ryoba Prow Saw" hidden="false" targetId="d302-22ff-874c-7809" type="profile">
+          <modifiers>
+            <modifier type="set" field="8739-aae9-7e50-c8d0" value="F"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="fc4c-778a-791c-f8d6" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+        <infoLink id="6a3e-6183-6d93-12d1" name="Ramming" hidden="false" targetId="c92a-830a-302c-d3ab" type="rule">
+          <modifiers>
+            <modifier type="append" field="name" value=" (12)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4e2e-beb0-7b7d-0f80" name="Scalpel Lancette" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3222-5eca-406b-584d" name="Scalpel Lancette" hidden="false" targetId="6244-3624-bb86-3bd6" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P/S">
+                  <conditions>
+                    <condition field="selections" scope="4e2e-beb0-7b7d-0f80" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f2af-2773-24ff-2e12" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="4e2e-beb0-7b7d-0f80" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="bda3-549a-e717-651d" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+        <infoLink id="d078-ad8b-099f-9189" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+        <infoLink id="7fe7-7cc9-d0b6-f361" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="50da-943e-5da0-6330" name="Alchemical Rockets" publicationId="7b2b-0f56-3962-5ec1" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f0c3-5fc8-b35a-5974" name="Alchemical Rockets" hidden="false" targetId="93b4-a387-d968-fcfa" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="50da-943e-5da0-6330" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="50da-943e-5da0-6330" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/S">
+                  <conditions>
+                    <condition field="selections" scope="50da-943e-5da0-6330" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="5347-4855-4421-ed77" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P">
+                  <conditions>
+                    <condition field="selections" scope="50da-943e-5da0-6330" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="4e9e-7862-58ad-15e6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="50da-943e-5da0-6330" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P/S">
+                  <conditions>
+                    <condition field="selections" scope="50da-943e-5da0-6330" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="f2af-2773-24ff-2e12" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
+                  <conditions>
+                    <condition field="selections" scope="50da-943e-5da0-6330" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="ce6f-067d-9ad4-ddaa" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P">
+                  <conditions>
+                    <condition field="selections" scope="50da-943e-5da0-6330" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="21ca-7d96-84a8-1efd" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
+        <infoLink id="60aa-3c79-a86e-d431" name="Alchemical (x)" hidden="false" targetId="b69e-5981-d88e-75de" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0a45-6502-04f1-a09d" name="Corrosive Mortar" publicationId="7b2b-0f56-3962-5ec1" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0403-4e29-9e4d-178d" name="Corrosive Mortar" hidden="false" targetId="4795-b946-6f07-1acd" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="0a45-6502-04f1-a09d" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="0a45-6502-04f1-a09d" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/S">
+                  <conditions>
+                    <condition field="selections" scope="0a45-6502-04f1-a09d" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="5347-4855-4421-ed77" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P">
+                  <conditions>
+                    <condition field="selections" scope="0a45-6502-04f1-a09d" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="4e9e-7862-58ad-15e6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="0a45-6502-04f1-a09d" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P/S">
+                  <conditions>
+                    <condition field="selections" scope="0a45-6502-04f1-a09d" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="f2af-2773-24ff-2e12" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
+                  <conditions>
+                    <condition field="selections" scope="0a45-6502-04f1-a09d" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="ce6f-067d-9ad4-ddaa" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P">
+                  <conditions>
+                    <condition field="selections" scope="0a45-6502-04f1-a09d" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="2e82-19eb-cb0c-750b" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+        <infoLink id="4fe8-2b07-2bd0-e8d5" name="Corrosive Mortar" hidden="false" targetId="2b60-4c92-5c85-3ff6" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="52b3-c089-982f-d135" name="Light Torpedo Salvo " publicationId="129d-da97-caec-1ddd" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ae7b-7762-2e65-4976" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="14f4-0d80-d33a-47f6" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="97bb-a7aa-15f3-0bfa" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+        <infoLink id="36c0-831d-df85-34ae" name="Light Torpedo Salvo" hidden="false" targetId="503b-a473-d3de-6c5f" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A">
+                  <conditions>
+                    <condition field="selections" scope="52b3-c089-982f-d135" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5888-87ac-f851-165d" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="52b3-c089-982f-d135" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="7412-10f0-fea4-463f" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+        <infoLink id="3c5b-1ab9-5240-f112" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e3d2-a74b-69dd-e97a" name="Aetheric Lance" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="44e3-cc09-f558-6610" name="Aetheric Lance" hidden="false" targetId="502c-add9-c3b2-02ab" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="e3d2-a74b-69dd-e97a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="e3d2-a74b-69dd-e97a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="e3d2-a74b-69dd-e97a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P/S">
+                  <conditions>
+                    <condition field="selections" scope="e3d2-a74b-69dd-e97a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f2af-2773-24ff-2e12" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
+                  <conditions>
+                    <condition field="selections" scope="e3d2-a74b-69dd-e97a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P">
+                  <conditions>
+                    <condition field="selections" scope="e3d2-a74b-69dd-e97a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P">
+                  <conditions>
+                    <condition field="selections" scope="e3d2-a74b-69dd-e97a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4e9e-7862-58ad-15e6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/S">
+                  <conditions>
+                    <condition field="selections" scope="e3d2-a74b-69dd-e97a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5347-4855-4421-ed77" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/A">
+                  <conditions>
+                    <condition field="selections" scope="e3d2-a74b-69dd-e97a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0cd5-1e4e-c51e-c338" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S/A">
+                  <conditions>
+                    <condition field="selections" scope="e3d2-a74b-69dd-e97a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5b70-4095-b55c-9745" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="29d6-526f-aea8-839d" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
+        <infoLink id="d630-94b0-0f8b-2250" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e247-ef54-bcc7-9e96" name="Chaska Starblade" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9128-ea5c-071d-6e71" name="Chaska Starblade" hidden="false" targetId="49a1-7c5d-5c91-abdf" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="e247-ef54-bcc7-9e96" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="761e-cce8-f1a6-d1ef" name="Arc" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
+        <infoLink id="0729-148e-5f8a-7a56" name="Ramming" hidden="false" targetId="c92a-830a-302c-d3ab" type="rule">
+          <modifiers>
+            <modifier type="append" field="name" value=" 12"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7818-c127-86ac-61b9" name="Helio Blast" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7776-4f33-3544-bff2" name="Helio Blast" hidden="false" targetId="1d96-9c8e-18af-b516" type="profile">
+          <modifiers>
+            <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+              <conditions>
+                <condition field="selections" scope="7818-c127-86ac-61b9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="98e5-7375-118f-a2c7" name="Arc" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
+        <infoLink id="52c5-6dee-91ae-0ff9" name="Blast" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
+        <infoLink id="9a4f-f119-efaa-4428" name="Bomb" hidden="false" targetId="cec9-6349-719c-e293" type="rule"/>
+        <infoLink id="a176-b1ef-a15c-89bc" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9938-990c-3af2-c9b4" name="Alchemical Cluster Bombs" publicationId="7b2b-0f56-3962-5ec1" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="79b5-e71f-d345-aad8" name="Alchemical Cluster Bombs" hidden="false" targetId="2c07-50b0-e9fb-2503" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A">
+                  <conditions>
+                    <condition field="selections" scope="9938-990c-3af2-c9b4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5888-87ac-f851-165d" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="0721-b617-e03e-67fe" name="Alchemical" hidden="false" targetId="b69e-5981-d88e-75de" type="rule"/>
+        <infoLink id="5283-05e9-d157-bebd" name="Torrent" hidden="false" targetId="8081-2eef-5594-eb78" type="rule"/>
+        <infoLink id="9253-2338-0f97-aa44" name="Bomb" hidden="false" targetId="cec9-6349-719c-e293" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e742-25bc-3d8b-2a02" name="Erlang Shen Bombard" publicationId="7b2b-0f56-3962-5ec1" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f850-71d7-267d-cfa9" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b5c9-0ffe-29ca-79ac" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="2e05-54b2-5334-e70c" name="Alchemical" hidden="false" targetId="b69e-5981-d88e-75de" type="rule"/>
+        <infoLink id="aa79-955a-f14e-505f" name="Erlang Shen Bombard" hidden="false" targetId="a64a-0a7f-1c71-1e9f" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="e742-25bc-3d8b-2a02" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="35eb-08a7-8e49-2c76" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+        <infoLink id="b144-3114-5f09-c08d" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="32c6-284d-621e-c6d0" name="Hyperbeam Lense Cannon" publicationId="7b2b-0f56-3962-5ec1" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="770c-5a45-4792-25c1" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b9db-a782-8ccf-23ef" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="a2a6-a13e-1189-4182" name="Alchemical" hidden="false" targetId="b69e-5981-d88e-75de" type="rule"/>
+        <infoLink id="43e1-a60c-f5b0-fcb8" name="Hyperbeam Lense Cannon" hidden="false" targetId="3032-2661-6403-a23d" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="32c6-284d-621e-c6d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="e945-3d03-49bc-13f1" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+        <infoLink id="7613-b5fd-1375-2f2e" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1338-330f-7070-3503" name="Magma Sear" publicationId="7b2b-0f56-3962-5ec1" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="52d5-648e-1ef8-7fee" name="Magma Sear" hidden="false" targetId="f87f-5f6b-857c-3380" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="1338-330f-7070-3503" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="3783-b06d-6d6f-f854" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+        <infoLink id="3cfe-41f3-cd01-c683" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
@@ -2435,9 +3206,17 @@
     <selectionEntry id="b1b3-476c-c588-8b57" name="Aerial Torpedo" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="e1f9-65d7-d4a9-5573" name="Aerial Torpedo" hidden="false" targetId="a0a8-dac0-e58d-85e2" type="profile">
-          <modifiers>
-            <modifier type="set" field="8739-aae9-7e50-c8d0" value="F"/>
-          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="b1b3-476c-c588-8b57" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </infoLink>
         <infoLink id="220b-a623-f8bf-b12c" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
         <infoLink id="9e2f-c072-fbd1-81e7" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
@@ -2453,20 +3232,58 @@
         <infoLink id="663a-ecba-de37-dabf" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
         <infoLink id="f72e-1c89-48fd-870a" name="High Velocity" hidden="false" targetId="5b8e-71d1-641d-73f9" type="rule"/>
         <infoLink id="fdfa-85e9-60d1-e99a" name="Aerial Torpedo Salvo" hidden="false" targetId="94ee-f59f-0606-1f35" type="profile">
-          <modifiers>
-            <modifier type="set" field="8739-aae9-7e50-c8d0" value="F"/>
-          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="e967-7018-26ea-4798" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="e967-7018-26ea-4798" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="e967-7018-26ea-4798" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P/S">
+                  <conditions>
+                    <condition field="selections" scope="e967-7018-26ea-4798" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f2af-2773-24ff-2e12" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
+                  <conditions>
+                    <condition field="selections" scope="e967-7018-26ea-4798" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ce6f-067d-9ad4-ddaa" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P">
+                  <conditions>
+                    <condition field="selections" scope="e967-7018-26ea-4798" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P">
+                  <conditions>
+                    <condition field="selections" scope="e967-7018-26ea-4798" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4e9e-7862-58ad-15e6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/S">
+                  <conditions>
+                    <condition field="selections" scope="e967-7018-26ea-4798" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5347-4855-4421-ed77" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/A">
+                  <conditions>
+                    <condition field="selections" scope="e967-7018-26ea-4798" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0cd5-1e4e-c51e-c338" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </infoLink>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="e3d2-a74b-69dd-e97a" name="Aetheric Lance" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="aeb2-f501-123f-0406" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
-        <infoLink id="d41e-e254-0d93-7510" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-        <infoLink id="775b-f015-15c1-eee1" name="Aetheric Lance" hidden="false" targetId="502c-add9-c3b2-02ab" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
@@ -2480,7 +3297,19 @@
           </modifiers>
         </infoLink>
         <infoLink id="0b04-2330-f06a-f8ab" name="Arc" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
-        <infoLink id="de1c-7b55-5c1c-789d" name="Chaska Starblade" hidden="false" targetId="fe44-922c-9570-1f96" type="profile"/>
+        <infoLink id="95a4-1025-cd8b-d962" name="Chaska Starblade" hidden="false" targetId="49a1-7c5d-5c91-abdf" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="0070-f3f0-dcf9-62b7" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
@@ -2503,7 +3332,19 @@
         <infoLink id="2522-c8dd-929a-f664" name="Arc" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
         <infoLink id="ec36-eb2f-4562-659f" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
         <infoLink id="1bfe-354b-e60c-ee0b" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-        <infoLink id="cba7-3e87-5257-1296" name="Judgement Lance" hidden="false" targetId="8fff-6855-6e17-abc7" type="profile"/>
+        <infoLink id="cba7-3e87-5257-1296" name="Judgement Lance" hidden="false" targetId="8fff-6855-6e17-abc7" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="d86c-d2c7-7964-5f8b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
@@ -2537,7 +3378,54 @@
         <infoLink id="5ac7-6b55-74b9-7b2d" name="Blast" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
         <infoLink id="677a-1125-cd39-1c3f" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
         <infoLink id="adca-5ecd-88ea-5260" name="Limited" hidden="false" targetId="3bd4-7e14-0aa2-97db" type="rule"/>
-        <infoLink id="986d-2381-acfa-2534" name="Salvo Missile Silo" hidden="false" targetId="10f4-a9d7-24c1-a973" type="profile"/>
+        <infoLink id="986d-2381-acfa-2534" name="Salvo Missile Silo" hidden="false" targetId="10f4-a9d7-24c1-a973" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="6a66-1016-ae4a-e291" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="6a66-1016-ae4a-e291" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/S">
+                  <conditions>
+                    <condition field="selections" scope="6a66-1016-ae4a-e291" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="5347-4855-4421-ed77" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P">
+                  <conditions>
+                    <condition field="selections" scope="6a66-1016-ae4a-e291" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="4e9e-7862-58ad-15e6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="6a66-1016-ae4a-e291" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P/S">
+                  <conditions>
+                    <condition field="selections" scope="6a66-1016-ae4a-e291" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="f2af-2773-24ff-2e12" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
+                  <conditions>
+                    <condition field="selections" scope="6a66-1016-ae4a-e291" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="ce6f-067d-9ad4-ddaa" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P">
+                  <conditions>
+                    <condition field="selections" scope="6a66-1016-ae4a-e291" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
@@ -2555,12 +3443,22 @@
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="0b90-2ec5-4a18-1c19" name="Particle Beamer" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f408-8e59-12b2-9315" name="Particle Beamer" hidden="false" targetId="31a4-53c0-305c-d8fb" type="profile"/>
+        <infoLink id="6a62-659b-8a90-c8c1" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
+        <infoLink id="8c2b-361d-86b1-901d" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="c475-4c4f-de22-9080" name="Aerial" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
       <description>Actions made with this Quality cannot usually be used against Initial Targets that are Submerged Units (unless the Action also has the Submerged Quality). The Initial Target may use Aerial Defences against Actions with this Quality.</description>
     </rule>
-    <rule id="b69e-5981-d88e-75de" name="Alchemical (x)" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
+    <rule id="b69e-5981-d88e-75de" name="Alchemical" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
       <description>Actions with this Quality that result in a number of Exploding Hit results equal to or greater than the Mass of the target receives a Disorder Condition, in addition to any other effects. Provided the necessary number of Explosive Hits are rolled, if the Target is Crippled or already has a Level of Disorder before this Action is resolved, then in addition to receiving a Disorder Condition it also suffers a Critical Damage roll.</description>
     </rule>
     <rule id="6d56-fa67-1d6d-022b" name="Arc" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
@@ -2575,8 +3473,8 @@
     <rule id="cb94-70c0-65b8-d3d0" name="Broadside" publicationId="7f09-e243-2307-78d0" hidden="false">
       <description>Actions with this Quality may be used multiple times in the same Activation – once in each Fire Arc specified. Furthermore, a weapon with this Quality must be the Lead weapon when Crossing the T.</description>
     </rule>
-    <rule id="2b60-4c92-5c85-3ff6" name="Corrosive Mortar (x)" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
-      <description>This weapon launches deadly glass globes of corrosive gas to shatter above their target and fall as a silent and deadly mist that melts crew and exposed systems alike. These weapons have no effect on Submerged Units. As a Valour Effect before the Action Dice for Attack are rolled, this weapon gains the Alchemical Quality.</description>
+    <rule id="2b60-4c92-5c85-3ff6" name="Corrosive Mortar" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
+      <description>These weapons have no effect on Submerged Units. As a Valour Effect before the Action Dice for Attack are rolled, this weapon gains the Alchemical Quality.</description>
     </rule>
     <rule id="d633-3476-6a40-e860" name="Devastating" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
       <description>Actions made with this Quality treat all Exploding Hit rolls on its Action Dice as three Hits rather than the usual two.</description>
@@ -2667,7 +3565,7 @@
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Sustained</characteristic>
       </characteristics>
     </profile>
-    <profile id="502c-add9-c3b2-02ab" name="Aetheric Lance" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="502c-add9-c3b2-02ab" name="Aetheric Lance" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">4(2) / 3(2)</characteristic>
@@ -2676,7 +3574,7 @@
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Sustained, Gunnery</characteristic>
       </characteristics>
     </profile>
-    <profile id="2c07-50b0-e9fb-2503" name="Alchemical Cluster Bombs" publicationId="7b2b-0f56-3962-5ec1" page="4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="2c07-50b0-e9fb-2503" name="Alchemical Cluster Bombs" publicationId="7b2b-0f56-3962-5ec1" page="" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">9(-) / 9(-)</characteristic>
@@ -2685,7 +3583,7 @@
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Torrent, Alchemical, Bomb</characteristic>
       </characteristics>
     </profile>
-    <profile id="93b4-a387-d968-fcfa" name="Alchemical Rockets" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="93b4-a387-d968-fcfa" name="Alchemical Rockets" publicationId="7b2b-0f56-3962-5ec1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">5(1) / 4(-)</characteristic>
@@ -2694,7 +3592,7 @@
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial, Alchemical</characteristic>
       </characteristics>
     </profile>
-    <profile id="3117-4b3d-b227-44f6" name="Apocalyps Cannon" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="3117-4b3d-b227-44f6" name="Apocalyps Cannon" publicationId="e265-8c7f-a4b2-a48e" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
@@ -2730,7 +3628,7 @@
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 6, Arc, Devastating</characteristic>
       </characteristics>
     </profile>
-    <profile id="ddea-5254-393b-7b2b" name="Claw Arc Projector" publicationId="33cf-b4a6-bff0-0d70" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="ddea-5254-393b-7b2b" name="Claw Arc Projector" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
@@ -2739,7 +3637,7 @@
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 10, Arc</characteristic>
       </characteristics>
     </profile>
-    <profile id="4795-b946-6f07-1acd" name="Corrosive Mortar" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="4795-b946-6f07-1acd" name="Corrosive Mortar" publicationId="7b2b-0f56-3962-5ec1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
@@ -2784,13 +3682,13 @@
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Arc</characteristic>
       </characteristics>
     </profile>
-    <profile id="a64a-0a7f-1c71-1e9f" name="Erlang Shen Bombard" publicationId="7b2b-0f56-3962-5ec1" page="4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="a64a-0a7f-1c71-1e9f" name="Erlang Shen Bombard" publicationId="7b2b-0f56-3962-5ec1" page="" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">9(5) / 6(3)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">9(5) / 6(3)</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Alchemical, Extreme Range</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Alchemical, Extreme Range,  Gunnery</characteristic>
       </characteristics>
     </profile>
     <profile id="8d78-53d3-f9f2-5294" name="Flak Broadside" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
@@ -2847,7 +3745,7 @@
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Hazardous, Devastating</characteristic>
       </characteristics>
     </profile>
-    <profile id="0b12-ea7f-69ca-8034" name="Heat Lancette" publicationId="129d-da97-caec-1ddd" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="0b12-ea7f-69ca-8034" name="Heat Lancette" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">7(4) / 5(3)</characteristic>
@@ -2865,7 +3763,7 @@
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Sustained</characteristic>
       </characteristics>
     </profile>
-    <profile id="cbdd-4c2a-6c09-f3d6" name="Heavy Alchemical Rockets" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="cbdd-4c2a-6c09-f3d6" name="Heavy Alchemical Rockets" publicationId="7b2b-0f56-3962-5ec1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">8(2) / 6(-)</characteristic>
@@ -2910,7 +3808,7 @@
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery</characteristic>
       </characteristics>
     </profile>
-    <profile id="b8bd-0237-312d-2fee" name="Heavy Huoqiang (Blade)" publicationId="7b2b-0f56-3962-5ec1" page="4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="b8bd-0237-312d-2fee" name="Heavy Huoqiang (Blade)" publicationId="7b2b-0f56-3962-5ec1" page="" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">9(4) / -</characteristic>
@@ -2919,7 +3817,7 @@
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Alchemical, Hazardous</characteristic>
       </characteristics>
     </profile>
-    <profile id="8c1e-cfa4-0886-f536" name="Heavy Huoqiang (Gout)" publicationId="7b2b-0f56-3962-5ec1" page="4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="8c1e-cfa4-0886-f536" name="Heavy Huoqiang (Gout)" publicationId="7b2b-0f56-3962-5ec1" page="" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">9(4) / 9(4)</characteristic>
@@ -3036,7 +3934,7 @@
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Arc, Sustained, Blast, Hazardous, Bomb</characteristic>
       </characteristics>
     </profile>
-    <profile id="3237-dbb9-e219-818f" name="Huoqiang (Blade)" publicationId="7b2b-0f56-3962-5ec1" page="4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="3237-dbb9-e219-818f" name="Huoqiang (Blade)" publicationId="7b2b-0f56-3962-5ec1" page="" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">7(3) / -</characteristic>
@@ -3045,7 +3943,7 @@
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Alchemical, Hazardous</characteristic>
       </characteristics>
     </profile>
-    <profile id="69d0-13df-715a-c7f3" name="Huoqiang (Gout)" publicationId="7b2b-0f56-3962-5ec1" page="4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="69d0-13df-715a-c7f3" name="Huoqiang (Gout)" publicationId="7b2b-0f56-3962-5ec1" page="" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">7(3) / 7(3)</characteristic>
@@ -3063,7 +3961,7 @@
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 6, Piercing</characteristic>
       </characteristics>
     </profile>
-    <profile id="3032-2661-6403-a23d" name="Hyperbeam Lense Cannon" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="3032-2661-6403-a23d" name="Hyperbeam Lense Cannon" publicationId="7b2b-0f56-3962-5ec1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">10(0) / -</characteristic>
@@ -3078,7 +3976,7 @@
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">5 (5) / 4 (3) </characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">5 (5) / 3 (3)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">5 (5) / 3 (3)</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Sustained, Gunnery, Hazardous</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Arc, Gunnery, Hazardous</characteristic>
       </characteristics>
     </profile>
     <profile id="f794-1ac9-2314-7928" name="Kanzler Grand Maul" publicationId="33cf-b4a6-bff0-0d70" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
@@ -3162,7 +4060,7 @@
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Rail, Gunnery, Extreme Range</characteristic>
       </characteristics>
     </profile>
-    <profile id="f87f-5f6b-857c-3380" name="Magma Sear" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="f87f-5f6b-857c-3380" name="Magma Sear" publicationId="7b2b-0f56-3962-5ec1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">7(4) / -</characteristic>
@@ -3306,7 +4204,7 @@
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Voltaic, Sustained</characteristic>
       </characteristics>
     </profile>
-    <profile id="d302-22ff-874c-7809" name="Ryoba Prow Saw" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="d302-22ff-874c-7809" name="Ryoba Prow Saw" publicationId="7b2b-0f56-3962-5ec1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
@@ -3315,7 +4213,7 @@
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 12, Devastating</characteristic>
       </characteristics>
     </profile>
-    <profile id="6244-3624-bb86-3bd6" name="Scalpel Lancette" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="6244-3624-bb86-3bd6" name="Scalpel Lancette" publicationId="7b2b-0f56-3962-5ec1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">7(4) / 5(3)</characteristic>
@@ -3324,7 +4222,7 @@
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Hazardous, Devastating</characteristic>
       </characteristics>
     </profile>
-    <profile id="2bdd-d4bc-b3ec-2210" name="Scything Blades" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="2bdd-d4bc-b3ec-2210" name="Scything Blades" publicationId="7b2b-0f56-3962-5ec1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
@@ -3591,7 +4489,52 @@
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Arc, Sustained, Gunnery, Hazardous</characteristic>
       </characteristics>
     </profile>
-    <profile id="fe44-922c-9570-1f96" name="Chaska Starblade" publicationId="d854-a2d6-3d52-44c4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="ecc9-5ea1-cc7f-aee6" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0"/>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834"/>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5"/>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a"/>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf"/>
+      </characteristics>
+    </profile>
+    <profile id="49ca-bca5-9ebc-718c" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0"/>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834"/>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5"/>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a"/>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf"/>
+      </characteristics>
+    </profile>
+    <profile id="9364-2b22-99ec-5c55" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0"/>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834"/>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5"/>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a"/>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf"/>
+      </characteristics>
+    </profile>
+    <profile id="f2ed-b37c-7f10-c862" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0"/>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834"/>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5"/>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a"/>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf"/>
+      </characteristics>
+    </profile>
+    <profile id="7ffc-10f4-d838-4d4c" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0"/>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834"/>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5"/>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a"/>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf"/>
+      </characteristics>
+    </profile>
+    <profile id="49a1-7c5d-5c91-abdf" name="Chaska Starblade" publicationId="d854-a2d6-3d52-44c4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>

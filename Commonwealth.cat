@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6719-1f83-56dd-91fe" name="Commonwealth v3.02" revision="9" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6719-1f83-56dd-91fe" name="Commonwealth v3.02" revision="9" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Review 1.02.01: correct Rurik and Oleg unit max size
 Review 1.03.00: add new unit and new profile from ORBAT 1.03, fixed Battlefleet bonus managment
 Review 1.04.a0: review after the v1.04a
@@ -5036,7 +5036,11 @@ Review 3.02.01: minor bug fix</readme>
         <categoryLink id="73a2-86e6-7056-0905" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="5558-235f-dddc-013e" name="Torpedo Salvo " hidden="false" collective="false" import="true" targetId="8ef1-9bd8-9674-29cd" type="selectionEntry"/>
+        <entryLink id="5558-235f-dddc-013e" name="Torpedo Salvo " hidden="false" collective="false" import="true" targetId="8ef1-9bd8-9674-29cd" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="30.0"/>
@@ -7159,7 +7163,7 @@ Review 3.02.01: minor bug fix</readme>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6138-cf43-a15b-77f2" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="440f-8501-a5f3-3b86" name="Heavy Shock Rocket Battery" hidden="false" collective="false" import="true" targetId="41d6-3e83-ddab-f4f1" type="selectionEntry">
+            <entryLink id="440f-8501-a5f3-3b86" name="Heavy Rocket Battery" hidden="false" collective="false" import="true" targetId="65b3-d9a8-e0a3-a028" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
               </modifiers>
@@ -8737,8 +8741,8 @@ Review 3.02.01: minor bug fix</readme>
     <rule id="ad15-2a18-161b-7a44" name="Azhdaya Berserkers" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <description>Assaults by this Unit have the Hazardous and Devastating qualities.</description>
     </rule>
-    <rule id="39a7-cb6c-ff50-20f1" name="Radar Relay" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
-      <description>Attacks against Enemy Models within 10” of this Model ignore the Obscured rule.</description>
+    <rule id="b195-faa8-ae64-9494" name="Black Wolf Mercenaries" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+      <description>Models in this Unit may re-roll Blank dice results in any Action Dice Pool. The Black Wolf Mercenaries Rule only applies during each Round where the Force this Unit is part of had more Victory Points than their opponents at the most recent Check for Victory Step.</description>
     </rule>
     <rule id="6810-cad9-66bc-bada" name="Terror From Above" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <description>This Unit may Ram Ground Units and Surface Units, even if it moved less than 3” in the Movement Phase. This Unit adds +3 to its Ramming Dice Pool when making a Ram against Ground Units and Surface Units.</description>

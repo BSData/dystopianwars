@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4724-2577-5b2d-0bfe" name="Crown v3.02" revision="3" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4724-2577-5b2d-0bfe" name="Crown v3.02" revision="4" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Review 1.02.a0: Initial release
 Review 1.02.a1: minor point correction
-Review 3.02.00: update to ORBAT 3.02a</readme>
+Review 3.02.00: update to ORBAT 3.02a
+Review 4 - Minor corrections and updates
+</readme>
   <categoryEntries>
     <categoryEntry id="6427-c580-219d-c874" name="Britannia Class" publicationId="dbca-8d57-b848-457e" hidden="false"/>
     <categoryEntry id="ddb5-f0d6-665c-3ac4" name="Protecteur Class" publicationId="dbca-8d57-b848-457e" hidden="false"/>
@@ -54,7 +56,7 @@ Review 3.02.00: update to ORBAT 3.02a</readme>
     <categoryEntry id="d384-c76d-f387-5327" name="Adventurer Class" publicationId="dbca-8d57-b848-457e" hidden="false"/>
   </categoryEntries>
   <forceEntries>
-    <forceEntry id="012e-2bdb-8192-e8ca" name="Crown Factoin Battlefleet" publicationId="dbca-8d57-b848-457e" hidden="false">
+    <forceEntry id="012e-2bdb-8192-e8ca" name="Crown Faction Battlefleet" publicationId="dbca-8d57-b848-457e" hidden="false">
       <infoLinks>
         <infoLink id="488c-76d6-d2e1-7d46" name="Strategic Reserve" hidden="false" targetId="3f21-1511-2bff-8d3b" type="rule">
           <modifiers>
@@ -3624,6 +3626,9 @@ Review 3.02.00: update to ORBAT 3.02a</readme>
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="851a-25eb-89ca-bb90" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="26a3-cf78-63bd-dd6b" type="selectionEntry">
                   <modifiers>
@@ -4025,6 +4030,11 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c037-6206-20d6-7e20" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="5c69-2f8a-d246-8cb0" name="No. 1 Squadron" hidden="false" collective="false" import="true" targetId="20a2-2b29-a51e-0077" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae65-332b-6442-2a60" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="135.0"/>
@@ -4040,7 +4050,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <infoLink id="c309-ebad-cda4-8996" name="Ablative Prow Armour" hidden="false" targetId="2823-33a9-a62b-e29a" type="rule"/>
         <infoLink id="5a2d-e87e-ad62-21bb" name="Loyal She Began; Thus She Remains" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
         <infoLink id="1ca2-ce81-384d-cfd5" name="Lionhearted Crew" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="c2f3-efa5-4b0a-4d0d" name="McCurdy Shield Projector�" hidden="false" targetId="4e80-1d7c-8f72-bb13" type="rule"/>
+        <infoLink id="c2f3-efa5-4b0a-4d0d" name="McCurdy Shield Projector" hidden="false" targetId="4e80-1d7c-8f72-bb13" type="rule"/>
         <infoLink id="86c2-fe2d-75ba-a39f" name="Royal Engineers" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -5390,7 +5400,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d88-40cb-fafb-b639" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="90ea-8331-9122-583d" name="Heavy Rocket Battery" hidden="false" collective="false" import="true" targetId="65b3-d9a8-e0a3-a028" type="selectionEntry">
+                <entryLink id="90ea-8331-9122-583d" name="Heavy Gun Battery" hidden="false" collective="false" import="true" targetId="90c9-59e3-935f-7a20" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="0cd5-1e4e-c51e-c338"/>
                   </modifiers>
@@ -5403,7 +5413,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66be-619c-25ab-a7e1" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="91ab-bcb5-1c9f-e31c" name="Heavy Rocket Battery" hidden="false" collective="false" import="true" targetId="65b3-d9a8-e0a3-a028" type="selectionEntry">
+                <entryLink id="91ab-bcb5-1c9f-e31c" name="Heavy Gun Battery" hidden="false" collective="false" import="true" targetId="90c9-59e3-935f-7a20" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="5b70-4095-b55c-9745"/>
                   </modifiers>
@@ -5416,7 +5426,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c214-0d93-22fc-d357" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="cc79-17a8-51d0-9f52" name="Heavy Rocket Battery" hidden="false" collective="false" import="true" targetId="65b3-d9a8-e0a3-a028" type="selectionEntry">
+                <entryLink id="cc79-17a8-51d0-9f52" name="Heavy Gun Battery" hidden="false" collective="false" import="true" targetId="90c9-59e3-935f-7a20" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -5931,7 +5941,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="049b-06fb-2490-e012" type="min"/>
-        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e1a-29ea-f73d-e074" type="max"/>
+        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e1a-29ea-f73d-e074" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="e7e7-69a7-b302-836e" name="Saxon" hidden="false" targetId="49c8-8dab-53f7-a13d" type="profile"/>
@@ -5963,7 +5973,10 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a4a3-6175-71ad-0c87" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="4366-0ed0-7ece-9968" name="Light Broadside" hidden="false" collective="false" import="true" targetId="fc11-e98a-2d7f-198c" type="selectionEntry">
+        <entryLink id="4366-0ed0-7ece-9968" name="Light Torpedo Salvo" hidden="false" collective="false" import="true" targetId="8fa6-3693-fb5d-0ad3" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="58b2-8809-e98a-94ad" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ceb1-7e7a-ef8e-0ced" type="max"/>
@@ -6023,6 +6036,13 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
           </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup id="7823-e9f5-4862-0d4e" name="Front" hidden="false" collective="false" import="true" defaultSelectionEntryId="7793-9935-86ca-a89a">
+              <modifiers>
+                <modifier type="set" field="abc6-5b08-8272-db21" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25b9-7f26-cbd9-e68f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abc6-5b08-8272-db21" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a84-dedd-c6e3-0d3f" type="max"/>
@@ -6049,6 +6069,13 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="29f7-3da7-ca04-cb0d" name="Rear" hidden="false" collective="false" import="true" defaultSelectionEntryId="900e-5ce7-5cae-344d">
+              <modifiers>
+                <modifier type="set" field="0014-fd03-c832-f978" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25b9-7f26-cbd9-e68f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0014-fd03-c832-f978" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="799b-19bd-8ef8-c64e" type="max"/>
@@ -6077,6 +6104,68 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup id="0da1-46a4-fb86-eb95" name="Generator" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="97ec-2b61-f9d3-16d8" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="7c1f-cbd5-2d8e-362c" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink id="11eb-8123-a7be-a380" name="Atomic generator" hidden="false" collective="false" import="true" targetId="eef0-442d-aa6f-b314" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5ba5-8064-624d-73f7" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="c3dd-72e5-70c7-84e2" name="Fury generator" hidden="false" collective="false" import="true" targetId="069a-8c90-088f-816d" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="696e-36f0-cb85-0927" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="1ec6-41e4-d100-fe0f" name="Magnetic generator" hidden="false" collective="false" import="true" targetId="77af-dd4b-51e7-c620" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="acb6-b6b3-4d43-ce80" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="68c4-60a8-4f49-5509" name="Guardian generator" hidden="false" collective="false" import="true" targetId="094a-09c2-c40f-72c2" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="8901-cc02-f55e-2ee5"/>
+                    <modifier type="append" field="name" value=" (2)"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ba6f-94f2-a16d-e59d" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="feae-acb8-9353-a820" name="Shroud generator" hidden="false" collective="false" import="true" targetId="1543-05e3-58ac-6e6d" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1533-b160-432c-42c8" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="4c14-c3a6-77ed-1f8e" name="Trident generator" hidden="false" collective="false" import="true" targetId="4f9f-bf12-daca-15ed" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dcac-4002-c89c-d017" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>																														   
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -6097,6 +6186,15 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b8e7-84f4-8088-71fc" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="09f7-9ac6-3ea6-9433" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b838-191c-732d-6463" name="Guardian generator" hidden="false" collective="false" import="true" targetId="094a-09c2-c40f-72c2" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="0c85-39c7-9145-efeb"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0acb-b4c4-ecf2-3761" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="28ae-4f36-f7c6-a99d" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -6170,7 +6268,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="28.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="30.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="27d9-943b-1840-698b" name="Ross" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
@@ -6208,7 +6306,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8d52-9bda-f079-d8b6" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="726e-4734-7faf-440f" name="Heavy Shock Rocket Battery" hidden="false" collective="false" import="true" targetId="41d6-3e83-ddab-f4f1" type="selectionEntry">
+            <entryLink id="726e-4734-7faf-440f" name="Heavy Rocket Battery" hidden="false" collective="false" import="true" targetId="65b3-d9a8-e0a3-a028" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
               </modifiers>
@@ -6485,11 +6583,15 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             <entryLink id="2708-5652-dd4c-b49d" name="Guardian generator" hidden="false" collective="false" import="true" targetId="094a-09c2-c40f-72c2" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="8901-cc02-f55e-2ee5"/>
+                <modifier type="append" field="name" value=" (2)"/>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="78c7-b739-9c2e-cd9e" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="87e8-0afd-0146-db72" type="min"/>
               </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="25.0"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -6549,7 +6651,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ba43-1a45-c705-e8f8" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -6568,7 +6670,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a628-017b-9fda-bbd4" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="1800-6357-b655-2015" name="Gun Battery" hidden="false" collective="false" import="true" targetId="e32f-eb1d-5c03-b61c" type="selectionEntry">
@@ -7129,7 +7231,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="2874-0362-32de-94e9" name="Heavy Rocket Battery" hidden="false" collective="false" import="true" targetId="65b3-d9a8-e0a3-a028" type="selectionEntry">
+        <entryLink id="2874-0362-32de-94e9" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
           </modifiers>
@@ -7138,7 +7240,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b4c3-73fc-c899-0c4a" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="9f5f-4a88-4fc5-a1c3" name="Heavy Rocket Battery" hidden="false" collective="false" import="true" targetId="65b3-d9a8-e0a3-a028" type="selectionEntry">
+        <entryLink id="9f5f-4a88-4fc5-a1c3" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
           </modifiers>
@@ -7147,7 +7249,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0428-6f89-8f43-10cc" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="4177-c4a8-ef35-d722" name="Heavy Rocket Battery" hidden="false" collective="false" import="true" targetId="65b3-d9a8-e0a3-a028" type="selectionEntry">
+        <entryLink id="4177-c4a8-ef35-d722" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
           </modifiers>
@@ -7175,6 +7277,15 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="51f0-2e36-dd05-a141" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bc5f-0fe9-d444-214a" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4e27-c66e-ec15-24c6" name="Guardian generator" hidden="false" collective="false" import="true" targetId="094a-09c2-c40f-72c2" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="179a-4bc3-c4d4-b5d5"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="76b2-5e25-693e-188c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1e2f-b3ce-e41d-865b" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -7352,6 +7463,17 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="330.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8fa6-3693-fb5d-0ad3" name="Light Torpedo Salvo" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b6f1-ff95-43bf-b9ae" name="Light Torpedo Salvo" hidden="false" targetId="8bb5-1eb1-841c-a0ba" type="profile"/>
+        <infoLink id="fc66-0688-b2e7-615b" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+        <infoLink id="a6e8-403b-8ebf-f4a7" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+        <infoLink id="9b26-c820-2dcc-64ff" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -7858,7 +7980,7 @@ Action Die. On an Exploding Hit, do not discard the Victory &amp; Valour card an
       <characteristics>
         <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">2/2</characteristic>
         <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">8/6</characteristic>
-        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">4/4</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">5/4</characteristic>
         <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">6/6</characteristic>
         <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">11/10</characteristic>
         <characteristic name="ADV" typeId="6428-9828-bb2e-f923">1/0</characteristic>
@@ -7930,6 +8052,15 @@ Action Die. On an Exploding Hit, do not discard the Victory &amp; Valour card an
         <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">6/4</characteristic>
         <characteristic name="Fray" typeId="4c54-804a-8993-7325">14/14</characteristic>
         <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">10/5</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8bb5-1eb1-841c-a0ba" name="Light Torpedo Salvo" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">5(1) / 3(-)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">5(2) / 4(1)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">5(2) / 4(1)</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Submerged, Torpedo, Extreme Range </characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

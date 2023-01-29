@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="aab7-88e9-70f7-d7f1" name="Alliance v3.01" revision="5" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="aab7-88e9-70f7-d7f1" name="Alliance v3.01" revision="5" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Datafile history:
 0.03.00: Initial publication
 0.04.00: updated to the the ORBAT v0.04
@@ -7878,7 +7878,7 @@
                   </constraints>
                   <infoLinks>
                     <infoLink id="d336-dc53-0ece-2da3" name="Repulsion generator" hidden="false" targetId="260e-2d03-fa1e-8137" type="profile"/>
-                    <infoLink id="93d2-8c7f-a89c-8962" name="Repulsion generator" hidden="false" targetId="a0e5-ec45-cca4-873f" type="rule"/>
+                    <infoLink id="93d2-8c7f-a89c-8962" name="Repulsion field generator" hidden="false" targetId="67a0-4bf1-a4e1-f28e" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink id="b00d-775d-4a4a-1ffe" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
@@ -8546,7 +8546,7 @@
                   </constraints>
                   <infoLinks>
                     <infoLink id="1bbf-7815-0d1d-b736" name="Repulsion generator" hidden="false" targetId="260e-2d03-fa1e-8137" type="profile"/>
-                    <infoLink id="12cd-6134-2af1-8f0f" name="Repulsion generator" hidden="false" targetId="a0e5-ec45-cca4-873f" type="rule"/>
+                    <infoLink id="12cd-6134-2af1-8f0f" name="Repulsion field generator" hidden="false" targetId="67a0-4bf1-a4e1-f28e" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink id="881f-600b-46ce-cade" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
@@ -10001,6 +10001,13 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <sharedRules>
+    <rule id="0b78-1d53-06c0-1b42" name="Levant Surge" publicationId="129d-da97-caec-1ddd" hidden="false">
+      <description>In the Special Operations phase of the round, while battle Ready, this Unit may make a Levant Surge. For the remainder of that Round, the Unit gains +3 Movement, ceases to be a Skimming Unit and instead becomes an Aerial Unit. A Unit cannot make a Levant Surge if it has already done so the previous Round or if it is part of an Attached Unit where not all Models have this rule.</description>
+    </rule>
+	
+
+  </sharedRules>
   <catalogueLinks>
     <catalogueLink id="fa0c-fc52-b3a9-22ed" name="Weapon" targetId="526f-06e7-edaa-02b8" type="catalogue" importRootEntries="false"/>
     <catalogueLink id="12ea-9837-1300-d825" name="Generator" targetId="f69c-988c-fae3-e664" type="catalogue" importRootEntries="true"/>

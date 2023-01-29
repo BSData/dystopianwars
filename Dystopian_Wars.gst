@@ -214,6 +214,8 @@ Revision 3.03.01: new feature to support 3.02 Orbat</readme>
     <categoryEntry id="f8c2-eefd-3524-05b6" name="Line Cruiser" hidden="false"/>
     <categoryEntry id="a661-d022-c356-7c95" name="Scout Carrier" hidden="false"/>
     <categoryEntry id="377b-ffa4-659c-cfd8" name="Fast Frigate" hidden="false"/>
+    <categoryEntry id="017e-f634-2e6c-1025" name="Super Battleship" publicationId="7b2b-0f56-3962-5ec1" hidden="false"/>
+    <categoryEntry id="0f58-45f9-3a8c-9466" name="Strike Battleship" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="44e8-1fde-db6e-20f6" name="Battlefleet (generic don&apos;t use)" publicationId="7f09-e243-2307-78d0" hidden="true">
