@@ -553,7 +553,7 @@
     </forceEntry>
     <forceEntry id="dc04-f1b1-2ccb-1b26" name="Teutonic Colossus Battlefleet" hidden="false">
       <infoLinks>
-        <infoLink id="65c2-5288-d7d7-e876" name="Elite Crew (Fleet Bonus)" hidden="false" targetId="a977-b7c2-5832-0a56" type="rule"/>
+        <infoLink id="65c2-5288-d7d7-e876" name="Command Override" hidden="false" targetId="78c8-6a85-daa7-3625" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9110-5db3-6118-46c5" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="false">
@@ -908,10 +908,11 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc04-f1b1-2ccb-1b26" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b917-d93e-967e-dbfa" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b4c4-9dc7-5b76-b6c7" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="be40-ff53-14f5-05b4" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d554-191b-783b-f2c9" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc04-f1b1-2ccb-1b26" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -9057,6 +9058,34 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e9f-c603-b802-08a5" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64d9-033c-b696-2e78" type="max"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry id="8931-0db6-34b1-815d" name="Heavy Volt Batteries" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="4b19-174f-5ea1-be48" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="true" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d618-8bbf-6400-8bfd" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9f0f-ff7e-6f06-1700" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="be1a-05e3-9296-0623" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="0910-145c-ebb7-5062" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="true" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7976-395e-30b6-5383" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a7fe-1ccc-a952-ae89" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="13.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <entryLinks>
             <entryLink id="3ccb-1407-6a24-6dc4" name="Sturmbringer" hidden="false" collective="false" import="true" targetId="9cb1-0419-cc9a-e3ec" type="selectionEntry">
               <modifiers>
@@ -9066,29 +9095,18 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c785-b4f6-757f-c947" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="305a-78ba-fe23-f328" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="true" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry">
-              <modifiers>
-                <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="238b-f3d1-07b8-a0ac" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="13.0"/>
-              </costs>
-            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="5023-be12-1d66-ba2f" name="Secondary Weapon" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9587-c26f-66c0-80bf" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff08-e4cf-330f-32d2" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9587-c26f-66c0-80bf" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ff08-e4cf-330f-32d2" type="max"/>
           </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup id="3a8e-c225-b746-c65c" name="Port" hidden="false" collective="false" import="true" defaultSelectionEntryId="2cb8-bdc1-3f7a-70fc">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c10-5e49-f64e-5917" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc53-be01-2ca4-82de" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2c10-5e49-f64e-5917" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fc53-be01-2ca4-82de" type="max"/>
               </constraints>
               <entryLinks>
                 <entryLink id="10f2-4e5a-becd-defb" name="Volt Gun Battery" hidden="false" collective="false" import="true" targetId="9128-f707-ac48-b896" type="selectionEntry">
@@ -9098,9 +9116,6 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0337-f4e5-43ed-139d" type="max"/>
                   </constraints>
-                  <costs>
-                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="13.0"/>
-                  </costs>
                 </entryLink>
                 <entryLink id="2cb8-bdc1-3f7a-70fc" name="Sturmklaue" hidden="false" collective="false" import="true" targetId="889a-f14e-74ef-b45e" type="selectionEntry">
                   <modifiers>
@@ -9114,8 +9129,8 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             </selectionEntryGroup>
             <selectionEntryGroup id="b13e-bef3-f536-340f" name="Starboard" hidden="false" collective="false" import="true" defaultSelectionEntryId="8e43-3f3c-118d-049f">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9667-5db7-a7d3-dc1f" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba44-28d0-9144-b3a3" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9667-5db7-a7d3-dc1f" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ba44-28d0-9144-b3a3" type="max"/>
               </constraints>
               <entryLinks>
                 <entryLink id="fd0a-5b18-e6c7-6f79" name="Volt Gun Battery" hidden="false" collective="false" import="true" targetId="9128-f707-ac48-b896" type="selectionEntry">
@@ -9125,9 +9140,6 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0837-2dfb-e578-0991" type="max"/>
                   </constraints>
-                  <costs>
-                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="13.0"/>
-                  </costs>
                 </entryLink>
                 <entryLink id="8e43-3f3c-118d-049f" name="Sturmklaue" hidden="false" collective="false" import="true" targetId="889a-f14e-74ef-b45e" type="selectionEntry">
                   <modifiers>
@@ -10975,7 +10987,6 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
     <rule id="e39f-1547-89f1-8481" name="Lightning Raid" publicationId="33cf-b4a6-bff0-0d70" hidden="false">
       <description>At the start of the first Round, provided at least one Battlefleet has this rule, the Imperium player creates a stack of Blitzen Bomber SRS Tokens in what is called a Lightning Raid. This stack consists of a Blitzen Bomber SRS Token for each Battlefleet in their Force with this rule. This stack is placed on the ship card of a friendly Flagship of the players choice and may be used in the Operations Step of the First Round when they are stacked in Base Contact with one or more Enemy Models anywhere in the Play Area. Blitzen Bombers are SRS Tokens but contribute 5 Action Dice to Attack Runs. They can be combined with other friendly SRS Tokens in Attack Runs. A Blitzen  Bomber SRS Token is removed for every two successes in Interception, but they can only be Intercepted once all other Friendly SRS Tokens have been Intercepted. Any Attack Run that has the majority of the Tokens as Blitzen Bombers has the Sustained, Bomb and Voltaic Qualities. If the number of Blitzen Bomber SRS Tokens in the Attack Run is greater than the Mass of the Attack Run Target, the Action Dice Pool gains the Devastating Quality. Blitzen Bombers cannot make Attack Runs on Aerial Units and must try to find New Targets in this situation (page 26 of the Rules). Up to six additional Blitzen Bomber SRS Tokens may be added to this Lightning Raid stack for +20pts per token. The stack may be split, but the Tokens may only be used in an Attack Run.</description>
     </rule>
-
   </sharedRules>
   <sharedProfiles>
     <profile id="67bb-81ef-c745-c513" name="Elector" publicationId="33cf-b4a6-bff0-0d70" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">

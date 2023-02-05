@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="526f-06e7-edaa-02b8" name="Weapon" revision="4" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="526f-06e7-edaa-02b8" name="Weapon" revision="5" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>1.00 Datafile for all weapon profile of the game
 1.01 New weapon from Sultanate and Commonwealth
 1.02 New weapon from 3.02 ORGAT
@@ -8,7 +8,8 @@
 Review v1: starting document
 Review v2: imprevment to follow ORBAT requirments
 Review v3: new weapon stats and new weapon selection method
-Review v4: Closing the weapon management for the Sultanate</readme>
+Review v4: Closing the weapon management for the Sultanate
+Review v5: new weapon and profile for Orbat 3.03</readme>
   <categoryEntries>
     <categoryEntry id="dbb4-72d5-bceb-70b3" name="F" hidden="false"/>
     <categoryEntry id="372f-19f1-09ed-e694" name="P&amp;S" hidden="false"/>
@@ -57,7 +58,7 @@ Review v4: Closing the weapon management for the Sultanate</readme>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4a24-b555-4fec-a327" name="Rolling Broadside - (P &amp; S)" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="4a24-b555-4fec-a327" name="Rolling Broadside" hidden="false" collective="true" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c015-81ca-48ae-29ee" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="488d-7ef9-9e8f-6cf4" type="max"/>
@@ -65,9 +66,17 @@ Review v4: Closing the weapon management for the Sultanate</readme>
       <infoLinks>
         <infoLink id="8347-e77f-51d5-3c2f" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
         <infoLink id="e662-233c-dd49-3707" name="Rolling Broadside" hidden="false" targetId="44f4-ffed-a929-066f" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (P &amp; S)"/>
-          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="P &amp; S">
+                  <conditions>
+                    <condition field="selections" scope="4a24-b555-4fec-a327" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="372f-19f1-09ed-e694" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </infoLink>
         <infoLink id="807a-e784-dca3-b68d" name="Fusillade" hidden="false" targetId="4ec1-3aa3-001e-f8f6" type="rule"/>
         <infoLink id="18c0-fae1-3a39-20f1" name="Broadside" hidden="false" targetId="cb94-70c0-65b8-d3d0" type="rule"/>
@@ -76,7 +85,7 @@ Review v4: Closing the weapon management for the Sultanate</readme>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9ba0-93e0-a43a-742d" name="Heavy Rolling Broadside - (P &amp; S)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9ba0-93e0-a43a-742d" name="Heavy Rolling Broadside" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea0b-0ba7-5624-4712" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc1b-5e00-4b64-f9d7" type="max"/>
@@ -84,9 +93,22 @@ Review v4: Closing the weapon management for the Sultanate</readme>
       <infoLinks>
         <infoLink id="8359-dbca-824c-5b65" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
         <infoLink id="8809-94e9-13bd-c4bf" name="Heavy Rolling Broadside" hidden="false" targetId="4225-a11d-075e-8699" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (P &amp; S)"/>
-          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="P &amp; S">
+                  <conditions>
+                    <condition field="selections" scope="9ba0-93e0-a43a-742d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="372f-19f1-09ed-e694" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F &amp; A">
+                  <conditions>
+                    <condition field="selections" scope="9ba0-93e0-a43a-742d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="afe0-b5a3-3eac-004f" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </infoLink>
         <infoLink id="9c63-5d75-90a6-f8d1" name="Fusillade" hidden="false" targetId="4ec1-3aa3-001e-f8f6" type="rule"/>
         <infoLink id="f6c7-c860-ce9c-2ee1" name="Broadside" hidden="false" targetId="cb94-70c0-65b8-d3d0" type="rule"/>
@@ -194,34 +216,6 @@ Review v4: Closing the weapon management for the Sultanate</readme>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a749-c1da-9408-40a4" name="Gun Battery - (F/P/S)" hidden="false" collective="true" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="6eae-a221-d1f1-4131" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (F/P/S)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="2e4c-732b-782a-fbad" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="317a-a388-4c7a-9eb6" name="Heat Lancette - (F/P/S)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="87a5-97c5-c7e0-0279" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-        <infoLink id="0ac8-198d-0919-435f" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (F/P/S)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="e491-75c6-18a0-8288" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-        <infoLink id="60cb-81ec-2ee2-8c80" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="25cc-75d9-d265-c79a" name="Rocket Battery - (F/P/S)" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="d542-1cc6-4e3f-67cb" name="Rocket Battery" hidden="false" targetId="90e8-0288-ed1a-f4fb" type="profile">
@@ -250,46 +244,7 @@ Review v4: Closing the weapon management for the Sultanate</readme>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6cf8-2505-7862-41da" name="Gun Battery - (A/P/S)" hidden="false" collective="true" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="0f79-f9ca-693e-9a01" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (A/P/S)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="a54d-75ae-401f-3e9f" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="f7ca-f2a9-12dd-8bfc" name="Gun Battery - (F/P/A)" hidden="false" collective="true" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="061a-ebf1-c34f-6a94" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (F/P/A)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="d891-f62b-ead3-3f17" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="12ad-5274-2454-4fe4" name="Gun Battery - (F/S/A)" hidden="false" collective="true" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="6081-2fcd-5155-ae61" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (F/S/A)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="d4cd-ecd0-ee23-6109" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="5f5e-c46a-c3bb-2a3b" name="Picket Broadside - (P &amp; S)" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="5f5e-c46a-c3bb-2a3b" name="Picket Broadside" hidden="false" collective="true" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99f7-1cd1-7761-0ba8" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f1d-a816-7e8b-08b9" type="max"/>
@@ -297,51 +252,20 @@ Review v4: Closing the weapon management for the Sultanate</readme>
       <infoLinks>
         <infoLink id="61e0-1d59-d2b1-a1cc" name="Broadside" hidden="false" targetId="cb94-70c0-65b8-d3d0" type="rule"/>
         <infoLink id="9c6a-2119-0403-cd63" name="Picket Broadside" hidden="false" targetId="073b-25ec-7eb9-b4c4" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (P &amp; S)"/>
-          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="P &amp; S">
+                  <conditions>
+                    <condition field="selections" scope="5f5e-c46a-c3bb-2a3b" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="372f-19f1-09ed-e694" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </infoLink>
         <infoLink id="28c0-7dda-80bf-2dbf" name="Fusillade" hidden="false" targetId="4ec1-3aa3-001e-f8f6" type="rule"/>
         <infoLink id="21c8-4250-67fa-4c94" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="0eee-ca53-2934-d576" name="Heavy Gun Battery - (F/S)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="70b6-66fa-5f4f-2495" name="Heavy Gun Battery" hidden="false" targetId="4307-eab2-99cf-555e" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (F/S)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="0d6d-d6dc-c563-2bcf" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="7b39-f11a-eb51-5ae7" name="Heavy Rocket Battery - (F/P/S)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="6346-d310-6945-438d" name="Heavy Rocket Battery" hidden="false" targetId="5aa0-82a6-e6bc-6950" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (F/P/S)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="7a6c-e9d8-69b1-dc0f" name="Aereal" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="c880-cb15-0b9b-3a34" name="Heavy Rocket Battery - (A/P/S)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="5c3e-cc57-9351-39e6" name="Heavy Rocket Battery" hidden="false" targetId="5aa0-82a6-e6bc-6950" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (F/P/S)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="61a1-95c9-0b50-bf4c" name="Aereal" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
@@ -363,93 +287,24 @@ Review v4: Closing the weapon management for the Sultanate</readme>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7236-7e18-7fb9-3b6d" name="Thermal Cluster Bombs - (A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="true" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9595-7153-7988-b526" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2079-f949-9b63-e1f7" type="max"/>
-      </constraints>
+    <selectionEntry id="7236-7e18-7fb9-3b6d" name="Thermal Cluster Bombs" publicationId="129d-da97-caec-1ddd" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="3dbf-8f7c-c5b8-b4ef" name="Thermal Cluster Bombs" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="e841-5659-f2a1-b540" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (A)"/>
-          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A">
+                  <conditions>
+                    <condition field="selections" scope="7236-7e18-7fb9-3b6d" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="5888-87ac-f851-165d" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </infoLink>
         <infoLink id="dd14-2dd4-4d5d-21bb" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
         <infoLink id="6545-6ae8-1d5d-b1d5" name="Bomb" hidden="false" targetId="cec9-6349-719c-e293" type="rule"/>
         <infoLink id="b3d4-ba9f-f8f2-9a9c" name="Torrent" hidden="false" targetId="8081-2eef-5594-eb78" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="2695-48fc-bd25-fc31" name="Heat Lance - (F/P/S)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="07e9-42bb-62f8-8032" name="Heat Lance" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="f2e9-4fb6-4089-1574" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (F/P/S)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="cfd3-b88d-6a9f-9370" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-        <infoLink id="b329-7465-226b-1c0f" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-        <infoLink id="b70f-bf8b-2336-4b21" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="94c5-76a1-d328-1b4f" name="Heavy Magnetic Bombard - (F/P/S)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="044f-a8c5-c0a3-bde3" name="Heavy Magnetic Bombard" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9bb9-6b13-3626-ae41" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (F/P/S)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="d622-11ad-960c-40b9" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-        <infoLink id="8d7b-1dce-c239-794e" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
-        <infoLink id="77a3-8a91-e0d6-ebf7" name="Magnetic" hidden="false" targetId="8c21-7eac-4f35-4268" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="9fa7-a0ad-b054-ace3" name="Heavy Magnetic Bombard - (A/P/S)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="11e5-9ef6-e218-a7fc" name="Heavy Magnetic Bombard" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9bb9-6b13-3626-ae41" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (A/P/S)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="37e6-5b2a-f76b-41b1" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-        <infoLink id="62d8-9973-47f0-5920" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
-        <infoLink id="71cf-c48e-e5ec-3b18" name="Magnetic" hidden="false" targetId="8c21-7eac-4f35-4268" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="1b5a-4c91-9f45-15bf" name="Heat Lance - (A/P/S)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="b893-3388-2a99-7c2b" name="Heat Lance" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="f2e9-4fb6-4089-1574" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (A/P/S)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="beab-5dd3-dc01-2091" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-        <infoLink id="1b1c-72ba-5f8e-0860" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-        <infoLink id="eae8-47cd-ae53-a10c" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="0e51-7a8e-2043-9b54" name="Heavy Gun Battery - (A/P/S)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="b4ca-7693-677e-b71f" name="Heavy Gun Battery" hidden="false" targetId="4307-eab2-99cf-555e" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (A/P/S)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="78d6-5e49-d333-708a" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
@@ -470,79 +325,65 @@ Review v4: Closing the weapon management for the Sultanate</readme>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5a6f-77c6-0c0a-522f" name="Heat Lancette - (A/P/S)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="cc6e-3e11-69eb-e397" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-        <infoLink id="b021-e0d3-8dc6-4228" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (A/P/S)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="4b25-623e-3936-f41b" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-        <infoLink id="6f9b-e6e2-902a-26d0" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="917e-878f-3ffe-1c1f" name="Heavy Gun Battery - (F/P)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="1321-80f4-18ff-e507" name="Heavy Gun Battery" hidden="false" targetId="4307-eab2-99cf-555e" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (F/P)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="e694-ff36-0d13-502d" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="1d02-91b8-9031-38ec" name="Heavy Gun Battery - (A/S)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="edb4-276f-21b0-a34b" name="Heavy Gun Battery" hidden="false" targetId="4307-eab2-99cf-555e" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (A/S)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="b485-3937-fb5a-46e0" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="b788-dd6a-923c-e81e" name="Heavy Gun Battery - (F/P/S)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="8564-f947-6fe1-89ab" name="Heavy Gun Battery" hidden="false" targetId="4307-eab2-99cf-555e" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (F/P/S)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="0e43-a92b-8772-8fbf" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="57be-8303-42d4-3319" name="Heavy Gun Battery - (A/P)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="bdb4-367b-3728-793e" name="Heavy Gun Battery" hidden="false" targetId="4307-eab2-99cf-555e" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (A/P)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="fe7a-a71e-7fdc-89e4" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="0473-4529-d230-ee46" name="Heavy Magnetic Bombard - (A/P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0473-4529-d230-ee46" name="Heavy Magnetic Bombard" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="2a7d-add9-3ae8-acd4" name="Heavy Magnetic Bombard" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9bb9-6b13-3626-ae41" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (A/P)"/>
-          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="0473-4529-d230-ee46" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="0473-4529-d230-ee46" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/S">
+                  <conditions>
+                    <condition field="selections" scope="0473-4529-d230-ee46" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="5347-4855-4421-ed77" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P">
+                  <conditions>
+                    <condition field="selections" scope="0473-4529-d230-ee46" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="4e9e-7862-58ad-15e6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="0473-4529-d230-ee46" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P/S">
+                  <conditions>
+                    <condition field="selections" scope="0473-4529-d230-ee46" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="f2af-2773-24ff-2e12" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P">
+                  <conditions>
+                    <condition field="selections" scope="0473-4529-d230-ee46" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
+                  <conditions>
+                    <condition field="selections" scope="0473-4529-d230-ee46" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="ce6f-067d-9ad4-ddaa" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S/A">
+                  <conditions>
+                    <condition field="selections" scope="0473-4529-d230-ee46" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="5b70-4095-b55c-9745" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/A">
+                  <conditions>
+                    <condition field="selections" scope="0473-4529-d230-ee46" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="0cd5-1e4e-c51e-c338" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </infoLink>
         <infoLink id="0f9b-7a22-532d-7a6e" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
         <infoLink id="6938-4ed5-627b-685c" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
@@ -552,57 +393,68 @@ Review v4: Closing the weapon management for the Sultanate</readme>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1571-9c2c-d2b7-791b" name="Heavy Magnetic Bombard - (A/S)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="325d-869d-6fe6-cef0" name="Heavy Magnetic Bombard" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9bb9-6b13-3626-ae41" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (A/S)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="4943-7774-8b86-ab18" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-        <infoLink id="b1dd-aa43-277e-b977" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
-        <infoLink id="f0c1-929d-1691-c296" name="Magnetic" hidden="false" targetId="8c21-7eac-4f35-4268" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="4d90-26df-f83c-1815" name="Heavy Magnetic Bombard - (F/P)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="f4b3-91d0-5bcd-00c6" name="Heavy Magnetic Bombard" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9bb9-6b13-3626-ae41" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (F/P)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="f959-e726-f588-c9ad" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-        <infoLink id="1554-9eb7-5de1-63dd" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
-        <infoLink id="4420-ab69-fe14-02b7" name="Magnetic" hidden="false" targetId="8c21-7eac-4f35-4268" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="7519-a0df-99a7-772f" name="Heavy Magnetic Bombard - (F/S)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="faf0-1cd3-371d-9546" name="Heavy Magnetic Bombard" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9bb9-6b13-3626-ae41" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (F/S)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="03d4-5a16-0e80-a55f" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-        <infoLink id="fb28-b2d7-07a4-2d8a" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
-        <infoLink id="f2c7-d8f9-4756-83ce" name="Magnetic" hidden="false" targetId="8c21-7eac-4f35-4268" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="1382-9592-479f-f3b3" name="Heat Lance - (A/P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1382-9592-479f-f3b3" name="Heat Lance" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="1a79-0f0b-1668-7bd4" name="Heat Lance" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="f2e9-4fb6-4089-1574" type="profile">
           <modifiers>
             <modifier type="append" field="name" value=" - (A/P)"/>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="1382-9592-479f-f3b3" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="1382-9592-479f-f3b3" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/S">
+                  <conditions>
+                    <condition field="selections" scope="1382-9592-479f-f3b3" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="5347-4855-4421-ed77" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P">
+                  <conditions>
+                    <condition field="selections" scope="1382-9592-479f-f3b3" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="4e9e-7862-58ad-15e6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="1382-9592-479f-f3b3" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P/S">
+                  <conditions>
+                    <condition field="selections" scope="1382-9592-479f-f3b3" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="f2af-2773-24ff-2e12" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P">
+                  <conditions>
+                    <condition field="selections" scope="1382-9592-479f-f3b3" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
+                  <conditions>
+                    <condition field="selections" scope="1382-9592-479f-f3b3" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="ce6f-067d-9ad4-ddaa" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S/A">
+                  <conditions>
+                    <condition field="selections" scope="1382-9592-479f-f3b3" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="5b70-4095-b55c-9745" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/A">
+                  <conditions>
+                    <condition field="selections" scope="1382-9592-479f-f3b3" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="0cd5-1e4e-c51e-c338" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </infoLink>
         <infoLink id="57da-772c-1563-8542" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
         <infoLink id="c35c-db16-184f-8b6a" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
@@ -612,222 +464,66 @@ Review v4: Closing the weapon management for the Sultanate</readme>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9299-83ab-7cce-944e" name="Heat Lance - (A/S)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="bd66-34c4-51a9-338a" name="Heat Lance" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="f2e9-4fb6-4089-1574" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (A/S)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="7494-70f9-0662-d5d2" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-        <infoLink id="3241-aa5f-8a4a-a61e" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-        <infoLink id="3ef7-f05b-ab9f-bad6" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="13e4-8001-1aec-7dd1" name="Heat Lance - (F/P)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="6c5d-ef50-c7ce-1aa2" name="Heat Lance" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="f2e9-4fb6-4089-1574" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (F/P)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="e4b5-cc37-2e11-5470" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-        <infoLink id="c3e1-e6c5-5261-689f" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-        <infoLink id="a143-9eaf-599e-30ed" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="f733-a2cd-272d-1423" name="Heat Lance - (F/S)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="9ad4-c4b8-7c04-18bf" name="Heat Lance" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="f2e9-4fb6-4089-1574" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (F/S)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="4201-2e4e-0378-86d1" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-        <infoLink id="3d42-3a14-52b8-768e" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-        <infoLink id="ddb7-ed2b-7e52-c53f" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="7262-1164-d46c-9b75" name="Heavy Rocket Battery - (A/P)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="ad02-daf5-eccf-b2e4" name="Heavy Rocket Battery" hidden="false" targetId="5aa0-82a6-e6bc-6950" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (A/P)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="a95f-febb-67e1-3186" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="da91-f72f-d501-5f82" name="Heavy Rocket Battery - (F/S)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="24b6-b61b-a63f-ef60" name="Heavy Rocket Battery" hidden="false" targetId="5aa0-82a6-e6bc-6950" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (A/S)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="46f2-23ac-4ce5-918b" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="15da-fef1-763e-3de9" name="Heavy Rocket Battery - (F/P)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="8999-1c96-648d-f636" name="Heavy Rocket Battery" hidden="false" targetId="5aa0-82a6-e6bc-6950" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (F/P)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="3995-b4cd-f3a8-ca9f" name="Aereal" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="f966-bd22-8540-fd40" name="Heavy Rocket Battery - (A/S)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="1cb1-ecf0-c4e3-31fb" name="Heavy Rocket Battery" hidden="false" targetId="5aa0-82a6-e6bc-6950" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (A/S)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="a939-76fe-815d-6b95" name="Aereal" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="ec91-1f67-36a5-06d9" name="Gun Battery - (A/P)" hidden="false" collective="true" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="8566-be04-eb3d-1d56" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (A/P)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="bba4-81cc-b3e9-7cf4" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="c71e-2cbd-2b53-4501" name="Gun Battery - (A/S)" hidden="false" collective="true" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="6df5-b8f1-f6d4-e5cc" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (A/S)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="c31c-51b1-b850-b2a5" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="163d-a602-9d27-009c" name="Gun Battery - (F/P)" hidden="false" collective="true" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="b129-68ac-c614-5365" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (F/P)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="682b-5ae0-a15b-d730" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="6a47-be5c-ba9a-26cc" name="Gun Battery - (F/S)" hidden="false" collective="true" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="08db-30cc-9794-82b6" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (F/S)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="439e-1fef-ba3c-5c97" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="f2a6-939d-73fc-bcee" name="Heat Lancette - (A/P)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="1c6e-83ae-a6f1-2b05" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-        <infoLink id="d5c2-531c-0e43-9342" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (A/P)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="6da4-0aa4-006e-32d8" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-        <infoLink id="5b5c-333d-8c44-eaae" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="a9e0-96d2-2d40-f38b" name="Heat Lancette - (A/S)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="752f-0353-5c11-c48e" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-        <infoLink id="84fc-748f-d74b-e769" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (A/S)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="6fb4-bb74-6bea-5dad" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-        <infoLink id="ca6e-00f9-3050-5c95" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="516f-feab-dce5-5225" name="Heat Lancette - (F/P)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="4206-cab6-254e-052a" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-        <infoLink id="2e02-e7b2-8342-e9fc" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (F/P)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="c2f0-6550-c1f9-85eb" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-        <infoLink id="77fa-354c-25a9-9387" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="fcff-0af5-478b-005a" name="Heat Lancette - (F/S)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="0886-c27c-92e6-59fb" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-        <infoLink id="b08c-336d-c4b0-b203" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (F/S)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="8893-b627-53d3-d7ba" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-        <infoLink id="0591-7a81-4e51-4863" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="22ed-fcf6-f576-bd3d" name="Torpedo Turret - (A/P)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="22ed-fcf6-f576-bd3d" name="Torpedo Turret " publicationId="129d-da97-caec-1ddd" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="72bd-8b2e-537c-75be" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
         <infoLink id="eb6c-6f71-a5a0-86b2" name="Torpedo Turret" hidden="false" targetId="8f8a-a449-f5d5-79dd" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (A/P)"/>
-          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="22ed-fcf6-f576-bd3d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="22ed-fcf6-f576-bd3d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="22ed-fcf6-f576-bd3d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P/S">
+                  <conditions>
+                    <condition field="selections" scope="22ed-fcf6-f576-bd3d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f2af-2773-24ff-2e12" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
+                  <conditions>
+                    <condition field="selections" scope="22ed-fcf6-f576-bd3d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ce6f-067d-9ad4-ddaa" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P">
+                  <conditions>
+                    <condition field="selections" scope="22ed-fcf6-f576-bd3d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P">
+                  <conditions>
+                    <condition field="selections" scope="22ed-fcf6-f576-bd3d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4e9e-7862-58ad-15e6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/S">
+                  <conditions>
+                    <condition field="selections" scope="22ed-fcf6-f576-bd3d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5347-4855-4421-ed77" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/A">
+                  <conditions>
+                    <condition field="selections" scope="22ed-fcf6-f576-bd3d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0cd5-1e4e-c51e-c338" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S/A">
+                  <conditions>
+                    <condition field="selections" scope="22ed-fcf6-f576-bd3d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5b70-4095-b55c-9745" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </infoLink>
         <infoLink id="2d9c-4860-e8b3-a8bb" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
         <infoLink id="3353-7da3-227e-63b0" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
@@ -876,36 +572,6 @@ Review v4: Closing the weapon management for the Sultanate</readme>
         </infoLink>
         <infoLink id="d582-abf2-029c-052d" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
         <infoLink id="6267-622d-18b9-140a" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="a96e-fae4-a57e-feca" name="Heat Lancette - (F/P/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="8c5c-cc89-af9a-2622" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-        <infoLink id="f965-8a22-38b1-9370" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (F/P/A)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="72b4-2a3a-d901-431d" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-        <infoLink id="5db0-558a-99e4-fb3c" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="fa87-6719-21b7-f92e" name="Heat Lancette - (F/S/A)" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="798c-806e-8099-bff0" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-        <infoLink id="f05f-31b6-6312-c584" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value=" - (F/S/A)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="e032-cf4d-8419-b1c8" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-        <infoLink id="017f-0ea3-75a0-b133" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
@@ -1643,9 +1309,22 @@ Review v4: Closing the weapon management for the Sultanate</readme>
     <selectionEntry id="3e85-ccc4-d939-f7f8" name="Heavy Flak Broadside" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="be48-5823-581b-a5c7" name="Heavy Flak Broadside" hidden="false" targetId="a4b7-fe9b-130b-9947" type="profile">
-          <modifiers>
-            <modifier type="set" field="8739-aae9-7e50-c8d0" value="P &amp; S"/>
-          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="P &amp; S">
+                  <conditions>
+                    <condition field="selections" scope="3e85-ccc4-d939-f7f8" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="372f-19f1-09ed-e694" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F &amp; A">
+                  <conditions>
+                    <condition field="selections" scope="3e85-ccc4-d939-f7f8" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="afe0-b5a3-3eac-004f" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </infoLink>
         <infoLink id="906f-1b32-ecc9-c97e" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule">
           <modifiers>
@@ -1874,7 +1553,7 @@ Review v4: Closing the weapon management for the Sultanate</readme>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1420-4e0a-ca1d-6cb7" name="Rocket Battery" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1420-4e0a-ca1d-6cb7" name="Rocket Battery" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="f6d5-1151-c82b-2825" name="Rocket Battery" hidden="false" targetId="90e8-0288-ed1a-f4fb" type="profile">
           <modifierGroups>
@@ -1928,6 +1607,11 @@ Review v4: Closing the weapon management for the Sultanate</readme>
                 <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/S">
                   <conditions>
                     <condition field="selections" scope="1420-4e0a-ca1d-6cb7" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4e9e-7862-58ad-15e6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P/S">
+                  <conditions>
+                    <condition field="selections" scope="1420-4e0a-ca1d-6cb7" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f2af-2773-24ff-2e12" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2349,13 +2033,21 @@ Review v4: Closing the weapon management for the Sultanate</readme>
       </constraints>
       <infoLinks>
         <infoLink id="a76b-0064-c7d8-5ca1" name="Prow Ram" hidden="false" targetId="2894-882c-4e18-c5de" type="profile">
-          <modifiers>
-            <modifier type="set" field="8739-aae9-7e50-c8d0" value="F"/>
-          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="T">
+                  <conditions>
+                    <condition field="selections" scope="b9d2-4d96-fe6c-c015" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </infoLink>
         <infoLink id="3535-085d-634e-2550" name="Ramming" hidden="false" targetId="c92a-830a-302c-d3ab" type="rule">
           <modifiers>
-            <modifier type="append" field="name" value="6"/>
+            <modifier type="append" field="name" value=" 6/5"/>
           </modifiers>
         </infoLink>
         <infoLink id="05fc-86b3-48b3-bc9e" name="Piercing" hidden="false" targetId="0f8e-056c-75a9-caee" type="rule"/>
@@ -2445,7 +2137,7 @@ Review v4: Closing the weapon management for the Sultanate</readme>
         </infoLink>
         <infoLink id="ceba-c644-2f72-6704" name="Ramming" hidden="false" targetId="c92a-830a-302c-d3ab" type="rule">
           <modifiers>
-            <modifier type="append" field="name" value="10"/>
+            <modifier type="append" field="name" value=" 10/8"/>
           </modifiers>
         </infoLink>
         <infoLink id="4c64-7dd0-da94-7ac2" name="Piercing" hidden="false" targetId="0f8e-056c-75a9-caee" type="rule"/>
@@ -2467,9 +2159,17 @@ Review v4: Closing the weapon management for the Sultanate</readme>
     <selectionEntry id="42d9-7905-6f80-7dea" name="Aerial Heavy Torpedo Salvo" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="5451-8f20-6f7b-71f2" name="Aerial Heavy Torpedo Salvo" hidden="false" targetId="0fde-487f-cc50-0cfc" type="profile">
-          <modifiers>
-            <modifier type="set" field="8739-aae9-7e50-c8d0" value="F"/>
-          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="42d9-7905-6f80-7dea" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </infoLink>
         <infoLink id="b383-4b19-33d1-b0e5" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
         <infoLink id="67f9-5dde-7839-13a4" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
@@ -3084,13 +2784,13 @@ Review v4: Closing the weapon management for the Sultanate</readme>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7818-c127-86ac-61b9" name="Helio Blast" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="18cb-9f26-bdc9-fb3b" name="Helio Blast" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="7776-4f33-3544-bff2" name="Helio Blast" hidden="false" targetId="1d96-9c8e-18af-b516" type="profile">
           <modifiers>
             <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
               <conditions>
-                <condition field="selections" scope="7818-c127-86ac-61b9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                <condition field="selections" scope="18cb-9f26-bdc9-fb3b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3315,18 +3015,6 @@ Review v4: Closing the weapon management for the Sultanate</readme>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="18cb-9f26-bdc9-fb3b" name="Helio Blast" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="85be-837f-e04e-80b1" name="Helio Blast" hidden="false" targetId="1d96-9c8e-18af-b516" type="profile"/>
-        <infoLink id="53bc-d503-bb42-2dfa" name="Arc" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
-        <infoLink id="4d09-6ebb-c80f-e50f" name="Blast" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
-        <infoLink id="6a67-f03e-dbe9-8a5a" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-        <infoLink id="dd00-2bb1-db42-cc2b" name="Bomb" hidden="false" targetId="cec9-6349-719c-e293" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="d86c-d2c7-7964-5f8b" name="Judgement Lance" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="2522-c8dd-929a-f664" name="Arc" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
@@ -3453,6 +3141,242 @@ Review v4: Closing the weapon management for the Sultanate</readme>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="62f4-ccf4-3d32-06b4" name="Magnetic Bombard" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3858-6a83-2131-4b0e" name="Magnetic Bombard" hidden="false" targetId="27c0-e5af-baef-66f3" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="62f4-ccf4-3d32-06b4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="62f4-ccf4-3d32-06b4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="62f4-ccf4-3d32-06b4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P/S">
+                  <conditions>
+                    <condition field="selections" scope="62f4-ccf4-3d32-06b4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f2af-2773-24ff-2e12" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
+                  <conditions>
+                    <condition field="selections" scope="62f4-ccf4-3d32-06b4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ce6f-067d-9ad4-ddaa" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P">
+                  <conditions>
+                    <condition field="selections" scope="62f4-ccf4-3d32-06b4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P">
+                  <conditions>
+                    <condition field="selections" scope="62f4-ccf4-3d32-06b4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4e9e-7862-58ad-15e6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/S">
+                  <conditions>
+                    <condition field="selections" scope="62f4-ccf4-3d32-06b4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5347-4855-4421-ed77" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/A">
+                  <conditions>
+                    <condition field="selections" scope="62f4-ccf4-3d32-06b4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0cd5-1e4e-c51e-c338" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S/A">
+                  <conditions>
+                    <condition field="selections" scope="62f4-ccf4-3d32-06b4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5b70-4095-b55c-9745" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="9903-8da6-6175-b96e" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
+        <infoLink id="8a00-4e31-7468-9329" name="Magnetic" hidden="false" targetId="8c21-7eac-4f35-4268" type="rule"/>
+        <infoLink id="19fe-608c-1181-57d7" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cab8-de9d-dab6-e47a" name="Rostratum Naval Ballista" publicationId="129d-da97-caec-1ddd" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6ee0-16f4-c050-ea01" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="612f-3b1d-7a60-74d5" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="f559-3aae-2354-38ed" name="Piercing" hidden="false" targetId="0f8e-056c-75a9-caee" type="rule"/>
+        <infoLink id="e2e0-1136-9a78-ac44" name="Rostratum Naval Ballista" hidden="false" targetId="490d-844d-3d23-3865" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="cab8-de9d-dab6-e47a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="bcd2-42a2-6477-abe9" name="Magnetic" hidden="false" targetId="8c21-7eac-4f35-4268" type="rule"/>
+        <infoLink id="efe3-bf26-5850-4485" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bc09-4e9a-a2ad-3d68" name="Gun Battery" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="67d8-dade-945e-7faf" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="bc09-4e9a-a2ad-3d68" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="bc09-4e9a-a2ad-3d68" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="bc09-4e9a-a2ad-3d68" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P/S">
+                  <conditions>
+                    <condition field="selections" scope="bc09-4e9a-a2ad-3d68" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f2af-2773-24ff-2e12" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
+                  <conditions>
+                    <condition field="selections" scope="bc09-4e9a-a2ad-3d68" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ce6f-067d-9ad4-ddaa" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P">
+                  <conditions>
+                    <condition field="selections" scope="bc09-4e9a-a2ad-3d68" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P">
+                  <conditions>
+                    <condition field="selections" scope="bc09-4e9a-a2ad-3d68" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4e9e-7862-58ad-15e6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/S">
+                  <conditions>
+                    <condition field="selections" scope="bc09-4e9a-a2ad-3d68" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5347-4855-4421-ed77" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/A">
+                  <conditions>
+                    <condition field="selections" scope="bc09-4e9a-a2ad-3d68" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0cd5-1e4e-c51e-c338" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S/A">
+                  <conditions>
+                    <condition field="selections" scope="bc09-4e9a-a2ad-3d68" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5b70-4095-b55c-9745" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="f012-0e21-3366-8da1" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fba5-ca79-6f57-9ef2" name="Heat Lancette" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="13c9-52aa-99c0-890f" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+        <infoLink id="ae19-8ae1-1aef-9f9a" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="fba5-ca79-6f57-9ef2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="89ee-f5fc-c153-ba54" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+        <infoLink id="603e-cfcb-8f1a-06c9" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2f2f-2489-8fb4-fe19" name="Majestic Gun Battery" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c536-8dba-a0df-8980" name="Majestic Gun Battery" hidden="false" targetId="89b0-511f-6c55-7dce" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="2f2f-2489-8fb4-fe19" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P/S">
+                  <conditions>
+                    <condition field="selections" scope="2f2f-2489-8fb4-fe19" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f2af-2773-24ff-2e12" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="255a-68be-7634-2dd1" name="Majestic Gun Battery" hidden="false" targetId="799f-1288-d4b1-74ed" type="rule"/>
+        <infoLink id="6d59-9dc1-5316-8ef5" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+        <infoLink id="0ebc-1a02-ed53-65d1" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7dba-1c8d-ba19-7ccb" name="Cymbeline Missile Silo" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0aaa-ecf9-cdf1-0d34" name="Cymbeline Missile Silo" hidden="false" targetId="188b-dba1-865c-23c9" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="7dba-1c8d-ba19-7ccb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="1cf0-dacf-0a16-54f1" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
+        <infoLink id="8472-66ba-99c2-296b" name="Blast" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
+        <infoLink id="a49a-7bca-3be6-f376" name="High Velocity" hidden="false" targetId="5b8e-71d1-641d-73f9" type="rule"/>
+        <infoLink id="e11a-3123-585c-23f7" name="Limited" hidden="false" targetId="3bd4-7e14-0aa2-97db" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="c475-4c4f-de22-9080" name="Aerial" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
@@ -3547,6 +3471,15 @@ Review v4: Closing the weapon management for the Sultanate</readme>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Submerged, Torpedo, High Velocity</characteristic>
       </characteristics>
     </profile>
+    <profile id="a0a8-dac0-e58d-85e2" name="Aerial Torpedo" publicationId="d854-a2d6-3d52-44c4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">3(1) / 2(-)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">3(2) / 2(1)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">3(2) / 2(1)</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial, Torpedo, High Velocity</characteristic>
+      </characteristics>
+    </profile>
     <profile id="94ee-f59f-0606-1f35" name="Aerial Torpedo Salvo" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
@@ -3628,6 +3561,33 @@ Review v4: Closing the weapon management for the Sultanate</readme>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 6, Arc, Devastating</characteristic>
       </characteristics>
     </profile>
+    <profile id="49a1-7c5d-5c91-abdf" name="Chaska Starblade" publicationId="d854-a2d6-3d52-44c4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 12, Arc</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="81a1-3b09-b1db-e907" name="Chesapeake Gatling Battery" publicationId="e6a1-85d3-8979-7880" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">8(6) / 5(3)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">6(4) / 4(2)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Sustained, Fusillade</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bb85-f011-f96b-3cde" name="Chesapeake Gatling Gun " publicationId="e6a1-85d3-8979-7880" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">6(3) / 4(2)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Sustained, Fusillade</characteristic>
+      </characteristics>
+    </profile>
     <profile id="ddea-5254-393b-7b2b" name="Claw Arc Projector" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
@@ -3650,8 +3610,8 @@ Review v4: Closing the weapon management for the Sultanate</readme>
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">10(5)/5(3)</characteristic>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">12(6)/7(4)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">8(5) / 5(3)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">10(6) / 7(4)</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial, Blast, High Velocity, Limited</characteristic>
       </characteristics>
     </profile>
@@ -3664,11 +3624,20 @@ Review v4: Closing the weapon management for the Sultanate</readme>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Blast, Hazardous, Devastating</characteristic>
       </characteristics>
     </profile>
+    <profile id="188b-dba1-865c-23c9" name="Cymbeline Missile Silo" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">10(6) / 7(4)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">10(6) / 7(4)</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial, Blast, High Velocity, Limited </characteristic>
+      </characteristics>
+    </profile>
     <profile id="6834-59ec-a9ed-9dae" name="Dual Magnetic Gatling Guns" publicationId="e6a1-85d3-8979-7880" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">7(2)/3(2)</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">7(4)/ 4(3)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">4(3)/ 3(2)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Sustained, Magnetic</characteristic>
       </characteristics>
@@ -3676,8 +3645,8 @@ Review v4: Closing the weapon management for the Sultanate</readme>
     <profile id="108f-eb40-4fe8-46f5" name="Dual Naval Electrocannons" publicationId="e6a1-85d3-8979-7880" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">4(3)/2(2)</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">5(4)/ 4(2)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">4(2)/ 3(1)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Arc</characteristic>
       </characteristics>
@@ -3829,7 +3798,7 @@ Review v4: Closing the weapon management for the Sultanate</readme>
     <profile id="9bb9-6b13-3626-ae41" name="Heavy Magnetic Bombard" publicationId="129d-da97-caec-1ddd" page="" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">- / -</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">8(4) / 4(2)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">9(5) / 7(4)</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial, Magnetic, Extreme Range</characteristic>
@@ -3841,7 +3810,7 @@ Review v4: Closing the weapon management for the Sultanate</readme>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 10, Piercing</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 10/8, Piercing</characteristic>
       </characteristics>
     </profile>
     <profile id="0676-ee17-f0b1-50f9" name="Heavy Particle Cannon" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
@@ -3857,8 +3826,8 @@ Review v4: Closing the weapon management for the Sultanate</readme>
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">9(2) / 6(-)</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">9(4) / 6(2)</characteristic>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">9(4) / 6(2)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">9(4) / 6(3)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">9(4) / 6(3)</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial</characteristic>
       </characteristics>
     </profile>
@@ -4078,6 +4047,15 @@ Review v4: Closing the weapon management for the Sultanate</readme>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial, Magnetic, Extreme Range</characteristic>
       </characteristics>
     </profile>
+    <profile id="89b0-511f-6c55-7dce" name="Majestic Gun Battery" publicationId="dbca-8d57-b848-457e" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">5(3) / 4(1)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">9(4) / 6(3)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">9(5) / 7(4)</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Extreme Range</characteristic>
+      </characteristics>
+    </profile>
     <profile id="56ad-d747-f32b-e8c5" name="Micro Torpedo Salvo" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
@@ -4117,7 +4095,7 @@ Review v4: Closing the weapon management for the Sultanate</readme>
     <profile id="073b-25ec-7eb9-b4c4" name="Picket Broadside" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">2(2) / -</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">3(2) / -</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Fusillade, Broadside, Sustained</characteristic>
@@ -4129,7 +4107,7 @@ Review v4: Closing the weapon management for the Sultanate</readme>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 6, Piercing</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 6/5, Piercing</characteristic>
       </characteristics>
     </profile>
     <profile id="7477-6c6d-1faa-a8c5" name="Pulse Broadside" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
@@ -4211,6 +4189,15 @@ Review v4: Closing the weapon management for the Sultanate</readme>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 12, Devastating</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="10f4-a9d7-24c1-a973" name="Salvo Missile Silo" publicationId="d854-a2d6-3d52-44c4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">10(6) / 7(4)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">10(6) / 7(4)</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial, Blast, Sustained, Limited</characteristic>
       </characteristics>
     </profile>
     <profile id="6244-3624-bb86-3bd6" name="Scalpel Lancette" publicationId="7b2b-0f56-3962-5ec1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
@@ -4375,6 +4362,15 @@ Review v4: Closing the weapon management for the Sultanate</readme>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Piercing, Magnetic</characteristic>
       </characteristics>
     </profile>
+    <profile id="ca47-f3ab-e6cb-9165" name="Twin Judgement Lances" publicationId="d854-a2d6-3d52-44c4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">8(8) / 6(5)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">8(8) / 5(5)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">8(8) / 5(5)</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Arc, Sustained, Gunnery, Hazardous</characteristic>
+      </characteristics>
+    </profile>
     <profile id="05c4-67a7-83c6-add5" name="Tyndall Cyclonic Missiles" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
@@ -4462,34 +4458,7 @@ Review v4: Closing the weapon management for the Sultanate</readme>
         <characteristic name="Capacity" typeId="38e6-209c-1587-2cd0">8/4</characteristic>
       </characteristics>
     </profile>
-    <profile id="a0a8-dac0-e58d-85e2" name="Aerial Torpedo" publicationId="d854-a2d6-3d52-44c4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">3(1) / 2(-)</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">3(2) / 2(1)</characteristic>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">3(2) / 2(1)</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial, Torpedo, High Velocity</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="10f4-a9d7-24c1-a973" name="Salvo Missile Silo" publicationId="d854-a2d6-3d52-44c4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">10(6) / 7(4)</characteristic>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">10(6) / 7(4)</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial, Blast, Sustained, Limited </characteristic>
-      </characteristics>
-    </profile>
-    <profile id="ca47-f3ab-e6cb-9165" name="Twin Judgement Lances" publicationId="d854-a2d6-3d52-44c4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">8(8) / 6(5)</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">8(8) / 5(5)</characteristic>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">8(8) / 5(5)</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Arc, Sustained, Gunnery, Hazardous</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="ecc9-5ea1-cc7f-aee6" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="ecc9-5ea1-cc7f-aee6" name="Arronaxium Blade Claws " hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0"/>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834"/>
@@ -4534,13 +4503,58 @@ Review v4: Closing the weapon management for the Sultanate</readme>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf"/>
       </characteristics>
     </profile>
-    <profile id="49a1-7c5d-5c91-abdf" name="Chaska Starblade" publicationId="d854-a2d6-3d52-44c4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="d58c-a752-c224-ed96" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 12, Arc</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bd43-d4ee-133f-c3bd" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0"/>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834"/>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5"/>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a"/>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf"/>
+      </characteristics>
+    </profile>
+    <profile id="9c61-3695-a75a-f545" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0"/>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834"/>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5"/>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a"/>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf"/>
+      </characteristics>
+    </profile>
+    <profile id="1024-e04c-d607-3a7a" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0"/>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834"/>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5"/>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a"/>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf"/>
+      </characteristics>
+    </profile>
+    <profile id="00ff-b686-34f3-b692" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0"/>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834"/>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5"/>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a"/>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf"/>
+      </characteristics>
+    </profile>
+    <profile id="f61c-d4c1-ad00-d6a9" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0"/>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834"/>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5"/>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a"/>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf"/>
       </characteristics>
     </profile>
   </sharedProfiles>
