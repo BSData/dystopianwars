@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="aab7-88e9-70f7-d7f1" name="Alliance v3.03" revision="6" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="aab7-88e9-70f7-d7f1" name="Alliance v3.03" revision="7" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Datafile history:
 0.03.00: Initial publication
 0.04.00: updated to the the ORBAT v0.04
 0.05.a0: updated to the the ORBAT v0.05a
 1.01.a0: updated to the the ORBAT v1.01a
 3.01.00: updated to the the ORBAT v3.01
-3.03.00: updated to the the ORBAT v3.03</readme>
+3.03.00: updated to the the ORBAT v3.03
+3.03.01: correction after the updated to the the ORBAT v3.03</readme>
   <categoryEntries>
     <categoryEntry id="534c-9506-e470-8b7c" name="Alliance" publicationId="129d-da97-caec-1ddd" hidden="false"/>
     <categoryEntry id="9aab-6794-6d2b-c1a8" name="French" publicationId="129d-da97-caec-1ddd" hidden="false"/>
@@ -480,69 +481,64 @@
       <categoryLinks>
         <categoryLink id="e5b4-d681-0460-2b68" name="Flagship" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fef3-1842-580c-4bef" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e9f-05c9-c8c3-c0d7" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="511c-dc1c-2c42-ca58" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2e9f-05c9-c8c3-c0d7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="511c-dc1c-2c42-ca58" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="911e-6117-280c-306e" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1f7-e4c1-cf3c-13c4" type="min"/>
-            <constraint field="selections" scope="force" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1fc-7d9b-da74-e2b5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d1f7-e4c1-cf3c-13c4" type="min"/>
+            <constraint field="selections" scope="force" value="5.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b1fc-7d9b-da74-e2b5" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="b624-441b-cc19-9471" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a0a-c96f-3f33-5265" type="max"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="2136-31af-456a-d241" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false">
-          <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9666-c9e5-007a-d775" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2a0a-c96f-3f33-5265" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="d251-d6e1-2ece-5b91" name="Gladius Class" hidden="false" targetId="840e-9d58-ebd8-45d6" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f910-e9f3-f3e4-61a5" type="max"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f910-e9f3-f3e4-61a5" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="c228-77d8-c609-9713" name="Auxilia Class" hidden="false" targetId="1439-2fa4-15a8-b97a" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="184c-39a1-d2ef-8d8d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="184c-39a1-d2ef-8d8d" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="622e-ea3b-268e-2f74" name="Cestus Class" hidden="false" targetId="93d4-cb98-2ff1-1d48" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="931d-7eb1-5719-5ba0" type="max"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="931d-7eb1-5719-5ba0" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="cc93-194c-979b-e1d1" name="Jupiter Class" hidden="false" targetId="ba35-5e33-be79-8b28" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b55-bb61-08b8-a9c5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8b55-bb61-08b8-a9c5" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="90fa-c7f5-56a1-cf35" name="Pugio Class" hidden="false" targetId="9094-e87a-44fd-075d" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94b3-35c0-a640-3226" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="94b3-35c0-a640-3226" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="7832-94ca-96c2-8bca" name="Vulcan Class" hidden="false" targetId="b6d6-34ca-927d-e090" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a644-f1ee-7231-ab13" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a644-f1ee-7231-ab13" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="b3f6-fb37-de1f-171c" name="Scorpio Class" hidden="false" targetId="c397-e3e8-e311-3bd0" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f557-b9c0-92fc-6971" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f557-b9c0-92fc-6971" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="0d02-4638-5a25-ed42" name="Spatha Class" hidden="false" targetId="7b68-75ed-db95-3660" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d06-2ad7-51e7-449e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="5d06-2ad7-51e7-449e" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="4dda-575a-ca30-01a9" name="Sagitta Class" hidden="false" targetId="250b-a319-2fc4-f4b9" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2ad-05c4-74cf-9c50" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b2ad-05c4-74cf-9c50" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -834,9 +830,9 @@
                 </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink id="8b21-f64f-73e5-e7ed" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
                 <categoryLink id="2835-c9ee-2518-9791" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-                <categoryLink id="7b8a-9289-28f1-4843" name="Vulcan Class" hidden="false" targetId="b6d6-34ca-927d-e090" primary="false"/>
+                <categoryLink id="6e86-5ab4-ec4c-3b24" name="Ecuyere Class" hidden="false" targetId="b340-0d07-c45f-d5a4" primary="false"/>
+                <categoryLink id="c46e-3ada-6d70-d3ab" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="d3e6-28ec-dec6-a0e4" name="Ecuyere" hidden="false" collective="false" import="true" targetId="4cac-c4a1-3eaf-e0fe" type="selectionEntry">
@@ -975,9 +971,9 @@
                 </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink id="c77f-4842-6951-f6a4" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
                 <categoryLink id="dd99-810f-90e6-b9fa" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-                <categoryLink id="f825-9656-a94f-da44" name="Vulcan Class" hidden="false" targetId="b6d6-34ca-927d-e090" primary="false"/>
+                <categoryLink id="dae3-794b-9d6d-5f73" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
+                <categoryLink id="47fe-3c03-5ec4-bba5" name="Ecuyere Class" hidden="false" targetId="b340-0d07-c45f-d5a4" primary="false"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="293f-74ce-53de-3429" name="Ecuyere" hidden="false" collective="false" import="true" targetId="4cac-c4a1-3eaf-e0fe" type="selectionEntry">
@@ -1017,7 +1013,6 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="c347-20e8-acf9-7b3f" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
-        <categoryLink id="2678-36e8-8f4b-e529" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
         <categoryLink id="0ef1-ac7d-e599-c60d" name="Couronne Class" hidden="false" targetId="639e-c3c4-f6d2-d6b6" primary="false"/>
         <categoryLink id="4fb2-eacc-c116-a69f" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
       </categoryLinks>
@@ -1161,42 +1156,6 @@
         <categoryLink id="b080-e040-df4d-a562" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="157a-be4c-ff46-711a" name="Escort duty" hidden="false" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="395c-04f2-bda6-8acb" value="0.0">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aae0-e2ef-7700-4fae" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9cc1-48f6-f9ea-943f" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62d6-2ebc-f314-6db2" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="395c-04f2-bda6-8acb" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="0a7a-8d01-efac-24b2" name="Furieux Levant Grand Corvette Squadron" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="unit">
-              <infoLinks>
-                <infoLink id="4799-ffe1-04d4-93d3" name="Escort Duty (French Skimmer)" hidden="false" targetId="34b1-aa30-351d-e343" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="6913-02f1-30f5-48f0" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
-                <categoryLink id="00c4-2f49-6db4-f179" name="Furieux Class" hidden="false" targetId="498a-eb65-a773-e629" primary="false"/>
-                <categoryLink id="a96f-a742-cf1d-3e71" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-              </categoryLinks>
-              <entryLinks>
-                <entryLink id="c7d1-a323-f536-c9ec" name="Furieux" hidden="false" collective="false" import="true" targetId="e63a-73d1-c314-2c3e" type="selectionEntry"/>
-              </entryLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
         <selectionEntryGroup id="0455-1532-cae6-9a61" name="Attached Unit" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc82-004e-c3e0-bb06" type="max"/>
@@ -1217,9 +1176,9 @@
                 </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink id="b351-733c-c898-d518" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
-                <categoryLink id="f7cb-af25-476a-010a" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-                <categoryLink id="d33f-4a2b-f050-423e" name="Vulcan Class" hidden="false" targetId="b6d6-34ca-927d-e090" primary="false"/>
+                <categoryLink id="c496-3fea-30bf-44db" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="false"/>
+                <categoryLink id="51ec-3f00-1bd2-dc8c" name="Furieux Class" hidden="false" targetId="498a-eb65-a773-e629" primary="false"/>
+                <categoryLink id="d4b2-d23d-dfab-c835" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="0c7d-52ad-7627-780d" name="Furieux" hidden="false" collective="false" import="true" targetId="e63a-73d1-c314-2c3e" type="selectionEntry">
@@ -1247,9 +1206,9 @@
                 </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink id="f605-dc72-7dcd-2c44" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
-                <categoryLink id="f9eb-9b3f-7e26-b61c" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-                <categoryLink id="3615-49a2-8bd5-6d16" name="Vulcan Class" hidden="false" targetId="b6d6-34ca-927d-e090" primary="false"/>
+                <categoryLink id="972c-d745-2ad2-f995" name="Alma Class" hidden="false" targetId="cbb8-d297-67c9-3022" primary="false"/>
+                <categoryLink id="cce0-2ba8-5351-0920" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="false"/>
+                <categoryLink id="057e-9e60-906c-b8ee" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="adb4-0993-c7e1-0456" name="Alma" hidden="false" collective="false" import="true" targetId="bb39-0f5e-fb68-48a1" type="selectionEntry">
@@ -1313,9 +1272,9 @@
                 </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink id="2edb-27ad-be49-dcf1" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
-                <categoryLink id="9d14-dfe5-a1ee-e2b4" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-                <categoryLink id="ff8e-0e02-724e-081c" name="Vulcan Class" hidden="false" targetId="b6d6-34ca-927d-e090" primary="false"/>
+                <categoryLink id="5732-f544-b384-db9d" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="false"/>
+                <categoryLink id="569a-b7d5-68da-d791" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
+                <categoryLink id="2ac3-1305-0b23-a865" name="Ecuyere Class" hidden="false" targetId="b340-0d07-c45f-d5a4" primary="false"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="b221-cdb6-3dbb-02f6" name="Furieux" hidden="false" collective="false" import="true" targetId="e63a-73d1-c314-2c3e" type="selectionEntry">
@@ -1343,9 +1302,9 @@
                 </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink id="f101-90db-f3b9-bc6d" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
-                <categoryLink id="8348-d2ae-1317-47df" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-                <categoryLink id="3e78-9685-dc1a-a79f" name="Vulcan Class" hidden="false" targetId="b6d6-34ca-927d-e090" primary="false"/>
+                <categoryLink id="a7f5-a4e5-8d86-b23f" name="Alma Class" hidden="false" targetId="cbb8-d297-67c9-3022" primary="false"/>
+                <categoryLink id="e892-574e-178d-caa9" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="false"/>
+                <categoryLink id="bdfc-843c-c862-be6d" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="f3dc-b257-c207-14a2" name="Alma" hidden="false" collective="false" import="true" targetId="bb39-0f5e-fb68-48a1" type="selectionEntry">
@@ -1559,7 +1518,8 @@
               <categoryLinks>
                 <categoryLink id="4356-dbad-49a3-e731" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
                 <categoryLink id="188f-29e8-aae7-4ce3" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-                <categoryLink id="5efc-f0f1-ee69-bebf" name="Vulcan Class" hidden="false" targetId="b6d6-34ca-927d-e090" primary="false"/>
+                <categoryLink id="23dc-2ce7-6d5a-271a" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
+                <categoryLink id="8d92-b860-e744-0866" name="Ecuyere Class" hidden="false" targetId="b340-0d07-c45f-d5a4" primary="false"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="0d9f-3d08-346b-4437" name="Ecuyere" hidden="false" collective="false" import="true" targetId="4cac-c4a1-3eaf-e0fe" type="selectionEntry">
@@ -1621,9 +1581,9 @@
                 </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink id="da42-afcc-821b-db3d" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
                 <categoryLink id="4876-d26c-491b-8e71" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-                <categoryLink id="d26e-0403-d94d-ed1d" name="Vulcan Class" hidden="false" targetId="b6d6-34ca-927d-e090" primary="false"/>
+                <categoryLink id="9e43-733d-9311-8af2" name="Ecuyere Class" hidden="false" targetId="b340-0d07-c45f-d5a4" primary="false"/>
+                <categoryLink id="1972-c535-0ef2-05ea" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="bf0f-0e7e-297f-c935" name="Ecuyere" hidden="false" collective="false" import="true" targetId="4cac-c4a1-3eaf-e0fe" type="selectionEntry">
@@ -1685,9 +1645,9 @@
                 </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink id="0a02-7517-0935-2c21" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
                 <categoryLink id="847f-1be3-44f9-3a3e" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-                <categoryLink id="50e1-8a80-8a16-ee61" name="Vulcan Class" hidden="false" targetId="b6d6-34ca-927d-e090" primary="false"/>
+                <categoryLink id="bbb3-e293-6a8b-355a" name="Ecuyere Class" hidden="false" targetId="b340-0d07-c45f-d5a4" primary="false"/>
+                <categoryLink id="890d-9130-294b-d772" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="8191-8a07-9fa0-53e0" name="Ecuyere" hidden="false" collective="false" import="true" targetId="4cac-c4a1-3eaf-e0fe" type="selectionEntry">
@@ -1755,17 +1715,15 @@
         <categoryLink id="d7a1-0aa0-1fe9-87de" name="Portuguese" hidden="false" targetId="9db8-15e9-7224-9503" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="d9e4-d849-f065-65c8" name="Support Model" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e24-defa-21af-0d62" type="max"/>
-          </constraints>
+        <selectionEntryGroup id="f688-12fc-0d98-02c8" name="Escort Model" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="c412-52fa-4f95-0aba" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+            <entryLink id="f8d9-8c73-c667-d52d" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20e6-ada8-6bf5-d452" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fc0-16bb-d856-9a7c" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97a6-101e-516a-cfb2" type="max"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="d48d-a9ab-e96b-dfea" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
+                <categoryLink id="6e73-4a90-e7b1-2485" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8.0"/>
@@ -1821,9 +1779,9 @@
                 </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink id="d642-b103-c7e1-3e4f" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
                 <categoryLink id="6de7-cf73-823b-f648" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-                <categoryLink id="40ca-9ac5-9dcb-41ac" name="Vulcan Class" hidden="false" targetId="b6d6-34ca-927d-e090" primary="false"/>
+                <categoryLink id="7081-15b1-4cdd-0e83" name="Providence Class" hidden="false" targetId="ff8f-5869-c621-a079" primary="false"/>
+                <categoryLink id="96d8-547d-b2b2-494b" name="SUSA" hidden="false" targetId="fca3-00a8-9f39-e015" primary="false"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="768c-e845-e506-00f8" name="Providence" hidden="false" collective="false" import="true" targetId="32a7-b570-d196-9202" type="selectionEntry"/>
@@ -2004,15 +1962,6 @@
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4e7-881b-52b8-fdc7" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4e7-881b-52b8-fdc7" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="62d7-3b23-3e74-2a0d" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -2033,16 +1982,6 @@
     </selectionEntry>
     <selectionEntry id="fd41-ad42-3bcf-e1e7" name="Jupiter Support Carrier Squadron" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ad0-5ffc-da79-2fd0" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aaa0-551a-1cbe-e5a1" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
             <conditionGroup type="or">
@@ -2068,15 +2007,6 @@
     </selectionEntry>
     <selectionEntry id="c9dd-3fa1-b7e7-46a3" name="Honneur Levant Destroyers Squadron" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4e7-881b-52b8-fdc7" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
             <conditionGroup type="or">
@@ -2209,9 +2139,9 @@
                 </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink id="1072-16e5-1ce9-56bd" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
                 <categoryLink id="cbf9-5b1a-fda2-f10f" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-                <categoryLink id="2178-3317-79c1-a326" name="Vulcan Class" hidden="false" targetId="b6d6-34ca-927d-e090" primary="false"/>
+                <categoryLink id="973e-f211-2625-2c6f" name="SUSA" hidden="false" targetId="fca3-00a8-9f39-e015" primary="false"/>
+                <categoryLink id="0d96-760f-695e-8b63" name="Providence Class" hidden="false" targetId="ff8f-5869-c621-a079" primary="false"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="06d9-1909-a784-6cc6" name="Providence" hidden="false" collective="false" import="true" targetId="32a7-b570-d196-9202" type="selectionEntry"/>
@@ -2236,18 +2166,10 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ad0-5ffc-da79-2fd0" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aaa0-551a-1cbe-e5a1" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4e7-881b-52b8-fdc7" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="62d7-3b23-3e74-2a0d" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aaa0-551a-1cbe-e5a1" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ad0-5ffc-da79-2fd0" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2280,9 +2202,9 @@
                 </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink id="178c-f49c-b2f8-771a" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
                 <categoryLink id="6aef-7609-9994-c062" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-                <categoryLink id="17f4-929c-acdd-ed81" name="Vulcan Class" hidden="false" targetId="b6d6-34ca-927d-e090" primary="false"/>
+                <categoryLink id="4afe-43a7-00a1-aed4" name="Providence Class" hidden="false" targetId="ff8f-5869-c621-a079" primary="false"/>
+                <categoryLink id="7d88-4a2c-dde1-763a" name="SUSA" hidden="false" targetId="fca3-00a8-9f39-e015" primary="false"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="72c6-8e15-aaad-1f4b" name="Providence" hidden="false" collective="false" import="true" targetId="32a7-b570-d196-9202" type="selectionEntry"/>
@@ -2303,15 +2225,6 @@
     </selectionEntry>
     <selectionEntry id="5f18-01c6-08a4-7d95" name="Gascony Levant Merchantman Squadron" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4e7-881b-52b8-fdc7" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
             <conditionGroup type="or">
@@ -2357,12 +2270,7 @@
         <categoryLink id="ef06-3aa8-0062-6967" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="0ea2-e7fd-c400-de67" name="Cordoba" hidden="false" collective="false" import="true" targetId="8838-62f2-c3db-f726" type="selectionEntry">
-          <categoryLinks>
-            <categoryLink id="c6ac-8415-659b-720d" name="Aerial Unit" hidden="false" targetId="022b-08af-c874-e3f1" primary="false"/>
-            <categoryLink id="4c3f-b6ab-b415-e795" name="Aerial Fast Destroyer" hidden="false" targetId="4b0d-161e-4651-602c" primary="false"/>
-          </categoryLinks>
-        </entryLink>
+        <entryLink id="0ea2-e7fd-c400-de67" name="Cordoba" hidden="false" collective="false" import="true" targetId="8838-62f2-c3db-f726" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
@@ -2443,7 +2351,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4fc-091b-3a51-d015" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="95f3-344a-d61a-d26a" name="Vulcan Repair Ship" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="95f3-344a-d61a-d26a" name="Vasco Battle Platform" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -2460,9 +2368,9 @@
                 </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink id="b442-7391-3587-e048" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
                 <categoryLink id="54b0-0879-711c-132e" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-                <categoryLink id="ad0c-2f23-c571-7de1" name="Vulcan Class" hidden="false" targetId="b6d6-34ca-927d-e090" primary="false"/>
+                <categoryLink id="3891-f746-cc47-f5e1" name="Vasco Class" hidden="false" targetId="c714-6fd6-c084-666e" primary="false"/>
+                <categoryLink id="98bf-c616-4dd2-2987" name="Portuguese" hidden="false" targetId="9db8-15e9-7224-9503" primary="false"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="5330-873f-2663-e649" name="Vasco" hidden="false" collective="false" import="true" targetId="cd75-9a9d-b245-4983" type="selectionEntry"/>
@@ -2589,9 +2497,9 @@
                 </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink id="7fd7-bfa7-26a3-dcfa" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
                 <categoryLink id="7e8f-4f26-49ce-2fc6" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-                <categoryLink id="fae7-210d-c9b1-70a8" name="Vulcan Class" hidden="false" targetId="b6d6-34ca-927d-e090" primary="false"/>
+                <categoryLink id="3485-33e3-5712-eba3" name="Springfield Class" hidden="false" targetId="ed42-78a2-7cff-5cd7" primary="false"/>
+                <categoryLink id="ebfc-4b6c-a56a-85f3" name="SUSA" hidden="false" targetId="fca3-00a8-9f39-e015" primary="false"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="2afd-33bf-c7e8-bdc2" name="Springfield" hidden="false" collective="false" import="true" targetId="f679-85f6-1b99-a64d" type="selectionEntry">
@@ -2620,9 +2528,9 @@
                 </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink id="47b9-46c0-e726-ea4e" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
                 <categoryLink id="31e5-6070-f147-4d0e" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-                <categoryLink id="d6d2-4571-f7a9-bf90" name="Vulcan Class" hidden="false" targetId="b6d6-34ca-927d-e090" primary="false"/>
+                <categoryLink id="1ca2-6347-06a9-0f23" name="SUSA" hidden="false" targetId="fca3-00a8-9f39-e015" primary="false"/>
+                <categoryLink id="d83c-7513-afb2-cfe6" name="Providence Class" hidden="false" targetId="ff8f-5869-c621-a079" primary="false"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="8459-991d-0f45-2048" name="Providence" hidden="false" collective="false" import="true" targetId="32a7-b570-d196-9202" type="selectionEntry"/>
@@ -2682,9 +2590,9 @@
                 </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink id="9f49-28c9-1bf0-122a" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
-                <categoryLink id="018a-19d6-64b9-2e7e" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-                <categoryLink id="aac0-1665-c682-127a" name="Vulcan Class" hidden="false" targetId="b6d6-34ca-927d-e090" primary="false"/>
+                <categoryLink id="44d8-fe5f-3f7c-fe29" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="false"/>
+                <categoryLink id="c7c4-3d4d-4cbb-394b" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
+                <categoryLink id="626d-fa7f-c33e-c8d5" name="Furieux Class" hidden="false" targetId="498a-eb65-a773-e629" primary="false"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="08cf-bf28-f938-3ace" name="Furieux" hidden="false" collective="false" import="true" targetId="e63a-73d1-c314-2c3e" type="selectionEntry">
@@ -2712,9 +2620,9 @@
                 </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink id="4c87-e61f-d6a9-8d8a" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
-                <categoryLink id="fe40-3d58-208c-ef37" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-                <categoryLink id="c77a-1ba3-dff5-7612" name="Vulcan Class" hidden="false" targetId="b6d6-34ca-927d-e090" primary="false"/>
+                <categoryLink id="62b8-9fa0-51ef-7d7f" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="false"/>
+                <categoryLink id="e572-670f-4c22-1cf9" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
+                <categoryLink id="b691-31df-b1d4-f658" name="Alma Class" hidden="false" targetId="cbb8-d297-67c9-3022" primary="false"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="25c2-c5f5-0456-a800" name="Alma" hidden="false" collective="false" import="true" targetId="bb39-0f5e-fb68-48a1" type="selectionEntry">
@@ -2795,9 +2703,9 @@
                 </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink id="b0d5-f53a-a7f0-a8c6" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
                 <categoryLink id="5988-85f6-d0e0-0ca8" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-                <categoryLink id="6ad4-a120-f5df-1974" name="Vulcan Class" hidden="false" targetId="b6d6-34ca-927d-e090" primary="false"/>
+                <categoryLink id="bf5c-828f-2547-d396" name="Providence Class" hidden="false" targetId="ff8f-5869-c621-a079" primary="false"/>
+                <categoryLink id="96a7-5502-e63f-9003" name="SUSA" hidden="false" targetId="fca3-00a8-9f39-e015" primary="false"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="12b5-e751-258a-9d16" name="Providence" hidden="false" collective="false" import="true" targetId="32a7-b570-d196-9202" type="selectionEntry"/>
@@ -2822,9 +2730,9 @@
                 </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink id="cf1f-b637-35c6-e69e" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
                 <categoryLink id="21af-9b7d-7a46-45ec" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-                <categoryLink id="427f-bedc-905c-5074" name="Vulcan Class" hidden="false" targetId="b6d6-34ca-927d-e090" primary="false"/>
+                <categoryLink id="ae5d-0c30-d674-32ec" name="Springfield Class" hidden="false" targetId="ed42-78a2-7cff-5cd7" primary="false"/>
+                <categoryLink id="178f-3d19-807c-aad2" name="SUSA" hidden="false" targetId="fca3-00a8-9f39-e015" primary="false"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="5947-7173-5873-a6b0" name="Springfield" hidden="false" collective="false" import="true" targetId="f679-85f6-1b99-a64d" type="selectionEntry">
@@ -2884,6 +2792,43 @@
               </costs>
             </entryLink>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b5b6-1fa7-c039-4ce6" name="Attached Unit" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af8d-d067-1be9-7998" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="bcca-968f-a6df-eacd" name="Ecuyere Frigates" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4e7-881b-52b8-fdc7" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="777d-cdf2-234a-ad0b" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="62d7-3b23-3e74-2a0d" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink id="1ceb-6a40-0e86-af8c" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+                <categoryLink id="8d2e-bc7b-89b0-2b96" name="Ecuyere Class" hidden="false" targetId="b340-0d07-c45f-d5a4" primary="false"/>
+                <categoryLink id="101f-8a6d-3f75-a136" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink id="bb83-bc42-6888-4c6e" name="Ecuyere" hidden="false" collective="false" import="true" targetId="4cac-c4a1-3eaf-e0fe" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="4e7f-078a-3a05-9794" value="4.0"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -2951,9 +2896,9 @@
                 </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink id="6201-ce18-8c73-c3a5" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
                 <categoryLink id="c762-474d-0749-f92a" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-                <categoryLink id="0353-526c-9453-7674" name="Vulcan Class" hidden="false" targetId="b6d6-34ca-927d-e090" primary="false"/>
+                <categoryLink id="78d6-7b6b-2ed1-3f86" name="Ecuyere Class" hidden="false" targetId="b340-0d07-c45f-d5a4" primary="false"/>
+                <categoryLink id="df4f-cfe4-d5d2-c461" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="d735-e8f2-7992-fd4e" name="Ecuyere" hidden="false" collective="false" import="true" targetId="4cac-c4a1-3eaf-e0fe" type="selectionEntry">
@@ -3020,9 +2965,9 @@
                 </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink id="418b-6a16-15f5-1edb" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
                 <categoryLink id="5e0b-4b91-bfae-b55d" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-                <categoryLink id="64bd-2cf1-4e5e-44ca" name="Vulcan Class" hidden="false" targetId="b6d6-34ca-927d-e090" primary="false"/>
+                <categoryLink id="06ea-3e6e-9f2b-f260" name="Vasco Class" hidden="false" targetId="c714-6fd6-c084-666e" primary="false"/>
+                <categoryLink id="c4bb-0cf8-fd8c-4afd" name="Portuguese" hidden="false" targetId="9db8-15e9-7224-9503" primary="false"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="c648-a3ae-ee8e-b2af" name="Vasco" hidden="false" collective="false" import="true" targetId="cd75-9a9d-b245-4983" type="selectionEntry">
@@ -3112,10 +3057,7 @@
         <infoLink id="68f3-7223-d136-1aa2" name="Protected Gun Crews" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1108-5d87-5267-d3a4" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="46c6-b93c-f4d0-e9f3" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="da2b-083c-011a-f7fd" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
-        <categoryLink id="27f2-377b-c1cf-9db4" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="f245-1497-a80e-53c4" name="Oriflamme Class" hidden="false" targetId="7d92-3a3b-5e20-7609" primary="false"/>
+        <categoryLink id="46c6-b93c-f4d0-e9f3" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="b55b-84df-1a5a-a202" name="Grand Battlecruiser" hidden="false" targetId="d819-b3ce-e912-cd74" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -3342,11 +3284,8 @@
         <infoLink id="9bf5-0d0b-3990-bd09" name="Ablative Flank Armour" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="425b-b0b2-b6de-1e97" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
-        <categoryLink id="48a9-8b1a-12ba-a182" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
+        <categoryLink id="48a9-8b1a-12ba-a182" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="9874-f7f9-6a7a-c363" name="Heavy Battleship" hidden="false" targetId="1fe5-12b2-2e30-7802" primary="false"/>
-        <categoryLink id="fa41-1ca7-ff12-fa5a" name="Mars Class" hidden="false" targetId="b319-ae06-1a91-ad5c" primary="false"/>
-        <categoryLink id="eaca-ee46-023d-0826" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="0370-6ed1-4ad0-1ab0" name="Main Weapon" hidden="false" collective="false" import="true">
@@ -3645,11 +3584,8 @@
         <infoLink id="54a3-cc71-2ebc-7c62" name="Combat Air Patrol" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="414e-232a-4858-bc31" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
-        <categoryLink id="3f0e-03d1-0395-4fc5" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
+        <categoryLink id="3f0e-03d1-0395-4fc5" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="e7d9-cfba-6dc2-41d4" name="Assault Carrier" hidden="false" targetId="b50a-9409-1fb4-0491" primary="false"/>
-        <categoryLink id="5b04-7e46-b86c-41a0" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
-        <categoryLink id="588b-fe72-044b-3dc6" name="Minerva Class" hidden="false" targetId="bc97-f77c-1035-83e5" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="e5f8-6c27-7eb5-e86e" name="SRS" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="upgrade">
@@ -3732,11 +3668,8 @@
         <infoLink id="fc91-df9f-03cd-8ef8" name="Defensive Pilots" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="430b-30b3-203e-0d80" type="rule"/>
       </infoLinks>
       <categoryLinks>
+        <categoryLink id="b8b5-03f8-0afc-9009" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="c521-2cb7-458c-33be" name="Fleet Carrier" hidden="false" targetId="408c-1732-73f9-379d" primary="false"/>
-        <categoryLink id="8140-1a16-c109-d868" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
-        <categoryLink id="1998-462d-e89b-6a46" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="b8b5-03f8-0afc-9009" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="8759-00c6-68f5-c3b7" name="Couronne Class" hidden="false" targetId="639e-c3c4-f6d2-d6b6" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="1afc-3dff-fae2-eab5" name="SRS" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="upgrade">
@@ -3883,11 +3816,8 @@
         <infoLink id="86a2-87cc-7f7e-040d" name="Corvette Duty" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4836-a907-b316-55b2" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="7b8b-fd34-cec6-3162" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="7d81-0fe1-05a4-f35e" name="Ecuyere Class" hidden="false" targetId="b340-0d07-c45f-d5a4" primary="false"/>
-        <categoryLink id="c31f-55af-bfaa-9602" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
+        <categoryLink id="7b8b-fd34-cec6-3162" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="5359-98e4-01b2-b73a" name="Frigate" hidden="false" targetId="34e1-40d5-5011-e3c5" primary="false"/>
-        <categoryLink id="9896-09e0-3c23-0dfa" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="e103-8c03-78e3-6bbd" name="Gun Battery" hidden="false" collective="false" import="true" targetId="bc09-4e9a-a2ad-3d68" type="selectionEntry">
@@ -3948,11 +3878,8 @@
         <infoLink id="260f-4411-1237-7e1a" name="Protected Gun Crews" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1108-5d87-5267-d3a4" type="rule"/>
       </infoLinks>
       <categoryLinks>
+        <categoryLink id="c258-b7fc-e5b4-ca07" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="12b7-3bdc-74ea-9553" name="Cruiser" hidden="false" targetId="c59d-c602-bfb0-1b11" primary="false"/>
-        <categoryLink id="c258-b7fc-e5b4-ca07" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="a741-62c9-5d35-6222" name="Chevalier Class" hidden="false" targetId="0177-7075-63bf-8514" primary="false"/>
-        <categoryLink id="b25b-6148-8190-0b0c" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="0ac5-3e52-d1b8-53b5" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="6347-232b-2ca7-4f1b" name="Secondary Weapon" hidden="false" collective="false" import="true">
@@ -4195,12 +4122,8 @@
         <infoLink id="c762-297f-d080-9844" name="Heavy Firepower" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="0cdc-4dda-3873-f123" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="6ed5-6f81-013b-a2d5" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
+        <categoryLink id="0cdc-4dda-3873-f123" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="d04f-a55d-4014-1182" name="Levant Batthecruiser" hidden="false" targetId="f92f-c7c2-4b99-f07d" primary="false"/>
-        <categoryLink id="45ce-7013-5ef1-e51d" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
-        <categoryLink id="3d26-e81a-906e-48a2" name="Magenta Class" hidden="false" targetId="e017-3a2c-e3fd-8787" primary="false"/>
-        <categoryLink id="87d4-15e3-2cda-9f34" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="0d0a-3c85-bf4c-ec64" name="Main Weapon" hidden="false" collective="false" import="true">
@@ -4298,7 +4221,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="56d7-90a0-e1bd-9a51" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-20.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="7e58-c8a0-8359-6c23" name="Fury generator" hidden="false" collective="false" import="true" targetId="069a-8c90-088f-816d" type="selectionEntry">
@@ -4306,7 +4229,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6e37-28af-61b1-5af3" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-20.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="79e8-47be-82bd-c360" name="Magnetic generator" hidden="false" collective="false" import="true" targetId="77af-dd4b-51e7-c620" type="selectionEntry">
@@ -4314,7 +4237,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b9be-ca40-150d-c0f7" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-20.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="21f8-a4bc-65e7-1de7" name="Shroud generator" hidden="false" collective="false" import="true" targetId="1543-05e3-58ac-6e6d" type="selectionEntry">
@@ -4322,7 +4245,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3527-e025-cf75-f28b" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-20.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="c09a-dc28-352f-9bc7" name="Shield generator" hidden="false" collective="false" import="true" targetId="0e7f-6ae4-f9b6-0ea1" type="selectionEntry">
@@ -4330,7 +4253,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7c13-b0e3-aa4d-e94f" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-20.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="dbf4-dd73-c0c9-b5e9" name="Solex generator" hidden="false" collective="false" import="true" targetId="e948-b887-f83d-e0a3" type="selectionEntry">
@@ -4338,7 +4261,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5a59-384c-d07e-5b11" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-20.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -4493,11 +4416,8 @@
         <infoLink id="5dfb-1098-daac-5327" name="Heavy Firepower" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="3593-1bd7-573b-42ee" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
-        <categoryLink id="ce90-ba7e-375f-025c" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
+        <categoryLink id="ce90-ba7e-375f-025c" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="9870-2997-da09-8fed" name="Levant Assault Carrier" hidden="false" targetId="0f4e-80de-1d9f-48c8" primary="false"/>
-        <categoryLink id="127c-d160-0507-c70e" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="a1f1-4ebb-99e4-336c" name="Saint-Michel Class" hidden="false" targetId="b93e-ddb9-f38e-39f8" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="a689-e0a5-bb30-bfc3" name="SRS" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="upgrade">
@@ -4647,12 +4567,8 @@
         <infoLink id="1983-45ab-8c2f-2bcb" name="Malinois Strike Fighters" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ed8a-5968-81b4-27d5" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="57b0-4b3e-6159-6a07" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="5387-6d99-d765-8fc1" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="ca5a-55d4-4180-5a2a" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
-        <categoryLink id="07be-2d25-2d89-f672" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="false"/>
+        <categoryLink id="57b0-4b3e-6159-6a07" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="a3f8-bbd9-7861-c6c6" name="Levant Support Carrier" hidden="false" targetId="1a02-dc75-7bf6-f0f5" primary="false"/>
-        <categoryLink id="342e-4f4b-3181-0a16" name="Voliere Class" hidden="false" targetId="fe3e-cf0f-1abe-e7af" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="b401-5004-93f9-60c8" name="SRS" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="upgrade">
@@ -4771,11 +4687,8 @@
         <infoLink id="aff8-afd6-4893-0e7d" name="For Valour!" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="4a7b-1b08-f79c-0f06" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="7650-fb66-1e5f-b14f" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="7932-926a-2438-4d4b" name="Chasseur Class" hidden="false" targetId="d1f3-f1e2-00b8-ccaf" primary="false"/>
         <categoryLink id="0fa2-6d51-05e1-1484" name="Levant Strike Cruiser" hidden="false" targetId="c203-f8a6-3732-872d" primary="false"/>
-        <categoryLink id="7fda-ce13-fff6-a4c7" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="true"/>
+        <categoryLink id="3431-4c41-2e10-9d13" name="New CategoryLink" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="ea12-b060-33bd-2b41" name="Main Weapon" page="" hidden="false" collective="false" import="true" defaultSelectionEntryId="ee2d-bc09-fea4-b4b8">
@@ -4980,12 +4893,9 @@
         <infoLink id="f75f-b408-a84b-8a62" name="For Valour!" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="4dd3-f82b-f9a5-0379" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="26eb-4d81-7fb9-13a2" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
-        <categoryLink id="6d41-4923-3aa3-e758" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
+        <categoryLink id="4dd3-f82b-f9a5-0379" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
+        <categoryLink id="26eb-4d81-7fb9-13a2" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="false"/>
         <categoryLink id="69ee-e970-8092-b1e7" name="Levant Grand Corvette" hidden="false" targetId="8aa3-849c-a914-5c57" primary="false"/>
-        <categoryLink id="4ed9-0b31-8072-09e3" name="Furieux Class" hidden="false" targetId="498a-eb65-a773-e629" primary="false"/>
-        <categoryLink id="2a5c-50ca-5760-0690" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="bf1a-04c3-f705-3a90" name="Magnetic Bombard" hidden="false" collective="false" import="true" targetId="62f4-ccf4-3d32-06b4" type="selectionEntry">
@@ -5017,12 +4927,8 @@
         <infoLink id="fae7-50a9-846a-5e1b" name="Levant Surge" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="178a-bee0-c2bb-7b81" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
-        <categoryLink id="c76a-986c-b455-9e2d" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="9f32-094e-bf4d-7332" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="bf96-ced8-360a-c2c1" name="Chasseur Class" hidden="false" targetId="d1f3-f1e2-00b8-ccaf" primary="false"/>
+        <categoryLink id="c76a-986c-b455-9e2d" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="4edb-c46e-ec36-baeb" name="Levant Strike Cruiser" hidden="false" targetId="c203-f8a6-3732-872d" primary="false"/>
-        <categoryLink id="acaf-1b87-521e-9546" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="427f-413e-cfd9-a7ea" name="Secondary Weapon" hidden="false" collective="false" import="true">
@@ -5225,11 +5131,8 @@
         <infoLink id="1d85-5b78-dbb0-c05a" name="For Valour!" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="6583-73d8-5289-b1e7" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="5f05-576b-1311-9c60" name="Sagitta Class" hidden="false" targetId="250b-a319-2fc4-f4b9" primary="false"/>
+        <categoryLink id="6583-73d8-5289-b1e7" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="c17f-536f-af93-873f" name="Hunter Submarine" hidden="false" targetId="32fd-997a-72b6-f5cb" primary="false"/>
-        <categoryLink id="e57f-524d-38c6-8eac" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
-        <categoryLink id="5a61-f925-895b-2a80" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="e6be-7515-ea05-0a90" name="Torpedo Salvo " hidden="false" collective="false" import="true" targetId="8ef1-9bd8-9674-29cd" type="selectionEntry">
@@ -5281,11 +5184,8 @@
         <infoLink id="50b5-9430-032e-c69a" name="Agile" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="8969-1889-f4b6-5346" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="339d-4c7a-eb94-c69c" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="16c4-f24f-af58-1204" name="Sirene Class" hidden="false" targetId="f178-bbbd-5205-7294" primary="false"/>
+        <categoryLink id="8969-1889-f4b6-5346" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="5ce5-de62-c6fd-6ac0" name="Attack Submarine" hidden="false" targetId="2ab9-9b85-528f-d800" primary="false"/>
-        <categoryLink id="b61e-842d-8fd5-190a" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="dd53-1494-0fce-16e2" name="Heat Lancette" hidden="false" collective="false" import="true" targetId="fba5-ca79-6f57-9ef2" type="selectionEntry">
@@ -5338,11 +5238,8 @@
         <infoLink id="e4b1-2a00-648a-cdd6" name="Heavy Firepower" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="f6fc-460a-968c-2ebe" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
-        <categoryLink id="0fb7-47e3-b69b-a51e" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="03f9-1c72-4949-fe5a" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
+        <categoryLink id="0fb7-47e3-b69b-a51e" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="4a6b-9adc-61d3-bf63" name="Heavy Cruiser" hidden="false" targetId="caff-acb6-3e5e-e359" primary="false"/>
-        <categoryLink id="eca1-c744-7be3-2522" name="Charlemagne Class" hidden="false" targetId="f053-171a-557e-6a05" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="b007-395a-7ea0-facc" name="Main Weapon" hidden="false" collective="false" import="true">
@@ -5632,12 +5529,8 @@
         <infoLink id="acac-1fb8-c349-a981" name="Protected Gun Crews" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1108-5d87-5267-d3a4" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="2a26-f87a-625b-0de3" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
-        <categoryLink id="1427-b04d-3745-f681" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="7129-9079-797f-d18f" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
+        <categoryLink id="1427-b04d-3745-f681" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="b6e4-4b0d-7ef6-39cf" name="Light Cruiser" hidden="false" targetId="eaa8-98cf-39ba-0a38" primary="false"/>
-        <categoryLink id="d8fd-361c-820b-f6b5" name="Loire Class" hidden="false" targetId="317e-5eb9-f1ae-8ff8" primary="false"/>
-        <categoryLink id="0d4f-15e2-fd4b-27e9" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="f861-35d2-b57d-79be" name="Main Weapon" hidden="false" collective="false" import="true">
@@ -5857,11 +5750,8 @@
         <infoLink id="146e-1e8c-ccfd-fd6d" name="Protected Gun Crews" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1108-5d87-5267-d3a4" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="a1a3-4436-5c3c-3508" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="6f4b-a036-d81f-02fc" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="70d0-c580-e3b8-bfe5" name="Picardy" hidden="false" targetId="555f-57ea-febb-f19e" primary="false"/>
+        <categoryLink id="a1a3-4436-5c3c-3508" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="6af1-a044-410d-1d8e" name="Littoral Monitor" hidden="false" targetId="d816-d294-2db9-b299" primary="false"/>
-        <categoryLink id="229e-bfaa-7322-9dfa" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="5462-3a54-9233-38cf" name="Secondary Weapon" hidden="false" collective="false" import="true">
@@ -6063,11 +5953,8 @@
         <infoLink id="b774-f527-e834-0aac" name="For Valour!" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="67c6-6970-20fa-fa9a" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="edb2-420c-073a-aff2" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
-        <categoryLink id="b1e9-9f79-4811-fa9e" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="67c6-6970-20fa-fa9a" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="dee1-62d7-c5ec-6e39" name="Repair Ship" hidden="false" targetId="ae62-663c-4616-0aab" primary="false"/>
-        <categoryLink id="51f5-a24e-f469-d8c6" name="Vulcan Class" hidden="false" targetId="b6d6-34ca-927d-e090" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="cb1e-58f0-813d-5ea9" name="Prow Ram" hidden="false" collective="false" import="true" targetId="b9d2-4d96-fe6c-c015" type="selectionEntry">
@@ -6116,11 +6003,8 @@
         <infoLink id="3ef7-3289-13a9-be46" name="Forward Deployment" hidden="false" targetId="e8f8-a4d2-d40c-1467" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="161a-9360-1c74-24c8" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="f752-0849-2c6b-f772" name="Portuguese" hidden="false" targetId="9db8-15e9-7224-9503" primary="false"/>
-        <categoryLink id="9d34-b585-b28a-4f0c" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="161a-9360-1c74-24c8" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="84c3-51d9-9e16-6502" name="Battle Platform" hidden="false" targetId="8b0e-929f-ad70-2b6a" primary="false"/>
-        <categoryLink id="1849-1086-7573-ddc9" name="Vasco Class" hidden="false" targetId="c714-6fd6-c084-666e" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="4a1f-3b30-6171-4136" name="Secondary Weapon" hidden="false" collective="false" import="true">
@@ -6232,10 +6116,7 @@
         <infoLink id="e56f-81c2-1aa8-6c9f" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="ceaf-6473-def5-c928" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="b2da-3824-fd4f-2cf0" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-        <categoryLink id="c94c-dc38-95ac-01fe" name="SUSA" hidden="false" targetId="fca3-00a8-9f39-e015" primary="false"/>
-        <categoryLink id="c2f4-4896-a864-02a1" name="Sumter Class" hidden="false" targetId="07b1-0697-8216-1bc0" primary="false"/>
+        <categoryLink id="ceaf-6473-def5-c928" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="01a3-2be0-8938-0db1" name="Landing Ship" hidden="false" targetId="2d15-bb28-9218-2ad0" primary="false"/>
         <categoryLink id="0642-5516-ba4a-f900" name="Paddlewheel" hidden="false" targetId="efd3-b9c9-b144-de57" primary="false"/>
       </categoryLinks>
@@ -6318,12 +6199,9 @@
         <infoLink id="b61f-a7be-4ceb-c9f1" name="Corvette Duty" hidden="false" targetId="4836-a907-b316-55b2" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="a09c-13eb-f232-8c34" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="ae9b-32da-a451-3dcd" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-        <categoryLink id="6a30-b737-ddec-cf5b" name="SUSA" hidden="false" targetId="fca3-00a8-9f39-e015" primary="false"/>
+        <categoryLink id="a09c-13eb-f232-8c34" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="3ce6-430f-fa52-8ff9" name="Paddlewheel" hidden="false" targetId="efd3-b9c9-b144-de57" primary="false"/>
         <categoryLink id="7e24-1e19-1e73-cd35" name="Corvette" hidden="false" targetId="e4df-5e1e-0f32-624f" primary="false"/>
-        <categoryLink id="d610-54cb-44f3-b182" name="Springfield Class" hidden="false" targetId="ed42-78a2-7cff-5cd7" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="cbd6-692e-8c90-d6a1" name="Light Broadside" hidden="false" collective="false" import="true" targetId="fc11-e98a-2d7f-198c" type="selectionEntry">
@@ -6387,11 +6265,7 @@
         <infoLink id="9475-d8dd-2add-d8db" name="Mine Sweeper" hidden="false" targetId="3c38-dac5-4a88-5358" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="a0ea-ffc8-e17d-6d47" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="61c3-cad2-00e2-d63f" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
-        <categoryLink id="e79e-1704-0975-9122" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="false"/>
-        <categoryLink id="040b-24a7-305a-1842" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
-        <categoryLink id="8924-b966-df86-81bd" name="Pilum Class" hidden="false" targetId="855a-ea05-8481-1aee" primary="false"/>
+        <categoryLink id="a0ea-ffc8-e17d-6d47" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="5fb9-eac9-72e7-fc05" name="Monitor" hidden="false" targetId="4b6f-2ef4-32c9-a605" primary="false"/>
       </categoryLinks>
       <selectionEntries>
@@ -6597,11 +6471,7 @@
         <infoLink id="b5e3-f83a-4d74-e39f" name="Spotter" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="063a-3229-1f27-a3c2" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="91a2-6c7c-eee7-7a68" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="004f-14ca-8c4b-b4d4" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
-        <categoryLink id="24cf-9d06-e41d-bef7" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="false"/>
-        <categoryLink id="b510-085c-eb99-61f3" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
-        <categoryLink id="e2af-8e36-6556-caff" name="Scorpio Class" hidden="false" targetId="c397-e3e8-e311-3bd0" primary="false"/>
+        <categoryLink id="91a2-6c7c-eee7-7a68" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="ee13-5245-c711-28a0" name="Artillery Cruiser" hidden="false" targetId="9480-9f46-e8fb-e916" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -6705,12 +6575,9 @@
         <infoLink id="0ae6-e748-9b92-f4b9" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="2b8e-9319-3339-e111" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="8d87-1ce7-1229-ae9b" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-        <categoryLink id="64ff-9336-270d-c3ff" name="SUSA" hidden="false" targetId="fca3-00a8-9f39-e015" primary="false"/>
+        <categoryLink id="2b8e-9319-3339-e111" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="fde0-6b21-d236-fbbb" name="Paddlewheel" hidden="false" targetId="efd3-b9c9-b144-de57" primary="false"/>
         <categoryLink id="fea6-9125-2e70-0f90" name="Heavy Monitor" hidden="false" targetId="6832-f883-d3bc-675e" primary="false"/>
-        <categoryLink id="dc5d-2b1e-099c-0cc7" name="Gettysburg Class" hidden="false" targetId="7f4d-c84f-ea5a-219b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="6d1f-37c1-2852-1ca7" name="Main Weapon" hidden="false" collective="false" import="true">
@@ -6978,11 +6845,8 @@
         <infoLink id="2763-0295-8733-e20d" name="For Valour!" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="826a-0c64-d7a5-346a" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="a848-a0f2-0a24-7ab5" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
-        <categoryLink id="ff2e-d1a1-8c63-cc2e" name="Pugio Class" hidden="false" targetId="9094-e87a-44fd-075d" primary="false"/>
+        <categoryLink id="826a-0c64-d7a5-346a" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="a393-feae-0c2e-a5e2" name="Destroyer" hidden="false" targetId="63a3-004a-8e9f-2eb4" primary="false"/>
-        <categoryLink id="c108-bfe2-8cb9-1d23" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="5f6b-8406-923f-b48d" name="Gun Battery" hidden="false" collective="false" import="true" targetId="bc09-4e9a-a2ad-3d68" type="selectionEntry">
@@ -7034,11 +6898,8 @@
         <infoLink id="c739-e084-3025-acd8" name="Useful Freight" hidden="false" targetId="2fcd-3a8e-8d93-52af" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="d589-327e-a316-97e3" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="4aea-513f-0e64-7337" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-        <categoryLink id="6de6-d390-a332-5b62" name="SUSA" hidden="false" targetId="fca3-00a8-9f39-e015" primary="false"/>
+        <categoryLink id="d589-327e-a316-97e3" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="1ff1-7374-df1d-a295" name="Merchantman" hidden="false" targetId="8bd3-bdb8-acc5-49f9" primary="false"/>
-        <categoryLink id="3e25-262a-34b1-276e" name="Providence Class" hidden="false" targetId="ff8f-5869-c621-a079" primary="false"/>
         <categoryLink id="7c08-3bb1-545f-c42e" name="Paddlewheel" hidden="false" targetId="efd3-b9c9-b144-de57" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -7189,11 +7050,8 @@
         <infoLink id="a9a2-4e88-b91d-48e1" name="For Valour!" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="5007-2034-13d3-a119" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="135e-71fe-394d-1249" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-        <categoryLink id="38d4-6f1b-c285-4d8b" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
+        <categoryLink id="5007-2034-13d3-a119" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="0ef8-6e05-0798-ad28" name="Attack Cruiser" hidden="false" targetId="884d-f947-5522-d6e7" primary="false"/>
-        <categoryLink id="1e71-cb39-ae0a-f560" name="Spatha Class" hidden="false" targetId="7b68-75ed-db95-3660" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="2b70-eb66-10c2-e1c3" name="Scutum Mine Launcher" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
@@ -7469,11 +7327,8 @@
         <infoLink id="5369-f99c-d335-c8e5" name="Vulnerable Stern" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="88ef-ef3d-fe19-9065" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="fb2d-fd57-0d6c-79b8" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="dc01-fb69-8142-8333" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="true"/>
+        <categoryLink id="88ef-ef3d-fe19-9065" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="92b5-cc61-31d0-8836" name="Levant Solex Cruiser" hidden="false" targetId="e112-1927-c0bf-2b6d" primary="false"/>
-        <categoryLink id="402d-1668-6f4f-543c" name="Marseilles Class" hidden="false" targetId="9b6f-3734-41b1-3811" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="9a9c-2ed2-e502-e617" name="SRS" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="upgrade">
@@ -7607,11 +7462,8 @@
         <infoLink id="bdee-72b7-f718-c0b9" name="Malinois Strike Fighters" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ed8a-5968-81b4-27d5" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="6435-6958-6f84-49f1" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="6e45-d55a-2679-891d" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
-        <categoryLink id="aadb-6cdc-c0f4-2da4" name="Jupiter Class" hidden="false" targetId="ba35-5e33-be79-8b28" primary="false"/>
+        <categoryLink id="6435-6958-6f84-49f1" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="5010-a9fc-376d-2661" name="Support Carrier" hidden="false" targetId="dc06-6d22-be64-c6eb" primary="false"/>
-        <categoryLink id="31ad-8fe8-2870-7281" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="d1bf-4b32-b934-eefd" name="SRS" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="true" import="true" type="upgrade">
@@ -7677,11 +7529,9 @@
         <infoLink id="d61f-b173-7f8b-f1fe" name="Vulnerable Stern" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="bb01-c993-f744-06a7" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
-        <categoryLink id="b5f4-750b-fd28-4f85" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="6ead-1758-9206-9894" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="false"/>
+        <categoryLink id="bb01-c993-f744-06a7" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="false"/>
         <categoryLink id="a081-4d7d-04dc-544d" name="Levant Destroyer" hidden="false" targetId="e0b9-456b-bad4-4fe0" primary="false"/>
-        <categoryLink id="d9f3-a72a-018c-fd21" name="Honneur Class" hidden="false" targetId="e2e6-761a-b783-0066" primary="false"/>
+        <categoryLink id="e4b0-ff23-5d46-d96e" name="New CategoryLink" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="167d-c971-5696-bc3f" name="Secondary Weapon" hidden="false" collective="false" import="true">
@@ -7810,12 +7660,8 @@
         <infoLink id="7868-03bd-a995-1e47" name="Frelon Bombers" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="f1b0-26eb-f8e8-8d3b" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="7148-7db0-d4df-2afe" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="7a0e-402b-7e78-c9b7" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="709b-9249-6901-f934" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
-        <categoryLink id="6c2b-d24b-f407-8647" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="false"/>
+        <categoryLink id="7148-7db0-d4df-2afe" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="f3ac-e8f7-0e17-eea2" name="Levant Destroyer" hidden="false" targetId="e0b9-456b-bad4-4fe0" primary="false"/>
-        <categoryLink id="b630-f3d4-3d06-3283" name="Hoche Class" hidden="false" targetId="fc93-121f-50a0-2323" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="b162-1948-36f2-be36" name="Frelon Bombers" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="upgrade">
@@ -7871,17 +7717,14 @@
         </infoGroup>
       </infoGroups>
       <infoLinks>
-        <infoLink id="d9e9-b905-dcbb-c5d2" name="Ablative Flank Armour" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
+        <infoLink id="d9e9-b905-dcbb-c5d2" name="Ablative Flank Armour*" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
         <infoLink id="b25a-a6e5-2fa1-43ea" name="Coordinate Support" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
         <infoLink id="f501-5965-0dc4-8f0b" name="For Valour!" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="c9d2-ff0a-a39e-5306" name="Sharpshooter" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="cfc8-6211-b137-5f73" type="rule"/>
+        <infoLink id="c9d2-ff0a-a39e-5306" name="Sharpshooter*" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="2c93-befd-f88b-0881" type="rule"/>
         <infoLink id="3f0f-7de7-1749-c52d" name="Gladius" hidden="false" targetId="eaae-b51a-8ce4-1270" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="eb82-2ad2-071b-d574" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="fe09-1599-bfc9-8662" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-        <categoryLink id="8a82-6e6d-ad3c-00ac" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
-        <categoryLink id="ae70-03e8-55db-5a2e" name="Gladius Class" hidden="false" targetId="840e-9d58-ebd8-45d6" primary="false"/>
+        <categoryLink id="eb82-2ad2-071b-d574" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="3f7d-2f85-5688-2fb4" name="Strike Cruiser" hidden="false" targetId="ec0f-66dd-f28e-e778" primary="false"/>
       </categoryLinks>
       <selectionEntries>
@@ -8105,12 +7948,9 @@
         <infoLink id="6f0b-b603-c020-6d2c" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="c1d4-f850-6a08-bb86" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="2b40-dec2-0c99-f225" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-        <categoryLink id="1c1b-1b23-b683-1770" name="SUSA" hidden="false" targetId="fca3-00a8-9f39-e015" primary="false"/>
+        <categoryLink id="c1d4-f850-6a08-bb86" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="d8ea-c6a7-1bcc-70ae" name="Paddlewheel" hidden="false" targetId="efd3-b9c9-b144-de57" primary="false"/>
         <categoryLink id="7f72-9efc-6d45-7f49" name="Littoral Monitor" hidden="false" targetId="d816-d294-2db9-b299" primary="false"/>
-        <categoryLink id="6767-d713-80eb-3435" name="Saratoga Class" hidden="false" targetId="32a1-dcb7-f9c7-75c1" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="758b-aa99-1de8-590f" name="Secondary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="aca9-974b-43e9-2d6d">
@@ -8296,11 +8136,8 @@
         <infoLink id="4b7e-52f7-96f6-5903" name="Vulnerable Stern" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="4648-92ce-7689-54ab" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
+        <categoryLink id="4648-92ce-7689-54ab" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="edd3-e14b-a62e-ff0b" name="Levant Merchantman" hidden="false" targetId="cfb4-1fb7-f0f3-79f1" primary="false"/>
-        <categoryLink id="0a20-3c20-a1be-8545" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="true"/>
-        <categoryLink id="2d15-aeaa-f787-5127" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="4934-0d32-46fa-0f03" name="Gascony Class" hidden="false" targetId="7157-d9d6-610e-6f5a" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="6507-1b6d-3fc2-11a1" name="Main Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="a28c-37bb-10db-408d">
@@ -8383,10 +8220,7 @@
         <infoLink id="2776-7a6c-1a6d-f79b" name="For Valour!" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="3c14-46c9-d5ea-80f3" name="New CategoryLink" hidden="false" targetId="022b-08af-c874-e3f1" primary="true"/>
-        <categoryLink id="d7f8-6e83-64b6-66b9" name="Spanish" hidden="false" targetId="5a93-5021-42f1-6d6e" primary="false"/>
-        <categoryLink id="bb46-9bf0-1273-2f5c" name="Cordova Class" hidden="false" targetId="bf9a-2382-3bbb-8a00" primary="false"/>
-        <categoryLink id="9c9a-f843-7b6e-14d7" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
+        <categoryLink id="9c9a-f843-7b6e-14d7" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="d0bd-9159-8407-cbbc" name="Aerogalleon" hidden="false" targetId="57ab-e094-cecc-1d3a" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -8505,9 +8339,7 @@
         <infoLink id="c998-aecd-8336-376e" name="Vulnerable Stern" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="55e2-7a6a-8ac0-c859" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="c395-5cfc-cea2-404a" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="d655-1509-7345-e44f" name="New CategoryLink" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="true"/>
+        <categoryLink id="55e2-7a6a-8ac0-c859" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="433c-772a-6666-0f00" name="Levant Solex Cruiser" hidden="false" targetId="e112-1927-c0bf-2b6d" primary="false"/>
       </categoryLinks>
       <entryLinks>
@@ -8578,10 +8410,7 @@
         <infoLink id="b1cd-787b-90e9-4c95" name="Vulnerable Stern" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="c296-c6d0-f043-3506" name="Alma Class" hidden="false" targetId="cbb8-d297-67c9-3022" primary="false"/>
-        <categoryLink id="5be3-1a01-a2ec-bfc3" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="true"/>
-        <categoryLink id="997e-c288-95e0-03fa" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="d929-fff1-01db-d7d7" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
+        <categoryLink id="d929-fff1-01db-d7d7" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="96f3-f8af-b6fb-6b38" name="Levant Support Carrier" hidden="false" targetId="1a02-dc75-7bf6-f0f5" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -8664,8 +8493,8 @@
         <infoLink id="2eb1-4056-2ca3-7403" name="Forward Deployment" hidden="false" targetId="e8f8-a4d2-d40c-1467" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="5d02-1d29-06ed-43be" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="f6ce-e41f-c3f1-dfbf" name="War Platform" hidden="false" targetId="e036-10f0-615f-6a77" primary="false"/>
+        <categoryLink id="1418-3a0d-3c48-2ce3" name="New CategoryLink" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="92f6-7c18-1649-5c4c" name="Main Weapon" hidden="false" collective="false" import="true">
@@ -8977,8 +8806,8 @@
         <infoLink id="94ee-2e72-55ec-461c" name="Supply Depot" hidden="false" targetId="23f5-7a90-116f-cba1" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="7464-d1ef-c8b3-c30c" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="ebcc-1c55-ac9d-e711" name="Offshore Support Platform" hidden="false" targetId="a197-5d9c-5624-4e41" primary="false"/>
+        <categoryLink id="dc10-37f4-1c89-5d48" name="New CategoryLink" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="a838-c06f-9d4b-e3ff" name="Main Weapon" hidden="false" collective="false" import="true">
@@ -9135,11 +8964,8 @@
         </infoLink>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="eac5-ded4-038b-47c8" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="false"/>
-        <categoryLink id="3b4d-a29c-3eb5-f9cf" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
-        <categoryLink id="e1b4-2b77-d846-39d9" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
+        <categoryLink id="e1b4-2b77-d846-39d9" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="8bad-3fd2-3a2a-cfd6" name="Zebek" hidden="false" targetId="ee64-d21d-9794-4461" primary="false"/>
-        <categoryLink id="af15-ba35-1072-2e18" name="Cestus Class" hidden="false" targetId="93d4-cb98-2ff1-1d48" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="493e-4aaf-b93f-1fa2" name="Gun Battery" hidden="false" collective="false" import="true" targetId="bc09-4e9a-a2ad-3d68" type="selectionEntry">
@@ -9204,10 +9030,7 @@
         <infoLink id="4e51-de69-b6cd-4c6b" name="Vanguard" hidden="false" targetId="f721-8318-3875-0140" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="558e-56ad-4629-cbc4" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-        <categoryLink id="649d-4b7d-b3c1-5ec5" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="1f12-58cd-c234-4741" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
-        <categoryLink id="a026-210e-d2a4-14c2" name="Auxilia Class" hidden="false" targetId="1439-2fa4-15a8-b97a" primary="false"/>
+        <categoryLink id="649d-4b7d-b3c1-5ec5" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="a1db-3624-15a6-7176" name="Fast Cruiser" hidden="false" targetId="a1ea-edee-b3e8-9ff2" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -9424,13 +9247,9 @@
         <infoLink id="0c89-934e-c391-d9c6" name="Heavy Firepower" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="811d-40e7-bb8b-6237" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="803b-5adc-3a38-6a3c" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
-        <categoryLink id="bf2c-e6bf-9b26-9cea" name="SUSA" hidden="false" targetId="fca3-00a8-9f39-e015" primary="false"/>
-        <categoryLink id="e91d-f281-6b70-95b2" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="false"/>
+        <categoryLink id="811d-40e7-bb8b-6237" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="63db-44f5-ff5f-fbbb" name="Heavy Battleship" hidden="false" targetId="1fe5-12b2-2e30-7802" primary="false"/>
         <categoryLink id="51ab-b352-d334-2f53" name="Paddlewheel" hidden="false" targetId="efd3-b9c9-b144-de57" primary="false"/>
-        <categoryLink id="979d-9522-6d89-2a41" name="Colombia Class" hidden="false" targetId="bb95-5e59-afce-dfe8" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="9061-a7d0-4e9c-f017" name="Main Weapon" hidden="false" collective="false" import="true">
@@ -9738,11 +9557,8 @@
         <infoLink id="c2af-b35c-db4d-a3c4" name="SRS Recon Flight" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="956f-911e-67dc-eec1" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="c899-cc82-b807-63d7" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
+        <categoryLink id="956f-911e-67dc-eec1" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="8741-cfce-20de-bbd6" name="Levant Sky-Fortress" hidden="false" targetId="48dd-5c57-5ef2-4f3e" primary="false"/>
-        <categoryLink id="b7a7-d4bf-9f9c-5320" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="07de-da05-44f8-b9e4" name="Vauban Class" hidden="false" targetId="cd28-9d0b-297b-7e6a" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="e059-2880-65c3-5c06" name="SRS" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="upgrade">
@@ -9932,13 +9748,9 @@
         <infoLink id="6a29-388c-bde4-b6e3" name="Heavy Firepower" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="d396-7150-bd65-f37e" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="45bc-5ad5-cfdc-64ec" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
-        <categoryLink id="97fa-dc0d-6ab9-16ed" name="SUSA" hidden="false" targetId="fca3-00a8-9f39-e015" primary="false"/>
-        <categoryLink id="6353-041a-040e-d25a" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="false"/>
+        <categoryLink id="d396-7150-bd65-f37e" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="8823-8082-7eea-cc04" name="Heavy Battleship" hidden="false" targetId="1fe5-12b2-2e30-7802" primary="false"/>
         <categoryLink id="779d-769c-14c0-3390" name="Paddlewheel" hidden="false" targetId="efd3-b9c9-b144-de57" primary="false"/>
-        <categoryLink id="1ec6-8aed-ccdc-4f08" name="Virginia Class" hidden="false" targetId="eb8c-e282-a71c-0f4c" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="552d-c432-c8be-f2f3" name="Main Weapon" hidden="false" collective="false" import="true">
@@ -10188,10 +10000,7 @@
         <infoLink id="b5e1-ae16-0860-3c57" name="Focused Gunnery" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9ec9-dd04-5a42-6864" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="626c-c366-97a7-69cb" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="f3b1-3a3f-2f5e-36a7" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
-        <categoryLink id="8e56-8cc6-eb5e-a0dc" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="abf0-dc77-e9fc-8046" name="Oriflamme Class" hidden="false" targetId="7d92-3a3b-5e20-7609" primary="false"/>
+        <categoryLink id="626c-c366-97a7-69cb" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="a4d7-934d-af7d-aae6" name="Grand Battlecruiser" hidden="false" targetId="d819-b3ce-e912-cd74" primary="false"/>
       </categoryLinks>
       <entryLinks>
@@ -10284,10 +10093,7 @@
         <infoLink id="3b8b-a545-e075-cfd5" name="Focused Gunnery" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9ec9-dd04-5a42-6864" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="76c6-5f62-92a4-eedc" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
-        <categoryLink id="9c7d-e0d8-9b80-e213" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
-        <categoryLink id="71e5-48a5-d70e-f016" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="f1ae-74b2-8ec7-b939" name="Oriflamme Class" hidden="false" targetId="7d92-3a3b-5e20-7609" primary="false"/>
+        <categoryLink id="76c6-5f62-92a4-eedc" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="0730-234c-ab6b-2b47" name="Grand Battlecruiser" hidden="false" targetId="d819-b3ce-e912-cd74" primary="false"/>
       </categoryLinks>
       <entryLinks>
@@ -10358,21 +10164,19 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
-    <rule id="0b78-1d53-06c0-1b42" name="Levant Surge" publicationId="129d-da97-caec-1ddd" hidden="false">
-      <description>Attacks with the Submerged Quality gain a single Hit from a Heavy Hit result rather than the usual two when attacking this Model. Exploding Hits are unaffected by this rule. In the Special Operations phase of the round, while battle Ready, this Unit may make a Levant Surge. For the remainder of that Round, the Unit gains +3 Movement, ceases to be a Skimming Unit and instead becomes an Aerial Unit. A Unit cannot make a Levant Surge if it has already done so the previous Round or if it is part of an Attached Unit where not all Models have this rule.</description>
+    <rule id="0b78-1d53-06c0-1b42" name="Levant Surge*" publicationId="129d-da97-caec-1ddd" hidden="false">
+      <description>Attacks with the Submerged Quality gain a single Hit from a Heavy Hit result rather than the usual two when attacking this Model. Exploding Hits are unaffected by this rule. In the Special Operations phase of the round, while battle Ready, this Unit may make a Levant Surge. For the remainder of that Round, the Unit gains +3 Movement, ceases to be a Skimming Unit and instead becomes an Aerial Unit. A Unit cannot make a Levant Surge if it has already done so the previous Round or if it is part of an Attached Unit where not all Models have this rule. </description>
     </rule>
-    <rule id="4836-a907-b316-55b2" name="Corvette Duty" publicationId="129d-da97-caec-1ddd" hidden="false">
-      <description>This Model may add +1 to the Defence Action Dice Pool on any friendly Models within 5”. This bonus is in addition to any other bonuses such as being part of an Attached Unit.</description>
+    <rule id="1108-5d87-5267-d3a4" name="Protected Gun Crews*" publicationId="129d-da97-caec-1ddd" hidden="false">
+      <description>Crippled Models with this rule still use the Battle Ready value of their weapons with the Gunnery or Broadside Qualities. This rule cannot be used if the Model has the Chaos and Disarray Disorder Condition and has no effect on supporting with the Coordinated Support rule.</description>
     </rule>
-    <rule id="1108-5d87-5267-d3a4" name="Protected Gun Crews" publicationId="129d-da97-caec-1ddd" hidden="false">
-      <description> Crippled Models with this rule still use the Battle Ready value of their weapons with the Gunnery or Broadside Qualities. This rule cannot be used if the Model has the Chaos and Disarray Disorder Condition and has no effect on supporting with the Coordinated Support rule.</description>
+    <rule id="e869-352b-8f2a-e3fd" name="Conscripted Crew*" publicationId="129d-da97-caec-1ddd" hidden="false">
+      <description>This Unit counts Heavy Counters or Heavy Hits as a single success rather than two when involved in Assaults. </description>
     </rule>
-    <rule id="e869-352b-8f2a-e3fd" name="Conscripted Crew" publicationId="129d-da97-caec-1ddd" hidden="false">
-      <description>This Unit counts Heavy Counters or Heavy Hits as a single success rather than two when involved in Assaults.</description>
+    <rule id="6682-4372-1977-72dc" name="Sabre Rattle*" publicationId="129d-da97-caec-1ddd" hidden="false">
+      <description>Once both sides have deployed but before any Vanguard or Shadow Hunter moves have been made, Units in this Battlefleet may be redeployed provided that their new position is closer to an enemy Unit than before this redeployment.  Each Unit in this Battlefleet may only be redeployed once and must be redeployed in their own Deployment area.</description>
     </rule>
-    <rule id="6682-4372-1977-72dc" name="Sabre Rattle" hidden="false">
-      <description>Once both sides have deployed but before any Vanguard or Shadow Hunter moves have been made, Units in this Battlefleet may be redeployed provided that their new position is closer to an enemy Unit than before this redeployment. Each Unit in this Battlefleet may only be redeployed once and must be redeployed in their own Deployment area. </description>
-    </rule>
+    <rule id="4781-004e-30dd-0347" name="New Rule" hidden="false"/>
   </sharedRules>
   <sharedProfiles>
     <profile id="71ec-3e1e-f318-66ad" name="Columbia" publicationId="129d-da97-caec-1ddd" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">

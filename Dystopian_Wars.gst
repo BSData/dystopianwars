@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="1242-c30b-419f-8229" name="Dystopian Wars 3.0" revision="6" battleScribeVersion="2.03" authorName="Riccardo Sipone / Ruslan Zakirov" authorContact="siponeric@hotmail.com / ruslan.zakirov.2000@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
-  <readme>The Dystopian Wars datafile are editied and mantained with Ruslan Zakirov, that with patience has start to managed all profile and debugging.
-Revision 1.01: added all ORBAT Publication
+<gameSystem id="1242-c30b-419f-8229" name="Dystopian Wars 3.0" revision="7" battleScribeVersion="2.03" authorName="Riccardo Sipone / Ruslan Zakirov" authorContact="siponeric@hotmail.com / ruslan.zakirov.2000@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+  <comment>The Dystopian Wars datafile are editied and mantained with Ruslan Zakirov, that with patience has start to managed all profile and debugging.</comment>
+  <readme>Revision 1.01: added all ORBAT Publication
 Revision 1.02: managed correctlly Publication, corrected Command Reroll bonus
 Revision 1.03: update common weapon charatteristic after new Orbat pubbication
 Revision 1.04: review of datafile logic
 Revision 3.03.00: introduction of rules 3.03
-Revision 3.03.01: new feature to support 3.02 Orbat</readme>
+Revision 3.03.01: new feature to support 3.03 Orbat
+Revision 3.03.02: new feature abd correction to support 3.03 Orbat</readme>
   <publications>
     <publication id="7f09-e243-2307-78d0" name="Dystopian Rulebook"/>
     <publication id="e265-8c7f-a4b2-a48e" name="Commonwhealth ORBAT"/>
@@ -66,7 +67,6 @@ Revision 3.03.01: new feature to support 3.02 Orbat</readme>
     </profileType>
   </profileTypes>
   <categoryEntries>
-
     <categoryEntry id="11d2-f561-163c-722c" name="Aerial" publicationId="" hidden="false"/>
     <categoryEntry id="293e-b55a-bcfa-95c3" name="Unique" hidden="false"/>
     <categoryEntry id="d216-bc05-71f1-0fb4" name="Unit" publicationId="" page="" hidden="false"/>
@@ -74,13 +74,10 @@ Revision 3.03.01: new feature to support 3.02 Orbat</readme>
     <categoryEntry id="7b4f-81a5-4fc3-6856" name="Elite Crew" hidden="false"/>
     <categoryEntry id="8009-dc7d-8de1-5601" name="Submerged" hidden="false"/>
     <categoryEntry id="9ab6-c624-d0ae-dd32" name="Escort Duty" publicationId="129d-da97-caec-1ddd" hidden="false"/>
-	
     <categoryEntry id="fef3-1842-580c-4bef" name="Flagship" hidden="false"/>
-    <categoryEntry id="022b-08af-c874-e3f1" name="Aerial Unit" hidden="false"/>	
+    <categoryEntry id="022b-08af-c874-e3f1" name="Aerial Unit" hidden="false"/>
     <categoryEntry id="3b53-19a3-12fd-34b1" name="Skimming Unit" publicationId="5a03-1c6f-8fc8-2be1" hidden="false"/>
     <categoryEntry id="df3f-7b38-7940-f11e" name="Submerged Unit" hidden="false"/>
-
-	
     <categoryEntry id="7f73-53c5-5468-f039" name="Advanced Cruiser" hidden="false"/>
     <categoryEntry id="77f5-1ac9-0fd1-f299" name="Aerial Destroyer" hidden="false"/>
     <categoryEntry id="ec7b-1e05-b0b8-edb8" name="Aerial Dreadnought" hidden="false"/>
@@ -96,25 +93,21 @@ Revision 3.03.01: new feature to support 3.02 Orbat</readme>
     <categoryEntry id="2ab9-9b85-528f-d800" name="Attack Submarine" hidden="false"/>
     <categoryEntry id="f143-0c0d-137b-1745" name="Automata" hidden="false"/>
     <categoryEntry id="acf0-1a05-7d4a-faab" name="Auxiliary Cruiser" publicationId="dbca-8d57-b848-457e" hidden="false"/>
-
     <categoryEntry id="4307-fa1c-3d84-dba5" name="Battlecruiser" hidden="false"/>
     <categoryEntry id="f53b-304b-cb90-6535" name="Battleship" hidden="false"/>
     <categoryEntry id="9566-ae5c-ce6d-637b" name="Bombardment Cruiser" hidden="false"/>
-
+    <categoryEntry id="f2e4-41fc-0616-3a14" name="Carrier Frigate" publicationId="908d-6feb-2e9e-843b" hidden="false"/>
     <categoryEntry id="c59d-c602-bfb0-1b11" name="Cruiser" hidden="false"/>
-
+    <categoryEntry id="6e5f-de00-ba4f-4892" name="Explorer" publicationId="908d-6feb-2e9e-843b" hidden="false"/>
     <categoryEntry id="a1ea-edee-b3e8-9ff2" name="Fast Cruiser" hidden="false"/>
     <categoryEntry id="5ff2-dbb6-8bd2-a160" name="Fast Destroyer" hidden="false"/>
     <categoryEntry id="408c-1732-73f9-379d" name="Fleet Carrier" hidden="false"/>
     <categoryEntry id="34e1-40d5-5011-e3c5" name="Frigate" hidden="false"/>
-
-
     <categoryEntry id="d819-b3ce-e912-cd74" name="Grand Battlecruiser" publicationId="5a03-1c6f-8fc8-2be1" hidden="false"/>
     <categoryEntry id="7d73-4bd1-b044-2f97" name="Grand Cruiser" publicationId="d854-a2d6-3d52-44c4" hidden="false"/>
     <categoryEntry id="0f3e-bdd6-d9a6-ca8d" name="Grand Fabricator" hidden="false"/>
     <categoryEntry id="69f9-0671-1f6b-53da" name="Grand Monitor" publicationId="d854-a2d6-3d52-44c4" hidden="false"/>
     <categoryEntry id="75af-d360-cca8-6162" name="Grand Submarine" hidden="false"/>
-
     <categoryEntry id="022c-02a2-ca98-aabe" name="Heavy Battlecruiser" publicationId="d854-a2d6-3d52-44c4" hidden="false"/>
     <categoryEntry id="1fe5-12b2-2e30-7802" name="Heavy Battleship" publicationId="7f09-e243-2307-78d0" hidden="false"/>
     <categoryEntry id="117f-4a88-efe9-b7d8" name="Heavy Corvette" hidden="false"/>
@@ -123,7 +116,6 @@ Revision 3.03.01: new feature to support 3.02 Orbat</readme>
     <categoryEntry id="6832-f883-d3bc-675e" name="Heavy Monitor" publicationId="129d-da97-caec-1ddd" hidden="false"/>
     <categoryEntry id="4c92-14f3-4e29-84c0" name="Hunter Killer Submarine" hidden="false"/>
     <categoryEntry id="32fd-997a-72b6-f5cb" name="Hunter Submarine" hidden="false"/>
-
     <categoryEntry id="0f4e-80de-1d9f-48c8" name="Levant Assault Carrier" publicationId="129d-da97-caec-1ddd" hidden="false"/>
     <categoryEntry id="f92f-c7c2-4b99-f07d" name="Levant Batthecruiser" publicationId="129d-da97-caec-1ddd" hidden="false"/>
     <categoryEntry id="3276-90f7-77b7-e457" name="Levant Bomber Carrier" publicationId="129d-da97-caec-1ddd" hidden="false"/>
@@ -135,27 +127,15 @@ Revision 3.03.01: new feature to support 3.02 Orbat</readme>
     <categoryEntry id="6f25-c66f-adac-f6b1" name="Levant Support Cruiser" publicationId="129d-da97-caec-1ddd" hidden="false"/>
     <categoryEntry id="eaa8-98cf-39ba-0a38" name="Light Cruiser" hidden="false"/>
     <categoryEntry id="333d-eff4-a9bd-7666" name="Logistics Cruiser" hidden="false"/>
-
     <categoryEntry id="d021-1d00-ea89-1837" name="Mobile Stronghold" hidden="false"/>
     <categoryEntry id="4b6f-2ef4-32c9-a605" name="Monitor" hidden="false"/>
-
     <categoryEntry id="d8ef-ccc7-7fdf-6aab" name="Recon Cruiser" hidden="false"/>
-
     <categoryEntry id="ec0f-66dd-f28e-e778" name="Strike Cruiser" hidden="false"/>
+    <categoryEntry id="eaca-b02c-43a7-0b54" name="Strike Submarine" hidden="false"/>
     <categoryEntry id="9bba-e173-1b7a-c420" name="Superiority Cruiser" hidden="false"/>
     <categoryEntry id="dc06-6d22-be64-c6eb" name="Support Carrier" hidden="false"/>
-
     <categoryEntry id="a0ca-a702-aa5f-5333" name="Torpedo Submarine" hidden="false"/>
-
     <categoryEntry id="ebb4-f3b0-c051-b94e" name="Vanguard Cruiser" hidden="false"/>
-
-
-
-
-
-
-    <categoryEntry id="6e5f-de00-ba4f-4892" name="Explorer" publicationId="908d-6feb-2e9e-843b" hidden="false"/>
-    <categoryEntry id="f2e4-41fc-0616-3a14" name="Carrier Frigate" publicationId="908d-6feb-2e9e-843b" hidden="false"/>
     <categoryEntry id="9ea3-a9da-acb5-8a63" name="Lathe Ship" publicationId="908d-6feb-2e9e-843b" hidden="false"/>
     <categoryEntry id="9e3a-0f0a-347d-ba56" name="Escort Cruiser" hidden="false"/>
     <categoryEntry id="000a-4949-4294-7697" name="Generator Ship" hidden="false"/>
@@ -164,9 +144,6 @@ Revision 3.03.01: new feature to support 3.02 Orbat</readme>
     <categoryEntry id="63a3-004a-8e9f-2eb4" name="Destroyer" hidden="false"/>
     <categoryEntry id="ac5c-893f-3453-8765" name="Reconnaissance Cruiser" hidden="false"/>
     <categoryEntry id="2324-9040-b76b-6eb9" name="Sky Bastion" hidden="false"/>
-
-
-
     <categoryEntry id="f171-ab57-1700-19db" name="Submersible Carrier" publicationId="dbca-8d57-b848-457e" hidden="false"/>
     <categoryEntry id="a9a1-5c58-9d30-452a" name="Control Cruiser" publicationId="dbca-8d57-b848-457e" hidden="false"/>
     <categoryEntry id="5c8d-7881-9645-6d0a" name="Command Cruiser" publicationId="dbca-8d57-b848-457e" hidden="false"/>
@@ -177,7 +154,6 @@ Revision 3.03.01: new feature to support 3.02 Orbat</readme>
     <categoryEntry id="6418-4b93-61d8-78b7" name="Missile Cruiser" hidden="false"/>
     <categoryEntry id="5c0f-4774-0eb5-1238" name="Strike Carrier" hidden="false"/>
     <categoryEntry id="0951-b2e8-6dc1-0cb1" name="Support Ship" hidden="false"/>
-
     <categoryEntry id="3402-a080-c0bb-dcfc" name="Supply Cruiser" hidden="false"/>
     <categoryEntry id="c8a0-0265-d83f-fe12" name="Battlefleet Flagship" hidden="false"/>
     <categoryEntry id="de22-8efd-37f3-0fbc" name="Supply Ship" hidden="false"/>
@@ -186,9 +162,7 @@ Revision 3.03.01: new feature to support 3.02 Orbat</readme>
     <categoryEntry id="0891-af18-b56a-58c8" name="Maintenance Ship" hidden="false"/>
     <categoryEntry id="fcf8-2a45-3c2e-fc65" name="Minelayer" hidden="false"/>
     <categoryEntry id="464e-890a-84b2-8ce9" name="Surface Unit" hidden="false"/>
-
     <categoryEntry id="ce30-5002-c213-d238" name="Assault Battleship" hidden="false"/>
-
     <categoryEntry id="ee64-d21d-9794-4461" name="Zebek" hidden="false"/>
     <categoryEntry id="92f1-89a2-383e-5367" name="Levant Strike Cruiser" publicationId="129d-da97-caec-1ddd" hidden="false"/>
     <categoryEntry id="57ab-e094-cecc-1d3a" name="Aerogalleon" hidden="false"/>
@@ -197,12 +171,9 @@ Revision 3.03.01: new feature to support 3.02 Orbat</readme>
     <categoryEntry id="8b0e-929f-ad70-2b6a" name="Battle Platform" hidden="false"/>
     <categoryEntry id="2d15-bb28-9218-2ad0" name="Landing Ship" hidden="false"/>
     <categoryEntry id="e4df-5e1e-0f32-624f" name="Corvette" hidden="false"/>
-
     <categoryEntry id="2da0-6f6d-3371-34c8" name="Littoral Cruiser" hidden="false"/>
     <categoryEntry id="8bd3-bdb8-acc5-49f9" name="Merchantman" hidden="false"/>
     <categoryEntry id="d816-d294-2db9-b299" name="Littoral Monitor" hidden="false"/>
-
-
     <categoryEntry id="cfb4-1fb7-f0f3-79f1" name="Levant Merchantman" publicationId="129d-da97-caec-1ddd" hidden="false"/>
     <categoryEntry id="e036-10f0-615f-6a77" name="War Platform" hidden="false"/>
     <categoryEntry id="93ea-b4cb-2f60-c42c" name="Hunt Rotor" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
@@ -210,7 +181,6 @@ Revision 3.03.01: new feature to support 3.02 Orbat</readme>
     <categoryEntry id="bb8f-e8fe-1820-d3f2" name="Shock Rocket Frigate" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
     <categoryEntry id="7236-7a73-2f7a-32e4" name="Shadow Raider" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
     <categoryEntry id="4fe6-52b1-4b8e-0bbc" name="Heavy Raider" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
-
     <categoryEntry id="8c8d-a823-7e3b-3da7" name="Fast Dreadnought" hidden="false"/>
     <categoryEntry id="acf9-0ce8-92de-91ef" name="Sky-Fortress" hidden="false"/>
     <categoryEntry id="e0b0-e2bd-62a0-5b49" name="Heavy Reaver" hidden="false"/>
@@ -247,11 +217,17 @@ Revision 3.03.01: new feature to support 3.02 Orbat</readme>
     <categoryEntry id="017e-f634-2e6c-1025" name="Super Battleship" publicationId="7b2b-0f56-3962-5ec1" hidden="false"/>
     <categoryEntry id="0f58-45f9-3a8c-9466" name="Strike Battleship" hidden="false"/>
     <categoryEntry id="8cfc-cf5f-6ab7-0db5" name="Special Rules" publicationId="5a03-1c6f-8fc8-2be1" hidden="false"/>
-    <categoryEntry id="eaca-b02c-43a7-0b54" name="Strike Submarine" hidden="false"/>
-
-
     <categoryEntry id="dfce-ed39-89c4-47a9" name="Corvette Class" publicationId="5a03-1c6f-8fc8-2be1" hidden="false"/>
     <categoryEntry id="a8dc-2c16-e614-7894" name="Escort Class" publicationId="5a03-1c6f-8fc8-2be1" hidden="false"/>
+    <categoryEntry id="8b29-d763-82a8-0966" name="Cloudraker Airship" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
+    <categoryEntry id="7b26-4a40-7d08-ecfb" name="Attack Airship" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
+    <categoryEntry id="d611-0f9b-d0c0-eb05" name="Sentry Rotor" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
+    <categoryEntry id="2cc5-a704-092b-84aa" name="Submarine" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
+    <categoryEntry id="cefd-d458-023d-066a" name="Super-Heavy Hovertank" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
+    <categoryEntry id="acb8-810a-03bf-e2ef" name="Sentry Platform" hidden="false"/>
+    <categoryEntry id="bdef-f208-af65-f6a4" name="Long-Range Cruiser" hidden="false"/>
+    <categoryEntry id="05e1-36ac-1595-ec49" name="Special Operations Vessel" hidden="false"/>
+    <categoryEntry id="2e78-d8de-6b20-4651" name="Battlecarrier" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="44e8-1fde-db6e-20f6" name="Battlefleet (generic don&apos;t use)" publicationId="7f09-e243-2307-78d0" hidden="true">
@@ -285,6 +261,9 @@ Revision 3.03.01: new feature to support 3.02 Orbat</readme>
       <categoryLinks>
         <categoryLink id="2c27-c7fb-e881-d200" name="New CategoryLink" hidden="false" targetId="8cfc-cf5f-6ab7-0db5" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>

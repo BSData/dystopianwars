@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f69c-988c-fae3-e664" name="Generator" revision="3" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f69c-988c-fae3-e664" name="Generator" revision="4" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Review 1.00.00: generator collection
 Review 3.04.00: all generator included and updated
-Review 3.04.01: all generator included and updated. added 3.03 Orbat change</readme>
+Review 3.04.01: all generator included and updated. added 3.03 Orbat change
+Review 3.04.02: added after Uniion Orbat update to 3.03</readme>
   <categoryEntries>
     <categoryEntry id="0c85-39c7-9145-efeb" name="1" hidden="true"/>
     <categoryEntry id="8901-cc02-f55e-2ee5" name="2" hidden="false"/>
@@ -463,6 +464,36 @@ Review 3.04.01: all generator included and updated. added 3.03 Orbat change</rea
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="b3c7-08d5-6e74-4bbf" name="Magma Cast Generator" publicationId="7b2b-0f56-3962-5ec1" page="" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9c55-1e8c-1492-95fd" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="65f5-7a36-af9f-2e48" name="Magma Cast Generator" page="" hidden="false" targetId="0820-8799-3688-c122" type="profile"/>
+        <infoLink id="0413-171c-3c6e-3725" name="Magma Cast generator" hidden="false" targetId="19bc-60bc-f7ef-9877" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="46c1-52b4-3f60-8cb8" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8d0a-2807-b5a9-aae3" name="Point Shield generator" publicationId="7f09-e243-2307-78d0" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f83a-d09e-467c-8dbe" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="ad1f-1be7-12fe-6080" name="Point Shield generator" hidden="false" targetId="bb87-7c6d-9144-497d" type="profile"/>
+        <infoLink id="f6a9-a716-24c4-650e" name="Point Shield generator" hidden="false" targetId="d79a-6377-a25e-d47f" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f263-bb17-eb5d-e09a" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="0bab-bd34-0b75-76b1" name="Arc generator" publicationId="e6a1-85d3-8979-7880" hidden="false">
@@ -560,6 +591,9 @@ Cryogenic Blasts and Iceberg Obstacles cannot cause damage to Aerial Units.</des
 	  - On a result of a Hit or Heavy Hit, each Model in the Target Unit is removed from Play and replaced at a new point within 10” of this Unit, facing any direction. Each additional Model in this Unit adds +5” to the distance the Target can be placed from this Unit. 
 	  - On a roll of an Exploding Hit, the Target Unit may either be placed as though a Heavy Hit has been rolled or may be placed anywhere in the Play Area but suffers a Catastrophic Explosion. When Placing Models in the Target Unit they must always be placed in Coherency, in Open Water and at least 7” from the edge of the Play Area.</description>
     </rule>
+    <rule id="d79a-6377-a25e-d47f" name="Point Shield generator" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
+      <description>The Point Defence Shield generator operates in this way and can be used when this Model is Obscured: a Model with this Generator may use it to remove Action Dice equal to the Mass Attribute of this Unit from any Attack against it (to a Maximum of 3 dice, which includes the die deducted by an Entropic Generator if one is also present). The Shield Generator cannot be used against Assaults or attacks with the Submerged, Arc or Bomb Qualities. The Point Defence Shield generator operates in this way and can be used when this Model is Obscured.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="0261-b767-cd91-14ae" name="Arc Generator" publicationId="e6a1-85d3-8979-7880" hidden="false" typeId="f5d9-cb1c-6514-45c8" typeName="Stats Generator">
@@ -637,5 +671,6 @@ Cryogenic Blasts and Iceberg Obstacles cannot cause damage to Aerial Units.</des
     <profile id="fac1-657e-c3b7-e1de" name="Storm generator" publicationId="33cf-b4a6-bff0-0d70" hidden="false" typeId="0397-3287-82a2-e086" typeName="Upgrade Generator"/>
     <profile id="9512-f063-fbc2-a039" name="Trident generator" publicationId="33cf-b4a6-bff0-0d70" hidden="false" typeId="0397-3287-82a2-e086" typeName="Upgrade Generator"/>
     <profile id="5aa5-a15b-5ffb-2c9f" name="Void-Engine" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="0397-3287-82a2-e086" typeName="Upgrade Generator"/>
+    <profile id="bb87-7c6d-9144-497d" name="Point Shield generator" publicationId="7f09-e243-2307-78d0" page="" hidden="false" typeId="0397-3287-82a2-e086" typeName="Upgrade Generator"/>
   </sharedProfiles>
 </catalogue>
