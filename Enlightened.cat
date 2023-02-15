@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="50c4-91af-d01e-a4e1" name="Enlightened v1.05a" revision="5" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="50c4-91af-d01e-a4e1" name="Enlightened v3.03" revision="7" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Review 1.02.00: initial edition according to Enlightened ORBAT 1.02a
 Review 1.02.01: bux fixing and correct Physeter Ambush management
 Review 1.03.b0: uptate data to version 1.03b
 Review 1.04.00: uptate data to version 1.04
-Review 1.05.a0: uptate data to version 1.05a</readme>
+Review 1.05.a0: uptate data to version 1.05a
+Review 3.03.00: uptate data to version 3.03
+</readme>
   <categoryEntries>
     <categoryEntry id="d580-e7cf-5353-e2bb" name="Enlightened" publicationId="908d-6feb-2e9e-843b" hidden="false"/>
     <categoryEntry id="b7da-7d83-7f67-604f" name="Control Ship" hidden="false"/>
@@ -50,9 +52,14 @@ Review 1.05.a0: uptate data to version 1.05a</readme>
     <categoryEntry id="8c35-14d0-3358-3bea" name="Tacitus Class Full" hidden="false"/>
     <categoryEntry id="836e-3f2d-94d1-15fc" name="Ulysses Class Full" hidden="false"/>
     <categoryEntry id="21bf-83f5-3398-510b" name="Praxilla Class" hidden="false"/>
+    <categoryEntry id="7f6e-7731-eb29-3e69" name="Valtar Class" publicationId="908d-6feb-2e9e-843b" hidden="false"/>
+    <categoryEntry id="8e62-12b0-04f6-1708" name="Pytheus Class" publicationId="908d-6feb-2e9e-843b" hidden="false"/>
+    <categoryEntry id="e2b1-a1ca-92ca-6a71" name="Haunebu Class" publicationId="908d-6feb-2e9e-843b" hidden="false"/>
+    <categoryEntry id="5851-e5a0-617b-23c9" name="Euclid Class" publicationId="908d-6feb-2e9e-843b" hidden="false"/>
+    <categoryEntry id="62eb-7227-885d-7d4b" name="Adamski Class" publicationId="908d-6feb-2e9e-843b" hidden="false"/>
   </categoryEntries>
   <forceEntries>
-    <forceEntry id="67f0-cd1c-37e9-d411" name="Descartes Battlefleet" publicationId="908d-6feb-2e9e-843b" hidden="false">
+    <forceEntry id="67f0-cd1c-37e9-d411" name="Enlightened Support Battlefleet" publicationId="908d-6feb-2e9e-843b" hidden="false">
       <infoLinks>
         <infoLink id="f630-acfb-6498-4621" name="Physeter Ambush" hidden="false" targetId="1f47-6b63-aa26-88ab" type="rule"/>
       </infoLinks>
@@ -189,7 +196,7 @@ Review 1.05.a0: uptate data to version 1.05a</readme>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="176f-2a64-0669-76b9" name="Hypatia Battlefleet" publicationId="908d-6feb-2e9e-843b" hidden="false">
+    <forceEntry id="176f-2a64-0669-76b9" name="Enlightened Frontline Battlefleet" publicationId="908d-6feb-2e9e-843b" hidden="false">
       <infoLinks>
         <infoLink id="6751-81b9-ad1f-a903" name="Command Re-Roll" hidden="true" targetId="baf3-c66b-7e9a-8002" type="rule"/>
       </infoLinks>
@@ -277,7 +284,7 @@ Review 1.05.a0: uptate data to version 1.05a</readme>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="b8ee-5f4d-72bc-d13e" name="Enlightened Battlefleet" publicationId="908d-6feb-2e9e-843b" hidden="false">
+    <forceEntry id="b8ee-5f4d-72bc-d13e" name="Cetacean Operations Battlefleet" publicationId="908d-6feb-2e9e-843b" hidden="false">
       <infoLinks>
         <infoLink id="74d7-ea92-62a4-c0bd" name="Command Re-Roll" hidden="true" targetId="baf3-c66b-7e9a-8002" type="rule"/>
       </infoLinks>
@@ -415,7 +422,7 @@ Review 1.05.a0: uptate data to version 1.05a</readme>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="3bb5-aa9e-d5e1-b797" name="Archimedes Battlefleet" publicationId="908d-6feb-2e9e-843b" hidden="false">
+    <forceEntry id="3bb5-aa9e-d5e1-b797" name="Enlightened Faction Battlefleet" publicationId="908d-6feb-2e9e-843b" hidden="false">
       <rules>
         <rule id="5c4e-f00e-0c16-822c" name="Archimedes Battlefleet Bonus" hidden="true">
           <modifiers>
@@ -7499,45 +7506,6 @@ Review 1.05.a0: uptate data to version 1.05a</readme>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
-    <profile id="b50b-b83f-00cf-8d86" name="Adamski" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
-      <characteristics>
-        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">2/2</characteristic>
-        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">7/5</characteristic>
-        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">10/6</characteristic>
-        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">5/5</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">11/11</characteristic>
-        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">7/4</characteristic>
-        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">0/0</characteristic>
-        <characteristic name="Fray" typeId="4c54-804a-8993-7325">7/6</characteristic>
-        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">6/3</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="ae34-9535-1e97-d6e0" name="Amo" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
-      <characteristics>
-        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">1</characteristic>
-        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">9</characteristic>
-        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">10</characteristic>
-        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">4</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">10</characteristic>
-        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">2</characteristic>
-        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">2</characteristic>
-        <characteristic name="Fray" typeId="4c54-804a-8993-7325">1</characteristic>
-        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">3</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="207d-74de-3ddf-a949" name="Antarctica" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
-      <characteristics>
-        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">2/2</characteristic>
-        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">7/5</characteristic>
-        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">4/3</characteristic>
-        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">6/5</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">11/11</characteristic>
-        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">6/4</characteristic>
-        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">6/4</characteristic>
-        <characteristic name="Fray" typeId="4c54-804a-8993-7325">8/7</characteristic>
-        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">4/4</characteristic>
-      </characteristics>
-    </profile>
     <profile id="e4c4-d558-6493-7a89" name="Archimedes" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
       <characteristics>
         <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">4/4</characteristic>
@@ -7549,6 +7517,19 @@ Review 1.05.a0: uptate data to version 1.05a</readme>
         <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">8/5</characteristic>
         <characteristic name="Fray" typeId="4c54-804a-8993-7325">12/12</characteristic>
         <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">8/8</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f104-5c79-0cbd-3e99" name="Daedelus" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
+      <characteristics>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">3/3</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">5/3</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">3/2</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">7/7</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">14/12</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">9/6</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">7/4</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">9/9</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">6/5</characteristic>
       </characteristics>
     </profile>
     <profile id="d6ec-4157-6788-a1cc" name="Descartes" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
@@ -7577,6 +7558,45 @@ Review 1.05.a0: uptate data to version 1.05a</readme>
         <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">6/6</characteristic>
       </characteristics>
     </profile>
+    <profile id="fcd8-ca0f-1021-5ccd" name="Icarus" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
+      <characteristics>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">3/3</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">5/3</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">3/2</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">7/7</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">14/12</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">9/6</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">7/4</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">9/9</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">4/7</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="673a-d00c-c33c-cb14" name="Nansen" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
+      <characteristics>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">4/4</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">3/2</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">3/2</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">7/7</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">14/12</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">8/5</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">8/5</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">12/12</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">8/8</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ca55-d610-44ac-981a" name="Thule" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
+      <characteristics>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">5/5</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">6/4</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">10/6</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">7/6</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">13/12</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">7/4</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">0/0</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">10/9</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">9/9</characteristic>
+      </characteristics>
+    </profile>
     <profile id="af5f-ec3b-0703-b55f" name="The Oedipus" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
       <characteristics>
         <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">3/3</characteristic>
@@ -7601,6 +7621,58 @@ Review 1.05.a0: uptate data to version 1.05a</readme>
         <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">8/5</characteristic>
         <characteristic name="Fray" typeId="4c54-804a-8993-7325">12/12</characteristic>
         <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">6/6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2a77-7d91-c7ca-f338" name="The Schneider" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
+      <characteristics>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">4/4</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">3/2</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">3/2</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">8/7</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">14/12</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">8/5</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">8/5</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">12/12</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">8/8</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ae34-9535-1e97-d6e0" name="Amo" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
+      <characteristics>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">1</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">9</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">10</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">4</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">10</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">2</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">2</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">1</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">3</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="207d-74de-3ddf-a949" name="Antarctica" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
+      <characteristics>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">2/2</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">7/5</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">4/3</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">6/5</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">11/11</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">6/4</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">6/4</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">8/7</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">4/4</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e526-eca0-407b-c680" name="Belgica" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
+      <characteristics>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">2/2</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">7/5</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">4/3</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">6/5</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">11/11</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">6/4</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">7/5</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">8/7</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">4/4</characteristic>
       </characteristics>
     </profile>
     <profile id="0cbe-3717-85fe-e791" name="Chatelet" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
@@ -7642,30 +7714,30 @@ Review 1.05.a0: uptate data to version 1.05a</readme>
         <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">4/4</characteristic>
       </characteristics>
     </profile>
-    <profile id="2731-d3b7-467b-37f3" name="Diogenes" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
+    <profile id="8da1-625c-1be3-c2ea" name="Ketos" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
       <characteristics>
-        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">1</characteristic>
-        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">8</characteristic>
-        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">10</characteristic>
-        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">4</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">10</characteristic>
-        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">0</characteristic>
-        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">3</characteristic>
-        <characteristic name="Fray" typeId="4c54-804a-8993-7325">1</characteristic>
-        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">3</characteristic>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">2/2</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">4/3</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">0/0</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">6/5</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">11/11</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">0/0</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">0/0</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">7/5</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">4/3</characteristic>
       </characteristics>
     </profile>
-    <profile id="64ff-ad78-bece-b4b1" name="Germain Zebeks" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
+    <profile id="3ac7-a80a-d524-e7ba" name="Lotan" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
       <characteristics>
-        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">1</characteristic>
-        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">9</characteristic>
-        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">10</characteristic>
-        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">4</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">8</characteristic>
-        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">2</characteristic>
-        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">2</characteristic>
-        <characteristic name="Fray" typeId="4c54-804a-8993-7325">1</characteristic>
-        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">2</characteristic>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">2/2</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">4/3</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">0/0</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">6/5</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">11/11</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">0/0</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">0/0</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">7/5</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">4/3</characteristic>
       </characteristics>
     </profile>
     <profile id="0234-9067-eab3-ddc5" name="Lovelace" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
@@ -7694,6 +7766,32 @@ Review 1.05.a0: uptate data to version 1.05a</readme>
         <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">3</characteristic>
       </characteristics>
     </profile>
+    <profile id="0909-d20d-904f-a960" name="Newton" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
+      <characteristics>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">2/2</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">6/4</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">5/4</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">6/5</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">11/11</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">3/2</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">3/2</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">6/6</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">3/5</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6858-1c44-7d54-9cef" name="Origen" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
+      <characteristics>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">2/2</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">8/6</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">5/3</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">6/5</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">11/11</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">8/4</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">5/3</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">8/7</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">4/4</characteristic>
+      </characteristics>
+    </profile>
     <profile id="cae1-bb45-2586-f703" name="Plinius" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
       <characteristics>
         <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">2/2</characteristic>
@@ -7707,17 +7805,17 @@ Review 1.05.a0: uptate data to version 1.05a</readme>
         <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">4/5</characteristic>
       </characteristics>
     </profile>
-    <profile id="eaab-8568-4724-5f39" name="Praxilla" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
+    <profile id="4303-c6f9-6938-32b5" name="Quintilian" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
       <characteristics>
-        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">1</characteristic>
-        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">8</characteristic>
-        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">10</characteristic>
-        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">4</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">10</characteristic>
-        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">0</characteristic>
-        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">3</characteristic>
-        <characteristic name="Fray" typeId="4c54-804a-8993-7325">6</characteristic>
-        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">3</characteristic>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">2/2</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">7/5</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">5/3</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">6/5</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">11/10</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">6/3</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">4/2</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">6/5</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">5/4</characteristic>
       </characteristics>
     </profile>
     <profile id="d729-1246-8b19-e95d" name="Stiletto" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
@@ -7731,6 +7829,19 @@ Review 1.05.a0: uptate data to version 1.05a</readme>
         <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">4/3</characteristic>
         <characteristic name="Fray" typeId="4c54-804a-8993-7325">5/5</characteristic>
         <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">4/4</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4ae6-22a8-fa2e-4ffe" name="Tacitus" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
+      <characteristics>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">2/2</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">8/6</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">5/3</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">6/5</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">11/10</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">7/4</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">5/3</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">9/8</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">5/4</characteristic>
       </characteristics>
     </profile>
     <profile id="5172-1c0c-7442-6119" name="Ulysses" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
@@ -7759,162 +7870,6 @@ Review 1.05.a0: uptate data to version 1.05a</readme>
         <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">3/5</characteristic>
       </characteristics>
     </profile>
-    <profile id="4ae6-22a8-fa2e-4ffe" name="Tacitus" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
-      <characteristics>
-        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">2/2</characteristic>
-        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">8/6</characteristic>
-        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">5/3</characteristic>
-        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">6/5</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">11/10</characteristic>
-        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">7/4</characteristic>
-        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">5/3</characteristic>
-        <characteristic name="Fray" typeId="4c54-804a-8993-7325">9/8</characteristic>
-        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">5/4</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="4303-c6f9-6938-32b5" name="Quintilian" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
-      <characteristics>
-        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">2/2</characteristic>
-        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">7/5</characteristic>
-        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">5/3</characteristic>
-        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">6/5</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">11/10</characteristic>
-        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">6/3</characteristic>
-        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">4/2</characteristic>
-        <characteristic name="Fray" typeId="4c54-804a-8993-7325">6/5</characteristic>
-        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">5/4</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="0909-d20d-904f-a960" name="Newton" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
-      <characteristics>
-        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">2/2</characteristic>
-        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">6/4</characteristic>
-        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">5/4</characteristic>
-        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">6/5</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">11/11</characteristic>
-        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">3/2</characteristic>
-        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">3/2</characteristic>
-        <characteristic name="Fray" typeId="4c54-804a-8993-7325">6/6</characteristic>
-        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">3/5</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="8da1-625c-1be3-c2ea" name="Ketos" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
-      <characteristics>
-        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">2/2</characteristic>
-        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">4/3</characteristic>
-        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">0/0</characteristic>
-        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">6/5</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">11/11</characteristic>
-        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">0/0</characteristic>
-        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">0/0</characteristic>
-        <characteristic name="Fray" typeId="4c54-804a-8993-7325">7/5</characteristic>
-        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">4/3</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="3ac7-a80a-d524-e7ba" name="Lotan" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
-      <characteristics>
-        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">2/2</characteristic>
-        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">4/3</characteristic>
-        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">0/0</characteristic>
-        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">6/5</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">11/11</characteristic>
-        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">0/0</characteristic>
-        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">0/0</characteristic>
-        <characteristic name="Fray" typeId="4c54-804a-8993-7325">7/5</characteristic>
-        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">4/3</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="e526-eca0-407b-c680" name="Belgica" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
-      <characteristics>
-        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">2/2</characteristic>
-        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">7/5</characteristic>
-        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">4/3</characteristic>
-        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">6/5</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">11/11</characteristic>
-        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">6/4</characteristic>
-        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">7/5</characteristic>
-        <characteristic name="Fray" typeId="4c54-804a-8993-7325">8/7</characteristic>
-        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">4/4</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="2a77-7d91-c7ca-f338" name="The Schneider" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
-      <characteristics>
-        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">4/4</characteristic>
-        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">3/2</characteristic>
-        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">3/2</characteristic>
-        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">8/7</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">14/12</characteristic>
-        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">8/5</characteristic>
-        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">8/5</characteristic>
-        <characteristic name="Fray" typeId="4c54-804a-8993-7325">12/12</characteristic>
-        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">8/8</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="f104-5c79-0cbd-3e99" name="Daedelus" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
-      <characteristics>
-        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">3/3</characteristic>
-        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">5/3</characteristic>
-        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">3/2</characteristic>
-        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">7/7</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">14/12</characteristic>
-        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">9/6</characteristic>
-        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">7/4</characteristic>
-        <characteristic name="Fray" typeId="4c54-804a-8993-7325">9/9</characteristic>
-        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">6/5</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="673a-d00c-c33c-cb14" name="Nansen" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
-      <characteristics>
-        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">4/4</characteristic>
-        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">3/2</characteristic>
-        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">3/2</characteristic>
-        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">7/7</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">14/12</characteristic>
-        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">8/5</characteristic>
-        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">8/5</characteristic>
-        <characteristic name="Fray" typeId="4c54-804a-8993-7325">12/12</characteristic>
-        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">8/8</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="6858-1c44-7d54-9cef" name="Origen" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
-      <characteristics>
-        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">2/2</characteristic>
-        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">8/6</characteristic>
-        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">5/3</characteristic>
-        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">6/5</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">11/11</characteristic>
-        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">8/4</characteristic>
-        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">5/3</characteristic>
-        <characteristic name="Fray" typeId="4c54-804a-8993-7325">8/7</characteristic>
-        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">4/4</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="fcd8-ca0f-1021-5ccd" name="Icarus" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
-      <characteristics>
-        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">3/3</characteristic>
-        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">5/3</characteristic>
-        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">3/2</characteristic>
-        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">7/7</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">14/12</characteristic>
-        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">9/6</characteristic>
-        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">7/4</characteristic>
-        <characteristic name="Fray" typeId="4c54-804a-8993-7325">9/9</characteristic>
-        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">4/7</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="ca55-d610-44ac-981a" name="Thule" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
-      <characteristics>
-        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">5/5</characteristic>
-        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">6/4</characteristic>
-        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">10/6</characteristic>
-        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">7/6</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">13/12</characteristic>
-        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">7/4</characteristic>
-        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">0/0</characteristic>
-        <characteristic name="Fray" typeId="4c54-804a-8993-7325">10/9</characteristic>
-        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">9/9</characteristic>
-      </characteristics>
-    </profile>
     <profile id="7d0a-b877-6b49-58c0" name="Zumeena" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
       <characteristics>
         <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">2/2</characteristic>
@@ -7926,6 +7881,45 @@ Review 1.05.a0: uptate data to version 1.05a</readme>
         <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">5/3</characteristic>
         <characteristic name="Fray" typeId="4c54-804a-8993-7325">8/7</characteristic>
         <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">4/4</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2731-d3b7-467b-37f3" name="Diogenes" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
+      <characteristics>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">1</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">8</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">10</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">4</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">10</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">0</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">3</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">1</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">3</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="eaab-8568-4724-5f39" name="Praxilla" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
+      <characteristics>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">1</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">8</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">10</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">4</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">10</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">0</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">3</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">6</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">3</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b50b-b83f-00cf-8d86" name="Adamski" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
+      <characteristics>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">2/2</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">7/5</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">10/6</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">5/5</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">11/11</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">7/4</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">0/0</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">7/6</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">6/3</characteristic>
       </characteristics>
     </profile>
     <profile id="2fe3-bf6b-34b7-679c" name="Euclid" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
@@ -7980,10 +7974,24 @@ Review 1.05.a0: uptate data to version 1.05a</readme>
         <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">6/3</characteristic>
       </characteristics>
     </profile>
+    <profile id="64ff-ad78-bece-b4b1" name="Germain Zebeks" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">
+      <characteristics>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">1</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">9</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">10</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">4</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">8</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">2</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">2</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">1</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">2</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <catalogueLinks>
     <catalogueLink id="fa0c-fc52-b3a9-22ed" name="Weapon" targetId="526f-06e7-edaa-02b8" type="catalogue" importRootEntries="false"/>
     <catalogueLink id="12ea-9837-1300-d825" name="New catalogue" targetId="f69c-988c-fae3-e664" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="ac4f-f91c-58b2-7893" name="Rules" targetId="edc4-1a6a-03e6-7be9" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="26cf-c0f2-890a-eb40" name="Common" targetId="f2ed-a910-ca64-9be7" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>
