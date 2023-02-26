@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="1242-c30b-419f-8229" name="Dystopian Wars 3.0" revision="7" battleScribeVersion="2.03" authorName="Riccardo Sipone / Ruslan Zakirov" authorContact="siponeric@hotmail.com / ruslan.zakirov.2000@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="1242-c30b-419f-8229" name="Dystopian Wars 3.0" revision="8" battleScribeVersion="2.03" authorName="Riccardo Sipone / Ruslan Zakirov" authorContact="siponeric@hotmail.com / ruslan.zakirov.2000@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>The Dystopian Wars datafile are editied and mantained with Ruslan Zakirov, that with patience has start to managed all profile and debugging.</comment>
   <readme>Revision 1.01: added all ORBAT Publication
 Revision 1.02: managed correctlly Publication, corrected Command Reroll bonus
@@ -7,7 +7,8 @@ Revision 1.03: update common weapon charatteristic after new Orbat pubbication
 Revision 1.04: review of datafile logic
 Revision 3.03.00: introduction of rules 3.03
 Revision 3.03.01: new feature to support 3.03 Orbat
-Revision 3.03.02: new feature abd correction to support 3.03 Orbat</readme>
+Revision 3.03.02: new feature add correction to support 3.03 Orbat
+Revision 3.03.03: new correction to introduce Common library</readme>
   <publications>
     <publication id="7f09-e243-2307-78d0" name="Dystopian Rulebook"/>
     <publication id="e265-8c7f-a4b2-a48e" name="Commonwhealth ORBAT"/>
@@ -68,27 +69,21 @@ Revision 3.03.02: new feature abd correction to support 3.03 Orbat</readme>
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="fef3-1842-580c-4bef" name="Flagship" hidden="false"/>
-    <categoryEntry id="464e-890a-84b2-8ce9" name="Surface Unit" hidden="false"/>	
+    <categoryEntry id="464e-890a-84b2-8ce9" name="Surface Unit" hidden="false"/>
     <categoryEntry id="df3f-7b38-7940-f11e" name="Submerged Unit" hidden="false"/>
     <categoryEntry id="3b53-19a3-12fd-34b1" name="Skimming Unit" publicationId="5a03-1c6f-8fc8-2be1" hidden="false"/>
     <categoryEntry id="022b-08af-c874-e3f1" name="Aerial Unit" hidden="false"/>
-
     <categoryEntry id="11d2-f561-163c-722c" name="Aerial" publicationId="" hidden="false"/>
     <categoryEntry id="8009-dc7d-8de1-5601" name="Submerged" hidden="false"/>
-
-	<categoryEntry id="f143-0c0d-137b-1745" name="Automata" hidden="false"/>
+    <categoryEntry id="f143-0c0d-137b-1745" name="Automata" hidden="false"/>
     <categoryEntry id="25b9-7f26-cbd9-e68f" name="Generator" hidden="false"/>
     <categoryEntry id="efd3-b9c9-b144-de57" name="Paddlewheel" publicationId="7b2b-0f56-3962-5ec1" hidden="false"/>
     <categoryEntry id="293e-b55a-bcfa-95c3" name="Unique" hidden="false"/>
-
     <categoryEntry id="d216-bc05-71f1-0fb4" name="Unit" publicationId="" page="" hidden="false"/>
     <categoryEntry id="9ab6-c624-d0ae-dd32" name="Escort Duty" publicationId="129d-da97-caec-1ddd" hidden="false"/>
     <categoryEntry id="c8a0-0265-d83f-fe12" name="Battlefleet Flagship" hidden="false"/>
-
     <categoryEntry id="2823-5c19-a89c-6839" name="Fleet Bonus" publicationId="5a03-1c6f-8fc8-2be1" hidden="false"/>
     <categoryEntry id="8cfc-cf5f-6ab7-0db5" name="Special Rules" publicationId="5a03-1c6f-8fc8-2be1" hidden="false"/>
-
-
   </categoryEntries>
   <forceEntries>
     <forceEntry id="44e8-1fde-db6e-20f6" name="Battlefleet (generic don&apos;t use)" publicationId="7f09-e243-2307-78d0" hidden="true">
