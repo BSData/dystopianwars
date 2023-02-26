@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="526f-06e7-edaa-02b8" name="Weapon" revision="6" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <comment></comment>
   <readme>Weapon collection
 Review v1: starting document
 Review v2: imprevment to follow ORBAT requirments
@@ -1080,7 +1079,7 @@ Review v6: new weapon and profile per Union 3.03 update</readme>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="83d8-3c75-f835-fcf2" name="Gustav Heavy Bombard" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="83d8-3c75-f835-fcf2" name="Gustav Twin Bombard" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="6031-1809-a552-6600" name="Gustav Heavy Bombard" hidden="false" targetId="4d4e-34d0-0935-1141" type="profile">
           <modifierGroups>
@@ -1100,7 +1099,7 @@ Review v6: new weapon and profile per Union 3.03 update</readme>
             </modifierGroup>
           </modifierGroups>
         </infoLink>
-        <infoLink id="7558-71bd-9725-38d8" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+        <infoLink id="7558-71bd-9725-38d8" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
         <infoLink id="a3fd-f871-7437-6a56" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
         <infoLink id="7be6-6866-18bb-8ebd" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
       </infoLinks>
@@ -1108,9 +1107,9 @@ Review v6: new weapon and profile per Union 3.03 update</readme>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1cbe-8d6b-2a64-d46e" name="Gustav Heavy Bombard (Phosphor Sh.)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1cbe-8d6b-2a64-d46e" name="Gustav Twin Bombard (Phosphor Sh.)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="1461-3165-b7f6-6c3c" name="Gustav Heavy Bombard" hidden="false" targetId="4d4e-34d0-0935-1141" type="profile">
+        <infoLink id="1461-3165-b7f6-6c3c" name="Gustav Twin Bombard" hidden="false" targetId="4d4e-34d0-0935-1141" type="profile">
           <modifiers>
             <modifier type="set" field="faa3-d69c-5156-2acf" value="Gunnery, Devastating, Extreme Range, Hazard"/>
           </modifiers>
@@ -1131,7 +1130,7 @@ Review v6: new weapon and profile per Union 3.03 update</readme>
             </modifierGroup>
           </modifierGroups>
         </infoLink>
-        <infoLink id="88c0-8bab-755f-507b" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+        <infoLink id="88c0-8bab-755f-507b" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
         <infoLink id="2a3a-47a9-b12c-25bd" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
         <infoLink id="231a-55df-4928-d942" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
         <infoLink id="c0b9-907e-da0e-adbb" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
@@ -3871,6 +3870,413 @@ Review v6: new weapon and profile per Union 3.03 update</readme>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="a836-663a-c65f-7759" name="Heavy Aetheric Broadside" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="d51b-1805-c328-9ffc" name="Heavy Aetheric Broadside" hidden="false" targetId="004c-c5ab-64fe-ee33" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="P &amp; S">
+                  <conditions>
+                    <condition field="selections" scope="a836-663a-c65f-7759" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="372f-19f1-09ed-e694" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F &amp; A">
+                  <conditions>
+                    <condition field="selections" scope="a836-663a-c65f-7759" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="afe0-b5a3-3eac-004f" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="4760-7cfe-790e-e37b" name="Fusillade" hidden="false" targetId="4ec1-3aa3-001e-f8f6" type="rule"/>
+        <infoLink id="46bf-c9b0-c154-ac1d" name="Broadside" hidden="false" targetId="cb94-70c0-65b8-d3d0" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="45ce-048d-2e64-e32a" name="Aetheric Broadside" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2b9e-8564-6919-db1f" name="Aetheric Broadside" hidden="false" targetId="45c9-df8f-b68a-50a3" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="P &amp; S">
+                  <conditions>
+                    <condition field="selections" scope="45ce-048d-2e64-e32a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="372f-19f1-09ed-e694" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F &amp; A">
+                  <conditions>
+                    <condition field="selections" scope="45ce-048d-2e64-e32a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="afe0-b5a3-3eac-004f" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="c5c0-f20c-fa83-ba8f" name="Fusillade" hidden="false" targetId="4ec1-3aa3-001e-f8f6" type="rule"/>
+        <infoLink id="c242-3af4-9ec4-b30b" name="Broadside" hidden="false" targetId="cb94-70c0-65b8-d3d0" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cb96-b4eb-f7bf-3491" name="X-Ray Laser Bank" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="99d4-f78c-4272-0b37" name="X-Ray Laser Bank*" hidden="false" targetId="0c4c-e745-c0b7-ec46" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="cb96-b4eb-f7bf-3491" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="3d3a-38f6-2327-4ecc" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
+        <infoLink id="8160-670e-b409-d2d4" name="Arc" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
+        <infoLink id="5d59-8544-d00f-cc0a" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1eba-ceab-1cdb-e38d" name="Heavy Particle Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="abf1-494f-5e34-fbdb" name="Heavy Particle Cannon" hidden="false" targetId="0676-ee17-f0b1-50f9" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="1eba-ceab-1cdb-e38d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="1eba-ceab-1cdb-e38d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="593f-e868-a625-0f3f" name="Heavy Particel Cannon" hidden="false" targetId="f28a-65ec-04cc-c66d" type="rule"/>
+        <infoLink id="a4a0-a8a8-1fe5-b978" name="Blast" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
+        <infoLink id="c7b2-bb61-1a99-d33e" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+        <infoLink id="8c72-fdae-4271-ae05" name="Piercing" hidden="false" targetId="0f8e-056c-75a9-caee" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e70f-ef5d-1b71-fdf6" name="Pulse Broadside" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7e85-9be0-a67a-ecfc" name="Pulse Broadside" hidden="false" targetId="7477-6c6d-1faa-a8c5" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="P &amp; S">
+                  <conditions>
+                    <condition field="selections" scope="e70f-ef5d-1b71-fdf6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="372f-19f1-09ed-e694" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F &amp; A">
+                  <conditions>
+                    <condition field="selections" scope="e70f-ef5d-1b71-fdf6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="afe0-b5a3-3eac-004f" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="223c-81bd-e69d-d6ff" name="Fusillade" hidden="false" targetId="4ec1-3aa3-001e-f8f6" type="rule"/>
+        <infoLink id="877e-d55e-af76-5184" name="Broadside" hidden="false" targetId="cb94-70c0-65b8-d3d0" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5dcb-4100-3eab-e801" name="Particle Beamer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="57cf-dee5-f7b8-2e91" name="Particle Beamer" hidden="false" targetId="31a4-53c0-305c-d8fb" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="5dcb-4100-3eab-e801" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="5dcb-4100-3eab-e801" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/S">
+                  <conditions>
+                    <condition field="selections" scope="5dcb-4100-3eab-e801" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="5347-4855-4421-ed77" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P">
+                  <conditions>
+                    <condition field="selections" scope="5dcb-4100-3eab-e801" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="4e9e-7862-58ad-15e6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="5dcb-4100-3eab-e801" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P/S">
+                  <conditions>
+                    <condition field="selections" scope="5dcb-4100-3eab-e801" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="f2af-2773-24ff-2e12" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P">
+                  <conditions>
+                    <condition field="selections" scope="5dcb-4100-3eab-e801" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
+                  <conditions>
+                    <condition field="selections" scope="5dcb-4100-3eab-e801" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="ce6f-067d-9ad4-ddaa" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S/A">
+                  <conditions>
+                    <condition field="selections" scope="5dcb-4100-3eab-e801" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="0cd5-1e4e-c51e-c338" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/A">
+                  <conditions>
+                    <condition field="selections" scope="5dcb-4100-3eab-e801" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="0cd5-1e4e-c51e-c338" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="a79c-e345-9391-c68a" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4ab1-aaf7-f200-c036" name="Electrostatic Vacuum Bombs" publicationId="7b2b-0f56-3962-5ec1" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7cdb-78a7-caf2-826c" name="Electrostatic Vacuum Bombs" hidden="false" targetId="bd43-d4ee-133f-c3bd" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A">
+                  <conditions>
+                    <condition field="selections" scope="4ab1-aaf7-f200-c036" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5888-87ac-f851-165d" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="9302-86fe-e6c5-68e5" name="Arc" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
+        <infoLink id="2036-905e-7faf-7c72" name="Limited" hidden="false" targetId="3bd4-7e14-0aa2-97db" type="rule"/>
+        <infoLink id="9a6e-ffa2-88c0-a980" name="Bomb" hidden="false" targetId="cec9-6349-719c-e293" type="rule"/>
+        <infoLink id="2948-85f4-f1ef-5185" name="Blast" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9300-adba-3ea5-d835" name="Bertha Heavy Bombard" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c3b3-ed9a-dd3d-9fb9" name="Bertha Heavy Bombard" hidden="false" targetId="028c-539f-915e-ef7d" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A">
+                  <conditions>
+                    <condition field="selections" scope="9300-adba-3ea5-d835" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5888-87ac-f851-165d" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="9300-adba-3ea5-d835" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="ceb3-794d-1a9e-68f4" name="Arc" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
+        <infoLink id="6d9f-e7d9-99df-2bdf" name="Blast" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
+        <infoLink id="6c09-4d8f-42a1-61b3" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+        <infoLink id="3ab0-0fd8-e29a-a22a" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0932-7678-c653-ea55" name="Bertha Heavy Bombard (Phosphor Sh.)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ea1e-5103-7a6e-6c68" name="Bertha Heavy Bombard" hidden="false" targetId="028c-539f-915e-ef7d" type="profile">
+          <modifiers>
+            <modifier type="set" field="faa3-d69c-5156-2acf" value="Gunnery, Arc, Blast, Extreme Range, Devastating"/>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A">
+                  <conditions>
+                    <condition field="selections" scope="0932-7678-c653-ea55" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5888-87ac-f851-165d" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="0932-7678-c653-ea55" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="bc1f-ab04-4000-4edb" name="Arc" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
+        <infoLink id="2dc0-8d40-f874-785e" name="Blast" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
+        <infoLink id="0a49-9bc5-6bed-bcc8" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+        <infoLink id="535c-003f-d8c0-787c" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+        <infoLink id="5f17-53a9-ff7f-dafa" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fd8c-87d5-b2c7-e28a" name="Bertha Heavy Bombard" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3054-1c2e-56ce-94f0" name="Bertha Heavy Bombard" hidden="false" targetId="028c-539f-915e-ef7d" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A">
+                  <conditions>
+                    <condition field="selections" scope="fd8c-87d5-b2c7-e28a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5888-87ac-f851-165d" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="fd8c-87d5-b2c7-e28a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="9c1b-d8ed-8b0c-667d" name="Arc" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
+        <infoLink id="8e30-5b0d-cc66-38b4" name="Blast" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
+        <infoLink id="13bb-552d-d951-2749" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+        <infoLink id="3bef-ac50-63a9-74fd" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cdad-4014-0c08-2684" name="Bertha Heavy Bombard (Phosphor Sh.)" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4dcf-5cf3-b7eb-b1e5" name="Bertha Heavy Bombard" hidden="false" targetId="028c-539f-915e-ef7d" type="profile">
+          <modifiers>
+            <modifier type="set" field="faa3-d69c-5156-2acf" value="Gunnery, Arc, Blast, Extreme Range, Devastating"/>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A">
+                  <conditions>
+                    <condition field="selections" scope="cdad-4014-0c08-2684" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5888-87ac-f851-165d" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="cdad-4014-0c08-2684" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="e58c-419e-6766-ae38" name="Arc" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
+        <infoLink id="49d1-80d6-4a3e-7706" name="Blast" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
+        <infoLink id="4787-a444-f402-26b2" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+        <infoLink id="03e5-a3e7-b29a-3fc3" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+        <infoLink id="6cea-363a-77b8-64d2" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="43d0-f046-c366-dd53" name="Gustav Twin Bombard" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="bb62-b7aa-1902-9226" name="Gustav Heavy Bombard" hidden="false" targetId="4d4e-34d0-0935-1141" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A">
+                  <conditions>
+                    <condition field="selections" scope="43d0-f046-c366-dd53" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5888-87ac-f851-165d" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="43d0-f046-c366-dd53" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="dd48-54b6-d0a0-1269" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
+        <infoLink id="f585-7ce2-6134-ef55" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+        <infoLink id="b110-87f4-6438-e7bd" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9da2-10af-ae51-78b2" name="Gustav Twin Bombard (Phosphor Sh.)" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6414-fed8-897c-33c3" name="Gustav Twin Bombard" hidden="false" targetId="4d4e-34d0-0935-1141" type="profile">
+          <modifiers>
+            <modifier type="set" field="faa3-d69c-5156-2acf" value="Gunnery, Devastating, Extreme Range, Hazard"/>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A">
+                  <conditions>
+                    <condition field="selections" scope="9da2-10af-ae51-78b2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5888-87ac-f851-165d" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="9da2-10af-ae51-78b2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="a5d6-3063-c96c-e3ec" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
+        <infoLink id="77c1-0c4e-8199-f350" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+        <infoLink id="4ae7-703e-42c4-853d" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+        <infoLink id="d520-6b86-238d-5c0c" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="c475-4c4f-de22-9080" name="Aerial" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
@@ -3954,6 +4360,15 @@ Review v6: new weapon and profile per Union 3.03 update</readme>
     <rule id="7ee3-f310-e122-8b5d" name="Shockwave Pulse" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <description>All Generators of this type in a Unit may be used in the Shooting Phase to fire a Shockwave Pulse at a Target Model using the Hazardous Blast weapon profile. See Shockwave Generator</description>
     </rule>
+    <rule id="c865-1e57-eb77-0063" name="Gravitonic Imperilator" publicationId="908d-6feb-2e9e-843b" hidden="false">
+      <description>Resolve the Attack as normal. If the Initial Target suffers one or more points of damage, then the Unit making the Attack may make a Valour Effect against the Initial Target. As a Valour Effect, the Initial Target is affected depending on its Position Trait. If the Target is a Surface Unit or Skimming Unit, it is lifted into air before crashing down on the water. The Initial Target suffers a Catastrophic Explosion. If the Target is a Submerged Unit or Ground Unit the effect is more damaging and it suffers two Catastrophic Explosions. If the Initial Target is an Aerial Unit, it suffers no additional damage but receives a Level of Disorder and may be turned to any facing of the Attacker’s choosing.</description>
+    </rule>
+    <rule id="f28a-65ec-04cc-c66d" name="Heavy Particle Cannon" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+      <description> Attacks using a Heavy Particle Cannon are resolved as normal. Furthermore, a Unit making the Attack may make a Valour Effect if the Initial Target has Enlightened SRS Tokens in base contact. As a Valour Effect, you may discard up to three Enlightened SRS Tokens to add +2 Dice to the Action Dice Pool for each SRS Token discarded. The discarded SRS Tokens do not need to be Friendly, only Enlightened. </description>
+    </rule>
+    <rule id="0dda-8909-05d2-e7ac" name="Magneto Encapsulator" publicationId="908d-6feb-2e9e-843b" hidden="false">
+      <description>Place the Blast template over the Initial Target. Resolve the Attack as normal. If the Initial target suffers one or more points of damage, then the Unit making the Attack may make a Valour Effect affecting all Models touched by the Blast. As a Valour Effect, any Models touched by the Blast template are moved towards the centre of the Blast template in the order of the attackers choosing. Usually this will cause collisions with another Model. Any intervening terrain between the centre of the Blast and a Moving Model is collided with instead.  Resolve all Collisions in the order of the attackers choosing, then each Moving Model completes any disengaging and moves their Drift value, resolving any further Collisions this causes. </description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="0fde-487f-cc50-0cfc" name="Aerial Heavy Torpedo Salvo" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
@@ -3989,14 +4404,14 @@ Review v6: new weapon and profile per Union 3.03 update</readme>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">5(3) / 3(2)</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">3(2) / 2(1)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Sustained</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Broadside, Sustained</characteristic>
       </characteristics>
     </profile>
     <profile id="502c-add9-c3b2-02ab" name="Aetheric Lance" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">4(2) / 3(2)</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">4(2) / 3(2)</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">6(4) / 4(2)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">5(4) / 3(2)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Sustained, Gunnery</characteristic>
       </characteristics>
@@ -4052,7 +4467,7 @@ Review v6: new weapon and profile per Union 3.03 update</readme>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 6, Arc, Devastating</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 12/10, Arc, Devastating</characteristic>
       </characteristics>
     </profile>
     <profile id="49a1-7c5d-5c91-abdf" name="Chaska Starblade" publicationId="d854-a2d6-3d52-44c4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
@@ -4208,12 +4623,12 @@ Review v6: new weapon and profile per Union 3.03 update</readme>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery</characteristic>
       </characteristics>
     </profile>
-    <profile id="4d4e-34d0-0935-1141" name="Gustav Heavy Bombard" publicationId="33cf-b4a6-bff0-0d70" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="4d4e-34d0-0935-1141" name="Gustav Twin Bombard" publicationId="33cf-b4a6-bff0-0d70" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">11(5) / 8(4)</characteristic>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">11(5) / 8(4)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">11(5) / 7(4)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">11(5) / 7(4)</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Devastating, Extreme Range</characteristic>
       </characteristics>
     </profile>
@@ -4241,7 +4656,7 @@ Review v6: new weapon and profile per Union 3.03 update</readme>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">8(4) / 5(3)</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">5(3) / 3(2)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Sustained</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Broadside, Sustained</characteristic>
       </characteristics>
     </profile>
     <profile id="cbdd-4c2a-6c09-f3d6" name="Heavy Alchemical Rockets" publicationId="7b2b-0f56-3962-5ec1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
@@ -4328,10 +4743,10 @@ Review v6: new weapon and profile per Union 3.03 update</readme>
     <profile id="0676-ee17-f0b1-50f9" name="Heavy Particle Cannon" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">8(4) / 4(3)</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">10(7) / 5(5)</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">6(4) / 4(3)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">9(6) / 6(4)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">5(3) / 3(2)</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Piercing, Blast, Devastating</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Piercing, Blast, Devastating, Heavy Particle Cannon</characteristic>
       </characteristics>
     </profile>
     <profile id="5aa0-82a6-e6bc-6950" name="Heavy Rocket Battery" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
@@ -4439,7 +4854,7 @@ Review v6: new weapon and profile per Union 3.03 update</readme>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 6, Piercing</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 3/2, Piercing, Hazardous</characteristic>
       </characteristics>
     </profile>
     <profile id="3032-2661-6403-a23d" name="Hyperbeam Lense Cannon" publicationId="7b2b-0f56-3962-5ec1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
@@ -4466,7 +4881,7 @@ Review v6: new weapon and profile per Union 3.03 update</readme>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 12, Devastating, Voltaic</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 12/9, Devastating, Voltaic</characteristic>
       </characteristics>
     </profile>
     <profile id="fd90-c013-d36a-60b2" name="Katyusha Rocket Salvo" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
@@ -4574,7 +4989,7 @@ Review v6: new weapon and profile per Union 3.03 update</readme>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">5(2) / -</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">5(5) / -</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Submerged, Torpedo, Homing</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Submerged, Torpedo</characteristic>
       </characteristics>
     </profile>
     <profile id="e529-2d6c-3d75-8fc0" name="Molecular Disharmoniser" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
@@ -4598,9 +5013,9 @@ Review v6: new weapon and profile per Union 3.03 update</readme>
     <profile id="31a4-53c0-305c-d8fb" name="Particle Beamer" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">6(4) / 4(3)</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">5(3) / 3(2)</characteristic>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">5(3) / 3(2)</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">7(5) / 6(4)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">6(4) / 3(2)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">6(4) / 3(2)</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Sustained, Gunnery</characteristic>
       </characteristics>
     </profile>
@@ -4628,7 +5043,7 @@ Review v6: new weapon and profile per Union 3.03 update</readme>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">4(3) / 3(2)</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Fusillade</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Broadside, Fusillade</characteristic>
       </characteristics>
     </profile>
     <profile id="5a44-3b30-c119-11a8" name="Pulse Emitter" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
@@ -4637,7 +5052,7 @@ Review v6: new weapon and profile per Union 3.03 update</readme>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">8(6) / 5(4)</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">3(2) / 2(1)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Sustained, Gunnery</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Sustained, Fusillade</characteristic>
       </characteristics>
     </profile>
     <profile id="35b1-797d-4715-d6b4" name="Railgun" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
@@ -4769,9 +5184,9 @@ Review v6: new weapon and profile per Union 3.03 update</readme>
     <profile id="1917-29b8-de32-b5c0" name="Shock Rocket Battery" publicationId="33cf-b4a6-bff0-0d70" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">5(1) / 4(-)</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">5(2) / 4(1)</characteristic>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">5(2) / 4(1)</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">4(1) / 3(-)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">5(2) / 4(2)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">5(2) / 4(2)</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial, Voltaic</characteristic>
       </characteristics>
     </profile>
@@ -4808,7 +5223,7 @@ Review v6: new weapon and profile per Union 3.03 update</readme>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">Mx4 / Mx3</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">Mx2 / M</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Hazardous, Piercing</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Hazardous, Agitation</characteristic>
       </characteristics>
     </profile>
     <profile id="58a3-6a7f-02e2-737e" name="Sturmbringer" publicationId="33cf-b4a6-bff0-0d70" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
@@ -4905,7 +5320,7 @@ Review v6: new weapon and profile per Union 3.03 update</readme>
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">8(4) / 4(2)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">8(4) / 5(2)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">8(4) / 5(2)</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial, Extreme Range, Blast, Limited</characteristic>
       </characteristics>
@@ -4990,14 +5405,86 @@ Review v6: new weapon and profile per Union 3.03 update</readme>
     </profile>
     <profile id="ecc9-5ea1-cc7f-aee6" name="Arronaxium Blade Claws " hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
-        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0"/>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834"/>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5"/>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a"/>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf"/>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 6/5, Piercing, Sustained</characteristic>
       </characteristics>
     </profile>
-    <profile id="d58c-a752-c224-ed96" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="d58c-a752-c224-ed96" name="Caloric Oscillator" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">Mx4 / Mx2</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Torrent, Hazardous, Agitation</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bd43-d4ee-133f-c3bd" name="Electrostatic Vacuum Bombs" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">14(-)  / -</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Blast, Arc, Bomb, Limited</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9c61-3695-a75a-f545" name="Gravitronic Imperilator" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">6(4) / 4(2)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">8(4) / 5(3)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">6(4) / 4(2)</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Blast, Magnetic, Gravitronic Imperilator</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1024-e04c-d607-3a7a" name="Magneto Encapsulator" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">7(5) / 4(3)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">7(5) / 4(3)</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Blast, Magnetic, Magneto Encapsulator</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="00ff-b686-34f3-b692" name="Sturginium Atomiser" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">Mx4 / Mx2</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">Mx4 / Mx2</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">Mx2 / M</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Blast, Devastating, Piercing, Agitation</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f61c-d4c1-ad00-d6a9" name="Ventral Atom Smashers" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">14(9) / -</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Fusillade, Piercing, Sustained</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6a7b-80ed-26c7-670f" name="Weirding Torpedo Salvo" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">6(2) / 4(-)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">6(4) / 4(3)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">6(4) / 4(3)</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Submerged, Torpedo, Sustained</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0c4c-e745-c0b7-ec46" name="X-Ray Laser Bank" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">12(7) / 8(5)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">6(3) / 4(2)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Arc, Sustained, Hazardous</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="517e-7777-d5e1-970c" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
@@ -5006,49 +5493,22 @@ Review v6: new weapon and profile per Union 3.03 update</readme>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 12, Arc</characteristic>
       </characteristics>
     </profile>
-    <profile id="bd43-d4ee-133f-c3bd" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="829c-26b5-1e6b-4548" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
-        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0"/>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834"/>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5"/>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a"/>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf"/>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 12, Arc</characteristic>
       </characteristics>
     </profile>
-    <profile id="9c61-3695-a75a-f545" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="028c-539f-915e-ef7d" name="Bertha Heavy Bombard" publicationId="33cf-b4a6-bff0-0d70" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
-        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0"/>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834"/>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5"/>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a"/>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf"/>
-      </characteristics>
-    </profile>
-    <profile id="1024-e04c-d607-3a7a" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0"/>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834"/>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5"/>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a"/>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf"/>
-      </characteristics>
-    </profile>
-    <profile id="00ff-b686-34f3-b692" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0"/>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834"/>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5"/>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a"/>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf"/>
-      </characteristics>
-    </profile>
-    <profile id="f61c-d4c1-ad00-d6a9" name="New Profile" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0"/>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834"/>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5"/>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a"/>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf"/>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">9(5) / 6(4)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">9(5) / 6(4)</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Arc, Blast, Extreme Range</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

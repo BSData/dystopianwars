@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="caf4-134c-500d-0cd9" name="Union v3.03" revision="2" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="caf4-134c-500d-0cd9" name="Union v3.03" revision="2" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Review 1.03.00: Initial release</comment>
   <readme>Review 1.03.00: Initial release
 Review 3.03.00: Update to Orbat 3.03
@@ -1198,7 +1198,6 @@ Review 3.03.00: Update to Orbat 3.03
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c1-eac5-1cc4-65fa" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f559-51b4-6230-2c74" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -5250,9 +5249,6 @@ Review 3.03.00: Update to Orbat 3.03
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b202-61c4-06c5-7c62" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8242-da06-d94a-1200" type="min"/>
           </constraints>
-          <costs>
-            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
-          </costs>
         </entryLink>
         <entryLink id="b544-ee94-599b-6330" name="Cruise Missile Silo" hidden="false" collective="false" import="true" targetId="edf5-5bd7-6619-2881" type="selectionEntry">
           <modifiers>
@@ -5260,7 +5256,7 @@ Review 3.03.00: Update to Orbat 3.03
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="deb3-34e5-5fd4-921e" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d0b-697f-adcf-f2ac" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5d0b-697f-adcf-f2ac" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="15d3-d754-22ee-058f" name="Cruise Missile Silo" hidden="false" collective="false" import="true" targetId="edf5-5bd7-6619-2881" type="selectionEntry">
@@ -5269,7 +5265,7 @@ Review 3.03.00: Update to Orbat 3.03
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06bb-5444-5314-48f8" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c1d-f5f7-cb10-6ab6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0c1d-f5f7-cb10-6ab6" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -6294,6 +6290,13 @@ Review 3.03.00: Update to Orbat 3.03
           </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup id="fe83-d4c0-9641-2314" name="Front" hidden="false" collective="false" import="true" defaultSelectionEntryId="6866-5c30-2818-5dad">
+              <modifiers>
+                <modifier type="set" field="6e2c-4486-d5a2-c45f" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25b9-7f26-cbd9-e68f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e2c-4486-d5a2-c45f" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4964-d7c3-63ec-b4ff" type="max"/>
@@ -6333,6 +6336,13 @@ Review 3.03.00: Update to Orbat 3.03
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="9eaa-912d-bf14-ea78" name="Port" hidden="false" collective="false" import="true" defaultSelectionEntryId="c30d-254a-2741-0ea0">
+              <modifiers>
+                <modifier type="set" field="dfca-0d59-3c93-e250" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25b9-7f26-cbd9-e68f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfca-0d59-3c93-e250" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06b5-d874-3401-488d" type="max"/>
@@ -6371,6 +6381,13 @@ Review 3.03.00: Update to Orbat 3.03
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="2753-3c0a-b73a-fdb6" name="Starboard" hidden="false" collective="false" import="true" defaultSelectionEntryId="b9db-baac-5135-c5f6">
+              <modifiers>
+                <modifier type="set" field="c97b-7fe8-ae35-ab7d" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25b9-7f26-cbd9-e68f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c97b-7fe8-ae35-ab7d" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e500-d189-6b68-b8ec" type="max"/>
@@ -6404,6 +6421,48 @@ Review 3.03.00: Update to Orbat 3.03
                   </constraints>
                   <costs>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="2f33-289a-7e42-7418" name="Generator" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="da0c-2b84-17cf-edcf" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="ef97-1c89-2e4c-0b9b" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink id="0154-8e12-323c-4a50" name="Atomic generator" hidden="false" collective="false" import="true" targetId="eef0-442d-aa6f-b314" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a1c4-3827-1048-0391" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="e6dd-129b-56a4-be40" name="Fury generator" hidden="false" collective="false" import="true" targetId="069a-8c90-088f-816d" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8f3b-3e11-2300-8ff3" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="fc12-b865-bf94-4fc3" name="Magnetic generator" hidden="false" collective="false" import="true" targetId="77af-dd4b-51e7-c620" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="68e4-96bb-8cce-cc25" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="bc5e-4576-f6ae-ffbf" name="Shroud generator" hidden="false" collective="false" import="true" targetId="1543-05e3-58ac-6e6d" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bed4-bf1f-5660-70f1" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -6488,7 +6547,7 @@ Review 3.03.00: Update to Orbat 3.03
         <infoLink id="ad39-c468-59ff-e1b4" name="The White Doves" hidden="false" targetId="ca4a-ca3a-b489-d441" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="20.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="15.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1821-956a-67df-500c" name="Ticonderoga" publicationId="e6a1-85d3-8979-7880" hidden="false" collective="false" import="true" type="model">
@@ -10732,5 +10791,6 @@ Review 3.03.00: Update to Orbat 3.03
     <catalogueLink id="38d4-25bd-d42b-049f" name="Generator" targetId="f69c-988c-fae3-e664" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="d2f5-cbd5-ce78-3f21" name="Weapon" targetId="526f-06e7-edaa-02b8" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="214f-b6c1-f274-ea1b" name="Rules" targetId="edc4-1a6a-03e6-7be9" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="f04a-51fb-d755-02ea" name="Common" targetId="f2ed-a910-ca64-9be7" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>
