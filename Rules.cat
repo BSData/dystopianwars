@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="edc4-1a6a-03e6-7be9" name="Rules" revision="5" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="edc4-1a6a-03e6-7be9" name="Rules" revision="6" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Rules collection</readme>
   <sharedRules>
     <rule id="b846-c841-35ad-caa2" name="Ablative Armour*" publicationId="5a03-1c6f-8fc8-2be1" page="" hidden="false">
@@ -8,19 +8,19 @@
     <rule id="940a-68a8-b107-96e4" name="Ablative Flank Armour*" publicationId="129d-da97-caec-1ddd" hidden="false">
       <description>When this Model is Initial Target of an Attack originating from a point in this Model’s Port or Starboard arc, it uses this rule. This Unit can affect a number of Exploding Hit results in the Attack Action Die Pool up to its Mass value. The affected Exploding Hit results do not generate additional Action Dice.  Attacks with Piercing, Rail, Ramming or Submerged Qualities ignores this rule. </description>
     </rule>
-    <rule id="2823-33a9-a62b-e29a" name="Ablative Prow Armour" publicationId="dbca-8d57-b848-457e" hidden="false">
-      <description>When an attack against a Model in this Unit originates from a point in its Fore, it uses this rule. Remove an Action die from the Attack Dice Pool for each weapon with the Gunnery or Fusillade Quality that Supports an attack against the Model. Attacks with Rail or Piercing Quality ignore this rule.</description>
+    <rule id="2823-33a9-a62b-e29a" name="Ablative Prow Armour*" publicationId="dbca-8d57-b848-457e" hidden="false">
+      <description>When this Model is Initial Target of an Attack originating from a point in this Model’s Fore arc, it uses this rule This Unit can affect a number of Exploding Hit results in the Attack Action Die Pool up to its Mass value. The affected Exploding Hit results do not generate additional Action Dice. Attacks with Piercing, Rail, Ramming or Submerged Qualities ignores this rule.</description>
     </rule>
     <rule id="6381-3c0e-84c8-6b3b" name="Advanced Repair Facilities*" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>Battle-Ready Models in this Unit may add a number of Action Dice to their own Repair Tests equal to the value of this ability. Furthermore, Models in this Unit may use their Action Dice Pool to make Repair Tests for Disorder Levels and/or Damage Markers on themselves or any friendly Models within 4&quot;. One or more Exploding Hit results from a Repair Test made by this Model may remove a single point of damage from itself or a Friendly Model within 4&quot;. A Model cannot remove more than a single point of damage per Repair Test. Repair Tests can be made on Models without Levels of Disorder or Damage Markers if desired. If the friendly Model is Crippled, it cannot have damage removed that would return it to a Battle-Ready condition. </description>
     </rule>
-    <rule id="4028-cfc7-f428-5413" name="Aggressive Crew" hidden="false">
+    <rule id="4028-cfc7-f428-5413" name="Aggressive Crew*" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <description>While making an Assault, this Unit may re-roll Blank dice results.</description>
     </rule>
     <rule id="93e6-1c0e-ac6b-0fc8" name="Agile*" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>Unless suffering from a Navigation Lock Critical Damage Marker, this Unit may make turns during Drift movement in the same way as it usually would during normal Movement.</description>
     </rule>
-    <rule id="a20c-8d13-4cf3-3990" name="Akron Warning &amp; Control System" publicationId="e6a1-85d3-8979-7880" hidden="false">
+    <rule id="a20c-8d13-4cf3-3990" name="Akron Warning &amp; Control System (NO)" publicationId="e6a1-85d3-8979-7880" hidden="false">
       <description>Weapons on this Unit with the Extreme Range Quality gain the Homing Quality if the Initial Target is within 15&quot; of an Akron Observation Rotor.</description>
     </rule>
     <rule id="1d20-a887-16ac-7f4c" name="Amphibious*" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
@@ -179,7 +179,7 @@
     <rule id="1d26-a2a2-5fe2-1ff1" name="Shallow Draught*" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>This Unit treats Treacherous Water as Open Water.</description>
     </rule>
-    <rule id="d6e5-57de-cebc-3927" name="Skimmer Transport" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+    <rule id="d6e5-57de-cebc-3927" name="Skimmer Transport*" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <description>During the Reserves Step of any Round where this Model is in the Play Area, when a friendly Mass 1 Skimming Unit of two Models is Activated and is in Reserve, it may be immediately deployed within 2” of this Model rather than using any other deployment options. Once a Skimming Unit has been deployed using this Model, this Model loses the Skimmer Transport rule for the remainder of the Encounter.</description>
     </rule>
     <rule id="1083-2af1-7bfc-7a55" name="Skyfire*" publicationId="5a03-1c6f-8fc8-2be1" page="" hidden="false">
@@ -260,11 +260,11 @@
     <rule id="a065-0bd2-6d18-98c0" name="Void-Engine Overclock*" publicationId="908d-6feb-2e9e-843b" hidden="false">
       <description>When using the Unexpected Arrival Rule, this model may be immediately made available for deployment instead of rolling for Reserves. However, after deploying, it suffers a point of damage and receives a level of disorder and the Reactor Leak Critical Damage Marker.</description>
     </rule>
-    <rule id="8e0c-5c25-228a-bccf" name="Cryo-Capacitors" hidden="false">
-      <description>This Unit has the Sustained Quality to any Cryogenic Blast it makes.</description>
+    <rule id="8e0c-5c25-228a-bccf" name="Cryo-Capacitors*" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+      <description>This Unit adds +1 Action Dice and the Sustained Quality to any Cryogenic Blast it makes.</description>
     </rule>
-    <rule id="380b-104f-5cc9-0cf9" name="Kometa Railguns" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
-      <description>Against these high velocity long range weapons, Enemy Units cannot double their ADV against Attack Runs from SRS Tokens launched using the Combat Air Patrol rule.</description>
+    <rule id="380b-104f-5cc9-0cf9" name="Kometa Railguns*" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+      <description>Attack Runs by Szabla Swordwing SRS Tokens or any SRS Tokens from Units with this rule gain the Rail Quality against Mass 1 targets.</description>
     </rule>
     <rule id="608c-4f10-866a-e5c2" name="Nikel Escort Hovercraft" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <description>The Nikel is an Escort with the following exceptions: The Nikel is not a Skimming Unit, but the Model has the Skimming Trait and cannot be collided with. It cannot be targeted by weapons with the Gunnery Quality unless it is in Point Blank Range. These Models do not benefit from any of the Special Rules or weapons for the Unit they join. They are destroyed if the Unit they join is destroyed.</description>
@@ -275,7 +275,7 @@
     <rule id="c5a7-5678-f1e9-74bd" name="Escort Duty (Ukrainian)" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <description>Models in this Unit may be deployed as part of a Unit with the Ukrainian and Flagship traits provided that the Flagship Unit does not include Escorts, Corvettes, or another Model with the Escort Duty rule. These Models does not benefit from the Special Rules, Weapons or Generators of the Unit they join. While in a Unit together, they form a Unit of multiple Models and provide +1 to each other’s ADV and SDV (to a combined maximum of +4). These Models remains their own Unit for Victory Point purposes. If the Flagship Model is destroyed, these Models reverts to being a Unit of their own and the Flagship Unit counts as being destroyed for Victory purposes.</description>
     </rule>
-    <rule id="04e9-d06e-0613-a0b1" name="Alchemical" publicationId="7b2b-0f56-3962-5ec1" page="1" hidden="false">
+    <rule id="04e9-d06e-0613-a0b1" name="Alchemical" publicationId="7b2b-0f56-3962-5ec1" page="" hidden="false">
       <description>Models without a Disorder Condition damaged by a weapon with this quality receive one Disorder Condition. If a Model is damaged by this weapon and already has a level of Disorder, they do not increase their Disorder and instead suffer a point of damage.</description>
     </rule>
     <rule id="ae1a-2537-27f6-15ce" name="Mark of Yama*" publicationId="7b2b-0f56-3962-5ec1" page="" hidden="false">
@@ -371,7 +371,7 @@
     <rule id="1181-0663-f1c1-9047" name="Give Em Hell*" publicationId="e6a1-85d3-8979-7880" hidden="false">
       <description>This Unit may make a Special Operations Action that it will ‘Give Em Hell’. All weapons with the Gunnery or Fusillade special rule in the Unit gain the Devastating Quality for the duration of its Activation. At the end of the Activation, before the Repair Step, unless the player discards a card from their hand, each Model in the Unit gains a Disorder Condition.</description>
     </rule>
-    <rule id="00c9-79f7-de6a-b086" name="Akron Observation" publicationId="e6a1-85d3-8979-7880" hidden="false">
+    <rule id="00c9-79f7-de6a-b086" name="Akron Observation (NO)" publicationId="e6a1-85d3-8979-7880" hidden="false">
       <description>This Unit is accompanied by an Akron Observation Rotor. The Akron is an Escort as described on Page 32 of the Rulebook with the following exceptions: The Akron is armed with a Rocket Pod and may Lead or Support with this weapon in one attack each Activation made by its Parent Unit. The Akron is not an Aerial Unit but the Model has the Aerial Trait and cannot be collided with. It cannot be targeted unless it is in Point Blank Range or the weapon has the Aerial Quality. The Akron gives +1 to the Defence Attributes of every Model in the Unit. The Akron gives the Extreme Range Quality to any Aerial Weapons in the Unit. An Akron counts as being equipped with any Generators present in the Unit. These Models do not benefit from any of the Special Rules or weapons for this Unit. They are destroyed if this Unit is destroyed.</description>
     </rule>
     <rule id="2c93-befd-f88b-0881" name="Sharpshooter*" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
@@ -422,7 +422,7 @@
     <rule id="3f21-1511-2bff-8d3b" name="Strategic Reserve*" publicationId="5a03-1c6f-8fc8-2be1" hidden="true">
       <description>Either all Units in this Battlefleet are held in Reserve, or none of them. When rolling for deployment from Reserves, Units in this Battlefleet may cancel the Reserve Action die result rolled and instead treat the result as a Heavy Hit.</description>
     </rule>
-    <rule id="1042-355a-94f3-b6be" name="Rocket Barrage" hidden="false">
+    <rule id="1042-355a-94f3-b6be" name="Rocket Barrage*" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <description>A single Attack with the Aerial Quality by this Unit each Activation may re-roll blanks and receives +2 Action Dice.</description>
     </rule>
     <rule id="242a-ba21-5de6-5d5c" name="Voltaic Boarding Actions*" publicationId="33cf-b4a6-bff0-0d70" hidden="false">
@@ -521,31 +521,28 @@
     <rule id="48ec-1da0-8d75-61fa" name="The Traitor’s Mark" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <description>This Unit awards +1 Victory Point to your opponent if it destroyed by a Unit with the Enlightened Trait.</description>
     </rule>
-    <rule id="ad55-c026-6154-8aed" name="Experimental Generator Ship" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+    <rule id="ad55-c026-6154-8aed" name="Experimental Generator Ship*" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <description>Friendly Models within 5” of this Unit with a Mass of 2 or greater, counts as being equipped with the same Generators as this Model. This Unit cannot have more than one of any Generator type. It cannot give any Unit the benefit from any Generator type more than once at any time. If this Unit is Destroyed, it inflicts a Catastrophic Explosion on all Friendly Models within 5”.</description>
     </rule>
-    <rule id="ad4c-d50d-de1f-b975" name="Quantity is a Quality" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
-      <description>If this Unit is destroyed, award Victory Points and complete any Victory Conditions as normal. Then roll a number of Action dice equal to the Round number. On one or more Explosive Hits, a single minimum sized Kutzov or Rurik Unit (of the Player’s choice) may be placed in Reserve. If more than one Explosive Hit is rolled, each additional die provides an additional Kutsov or two additional Ruriks to the Unit, depending on Unit type. There is no maximum size for the Unit gaining Models in this way. The facing of one Action die may be replaced with an Explosive Hit if the destroyed Unit was within 10” of a Flagship Unit. This new Unit is given no further upgrades or additional Models. If it is subsequently destroyed, it can award Victory Points as normal.</description>
-    </rule>
-    <rule id="2ccb-35c3-ed87-3d9d" name="Seismic Pounding" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+    <rule id="2ccb-35c3-ed87-3d9d" name="Seismic Pounding*" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <description>A single Attack with the Hazardous Quality by this Unit each Activation receives +2 Action Dice.</description>
     </rule>
-    <rule id="7f30-a427-0677-d65f" name="Davka" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
-      <description>Once per Activation, this Unit may make the following Action as a Valour Effect. Using its fist, this Model may grab an Initial Target within 3” and make a Ramming Action using its Semyenov Assault Bore. The Ram receives a +5 Action Dice bonus instead of any bonus for Ramming distance. This Action is in addition to any other Ram that may have been performed by this Model this Activation. The opponent may always attempt to Cancel this Valour Effect and does not require an additional rule to be able to do so.</description>
+    <rule id="7f30-a427-0677-d65f" name="Davka*" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+      <description>Once per Activation, this Unit may make the following Action as a Valour Effect. Using its fist, this Model may grab an Initial Target within 3” and make a Ramming Action using its Semyenov Assault Bore. The Ram receives a +10 Action Dice bonus instead of any bonus for Ramming distance. This Action is in addition to any other Ram that may have been performed by this Model this Activation.</description>
     </rule>
-    <rule id="db24-5758-df5a-19a5" name="Razrez" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+    <rule id="db24-5758-df5a-19a5" name="Razrez*" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <description>Once per Activation, this Unit may make the following Action as a Valour Effect. Any Claw Arc Projectors may be used in the Shooting Phase in the Fore Arc to make an Attack against an Initial Target within 10” using the Furnace Cascade weapon profile. The opponent may always attempt to Cancel this Valour Effect and does not require an additional rule to be able to do so.</description>
     </rule>
     <rule id="da8d-c041-fd15-a8de" name="Devil’s Own Luck*" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>Once per Round, you may Cancel a Valour Effect in an Encounter where this Unit is in the Play Area. The controlling Player of this Unit must discard a Victory &amp; Valour card from their hand of any value rather than having to be of a greater combined value than the card being Cancelled.</description>
     </rule>
-    <rule id="cb43-2f0f-12ae-7181" name="Sonic Amplifier" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+    <rule id="cb43-2f0f-12ae-7181" name="Sonic Amplifier*" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <description>Attacks made with Hazardous Quality by Models in this Unit gain +3 to their Attack Dice Pool and the Devastating Quality. Shockwave Pulses by this Model always use the larger Torrent template instead of the Small one.</description>
     </rule>
-    <rule id="422e-0279-5ff5-c279" name="Command Codes" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+    <rule id="422e-0279-5ff5-c279" name="Command Codes*" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <description>Once per Round the Player may declare they are using Command Codes to immediately cancel all the dice results in any one Action Dice Pool generated by any Friendly Unit within 15” of this Model. The Command Codes must be played before any manipulation of the Action Dice Pool takes place by either Player. The Action Dice pool is then rolled afresh exactly as if the previous Action Dice Pool had not been rolled. You may not cancel part of the Action Dice Pool or another Player’s Action Dice Pool using this rule.</description>
     </rule>
-    <rule id="d7c8-6542-e5a8-d948" name="Kinetic Dampers" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+    <rule id="d7c8-6542-e5a8-d948" name="Kinetic Dampers*" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <description>This Unit may make a Full Reverse! Special Operations Action without receiving a Level of Disorder. Any additional levels of Disorder received once at Chaos &amp; Disarray are ignored rather than causing damage.</description>
     </rule>
     <rule id="495f-f4ed-3ef8-a354" name="Ukranian Battlefleet Bonus" hidden="false">

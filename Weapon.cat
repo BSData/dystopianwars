@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="526f-06e7-edaa-02b8" name="Weapon" revision="8" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="526f-06e7-edaa-02b8" name="Weapon" revision="9" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Weapon collection
 Review v1: starting document
 Review v2: imprevment to follow ORBAT requirments
@@ -8,7 +8,8 @@ Review v4: Closing the weapon management for the Sultanate
 Review v5: new weapon and profile for Orbat 3.03
 Review v6: new weapon and profile per Union 3.03 update
 Review v7: new weapon and profile to prepare the Enlightened
-Review v8: new weapon and profile for 3.03 Orbat Enlightened</readme>
+Review v8: new weapon and profile for 3.03 Orbat Enlightened
+Review v9: new weapon and profile for 3.03 Orbat Commonwealth</readme>
   <categoryEntries>
     <categoryEntry id="dbb4-72d5-bceb-70b3" name="F" hidden="false"/>
     <categoryEntry id="372f-19f1-09ed-e694" name="P&amp;S" hidden="false"/>
@@ -1310,7 +1311,7 @@ Review v8: new weapon and profile for 3.03 Orbat Enlightened</readme>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b111-bf47-fb16-b8eb" name="Katyusha Salvo" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="b111-bf47-fb16-b8eb" name="Katyusha Salvo" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="ddb8-3938-5ff0-948b" name="Katyusha Rocket Salvo" hidden="false" targetId="fd90-c013-d36a-60b2" type="profile">
           <modifiers>
@@ -4900,6 +4901,77 @@ Review v8: new weapon and profile for 3.03 Orbat Enlightened</readme>
           </modifierGroups>
         </infoLink>
         <infoLink id="93fb-9dc7-bf18-9493" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="148c-d625-907c-1bf0" name="Rocket Battery" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4d6e-35e5-6a8a-d44d" name="Rocket Battery" hidden="false" targetId="90e8-0288-ed1a-f4fb" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A">
+                  <conditions>
+                    <condition field="selections" scope="148c-d625-907c-1bf0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5888-87ac-f851-165d" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="148c-d625-907c-1bf0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="148c-d625-907c-1bf0" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
+                  <conditions>
+                    <condition field="selections" scope="148c-d625-907c-1bf0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ce6f-067d-9ad4-ddaa" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P">
+                  <conditions>
+                    <condition field="selections" scope="148c-d625-907c-1bf0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S/A">
+                  <conditions>
+                    <condition field="selections" scope="148c-d625-907c-1bf0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5b70-4095-b55c-9745" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/A">
+                  <conditions>
+                    <condition field="selections" scope="148c-d625-907c-1bf0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0cd5-1e4e-c51e-c338" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="148c-d625-907c-1bf0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P">
+                  <conditions>
+                    <condition field="selections" scope="148c-d625-907c-1bf0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4e9e-7862-58ad-15e6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/S">
+                  <conditions>
+                    <condition field="selections" scope="148c-d625-907c-1bf0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5347-4855-4421-ed77" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P/S">
+                  <conditions>
+                    <condition field="selections" scope="148c-d625-907c-1bf0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f2af-2773-24ff-2e12" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="d692-aa57-7d67-d138" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
