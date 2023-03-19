@@ -29,14 +29,14 @@
     <rule id="ad21-8a8b-501a-f08c" name="Automata Repair Platform*" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description> Roll an Action Die each time a Mass 1 Friendly AUTOMATA is destroyed within 10” of this Unit. On a roll of a Counter or Heavy Counter the AUTOMATA is not removed and instead remains in play with a single Hull point. </description>
     </rule>
-    <rule id="d894-52c8-4b18-f9f5" name="Armoured Decking" hidden="false">
-      <description>Attacks with the Aerial Quality gain a single Hit from a Heavy Hit result rather than the usual two when attacking this Model. Attacks with the Rail or Piercing Quality ignore this rule.</description>
+    <rule id="d894-52c8-4b18-f9f5" name="Armoured Decking*" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+      <description>Attacks with the Aerial Quality gain a single Hit from a Heavy Hit result rather than the usual two when attacking this Model. Exploding Hits are unaffected by this rule. Attacks with the Piercing Quality ignore this rule.</description>
     </rule>
     <rule id="7078-4031-0b1f-1971" name="Auxiliary Mine Layer*" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>Before Submerged Unit Deployment, the controlling Player of this Unit may place a single Minefield Marker anywhere in the Play Area at least 10” from any Deployment Zone.</description>
     </rule>
-    <rule id="e0a4-52b6-676c-9b6d" name="Celerity" publicationId="d854-a2d6-3d52-44c4" hidden="false">
-      <description>Once per Activation, this Unit may make the following Valour Effect. Any Model in the Unit with this rule, that has caused at least one point of damage in a Ramming Action this Activation, may make a second Ramming Action. The opponent may always attempt to Cancel this Valour Effect and does not require an additional rule to be able to do so. </description>
+    <rule id="e0a4-52b6-676c-9b6d" name="Celerity*" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+      <description>Once per Activation, this Unit may make the following Valour Effect. Any Model in the Unit with this rule, that has caused at least one point of damage in a Ramming Action this Activation, may make a second Ramming Action. The opponent may always attempt to Cancel this Valour Effect and does not require an additional rule to be able to do so.</description>
     </rule>
     <rule id="cfe8-adc4-4866-0bc8" name="Cloud Hunting*" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>Once per Activation, this Unit gains +3 to its Attack Action Dice Pool if the Initial target is an Aerial Unit. </description>
@@ -101,8 +101,8 @@
     <rule id="0d99-00ae-4c22-20b7" name="Giant Slayer*" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>Each Model in the Unit may re-roll Blank Results in Attacks against an Initial Target with a Mass of 3 or more.</description>
     </rule>
-    <rule id="9f05-9e27-c658-e49f" name="Gun Runner" publicationId="d854-a2d6-3d52-44c4" hidden="false">
-      <description>Units with this rule are adept at providing a steady stream of gunfire as they manoeuvre. A single Attack with the Gunnery Quality by this Unit each Activation receives +1 Action Dice for each Battle-Ready Model contributing to the Attack that has moved at least 7” during the Activation. Additionally, while Battle-Ready, this Unit gains +2 Speed during its Movement Step provided that it makes no turns.</description>
+    <rule id="9f05-9e27-c658-e49f" name="Gun Runner*" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+      <description>Units with this rule are adept at providing a steady stream of gunfire as they manoeuvre. A Model must have moved at least 7” during the Activation or been Placed by a Mirage Generator during its Activation. A single Attack with the Gunnery Quality by this Unit each Activation receives +1 Action Dice for each Battle-Ready Model contributing to the Attack. Additionally, while Battle-Ready, this Unit gains +2 Speed during its Movement Step provided that it makes no turns.</description>
     </rule>
     <rule id="4a79-7f9b-ba17-59b8" name="Hammer Sweep*" publicationId="5a03-1c6f-8fc8-2be1" page="" hidden="false">
       <description>During its Activation, this Unit may increase its Speed by 1&quot; and gains +2 to its Ramming Dice Pool provided that it makes no turns during this Movement.</description>
@@ -191,8 +191,8 @@
     <rule id="b8d7-281f-b227-a523" name="SRS Mine Clearance*" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>During its Operations Step, while placing its SRS Tokens, this Model may also place tokens in contact with a Minefield Marker within 20”. At the end of the Special Operations Step discard an SRS Token and roll an Action Die. On an Exploding Hit, the Minefield Marker is discarded. You may repeat this attempt as many times as there are SRS Tokens remaining in the stack. If the Minefield Marker is discarded, any remaining SRS Tokens in the stack may be placed on another Minefield Marker within 5”to continue a Mine Clearance attempt on that Marker. If there are not any Minefield Markers within 5”, the SRS Tokens remain in place until the End Phase when they may Scramble or Find New Targets.</description>
     </rule>
-    <rule id="e76e-276f-d917-c7a4" name="SRS Portal Strike" publicationId="d854-a2d6-3d52-44c4" page="12" hidden="false">
-      <description>When Launching SRS during the Operations Step, a Unit with this rule may also place an additional Portal Marker within 5” of itself. If it does so, any SRS Tokens launched during that Operations Step by the Unit may be placed within 40” of any Portal Marker in the Play Area</description>
+    <rule id="e76e-276f-d917-c7a4" name="SRS Portal Strike*" publicationId="d854-a2d6-3d52-44c4" page="" hidden="false">
+      <description>When Launching SRS during the Operations Step, a Unit with this rule with an online Portal Generator may also place an additional Portal Token within 5” of itself. If it does so, any SRS Tokens launched during that Operations Step by the Unit may be placed within 40” of any Portal Token in the Play Area.</description>
     </rule>
     <rule id="0a26-0b4a-261f-3db0" name="SRS Recon Flight*" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>During its Operations Step, before placing its SRS Tokens in Base Contact with Models in the Play Area, a Unit with SRS Capacity may discard one or more tokens. Each SRS token discarded allows the player to discard a Victory and Valour card from their hand and replace it with the top card from their Deck. Unspent tokens may be placed and used as normal.</description>
@@ -230,7 +230,7 @@
     <rule id="f721-8318-3875-0140" name="Vanguard*" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>Starting with Player B, after both sides are deployed, each player may choose one of their Units with the Vanguard rule and make a free Move of up to 5&quot;. This is not an Activation and does not have Drift or Turn Limit. Vanguard alternates between Players until all such Units have been selected.</description>
     </rule>
-    <rule id="91f7-3138-f1c6-4770" name="Vigour" hidden="false">
+    <rule id="91f7-3138-f1c6-4770" name="Vigour*" publicationId="d854-a2d6-3d52-44c4" hidden="false">
       <description>Once per Activation, this Unit may make the following Valour Effect. Models with this rule gain the Sustained Quality to their Assault Dice Pool. Furthermore as the same Valour Effect they gain +6 to Fray if the Initial Target has the Colossus rule.</description>
     </rule>
     <rule id="6336-229a-7ed6-bb3d" name="Rebel Yell*" publicationId="129d-da97-caec-1ddd" hidden="false">
@@ -305,7 +305,7 @@
     <rule id="6e2e-abc9-576c-fdac" name="Physeter Constructs*" publicationId="908d-6feb-2e9e-843b" hidden="false">
       <description>At the start of the first Round, provided at least one Battlefleet has this rule, the Enlightened player creates a stack of Physeter Construct Tokens in what is called a Physeter Ambush. This stack consists of a Physeter Construct Token for each Battlefleet in their Force with this rule. At the start of the First Round, after all deployment, this stack is Placed in base contact with an enemy Surface Unit or Submerged Unit of the players choice. Each Physeter Construct Token contribute 5 Action Dice to an Assault against that Surface Unit or Submerged Unit when that Unit Activates. The Physeter Construct stack count as the Assaulting Model, and they ignore Counter Assaults. Friendly SRS placed in contact with Surface Unit may support the Physeter Construct Token Assault. Up to four additional Physeter Construct Tokens may be added to this Physeter Ambush stack for +12pts per Token. The stack may not be split, and all Physeter Construct Tokens in the stack are discarded at the end of that Assault. </description>
     </rule>
-    <rule id="3862-7540-3def-6ec1" name="Wavelurker*" publicationId="908d-6feb-2e9e-843b" hidden="false">
+    <rule id="3862-7540-3def-6ec1" name="Wavelurker*" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>Any Unit with this rule may plunge into a shallow dive during Special Operations Step of its Activation. This is called Wavelurking. All Models in the Unit replaces the Surface Unit Position Trait for the Submerged Unit Position Trait until the end of the Special Operations Step of their next Activation (meaning it cannot be used in consecutive turns). Attacks from a Wavelurking Model count only a single Hit from each Heavy Hit result.  A Model immediately ceases to be Wavelurking if it has a Navigation Lock Critical Damage Marker or the Chaos and Disarray Level of Disorder. Units with this rule may start the Encounter as Wavelurking, which means they may be deployed as Submerged Units and are Wavelurking from the start of the Encounter until the end of the Special Operations Step of their Activation in the Second Round. They are still considered Surface Units for Force selection purposes. </description>
     </rule>
     <rule id="1f47-6b63-aa26-88ab" name="Physeter Ambush" publicationId="908d-6feb-2e9e-843b" hidden="false">
@@ -365,8 +365,8 @@
     <rule id="fbf0-6c31-cb55-ec62" name="Supercharged Munition" hidden="false">
       <description>Once per Activation, when a Model with the Flagship Trait in this Unit leads an Attack using Heavy Volt Gun Batteries or Heavy Rocket Batteries, up to three of those weapons may contribute their Lead value instead of their Support value to the Attack Dice Pool rather than the normal single Lead weapon. Any Gustav Heavy Bombards on this Unit gain +3 to Attack Dice Pools when using this weapon.</description>
     </rule>
-    <rule id="db90-0b63-d0f9-5222" name="Portal Mastery" hidden="false">
-      <description>This Unit may, as a Special Operations Action, place a 50mm Portal Token within 20” of itself. During the Round, any friendly Unit making an Attack with the Bomb Quality that has a Portal Marker within 5” of that Unit may measure the range of the Attack as though being made from any other Portal Marker. The Attacking Unit still requires Line of Sight to the Initial Target, but the weapon gains a 360 degree Fire Arc if used with a Portal. Furthermore, during the Reserves Step of that Round, when a friendly Unit becomes available from Reserve, it may be deployed within 2” of any Portal Marker rather than using any other deployment options. Each Model in the Reserve Unit must be deployed within 2” of the same Portal Marker. Remove Portal Markers once a Reserve Unit has been deployed within 2” of it, or an Attack using the Bomb Quality has been made from it or finally remove all remaining Portal Markers at the start of the Maintenance Step.</description>
+    <rule id="db90-0b63-d0f9-5222" name="Portal Mastery*" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+      <description>This Unit may, as a Special Operations Action, place a second 50mm Portal Token within 20” of itself. While a Model from this Unit is within 5” of a Portal Token, friendly Units deploying from Reserve may instead be deployed in base contact with any Portal Token in the Play Area. Each Model in the Reserve Unit must be deployed in base contact with the same Portal Token. Remove the Portal Token once a Reserve Unit has been deployed using it.</description>
     </rule>
     <rule id="1181-0663-f1c1-9047" name="Give Em Hell*" publicationId="e6a1-85d3-8979-7880" hidden="false">
       <description>This Unit may make a Special Operations Action that it will ‘Give Em Hell’. All weapons with the Gunnery or Fusillade special rule in the Unit gain the Devastating Quality for the duration of its Activation. At the end of the Activation, before the Repair Step, unless the player discards a card from their hand, each Model in the Unit gains a Disorder Condition.</description>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="526f-06e7-edaa-02b8" name="Weapon" revision="9" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="526f-06e7-edaa-02b8" name="Weapon" revision="10" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Weapon collection
 Review v1: starting document
 Review v2: imprevment to follow ORBAT requirments
@@ -9,7 +9,8 @@ Review v5: new weapon and profile for Orbat 3.03
 Review v6: new weapon and profile per Union 3.03 update
 Review v7: new weapon and profile to prepare the Enlightened
 Review v8: new weapon and profile for 3.03 Orbat Enlightened
-Review v9: new weapon and profile for 3.03 Orbat Commonwealth</readme>
+Review v9: new weapon and profile for 3.03 Orbat Commonwealth
+Review v10: new weapon and profile for 3.03 Orbat Sultanate</readme>
   <categoryEntries>
     <categoryEntry id="dbb4-72d5-bceb-70b3" name="F" hidden="false"/>
     <categoryEntry id="372f-19f1-09ed-e694" name="P&amp;S" hidden="false"/>
@@ -2610,7 +2611,7 @@ Review v9: new weapon and profile for 3.03 Orbat Commonwealth</readme>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e247-ef54-bcc7-9e96" name="Chaska Starblade" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e247-ef54-bcc7-9e96" name="Chaska Starblade" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="9128-ea5c-071d-6e71" name="Chaska Starblade" hidden="false" targetId="49a1-7c5d-5c91-abdf" type="profile">
           <modifierGroups>
@@ -2867,7 +2868,7 @@ Review v9: new weapon and profile for 3.03 Orbat Commonwealth</readme>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d86c-d2c7-7964-5f8b" name="Judgement Lance" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="d86c-d2c7-7964-5f8b" name="Judgement Lance" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="2522-c8dd-929a-f664" name="Arc" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
         <infoLink id="ec36-eb2f-4562-659f" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
@@ -2901,7 +2902,7 @@ Review v9: new weapon and profile for 3.03 Orbat Commonwealth</readme>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="db84-1c9c-98de-aa16" name="Orichalcite Flechette Launcher" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="db84-1c9c-98de-aa16" name="Orichalcite Flechette Launcher" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="afa5-5683-a1b6-1e3d" name="Fusillade" hidden="false" targetId="4ec1-3aa3-001e-f8f6" type="rule"/>
         <infoLink id="1f7f-ba4b-1fa2-7ca2" name="Blast" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
@@ -2912,7 +2913,7 @@ Review v9: new weapon and profile for 3.03 Orbat Commonwealth</readme>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6a66-1016-ae4a-e291" name="Salvo Missile Silo" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6a66-1016-ae4a-e291" name="Salvo Missile Silo" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="dc7e-3e7e-a65a-adbf" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
         <infoLink id="5ac7-6b55-74b9-7b2d" name="Blast" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
@@ -2932,36 +2933,6 @@ Review v9: new weapon and profile for 3.03 Orbat Commonwealth</readme>
                     <condition field="selections" scope="6a66-1016-ae4a-e291" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/S">
-                  <conditions>
-                    <condition field="selections" scope="6a66-1016-ae4a-e291" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="5347-4855-4421-ed77" type="instanceOf"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P">
-                  <conditions>
-                    <condition field="selections" scope="6a66-1016-ae4a-e291" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="4e9e-7862-58ad-15e6" type="instanceOf"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
-                  <conditions>
-                    <condition field="selections" scope="6a66-1016-ae4a-e291" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P/S">
-                  <conditions>
-                    <condition field="selections" scope="6a66-1016-ae4a-e291" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="f2af-2773-24ff-2e12" type="instanceOf"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
-                  <conditions>
-                    <condition field="selections" scope="6a66-1016-ae4a-e291" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="ce6f-067d-9ad4-ddaa" type="instanceOf"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P">
-                  <conditions>
-                    <condition field="selections" scope="6a66-1016-ae4a-e291" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
-                  </conditions>
-                </modifier>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -2973,7 +2944,19 @@ Review v9: new weapon and profile for 3.03 Orbat Commonwealth</readme>
     </selectionEntry>
     <selectionEntry id="2b5a-ff6b-b80b-552a" name="Twin Judgement Lances" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="86ee-9aa0-a0c6-2926" name="Twin Judgement Lances" hidden="false" targetId="ca47-f3ab-e6cb-9165" type="profile"/>
+        <infoLink id="86ee-9aa0-a0c6-2926" name="Twin Judgement Lances" hidden="false" targetId="ca47-f3ab-e6cb-9165" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="2b5a-ff6b-b80b-552a" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
         <infoLink id="d140-88b8-fcb2-1ad3" name="Arc" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
         <infoLink id="a5ea-9a8c-7a36-622d" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
         <infoLink id="f5d7-f2de-6ad5-f886" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
@@ -4062,7 +4045,7 @@ Review v9: new weapon and profile for 3.03 Orbat Commonwealth</readme>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4ab1-aaf7-f200-c036" name="Electrostatic Vacuum Bombs" publicationId="7b2b-0f56-3962-5ec1" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4ab1-aaf7-f200-c036" name="Electrostatic Vacuum Bombs" publicationId="7b2b-0f56-3962-5ec1" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="7cdb-78a7-caf2-826c" name="Electrostatic Vacuum Bombs" hidden="false" targetId="bd43-d4ee-133f-c3bd" type="profile">
           <modifierGroups>
@@ -4845,6 +4828,11 @@ Review v9: new weapon and profile for 3.03 Orbat Commonwealth</readme>
           <modifierGroups>
             <modifierGroup>
               <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="c171-fd73-2656-282c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
                 <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
                   <conditions>
                     <condition field="selections" scope="c171-fd73-2656-282c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
@@ -4977,6 +4965,295 @@ Review v9: new weapon and profile for 3.03 Orbat Commonwealth</readme>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="10f7-c717-2887-f9ca" name="D-Cannon Battery" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="af14-76da-099b-d5fb" name="D-Cannon Battery" hidden="false" targetId="c788-c4d5-c958-7cc8" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="10f7-c717-2887-f9ca" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="10f7-c717-2887-f9ca" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/S">
+                  <conditions>
+                    <condition field="selections" scope="10f7-c717-2887-f9ca" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="5347-4855-4421-ed77" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P">
+                  <conditions>
+                    <condition field="selections" scope="10f7-c717-2887-f9ca" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="4e9e-7862-58ad-15e6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="10f7-c717-2887-f9ca" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P/S">
+                  <conditions>
+                    <condition field="selections" scope="10f7-c717-2887-f9ca" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="f2af-2773-24ff-2e12" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
+                  <conditions>
+                    <condition field="selections" scope="10f7-c717-2887-f9ca" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P">
+                  <conditions>
+                    <condition field="selections" scope="10f7-c717-2887-f9ca" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="f401-8089-dd91-3cd3" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="001a-609b-cb14-c44a" name="Aerial Torpedo" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5c06-a4f6-322c-d3ac" name="Aerial Torpedo" hidden="false" targetId="a0a8-dac0-e58d-85e2" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="001a-609b-cb14-c44a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="cdef-a7c4-fa9a-b648" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
+        <infoLink id="1da7-23bc-e7f3-b371" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
+        <infoLink id="2555-0190-a2ca-0c43" name="High Velocity" hidden="false" targetId="5b8e-71d1-641d-73f9" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="40cf-c845-ac81-afe2" name="Particle Beamer" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="81fb-f031-5303-496c" name="Particle Beamer" hidden="false" targetId="31a4-53c0-305c-d8fb" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P">
+                  <conditions>
+                    <condition field="selections" scope="40cf-c845-ac81-afe2" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
+                  <conditions>
+                    <condition field="selections" scope="40cf-c845-ac81-afe2" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="ce6f-067d-9ad4-ddaa" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="5e38-fa88-638f-acc2" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ab33-83f7-3867-90c2" name="D-Cannon Battery" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="d469-5373-6c40-b68b" name="D-Cannon Battery" hidden="false" targetId="c788-c4d5-c958-7cc8" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
+                  <conditions>
+                    <condition field="selections" scope="ab33-83f7-3867-90c2" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="ce6f-067d-9ad4-ddaa" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P">
+                  <conditions>
+                    <condition field="selections" scope="ab33-83f7-3867-90c2" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="936a-ebc2-297f-9903" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="94b7-397b-6a37-5302" name="Twin Judgement Lances" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f8e0-3dd1-85f5-3da7" name="Twin Judgement Lances" hidden="false" targetId="ca47-f3ab-e6cb-9165" type="profile">
+          <modifiers>
+            <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+              <conditions>
+                <condition field="selections" scope="94b7-397b-6a37-5302" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="5434-f099-55d3-2b31" name="Arc" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
+        <infoLink id="754a-ae44-31ee-1161" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
+        <infoLink id="d36b-f4c4-78bf-8504" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+        <infoLink id="0979-ec96-2792-4e89" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9985-b088-fda6-36d4" name="Heavy Broadside" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2ec1-3668-aa6e-0537" name="Heavy Broadside" hidden="false" targetId="53dd-93fd-f789-bf9e" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="P &amp; S">
+                  <conditions>
+                    <condition field="selections" scope="9985-b088-fda6-36d4" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="372f-19f1-09ed-e694" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F &amp; A">
+                  <conditions>
+                    <condition field="selections" scope="9985-b088-fda6-36d4" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="afe0-b5a3-3eac-004f" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="c46c-0546-c637-8187" name="Fusillade" hidden="false" targetId="4ec1-3aa3-001e-f8f6" type="rule"/>
+        <infoLink id="d727-09c3-c6f8-4581" name="Broadside" hidden="false" targetId="cb94-70c0-65b8-d3d0" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fa1b-fa45-a389-af24" name="Heavy Particle Cannon" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="37e8-bc1f-7f4f-d55a" name="Heavy Particle Cannon" hidden="false" targetId="0676-ee17-f0b1-50f9" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="fa1b-fa45-a389-af24" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="fa1b-fa45-a389-af24" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="281c-9bd2-6ac5-1bda" name="Heavy Particel Cannon" hidden="false" targetId="f28a-65ec-04cc-c66d" type="rule"/>
+        <infoLink id="24e8-6fc4-d30f-8ccc" name="Blast" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
+        <infoLink id="e985-ac84-9a4f-283a" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+        <infoLink id="09c0-722b-c2ea-bb45" name="Piercing" hidden="false" targetId="0f8e-056c-75a9-caee" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c63b-090d-f2b9-2d24" name="Gravitronic Imperilator" publicationId="908d-6feb-2e9e-843b" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="38c3-776c-b415-2f36" name="Gravitronic Imperilator" hidden="false" targetId="9c61-3695-a75a-f545" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="c63b-090d-f2b9-2d24" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="c63b-090d-f2b9-2d24" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="7403-e64b-b4b5-adb2" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
+        <infoLink id="5036-da10-b434-700f" name="Piercing" hidden="false" targetId="0f8e-056c-75a9-caee" type="rule"/>
+        <infoLink id="4c44-abea-f23e-3d8b" name="Gravitonic Imperilator" hidden="false" targetId="c865-1e57-eb77-0063" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0d98-4fb1-3d0d-a962" name="Magneto Encapsulator" publicationId="908d-6feb-2e9e-843b" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="998b-e71b-fffa-9d83" name="Magneto Encapsulator" hidden="false" targetId="1024-e04c-d607-3a7a" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="0d98-4fb1-3d0d-a962" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="0d98-4fb1-3d0d-a962" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="af90-5320-0e6b-7045" name="Magneto Encapsulator" hidden="false" targetId="0dda-8909-05d2-e7ac" type="rule"/>
+        <infoLink id="93ed-4756-448b-0bff" name="Magnetic" hidden="false" targetId="8c21-7eac-4f35-4268" type="rule"/>
+        <infoLink id="d539-0549-4c6e-9477" name="Blast" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="eca5-079d-eea0-50ae" name="Sturginium Atomiser" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="26cd-7a46-cfd4-1d09" name="Sturginium Atomiser" hidden="false" targetId="00ff-b686-34f3-b692" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="eca5-079d-eea0-50ae" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="eca5-079d-eea0-50ae" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="ba7a-5eaa-8e12-9d81" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="c475-4c4f-de22-9080" name="Aerial" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
@@ -5068,6 +5345,9 @@ Review v9: new weapon and profile for 3.03 Orbat Commonwealth</readme>
     </rule>
     <rule id="0dda-8909-05d2-e7ac" name="Magneto Encapsulator" publicationId="908d-6feb-2e9e-843b" hidden="false">
       <description>Place the Blast template over the Initial Target. Resolve the Attack as normal. If the Initial target suffers one or more points of damage, then the Unit making the Attack may make a Valour Effect affecting all Models touched by the Blast. As a Valour Effect, any Models touched by the Blast template are moved towards the centre of the Blast template in the order of the attackers choosing. Usually this will cause collisions with another Model. Any intervening terrain between the centre of the Blast and a Moving Model is collided with instead.  Resolve all Collisions in the order of the attackers choosing, then each Moving Model completes any disengaging and moves their Drift value, resolving any further Collisions this causes. </description>
+    </rule>
+    <rule id="5f8b-1815-9738-ae2c" name="D-Cannon" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+      <description>As a Valour Effect before the Action Dice for Attack are rolled, this weapon loses the Indirect Quality and instead gains the Devastating Quality. D-Cannon Batteries ignore Shield Generators.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -5176,7 +5456,7 @@ Review v9: new weapon and profile for 3.03 Orbat Commonwealth</readme>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 12, Arc</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 12/10, Arc</characteristic>
       </characteristics>
     </profile>
     <profile id="81a1-3b09-b1db-e907" name="Chesapeake Gatling Battery" publicationId="e6a1-85d3-8979-7880" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
@@ -6209,6 +6489,15 @@ Review v9: new weapon and profile for 3.03 Orbat Commonwealth</readme>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">9(5) / 6(4)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">9(5) / 6(4)</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Arc, Blast, Extreme Range</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c788-c4d5-c958-7cc8" name="D-Cannon Battery" publicationId="d854-a2d6-3d52-44c4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">8(4) / 6(3)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">8(4) / 6(3)</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Indirect, Piercing, D-Cannon</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

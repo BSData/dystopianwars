@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6719-1f83-56dd-91fe" name="Commonwealth v3.03" revision="11" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6719-1f83-56dd-91fe" name="Commonwealth v3.03" revision="12" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Review 1.02.01: correct Rurik and Oleg unit max size
 Review 1.03.00: add new unit and new profile from ORBAT 1.03, fixed Battlefleet bonus managment
 Review 1.04.a0: review after the v1.04a
@@ -10,7 +10,8 @@ Review 1.07.01: update to Commonwealth v1.07a
 Review 3.02.00: update to Commonwealth v3.02
 Review 3.02.01: minor bug fix
 Review 3.02.02: minor bug fix befor the update to 3.03
-Review 3.03.00: update to 3.03</readme>
+Review 3.03.00: update to 3.03
+Review 3.03.00: minor bug fix after update to 3.03</readme>
   <categoryEntries>
     <categoryEntry id="c7ca-90d2-5214-ece9" name="Commonwealth" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
     <categoryEntry id="43a2-7e77-ff29-fb5c" name="Russian" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
@@ -1010,6 +1011,18 @@ Review 3.03.00: update to 3.03</readme>
           </constraints>
           <selectionEntries>
             <selectionEntry id="e3cc-cd3f-0d0b-a92b" name="Rurik Frigate Squadron" hidden="false" collective="false" import="true" type="unit">
+              <modifiers>
+                <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <categoryLinks>
                 <categoryLink id="0722-741e-00cc-5b29" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
                 <categoryLink id="4680-a477-87e2-d9bf" name="Rurik Class" hidden="false" targetId="9573-ce70-b55f-58e8" primary="false"/>
@@ -1051,9 +1064,7 @@ Review 3.03.00: update to 3.03</readme>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="c5a5-ace2-bf56-961d" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="false"/>
         <categoryLink id="48ac-4502-e92d-b679" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
-        <categoryLink id="a5f7-1a04-5546-8909" name="Fleet Carrier" hidden="false" targetId="408c-1732-73f9-379d" primary="false"/>
         <categoryLink id="d322-1de7-e355-677f" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="c5c7-a437-a7d8-02e9" name="Mozhayski Class" hidden="false" targetId="9bad-609b-b3cd-cd89" primary="false"/>
       </categoryLinks>
@@ -1080,6 +1091,18 @@ Review 3.03.00: update to 3.03</readme>
           </constraints>
           <selectionEntries>
             <selectionEntry id="3301-f2e6-764a-d306" name="Rurik Frigate Squadron" hidden="false" collective="false" import="true" type="unit">
+              <modifiers>
+                <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <categoryLinks>
                 <categoryLink id="fded-04c2-7459-d8aa" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
                 <categoryLink id="7888-9d13-a895-ac9d" name="Rurik Class" hidden="false" targetId="9573-ce70-b55f-58e8" primary="false"/>
@@ -1123,9 +1146,7 @@ Review 3.03.00: update to 3.03</readme>
       <categoryLinks>
         <categoryLink id="30d9-25ea-1e0b-cf4c" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="c39a-c322-8cba-4b6b" name="Borodino Class" hidden="false" targetId="10f8-2a4a-0324-de9d" primary="false"/>
-        <categoryLink id="dacb-3613-a755-5a2e" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="false"/>
         <categoryLink id="0740-a7d5-fe70-748f" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
-        <categoryLink id="2d91-1187-974b-1be0" name="Battleship" hidden="false" targetId="f53b-304b-cb90-6535" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="00cb-5228-2aa7-6a7a" name="Escort model" hidden="false" collective="false" import="true">
@@ -1150,6 +1171,18 @@ Review 3.03.00: update to 3.03</readme>
           </constraints>
           <selectionEntries>
             <selectionEntry id="a1f1-10c6-485c-2f10" name="Rurik Frigate Squadron" hidden="false" collective="false" import="true" type="unit">
+              <modifiers>
+                <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <categoryLinks>
                 <categoryLink id="5f82-9c32-ccc7-dfa3" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
                 <categoryLink id="5ed5-7526-10d8-f455" name="Rurik Class" hidden="false" targetId="9573-ce70-b55f-58e8" primary="false"/>
@@ -1204,7 +1237,6 @@ Review 3.03.00: update to 3.03</readme>
         <categoryLink id="b6ab-c4f6-4474-1b61" name="Piranya Class" hidden="false" targetId="3030-3da1-a547-b7cf" primary="false"/>
         <categoryLink id="e657-6d3e-e874-4461" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
         <categoryLink id="c971-74e6-f665-bb34" name="Ukrainian" hidden="false" targetId="d7b3-10bd-20f0-4832" primary="false"/>
-        <categoryLink id="9771-5992-4da6-865c" name="4" hidden="false" targetId="5935-bcd7-b498-5f40" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="9a67-3c42-5db1-72c1" name="Attached Unit" hidden="false" collective="false" import="true">
@@ -1249,6 +1281,16 @@ Review 3.03.00: update to 3.03</readme>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="04c2-18fe-c8ff-709b" name="Khatanga Class" hidden="false" targetId="a437-c808-f047-cd5c" primary="false"/>
@@ -1274,10 +1316,21 @@ Review 3.03.00: update to 3.03</readme>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="53de-5a28-2040-576b" name="Sineus Class" hidden="false" targetId="ed0a-242d-6092-8471" primary="false"/>
         <categoryLink id="b970-c6f6-15d6-020d" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="934c-c28a-2b8a-aab2" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="4d2f-b988-5c0e-b171" name="Sineus" hidden="false" collective="false" import="true" targetId="a2c8-dcfb-9b72-fbe0" type="selectionEntry">
@@ -1302,10 +1355,21 @@ Review 3.03.00: update to 3.03</readme>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="72c0-99f1-b535-493f" name="Oleg Class" hidden="false" targetId="8acf-93d1-8b6d-33a5" primary="false"/>
         <categoryLink id="347e-233f-4b71-43f4" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="4137-4cff-86ce-67bd" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="5087-eec3-ce99-f004" name="Oleg" hidden="false" collective="false" import="true" targetId="06be-2972-f4da-58f0" type="selectionEntry"/>
@@ -1324,6 +1388,16 @@ Review 3.03.00: update to 3.03</readme>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -1349,10 +1423,21 @@ Review 3.03.00: update to 3.03</readme>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="30e6-2409-0240-635b" name="Kutsov Class" hidden="false" targetId="0a00-d349-874e-5599" primary="false"/>
         <categoryLink id="bedb-ad81-3567-ebfd" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="3a02-0902-c09b-b405" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="c99f-2bb7-df46-9931" name="Kutsov" hidden="false" collective="false" import="true" targetId="32db-ea15-15e2-e595" type="selectionEntry"/>
@@ -1372,10 +1457,21 @@ Review 3.03.00: update to 3.03</readme>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="dce0-7548-b2f7-349a" name="Norilsk Class" hidden="false" targetId="ec1a-6d4c-408c-2e43" primary="false"/>
         <categoryLink id="042b-0821-5f88-5adb" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="2b42-facc-a365-f209" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="45d3-6aaf-990b-fa6c" name="Norilsk" hidden="false" collective="false" import="true" targetId="df76-9315-5ef1-fe86" type="selectionEntry"/>
@@ -1402,6 +1498,7 @@ Review 3.03.00: update to 3.03</readme>
       <categoryLinks>
         <categoryLink id="e313-0ebb-54cc-d95a" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="21e7-7978-30ba-7a89" name="Murmansk Class" hidden="false" targetId="11c8-1798-393c-0395" primary="false"/>
+        <categoryLink id="98ea-667a-c3d1-9cf4" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="c4b7-57c2-36b9-6460" name="Attached Unit" hidden="false" collective="false" import="true">
@@ -1410,6 +1507,18 @@ Review 3.03.00: update to 3.03</readme>
           </constraints>
           <selectionEntries>
             <selectionEntry id="e81b-0dc2-c380-0897" name="Rurik Frigate Squadron" hidden="false" collective="false" import="true" type="unit">
+              <modifiers>
+                <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <categoryLinks>
                 <categoryLink id="c2c8-7f26-ae44-05b9" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
                 <categoryLink id="7c53-43fd-cf01-8fff" name="Rurik Class" hidden="false" targetId="9573-ce70-b55f-58e8" primary="false"/>
@@ -1462,10 +1571,21 @@ Review 3.03.00: update to 3.03</readme>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="a73d-451f-1761-916d" name="Morozko Class" hidden="false" targetId="4b76-e4b0-9958-2155" primary="false"/>
         <categoryLink id="1dd2-8138-dcbb-6b96" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="86f1-d567-4ab5-98ba" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="0715-fa55-7540-8e0a" name="Morozko" hidden="false" collective="false" import="true" targetId="8290-2bfb-8673-33ca" type="selectionEntry"/>
@@ -1526,10 +1646,21 @@ Review 3.03.00: update to 3.03</readme>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="08fa-0e2e-a75f-0f94" name="Rurik Class" hidden="false" targetId="9573-ce70-b55f-58e8" primary="false"/>
         <categoryLink id="5540-12e4-386f-f1b0" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="e3ec-3ab9-afa0-0ce8" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="c711-4148-46b1-230d" name="Rurik" hidden="false" collective="false" import="true" targetId="e4b3-7155-20c6-819b" type="selectionEntry"/>
@@ -1757,6 +1888,18 @@ Review 3.03.00: update to 3.03</readme>
           </constraints>
           <selectionEntries>
             <selectionEntry id="84d7-68e3-ba45-0ef7" name="Rurik Frigate Squadron" hidden="false" collective="false" import="true" type="unit">
+              <modifiers>
+                <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <categoryLinks>
                 <categoryLink id="ee1b-1b0b-514e-f7a7" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
                 <categoryLink id="413d-e0da-61fb-623b" name="Rurik Class" hidden="false" targetId="9573-ce70-b55f-58e8" primary="false"/>
@@ -1854,6 +1997,7 @@ Review 3.03.00: update to 3.03</readme>
       <categoryLinks>
         <categoryLink id="e8f7-4a72-fc81-a366" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="2627-ec0a-eca3-3a1b" name="Moska Class" hidden="false" targetId="0520-dbe8-a308-0797" primary="false"/>
+        <categoryLink id="6333-f4e2-d531-f616" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="e512-ab64-e5a5-a016" name="Escort model" hidden="false" collective="false" import="true">
@@ -1878,6 +2022,18 @@ Review 3.03.00: update to 3.03</readme>
           </constraints>
           <selectionEntries>
             <selectionEntry id="0092-cce8-ac75-2c94" name="Rurik Frigate Squadron" hidden="false" collective="false" import="true" type="unit">
+              <modifiers>
+                <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <categoryLinks>
                 <categoryLink id="9064-a84a-31c4-6652" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
                 <categoryLink id="d54b-2420-e362-fab4" name="Rurik Class" hidden="false" targetId="9573-ce70-b55f-58e8" primary="false"/>
@@ -1913,6 +2069,16 @@ Review 3.03.00: update to 3.03</readme>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -2229,6 +2395,16 @@ Review 3.03.00: update to 3.03</readme>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9950-5584-8b5d-8c16" type="max"/>
@@ -2237,6 +2413,7 @@ Review 3.03.00: update to 3.03</readme>
         <categoryLink id="6fc0-e190-04e6-89b3" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="93a6-34ad-94b1-583e" name="Hypatia Class" hidden="false" targetId="6536-7b11-53a7-47ab" primary="false"/>
         <categoryLink id="b757-449a-da8a-a63a" name="Unique" hidden="false" targetId="293e-b55a-bcfa-95c3" primary="false"/>
+        <categoryLink id="cf88-6743-ccf8-fba2" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="7a2a-4893-a04e-3ebb" name="Escort Model" hidden="false" collective="false" import="true">
@@ -2282,6 +2459,7 @@ Review 3.03.00: update to 3.03</readme>
       <categoryLinks>
         <categoryLink id="5726-bbae-d631-81ca" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="b2b5-3470-fec1-68b4" name="Subatai Class" hidden="false" targetId="d472-72ed-dcf9-07d8" primary="false"/>
+        <categoryLink id="995a-4636-01da-fb15" name="Mongolian" hidden="false" targetId="6047-720c-1370-9d3b" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="a634-09fb-5fb5-4b86" name="Subatai" hidden="false" collective="false" import="true" targetId="63bc-2673-2d78-dfcc" type="selectionEntry"/>
@@ -2309,6 +2487,7 @@ Review 3.03.00: update to 3.03</readme>
       <categoryLinks>
         <categoryLink id="f8c1-e825-82b0-8080" name="Ortoq Class" hidden="false" targetId="6ae8-bd5a-2060-c96c" primary="false"/>
         <categoryLink id="377a-0a5f-22fd-ce70" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="0520-2d65-7235-3bc7" name="Mongolian" hidden="false" targetId="6047-720c-1370-9d3b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="0c53-b336-1a72-deb1" name="Escort Model" hidden="false" collective="false" import="true">
@@ -2369,10 +2548,21 @@ Review 3.03.00: update to 3.03</readme>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="9e91-14e0-75c3-f443" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="7059-0714-3dd0-98a9" name="Marena Class" hidden="false" targetId="7947-ec58-ae3a-6d57" primary="false"/>
+        <categoryLink id="1792-bcb7-46b1-87e7" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="32a8-c46a-06cc-d07a" name="Attached Unit" hidden="false" collective="false" import="true">
@@ -2417,10 +2607,21 @@ Review 3.03.00: update to 3.03</readme>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="ebd7-56af-3364-f957" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="6978-e36f-5a2c-e899" name="Marena Class" hidden="false" targetId="7947-ec58-ae3a-6d57" primary="false"/>
+        <categoryLink id="8e6e-3d25-1196-e52d" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="f7d5-c899-bf22-88f7" name="Attached Unit" hidden="false" collective="false" import="true">
@@ -2473,6 +2674,7 @@ Review 3.03.00: update to 3.03</readme>
       <categoryLinks>
         <categoryLink id="3e85-2468-f757-46ad" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="a10c-7fbe-2e95-efe4" name="Khan Class" hidden="false" targetId="4f12-aa2a-c712-3683" primary="false"/>
+        <categoryLink id="75c4-5f4b-9bc5-ea5f" name="Mongolian" hidden="false" targetId="6047-720c-1370-9d3b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="3ce2-26c2-13a2-ad20" name="Escort Model" hidden="false" collective="false" import="true">
@@ -2533,10 +2735,21 @@ Review 3.03.00: update to 3.03</readme>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="2eed-d905-344a-8b0b" name="Morozko Class" hidden="false" targetId="4b76-e4b0-9958-2155" primary="false"/>
         <categoryLink id="a196-ebe0-51e2-a619" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="3972-b666-07e6-ed48" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="ccc5-dcf8-0ca6-4bdc" name="Escort Model" hidden="false" collective="false" import="true">
@@ -2606,6 +2819,18 @@ Review 3.03.00: update to 3.03</readme>
           </constraints>
           <selectionEntries>
             <selectionEntry id="b162-3e07-2349-b271" name="Rurik Frigate Squadron" hidden="false" collective="false" import="true" type="unit">
+              <modifiers>
+                <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <categoryLinks>
                 <categoryLink id="e104-a78c-33b2-4fbe" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
                 <categoryLink id="c1ec-e462-028e-7c3a" name="Rurik Class" hidden="false" targetId="9573-ce70-b55f-58e8" primary="false"/>
@@ -2650,6 +2875,7 @@ Review 3.03.00: update to 3.03</readme>
       <categoryLinks>
         <categoryLink id="239d-0b07-3698-86a8" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="7a50-9022-9f4f-b3a5" name="Prezidium Class" hidden="false" targetId="ea82-a2fd-0f1c-5260" primary="false"/>
+        <categoryLink id="f041-9844-8092-c5e7" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="3aae-d0cc-5403-8056" name="Escort model" hidden="false" collective="false" import="true">
@@ -2674,6 +2900,18 @@ Review 3.03.00: update to 3.03</readme>
           </constraints>
           <selectionEntries>
             <selectionEntry id="5fe9-7b33-bc8f-61c7" name="Rurik Frigate Squadron" hidden="false" collective="false" import="true" type="unit">
+              <modifiers>
+                <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <categoryLinks>
                 <categoryLink id="61bd-05f2-fd80-8234" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
                 <categoryLink id="09a3-a65b-8ebf-24cb" name="Rurik Class" hidden="false" targetId="9573-ce70-b55f-58e8" primary="false"/>
@@ -2718,6 +2956,7 @@ Review 3.03.00: update to 3.03</readme>
       <categoryLinks>
         <categoryLink id="fec3-f624-00b4-2cf8" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="ba37-ee81-28c3-b4ed" name="Rikhter Class" hidden="false" targetId="0b25-f836-09a9-ecf2" primary="false"/>
+        <categoryLink id="dd17-9a5c-e168-be3e" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="a1f3-5a35-3182-0b0b" name="Escort model" hidden="false" collective="false" import="true">
@@ -2778,10 +3017,21 @@ Review 3.03.00: update to 3.03</readme>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="76de-d741-638c-d975" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="4fe1-a2fe-9db7-2e8e" name="Krykun Class" hidden="false" targetId="7957-941d-d81a-ad34" primary="false"/>
+        <categoryLink id="2426-ea35-1f4b-d88f" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="1858-c026-53be-5b10" name="Krykun" hidden="false" collective="false" import="true" targetId="c9c8-eda1-3b4c-5bba" type="selectionEntry"/>
@@ -2808,9 +3058,7 @@ Review 3.03.00: update to 3.03</readme>
       <categoryLinks>
         <categoryLink id="b602-0f20-be5b-ffe3" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="70f2-3c66-cff5-7d13" name="Borodino Class" hidden="false" targetId="10f8-2a4a-0324-de9d" primary="false"/>
-        <categoryLink id="d1ca-09e2-ad93-e074" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="false"/>
-        <categoryLink id="93ea-3e39-fee4-4d40" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
-        <categoryLink id="6489-b0cf-a7e4-45d2" name="Battleship" hidden="false" targetId="f53b-304b-cb90-6535" primary="false"/>
+        <categoryLink id="394f-3cea-674c-59f3" name="Ukrainian" hidden="false" targetId="d7b3-10bd-20f0-4832" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="af5a-827b-a525-05d6" name="Escort model" hidden="false" collective="false" import="true">
@@ -2879,7 +3127,6 @@ Review 3.03.00: update to 3.03</readme>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f034-f543-f5d6-920e" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
-        <categoryLink id="7b4e-1ba1-ab75-650e" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
         <categoryLink id="f737-425d-a3b2-c0db" name="Fleet Carrier" hidden="false" targetId="408c-1732-73f9-379d" primary="false"/>
       </categoryLinks>
       <selectionEntries>
@@ -2960,7 +3207,6 @@ Review 3.03.00: update to 3.03</readme>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="924c-aa83-65d2-e0e8" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
-        <categoryLink id="7cbc-0877-2a0a-b60d" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
         <categoryLink id="97de-7ef7-b15e-8e65" name="Battleship" hidden="false" targetId="f53b-304b-cb90-6535" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -3064,7 +3310,6 @@ Review 3.03.00: update to 3.03</readme>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4ae8-6007-6ff9-f67f" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
-        <categoryLink id="c721-2db6-f18a-4b9d" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
         <categoryLink id="d756-291a-2afe-7ac1" name="Heavy Cryo Cruiser" hidden="false" targetId="ffdf-c6a6-39a5-2b8e" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -3334,7 +3579,6 @@ Review 3.03.00: update to 3.03</readme>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7a35-df47-54b1-d381" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
-        <categoryLink id="4b87-e154-3b39-2264" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
         <categoryLink id="c656-89e6-6b12-4997" name="Ekranoplan Harrier" hidden="false" targetId="1442-4784-9dd2-c178" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -3434,7 +3678,6 @@ Review 3.03.00: update to 3.03</readme>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="431a-21cd-215f-8788" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
-        <categoryLink id="9e07-fa08-8d39-20d7" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
         <categoryLink id="0b24-b61e-5c7a-c91d" name="Fast Cruiser" hidden="false" targetId="a1ea-edee-b3e8-9ff2" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -3637,7 +3880,6 @@ Review 3.03.00: update to 3.03</readme>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e583-8e56-4dcd-2777" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
-        <categoryLink id="09f0-90e1-52ee-c1c4" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
         <categoryLink id="6a3c-f3ef-1167-5362" name="Monitor" hidden="false" targetId="4b6f-2ef4-32c9-a605" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -3796,7 +4038,6 @@ Review 3.03.00: update to 3.03</readme>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5fcc-eff3-60cf-a52f" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
-        <categoryLink id="3259-c255-c0b7-de8c" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
         <categoryLink id="77ed-1e2f-3b5b-3124" name="Support Carrier" hidden="false" targetId="dc06-6d22-be64-c6eb" primary="false"/>
       </categoryLinks>
       <selectionEntries>
@@ -3906,7 +4147,6 @@ Review 3.03.00: update to 3.03</readme>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="501b-126d-8502-9fd5" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
-        <categoryLink id="5b4c-2e70-6baf-0729" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
         <categoryLink id="ecf4-0d27-2685-2794" name="Cruiser" hidden="false" targetId="c59d-c602-bfb0-1b11" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -4097,7 +4337,6 @@ Review 3.03.00: update to 3.03</readme>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="cd75-c9ae-d2a1-dc4f" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
-        <categoryLink id="32fc-e12c-973d-734c" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
         <categoryLink id="13da-ab72-e26f-6650" name="Heavy Cruiser" hidden="false" targetId="caff-acb6-3e5e-e359" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -4323,7 +4562,6 @@ Review 3.03.00: update to 3.03</readme>
       <categoryLinks>
         <categoryLink id="03f2-3eb8-7c68-07fd" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
         <categoryLink id="da31-0055-946f-2ccc" name="Battleship" hidden="false" targetId="f53b-304b-cb90-6535" primary="false"/>
-        <categoryLink id="5ca2-74b4-a79a-949b" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="4bd6-5909-31a2-dfa1" name="Main Weapon" hidden="false" collective="false" import="true">
@@ -4569,7 +4807,6 @@ Review 3.03.00: update to 3.03</readme>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="bbc4-c4b6-235a-eac2" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
-        <categoryLink id="a9db-e1d7-431b-88f9" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
         <categoryLink id="d2f9-c3ab-a2d3-1788" name="Mobile Stronghold" hidden="false" targetId="d021-1d00-ea89-1837" primary="false"/>
       </categoryLinks>
       <selectionEntries>
@@ -5008,7 +5245,6 @@ Review 3.03.00: update to 3.03</readme>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3f93-385b-eadf-07ec" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
-        <categoryLink id="7dcd-a70f-1bf0-975e" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
         <categoryLink id="8265-671a-1237-9416" name="Heavy Cryo Cruiser" hidden="false" targetId="ffdf-c6a6-39a5-2b8e" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -5257,10 +5493,8 @@ Review 3.03.00: update to 3.03</readme>
         <infoLink id="2097-0835-8350-28c5" name="Black Wolf Mercenaries*" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="6d0a-6032-4b20-db7d" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
-        <categoryLink id="9f2b-ed58-4ce7-1b8a" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="false"/>
+        <categoryLink id="9f2b-ed58-4ce7-1b8a" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
         <categoryLink id="4043-607b-c515-3d25" name="Frigate" hidden="false" targetId="34e1-40d5-5011-e3c5" primary="false"/>
-        <categoryLink id="0045-305a-eead-85c0" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="b091-ccc9-a37e-c134" name="Main Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="ef21-63d3-b462-9a19">
@@ -5352,7 +5586,6 @@ Review 3.03.00: update to 3.03</readme>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2f08-bcfd-a9aa-6ce7" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
-        <categoryLink id="71d4-1a99-0112-e520" name="Ukrainian" hidden="false" targetId="d7b3-10bd-20f0-4832" primary="false"/>
         <categoryLink id="8042-f07b-4135-d1af" name="Hunter Submarine" hidden="false" targetId="32fd-997a-72b6-f5cb" primary="false"/>
       </categoryLinks>
       <entryLinks>
@@ -5399,7 +5632,6 @@ Review 3.03.00: update to 3.03</readme>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="625c-1f08-0cda-af73" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
-        <categoryLink id="6c8c-d137-e130-81ed" name="Ukrainian" hidden="false" targetId="d7b3-10bd-20f0-4832" primary="false"/>
         <categoryLink id="442e-63f4-c0d5-6c82" name="Attack Submarine" hidden="false" targetId="2ab9-9b85-528f-d800" primary="false"/>
       </categoryLinks>
       <entryLinks>
@@ -5465,7 +5697,6 @@ Review 3.03.00: update to 3.03</readme>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="923b-5af1-0d46-e037" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
-        <categoryLink id="6cd2-b507-7861-6365" name="Ukrainian" hidden="false" targetId="d7b3-10bd-20f0-4832" primary="false"/>
         <categoryLink id="e978-cbd0-7d7f-1471" name="Grand Submarine" hidden="false" targetId="75af-d360-cca8-6162" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -5551,7 +5782,6 @@ Review 3.03.00: update to 3.03</readme>
       <categoryLinks>
         <categoryLink id="41c9-8ec0-0c31-a6b1" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
         <categoryLink id="5a95-99df-b736-ef0c" name="Grand Submarine" hidden="false" targetId="75af-d360-cca8-6162" primary="false"/>
-        <categoryLink id="a777-0c34-4a54-65af" name="Black Wolf" hidden="false" targetId="79fe-c00f-c7c0-3c7a" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="d23a-65d2-6ac6-8074" name="Secondary Weapon" hidden="false" collective="false" import="true">
@@ -5704,7 +5934,6 @@ Review 3.03.00: update to 3.03</readme>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9c0d-f053-ecf1-ff76" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
-        <categoryLink id="8d6a-06d2-c990-41e3" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
         <categoryLink id="d9a3-55ba-6f3b-dbae" name="Mobile Stronghold" hidden="false" targetId="d021-1d00-ea89-1837" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -5921,7 +6150,6 @@ Review 3.03.00: update to 3.03</readme>
       <categoryLinks>
         <categoryLink id="b6d1-05ef-c6f3-9365" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
         <categoryLink id="d572-4b6a-1d80-a8cc" name="Mobile Stronghold" hidden="false" targetId="d021-1d00-ea89-1837" primary="false"/>
-        <categoryLink id="fc3b-7145-50a4-e2fe" name="Black Wolf" hidden="false" targetId="79fe-c00f-c7c0-3c7a" primary="false"/>
         <categoryLink id="69a8-e85c-af1d-1c67" name="Unique" hidden="false" targetId="293e-b55a-bcfa-95c3" primary="false"/>
       </categoryLinks>
       <selectionEntries>
@@ -6130,7 +6358,6 @@ Review 3.03.00: update to 3.03</readme>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="bd17-954f-3822-56f7" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
-        <categoryLink id="ad03-9d9e-0a6c-987e" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
         <categoryLink id="362e-ec61-aba6-7492" name="Heavy Battleship" hidden="false" targetId="1fe5-12b2-2e30-7802" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -6496,7 +6723,6 @@ Review 3.03.00: update to 3.03</readme>
         <infoLink id="fd84-2ed3-acf2-cde2" name="Black Wolf Mercenaries*" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="b507-315f-5efb-4e63" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
         <categoryLink id="790a-ad11-b10e-18c2" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
         <categoryLink id="975a-eadd-a9cd-52b7" name="Heavy Frigate" hidden="false" targetId="8907-c74f-2f6f-0f0d" primary="false"/>
       </categoryLinks>
@@ -6597,9 +6823,7 @@ Review 3.03.00: update to 3.03</readme>
         <infoLink id="fd7f-44d0-0113-5b08" name="Black Wolf Mercenaries*" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="8c5c-1f91-eb8d-81be" name="New CategoryLink" hidden="false" targetId="022b-08af-c874-e3f1" primary="true"/>
-        <categoryLink id="0068-7269-2b6f-ebe8" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="false"/>
-        <categoryLink id="0222-a0be-dc28-ecdc" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
+        <categoryLink id="0068-7269-2b6f-ebe8" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
         <categoryLink id="6b22-6dd6-5391-f090" name="Skycruiser" hidden="false" targetId="fc78-c93a-0e03-6527" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -6692,7 +6916,6 @@ Review 3.03.00: update to 3.03</readme>
         <infoLink id="5cd9-5ba1-448a-af45" name="Black Wolf Mercenaries*" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="d58d-091b-88e7-07f0" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
         <categoryLink id="7ac9-2831-d57d-ed81" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
         <categoryLink id="49ef-e4a6-0bcb-0b6e" name="Skyfurnace" hidden="false" targetId="ddc7-d4b4-f6a8-bba7" primary="false"/>
       </categoryLinks>
@@ -6772,7 +6995,6 @@ Review 3.03.00: update to 3.03</readme>
         <infoLink id="4a4b-b5be-02a1-84f4" name="Black Wolf Mercenaries*" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="ee32-1aa7-c6ab-60fd" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
         <categoryLink id="9b63-2399-3720-da07" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
         <categoryLink id="dc41-b385-013e-d9c9" name="Skydrill" hidden="false" targetId="70f0-22a9-6d28-1e9e" primary="false"/>
       </categoryLinks>
@@ -6801,18 +7023,6 @@ Review 3.03.00: update to 3.03</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="d852-6039-1766-de6e" name="Zubr" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a842-a892-8a07-f35d" type="min"/>
         <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="983f-dba7-4976-1379" type="max"/>
@@ -6824,9 +7034,7 @@ Review 3.03.00: update to 3.03</readme>
         <infoLink id="832a-e10e-4c84-6d0c" name="Black Wolf Mercenaries*" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="8f02-0e58-cfe5-5329" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="true"/>
-        <categoryLink id="3698-794c-9109-8dfd" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="false"/>
-        <categoryLink id="1187-b77a-dcd8-fd8c" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
+        <categoryLink id="3698-794c-9109-8dfd" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
         <categoryLink id="5857-ddb8-394e-7047" name="Transport Hovercraft" hidden="false" targetId="e8a4-aaa6-2b15-0eb3" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -6973,9 +7181,7 @@ Review 3.03.00: update to 3.03</readme>
         <infoLink id="56df-e0ee-5e3e-574b" name="Black Wolf Mercenaries*" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="0ad2-91e0-b05f-5438" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="true"/>
-        <categoryLink id="efcf-5946-d268-abe4" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
-        <categoryLink id="b16a-1939-0a67-3786" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="false"/>
+        <categoryLink id="b16a-1939-0a67-3786" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
         <categoryLink id="0e4e-7a8b-c612-d6a3" name="Transport Hovercraft" hidden="false" targetId="e8a4-aaa6-2b15-0eb3" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -7110,7 +7316,6 @@ Review 3.03.00: update to 3.03</readme>
       <categoryLinks>
         <categoryLink id="17a3-239a-07a9-dfd1" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
         <categoryLink id="713f-d2a2-2862-3bd2" name="Shockwave Hovercraft" hidden="false" targetId="3a18-cd37-37d4-e440" primary="false"/>
-        <categoryLink id="8b76-5934-7549-09c2" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="f9d4-571a-5c77-f8f5" name="Main Weapon" hidden="false" collective="false" import="true">
@@ -7269,7 +7474,6 @@ Review 3.03.00: update to 3.03</readme>
       <categoryLinks>
         <categoryLink id="6ab2-e209-b9ed-f162" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
         <categoryLink id="1258-1209-0a27-b871" name="Ekranoplan Brawler" hidden="false" targetId="f089-1762-bcea-9e8e" primary="false"/>
-        <categoryLink id="cb82-78c4-23ad-606b" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="bd2a-0e8b-a1ab-b24e" name="Main Weapon" hidden="false" collective="false" import="true">
@@ -7423,7 +7627,6 @@ Review 3.03.00: update to 3.03</readme>
         <infoLink id="d48d-6db8-da01-dea8" name="Black Wolf Mercenaries*" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="3664-1857-476f-f783" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="6550-14e9-156d-cac8" name="Generator Ship" hidden="false" targetId="000a-4949-4294-7697" primary="false"/>
         <categoryLink id="0ab9-7256-91a4-b0de" name="Unique" hidden="false" targetId="293e-b55a-bcfa-95c3" primary="false"/>
         <categoryLink id="2d20-4057-fd43-413d" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
@@ -7504,7 +7707,6 @@ Review 3.03.00: update to 3.03</readme>
       <categoryLinks>
         <categoryLink id="91c6-d15c-5bcc-64c8" name="Battle Platform" hidden="false" targetId="8b0e-929f-ad70-2b6a" primary="false"/>
         <categoryLink id="acf7-c86f-10a0-85b3" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
-        <categoryLink id="9a7e-2a26-25e8-f171" name="Mongolian" hidden="false" targetId="6047-720c-1370-9d3b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="3cdd-06b2-7759-26da" name="Main Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="6cec-2ebe-b6d8-5b22">
@@ -7623,7 +7825,6 @@ Review 3.03.00: update to 3.03</readme>
       <categoryLinks>
         <categoryLink id="3b8a-2be7-1830-59f0" name="Offshore Support Platform" hidden="false" targetId="a197-5d9c-5624-4e41" primary="false"/>
         <categoryLink id="5cad-60cd-ca68-64a1" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
-        <categoryLink id="6488-f9bc-4af0-77ee" name="Mongolian" hidden="false" targetId="6047-720c-1370-9d3b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="29cc-08ff-8ada-6207" name="Main Weapon" hidden="false" collective="false" import="true">
@@ -7758,7 +7959,6 @@ Review 3.03.00: update to 3.03</readme>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="252c-c96c-9018-fb4d" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
-        <categoryLink id="ad12-dd3f-b8d5-890a" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
         <categoryLink id="17a1-79b6-2d6e-e583" name="Vitruvian Colossus" hidden="false" targetId="8ecc-741e-13ac-3fd8" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -7917,7 +8117,6 @@ Review 3.03.00: update to 3.03</readme>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="443c-7865-a829-ffb4" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
-        <categoryLink id="a009-5ab3-a36c-3600" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
         <categoryLink id="d9b6-e269-8374-375a" name="Shockwave Frigate" hidden="false" targetId="c45e-c371-9835-4791" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -8018,7 +8217,6 @@ Review 3.03.00: update to 3.03</readme>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6ecf-a291-186e-3f7a" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
-        <categoryLink id="b648-448f-8041-1033" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
         <categoryLink id="a811-7b50-815c-bc6d" name="Vitruvian Colossus" hidden="false" targetId="8ecc-741e-13ac-3fd8" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -8179,7 +8377,6 @@ Review 3.03.00: update to 3.03</readme>
       <categoryLinks>
         <categoryLink id="cff6-1261-4f9f-5bec" name="War Platform" hidden="false" targetId="e036-10f0-615f-6a77" primary="false"/>
         <categoryLink id="4c0e-b30e-1b1c-b766" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
-        <categoryLink id="2bf7-ae25-875b-0f0e" name="Mongolian" hidden="false" targetId="6047-720c-1370-9d3b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="3745-808a-d53c-a26b" name="Main Weapon" hidden="false" collective="false" import="true">
@@ -8494,10 +8691,8 @@ Review 3.03.00: update to 3.03</readme>
         <infoLink id="d5dc-b41e-abf6-8efb" name="Black Wolf Mercenaries*" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="cd9e-a0d2-6b30-c6a6" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="false"/>
-        <categoryLink id="7c62-646c-3bd1-f95d" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
+        <categoryLink id="cd9e-a0d2-6b30-c6a6" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
         <categoryLink id="3f91-5231-7b30-c01a" name="Heavy Cryo Cruiser" hidden="false" targetId="ffdf-c6a6-39a5-2b8e" primary="false"/>
-        <categoryLink id="da13-554f-893f-65c8" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="e5e0-a405-c342-43b9" name="Main Weapon" hidden="false" collective="false" import="true">
@@ -8598,7 +8793,6 @@ Review 3.03.00: update to 3.03</readme>
       <categoryLinks>
         <categoryLink id="c139-6e20-6c0e-110a" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
         <categoryLink id="b636-d0b3-a2ec-793d" name="Ekranoplan Heavy Transport" hidden="false" targetId="c343-1d2f-c61d-84fd" primary="false"/>
-        <categoryLink id="02de-f7d0-30dd-197a" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="eaf8-5736-0752-b7de" name="Katyusha Salvo" hidden="false" collective="false" import="true" targetId="b111-bf47-fb16-b8eb" type="selectionEntry">
@@ -8689,9 +8883,7 @@ Review 3.03.00: update to 3.03</readme>
         <infoLink id="38f0-b979-9fcb-52a8" name="Priority Signals*" hidden="false" targetId="4106-315d-4d5c-9e8f" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="7b61-6aac-9864-e52c" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
-        <categoryLink id="fd67-f75e-97b2-2c69" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="false"/>
-        <categoryLink id="65ed-eed6-03c2-2706" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
+        <categoryLink id="fd67-f75e-97b2-2c69" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
         <categoryLink id="bd82-755a-5654-fddb" name="Command Ship" hidden="false" targetId="8542-2ef0-71a0-f156" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -8940,7 +9132,6 @@ Review 3.03.00: update to 3.03</readme>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="121b-fa91-69d1-c2cc" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
-        <categoryLink id="5b69-06d3-4751-2e29" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
         <categoryLink id="3daf-4bbd-6a2a-58c2" name="Command Ship" hidden="false" targetId="8542-2ef0-71a0-f156" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -9122,7 +9313,6 @@ Review 3.03.00: update to 3.03</readme>
       <categoryLinks>
         <categoryLink id="d779-3dcf-94b8-eb4f" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
         <categoryLink id="ce98-8144-459f-131a" name="Battleship" hidden="false" targetId="f53b-304b-cb90-6535" primary="false"/>
-        <categoryLink id="2427-14f5-c325-2077" name="Ukrainian" hidden="false" targetId="d7b3-10bd-20f0-4832" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="59ff-016c-ed7e-9857" name="Main Weapon" hidden="false" collective="false" import="true">

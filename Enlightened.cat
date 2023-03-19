@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="50c4-91af-d01e-a4e1" name="Enlightened v3.03" revision="7" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="50c4-91af-d01e-a4e1" name="Enlightened v3.03" revision="8" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Review 1.02.00: initial edition according to Enlightened ORBAT 1.02a
 Review 1.02.01: bux fixing and correct Physeter Ambush management
 Review 1.03.b0: uptate data to version 1.03b
 Review 1.04.00: uptate data to version 1.04
 Review 1.05.a0: uptate data to version 1.05a
 Review 3.03.00: uptate data to version 3.03
+Review 3.03.01: correction after the uptate to version 3.03
 </readme>
   <categoryEntries>
     <categoryEntry id="d580-e7cf-5353-e2bb" name="Enlightened" publicationId="908d-6feb-2e9e-843b" hidden="false"/>
@@ -796,7 +797,11 @@ Review 3.03.00: uptate data to version 3.03
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00a2-415e-d5fc-a87f" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="0bb7-c7ff-2895-1dc4" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry"/>
+            <entryLink id="0bb7-c7ff-2895-1dc4" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="8731-34aa-1f3a-e7ac" name="Attached Unit" hidden="false" collective="false" import="true">
@@ -823,6 +828,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="71ce-57ce-be2a-9f5b" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="ea06-b3d2-cea2-25c8" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -847,6 +855,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="a328-af50-74b3-8c6a" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -904,9 +915,9 @@ Review 3.03.00: uptate data to version 3.03
           </constraints>
           <entryLinks>
             <entryLink id="1ae0-383b-2aff-2254" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="7c9b-6b09-b5ac-2249" value="15.0"/>
-              </modifiers>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8.0"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -934,6 +945,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="d1a4-1a04-5a08-c216" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="5f77-75a7-d308-b195" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -958,6 +972,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="1d21-dde9-3ad7-14d5" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1032,6 +1049,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="406c-9ff8-2b88-ce9b" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="6fc5-b9e1-9f00-7267" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -1056,6 +1076,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="c23e-f589-bead-e738" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1109,6 +1132,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="aede-cee3-1f08-1d8d" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="d385-f9ca-44ff-46a8" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -1133,6 +1159,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="05ff-4df7-3fcd-4b30" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1181,6 +1210,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="3c7e-76ad-3d2d-fa8b" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="42ff-3236-fdc9-fafb" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -1200,6 +1232,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="4713-648a-77ac-b687" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1227,6 +1262,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="58c6-c4b2-23cd-6ba6" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="c4a1-ade6-bf7a-83b2" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -1251,6 +1289,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="5c99-126c-afe5-2423" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1304,6 +1345,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="74b7-1672-b0bb-9117" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="6d4f-8bf1-ba53-db97" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -1328,6 +1372,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="0f57-7475-88de-0dee" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1381,6 +1428,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="cc61-b828-e427-21e3" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="0654-a7db-ede5-22d2" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -1405,6 +1455,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="3b4c-056a-e404-5a48" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1458,6 +1511,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="7f3c-5f56-400d-6708" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="2b41-5ac3-5b10-a495" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -1482,6 +1538,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="daf9-16cb-9b41-2666" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1535,6 +1594,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="5397-4bc2-bd8a-4ad1" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="03a8-257f-9792-1f9d" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -1559,6 +1621,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="8ef4-bc67-6162-69dd" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1613,6 +1678,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="d743-7d1d-1dbe-bbef" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="efde-2a60-817c-868b" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -1637,6 +1705,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="84fc-792a-60da-d2cd" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1674,7 +1745,11 @@ Review 3.03.00: uptate data to version 3.03
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fe5-bb0e-e688-36f0" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="0fb5-a847-a588-d204" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry"/>
+            <entryLink id="0fb5-a847-a588-d204" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="872e-ed1e-8c28-7a98" name="Attached Unit" hidden="false" collective="false" import="true">
@@ -1701,6 +1776,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="730f-5907-2b34-1e42" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="10af-ce90-f600-8a7b" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -1725,6 +1803,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="eedb-53cd-6e67-09e3" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1761,7 +1842,11 @@ Review 3.03.00: uptate data to version 3.03
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0753-ef39-2fbc-c43b" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="c61c-db24-17e2-a030" name="Escort" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry"/>
+            <entryLink id="c61c-db24-17e2-a030" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="5cd0-aa8e-3b92-1311" name="Attached Unit" hidden="false" collective="false" import="true">
@@ -1788,6 +1873,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="26e8-1d92-1cf1-d211" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="9b9a-60d5-48f1-dfd4" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -1812,6 +1900,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="d79a-0e60-4984-9015" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1862,6 +1953,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="071c-c509-282a-d0bf" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="5f7a-dc82-6fc6-0d74" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -1886,6 +1980,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="8549-8814-77dd-e649" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1964,6 +2061,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="0f61-5997-61db-e7ed" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="3866-1a4a-6670-54f3" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -1988,6 +2088,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="6cc1-802b-7be5-5436" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1996,7 +2099,7 @@ Review 3.03.00: uptate data to version 3.03
         <entryLink id="3cfa-8121-dc62-7076" name="Vesalius" hidden="false" collective="false" import="true" targetId="01b0-d1e7-aeb1-ca27" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-23.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9cf5-dc29-bb4a-0c10" name="Tacitus Assault Cruiser Squadron" hidden="false" collective="false" import="true" type="unit">
@@ -2041,6 +2144,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="1e9e-d464-95b7-f6a5" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="6546-76ee-4a5b-b53c" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -2065,6 +2171,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="ed7e-11ef-f64d-cec2" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2113,6 +2222,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="ec1c-9d17-c62c-5d3b" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="ecf9-898c-a6ce-455a" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -2132,6 +2244,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="c741-ebdf-921f-9670" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2159,6 +2274,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="2975-9e17-a7b1-702c" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="5d81-c6f3-b188-8fd6" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -2183,6 +2301,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="51c3-658a-fbec-aad7" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2236,6 +2357,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="5bc3-f001-098b-9243" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="a8f9-b17e-ff11-a3fa" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -2260,6 +2384,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="c2cf-b2e8-1bcb-b6d5" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2310,6 +2437,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="99db-b1b0-e777-4345" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="45d8-a815-01c8-ae9a" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -2334,6 +2464,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="3fb5-c0c0-fca0-2a47" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2384,6 +2517,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="73e3-1795-2b89-31c8" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="142b-5f1f-fb77-50f9" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -2408,6 +2544,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="7c90-382a-79bc-ac95" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2461,6 +2600,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="3b26-5964-ad2b-bf9f" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="2a44-2484-c8f0-8bac" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -2485,6 +2627,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="10f8-6073-9b42-2091" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2520,7 +2665,11 @@ Review 3.03.00: uptate data to version 3.03
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a2d-bdd4-89d4-d018" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="795c-b15d-05d0-311d" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry"/>
+            <entryLink id="795c-b15d-05d0-311d" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="d307-6aad-3f7b-ae9b" name="Attached Unit" hidden="false" collective="false" import="true">
@@ -2547,6 +2696,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="a074-8046-8926-9af4" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="31bf-498a-b213-8fbe" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -2571,6 +2723,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="c54f-7698-7094-b640" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2602,12 +2757,16 @@ Review 3.03.00: uptate data to version 3.03
         <categoryLink id="2525-915f-2f6d-38e3" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="0f80-fc0d-2dd3-f103" name="Esscort Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="0f80-fc0d-2dd3-f103" name="Escort Model" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66d5-2b44-1f23-a792" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="95d4-74c4-0ac9-e56b" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry"/>
+            <entryLink id="95d4-74c4-0ac9-e56b" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="1ddf-f0e4-5f35-ab26" name="Attached Unit" hidden="false" collective="false" import="true">
@@ -2634,6 +2793,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="fbb1-b4e9-b773-148c" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="53eb-adf9-6747-ece8" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -2658,6 +2820,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="e7eb-5429-c951-0111" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2693,7 +2858,11 @@ Review 3.03.00: uptate data to version 3.03
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19bb-9b51-b667-b3d9" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="4a30-3211-ebf3-9905" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry"/>
+            <entryLink id="4a30-3211-ebf3-9905" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="df3d-0c31-c858-4417" name="Attached Unit" hidden="false" collective="false" import="true">
@@ -2720,6 +2889,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="ef3d-edce-f0ed-3cb3" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="e5b1-05c6-9a94-f264" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -2744,6 +2916,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="4395-f749-5de9-9940" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2781,7 +2956,11 @@ Review 3.03.00: uptate data to version 3.03
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6d0-d350-1eaa-0f2b" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="d9d6-a3ab-cf57-1031" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry"/>
+            <entryLink id="d9d6-a3ab-cf57-1031" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="de06-fff6-2358-d33a" name="Attached Unit" hidden="false" collective="false" import="true">
@@ -2808,6 +2987,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="6c1e-42f9-021a-d989" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="e4fe-7c19-25aa-0a0d" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -2832,6 +3014,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="2b1c-e00c-439c-fce1" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2882,6 +3067,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="1e54-4168-9970-eeab" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="002f-9d31-1686-a117" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -2906,6 +3094,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="b490-e843-eff2-8015" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3084,7 +3275,7 @@ Review 3.03.00: uptate data to version 3.03
         <entryLink id="921a-2a61-cbd6-8f96" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-23.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0e75-0333-f223-79f5" name="Icarus Aeronautic Fabricator" hidden="false" collective="false" import="true" type="upgrade">
@@ -3112,7 +3303,11 @@ Review 3.03.00: uptate data to version 3.03
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a08-c4ec-b5dd-1db6" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="6383-c0e1-7b2d-7de6" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry"/>
+            <entryLink id="6383-c0e1-7b2d-7de6" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="46ab-1cb6-f23c-9f7a" name="Attached Unit" hidden="false" collective="false" import="true">
@@ -3139,6 +3334,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="bd3b-cc6d-2185-8146" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="6e92-2769-ae39-2855" name="Zumeena Capacitor Ship" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -3163,6 +3361,9 @@ Review 3.03.00: uptate data to version 3.03
               <entryLinks>
                 <entryLink id="6d63-9e57-b4c0-fb07" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -7161,7 +7362,7 @@ Review 3.03.00: uptate data to version 3.03
     <selectionEntry id="a088-be46-bca4-1a2d" name="Valtar" publicationId="908d-6feb-2e9e-843b" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c43-bbaa-cccd-c4cd" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bf7-3126-4336-e7d6" type="max"/>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1bf7-3126-4336-e7d6" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="22ca-f564-56df-841e" name="Valtar" hidden="false" targetId="5cf9-2799-c031-f009" type="profile"/>
@@ -7175,14 +7376,59 @@ Review 3.03.00: uptate data to version 3.03
         <categoryLink id="a2aa-f10b-08f5-1485" name="Aether Saucer" hidden="false" targetId="9a48-a9ed-8c2c-c34d" primary="false"/>
         <categoryLink id="f84d-6826-a294-5c07" name="New CategoryLink" hidden="false" targetId="d580-e7cf-5353-e2bb" primary="true"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0f66-8dbe-14be-4b0d" name="Super Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="4d7b-b357-b0bd-ab01">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="243d-de2e-0bb5-b36e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b82-0e38-9e8b-1ef2" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="37c3-3cef-4ea1-6b2c" name="Gravitronic Imperilator" hidden="false" collective="false" import="true" targetId="c63b-090d-f2b9-2d24" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f114-4327-6709-e2b1" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="4d7b-b357-b0bd-ab01" name="Heavy Particle Cannon" hidden="false" collective="false" import="true" targetId="fa1b-fa45-a389-af24" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="437b-a3e8-5a7d-be5c" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="38cc-31e9-3cac-18ec" name="Magneto Encapsulator" hidden="false" collective="false" import="true" targetId="0d98-4fb1-3d0d-a962" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c069-6163-ad49-1500" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="2130-c246-6aac-b254" name="Sturginium Atomiser" hidden="false" collective="false" import="true" targetId="eca5-079d-eea0-50ae" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="45af-84ba-02da-1975" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="8405-8488-7402-d587" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="538b-37c1-68db-ca1d" type="selectionEntry">
+        <entryLink id="8405-8488-7402-d587" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="9bf9-4303-3807-8b33" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="19bf-0483-6b52-0216" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="61c3-0064-973e-3fa5" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="4ba0-17b8-6efb-94cd" name="Shield generator" hidden="false" collective="false" import="true" targetId="0e7f-6ae4-f9b6-0ea1" type="selectionEntry">
+        <entryLink id="4ba0-17b8-6efb-94cd" name="Shield generator" hidden="false" collective="false" import="true" targetId="596e-bbf7-4be2-d494" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0c9e-f38f-bfad-30b1" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5eae-38f0-fdca-b650" type="min"/>
@@ -7257,7 +7503,7 @@ Review 3.03.00: uptate data to version 3.03
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="6812-11e6-1d43-9abe" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="538b-37c1-68db-ca1d" type="selectionEntry">
+        <entryLink id="6812-11e6-1d43-9abe" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="9bf9-4303-3807-8b33" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8622-02da-37da-3706" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3cab-a2d8-4da7-c13e" type="min"/>
@@ -7295,14 +7541,59 @@ Review 3.03.00: uptate data to version 3.03
         <categoryLink id="64d2-5c4b-d3d1-f35e" name="New CategoryLink" hidden="false" targetId="d580-e7cf-5353-e2bb" primary="true"/>
         <categoryLink id="b8a3-7759-0cf8-bda3" name="Battle Saucer" hidden="false" targetId="8a89-f30b-468c-ec12" primary="false"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5e1d-e39c-f1fa-c474" name="Super Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="0b7c-e4ac-c085-8d68">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a55a-5ab2-2a64-ea7d" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7abb-3fe2-463e-1484" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="620a-f319-ca7a-5686" name="Gravitronic Imperilator" hidden="false" collective="false" import="true" targetId="c63b-090d-f2b9-2d24" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1e48-157b-0ae5-5e4f" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="0b7c-e4ac-c085-8d68" name="Heavy Particle Cannon" hidden="false" collective="false" import="true" targetId="fa1b-fa45-a389-af24" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4ee0-b385-94de-8914" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="2049-3330-b162-fbff" name="Magneto Encapsulator" hidden="false" collective="false" import="true" targetId="0d98-4fb1-3d0d-a962" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c55d-af64-63f4-bce5" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="d937-4143-3aef-e114" name="Sturginium Atomiser" hidden="false" collective="false" import="true" targetId="eca5-079d-eea0-50ae" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="29bb-e932-36d3-9eb7" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="706a-48e9-4040-3310" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="538b-37c1-68db-ca1d" type="selectionEntry">
+        <entryLink id="706a-48e9-4040-3310" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="9bf9-4303-3807-8b33" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="45db-55bf-81b4-3c3d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a3eb-1597-015d-f096" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="bc8c-4e3d-2f68-bc95" name="Shield generator" hidden="false" collective="false" import="true" targetId="0e7f-6ae4-f9b6-0ea1" type="selectionEntry">
+        <entryLink id="bc8c-4e3d-2f68-bc95" name="Shield generator" hidden="false" collective="false" import="true" targetId="596e-bbf7-4be2-d494" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4149-dbaf-44f3-a815" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="48b2-e483-1718-d2d9" type="min"/>
@@ -7324,15 +7615,6 @@ Review 3.03.00: uptate data to version 3.03
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c38e-f1cf-d87f-d0ae" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="49dd-7e90-5069-4055" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="6458-1478-966d-bdeb" name="Heavy Particle Cannon" hidden="false" collective="false" import="true" targetId="1eba-ceab-1cdb-e38d" type="selectionEntry">
-          <modifiers>
-            <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9bce-f763-9369-447b" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9b19-0ec7-6167-0b74" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="cd05-70b2-be40-b98b" name="X-Ray Laser Bank" hidden="false" collective="false" import="true" targetId="cb96-b4eb-f7bf-3491" type="selectionEntry">
@@ -7451,13 +7733,13 @@ Review 3.03.00: uptate data to version 3.03
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="47d4-c62c-da65-0992" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="bf84-e3b4-02e4-f3ba" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="538b-37c1-68db-ca1d" type="selectionEntry">
+        <entryLink id="bf84-e3b4-02e4-f3ba" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="9bf9-4303-3807-8b33" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0353-53c9-1681-42a5" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8338-7885-d547-7f04" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="f4a3-53c4-9824-0650" name="Shield generator" hidden="false" collective="false" import="true" targetId="0e7f-6ae4-f9b6-0ea1" type="selectionEntry">
+        <entryLink id="f4a3-53c4-9824-0650" name="Shield generator" hidden="false" collective="false" import="true" targetId="596e-bbf7-4be2-d494" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e76f-b5b4-fc1f-08aa" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7d7a-703c-181f-2b35" type="min"/>
@@ -7484,7 +7766,7 @@ Review 3.03.00: uptate data to version 3.03
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cb0f-4f06-aab0-0636" name="Adamski" publicationId="908d-6feb-2e9e-843b" hidden="false" collective="true" import="true" type="model">
+    <selectionEntry id="cb0f-4f06-aab0-0636" name="Adamski" publicationId="908d-6feb-2e9e-843b" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e60b-e791-1dc1-be26" type="min"/>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8386-9a87-fb25-06fa" type="max"/>
@@ -7510,13 +7792,13 @@ Review 3.03.00: uptate data to version 3.03
         <categoryLink id="239a-ca76-1dbc-4894" name="Strike Saucer" hidden="false" targetId="3d40-9a66-35da-dabb" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="d4bf-4398-86fe-1f1a" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="538b-37c1-68db-ca1d" type="selectionEntry">
+        <entryLink id="d4bf-4398-86fe-1f1a" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="9bf9-4303-3807-8b33" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5a44-7ed7-c856-ace2" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9ae1-8cf8-c34d-7560" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="392a-0e0e-a803-1c5f" name="Shield generator" hidden="false" collective="false" import="true" targetId="0e7f-6ae4-f9b6-0ea1" type="selectionEntry">
+        <entryLink id="392a-0e0e-a803-1c5f" name="Shield generator" hidden="false" collective="false" import="true" targetId="596e-bbf7-4be2-d494" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="088a-f145-9c1c-934e" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d1ec-652b-1936-29f2" type="min"/>
@@ -7624,7 +7906,7 @@ Review 3.03.00: uptate data to version 3.03
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="60.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="30b9-b511-da5e-4b90" name="Q-Ship" hidden="false" collective="false" import="true" type="upgrade">
