@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="50c4-91af-d01e-a4e1" name="Enlightened v3.03" revision="8" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="50c4-91af-d01e-a4e1" name="Enlightened v3.03" revision="9" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <comment>Last Enlightened ORBAT 3.03 (published 07/02/2023)</comment>
   <readme>Review 1.02.00: initial edition according to Enlightened ORBAT 1.02a
 Review 1.02.01: bux fixing and correct Physeter Ambush management
 Review 1.03.b0: uptate data to version 1.03b
@@ -7,7 +8,7 @@ Review 1.04.00: uptate data to version 1.04
 Review 1.05.a0: uptate data to version 1.05a
 Review 3.03.00: uptate data to version 3.03
 Review 3.03.01: correction after the uptate to version 3.03
-</readme>
+Review 3.03.02: correction after the uptate to version 3.03 (date 2023-02-07)</readme>
   <categoryEntries>
     <categoryEntry id="d580-e7cf-5353-e2bb" name="Enlightened" publicationId="908d-6feb-2e9e-843b" hidden="false"/>
     <categoryEntry id="b7da-7d83-7f67-604f" name="Control Ship" hidden="false"/>
@@ -2572,7 +2573,6 @@ Review 3.03.01: correction after the uptate to version 3.03
       </modifiers>
       <categoryLinks>
         <categoryLink id="1042-7d40-e052-c34f" name="Enlightened" hidden="false" targetId="d580-e7cf-5353-e2bb" primary="false"/>
-        <categoryLink id="bfba-d495-be97-9eaa" name="Antartica Class" hidden="false" targetId="6274-5eb4-d3de-a89f" primary="false"/>
         <categoryLink id="08c9-9fab-894a-3b56" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -2632,6 +2632,18 @@ Review 3.03.01: correction after the uptate to version 3.03
               </costs>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="d5de-ff53-b52e-ce77" name="Escort Model" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="237b-27a2-6c07-62ca" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="db23-f9f0-1f5a-3f27" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -3850,7 +3862,7 @@ Review 3.03.01: correction after the uptate to version 3.03
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="30.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="35.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="131d-7d6c-7384-a157" name="Merian" publicationId="908d-6feb-2e9e-843b" hidden="false" collective="false" import="true" type="model">
@@ -3973,6 +3985,14 @@ Review 3.03.01: correction after the uptate to version 3.03
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ee9a-9e60-3b38-1b17" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4649-c1c9-1320-1578" type="max"/>
           </constraints>
+        </entryLink>
+        <entryLink id="c96e-6685-96c2-ff2c" name="Turbo Encabulation Drives" hidden="false" collective="false" import="true" targetId="44d8-e8fe-9659-45d8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e4d2-6d1a-f622-7354" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+          </costs>
         </entryLink>
       </entryLinks>
       <costs>
@@ -4249,7 +4269,7 @@ Review 3.03.01: correction after the uptate to version 3.03
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1d09-af76-4c22-ec4a" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="5109-27ef-4dea-d294" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="538b-37c1-68db-ca1d" type="selectionEntry">
+        <entryLink id="5109-27ef-4dea-d294" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="9bf9-4303-3807-8b33" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2514-fc77-228c-d9b7" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8444-d748-890e-010d" type="min"/>
@@ -4377,6 +4397,12 @@ Review 3.03.01: correction after the uptate to version 3.03
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="63ec-811c-2f1e-1d55" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5ad9-8204-26ab-b355" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5fa9-83fb-f749-999a" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="9bf9-4303-3807-8b33" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="477b-9847-df47-7bce" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9c39-4b80-0b06-2c0b" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -4524,7 +4550,7 @@ Review 3.03.01: correction after the uptate to version 3.03
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="8ab9-f35a-089d-a689" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="538b-37c1-68db-ca1d" type="selectionEntry">
+        <entryLink id="8ab9-f35a-089d-a689" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="9bf9-4303-3807-8b33" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="266d-0bd3-1789-86b4" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b047-da17-7e00-8f03" type="min"/>
@@ -4548,9 +4574,17 @@ Review 3.03.01: correction after the uptate to version 3.03
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="22df-a73e-f9b6-ddec" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="cd53-99db-0eef-8d53" name="Turbo Encabulation Drives" hidden="false" collective="false" import="true" targetId="44d8-e8fe-9659-45d8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7a16-c2e5-3dab-b872" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10.0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="93.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="99.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c952-6055-eacc-e791" name="Antarctica" publicationId="e265-8c7f-a4b2-a48e" page="" hidden="false" collective="false" import="true" type="model">
@@ -4718,6 +4752,14 @@ Review 3.03.01: correction after the uptate to version 3.03
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9c66-f6ea-54ec-8a91" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="b88b-767c-2644-2127" name="Sturginium Atomiser" hidden="false" collective="false" import="true" targetId="724c-b6b1-b398-1487" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5d5c-375c-16a6-e899" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -4892,7 +4934,7 @@ Review 3.03.01: correction after the uptate to version 3.03
             <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
           </costs>
         </entryLink>
-        <entryLink id="17bc-6f54-e275-c432" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="538b-37c1-68db-ca1d" type="selectionEntry">
+        <entryLink id="17bc-6f54-e275-c432" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="9bf9-4303-3807-8b33" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="08e2-519e-ea7b-5809" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b1a5-4452-840b-d192" type="min"/>
@@ -4982,13 +5024,16 @@ Review 3.03.01: correction after the uptate to version 3.03
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fbb2-fdf7-7650-93fb" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="9768-1956-3a30-2034" name="Gravitronic Imperilator" hidden="false" collective="false" import="true" targetId="04e7-c323-d3df-86ad" type="selectionEntry">
+            <entryLink id="9768-1956-3a30-2034" name="Sturginium Atomiser" hidden="false" collective="false" import="true" targetId="724c-b6b1-b398-1487" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8686-03a1-72ab-5ed3" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+              </costs>
             </entryLink>
             <entryLink id="bdad-f3f6-8b6d-c13c" name="Heavy Particle Cannon" hidden="false" collective="false" import="true" targetId="1eba-ceab-1cdb-e38d" type="selectionEntry">
               <modifiers>
@@ -5004,6 +5049,14 @@ Review 3.03.01: correction after the uptate to version 3.03
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3427-404d-2c2d-c8f8" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="6dce-a402-847f-4fb9" name="Gravitronic Imperilator" hidden="false" collective="false" import="true" targetId="04e7-c323-d3df-86ad" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bc24-65d2-80a0-57de" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -5227,7 +5280,7 @@ Review 3.03.01: correction after the uptate to version 3.03
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="593b-cc32-811c-c468" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="538b-37c1-68db-ca1d" type="selectionEntry">
+        <entryLink id="593b-cc32-811c-c468" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="9bf9-4303-3807-8b33" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4a56-cfeb-9a6b-e0ca" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd35-cccd-42e2-18f9" type="min"/>
@@ -5530,13 +5583,13 @@ Review 3.03.01: correction after the uptate to version 3.03
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="439a-4305-0c54-9859" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="dc15-2984-cb8d-fcf4" name="Shield generator" hidden="false" collective="false" import="true" targetId="0e7f-6ae4-f9b6-0ea1" type="selectionEntry">
+        <entryLink id="dc15-2984-cb8d-fcf4" name="Shield generator" hidden="false" collective="false" import="true" targetId="596e-bbf7-4be2-d494" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="97fc-c182-4f30-ba67" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5895-75a9-f562-cff8" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="ffcb-17f5-f051-26ff" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="538b-37c1-68db-ca1d" type="selectionEntry">
+        <entryLink id="ffcb-17f5-f051-26ff" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="9bf9-4303-3807-8b33" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f049-6eb3-f30c-0ebe" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="114b-d8be-e413-363a" type="max"/>
@@ -5831,7 +5884,7 @@ Review 3.03.01: correction after the uptate to version 3.03
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ffc7-f591-ac27-1197" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="80fa-bc22-3b62-93df" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="538b-37c1-68db-ca1d" type="selectionEntry">
+        <entryLink id="80fa-bc22-3b62-93df" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="9bf9-4303-3807-8b33" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6589-7bf2-ce23-9b73" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b0fd-be8e-b664-9393" type="min"/>
@@ -6040,7 +6093,7 @@ Review 3.03.01: correction after the uptate to version 3.03
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="04fa-8597-3a9a-7242" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="538b-37c1-68db-ca1d" type="selectionEntry">
+        <entryLink id="04fa-8597-3a9a-7242" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="9bf9-4303-3807-8b33" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="59e6-f939-ba60-3a45" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="33bf-36cd-f628-a705" type="min"/>
@@ -6106,7 +6159,7 @@ Review 3.03.01: correction after the uptate to version 3.03
         <categoryLink id="3a8a-d7a3-28b6-f525" name="Enlightened" hidden="false" targetId="d580-e7cf-5353-e2bb" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="0327-b9a2-8fa2-0332" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="538b-37c1-68db-ca1d" type="selectionEntry">
+        <entryLink id="0327-b9a2-8fa2-0332" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="9bf9-4303-3807-8b33" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b8e4-c93f-85fe-da93" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6087-8b8f-fd10-3a42" type="min"/>
@@ -6202,7 +6255,7 @@ Review 3.03.01: correction after the uptate to version 3.03
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="144.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="148.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e1fc-8c49-da50-fe49" name="Lotan" publicationId="908d-6feb-2e9e-843b" hidden="false" collective="false" import="true" type="upgrade">
@@ -6262,7 +6315,7 @@ Review 3.03.01: correction after the uptate to version 3.03
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="146.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="156.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="72e5-e8f4-cc51-e5d0" name="The Belgica" publicationId="e265-8c7f-a4b2-a48e" page="" hidden="false" collective="false" import="true" type="model">
@@ -6282,7 +6335,6 @@ Review 3.03.01: correction after the uptate to version 3.03
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8aba-64b6-5d38-fee2" name="Enlightened" hidden="false" targetId="d580-e7cf-5353-e2bb" primary="false"/>
-        <categoryLink id="a882-1f4e-19a4-fc99" name="Antartica Class" hidden="false" targetId="6274-5eb4-d3de-a89f" primary="false"/>
         <categoryLink id="9f48-16fc-403b-e482" name="Unique" hidden="false" targetId="293e-b55a-bcfa-95c3" primary="false"/>
         <categoryLink id="fa86-464f-f30c-dd26" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
       </categoryLinks>
@@ -6742,7 +6794,7 @@ Review 3.03.01: correction after the uptate to version 3.03
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="090c-cf22-5ad1-dac6" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="538b-37c1-68db-ca1d" type="selectionEntry">
+        <entryLink id="090c-cf22-5ad1-dac6" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="9bf9-4303-3807-8b33" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a6dc-135e-c817-cd91" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="935b-35c5-8a18-dde9" type="max"/>
@@ -7250,7 +7302,7 @@ Review 3.03.01: correction after the uptate to version 3.03
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e22f-e7a7-511e-f095" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="0621-acaf-a45e-dfe4" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="538b-37c1-68db-ca1d" type="selectionEntry">
+        <entryLink id="0621-acaf-a45e-dfe4" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="9bf9-4303-3807-8b33" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aab4-0544-4d8d-df6b" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8867-9e27-291b-08c2" type="min"/>
@@ -7315,7 +7367,7 @@ Review 3.03.01: correction after the uptate to version 3.03
       </constraints>
       <infoLinks>
         <infoLink id="603a-8c8b-c2a0-3ae3" name="Origen" hidden="false" targetId="6858-1c44-7d54-9cef" type="profile"/>
-        <infoLink id="e97c-8071-7aae-c0f0" name="Advanced Repair Facilities" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule">
+        <infoLink id="e97c-8071-7aae-c0f0" name="Advanced Repair Facilities*" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule">
           <modifiers>
             <modifier type="append" field="name" value=" (1)"/>
           </modifiers>
@@ -7330,7 +7382,7 @@ Review 3.03.01: correction after the uptate to version 3.03
         <categoryLink id="1d73-7549-657f-d7c1" name="Enlightened" hidden="false" targetId="d580-e7cf-5353-e2bb" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="e94d-db29-42de-682c" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="538b-37c1-68db-ca1d" type="selectionEntry">
+        <entryLink id="e94d-db29-42de-682c" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="9bf9-4303-3807-8b33" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="beb9-b170-635b-1a68" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c321-ab4e-abee-33b4" type="min"/>
@@ -7383,7 +7435,7 @@ Review 3.03.01: correction after the uptate to version 3.03
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b82-0e38-9e8b-1ef2" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="37c3-3cef-4ea1-6b2c" name="Gravitronic Imperilator" hidden="false" collective="false" import="true" targetId="c63b-090d-f2b9-2d24" type="selectionEntry">
+            <entryLink id="37c3-3cef-4ea1-6b2c" name="Gravitronic Imperilator" hidden="false" collective="false" import="true" targetId="04e7-c323-d3df-86ad" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
               </modifiers>
@@ -7391,7 +7443,7 @@ Review 3.03.01: correction after the uptate to version 3.03
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f114-4327-6709-e2b1" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="4d7b-b357-b0bd-ab01" name="Heavy Particle Cannon" hidden="false" collective="false" import="true" targetId="fa1b-fa45-a389-af24" type="selectionEntry">
+            <entryLink id="4d7b-b357-b0bd-ab01" name="Heavy Particle Cannon" hidden="false" collective="false" import="true" targetId="1eba-ceab-1cdb-e38d" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
               </modifiers>
@@ -7399,7 +7451,7 @@ Review 3.03.01: correction after the uptate to version 3.03
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="437b-a3e8-5a7d-be5c" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="38cc-31e9-3cac-18ec" name="Magneto Encapsulator" hidden="false" collective="false" import="true" targetId="0d98-4fb1-3d0d-a962" type="selectionEntry">
+            <entryLink id="38cc-31e9-3cac-18ec" name="Magneto Encapsulator" hidden="false" collective="false" import="true" targetId="c171-fd73-2656-282c" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
               </modifiers>
@@ -7407,7 +7459,7 @@ Review 3.03.01: correction after the uptate to version 3.03
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c069-6163-ad49-1500" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="2130-c246-6aac-b254" name="Sturginium Atomiser" hidden="false" collective="false" import="true" targetId="eca5-079d-eea0-50ae" type="selectionEntry">
+            <entryLink id="2130-c246-6aac-b254" name="Sturginium Atomiser" hidden="false" collective="false" import="true" targetId="724c-b6b1-b398-1487" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
               </modifiers>
@@ -7545,10 +7597,10 @@ Review 3.03.01: correction after the uptate to version 3.03
         <selectionEntryGroup id="5e1d-e39c-f1fa-c474" name="Super Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="0b7c-e4ac-c085-8d68">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a55a-5ab2-2a64-ea7d" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7abb-3fe2-463e-1484" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7abb-3fe2-463e-1484" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="620a-f319-ca7a-5686" name="Gravitronic Imperilator" hidden="false" collective="false" import="true" targetId="c63b-090d-f2b9-2d24" type="selectionEntry">
+            <entryLink id="620a-f319-ca7a-5686" name="Gravitronic Imperilator" hidden="false" collective="false" import="true" targetId="04e7-c323-d3df-86ad" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
               </modifiers>
@@ -7556,7 +7608,7 @@ Review 3.03.01: correction after the uptate to version 3.03
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1e48-157b-0ae5-5e4f" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="0b7c-e4ac-c085-8d68" name="Heavy Particle Cannon" hidden="false" collective="false" import="true" targetId="fa1b-fa45-a389-af24" type="selectionEntry">
+            <entryLink id="0b7c-e4ac-c085-8d68" name="Heavy Particle Cannon" hidden="false" collective="false" import="true" targetId="1eba-ceab-1cdb-e38d" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
               </modifiers>
@@ -7564,7 +7616,7 @@ Review 3.03.01: correction after the uptate to version 3.03
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4ee0-b385-94de-8914" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="2049-3330-b162-fbff" name="Magneto Encapsulator" hidden="false" collective="false" import="true" targetId="0d98-4fb1-3d0d-a962" type="selectionEntry">
+            <entryLink id="2049-3330-b162-fbff" name="Magneto Encapsulator" hidden="false" collective="false" import="true" targetId="c171-fd73-2656-282c" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
               </modifiers>
@@ -7572,7 +7624,7 @@ Review 3.03.01: correction after the uptate to version 3.03
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c55d-af64-63f4-bce5" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="d937-4143-3aef-e114" name="Sturginium Atomiser" hidden="false" collective="false" import="true" targetId="eca5-079d-eea0-50ae" type="selectionEntry">
+            <entryLink id="d937-4143-3aef-e114" name="Sturginium Atomiser" hidden="false" collective="false" import="true" targetId="724c-b6b1-b398-1487" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
               </modifiers>
@@ -8104,7 +8156,7 @@ Review 3.03.01: correction after the uptate to version 3.03
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="88c9-e660-5e1f-8ef8" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="1f6d-830b-25a8-2c7f" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="538b-37c1-68db-ca1d" type="selectionEntry">
+        <entryLink id="1f6d-830b-25a8-2c7f" name="Internal Entropic Generator" hidden="false" collective="false" import="true" targetId="9bf9-4303-3807-8b33" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3590-92cf-7c3d-09cc" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1ef8-2102-a0c1-5dfe" type="min"/>
