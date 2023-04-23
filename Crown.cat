@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4724-2577-5b2d-0bfe" name="Crown v3.03" revision="8" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4724-2577-5b2d-0bfe" name="Crown v3.03" revision="9" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Last Crown ORBAT 3.03 (published 05/02/2023)</comment>
   <readme>Review 1.02.a0: Initial release
 Review 1.02.a1: minor point correction
@@ -8,7 +8,8 @@ Review 3.02.a1 - Minor corrections and updates
 Review 3.03.00: update to ORBAT 3.03
 Review 3.03.01: minor correction after the update to ORBAT 3.03
 Review 3.03.02: minor correction after the update to ORBAT 3.03
-Review 3.03.03: minor correction after the update to ORBAT 3.03 (date 2023-02-05)</readme>
+Review 3.03.03: minor correction after the update to ORBAT 3.03 (date 2023-02-05)
+Review 3.03.04: correction suggested in internet (ORBAT 3.03 released the 2023-02-05)</readme>
   <categoryEntries>
     <categoryEntry id="6427-c580-219d-c874" name="Britannia Class" publicationId="dbca-8d57-b848-457e" hidden="false"/>
     <categoryEntry id="ddb5-f0d6-665c-3ac4" name="Protecteur Class" publicationId="dbca-8d57-b848-457e" hidden="false"/>
@@ -1231,75 +1232,6 @@ Review 3.03.03: minor correction after the update to ORBAT 3.03 (date 2023-02-05
         <categoryLink id="2b7c-d956-a821-fc75" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="0a81-e8e8-f343-5cb0" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="457a-6a8d-a84f-715a" name="Ammunition" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e446-a82e-b071-dc33" type="min"/>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a95-4793-98be-f1a8" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="02b8-9202-7818-96f6" name="Amphion ammuniton" hidden="false" collective="true" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="add" field="category" value="e0b0-935e-c0c6-53c8"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f82f-0fe2-af0f-eee5" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="9b16-dfac-73cb-b0da" name="Submerged" hidden="true" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
-                <infoLink id="26c9-562e-6620-af2b" name="Torpedo" hidden="true" targetId="d673-c4da-202e-fbfc" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a93a-c69d-587a-f5b5" name="Flechette ammuniton" hidden="false" collective="true" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="add" field="category" value="5e15-d2a9-a54e-3a11"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d5f5-b678-1f20-48ea" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="7934-c5bd-5b0c-40de" name="Blast" hidden="true" targetId="89d8-2e21-11be-005d" type="rule"/>
-                <infoLink id="a002-c198-35d9-f64e" name="Piercing" hidden="true" targetId="0f8e-056c-75a9-caee" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="20.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="616e-9c8a-d1fb-72a2" name="Pax ammuniton" hidden="false" collective="true" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="add" field="category" value="d91e-9f01-4d5b-0495"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="25ac-f5dc-9321-4ad8" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="b99e-e893-2f1e-00d9" name="Devastating" hidden="true" targetId="d633-3476-6a40-e860" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="25.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="0b3d-a2cf-ddf0-bb19" name="Ripple ammuniton" hidden="false" collective="true" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="add" field="category" value="6679-8b34-dcc1-1137"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="24a8-c791-bfd0-5fb0" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="a3d3-7898-40ca-32be" name="Sustained" hidden="true" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
-                <infoLink id="3a9f-a28d-8ac1-4ffc" name="Hazardous" hidden="true" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="15.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="54bb-95a7-702e-1b3d" name="Agincourt" hidden="false" collective="false" import="true" targetId="3919-a80d-c0f2-d6e6" type="selectionEntry"/>
       </entryLinks>
@@ -3424,6 +3356,75 @@ Review 3.03.03: minor correction after the update to ORBAT 3.03 (date 2023-02-05
         <categoryLink id="e820-6474-45dd-a625" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
         <categoryLink id="9137-5af7-b29e-7045" name="Bombardment Cruiser" hidden="false" targetId="9566-ae5c-ce6d-637b" primary="false"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="39eb-5d47-355d-05d2" name="Ammunition" hidden="false" collective="true" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4557-e357-ebfe-d1f3" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b075-1e9b-8ab9-4450" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="d980-7910-0531-807d" name="Amphion ammuniton" hidden="false" collective="true" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="add" field="category" value="e0b0-935e-c0c6-53c8"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ba76-3929-60c9-2d4e" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="d53c-185a-a4b1-42af" name="Submerged" hidden="true" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+                <infoLink id="20b5-23d5-9d93-72c7" name="Torpedo" hidden="true" targetId="d673-c4da-202e-fbfc" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c286-2eb8-96e3-a5a3" name="Flechette ammuniton" hidden="false" collective="true" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="add" field="category" value="5e15-d2a9-a54e-3a11"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="10b6-76ec-d070-1096" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="86d9-6338-9403-9f21" name="Blast" hidden="true" targetId="89d8-2e21-11be-005d" type="rule"/>
+                <infoLink id="d3b7-3537-0662-3f80" name="Piercing" hidden="true" targetId="0f8e-056c-75a9-caee" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="20.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f2ec-e3d0-a7ca-da92" name="Pax ammuniton" hidden="false" collective="true" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="add" field="category" value="d91e-9f01-4d5b-0495"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa40-fe23-9b98-4a88" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="3046-d273-4bf1-172f" name="Devastating" hidden="true" targetId="d633-3476-6a40-e860" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="25.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="81b9-3413-8713-7edd" name="Ripple ammuniton" hidden="false" collective="true" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="add" field="category" value="6679-8b34-dcc1-1137"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1940-259c-5e8f-d95d" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="d9f6-9d4d-9772-7bc2" name="Sustained" hidden="true" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
+                <infoLink id="ac74-3f6b-7ba0-5242" name="Hazardous" hidden="true" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="26e7-3941-8875-df19" name="Broadside" hidden="false" collective="false" import="true" targetId="0600-8fa9-227d-91ba" type="selectionEntry">
           <modifiers>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="aab7-88e9-70f7-d7f1" name="Alliance v3.03" revision="9" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="aab7-88e9-70f7-d7f1" name="Alliance v3.03" revision="10" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Last Alliance ORBAT 3.03 (published 05/02/2023)</comment>
   <readme>Datafile history:
 0.03.00: Initial publication
@@ -10,7 +10,8 @@
 3.03.00: updated to the the ORBAT v3.03
 3.03.01: correction after the updated to the ORBAT v3.03
 3.03.02: minor adjustament after the ORBAT v3.03 update
-3.03.03: correction after ORBAT v3.03 (date 2023-02-05)</readme>
+3.03.03: correction after ORBAT v3.03 (date 2023-02-05)
+3.03.04: correction of Italian Ship for my fleet (ORBAT v3.03 released the 2023-02-05)</readme>
   <categoryEntries>
     <categoryEntry id="534c-9506-e470-8b7c" name="Alliance" publicationId="129d-da97-caec-1ddd" hidden="false"/>
     <categoryEntry id="9aab-6794-6d2b-c1a8" name="French" publicationId="129d-da97-caec-1ddd" hidden="false"/>
@@ -8977,6 +8978,19 @@
         <categoryLink id="649d-4b7d-b3c1-5ec5" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="a1db-3624-15a6-7176" name="Fast Cruiser" hidden="false" targetId="a1ea-edee-b3e8-9ff2" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="937c-039a-a3a3-49cb" name="Scutum Mine Launcher" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="001d-6bd2-3047-aeef" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="a61f-4858-472d-1de2" name="Scutum Mine Layer" hidden="false" targetId="ae67-f1be-5c85-c984" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="2498-59b1-595e-9a91" name="Main Weapon" hidden="false" collective="false" import="true">
           <constraints>
