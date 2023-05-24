@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4724-2577-5b2d-0bfe" name="Crown v3.03" revision="9" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4724-2577-5b2d-0bfe" name="Crown v3.03" revision="10" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Last Crown ORBAT 3.03 (published 05/02/2023)</comment>
   <readme>Review 1.02.a0: Initial release
 Review 1.02.a1: minor point correction
@@ -9,7 +9,8 @@ Review 3.03.00: update to ORBAT 3.03
 Review 3.03.01: minor correction after the update to ORBAT 3.03
 Review 3.03.02: minor correction after the update to ORBAT 3.03
 Review 3.03.03: minor correction after the update to ORBAT 3.03 (date 2023-02-05)
-Review 3.03.04: correction suggested in internet (ORBAT 3.03 released the 2023-02-05)</readme>
+Review 3.03.04: correction suggested in internet (ORBAT 3.03 released the 2023-02-05)
+Review 3.03.05: correction suggested in internet (ORBAT 3.03 released the 2023-02-05)</readme>
   <categoryEntries>
     <categoryEntry id="6427-c580-219d-c874" name="Britannia Class" publicationId="dbca-8d57-b848-457e" hidden="false"/>
     <categoryEntry id="ddb5-f0d6-665c-3ac4" name="Protecteur Class" publicationId="dbca-8d57-b848-457e" hidden="false"/>
@@ -8328,13 +8329,14 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
           </modifiers>
         </infoLink>
         <infoLink id="23fe-ab85-7d23-547a" name="Loyal She Began; Thus She Remains" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
-        <infoLink id="e362-439a-3e05-18f0" name="Combat Air Patrol" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
+        <infoLink id="e362-439a-3e05-18f0" name="Combat Air Patrol*" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
         <infoLink id="a374-fa18-3e17-73a2" name="Lionhearted Crew" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
         <infoLink id="1381-2218-a47f-b308" name="Royal Engineers" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
         <infoLink id="d438-d5d9-5555-041c" name="SRS Mine Clearance" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
         <infoLink id="0c67-fe69-454e-0eae" name="SRS Recon Flight" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
-        <infoLink id="2896-1fbc-8e06-13d2" name="Heavy Firepower" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="2896-1fbc-8e06-13d2" name="Heavy Firepower*" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
         <infoLink id="fc17-157a-31b8-0fed" name="Vulnerable Stern" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="3291-f6c6-0967-b36d" name="Unexpected Air Strike*" hidden="false" targetId="0b23-f545-e684-30e9" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5a1c-5197-4ada-2e99" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -8685,6 +8687,9 @@ causes damage as normal.</description>
       <description>Models in this Unit may re-roll Blank dice results in any Action Dice Pool. The East India Privateers Rule only applies during each Round where the Force this Unit is part of had more Victory Points than their opponents at the most recent Check for Victory Step.</description>
     </rule>
     <rule id="d257-1d49-933c-9a56" name="New Rule" hidden="false"/>
+    <rule id="0b23-f545-e684-30e9" name="Unexpected Air Strike*" publicationId="dbca-8d57-b848-457e" hidden="false">
+      <description>Instead of being deployed as normal for the Encounter, this Unit may instead be held in Reserve (see Operations for details). Roll to arrive by Reserves as normal, however, from the start of Round two, or the start of any subsequent Rounds, this Unit may automatically arrive from Reserves. When it arrives from Reserves the Unit is placed at any point in the Play Area that is at least 5&quot; from the nearest terrain feature. No Model in the Unit can be deployed touching another Model. On the Round it enters play with this rule, this Unit immediately launches a number of SRS Tokens up to its Capacity value against any Enemy Unit in the Play Area rather than the usual range.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="762f-52e8-89d1-e20f" name="Britannia" publicationId="dbca-8d57-b848-457e" page="" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">

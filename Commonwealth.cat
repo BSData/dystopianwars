@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6719-1f83-56dd-91fe" name="Commonwealth v3.03" revision="13" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6719-1f83-56dd-91fe" name="Commonwealth v3.03" revision="14" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Last Commonwealth ORBAT 3.03 (published 05/02/2023)</comment>
   <readme>Review 1.02.01: correct Rurik and Oleg unit max size
 Review 1.03.00: add new unit and new profile from ORBAT 1.03, fixed Battlefleet bonus managment
@@ -13,7 +13,8 @@ Review 3.02.01: minor bug fix
 Review 3.02.02: minor bug fix befor the update to 3.03
 Review 3.03.00: update to 3.03
 Review 3.03.00: minor bug fix after update to 3.03
-Review 3.03.01: minor bug fix after update to 3.03 (publish 2023-02-05)</readme>
+Review 3.03.01: minor bug fix after update to 3.03 (publish 2023-02-05)
+Review 3.03.02: minor bug fix after update to 3.03 (publish 2023-02-05)</readme>
   <categoryEntries>
     <categoryEntry id="c7ca-90d2-5214-ece9" name="Commonwealth" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
     <categoryEntry id="43a2-7e77-ff29-fb5c" name="Russian" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
@@ -84,7 +85,7 @@ Review 3.03.01: minor bug fix after update to 3.03 (publish 2023-02-05)</readme>
         </categoryLink>
         <categoryLink id="00a0-cc0c-53c9-9512" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ce47-cfe1-8c62-0954" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ce47-cfe1-8c62-0954" type="min"/>
             <constraint field="selections" scope="force" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="cd05-f52f-e971-73c0" type="max"/>
           </constraints>
         </categoryLink>
@@ -403,7 +404,7 @@ Review 3.03.01: minor bug fix after update to 3.03 (publish 2023-02-05)</readme>
         </categoryLink>
         <categoryLink id="00a0-cc0c-53c9-9512" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ce47-cfe1-8c62-0954" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ce47-cfe1-8c62-0954" type="min"/>
             <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="cd05-f52f-e971-73c0" type="max"/>
           </constraints>
         </categoryLink>
@@ -4156,6 +4157,9 @@ Review 3.03.01: minor bug fix after update to 3.03 (publish 2023-02-05)</readme>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="899c-f57d-ed75-ba41" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+              </costs>
             </entryLink>
             <entryLink id="e18b-a451-30b6-58da" name="Railgun" hidden="false" collective="false" import="true" targetId="1a9e-f3ae-adcd-63bf" type="selectionEntry">
               <modifiers>
@@ -5470,6 +5474,9 @@ Review 3.03.01: minor bug fix after update to 3.03 (publish 2023-02-05)</readme>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ef3-0196-59f0-c628" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+              </costs>
             </entryLink>
             <entryLink id="d2c4-b1aa-dc0c-0034" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
               <modifiers>
@@ -7153,6 +7160,9 @@ Review 3.03.01: minor bug fix after update to 3.03 (publish 2023-02-05)</readme>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6aa2-be96-3c75-b615" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="2502-16f0-73c2-46a9" name="Seismic Mortar" hidden="false" collective="false" import="true" targetId="9aa7-e8fc-a053-777a" type="selectionEntry">
                   <modifiers>
@@ -7161,6 +7171,9 @@ Review 3.03.01: minor bug fix after update to 3.03 (publish 2023-02-05)</readme>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4329-9f3e-c7fc-24c6" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="d785-2c46-a98c-dc85" name="Railgun" hidden="false" collective="false" import="true" targetId="1a9e-f3ae-adcd-63bf" type="selectionEntry">
                   <modifiers>
@@ -7299,6 +7312,9 @@ Review 3.03.01: minor bug fix after update to 3.03 (publish 2023-02-05)</readme>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="491b-01bc-db03-6bf3" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="eac2-262c-f247-8908" name="Seismic Mortar" hidden="false" collective="false" import="true" targetId="9aa7-e8fc-a053-777a" type="selectionEntry">
                   <modifiers>
@@ -7307,6 +7323,9 @@ Review 3.03.01: minor bug fix after update to 3.03 (publish 2023-02-05)</readme>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ba38-a596-5e04-1c18" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="c42e-b7d7-608d-4b20" name="Railgun" hidden="false" collective="false" import="true" targetId="1a9e-f3ae-adcd-63bf" type="selectionEntry">
                   <modifiers>

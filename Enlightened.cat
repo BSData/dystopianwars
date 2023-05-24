@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="50c4-91af-d01e-a4e1" name="Enlightened v3.03" revision="9" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="50c4-91af-d01e-a4e1" name="Enlightened v3.03" revision="10" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Last Enlightened ORBAT 3.03 (published 07/02/2023)</comment>
   <readme>Review 1.02.00: initial edition according to Enlightened ORBAT 1.02a
 Review 1.02.01: bux fixing and correct Physeter Ambush management
@@ -8,7 +8,8 @@ Review 1.04.00: uptate data to version 1.04
 Review 1.05.a0: uptate data to version 1.05a
 Review 3.03.00: uptate data to version 3.03
 Review 3.03.01: correction after the uptate to version 3.03
-Review 3.03.02: correction after the uptate to version 3.03 (date 2023-02-07)</readme>
+Review 3.03.02: correction after the uptate to version 3.03 (date 2023-02-07)
+Review 3.03.03: correction suggested in discord 3.03 (date 2023-02-07)</readme>
   <categoryEntries>
     <categoryEntry id="d580-e7cf-5353-e2bb" name="Enlightened" publicationId="908d-6feb-2e9e-843b" hidden="false"/>
     <categoryEntry id="b7da-7d83-7f67-604f" name="Control Ship" hidden="false"/>
@@ -63,6 +64,7 @@ Review 3.03.02: correction after the uptate to version 3.03 (date 2023-02-07)</r
     <categoryEntry id="04a7-8672-984a-8713" name="Capacitor Ship" publicationId="908d-6feb-2e9e-843b" hidden="false"/>
     <categoryEntry id="9191-a8d1-f90f-5c6a" name="Icarus Class" publicationId="908d-6feb-2e9e-843b" hidden="false"/>
     <categoryEntry id="b7ef-d462-a611-21fb" name="Thule Class" publicationId="908d-6feb-2e9e-843b" hidden="false"/>
+    <categoryEntry id="fb82-a6da-390a-4f1c" name="Cetacean Surgical Ship" publicationId="908d-6feb-2e9e-843b" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="3bb5-aa9e-d5e1-b797" name="Enlightened Faction Battlefleet" publicationId="908d-6feb-2e9e-843b" hidden="false">
@@ -2009,6 +2011,11 @@ Review 3.03.02: correction after the uptate to version 3.03 (date 2023-02-07)</r
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="decrement" field="7c9b-6b09-b5ac-2249" value="12.0">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8dd0-ac10-7e41-370c" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="492a-1548-e233-a597" name="Physeter Ambush" hidden="false" targetId="88bc-668c-c263-f6b2" primary="false"/>
@@ -2033,9 +2040,9 @@ Review 3.03.02: correction after the uptate to version 3.03 (date 2023-02-07)</r
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="ca5b-bb8c-03f2-4af1" name="Vesalius Class" hidden="false" targetId="99e4-8773-3279-c9e6" primary="false"/>
         <categoryLink id="7343-c9e9-1301-292d" name="Enlightened" hidden="false" targetId="d580-e7cf-5353-e2bb" primary="false"/>
         <categoryLink id="dcca-ac45-ed35-3d20" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="6564-b781-d463-8100" name="Cetacean Surgical Ship" hidden="false" targetId="fb82-a6da-390a-4f1c" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="8662-4eb0-367e-5843" name="Attached Unit" hidden="false" collective="false" import="true">
@@ -3436,10 +3443,8 @@ Review 3.03.02: correction after the uptate to version 3.03 (date 2023-02-07)</r
         <infoLink id="32b3-c25e-95a4-1d3e" name="Vulnerable Stern*" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="5590-7c32-2e67-c8b6" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
-        <categoryLink id="8d5f-d895-7813-5884" name="Enlightened" hidden="false" targetId="d580-e7cf-5353-e2bb" primary="false"/>
+        <categoryLink id="8d5f-d895-7813-5884" name="Enlightened" hidden="false" targetId="d580-e7cf-5353-e2bb" primary="true"/>
         <categoryLink id="2ec4-a179-c4a6-4f12" name="Control Ship" hidden="false" targetId="b7da-7d83-7f67-604f" primary="false"/>
-        <categoryLink id="92d2-fb96-e3f6-950e" name="Descartes Class" hidden="false" targetId="8dd0-ac10-7e41-370c" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="f16b-6b24-9e07-4a0d" name="Cetacean Capacity" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="upgrade">
@@ -5622,6 +5627,64 @@ Review 3.03.02: correction after the uptate to version 3.03 (date 2023-02-07)</r
         <categoryLink id="a4d3-50d3-8764-3c56" name="Generator Ship" hidden="false" targetId="000a-4949-4294-7697" primary="false"/>
         <categoryLink id="109d-d3c3-14ce-f484" name="Unique" hidden="false" targetId="293e-b55a-bcfa-95c3" primary="false"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="660c-f387-73d2-2fad" name="Generator" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5045-1c52-4268-9bc8" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43d5-e0b0-c813-475c" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="60b8-629f-e7b2-4cc5" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink id="16a9-84de-451a-41db" name="Atomic generator" hidden="false" collective="false" import="true" targetId="eef0-442d-aa6f-b314" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e4cb-a8d9-34d7-bf54" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="34e5-abad-8fc6-31af" name="Fury generator" hidden="false" collective="false" import="true" targetId="069a-8c90-088f-816d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2c4c-b92a-6382-6706" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="eac5-71e7-880b-509a" name="Magnetic generator" hidden="false" collective="false" import="true" targetId="77af-dd4b-51e7-c620" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7fbb-78f8-2aa6-75b1" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="5eb9-07e0-a6d8-e311" name="Clone generator" hidden="false" collective="false" import="true" targetId="f1f8-ce49-8992-3009" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6f57-b945-1c9e-2dd6" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="00be-7deb-2665-d519" name="Repulsion field generator" hidden="false" collective="false" import="true" targetId="bf96-7810-7d69-a386" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="184e-20b5-b6ef-cb22" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="536d-ef6b-567b-c7b2" name="Null generator" hidden="false" collective="false" import="true" targetId="12ce-85e0-dc8e-8c07" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="18d1-f38b-cc64-c0c4" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="33cb-9a73-5e7d-4148" name="Shield generator" hidden="false" collective="false" import="true" targetId="0e7f-6ae4-f9b6-0ea1" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="664a-0b0b-9671-7cb7" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="a31a-9300-575a-d6bf" name="Shroud generator" hidden="false" collective="false" import="true" targetId="1543-05e3-58ac-6e6d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bb0e-4301-a71a-f635" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="7c2c-ca22-179a-6e15" name="Chrono generator" hidden="false" collective="false" import="true" targetId="4457-2e29-46ba-eb58" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="db1d-015e-28bc-0ced" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="a8df-5b22-bd21-1fed" name="Particle Beamer" hidden="false" collective="false" import="true" targetId="5dcb-4100-3eab-e801" type="selectionEntry">
           <modifiers>
@@ -5671,6 +5734,13 @@ Review 3.03.02: correction after the uptate to version 3.03 (date 2023-02-07)</r
       </costs>
     </selectionEntry>
     <selectionEntry id="4131-f613-f072-b08f" name="Physeter Ambush" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="increment" field="1d8d-5364-522f-7c0b" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="8dd0-ac10-7e41-370c" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1d8d-5364-522f-7c0b" type="min"/>
         <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4c2a-3a2d-b5af-ea32" type="max"/>
@@ -5712,7 +5782,6 @@ Review 3.03.02: correction after the uptate to version 3.03 (date 2023-02-07)</r
         <categoryLink id="83f2-c9f9-c5b0-09ac" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
         <categoryLink id="2845-c2fd-1369-7875" name="Enlightened" hidden="false" targetId="d580-e7cf-5353-e2bb" primary="false"/>
         <categoryLink id="5b28-d905-f7c7-0a52" name="Physeter Surgical Ship" hidden="false" targetId="b92d-06c4-6e98-f514" primary="false"/>
-        <categoryLink id="8eaa-d97c-f68c-1ea0" name="Vesalius Class" hidden="false" targetId="99e4-8773-3279-c9e6" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="53e8-6ff8-f34f-8b88" name="Orca Token" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="true" import="true" type="upgrade">
@@ -7840,7 +7909,6 @@ Review 3.03.02: correction after the uptate to version 3.03 (date 2023-02-07)</r
       </infoLinks>
       <categoryLinks>
         <categoryLink id="da11-808a-fff0-164a" name="New CategoryLink" hidden="false" targetId="d580-e7cf-5353-e2bb" primary="true"/>
-        <categoryLink id="f590-a759-877c-6532" name="Battle Saucer" hidden="false" targetId="8a89-f30b-468c-ec12" primary="false"/>
         <categoryLink id="239a-ca76-1dbc-4894" name="Strike Saucer" hidden="false" targetId="3d40-9a66-35da-dabb" primary="false"/>
       </categoryLinks>
       <entryLinks>
