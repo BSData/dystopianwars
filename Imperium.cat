@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5037-a8ca-0033-3edc" name="Imperium 3.03" revision="9" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5037-a8ca-0033-3edc" name="Imperium 3.03" revision="10" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Last Imperium ORBAT 3.03 (published 09/02/2023)</comment>
   <readme>Datafile history:
 1.04.01: Initial publication ORBAT v1.04a
@@ -10,7 +10,8 @@
 3.03.00: updated to the the ORBAT v3.03
 3.03.01: correction after the ORBAT v3.03 update
 3.03.02: correction after the ORBAT v3.03 update (date 2023-02-09)
-3.03.03: correction suggested in Discord and online (ORBAT v3.03 released the 2023-02-09)</readme>
+3.03.03: correction suggested in Discord and online (ORBAT v3.03 released the 2023-02-09)
+3.03.04: more correction from Discord and online (ORBAT v3.03 released the 2023-02-09)</readme>
   <categoryEntries>
     <categoryEntry id="138b-84c8-2ae2-129f" name="Elector Class" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
     <categoryEntry id="5327-366a-b983-42f4" name="Kaiser Pattern" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
@@ -3344,13 +3345,11 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b917-d93e-967e-dbfa" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6b7-a5fe-fa1e-484c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d554-191b-783b-f2c9" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="be40-ff53-14f5-05b4" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc04-f1b1-2ccb-1b26" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b4c4-9dc7-5b76-b6c7" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b917-d93e-967e-dbfa" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -5683,7 +5682,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="c2fe-87ad-c244-6613" name="Konig" hidden="false" collective="false" import="true" targetId="9729-fb41-0716-7989" type="selectionEntry">
+        <entryLink id="c2fe-87ad-c244-6613" name="SMS Terra Mariana" hidden="false" collective="false" import="true" targetId="75fe-79e1-8560-267c" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="name" value="SMS Terra Mariana"/>
           </modifiers>
@@ -6916,7 +6915,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
     <selectionEntry id="35b1-e708-e60e-53f1" name="Arminius" publicationId="33cf-b4a6-bff0-0d70" page="" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7501-92b7-8231-2ddf" type="min"/>
-        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d055-cd8b-5569-60f6" type="max"/>
+        <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d055-cd8b-5569-60f6" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="239c-f176-5152-9ad2" name="Arminius" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="f294-4496-7a78-70c4" type="profile"/>
@@ -11211,7 +11210,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
         <infoLink id="4c15-38cb-fa67-827c" name="Lightning Assault*" hidden="false" targetId="5344-5860-afdf-57e5" type="rule"/>
         <infoLink id="e1d0-b408-305b-fd95" name="Heavy Firepower*" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
         <infoLink id="98dd-9e47-f7a3-4d3c" name="Haddingjar Projector*" hidden="false" targetId="9933-02a2-c7e4-255e" type="rule"/>
-        <infoLink id="298b-283e-18c3-c894" name="Command Codes" hidden="false" targetId="422e-0279-5ff5-c279" type="rule"/>
+        <infoLink id="298b-283e-18c3-c894" name="Command Codes*" hidden="false" targetId="422e-0279-5ff5-c279" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0d33-43c4-03bb-9f29" name="Imperium" hidden="false" targetId="381f-fee3-786c-1414" primary="true"/>
