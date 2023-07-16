@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6719-1f83-56dd-91fe" name="Commonwealth v3.03" revision="12" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6719-1f83-56dd-91fe" name="Commonwealth v3.03" revision="17" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <comment>Last Commonwealth ORBAT 3.03 (published 05/02/2023)</comment>
   <readme>Review 1.02.01: correct Rurik and Oleg unit max size
 Review 1.03.00: add new unit and new profile from ORBAT 1.03, fixed Battlefleet bonus managment
 Review 1.04.a0: review after the v1.04a
@@ -11,7 +12,12 @@ Review 3.02.00: update to Commonwealth v3.02
 Review 3.02.01: minor bug fix
 Review 3.02.02: minor bug fix befor the update to 3.03
 Review 3.03.00: update to 3.03
-Review 3.03.00: minor bug fix after update to 3.03</readme>
+Review 3.03.00: minor bug fix after update to 3.03
+Review 3.03.01: minor bug fix after update to 3.03 (publish 2023-02-05)
+Review 3.03.02: minor bug fix after update to 3.03 (publish 2023-02-05)
+Review 3.03.03: minor bug fix after update to 3.03 (publish 2023-02-05)
+Review 3.03.04: Giyena correction (publish 2023-02-05)
+Review 3.03.05: Pakhtusov correction (publish 2023-02-05)</readme>
   <categoryEntries>
     <categoryEntry id="c7ca-90d2-5214-ece9" name="Commonwealth" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
     <categoryEntry id="43a2-7e77-ff29-fb5c" name="Russian" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
@@ -82,7 +88,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
         </categoryLink>
         <categoryLink id="00a0-cc0c-53c9-9512" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ce47-cfe1-8c62-0954" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ce47-cfe1-8c62-0954" type="min"/>
             <constraint field="selections" scope="force" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="cd05-f52f-e971-73c0" type="max"/>
           </constraints>
         </categoryLink>
@@ -251,7 +257,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
         </categoryLink>
         <categoryLink id="00a0-cc0c-53c9-9512" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ce47-cfe1-8c62-0954" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ce47-cfe1-8c62-0954" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="cd05-f52f-e971-73c0" type="max"/>
           </constraints>
         </categoryLink>
@@ -401,7 +407,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
         </categoryLink>
         <categoryLink id="00a0-cc0c-53c9-9512" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ce47-cfe1-8c62-0954" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ce47-cfe1-8c62-0954" type="min"/>
             <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="cd05-f52f-e971-73c0" type="max"/>
           </constraints>
         </categoryLink>
@@ -1042,7 +1048,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="19fa-b88e-f8dd-f272" name="Borondino" hidden="false" collective="false" import="true" targetId="639e-3c9d-35d4-522f" type="selectionEntry"/>
+        <entryLink id="19fa-b88e-f8dd-f272" name="Borodino" hidden="false" collective="false" import="true" targetId="639e-3c9d-35d4-522f" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
@@ -1238,31 +1244,6 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
         <categoryLink id="e657-6d3e-e874-4461" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
         <categoryLink id="c971-74e6-f665-bb34" name="Ukrainian" hidden="false" targetId="d7b3-10bd-20f0-4832" primary="false"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="9a67-3c42-5db1-72c1" name="Attached Unit" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13c8-1de8-73a9-0194" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="fa1d-f0fb-08e2-6030" name="Piranya Hunter Submarine Squadron" hidden="false" collective="false" import="true" type="unit">
-              <categoryLinks>
-                <categoryLink id="4a5d-3b0c-688a-30bd" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
-                <categoryLink id="be75-715d-b28d-5c33" name="Rurik Class" hidden="false" targetId="9573-ce70-b55f-58e8" primary="false"/>
-              </categoryLinks>
-              <entryLinks>
-                <entryLink id="b7c6-db0a-7ebb-70ec" name="Piranya" hidden="false" collective="false" import="true" targetId="c5b1-04d3-cd1e-d6da" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="69be-5a0a-25cd-67fc" value="2.0"/>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="e3d1-19d9-ec4c-940e" name="Piranya" hidden="false" collective="false" import="true" targetId="c5b1-04d3-cd1e-d6da" type="selectionEntry"/>
       </entryLinks>
@@ -1276,19 +1257,19 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c03-4ace-59f3-9637" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1c03-4ace-59f3-9637" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
-          </conditions>
-        </modifier>
         <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1622,14 +1603,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
         <categoryLink id="adbf-5a2d-2092-4f3e" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="b78c-8997-74ae-cc57" name="Stoletov" hidden="false" collective="false" import="true" targetId="76b0-be0d-7a9c-c9d6" type="selectionEntry">
-          <categoryLinks>
-            <categoryLink id="2344-3fbd-95e0-2735" name="Ekranoplans" hidden="false" targetId="5259-4042-09aa-6402" primary="false"/>
-            <categoryLink id="4c42-6831-4785-ae19" name="Skimming Unit" hidden="false" targetId="c058-d79a-9582-360a" primary="false"/>
-            <categoryLink id="121e-2746-f668-e5c3" name="Stoletov Class" hidden="false" targetId="6ec4-945d-24b0-9afb" primary="false"/>
-            <categoryLink id="6eda-6cc4-bd12-27aa" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
-          </categoryLinks>
-        </entryLink>
+        <entryLink id="b78c-8997-74ae-cc57" name="Stoletov" hidden="false" collective="false" import="true" targetId="76b0-be0d-7a9c-c9d6" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
@@ -1745,12 +1719,12 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="remove" field="category" value="d7b3-10bd-20f0-4832">
+        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
           <conditions>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
           </conditions>
         </modifier>
-        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+        <modifier type="remove" field="category" value="d7b3-10bd-20f0-4832">
           <conditions>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
           </conditions>
@@ -1768,9 +1742,34 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
           </constraints>
           <selectionEntries>
             <selectionEntry id="1fbd-e44b-35ae-35d2" name="Piranya Hunter Submarine Squadron" hidden="false" collective="false" import="true" type="unit">
+              <modifiers>
+                <modifier type="remove" field="category" value="d7b3-10bd-20f0-4832">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4ca2-058e-2ae4-364f" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="151b-55a6-aedf-b69f" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2286-183c-9545-9e58" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="daec-c7fc-4ab4-114d" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <categoryLinks>
-                <categoryLink id="bca5-7c48-fa61-d4da" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
-                <categoryLink id="c6ff-4d97-2664-8859" name="Rurik Class" hidden="false" targetId="9573-ce70-b55f-58e8" primary="false"/>
+                <categoryLink id="eedd-e2b0-463d-d767" name="Piranya Class" hidden="false" targetId="3030-3da1-a547-b7cf" primary="false"/>
+                <categoryLink id="a844-3dd7-97d8-4be3" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="false"/>
+                <categoryLink id="c54a-87ab-25ea-6df4" name="Ukrainian" hidden="false" targetId="d7b3-10bd-20f0-4832" primary="false"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="ed4c-240d-2b5b-86e6" name="Piranya" hidden="false" collective="false" import="true" targetId="c5b1-04d3-cd1e-d6da" type="selectionEntry">
@@ -1820,13 +1819,38 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7485-b9a6-69f2-9b06" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="4aee-18b0-2703-af53" name="Piranya Hunter Submarine Squadron" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="8dd8-1b2e-e0fe-75d2" name="Piranya Hunter Submarine Squadron" hidden="false" collective="false" import="true" type="unit">
+              <modifiers>
+                <modifier type="remove" field="category" value="d7b3-10bd-20f0-4832">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4ca2-058e-2ae4-364f" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="151b-55a6-aedf-b69f" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2286-183c-9545-9e58" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="daec-c7fc-4ab4-114d" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <categoryLinks>
-                <categoryLink id="ecd2-58c5-2061-b847" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
-                <categoryLink id="0050-f780-b982-a60f" name="Rurik Class" hidden="false" targetId="9573-ce70-b55f-58e8" primary="false"/>
+                <categoryLink id="e530-919c-3465-5972" name="Piranya Class" hidden="false" targetId="3030-3da1-a547-b7cf" primary="false"/>
+                <categoryLink id="98ea-95fd-5a2b-763c" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="false"/>
+                <categoryLink id="2414-91e3-f478-2a27" name="Ukrainian" hidden="false" targetId="d7b3-10bd-20f0-4832" primary="false"/>
               </categoryLinks>
               <entryLinks>
-                <entryLink id="7c86-cfe4-8370-ea82" name="Piranya" hidden="false" collective="false" import="true" targetId="c5b1-04d3-cd1e-d6da" type="selectionEntry">
+                <entryLink id="46bb-86e8-0ca8-73e1" name="Piranya" hidden="false" collective="false" import="true" targetId="c5b1-04d3-cd1e-d6da" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="69be-5a0a-25cd-67fc" value="2.0"/>
                   </modifiers>
@@ -1953,13 +1977,38 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b3c-6ad8-e593-2902" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="6b1e-08de-8ccf-f9b0" name="Piranya Hunter Submarine Squadron" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="a3ac-8533-6109-39b4" name="Piranya Hunter Submarine Squadron" hidden="false" collective="false" import="true" type="unit">
+              <modifiers>
+                <modifier type="remove" field="category" value="d7b3-10bd-20f0-4832">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="4ca2-058e-2ae4-364f" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="151b-55a6-aedf-b69f" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="2286-183c-9545-9e58" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="daec-c7fc-4ab4-114d" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <categoryLinks>
-                <categoryLink id="a6d1-a3ae-2835-c37d" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
-                <categoryLink id="373c-cb1d-7f2b-e129" name="Rurik Class" hidden="false" targetId="9573-ce70-b55f-58e8" primary="false"/>
+                <categoryLink id="24d1-c894-5806-8dd2" name="Piranya Class" hidden="false" targetId="3030-3da1-a547-b7cf" primary="false"/>
+                <categoryLink id="b8f4-f657-a756-dcde" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="false"/>
+                <categoryLink id="a46e-ad76-cc3b-c0d5" name="Ukrainian" hidden="false" targetId="d7b3-10bd-20f0-4832" primary="false"/>
               </categoryLinks>
               <entryLinks>
-                <entryLink id="783e-dc47-15b0-29a6" name="Piranya" hidden="false" collective="false" import="true" targetId="c5b1-04d3-cd1e-d6da" type="selectionEntry">
+                <entryLink id="09f3-35fd-5e9a-1fb8" name="Piranya" hidden="false" collective="false" import="true" targetId="c5b1-04d3-cd1e-d6da" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="69be-5a0a-25cd-67fc" value="2.0"/>
                   </modifiers>
@@ -2070,12 +2119,12 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+        <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
           <conditions>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
           </conditions>
         </modifier>
-        <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
+        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
           <conditions>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
           </conditions>
@@ -2107,6 +2156,16 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="remove" field="category" value="d7b3-10bd-20f0-4832">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -3082,13 +3141,38 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a418-7965-302b-2dd9" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="47a1-1b3f-38da-6115" name="Piranya Hunter Submarine Squadron" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="b9cb-6988-9651-ce62" name="Piranya Hunter Submarine Squadron" hidden="false" collective="false" import="true" type="unit">
+              <modifiers>
+                <modifier type="remove" field="category" value="d7b3-10bd-20f0-4832">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4ca2-058e-2ae4-364f" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="151b-55a6-aedf-b69f" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2286-183c-9545-9e58" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="daec-c7fc-4ab4-114d" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <categoryLinks>
-                <categoryLink id="6e3b-ebc2-6ba6-a708" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
-                <categoryLink id="ea16-c33f-5d27-7438" name="Rurik Class" hidden="false" targetId="9573-ce70-b55f-58e8" primary="false"/>
+                <categoryLink id="3d59-7845-84fa-0643" name="Piranya Class" hidden="false" targetId="3030-3da1-a547-b7cf" primary="false"/>
+                <categoryLink id="a1cd-c786-6d10-1177" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="false"/>
+                <categoryLink id="21b8-9997-4b95-404e" name="Ukrainian" hidden="false" targetId="d7b3-10bd-20f0-4832" primary="false"/>
               </categoryLinks>
               <entryLinks>
-                <entryLink id="6747-06f5-a0a8-1001" name="Piranya" hidden="false" collective="false" import="true" targetId="c5b1-04d3-cd1e-d6da" type="selectionEntry">
+                <entryLink id="a1f6-3c43-b73b-58ed" name="Piranya" hidden="false" collective="false" import="true" targetId="c5b1-04d3-cd1e-d6da" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="69be-5a0a-25cd-67fc" value="2.0"/>
                   </modifiers>
@@ -3148,7 +3232,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="9adf-3862-2d17-aba1" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="110e-749a-0199-27be" type="selectionEntry">
+        <entryLink id="9adf-3862-2d17-aba1" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="9985-b088-fda6-36d4" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
@@ -3221,8 +3305,8 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                 <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fec-30db-dfa5-c5c2" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5486-c150-01a1-6edc" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1fec-30db-dfa5-c5c2" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5486-c150-01a1-6edc" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="7851-a90e-2f1c-e010" name="Tri-Railgun" hidden="false" collective="false" import="true" targetId="616f-6227-1f5f-f5b4" type="selectionEntry">
@@ -3230,8 +3314,8 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                 <modifier type="add" field="category" value="c93d-a414-b1bc-7d2c"/>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d10-fcd7-2b63-fea7" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="747e-462d-8df9-6f6c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9d10-fcd7-2b63-fea7" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="747e-462d-8df9-6f6c" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="8a2f-0c79-1d66-2d70" name="Tri-Railgun" hidden="false" collective="false" import="true" targetId="616f-6227-1f5f-f5b4" type="selectionEntry">
@@ -3239,15 +3323,15 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                 <modifier type="add" field="category" value="ce6f-067d-9ad4-ddaa"/>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d7d-fcce-94ed-497c" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97cb-7181-8c65-b50d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6d7d-fcce-94ed-497c" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="97cb-7181-8c65-b50d" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="3ae9-bac4-4eba-8590" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="110e-749a-0199-27be" type="selectionEntry">
+        <entryLink id="3ae9-bac4-4eba-8590" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="9985-b088-fda6-36d4" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
@@ -3265,7 +3349,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9e3b-9638-41b7-c3a1" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="b0b6-041c-9baa-1ec7" name="Cryo Generator" hidden="false" collective="false" import="true" targetId="3cdc-eafd-c58f-ab7b" type="selectionEntry">
+        <entryLink id="b0b6-041c-9baa-1ec7" name="Cryo generator" hidden="false" collective="false" import="true" targetId="3cdc-eafd-c58f-ab7b" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eeb4-1a97-cd94-cb23" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6eb-4180-ee91-f343" type="max"/>
@@ -3285,27 +3369,15 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="7ed3-64f6-5da3-dc59" name="Khatanga" publicationId="e265-8c7f-a4b2-a48e" page="" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b955-9fa8-910e-3008" type="min"/>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7fd-9f13-6760-bb5b" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="2317-5f64-8c98-0139" name="Khatanga" publicationId="e265-8c7f-a4b2-a48e" page="4" hidden="false" targetId="a77e-c54e-51a1-4b00" type="profile"/>
-        <infoLink id="b832-534f-55a3-a974" name="Ablative Armour" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
+        <infoLink id="b832-534f-55a3-a974" name="Ablative Armour*" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
         <infoLink id="9d3d-2cf8-f372-0c8a" name="Hammer Sweep*" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
-        <infoLink id="63c1-8271-9121-8b8b" name="Quantity is a Quality" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ad4c-d50d-de1f-b975" type="rule"/>
+        <infoLink id="63c1-8271-9121-8b8b" name="Quantity is a Quality*" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ad4c-d50d-de1f-b975" type="rule"/>
         <infoLink id="4070-7f6d-3cb9-0c75" name="Black Wolf Mercenaries*" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -3476,11 +3548,8 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61dd-43e7-0306-0eb6" type="max"/>
               </constraints>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
-              </costs>
             </entryLink>
-            <entryLink id="466d-490e-f398-c8f3" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+            <entryLink id="466d-490e-f398-c8f3" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
               </modifiers>
@@ -3568,7 +3637,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
       <infoLinks>
         <infoLink id="7aa5-bbe6-29c8-1b3e" name="Caspian Overthruster" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="eff5-47db-113b-2340" type="rule">
           <modifiers>
-            <modifier type="append" field="name" value=" (6)"/>
+            <modifier type="append" field="name" value=" (8)"/>
           </modifiers>
         </infoLink>
         <infoLink id="6f95-1c5f-a84f-1053" name="Stoletov" hidden="false" targetId="af59-44c0-1a83-3057" type="profile"/>
@@ -3806,7 +3875,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0379-d8b9-3e09-c37e" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="6107-53b9-de04-0cb3" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+            <entryLink id="6107-53b9-de04-0cb3" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
               </modifiers>
@@ -4076,7 +4145,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2d0-0d27-cff6-05f9" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="084f-47a3-b3da-8513" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+            <entryLink id="084f-47a3-b3da-8513" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
               </modifiers>
@@ -4091,6 +4160,9 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="899c-f57d-ed75-ba41" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+              </costs>
             </entryLink>
             <entryLink id="e18b-a451-30b6-58da" name="Railgun" hidden="false" collective="false" import="true" targetId="1a9e-f3ae-adcd-63bf" type="selectionEntry">
               <modifiers>
@@ -4354,7 +4426,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c8b-602b-ba6f-afa1" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="55c6-b5f8-cd3f-37e1" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+            <entryLink id="55c6-b5f8-cd3f-37e1" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
               </modifiers>
@@ -5392,7 +5464,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup id="4270-019d-da4c-eafd" name="Second Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="3fb7-d2b5-9fb9-b0e6">
+        <selectionEntryGroup id="4270-019d-da4c-eafd" name="Second Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="d2c4-b1aa-dc0c-0034">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be51-dd6e-31fa-57f3" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f136-584f-469a-7d69" type="max"/>
@@ -5405,17 +5477,17 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ef3-0196-59f0-c628" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+              </costs>
             </entryLink>
-            <entryLink id="d2c4-b1aa-dc0c-0034" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+            <entryLink id="d2c4-b1aa-dc0c-0034" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94f3-8270-20f8-30d5" type="max"/>
               </constraints>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
-              </costs>
             </entryLink>
             <entryLink id="3fb7-d2b5-9fb9-b0e6" name="Seismic Mortar" hidden="false" collective="false" import="true" targetId="9aa7-e8fc-a053-777a" type="selectionEntry">
               <modifiers>
@@ -5449,7 +5521,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f0e1-d6f4-80b8-8755" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="8055-58d5-70fc-7ac5" name="Cryo Generator" hidden="false" collective="false" import="true" targetId="3cdc-eafd-c58f-ab7b" type="selectionEntry">
+        <entryLink id="8055-58d5-70fc-7ac5" name="Cryo generator" hidden="false" collective="false" import="true" targetId="1a28-0be4-37ed-6e32" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d04-7a65-c808-90cf" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4aa0-cae2-e40d-f955" type="max"/>
@@ -5511,7 +5583,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae3c-197e-fba8-38c5" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="70a2-3834-4fb0-eb64" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+            <entryLink id="70a2-3834-4fb0-eb64" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
               </modifiers>
@@ -5603,7 +5675,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="35.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f106-de7d-1dfd-01b2" name="Khyzhak" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="true" import="true" type="model">
+    <selectionEntry id="f106-de7d-1dfd-01b2" name="Khyzhak" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="remove" field="category" value="d7b3-10bd-20f0-4832">
           <conditions>
@@ -5668,18 +5740,6 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="7e7b-cc93-5aaf-b438" name="Akula" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="remove" field="category" value="d7b3-10bd-20f0-4832">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8a14-5ce1-5686-ad7e" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7aad-ae5d-d77e-db61" type="max"/>
@@ -5706,7 +5766,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="752e-1963-a0e7-7867" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="59f6-bfff-fad6-8e82" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+            <entryLink id="59f6-bfff-fad6-8e82" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
               </modifiers>
@@ -5815,7 +5875,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="09f2-257d-1447-efe8" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="fd43-60b3-885b-ed7a" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="fd43-60b3-885b-ed7a" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="4e9e-7862-58ad-15e6"/>
                   </modifiers>
@@ -5842,7 +5902,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9d46-87ba-8f02-c280" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="322d-3ca4-baab-38a1" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="322d-3ca4-baab-38a1" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="5347-4855-4421-ed77"/>
                   </modifiers>
@@ -6700,25 +6760,13 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="8138-f0dc-1e50-2ec3" name="Boyar" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="66b4-2ed2-d411-4d8c" type="min"/>
         <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3f63-cd1e-0439-4cbe" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="ad88-3dda-4a47-8985" name="Ablative Armour" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
-        <infoLink id="b1f7-3061-7feb-c35f" name="Shallow Draught" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
+        <infoLink id="b1f7-3061-7feb-c35f" name="Shallow Draught*" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
         <infoLink id="7649-af00-dbe1-552e" name="Boyar" hidden="false" targetId="7b8f-21e0-6562-5e3f" type="profile"/>
         <infoLink id="fd84-2ed3-acf2-cde2" name="Black Wolf Mercenaries*" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
       </infoLinks>
@@ -6741,7 +6789,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8c3a-a863-9fa6-0764" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="508b-2d45-8ffd-6f3a" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+            <entryLink id="508b-2d45-8ffd-6f3a" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
               </modifiers>
@@ -6938,7 +6986,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="da0e-9275-9bf9-072d" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="f363-33d1-e1ee-db87" name="Flak Broadside" hidden="false" collective="false" import="true" targetId="e1cb-8b16-bbae-8d3a" type="selectionEntry">
+        <entryLink id="f363-33d1-e1ee-db87" name="Flak Broadside" hidden="false" collective="false" import="true" targetId="fdaa-5fef-d02e-988a" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
@@ -6947,7 +6995,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8f6a-c030-5d50-bbe1" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="142d-9920-8420-2e1e" name="Furnace Cascade" hidden="false" collective="false" import="true" targetId="3339-38e3-3a29-5b9a" type="selectionEntry">
+        <entryLink id="142d-9920-8420-2e1e" name="Furnace Cascade" hidden="false" collective="true" import="true" targetId="3339-38e3-3a29-5b9a" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="5888-87ac-f851-165d"/>
           </modifiers>
@@ -6999,7 +7047,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
         <categoryLink id="dc41-b385-013e-d9c9" name="Skydrill" hidden="false" targetId="70f0-22a9-6d28-1e9e" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="6454-880a-10c2-3590" name="Flak Broadside" hidden="false" collective="false" import="true" targetId="e1cb-8b16-bbae-8d3a" type="selectionEntry">
+        <entryLink id="6454-880a-10c2-3590" name="Flak Broadside" hidden="false" collective="false" import="true" targetId="fdaa-5fef-d02e-988a" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
@@ -7008,7 +7056,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8bc0-3b5e-1969-b4c8" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="cba6-0f24-3e14-d7ee" name="Semyenov Assault Bore" hidden="false" collective="false" import="true" targetId="bcfa-bd4f-9953-d79e" type="selectionEntry">
+        <entryLink id="cba6-0f24-3e14-d7ee" name="Semyenov Assault Bore" hidden="false" collective="false" import="true" targetId="f690-40e8-b5dd-9944" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
           </modifiers>
@@ -7058,7 +7106,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6671-1d36-4cc3-9192" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="d7de-3358-84a1-93d6" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="d7de-3358-84a1-93d6" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
                     <modifier type="add" field="category" value="c93d-a414-b1bc-7d2c"/>
@@ -7108,13 +7156,16 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="73fb-df8e-4377-426d" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="588f-ea2e-b18c-7027" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="588f-ea2e-b18c-7027" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="ce6f-067d-9ad4-ddaa"/>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6aa2-be96-3c75-b615" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="2502-16f0-73c2-46a9" name="Seismic Mortar" hidden="false" collective="false" import="true" targetId="9aa7-e8fc-a053-777a" type="selectionEntry">
                   <modifiers>
@@ -7123,6 +7174,9 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4329-9f3e-c7fc-24c6" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="d785-2c46-a98c-dc85" name="Railgun" hidden="false" collective="false" import="true" targetId="1a9e-f3ae-adcd-63bf" type="selectionEntry">
                   <modifiers>
@@ -7205,7 +7259,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ff4e-10a0-cb54-240f" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="125a-cc05-c200-597c" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="125a-cc05-c200-597c" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="c93d-a414-b1bc-7d2c"/>
                   </modifiers>
@@ -7254,13 +7308,16 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f64e-802e-f0a2-d7c2" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="1cb5-dc46-3cd9-8237" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="1cb5-dc46-3cd9-8237" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="ce6f-067d-9ad4-ddaa"/>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="491b-01bc-db03-6bf3" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="eac2-262c-f247-8908" name="Seismic Mortar" hidden="false" collective="false" import="true" targetId="9aa7-e8fc-a053-777a" type="selectionEntry">
                   <modifiers>
@@ -7269,6 +7326,9 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ba38-a596-5e04-1c18" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="c42e-b7d7-608d-4b20" name="Railgun" hidden="false" collective="false" import="true" targetId="1a9e-f3ae-adcd-63bf" type="selectionEntry">
                   <modifiers>
@@ -7291,18 +7351,6 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="29da-77f8-b159-1fe9" name="Giyena" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2935-3204-524c-eacd" type="min"/>
         <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="744e-184d-dd24-5e7f" type="max"/>
@@ -7338,7 +7386,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2502-5de7-41df-da16" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="1619-7b8c-aa12-38eb" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="1619-7b8c-aa12-38eb" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="c93d-a414-b1bc-7d2c"/>
                   </modifiers>
@@ -7387,13 +7435,16 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e03f-376c-0bc1-941a" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="0877-5dd6-a4f6-ff61" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="0877-5dd6-a4f6-ff61" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="ce6f-067d-9ad4-ddaa"/>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f281-1de9-3362-f0ae" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="05e9-d726-1d63-0754" name="Seismic Mortar" hidden="false" collective="false" import="true" targetId="9aa7-e8fc-a053-777a" type="selectionEntry">
                   <modifiers>
@@ -7402,6 +7453,9 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cc7f-c4cd-c9b9-4a14" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="334f-15d2-5d7d-1ac1" name="Railgun" hidden="false" collective="false" import="true" targetId="1a9e-f3ae-adcd-63bf" type="selectionEntry">
                   <modifiers>
@@ -7440,18 +7494,6 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="a334-6cae-a141-6a37" name="Dragunov" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="add" field="category" value="79fe-c00f-c7c0-3c7a">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="remove" field="category" value="43a2-7e77-ff29-fb5c">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4698-7b5d-232d-4607" type="min"/>
         <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b6b-de20-dde7-6cb8" type="max"/>
@@ -7496,7 +7538,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="129f-e8fb-1a9f-2c05" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="6a52-6754-c864-9941" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="6a52-6754-c864-9941" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -7539,7 +7581,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b92c-ea5e-4e61-065c" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="7df1-8eb8-aafa-5c49" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="7df1-8eb8-aafa-5c49" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -7764,7 +7806,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                 <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10.0"/>
               </costs>
             </entryLink>
-            <entryLink id="945f-d007-f8b1-7649" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+            <entryLink id="945f-d007-f8b1-7649" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
               </modifiers>
@@ -7862,7 +7904,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0187-02e9-f15f-0089" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="b09c-2c8f-46bd-8c87" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="b09c-2c8f-46bd-8c87" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
                   </modifiers>
@@ -7889,7 +7931,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dffa-a548-8156-dd5b" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="0b58-6463-95da-20dc" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="0b58-6463-95da-20dc" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
                   </modifiers>
@@ -7993,7 +8035,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="104e-0318-1738-6a4e" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="104e-0318-1738-6a4e" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="0cd5-1e4e-c51e-c338"/>
                   </modifiers>
@@ -8039,7 +8081,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="9ac2-daf9-bce0-daa5" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="9ac2-daf9-bce0-daa5" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="5b70-4095-b55c-9745"/>
                   </modifiers>
@@ -8134,7 +8176,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c69c-271a-dce6-4d8d" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="6803-9f58-3c4f-c499" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+            <entryLink id="6803-9f58-3c4f-c499" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
               </modifiers>
@@ -8248,7 +8290,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="07e6-d798-35fb-0dea" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="e908-6c4d-ccf7-748c" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="e908-6c4d-ccf7-748c" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="0cd5-1e4e-c51e-c338"/>
                   </modifiers>
@@ -8288,7 +8330,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="25d3-ab09-1e89-d3d0" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="f373-121e-684e-efc3" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="f373-121e-684e-efc3" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="5b70-4095-b55c-9745"/>
                   </modifiers>
@@ -8319,7 +8361,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2b4b-d4f6-e7b1-2dc3" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="a3b4-0e8f-8f84-4068" name="Cryo Generator" hidden="false" collective="false" import="true" targetId="3cdc-eafd-c58f-ab7b" type="selectionEntry">
+        <entryLink id="a3b4-0e8f-8f84-4068" name="Cryo generator" hidden="false" collective="false" import="true" targetId="3cdc-eafd-c58f-ab7b" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bf0-b0b6-1d13-31b2" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="040c-1970-069e-6ae5" type="max"/>
@@ -8488,7 +8530,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4dd-3640-e387-98cd" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="b13f-05ab-edbb-bbeb" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="b13f-05ab-edbb-bbeb" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -8527,7 +8569,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94b6-ffb2-adc6-1bd2" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="242d-2d5c-d841-9c67" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="242d-2d5c-d841-9c67" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="4e9e-7862-58ad-15e6"/>
                   </modifiers>
@@ -8566,7 +8608,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a448-3934-2ef5-fbfc" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="7f60-77a7-4f13-d28f" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="7f60-77a7-4f13-d28f" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="5347-4855-4421-ed77"/>
                   </modifiers>
@@ -8694,58 +8736,6 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
         <categoryLink id="cd9e-a0d2-6b30-c6a6" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
         <categoryLink id="3f91-5231-7b30-c01a" name="Heavy Cryo Cruiser" hidden="false" targetId="ffdf-c6a6-39a5-2b8e" primary="false"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="e5e0-a405-c342-43b9" name="Main Weapon" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcc4-ac89-46a8-c07e" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06d1-079c-e546-3b15" type="max"/>
-          </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="d474-6a3a-621a-accf" name="Front" hidden="false" collective="false" import="true" defaultSelectionEntryId="b5d2-4cc6-7be8-5acd">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c73-262d-26d9-a07a" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b66-dce4-a7fc-5cef" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="b5d2-4cc6-7be8-5acd" name="Heavy Gun Battery" hidden="false" collective="false" import="true" targetId="90c9-59e3-935f-7a20" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="52af-a4c2-ced3-8b8e" name="Rear" hidden="false" collective="false" import="true" defaultSelectionEntryId="7281-095d-d13e-56f4">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3928-cb96-9375-062d" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29ca-c17e-4f64-181e" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="7281-095d-d13e-56f4" name="Heavy Gun Battery" hidden="false" collective="false" import="true" targetId="90c9-59e3-935f-7a20" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="a115-7504-4acd-0e36" name="Second Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="aaec-58da-b7fa-d53b">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95fe-ff55-4365-b864" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dcf-3d5a-b654-38ac" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="aaec-58da-b7fa-d53b" name="Gun Battery" hidden="false" collective="false" import="true" targetId="e32f-eb1d-5c03-b61c" type="selectionEntry">
-              <modifiers>
-                <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aae4-28ff-4410-43bd" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="c6bb-62b9-3533-9295" name="Broadside" hidden="false" collective="false" import="true" targetId="0600-8fa9-227d-91ba" type="selectionEntry">
           <constraints>
@@ -8753,7 +8743,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aee1-53c4-22c8-377f" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="8e3e-b40d-4760-2e79" name="Cryo Generator" hidden="false" collective="false" import="true" targetId="3cdc-eafd-c58f-ab7b" type="selectionEntry">
+        <entryLink id="8e3e-b40d-4760-2e79" name="Cryo generator" hidden="false" collective="false" import="true" targetId="1a28-0be4-37ed-6e32" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d176-07e3-2b0e-1974" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c2f-2d10-cf4c-b863" type="max"/>
@@ -8766,6 +8756,33 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
               </constraints>
             </entryLink>
           </entryLinks>
+        </entryLink>
+        <entryLink id="d26c-2d9c-31e5-4d12" name="Gun Battery" hidden="false" collective="false" import="true" targetId="bc09-4e9a-a2ad-3d68" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3d47-51ef-06e8-7041" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28fe-e827-c376-f487" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7a8a-1c93-28dd-3f37" name="Heavy Gun Battery" hidden="false" collective="false" import="true" targetId="e8d5-6319-67ea-821d" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e7ed-3208-42b1-3892" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1a45-e630-a3e2-4444" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4fd3-2a9c-e1ef-4d2b" name="Heavy Gun Battery" hidden="false" collective="false" import="true" targetId="e8d5-6319-67ea-821d" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c0b6-0f72-e4f5-78cb" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="22d0-c88b-53f0-4358" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -9343,7 +9360,7 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="e75c-db75-497c-b9ac" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="110e-749a-0199-27be" type="selectionEntry">
+        <entryLink id="e75c-db75-497c-b9ac" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="9985-b088-fda6-36d4" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
@@ -9394,9 +9411,14 @@ Review 3.03.00: minor bug fix after update to 3.03</readme>
     <rule id="b195-faa8-ae64-9494" name="Black Wolf Mercenaries*" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="d7b3-10bd-20f0-4832" type="instanceOf"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="d7b3-10bd-20f0-4832" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="43a2-7e77-ff29-fb5c" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <description>Models in this Unit may re-roll Blank dice results in any Action Dice Pool. This rule only applies during each Round where the Force this Unit is part of had more Victory Points than their opponents at the most recent Check for Victory Step.</description>

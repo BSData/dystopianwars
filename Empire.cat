@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="adb2-8c90-0724-a27d" name="Empire v3.03" revision="7" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <comment>
-</comment>
+<catalogue id="adb2-8c90-0724-a27d" name="Empire v3.03" revision="9" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <comment>Last Empire ORBAT 3.03 (published 07/02/2023)</comment>
   <readme>Review 1.02.a0: Initial release
 Review 1.04.a0: add new unit and new profile from ORBAT 1.03, fixed Battlefleet bonus managment
 Review 1.04.a1: Tienlong correction
 Review 3.02.a0: new orbat version
 Review 3.03.00: 3.03 Orbat update
 Review 3.03.01: correction after the 3.03 Orbat update
-Review 3.03.02: correction after the 3.03 Orbat update</readme>
+Review 3.03.02: correction after the 3.03 Orbat update
+Review 3.03.03: correction after the 3.03 Orbat update (date 2023-02-07)
+Review 3.03.04: correction after the 3.03 Orbat update (date 2023-02-07)</readme>
   <categoryEntries>
     <categoryEntry id="ce97-a91c-c2c9-c566" name="Empire" publicationId="7b2b-0f56-3962-5ec1" hidden="false"/>
     <categoryEntry id="0ad5-d3e2-dc61-f333" name="Chinese" publicationId="7b2b-0f56-3962-5ec1" hidden="false"/>
@@ -2615,7 +2616,7 @@ Review 3.03.02: correction after the 3.03 Orbat update</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="2a8a-a49c-e8c0-ba2f" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="110e-749a-0199-27be" type="selectionEntry">
+        <entryLink id="2a8a-a49c-e8c0-ba2f" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="9985-b088-fda6-36d4" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
@@ -2888,7 +2889,7 @@ Review 3.03.02: correction after the 3.03 Orbat update</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d536-0b5f-a8b6-d94a" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="b3b4-ab86-3c8d-57cb" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="110e-749a-0199-27be" type="selectionEntry">
+        <entryLink id="b3b4-ab86-3c8d-57cb" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="9985-b088-fda6-36d4" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
@@ -3025,7 +3026,7 @@ Review 3.03.02: correction after the 3.03 Orbat update</readme>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="250.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="291.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c11e-e5f5-550c-3ab2" name="Kongo" publicationId="7b2b-0f56-3962-5ec1" page="" hidden="false" collective="false" import="true" type="model">
@@ -3212,7 +3213,7 @@ Review 3.03.02: correction after the 3.03 Orbat update</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="38af-7f9a-0bb3-7256" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="6079-9d90-2aaf-dd73" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="110e-749a-0199-27be" type="selectionEntry">
+        <entryLink id="6079-9d90-2aaf-dd73" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="9985-b088-fda6-36d4" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
@@ -3436,20 +3437,37 @@ Review 3.03.02: correction after the 3.03 Orbat update</readme>
             <selectionEntryGroup id="a620-063a-6344-125b" name="First Front" hidden="false" collective="false" import="true" defaultSelectionEntryId="a097-5c38-2bd5-a512">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9aba-1d50-76ef-2037" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b7f-d204-5669-ff75" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9b7f-d204-5669-ff75" type="max"/>
               </constraints>
               <entryLinks>
                 <entryLink id="a097-5c38-2bd5-a512" name="Alchemical Rockets" hidden="false" collective="false" import="true" targetId="50da-943e-5da0-6330" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8692-bebb-560e-f82f" type="max"/>
+                  </constraints>
                 </entryLink>
-                <entryLink id="1c72-cb55-b765-aeb0" name="Huoqiang" hidden="false" collective="false" import="true" targetId="090f-dda1-9088-84cd" type="selectionEntry">
+                <entryLink id="ad0b-a8c7-5013-4872" name="Huoqiang" hidden="false" collective="false" import="true" targetId="e3e7-988d-2dc9-694e" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ca89-b4f2-deb9-97ce" type="max"/>
+                  </constraints>
                   <costs>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="c3ca-ad00-e56e-b51b" name="Corrosive Mortar" hidden="false" collective="false" import="true" targetId="0a45-6502-04f1-a09d" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8945-41e0-c635-7c60" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -3464,13 +3482,19 @@ Review 3.03.02: correction after the 3.03 Orbat update</readme>
                   <modifiers>
                     <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1392-f758-9392-1dd2" type="max"/>
+                  </constraints>
                 </entryLink>
-                <entryLink id="bbc0-22a2-dfd8-d172" name="Huoqiang" hidden="false" collective="false" import="true" targetId="090f-dda1-9088-84cd" type="selectionEntry">
+                <entryLink id="86e8-9e78-4a43-44cf" name="Corrosive Mortar" hidden="false" collective="false" import="true" targetId="0a45-6502-04f1-a09d" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7385-4896-1de4-e4ea" type="max"/>
+                  </constraints>
                   <costs>
-                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -3655,7 +3679,7 @@ Review 3.03.02: correction after the 3.03 Orbat update</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="2afe-8d89-3d75-c78a" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="110e-749a-0199-27be" type="selectionEntry">
+        <entryLink id="2afe-8d89-3d75-c78a" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="9985-b088-fda6-36d4" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
@@ -3673,7 +3697,7 @@ Review 3.03.02: correction after the 3.03 Orbat update</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3ee6-67c9-d14c-db4e" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="c989-a599-fae9-2942" name="Gun Battery" hidden="false" collective="false" import="true" targetId="e32f-eb1d-5c03-b61c" type="selectionEntry">
+        <entryLink id="c989-a599-fae9-2942" name="Gun Battery" hidden="false" collective="false" import="true" targetId="bc09-4e9a-a2ad-3d68" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
           </modifiers>
@@ -3825,7 +3849,7 @@ Review 3.03.02: correction after the 3.03 Orbat update</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9df8-0d30-68f1-df4c" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="f45e-ed3d-3d74-d722" name="Gun Battery" hidden="false" collective="false" import="true" targetId="e32f-eb1d-5c03-b61c" type="selectionEntry">
+        <entryLink id="f45e-ed3d-3d74-d722" name="Gun Battery" hidden="false" collective="false" import="true" targetId="bc09-4e9a-a2ad-3d68" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
           </modifiers>
@@ -4310,7 +4334,7 @@ Review 3.03.02: correction after the 3.03 Orbat update</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="e4b4-2351-4461-5309" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="110e-749a-0199-27be" type="selectionEntry">
+        <entryLink id="e4b4-2351-4461-5309" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="9985-b088-fda6-36d4" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
@@ -4349,7 +4373,7 @@ Review 3.03.02: correction after the 3.03 Orbat update</readme>
         <categoryLink id="b34e-051d-19cb-a4d1" name="Frigate" hidden="false" targetId="34e1-40d5-5011-e3c5" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="df8b-e0ae-5507-d73a" name="Gun Battery" hidden="false" collective="false" import="true" targetId="e32f-eb1d-5c03-b61c" type="selectionEntry">
+        <entryLink id="df8b-e0ae-5507-d73a" name="Gun Battery" hidden="false" collective="false" import="true" targetId="bc09-4e9a-a2ad-3d68" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
           </modifiers>
@@ -5247,7 +5271,7 @@ Review 3.03.02: correction after the 3.03 Orbat update</readme>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="feae-166d-60ad-09ff" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="6791-7bcc-619c-2e67" name="Heavy Huoqiang" hidden="false" collective="false" import="true" targetId="f3cc-ecc2-59d4-aec6" type="selectionEntry">
+            <entryLink id="6791-7bcc-619c-2e67" name="Heavy Huoqiang" hidden="false" collective="false" import="true" targetId="58b1-5a36-1519-e457" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
               </modifiers>
@@ -5273,7 +5297,7 @@ Review 3.03.02: correction after the 3.03 Orbat update</readme>
                 <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
               </costs>
             </entryLink>
-            <entryLink id="083e-2ad4-b6be-b9e3" name="Scything Blades" hidden="false" collective="false" import="true" targetId="7d6e-51f6-d5e5-200b" type="selectionEntry">
+            <entryLink id="083e-2ad4-b6be-b9e3" name="Scything Blades" hidden="false" collective="false" import="true" targetId="3b8a-f050-dfb4-04fe" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
               </modifiers>
@@ -6340,7 +6364,7 @@ Review 3.03.02: correction after the 3.03 Orbat update</readme>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b07f-138d-b1e5-a9ac" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="f9a2-437a-8f82-1892" name="Broadside" hidden="false" collective="false" import="true" targetId="0600-8fa9-227d-91ba" type="selectionEntry">
+                <entryLink id="f9a2-437a-8f82-1892" name="Broadside" hidden="false" collective="false" import="true" targetId="6e1e-9da0-953c-71a1" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="afe0-b5a3-3eac-004f"/>
                   </modifiers>
@@ -6348,7 +6372,7 @@ Review 3.03.02: correction after the 3.03 Orbat update</readme>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b8f9-fa1f-3999-4f87" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="9fc5-14a2-9b95-6644" name="Heavy Huoqiang" hidden="false" collective="false" import="true" targetId="f3cc-ecc2-59d4-aec6" type="selectionEntry">
+                <entryLink id="9fc5-14a2-9b95-6644" name="Heavy Huoqiang" hidden="false" collective="false" import="true" targetId="58b1-5a36-1519-e457" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="afe0-b5a3-3eac-004f"/>
                   </modifiers>
@@ -6367,7 +6391,7 @@ Review 3.03.02: correction after the 3.03 Orbat update</readme>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a8f2-f382-8dec-c413" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="e460-2e3e-a9de-31a1" name="Broadside" hidden="false" collective="false" import="true" targetId="0600-8fa9-227d-91ba" type="selectionEntry">
+                <entryLink id="e460-2e3e-a9de-31a1" name="Broadside" hidden="false" collective="false" import="true" targetId="6e1e-9da0-953c-71a1" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
                   </modifiers>
@@ -6375,7 +6399,7 @@ Review 3.03.02: correction after the 3.03 Orbat update</readme>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="99d7-a3e2-0bd1-be48" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="e702-3d69-b8eb-5437" name="Heavy Huoqiang" hidden="false" collective="false" import="true" targetId="f3cc-ecc2-59d4-aec6" type="selectionEntry">
+                <entryLink id="e702-3d69-b8eb-5437" name="Heavy Huoqiang" hidden="false" collective="false" import="true" targetId="58b1-5a36-1519-e457" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
                   </modifiers>
@@ -6646,7 +6670,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1b52-681d-1044-3676" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="3f12-355f-ff56-0f32" name="Broadside" hidden="false" collective="false" import="true" targetId="0600-8fa9-227d-91ba" type="selectionEntry">
+                <entryLink id="3f12-355f-ff56-0f32" name="Broadside" hidden="false" collective="false" import="true" targetId="6e1e-9da0-953c-71a1" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="afe0-b5a3-3eac-004f"/>
                   </modifiers>
@@ -6654,7 +6678,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a1d9-45c7-20db-7031" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="4e2e-a7dc-2217-651b" name="Heavy Huoqiang" hidden="false" collective="false" import="true" targetId="f3cc-ecc2-59d4-aec6" type="selectionEntry">
+                <entryLink id="4e2e-a7dc-2217-651b" name="Heavy Huoqiang" hidden="false" collective="false" import="true" targetId="58b1-5a36-1519-e457" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="afe0-b5a3-3eac-004f"/>
                   </modifiers>
@@ -6673,7 +6697,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="abec-3736-fe6e-208b" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="3cf5-4647-6c5a-9515" name="Broadside" hidden="false" collective="false" import="true" targetId="0600-8fa9-227d-91ba" type="selectionEntry">
+                <entryLink id="3cf5-4647-6c5a-9515" name="Broadside" hidden="false" collective="false" import="true" targetId="6e1e-9da0-953c-71a1" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
                   </modifiers>
@@ -6681,7 +6705,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d05c-f75d-e68f-4feb" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="ccd7-f5ae-dee5-c985" name="Heavy Huoqiang" hidden="false" collective="false" import="true" targetId="f3cc-ecc2-59d4-aec6" type="selectionEntry">
+                <entryLink id="ccd7-f5ae-dee5-c985" name="Heavy Huoqiang" hidden="false" collective="false" import="true" targetId="58b1-5a36-1519-e457" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
                   </modifiers>
@@ -6698,7 +6722,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="343e-cd4f-7be1-93a9" name="Japanese" hidden="false" collective="true" import="true" targetId="7cc0-2b68-0e15-724f" type="selectionEntry">
+        <entryLink id="343e-cd4f-7be1-93a9" name="Japanese" hidden="false" collective="false" import="true" targetId="7cc0-2b68-0e15-724f" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="a39b-266a-750d-52b4" value="1.0">
               <conditionGroups>
@@ -6781,7 +6805,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9936-ed32-21c6-6ef9" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="f460-86b7-f899-cc0f" name="Heavy Alchemical Rockets" hidden="false" collective="true" import="true" targetId="3d0e-d034-a0b1-f724" type="selectionEntry">
+        <entryLink id="f460-86b7-f899-cc0f" name="Heavy Alchemical Rockets" hidden="false" collective="false" import="true" targetId="3d0e-d034-a0b1-f724" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
           </modifiers>
@@ -6908,7 +6932,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <categoryLink id="a352-24cc-20f7-5be8" name="Submersible Attack Ship" hidden="false" targetId="93cc-d49b-5565-a569" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="ac80-87d0-6447-f7b2" name="Torpedo Salvo " hidden="false" collective="false" import="true" targetId="8ef1-9bd8-9674-29cd" type="selectionEntry">
+        <entryLink id="ac80-87d0-6447-f7b2" name="Heavy Torpedo Salvo " hidden="false" collective="false" import="true" targetId="18e7-2755-41be-00c0" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
           </modifiers>
@@ -6919,7 +6943,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="115.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="105.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="133b-27b6-a2a9-b81e" name="Kansai" hidden="false" collective="false" import="true" type="model">
@@ -7092,7 +7116,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8dd-42fb-4b11-229e" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="e946-5428-937f-5914" name="Aerial Heavy Torpedo Salvo" hidden="false" collective="false" import="true" targetId="14d9-7c9f-ea35-14af" type="selectionEntry">
+        <entryLink id="e946-5428-937f-5914" name="Light Torpedo Salvo " hidden="false" collective="false" import="true" targetId="52b3-c089-982f-d135" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
           </modifiers>
@@ -7342,7 +7366,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="55.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="57.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b273-f6c7-55ac-fb10" name="Magwayen" publicationId="7b2b-0f56-3962-5ec1" hidden="false" collective="false" import="true" type="model">
@@ -7450,7 +7474,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="65.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="68.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4cb0-3f29-745d-7df1" name="Malandok" publicationId="7b2b-0f56-3962-5ec1" hidden="false" collective="false" import="true" type="model">
@@ -7940,7 +7964,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1099-bcdf-47c9-021b" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="050b-5010-453e-6ad6" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="110e-749a-0199-27be" type="selectionEntry">
+        <entryLink id="050b-5010-453e-6ad6" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="9985-b088-fda6-36d4" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
@@ -8441,7 +8465,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             </entryLink>
           </entryLinks>
         </entryLink>
-        <entryLink id="43f6-3ef0-a972-a10f" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="110e-749a-0199-27be" type="selectionEntry">
+        <entryLink id="43f6-3ef0-a972-a10f" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="9985-b088-fda6-36d4" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>

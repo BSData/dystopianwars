@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="aab7-88e9-70f7-d7f1" name="Alliance v3.03" revision="8" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="aab7-88e9-70f7-d7f1" name="Alliance v3.03" revision="13" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <comment>Last Alliance ORBAT 3.03 (published 05/02/2023)</comment>
   <readme>Datafile history:
 0.03.00: Initial publication
 0.04.00: updated to the the ORBAT v0.04
@@ -8,7 +9,12 @@
 3.01.00: updated to the the ORBAT v3.01
 3.03.00: updated to the the ORBAT v3.03
 3.03.01: correction after the updated to the ORBAT v3.03
-3.03.02: minor adjustament after the ORBAT v3.03 update</readme>
+3.03.02: minor adjustament after the ORBAT v3.03 update
+3.03.03: correction after ORBAT v3.03 (date 2023-02-05)
+3.03.04: correction of Italian Ship for my fleet (ORBAT v3.03 released the 2023-02-05)
+3.03.05: correction of French Ship asked in discord (ORBAT v3.03 released the 2023-02-05)
+3.03.06: correction of Columbia asked in discord (ORBAT v3.03 released the 2023-02-05)
+3.03.07: correction of Spatha asked in discord (ORBAT v3.03 released the 2023-02-05)</readme>
   <categoryEntries>
     <categoryEntry id="534c-9506-e470-8b7c" name="Alliance" publicationId="129d-da97-caec-1ddd" hidden="false"/>
     <categoryEntry id="9aab-6794-6d2b-c1a8" name="French" publicationId="129d-da97-caec-1ddd" hidden="false"/>
@@ -88,7 +94,7 @@
         <categoryLink id="911e-6117-280c-306e" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f18-3480-29fa-84f5" type="min"/>
-            <constraint field="selections" scope="force" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae22-bd25-33f9-11d8" type="max"/>
+            <constraint field="selections" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae22-bd25-33f9-11d8" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="2393-a59f-3da8-be48" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="false">
@@ -123,8 +129,7 @@
         </categoryLink>
         <categoryLink id="28a0-f157-6e3f-18a4" name="Chevalier Class" hidden="false" targetId="0177-7075-63bf-8514" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bd5-62d3-784b-3c2d" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a774-7488-b5bd-3532" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bd5-62d3-784b-3c2d" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="27c4-8495-fdcb-74ff" name="Ecuyere Class" hidden="false" targetId="b340-0d07-c45f-d5a4" primary="false">
@@ -224,7 +229,7 @@
         </categoryLink>
         <categoryLink id="4c0d-1936-40e4-c196" name="Chasseur Class" hidden="false" targetId="d1f3-f1e2-00b8-ccaf" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16e2-4c18-10b0-a2b4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16e2-4c18-10b0-a2b4" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="8074-a27d-927d-cfef" name="Dieppe Class" hidden="false" targetId="ff65-4772-f6e5-4704" primary="false">
@@ -1898,16 +1903,6 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aaa0-551a-1cbe-e5a1" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ad0-5ffc-da79-2fd0" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="73d0-8714-f3fe-bf31" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
@@ -1929,14 +1924,6 @@
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ad0-5ffc-da79-2fd0" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aaa0-551a-1cbe-e5a1" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4e7-881b-52b8-fdc7" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="62d7-3b23-3e74-2a0d" type="instanceOf"/>
               </conditions>
@@ -2081,7 +2068,7 @@
       <categoryLinks>
         <categoryLink id="f5eb-f5a8-c0dd-3514" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
         <categoryLink id="6a30-67d0-2c18-dade" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-        <categoryLink id="d586-579f-ce3f-5403" name="Spatha Class" hidden="false" targetId="7b68-75ed-db95-3660" primary="false"/>
+        <categoryLink id="def4-2bef-95e2-5212" name="Gladius Class" hidden="false" targetId="840e-9d58-ebd8-45d6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="3f5e-98a5-51de-f25a" name="Gladius" hidden="false" collective="false" import="true" targetId="110b-41de-6052-023e" type="selectionEntry"/>
@@ -2114,9 +2101,9 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="5e3f-fe4a-5980-c812" name="Sagitta Class" hidden="false" targetId="250b-a319-2fc4-f4b9" primary="false"/>
-        <categoryLink id="e98c-29f3-fc74-cf95" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
         <categoryLink id="b7b7-24be-8c62-cb4b" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="730f-9fdc-3711-49ca" name="SUSA" hidden="false" targetId="fca3-00a8-9f39-e015" primary="false"/>
+        <categoryLink id="3975-6987-379c-dc68" name="Saratoga Class" hidden="false" targetId="32a1-dcb7-f9c7-75c1" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="2d13-9b13-c8c1-2de9" name="Attached Unit" hidden="false" collective="false" import="true">
@@ -2177,9 +2164,9 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="f770-3ffe-1f1b-7128" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
         <categoryLink id="0518-eeb1-f8ec-9e14" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="7641-6b46-9b06-8579" name="Gettysburg Class" hidden="false" targetId="7f4d-c84f-ea5a-219b" primary="false"/>
+        <categoryLink id="f9fa-f962-e63c-d059" name="SUSA" hidden="false" targetId="fca3-00a8-9f39-e015" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="1391-d9c3-2710-dc83" name="Attached Unit" hidden="false" collective="false" import="true">
@@ -2268,7 +2255,7 @@
       <categoryLinks>
         <categoryLink id="1579-0613-7211-9077" name="New CategoryLink" hidden="false" targetId="022b-08af-c874-e3f1" primary="true"/>
         <categoryLink id="aa2e-6fde-0a91-9bd3" name="Cordova Class" hidden="false" targetId="bf9a-2382-3bbb-8a00" primary="false"/>
-        <categoryLink id="ef06-3aa8-0062-6967" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="false"/>
+        <categoryLink id="c381-7d58-8297-0b44" name="Spanish" hidden="false" targetId="5a93-5021-42f1-6d6e" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="0ea2-e7fd-c400-de67" name="Cordoba" hidden="false" collective="false" import="true" targetId="8838-62f2-c3db-f726" type="selectionEntry"/>
@@ -2318,7 +2305,7 @@
       <categoryLinks>
         <categoryLink id="9f0e-a874-64fd-ca4a" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="true"/>
         <categoryLink id="1a54-001e-179b-138c" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="858f-c094-2915-9dec" name="Levant Support Carrier" hidden="false" targetId="1a02-dc75-7bf6-f0f5" primary="false"/>
+        <categoryLink id="040d-c895-59d0-fe27" name="Alma Class" hidden="false" targetId="cbb8-d297-67c9-3022" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="9da0-94bd-946a-b04a" name="Alma" hidden="false" collective="false" import="true" targetId="bb39-0f5e-fb68-48a1" type="selectionEntry"/>
@@ -3883,48 +3870,6 @@
         <categoryLink id="12b7-3bdc-74ea-9553" name="Cruiser" hidden="false" targetId="c59d-c602-bfb0-1b11" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="6347-232b-2ca7-4f1b" name="Secondary Weapon" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9824-61da-0371-82e7" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0303-0941-d687-f959" type="max"/>
-          </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="b35d-9ff7-f2cd-e14a" name="Port" hidden="false" collective="false" import="true" defaultSelectionEntryId="de40-c6cd-a313-9b88">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="66b4-350b-787c-4a2d" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8bad-8245-8a7f-e811" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="de40-c6cd-a313-9b88" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="add" field="category" value="0cd5-1e4e-c51e-c338"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="001d-a6aa-1467-1e29" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="af22-29bc-d48d-75f7" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="400e-495f-3897-ef73" name="Starboard" hidden="false" collective="false" import="true" defaultSelectionEntryId="d0e9-633e-fc43-405e">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d5a1-46da-d2f3-870c" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="56b6-1600-e8c9-09b1" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="d0e9-633e-fc43-405e" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="add" field="category" value="5b70-4095-b55c-9745"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ea01-391f-138f-ff44" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d0bc-7469-f0e0-e596" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntryGroup>
         <selectionEntryGroup id="1661-d59a-2b92-b463" name="Main Weapon" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e79b-29bc-e93d-34f2" type="min"/>
@@ -4102,6 +4047,24 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fde5-6751-5d60-c75a" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a08-e4f5-5a10-204b" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5eca-5f24-9f43-8f93" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="5b70-4095-b55c-9745"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d4db-b15d-fc7a-193a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8f09-b4a1-ff65-a27c" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="817f-2355-d9a9-476e" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="0cd5-1e4e-c51e-c338"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="56ec-cf8a-ddbb-e0df" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2371-7b2f-1d4a-1428" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -4617,7 +4580,7 @@
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="529c-53c7-256b-c10d" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+                <entryLink id="529c-53c7-256b-c10d" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="0cd5-1e4e-c51e-c338"/>
                   </modifiers>
@@ -4655,7 +4618,7 @@
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="4945-95d2-1741-6278" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+                <entryLink id="4945-95d2-1741-6278" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="5b70-4095-b55c-9745"/>
                   </modifiers>
@@ -4692,55 +4655,6 @@
         <categoryLink id="3431-4c41-2e10-9d13" name="New CategoryLink" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="ea12-b060-33bd-2b41" name="Main Weapon" page="" hidden="false" collective="false" import="true" defaultSelectionEntryId="ee2d-bc09-fea4-b4b8">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c56-e530-5fa7-373e" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a01d-7e52-bce8-c6a8" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="ee2d-bc09-fea4-b4b8" name="Heavy Rocket Battery" hidden="false" collective="false" import="true" targetId="65b3-d9a8-e0a3-a028" type="selectionEntry">
-              <modifiers>
-                <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fd36-f742-5c4d-522d" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="e061-50a6-d52f-34f2" name="Heavy Gun Battery" hidden="false" collective="false" import="true" targetId="90c9-59e3-935f-7a20" type="selectionEntry">
-              <modifiers>
-                <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f0c-7151-430c-bf72" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="01e3-f3ef-dda2-62a5" name="Heat Lance" hidden="false" collective="false" import="true" targetId="1382-9592-479f-f3b3" type="selectionEntry">
-              <modifiers>
-                <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0efa-5050-46f0-7b99" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="f5dd-2b1e-cd80-a909" name="Heavy Magnetic Bombard" hidden="false" collective="false" import="true" targetId="0473-4529-d230-ee46" type="selectionEntry">
-              <modifiers>
-                <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="71f3-ed00-7477-7637" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup id="d58e-80da-f2e2-b800" name="Secondary Weapon" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa47-3bb6-a6f9-6235" type="min"/>
@@ -4772,7 +4686,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="211c-2345-d228-3659" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="f155-9e71-45c3-b150" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+                <entryLink id="f155-9e71-45c3-b150" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -4807,7 +4721,7 @@
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="5d52-1b53-0a0e-b050" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+                <entryLink id="5d52-1b53-0a0e-b050" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="0cd5-1e4e-c51e-c338"/>
                   </modifiers>
@@ -4842,7 +4756,7 @@
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="9eab-9b15-7cab-1d98" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+                <entryLink id="9eab-9b15-7cab-1d98" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="5b70-4095-b55c-9745"/>
                   </modifiers>
@@ -4854,7 +4768,139 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
+        <selectionEntryGroup id="c1b6-7ee3-b777-ba19" name="Main Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77f8-9699-7f9f-929b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f01-23f2-c26c-bc24" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="0b7f-722a-8b89-7299" name="Front First" hidden="false" collective="false" import="true" defaultSelectionEntryId="2264-50cc-952d-dd31">
+              <modifiers>
+                <modifier type="set" field="d6d9-af50-ee1b-540a" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25b9-7f26-cbd9-e68f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6d9-af50-ee1b-540a" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d838-e897-fad7-2c3b" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="ef47-96e2-15aa-b1d4" name="Heavy Gun Battery" hidden="false" collective="false" import="true" targetId="90c9-59e3-935f-7a20" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="e01f-fb73-a8b5-2fe9" name="Heavy Magnetic Bombard" hidden="false" collective="false" import="true" targetId="0473-4529-d230-ee46" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="2264-50cc-952d-dd31" name="Heavy Rocket Battery" hidden="false" collective="false" import="true" targetId="65b3-d9a8-e0a3-a028" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9170-c243-3a9e-25e6" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="e0d2-6028-63fd-ab76" name="Heat Lance" hidden="false" collective="false" import="true" targetId="1382-9592-479f-f3b3" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="4b8d-7e62-2e5a-06b2" name="Generator" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2d97-6af2-00fb-13b2" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="f2a8-787a-c8a9-7319" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink id="6331-71a5-d1d6-0860" name="Atomic generator" hidden="false" collective="false" import="true" targetId="eef0-442d-aa6f-b314" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fd29-9c8c-35e2-3113" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="d9fc-242d-d8ba-b369" name="Fury generator" hidden="false" collective="false" import="true" targetId="069a-8c90-088f-816d" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="11fe-a0e8-53fd-7bc4" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="882a-5b1c-ee10-0e74" name="Magnetic generator" hidden="false" collective="false" import="true" targetId="77af-dd4b-51e7-c620" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="434b-0384-4bd8-864c" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="abf4-ef3f-fe24-56ba" name="Shroud generator" hidden="false" collective="false" import="true" targetId="1543-05e3-58ac-6e6d" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2d2a-5095-55af-2a21" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="50c8-8515-24e3-c8db" name="Shield generator" hidden="false" collective="false" import="true" targetId="0e7f-6ae4-f9b6-0ea1" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c469-f462-c312-3b2a" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="0885-64b7-e403-6671" name="Solex generator" hidden="false" collective="false" import="true" targetId="e948-b887-f83d-e0a3" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6d82-51a3-aecf-64e5" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="8227-2230-1a42-444e" name="Repulsion field generator" hidden="false" collective="false" import="true" targetId="bf96-7810-7d69-a386" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0836-f4f8-8198-c537" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="dabd-2509-51dc-bd27" name="Rolling Broadside" hidden="false" collective="false" import="true" targetId="4a24-b555-4fec-a327" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a18-8cdc-5daa-0a64" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6fe-e82f-c4a7-f7dd" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="127.0"/>
       </costs>
@@ -4963,7 +5009,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8872-b300-1bcb-b55e" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="b0f1-6745-e43d-f918" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+                <entryLink id="b0f1-6745-e43d-f918" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -4998,7 +5044,7 @@
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="7026-b60c-7207-27d0" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+                <entryLink id="7026-b60c-7207-27d0" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="0cd5-1e4e-c51e-c338"/>
                   </modifiers>
@@ -5033,7 +5079,7 @@
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="438a-7bb9-4871-c57d" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+                <entryLink id="438a-7bb9-4871-c57d" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="5b70-4095-b55c-9745"/>
                   </modifiers>
@@ -5413,44 +5459,10 @@
         </selectionEntryGroup>
         <selectionEntryGroup id="6857-5d19-86c7-ffe4" name="Secondary Weapon" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0b9-277f-8c54-25fc" type="min"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bfc-5ed4-2b49-f58d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0b9-277f-8c54-25fc" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bfc-5ed4-2b49-f58d" type="max"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup id="65c3-8457-31cb-9320" name="Port" hidden="false" collective="false" import="true" defaultSelectionEntryId="1d4b-fb82-a741-6f4f">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="acf9-070a-b9e8-6d58" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="afb9-13e9-27b4-9781" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="1d4b-fb82-a741-6f4f" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="add" field="category" value="0cd5-1e4e-c51e-c338"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="acb2-d8d9-a476-708c" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac43-3ba7-9d07-dbac" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="599d-0775-aaba-9a4c" name="Starboard" hidden="false" collective="false" import="true" defaultSelectionEntryId="2899-1098-b7c5-f860">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6019-9c3d-5463-4437" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="43e6-444b-1486-9186" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="2899-1098-b7c5-f860" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="add" field="category" value="5b70-4095-b55c-9745"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d858-f856-4150-d7e7" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="442d-a53c-92cf-e305" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
             <selectionEntryGroup id="fbaf-e263-eaec-02f2" name="Rear" hidden="false" collective="false" import="true" defaultSelectionEntryId="4931-27f0-83ab-7ea0">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0b0a-3038-8d5c-b548" type="min"/>
@@ -5476,7 +5488,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6534-a0b3-f1e7-ce55" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="cf02-d9c5-52d6-c01c" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+                <entryLink id="cf02-d9c5-52d6-c01c" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
                   </modifiers>
@@ -5489,8 +5501,28 @@
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="73ba-9eea-e1e8-aac4" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="5b70-4095-b55c-9745"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e45e-3112-c514-f2be" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="51fc-9776-bc22-7b39" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="14c3-68ff-7826-9701" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="0cd5-1e4e-c51e-c338"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5305-37d9-bf36-5c38" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e0ff-542c-aacc-5d2c" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="125.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="130.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="62ee-fc74-9ba8-67dd" name="Loire" publicationId="129d-da97-caec-1ddd" page="" hidden="false" collective="false" import="true" type="model">
@@ -5655,48 +5687,40 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup id="cce7-6430-0c7d-79cb" name="Secondary Weapon" hidden="false" collective="false" import="true">
-          <selectionEntryGroups>
-            <selectionEntryGroup id="7155-41e8-2622-7a87" name="Port" hidden="false" collective="false" import="true" defaultSelectionEntryId="21af-dcae-999d-6e62">
+        <selectionEntryGroup id="a127-a33c-e290-7250" name="Secondary weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="11f7-3d00-3501-ff76" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="39e3-8760-9cfa-2986" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="fd44-f365-4a8d-85ff" name="Heat Lancette" hidden="false" collective="false" import="true" targetId="4688-bbd1-6ac5-f438" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3193-3c19-61ef-a94a" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c11-e10d-dde9-3993" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9ee-bc63-8a23-566e" type="max"/>
               </constraints>
-              <entryLinks>
-                <entryLink id="21af-dcae-999d-6e62" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="add" field="category" value="0cd5-1e4e-c51e-c338"/>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="3f69-8964-1491-8fdd" name="Starboard" hidden="false" collective="false" import="true" defaultSelectionEntryId="91f3-469b-d251-e07f">
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="5ba0-91f5-fc8c-9f5a" name="Gun Battery" hidden="false" collective="false" import="true" targetId="e32f-eb1d-5c03-b61c" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbec-d14a-fe6c-482c" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c74-592d-0c85-0db7" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa59-228d-4b80-c2dc" type="max"/>
               </constraints>
-              <entryLinks>
-                <entryLink id="91f3-469b-d251-e07f" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="add" field="category" value="5b70-4095-b55c-9745"/>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="a9b9-3af7-13a5-9bf8" name="Rear" hidden="false" collective="false" import="true" defaultSelectionEntryId="a562-1f2d-5f10-b958">
+            </entryLink>
+            <entryLink id="4ac9-f6e7-d768-213d" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e353-f268-0b58-a3d9" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3498-65fa-8cff-81cb" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ffbe-ea29-a5a0-b269" type="max"/>
               </constraints>
-              <entryLinks>
-                <entryLink id="a562-1f2d-5f10-b958" name="Gun Battery" hidden="false" collective="false" import="true" targetId="bc09-4e9a-a2ad-3d68" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -5707,6 +5731,24 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94e9-825e-7e4b-a613" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acfa-c64d-a7e6-6b2e" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a0ba-87c5-788a-ebcc" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="5b70-4095-b55c-9745"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1534-c277-4c14-93c1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f1d9-5048-658b-2c68" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8ecf-1f97-610d-aa34" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="0cd5-1e4e-c51e-c338"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="50d0-0077-c164-7227" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f2fe-5c4a-7060-54e4" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -5755,36 +5797,6 @@
         <categoryLink id="6af1-a044-410d-1d8e" name="Littoral Monitor" hidden="false" targetId="d816-d294-2db9-b299" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="5462-3a54-9233-38cf" name="Secondary Weapon" hidden="false" collective="false" import="true">
-          <selectionEntryGroups>
-            <selectionEntryGroup id="7419-3cb3-6ad8-c573" name="Port" hidden="false" collective="false" import="true" defaultSelectionEntryId="dcb9-64e0-3467-2cff">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3f2-b874-1d7c-d053" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebc1-3458-0b19-f4bf" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="dcb9-64e0-3467-2cff" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="add" field="category" value="0cd5-1e4e-c51e-c338"/>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="ed4a-a982-fd08-79f0" name="Starboard" hidden="false" collective="false" import="true" defaultSelectionEntryId="f3a0-09ec-25b6-6046">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e73-c9dc-34bb-fbc2" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5e7-eeaf-4337-124e" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="f3a0-09ec-25b6-6046" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="add" field="category" value="5b70-4095-b55c-9745"/>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntryGroup>
         <selectionEntryGroup id="01d2-6da7-9a3d-ef6f" name="Main Weapon" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2349-7d07-0495-296f" type="min"/>
@@ -5917,6 +5929,24 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f768-c414-b4e7-46f6" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="1341-a3d0-c405-e0c1" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="5b70-4095-b55c-9745"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1df8-4dc4-75c2-b937" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b137-ed18-e9f4-566d" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1c89-31a3-7b76-ac99" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="0cd5-1e4e-c51e-c338"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a5bb-c5a2-5eff-fc7d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a126-a018-3122-4a86" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="85.0"/>
@@ -6024,7 +6054,7 @@
                 <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10.0"/>
               </costs>
             </entryLink>
-            <entryLink id="409e-75db-782d-c263" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+            <entryLink id="409e-75db-782d-c263" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
               </modifiers>
@@ -6136,7 +6166,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32ee-9288-f704-16ea" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="5ae7-bd35-3268-fbdf" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+            <entryLink id="5ae7-bd35-3268-fbdf" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
               </modifiers>
@@ -6144,7 +6174,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21e1-c973-593b-e71a" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="9741-e127-3bcd-d1d6" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+            <entryLink id="9741-e127-3bcd-d1d6" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
               </modifiers>
@@ -6213,9 +6243,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0a81-98ce-b1c4-8a41" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fca2-ce77-be33-b4bc" type="max"/>
           </constraints>
-          <costs>
-            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
-          </costs>
         </entryLink>
         <entryLink id="1cd8-2995-c0de-9ee1" name="Gun Battery" hidden="false" collective="false" import="true" targetId="bc09-4e9a-a2ad-3d68" type="selectionEntry">
           <modifiers>
@@ -6490,7 +6517,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2a7-85fb-9ca5-e651" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="487f-f10e-1a17-31eb" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+            <entryLink id="487f-f10e-1a17-31eb" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
               </modifiers>
@@ -6509,7 +6536,7 @@
                 <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
               </costs>
             </entryLink>
-            <entryLink id="9507-15cd-4bd2-21f6" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+            <entryLink id="9507-15cd-4bd2-21f6" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
               </modifiers>
@@ -6714,7 +6741,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2264-15bc-2031-09a5" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="a9f3-fc7c-8aa8-335e" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+                <entryLink id="a9f3-fc7c-8aa8-335e" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -6733,7 +6760,7 @@
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="e20f-66da-db83-e01a" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="e20f-66da-db83-e01a" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -6760,7 +6787,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="86d1-9f0d-1183-4f15" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="09ab-92b2-2437-8d7a" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+                <entryLink id="09ab-92b2-2437-8d7a" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
                   </modifiers>
@@ -6779,7 +6806,7 @@
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="5053-2e93-76a2-293f" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="5053-2e93-76a2-293f" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
                   </modifiers>
@@ -6867,9 +6894,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5b96-dddf-ec5c-7ae1" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7f82-825d-79f8-1142" type="max"/>
           </constraints>
-          <costs>
-            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
-          </costs>
         </entryLink>
         <entryLink id="7886-1e53-0c52-7ea3" name="Gun Battery" hidden="false" collective="false" import="true" targetId="bc09-4e9a-a2ad-3d68" type="selectionEntry">
           <modifiers>
@@ -7049,6 +7073,7 @@
         <infoLink id="2c51-0417-9c23-6778" name="Focused Gunnery" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9ec9-dd04-5a42-6864" type="rule"/>
         <infoLink id="f511-5ead-b8dd-8c71" name="Hammer Sweep" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
         <infoLink id="a9a2-4e88-b91d-48e1" name="For Valour!" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="05a5-85d0-0710-d7db" name="Spatha" hidden="false" targetId="cb36-77eb-e642-be70" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5007-2034-13d3-a119" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -7250,7 +7275,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8564-e4df-6fe9-293e" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="80cf-2817-ce45-1a51" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+            <entryLink id="80cf-2817-ce45-1a51" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
               </modifiers>
@@ -7269,7 +7294,7 @@
                 <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
               </costs>
             </entryLink>
-            <entryLink id="844b-4391-bdf7-1811" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+            <entryLink id="844b-4391-bdf7-1811" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
               </modifiers>
@@ -7352,7 +7377,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="0ad1-a336-df5d-669a" name="Main Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="cc29-0769-51ff-8876">
+        <selectionEntryGroup id="0ad1-a336-df5d-669a" name="Main Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="f43b-6591-8eb5-b9cb">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7ff3-27cc-23c3-0814" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8f54-8cd9-05ce-46aa" type="max"/>
@@ -7373,9 +7398,6 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8125-59ac-27ee-4fdf" type="max"/>
               </constraints>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
-              </costs>
             </entryLink>
             <entryLink id="0ab2-bd98-16a5-714e" name="Heavy Magnetic Bombard" hidden="false" collective="false" import="true" targetId="0473-4529-d230-ee46" type="selectionEntry">
               <modifiers>
@@ -7385,7 +7407,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6823-efbf-7add-1aef" type="max"/>
               </constraints>
               <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
               </costs>
             </entryLink>
             <entryLink id="c5d8-f9b9-a4ca-eaa4" name="Heat Lance" hidden="false" collective="false" import="true" targetId="1382-9592-479f-f3b3" type="selectionEntry">
@@ -7396,7 +7418,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1dbb-06ca-0e08-e472" type="max"/>
               </constraints>
               <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -7562,7 +7584,7 @@
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="2532-bde5-54c4-e12d" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+                <entryLink id="2532-bde5-54c4-e12d" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -7570,7 +7592,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cbef-0fab-8bf8-0a55" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="2bd9-5d59-f74c-e3a7" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="2bd9-5d59-f74c-e3a7" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -7608,7 +7630,7 @@
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="dd82-c1ff-cca2-b416" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+                <entryLink id="dd82-c1ff-cca2-b416" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -7616,7 +7638,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5fc2-255f-c3c3-37bf" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="4908-d65b-9c5e-d9eb" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="4908-d65b-9c5e-d9eb" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -7968,7 +7990,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="daee-f859-0b25-2041" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="c7b9-665e-caff-de80" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+            <entryLink id="c7b9-665e-caff-de80" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
               </modifiers>
@@ -7987,7 +8009,7 @@
                 <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
               </costs>
             </entryLink>
-            <entryLink id="004f-c73f-1518-ee05" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+            <entryLink id="004f-c73f-1518-ee05" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
               </modifiers>
@@ -8115,7 +8137,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="efea-9b16-81bd-f0da" name="Broadside" hidden="false" collective="true" import="true" targetId="0600-8fa9-227d-91ba" type="selectionEntry"/>
+        <entryLink id="efea-9b16-81bd-f0da" name="Broadside" hidden="false" collective="false" import="true" targetId="0600-8fa9-227d-91ba" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="111.0"/>
@@ -8141,7 +8163,7 @@
         <categoryLink id="edd3-e14b-a62e-ff0b" name="Levant Merchantman" hidden="false" targetId="cfb4-1fb7-f0f3-79f1" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="6507-1b6d-3fc2-11a1" name="Main Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="a28c-37bb-10db-408d">
+        <selectionEntryGroup id="6507-1b6d-3fc2-11a1" name="Main Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="54ab-058c-8a9d-dd1f">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9aa1-36ab-70f3-d2d0" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b8c4-14b2-4000-bf51" type="max"/>
@@ -8269,7 +8291,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ebfe-03a4-ab8e-f0ee" type="max"/>
               </constraints>
               <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -8303,7 +8325,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="16ff-d0e6-be0b-4a63" name="Aerial Torpedo Salvo" hidden="false" collective="false" import="true" targetId="e967-7018-26ea-4798" type="selectionEntry">
+        <entryLink id="16ff-d0e6-be0b-4a63" name="Aerial Torpedo Salvo" hidden="false" collective="false" import="true" targetId="09d0-01c4-9075-9480" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
           </modifiers>
@@ -8353,7 +8375,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="473a-4b46-e236-c01c" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="30a6-3f27-7037-74ee" name="Heat Lance" hidden="false" collective="false" import="true" targetId="1382-9592-479f-f3b3" type="selectionEntry">
+        <entryLink id="30a6-3f27-7037-74ee" name="Heat Lance" hidden="false" collective="false" import="true" targetId="6d2c-8cdd-4d3b-9ddd" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
           </modifiers>
@@ -8362,7 +8384,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="924e-becc-884d-1165" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="562e-0698-03c5-a013" name="Heat Lancette" hidden="false" collective="false" import="true" targetId="4688-bbd1-6ac5-f438" type="selectionEntry">
+        <entryLink id="562e-0698-03c5-a013" name="Heat Lancette" hidden="false" collective="false" import="true" targetId="fba5-ca79-6f57-9ef2" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
           </modifiers>
@@ -8477,7 +8499,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="127.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="107.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="489b-e382-354a-a1b3" name="Pereira" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="model">
@@ -8658,7 +8680,7 @@
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f68a-a2ac-fb80-dce4" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="771a-6317-1717-50ec" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+                <entryLink id="771a-6317-1717-50ec" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -8705,7 +8727,7 @@
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="5351-8c26-ed77-25cf" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+                <entryLink id="5351-8c26-ed77-25cf" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="4e9e-7862-58ad-15e6"/>
                   </modifiers>
@@ -8736,7 +8758,7 @@
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="4784-46aa-2453-2acf" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+                <entryLink id="4784-46aa-2453-2acf" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="5347-4855-4421-ed77"/>
                   </modifiers>
@@ -8819,7 +8841,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6398-e9e1-4520-6718" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="fad7-876d-c06c-745f" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+                <entryLink id="fad7-876d-c06c-745f" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
                   </modifiers>
@@ -8846,7 +8868,7 @@
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="bf9c-184b-c7dc-418f" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="bf9c-184b-c7dc-418f" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
                   </modifiers>
@@ -8876,7 +8898,7 @@
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="092e-1c07-e5d1-300a" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="092e-1c07-e5d1-300a" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
                   </modifiers>
@@ -8887,7 +8909,7 @@
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="6a27-b48a-fb89-a38a" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+                <entryLink id="6a27-b48a-fb89-a38a" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
                   </modifiers>
@@ -8986,9 +9008,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d8d0-2d18-8cdc-182e" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7ae5-c349-ed0e-69c9" type="max"/>
           </constraints>
-          <costs>
-            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
-          </costs>
         </entryLink>
       </entryLinks>
       <costs>
@@ -9034,6 +9053,19 @@
         <categoryLink id="649d-4b7d-b3c1-5ec5" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
         <categoryLink id="a1db-3624-15a6-7176" name="Fast Cruiser" hidden="false" targetId="a1ea-edee-b3e8-9ff2" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="937c-039a-a3a3-49cb" name="Scutum Mine Launcher" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="001d-6bd2-3047-aeef" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="a61f-4858-472d-1de2" name="Scutum Mine Layer" hidden="false" targetId="ae67-f1be-5c85-c984" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="2498-59b1-595e-9a91" name="Main Weapon" hidden="false" collective="false" import="true">
           <constraints>
@@ -9170,7 +9202,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0990-9643-0a55-5118" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="338a-6e31-4ade-bb6a" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+            <entryLink id="338a-6e31-4ade-bb6a" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
               </modifiers>
@@ -9189,7 +9221,7 @@
                 <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
               </costs>
             </entryLink>
-            <entryLink id="89df-af99-a908-92ff" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+            <entryLink id="89df-af99-a908-92ff" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
               </modifiers>
@@ -9516,7 +9548,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bed5-6b64-5198-edec" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="13da-fccc-da40-1e78" name="Gun Battery" hidden="false" collective="false" import="true" targetId="bc09-4e9a-a2ad-3d68" type="selectionEntry">
+        <entryLink id="13da-fccc-da40-1e78" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
           </modifiers>
@@ -9525,7 +9557,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0510-dd0f-4b37-bc23" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="aebf-8ea0-c0e0-243b" name="Gun Battery" hidden="false" collective="false" import="true" targetId="bc09-4e9a-a2ad-3d68" type="selectionEntry">
+        <entryLink id="aebf-8ea0-c0e0-243b" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
           </modifiers>
@@ -10165,6 +10197,15 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
+    <rule id="fdd3-3abf-14fe-d2de" name="Co-ordinate Support*" publicationId="129d-da97-caec-1ddd" hidden="false">
+      <description>Models using weapons in Support of a single Lead weapon in an Attack may use this rule. The Model may Support with any weapon rather than needing to match all the Qualities. Weapons used in Support in this way have their own Qualities ignored and simply increase the Attack Dice Pool by the value indicated for their Crippled Support at that range. Ramming weapons may not use this rule. Weapons with the Submerged Quality cannot use this rule in Attacks against Aerial Units. Weapons with the Aerial Quality cannot use this rule in Attacks against Submerged Units.</description>
+    </rule>
+    <rule id="6336-229a-7ed6-bb3d" name="Rebel Yell*" publicationId="129d-da97-caec-1ddd" hidden="false">
+      <description>Crippled Models with this rule still use the Battle Ready value of their weapons. This rule cannot be used if the Model has the Emergency or Chaos and Disarray Disorder Condition. The Unit ignores the Conscripted Crew rule when making or defending an Assault against a Unit with the Union Trait.</description>
+    </rule>
+    <rule id="6682-4372-1977-72dc" name="Sabre Rattle*" publicationId="129d-da97-caec-1ddd" hidden="false">
+      <description>Once both sides have deployed but before any Vanguard or Shadow Hunter moves have been made, Units in this Battlefleet may be redeployed provided that their new position is closer to an enemy Unit than before this redeployment.  Each Unit in this Battlefleet may only be redeployed once and must be redeployed in their own Deployment area.</description>
+    </rule>
     <rule id="4781-004e-30dd-0347" name="New Rule" hidden="false"/>
   </sharedRules>
   <sharedProfiles>

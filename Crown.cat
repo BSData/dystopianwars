@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4724-2577-5b2d-0bfe" name="Crown v3.03" revision="7" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4724-2577-5b2d-0bfe" name="Crown v3.03" revision="10" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <comment>Last Crown ORBAT 3.03 (published 05/02/2023)</comment>
   <readme>Review 1.02.a0: Initial release
 Review 1.02.a1: minor point correction
 Review 3.02.a0: update to ORBAT 3.02a
 Review 3.02.a1 - Minor corrections and updates
 Review 3.03.00: update to ORBAT 3.03
 Review 3.03.01: minor correction after the update to ORBAT 3.03
-Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
+Review 3.03.02: minor correction after the update to ORBAT 3.03
+Review 3.03.03: minor correction after the update to ORBAT 3.03 (date 2023-02-05)
+Review 3.03.04: correction suggested in internet (ORBAT 3.03 released the 2023-02-05)
+Review 3.03.05: correction suggested in internet (ORBAT 3.03 released the 2023-02-05)</readme>
   <categoryEntries>
     <categoryEntry id="6427-c580-219d-c874" name="Britannia Class" publicationId="dbca-8d57-b848-457e" hidden="false"/>
     <categoryEntry id="ddb5-f0d6-665c-3ac4" name="Protecteur Class" publicationId="dbca-8d57-b848-457e" hidden="false"/>
@@ -771,9 +775,10 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74f8-a93e-d127-d4f7" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b54-608f-353d-8628" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="74f8-a93e-d127-d4f7" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="7b54-608f-353d-8628" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -799,6 +804,7 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b54-608f-353d-8628" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74f8-a93e-d127-d4f7" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -821,7 +827,31 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="d4a3-52d1-9941-7ffb">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -868,10 +898,34 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="d4a3-52d1-9941-7ffb">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -892,10 +946,34 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="d4a3-52d1-9941-7ffb">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -934,6 +1012,30 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="d4a3-52d1-9941-7ffb">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="079e-49c2-8707-2bf2" name="Excalibur Class" hidden="false" targetId="ce49-79cb-7795-08b2" primary="false"/>
@@ -956,6 +1058,7 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b54-608f-353d-8628" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74f8-a93e-d127-d4f7" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -964,6 +1067,7 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
       <categoryLinks>
         <categoryLink id="37fe-906e-d44a-d669" name="Halifax Class" hidden="false" targetId="b0b9-9e5b-dd34-c930" primary="false"/>
         <categoryLink id="b5e6-737d-0b2e-a836" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="0b7f-5f1c-512e-e1c9" name="Canadian" hidden="false" targetId="d4a3-52d1-9941-7ffb" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="d133-ca3e-8fcb-f0b4" name="Escort duty [Canadian]" hidden="false" collective="false" import="true" type="upgrade">
@@ -998,7 +1102,31 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="d4a3-52d1-9941-7ffb">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1027,6 +1155,30 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="d4a3-52d1-9941-7ffb">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="56cc-67fa-80ba-8b17" name="Caliburn Class" hidden="false" targetId="6404-9e52-94ad-87cd" primary="false"/>
@@ -1051,81 +1203,36 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="d4a3-52d1-9941-7ffb">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="7764-2744-ae33-687a" name="Agincourt Class" hidden="false" targetId="eedb-3308-3474-4f3b" primary="false"/>
         <categoryLink id="2b7c-d956-a821-fc75" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="0a81-e8e8-f343-5cb0" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="457a-6a8d-a84f-715a" name="Ammunition" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e446-a82e-b071-dc33" type="min"/>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a95-4793-98be-f1a8" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="02b8-9202-7818-96f6" name="Amphion ammuniton" hidden="false" collective="true" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="add" field="category" value="e0b0-935e-c0c6-53c8"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f82f-0fe2-af0f-eee5" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="9b16-dfac-73cb-b0da" name="Submerged" hidden="true" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
-                <infoLink id="26c9-562e-6620-af2b" name="Torpedo" hidden="true" targetId="d673-c4da-202e-fbfc" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a93a-c69d-587a-f5b5" name="Flechette ammuniton" hidden="false" collective="true" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="add" field="category" value="5e15-d2a9-a54e-3a11"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d5f5-b678-1f20-48ea" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="7934-c5bd-5b0c-40de" name="Blast" hidden="true" targetId="89d8-2e21-11be-005d" type="rule"/>
-                <infoLink id="a002-c198-35d9-f64e" name="Piercing" hidden="true" targetId="0f8e-056c-75a9-caee" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="20.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="616e-9c8a-d1fb-72a2" name="Pax ammuniton" hidden="false" collective="true" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="add" field="category" value="d91e-9f01-4d5b-0495"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="25ac-f5dc-9321-4ad8" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="b99e-e893-2f1e-00d9" name="Devastating" hidden="true" targetId="d633-3476-6a40-e860" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="25.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="0b3d-a2cf-ddf0-bb19" name="Ripple ammuniton" hidden="false" collective="true" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="add" field="category" value="6679-8b34-dcc1-1137"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="24a8-c791-bfd0-5fb0" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="a3d3-7898-40ca-32be" name="Sustained" hidden="true" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
-                <infoLink id="3a9f-a28d-8ac1-4ffc" name="Hazardous" hidden="true" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="15.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="54bb-95a7-702e-1b3d" name="Agincourt" hidden="false" collective="false" import="true" targetId="3919-a80d-c0f2-d6e6" type="selectionEntry"/>
       </entryLinks>
@@ -1140,6 +1247,30 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="d4a3-52d1-9941-7ffb">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1163,10 +1294,34 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="d4a3-52d1-9941-7ffb">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -1190,6 +1345,7 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b54-608f-353d-8628" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74f8-a93e-d127-d4f7" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1998,6 +2154,49 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="bce5-2c5d-dc1d-6c23" name="Tintagel Battle Rotor Squadron" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="ddb5-f0d6-665c-3ac4" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="01d6-2c71-3552-49ae" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="d4a3-52d1-9941-7ffb">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="ddb5-f0d6-665c-3ac4" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="01d6-2c71-3552-49ae" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="964e-9d87-c9a4-c6ad" name="Tintagel Class" hidden="false" targetId="c8fb-856e-ddff-0c9f" primary="false"/>
         <categoryLink id="4da2-df91-38dd-7b7f" name="Aerial Unit" hidden="false" targetId="022b-08af-c874-e3f1" primary="true"/>
@@ -2010,9 +2209,51 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="1c66-7976-bca1-d2e0" name="Saxon Scout Rotor Squadron" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="d4a3-52d1-9941-7ffb">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="d4a3-52d1-9941-7ffb">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="ddb5-f0d6-665c-3ac4" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="01d6-2c71-3552-49ae" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="8849-af4b-ada4-5f9f" name="New CategoryLink" hidden="false" targetId="022b-08af-c874-e3f1" primary="true"/>
         <categoryLink id="255d-d75c-1b5e-2acb" name="Saxon Class" hidden="false" targetId="1e20-4e31-f760-52ca" primary="false"/>
+        <categoryLink id="3223-da9b-66a5-57c6" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="e37a-6069-7b41-3ca2" name="Saxon" hidden="false" collective="false" import="true" targetId="863d-a396-c6fd-01a3" type="selectionEntry"/>
@@ -2051,10 +2292,34 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="d4a3-52d1-9941-7ffb">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -2509,12 +2774,30 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74f8-a93e-d127-d4f7" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b54-608f-353d-8628" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="012e-2bdb-8192-e8ca" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="74f8-a93e-d127-d4f7" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="7b54-608f-353d-8628" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="012e-2bdb-8192-e8ca" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2994,6 +3277,30 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="d4a3-52d1-9941-7ffb">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="1b3b-ace7-a8fc-e36d" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
@@ -3033,49 +3340,92 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="3919-a80d-c0f2-d6e6" name="Agincourt" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="add" field="category" value="d4a3-52d1-9941-7ffb">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4b1-488e-c7de-2c53" type="min"/>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1d3-5936-0797-d3d7" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="03b5-a439-a5de-67ab" name="Keep Calm and Carry On" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="03b5-a439-a5de-67ab" name="Keep Calm and Carry On*" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
         <infoLink id="749d-6973-c61e-69ff" name="Agincourt" hidden="false" targetId="c4bb-53f6-b701-4255" type="profile"/>
-        <infoLink id="6e3a-8bb4-ecb1-0f6d" name="Lionhearted Crew" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="6e3a-8bb4-ecb1-0f6d" name="Lionhearted Crew*" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
         <infoLink id="2dfc-1fb1-8331-306c" name="Royal Engineers" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="ec2b-b156-4ed1-c159" name="Spotter" hidden="false" targetId="063a-3229-1f27-a3c2" type="rule"/>
-        <infoLink id="0313-f21d-c42c-ba77" name="Auspicio Regina" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
-        <infoLink id="9d90-76e0-ad50-78ed" name="East India Privateers" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="ec2b-b156-4ed1-c159" name="Spotter*" hidden="false" targetId="063a-3229-1f27-a3c2" type="rule"/>
+        <infoLink id="0313-f21d-c42c-ba77" name="Auspicio Regina*" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="9d90-76e0-ad50-78ed" name="East India Privateers*" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e820-6474-45dd-a625" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
         <categoryLink id="9137-5af7-b29e-7045" name="Bombardment Cruiser" hidden="false" targetId="9566-ae5c-ce6d-637b" primary="false"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="39eb-5d47-355d-05d2" name="Ammunition" hidden="false" collective="true" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4557-e357-ebfe-d1f3" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b075-1e9b-8ab9-4450" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="d980-7910-0531-807d" name="Amphion ammuniton" hidden="false" collective="true" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="add" field="category" value="e0b0-935e-c0c6-53c8"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ba76-3929-60c9-2d4e" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="d53c-185a-a4b1-42af" name="Submerged" hidden="true" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+                <infoLink id="20b5-23d5-9d93-72c7" name="Torpedo" hidden="true" targetId="d673-c4da-202e-fbfc" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c286-2eb8-96e3-a5a3" name="Flechette ammuniton" hidden="false" collective="true" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="add" field="category" value="5e15-d2a9-a54e-3a11"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="10b6-76ec-d070-1096" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="86d9-6338-9403-9f21" name="Blast" hidden="true" targetId="89d8-2e21-11be-005d" type="rule"/>
+                <infoLink id="d3b7-3537-0662-3f80" name="Piercing" hidden="true" targetId="0f8e-056c-75a9-caee" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="20.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f2ec-e3d0-a7ca-da92" name="Pax ammuniton" hidden="false" collective="true" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="add" field="category" value="d91e-9f01-4d5b-0495"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa40-fe23-9b98-4a88" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="3046-d273-4bf1-172f" name="Devastating" hidden="true" targetId="d633-3476-6a40-e860" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="25.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="81b9-3413-8713-7edd" name="Ripple ammuniton" hidden="false" collective="true" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="add" field="category" value="6679-8b34-dcc1-1137"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1940-259c-5e8f-d95d" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="d9f6-9d4d-9772-7bc2" name="Sustained" hidden="true" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
+                <infoLink id="ac74-3f6b-7ba0-5242" name="Hazardous" hidden="true" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="26e7-3941-8875-df19" name="Broadside" hidden="false" collective="false" import="true" targetId="0600-8fa9-227d-91ba" type="selectionEntry">
           <modifiers>
@@ -3095,7 +3445,7 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e034-def1-c11b-4ded" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="94d8-24cb-1753-e353" name="Guardian generator" hidden="false" collective="false" import="true" targetId="094a-09c2-c40f-72c2" type="selectionEntry">
+        <entryLink id="94d8-24cb-1753-e353" name="Guardian generator" hidden="false" collective="false" import="true" targetId="fcc9-c0ad-7380-b6a2" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="0c85-39c7-9145-efeb"/>
           </modifiers>
@@ -3127,44 +3477,18 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="3391-de44-4f50-9776" name="Albion" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="add" field="category" value="d4a3-52d1-9941-7ffb">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de62-a189-828b-6577" type="min"/>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3bb-7676-dcf0-db3b" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="e288-6848-269b-8e66" name="Keep Calm and Carry On" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink id="e906-e82c-ea20-bae5" name="Lionhearted Crew" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="e288-6848-269b-8e66" name="Keep Calm and Carry On*" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="e906-e82c-ea20-bae5" name="Lionhearted Crew*" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
         <infoLink id="80e4-0961-e696-6a53" name="Reliable Design" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
         <infoLink id="2bf2-130c-c22d-8ead" name="Albion" hidden="false" targetId="601f-0d50-16b6-b76c" type="profile"/>
         <infoLink id="8dc5-53e9-842d-0127" name="Royal Engineers" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="5b10-6b0b-9aee-74a9" name="Auspicio Regina" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
-        <infoLink id="1a9c-692a-f202-0053" name="East India Privateers" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="5b10-6b0b-9aee-74a9" name="Auspicio Regina*" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="1a9c-692a-f202-0053" name="East India Privateers*" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="87b9-3d07-46f4-d5cb" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -3200,7 +3524,7 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
                 </entryLink>
-                <entryLink id="6d8b-3210-c49b-49b4" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="26a3-cf78-63bd-dd6b" type="selectionEntry">
+                <entryLink id="6d8b-3210-c49b-49b4" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="57f7-e4c2-6115-938a" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -3236,7 +3560,7 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
                     <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
                   </modifiers>
                 </entryLink>
-                <entryLink id="ee07-c3da-8ca5-5224" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="26a3-cf78-63bd-dd6b" type="selectionEntry">
+                <entryLink id="ee07-c3da-8ca5-5224" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="57f7-e4c2-6115-938a" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
                   </modifiers>
@@ -3375,32 +3699,6 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="dcca-9848-0265-fdcb" name="Athelstan" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="add" field="category" value="d4a3-52d1-9941-7ffb">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90db-eb31-b8ed-8b6d" type="min"/>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53e7-91f3-1620-ab04" type="max"/>
@@ -3414,8 +3712,10 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
           </modifiers>
         </infoLink>
         <infoLink id="f9bf-7064-8acb-9b58" name="Royal Engineers" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="5090-5d7e-628b-7b27" name="Lionhearted Crew" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="3be4-25de-74d3-2567" name="Keep Calm and Carry On" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="5090-5d7e-628b-7b27" name="Lionhearted Crew*" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="3be4-25de-74d3-2567" name="Keep Calm and Carry On*" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="2b9e-287a-a44a-6466" name="Auspicio Regina*" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="6ff1-9055-f344-4291" name="East India Privateers*" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2227-bf44-f410-a482" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -3476,7 +3776,7 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e5ca-ca0c-33d2-ea26" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="5e21-87c7-0e7a-8c67" name="Guardian generator" hidden="false" collective="false" import="true" targetId="094a-09c2-c40f-72c2" type="selectionEntry">
+        <entryLink id="5e21-87c7-0e7a-8c67" name="Guardian generator" hidden="false" collective="false" import="true" targetId="fcc9-c0ad-7380-b6a2" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="0c85-39c7-9145-efeb"/>
           </modifiers>
@@ -3537,7 +3837,7 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
                 </entryLink>
-                <entryLink id="0462-1601-4490-c2de" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="26a3-cf78-63bd-dd6b" type="selectionEntry">
+                <entryLink id="0462-1601-4490-c2de" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="57f7-e4c2-6115-938a" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -3570,7 +3870,7 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
                 </entryLink>
-                <entryLink id="ff1a-0544-c18e-4ab7" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="26a3-cf78-63bd-dd6b" type="selectionEntry">
+                <entryLink id="ff1a-0544-c18e-4ab7" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="57f7-e4c2-6115-938a" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -3650,7 +3950,7 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="830e-5ad2-003c-4d38" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="493c-4a1d-86f5-d83c" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+            <entryLink id="493c-4a1d-86f5-d83c" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="4e9e-7862-58ad-15e6"/>
               </modifiers>
@@ -3685,7 +3985,7 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="09e4-d8ba-fc6d-3fde" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="b57c-78ed-0b1a-ad3f" name="Guardian generator" hidden="false" collective="false" import="true" targetId="094a-09c2-c40f-72c2" type="selectionEntry">
+        <entryLink id="b57c-78ed-0b1a-ad3f" name="Guardian generator" hidden="false" collective="false" import="true" targetId="fcc9-c0ad-7380-b6a2" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="0c85-39c7-9145-efeb"/>
           </modifiers>
@@ -3963,32 +4263,6 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="9482-5ed0-b7b8-e060" name="Caliburn" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="add" field="category" value="d4a3-52d1-9941-7ffb">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b61-bdab-1f3e-8c56" type="min"/>
         <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e99-b1f4-4a22-0885" type="max"/>
@@ -4018,7 +4292,7 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1ff2-0ab5-85d1-ecd8" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="4a85-264e-d82e-fbcb" name="Gun Battery" hidden="false" collective="true" import="true" targetId="bc09-4e9a-a2ad-3d68" type="selectionEntry">
+        <entryLink id="4a85-264e-d82e-fbcb" name="Gun Battery" hidden="false" collective="false" import="true" targetId="bc09-4e9a-a2ad-3d68" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
           </modifiers>
@@ -4033,32 +4307,6 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="2f17-6256-56c3-1725" name="Excalibur" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="add" field="category" value="d4a3-52d1-9941-7ffb">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a47c-f1fb-fae1-fd82" type="min"/>
         <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e7e-4b13-865e-a4a9" type="max"/>
@@ -4069,7 +4317,7 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
         <infoLink id="4578-22c4-43e2-34b1" name="Giant Slayer" hidden="false" targetId="0d99-00ae-4c22-20b7" type="rule"/>
         <infoLink id="b4f0-d44c-8342-ec91" name="Lionhearted Crew" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
         <infoLink id="8fe1-33f2-d157-58f8" name="Royal Engineers" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="2dc9-05a0-00fd-f173" name="Vanguard" hidden="false" targetId="f721-8318-3875-0140" type="rule"/>
+        <infoLink id="2dc9-05a0-00fd-f173" name="Vanguard*" hidden="false" targetId="f721-8318-3875-0140" type="rule"/>
         <infoLink id="c351-d868-f872-f9fc" name="Auspicio Regina" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
         <infoLink id="6260-3998-8baa-2bc9" name="East India Privateers" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
       </infoLinks>
@@ -4120,32 +4368,6 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="0170-c308-289d-ff01" name="Picton" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="add" field="category" value="d4a3-52d1-9941-7ffb">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0efe-5cee-1fa0-371d" type="min"/>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ddc-cb6d-2047-f86e" type="max"/>
@@ -4153,7 +4375,7 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
       <infoLinks>
         <infoLink id="22be-3a6f-a085-75bb" name="Picton" hidden="false" targetId="47b7-df74-8b69-2a7e" type="profile"/>
         <infoLink id="2992-4ed7-0706-f8d3" name="Keep Calm and Carry On" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink id="62fc-a332-5988-6243" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="62fc-a332-5988-6243" name="Lionhearted Crew*" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
         <infoLink id="c8be-27bf-beb7-08c1" name="Pack Hunter" hidden="false" targetId="112e-82cb-42a3-83d2" type="rule"/>
         <infoLink id="77a1-ac43-7616-6497" name="Royal Engineers" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
         <infoLink id="fdff-08cc-9449-2a4c" name="Auspicio Regina" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
@@ -4196,7 +4418,7 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="851a-25eb-89ca-bb90" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="26a3-cf78-63bd-dd6b" type="selectionEntry">
+                <entryLink id="851a-25eb-89ca-bb90" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="57f7-e4c2-6115-938a" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -4316,7 +4538,7 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f4af-6360-4ef1-6f44" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="beda-4e34-f4d8-2b66" name="Gun Battery" hidden="false" collective="false" import="true" targetId="e32f-eb1d-5c03-b61c" type="selectionEntry">
+        <entryLink id="beda-4e34-f4d8-2b66" name="Gun Battery" hidden="false" collective="false" import="true" targetId="bc09-4e9a-a2ad-3d68" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
           </modifiers>
@@ -4339,11 +4561,11 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
         <infoLink id="cfaa-3a30-d317-5721" name="Yukon" hidden="false" targetId="30c1-b306-afed-4c4e" type="profile"/>
         <infoLink id="00d8-0877-afdf-8a50" name="Ablative Prow Armour" hidden="false" targetId="2823-33a9-a62b-e29a" type="rule"/>
         <infoLink id="fe6c-59d8-ad74-f190" name="Loyal She Began; Thus She Remains" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
-        <infoLink id="29aa-7d6b-2aec-12d8" name="Lionhearted Crew" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="397a-99a1-c0fc-0578" name="Mine Layer" hidden="false" targetId="940f-44f3-71bf-f26c" type="rule"/>
-        <infoLink id="92bf-e4b5-7e02-c8e5" name="Mine Sweeper" hidden="false" targetId="3c38-dac5-4a88-5358" type="rule"/>
-        <infoLink id="589c-5a0b-f807-3f76" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="2bc9-3a74-6455-e40a" name="Vulnerable Stern" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="29aa-7d6b-2aec-12d8" name="Lionhearted Crew*" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="397a-99a1-c0fc-0578" name="Mine Layer*" hidden="false" targetId="940f-44f3-71bf-f26c" type="rule"/>
+        <infoLink id="92bf-e4b5-7e02-c8e5" name="Mine Sweeper*" hidden="false" targetId="3c38-dac5-4a88-5358" type="rule"/>
+        <infoLink id="589c-5a0b-f807-3f76" name="Royal Engineers" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="2bc9-3a74-6455-e40a" name="Vulnerable Stern*" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9ed0-cbfb-d7da-5986" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -4379,7 +4601,7 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
                 </entryLink>
-                <entryLink id="ae00-4b65-48c2-8a6a" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="26a3-cf78-63bd-dd6b" type="selectionEntry">
+                <entryLink id="ae00-4b65-48c2-8a6a" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="57f7-e4c2-6115-938a" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -4412,7 +4634,7 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
                 </entryLink>
-                <entryLink id="c30a-e7fe-7413-c1d6" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="26a3-cf78-63bd-dd6b" type="selectionEntry">
+                <entryLink id="c30a-e7fe-7413-c1d6" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="57f7-e4c2-6115-938a" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -4506,7 +4728,7 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="452f-9b18-e6df-0ed0" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="a061-f5a7-16a5-129f" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="110e-749a-0199-27be" type="selectionEntry">
+        <entryLink id="a061-f5a7-16a5-129f" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="9985-b088-fda6-36d4" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
@@ -4521,32 +4743,6 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="fd72-a8a0-a24d-349e" name="Hotspur" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="add" field="category" value="d4a3-52d1-9941-7ffb">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00ef-7188-57db-7020" type="min"/>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37b2-91c6-039a-df19" type="max"/>
@@ -4558,7 +4754,7 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
         <infoLink id="6632-9de2-2c26-bf17" name="Lionhearted Crew" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
         <infoLink id="ab84-5582-a10e-9239" name="Royal Engineers" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
         <infoLink id="456f-fe23-d767-f779" name="SRS Mine Clearance" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
-        <infoLink id="40ed-da34-92ff-ff34" name="SRS Recon Flight" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
+        <infoLink id="40ed-da34-92ff-ff34" name="SRS Recon Flight*" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
         <infoLink id="e60d-64e5-8827-99b4" name="Keep Calm and Carry On" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
         <infoLink id="311b-2a9d-7ef2-c7a3" name="Defiant Tail Gunners" hidden="false" targetId="9f0c-1181-e9a6-84a7" type="rule"/>
         <infoLink id="b592-8bdb-569a-2a4b" name="Auspicio Regina" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
@@ -4569,7 +4765,7 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03</readme>
         <categoryLink id="4293-0afe-2d03-8b99" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="8442-c309-d3a6-74b7" name="SRS" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="8442-c309-d3a6-74b7" name="SRS" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="true" import="true" type="upgrade">
           <comment>No. 1 Squadron
 A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts to take the elite Defiant fighter squadron, the No. 1 Squadron. Their motto, In omnibus princeps (&quot;First in all things&quot;) reflects the squadron&apos;s status as the RFC’s oldest unit. Designers note: It is recommended that you paint or otherwise mark the No 1 Squadron SRS tokens differently to your other SRS Tokens. NUMBER ONE SQUADRON SRS: SRS Tokens launched by Units with this rule are called Number One Squadron�</comment>
           <constraints>
@@ -4607,7 +4803,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9362-a7fb-8892-ef63" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="e707-e574-f588-2dcd" name="Guardian generator" hidden="false" collective="false" import="true" targetId="094a-09c2-c40f-72c2" type="selectionEntry">
+        <entryLink id="e707-e574-f588-2dcd" name="Guardian generator" hidden="false" collective="false" import="true" targetId="fcc9-c0ad-7380-b6a2" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="0c85-39c7-9145-efeb"/>
           </modifiers>
@@ -4667,7 +4863,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
                 </entryLink>
-                <entryLink id="a799-39d1-3c1a-5747" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="26a3-cf78-63bd-dd6b" type="selectionEntry">
+                <entryLink id="a799-39d1-3c1a-5747" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="57f7-e4c2-6115-938a" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -4693,7 +4889,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
                 </entryLink>
-                <entryLink id="c861-deb2-735b-96d9" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="26a3-cf78-63bd-dd6b" type="selectionEntry">
+                <entryLink id="c861-deb2-735b-96d9" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="57f7-e4c2-6115-938a" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -4725,7 +4921,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="55a9-a083-6869-17f3" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="5646-d848-d475-f541" name="Guardian generator" hidden="false" collective="false" import="true" targetId="094a-09c2-c40f-72c2" type="selectionEntry">
+        <entryLink id="5646-d848-d475-f541" name="Guardian generator" hidden="false" collective="false" import="true" targetId="fcc9-c0ad-7380-b6a2" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="0c85-39c7-9145-efeb"/>
           </modifiers>
@@ -4759,7 +4955,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <categoryLink id="ce30-bf3c-70a9-6933" name="Assault Submarine" hidden="false" targetId="f69c-ba63-7c93-a71f" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="bf6d-f7bf-fded-bea2" name="Vengeance Keel Saw" hidden="false" collective="false" import="true" targetId="5a27-8311-f15c-e7cd" type="selectionEntry">
+        <entryLink id="bf6d-f7bf-fded-bea2" name="Vengeance Keel Saw" hidden="false" collective="false" import="true" targetId="5fe7-329e-4129-b89e" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
           </modifiers>
@@ -4792,32 +4988,6 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </costs>
     </selectionEntry>
     <selectionEntry id="55c5-8998-e45f-3d6f" name="Lancelot" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="add" field="category" value="d4a3-52d1-9941-7ffb">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="969e-e409-1a0f-f560" type="min"/>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="690b-ffa0-0a94-27dc" type="max"/>
@@ -4866,7 +5036,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
                 </entryLink>
-                <entryLink id="3699-f1e3-b586-9765" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="26a3-cf78-63bd-dd6b" type="selectionEntry">
+                <entryLink id="3699-f1e3-b586-9765" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="57f7-e4c2-6115-938a" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -4902,7 +5072,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                     <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
                   </modifiers>
                 </entryLink>
-                <entryLink id="fb82-9d54-0fd1-8030" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="26a3-cf78-63bd-dd6b" type="selectionEntry">
+                <entryLink id="fb82-9d54-0fd1-8030" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="57f7-e4c2-6115-938a" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
                   </modifiers>
@@ -4991,7 +5161,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="8e11-a0f8-97fa-3b4a" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="110e-749a-0199-27be" type="selectionEntry">
+        <entryLink id="8e11-a0f8-97fa-3b4a" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="9985-b088-fda6-36d4" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
@@ -5015,7 +5185,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0896-ab56-e2ec-76f7" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="75bc-2e5a-912c-c53f" name="Gun Battery" hidden="false" collective="false" import="true" targetId="e32f-eb1d-5c03-b61c" type="selectionEntry">
+        <entryLink id="75bc-2e5a-912c-c53f" name="Gun Battery" hidden="false" collective="false" import="true" targetId="bc09-4e9a-a2ad-3d68" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
           </modifiers>
@@ -5488,7 +5658,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
                 </entryLink>
-                <entryLink id="73cd-0f09-c760-02e6" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="26a3-cf78-63bd-dd6b" type="selectionEntry">
+                <entryLink id="73cd-0f09-c760-02e6" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="57f7-e4c2-6115-938a" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -5521,7 +5691,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
                 </entryLink>
-                <entryLink id="0ff5-d338-302a-a2d1" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="26a3-cf78-63bd-dd6b" type="selectionEntry">
+                <entryLink id="0ff5-d338-302a-a2d1" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="57f7-e4c2-6115-938a" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -5630,32 +5800,6 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </costs>
     </selectionEntry>
     <selectionEntry id="36b8-c29d-c7c7-9d48" name="Bedivere" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="add" field="category" value="d4a3-52d1-9941-7ffb">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="feaf-baa4-0afe-d537" type="min"/>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7362-40a4-d6a0-1a92" type="max"/>
@@ -5664,7 +5808,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <infoLink id="e0cf-64c8-2562-1782" name="Bedivere" hidden="false" targetId="9a89-b5c4-303a-87e9" type="profile"/>
         <infoLink id="f940-d224-aae4-0cc6" name="Keep Calm and Carry On" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
         <infoLink id="c711-273f-b29d-ceda" name="Lionhearted Crew" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="df14-ec8f-b14d-4a8c" name="Skyfire" hidden="false" targetId="1083-2af1-7bfc-7a55" type="rule"/>
+        <infoLink id="df14-ec8f-b14d-4a8c" name="Skyfire*" hidden="false" targetId="1083-2af1-7bfc-7a55" type="rule"/>
         <infoLink id="644c-7384-242c-ffa2" name="Royal Engineers" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
         <infoLink id="4a00-231c-141a-823b" name="Auspicio Regina" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
         <infoLink id="45db-78f8-a674-1010" name="East India Privateers" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
@@ -5703,7 +5847,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
                 </entryLink>
-                <entryLink id="04ad-b00b-8772-2606" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="26a3-cf78-63bd-dd6b" type="selectionEntry">
+                <entryLink id="04ad-b00b-8772-2606" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="57f7-e4c2-6115-938a" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -5785,7 +5929,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6a7b-a5d2-ed2b-50b4" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="7b8f-a2ff-45ae-a1ce" name="Guardian generator" hidden="false" collective="false" import="true" targetId="094a-09c2-c40f-72c2" type="selectionEntry">
+        <entryLink id="7b8f-a2ff-45ae-a1ce" name="Guardian generator" hidden="false" collective="false" import="true" targetId="fcc9-c0ad-7380-b6a2" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="0c85-39c7-9145-efeb"/>
           </modifiers>
@@ -6298,7 +6442,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfa6-0160-dcbd-809f" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="45bc-a33a-e920-1596" name="Gun Battery" hidden="false" collective="false" import="true" targetId="e32f-eb1d-5c03-b61c" type="selectionEntry">
+            <entryLink id="45bc-a33a-e920-1596" name="Gun Battery" hidden="false" collective="false" import="true" targetId="bc09-4e9a-a2ad-3d68" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
                 <modifier type="set" field="7a0f-91a9-f9a6-a70d" value="1.0">
@@ -6362,7 +6506,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="150.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="20a2-2b29-a51e-0077" name="No. 1 Squadron" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="20a2-2b29-a51e-0077" name="No. 1 Squadron" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="2c54-8fc2-352f-aae7" name="No.1 Squadron" hidden="false" targetId="e4c0-65b1-6461-2f51" type="rule"/>
       </infoLinks>
@@ -6370,65 +6514,23 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="20.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="eb54-5b59-a236-9589" name="Tintagel" hidden="false" collective="true" import="true" type="model">
-      <modifiers>
-        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ddb5-f0d6-665c-3ac4" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="01d6-2c71-3552-49ae" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="add" field="category" value="d4a3-52d1-9941-7ffb">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ddb5-f0d6-665c-3ac4" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="01d6-2c71-3552-49ae" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="eb54-5b59-a236-9589" name="Tintagel" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64b4-3db6-ecf2-95ad" type="min"/>
         <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41ad-5cd8-e474-3380" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="515d-bc9a-9a92-1a5b" name="Tintagel" hidden="false" targetId="057a-b246-8282-d746" type="profile"/>
-        <infoLink id="218c-028e-6998-aa48" name="Keep Calm and Carry On" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink id="d2a3-81e5-d3c1-d4dd" name="Lionhearted Crew" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="9c75-5475-6d34-48e7" name="Powerslide" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
+        <infoLink id="218c-028e-6998-aa48" name="Keep Calm and Carry On*" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="d2a3-81e5-d3c1-d4dd" name="Lionhearted Crew*" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="9c75-5475-6d34-48e7" name="Powerslide*" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
         <infoLink id="78aa-06bd-76ca-b665" name="Royal Engineers" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="313b-7219-90a1-6ce0" name="Landing Vessel" hidden="false" targetId="4869-03db-33f9-fa82" type="rule"/>
-        <infoLink id="4202-0f5a-e357-426b" name="Radar Relay" hidden="false" targetId="23b6-9bca-f41d-3c83" type="rule"/>
+        <infoLink id="313b-7219-90a1-6ce0" name="Landing Vessel*" hidden="false" targetId="4869-03db-33f9-fa82" type="rule"/>
+        <infoLink id="4202-0f5a-e357-426b" name="Radar Relay*" hidden="false" targetId="39a7-cb6c-ff50-20f1" type="rule"/>
         <infoLink id="6a30-6287-9b40-24b9" name="Rocketeer Flight" hidden="false" targetId="04ee-5a1c-f3c8-3e5f" type="rule"/>
-        <infoLink id="4f7d-1e2a-f5df-5d57" name="Loyal She Began; Thus She Remains" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
-        <infoLink id="c3ab-d9fb-b848-2f03" name="Auspicio Regina" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
-        <infoLink id="f76e-a21d-1faf-d32a" name="East India Privateers" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="4f7d-1e2a-f5df-5d57" name="Loyal She Began; Thus She Remains*" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
+        <infoLink id="c3ab-d9fb-b848-2f03" name="Auspicio Regina*" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="f76e-a21d-1faf-d32a" name="East India Privateers*" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0ff9-d6ed-4da6-e214" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -6476,27 +6578,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="52.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="863d-a396-c6fd-01a3" name="Saxon" hidden="false" collective="true" import="true" type="model">
-      <modifiers>
-        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="863d-a396-c6fd-01a3" name="Saxon" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="049b-06fb-2490-e012" type="min"/>
         <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e1a-29ea-f73d-e074" type="max"/>
@@ -6509,7 +6591,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <infoLink id="fecf-ac58-a174-e9cf" name="Royal Engineers" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
         <infoLink id="d2a5-9933-d9de-a691" name="Linear Dash" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
         <infoLink id="6009-50a0-b9ab-d9c8" name="Skyfire" hidden="false" targetId="1083-2af1-7bfc-7a55" type="rule"/>
-        <infoLink id="d196-3b32-c0f6-537b" name="Vanguard" hidden="false" targetId="f721-8318-3875-0140" type="rule"/>
+        <infoLink id="d196-3b32-c0f6-537b" name="Vanguard*" hidden="false" targetId="f721-8318-3875-0140" type="rule"/>
         <infoLink id="8a5e-7ba8-3d0d-e45a" name="Loyal She Began; Thus She Remains" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
         <infoLink id="58c9-858f-8997-8dfe" name="Auspicio Regina" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
         <infoLink id="c826-0b39-a6a7-0e16" name="East India Privateers" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
@@ -6543,26 +6625,6 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </costs>
     </selectionEntry>
     <selectionEntry id="ebe7-a2f0-c340-1e0c" name="Prydain" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="928b-5646-8d73-a366" type="min"/>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df5c-1d6a-7f4f-d2c3" type="max"/>
@@ -6611,7 +6673,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
                 </entryLink>
-                <entryLink id="1f2b-baf2-825b-0a10" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="26a3-cf78-63bd-dd6b" type="selectionEntry">
+                <entryLink id="1f2b-baf2-825b-0a10" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="57f7-e4c2-6115-938a" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -6644,7 +6706,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                     <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
                   </modifiers>
                 </entryLink>
-                <entryLink id="d669-79de-56ab-ef30" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="26a3-cf78-63bd-dd6b" type="selectionEntry">
+                <entryLink id="d669-79de-56ab-ef30" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="57f7-e4c2-6115-938a" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
                   </modifiers>
@@ -6752,46 +6814,20 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="120.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bae7-03e9-ce08-82fb" name="Secace" publicationId="dbca-8d57-b848-457e" hidden="false" collective="true" import="true" type="model">
-      <modifiers>
-        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="add" field="category" value="d4a3-52d1-9941-7ffb">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="bae7-03e9-ce08-82fb" name="Secace" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1de-2b04-0dcc-8b80" type="min"/>
         <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df6f-a4a7-022e-04cb" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="3911-ca37-ff29-fdd3" name="Secace" hidden="false" targetId="5f30-e85d-263d-33d5" type="profile"/>
-        <infoLink id="280d-1447-0025-a502" name="Keep Calm and Carry On" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink id="b0e8-4f91-22bc-685b" name="Lionhearted Crew" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="a0ac-e123-566f-828f" name="Radar Relay" hidden="false" targetId="23b6-9bca-f41d-3c83" type="rule"/>
+        <infoLink id="280d-1447-0025-a502" name="Keep Calm and Carry On*" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="b0e8-4f91-22bc-685b" name="Lionhearted Crew*" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="a0ac-e123-566f-828f" name="Radar Relay*" hidden="false" targetId="39a7-cb6c-ff50-20f1" type="rule"/>
         <infoLink id="d7f4-202c-7bb7-881b" name="Royal Engineers" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="5dd2-f365-c428-b454" name="Vanguard" hidden="false" targetId="f721-8318-3875-0140" type="rule"/>
-        <infoLink id="7df8-b0f4-74e8-bcc0" name="Auspicio Regina" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
-        <infoLink id="cc88-a22d-b3b3-4ea2" name="East India Privateers" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="5dd2-f365-c428-b454" name="Vanguard*" hidden="false" targetId="f721-8318-3875-0140" type="rule"/>
+        <infoLink id="7df8-b0f4-74e8-bcc0" name="Auspicio Regina*" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="cc88-a22d-b3b3-4ea2" name="East India Privateers*" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="13bb-e230-64bf-0c26" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -6807,7 +6843,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="680c-cbd5-a7f0-144d" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="053a-0fa2-e96a-ef97" name="Rocket Battery" hidden="false" collective="true" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+        <entryLink id="053a-0fa2-e96a-ef97" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
           </modifiers>
@@ -6857,7 +6893,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                 <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10.0"/>
               </costs>
             </entryLink>
-            <entryLink id="6b83-79b2-4036-b200" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+            <entryLink id="6b83-79b2-4036-b200" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
               </modifiers>
@@ -6960,7 +6996,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="0cec-62cf-9ad7-106a" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="26a3-cf78-63bd-dd6b" type="selectionEntry">
+                <entryLink id="0cec-62cf-9ad7-106a" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="57f7-e4c2-6115-938a" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
@@ -6997,7 +7033,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="8593-5628-9c87-357f" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="26a3-cf78-63bd-dd6b" type="selectionEntry">
+                <entryLink id="8593-5628-9c87-357f" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="57f7-e4c2-6115-938a" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="4e9e-7862-58ad-15e6"/>
                   </modifiers>
@@ -7034,7 +7070,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                     <modifier type="add" field="category" value="5347-4855-4421-ed77"/>
                   </modifiers>
                 </entryLink>
-                <entryLink id="9916-07ec-0e72-1860" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="26a3-cf78-63bd-dd6b" type="selectionEntry">
+                <entryLink id="9916-07ec-0e72-1860" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="57f7-e4c2-6115-938a" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="5347-4855-4421-ed77"/>
                   </modifiers>
@@ -7225,7 +7261,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e64-f4a5-b361-a58b" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="c8d3-1e39-d389-04a2" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="c8d3-1e39-d389-04a2" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
                   </modifiers>
@@ -7244,7 +7280,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2abf-1790-7a5f-56e3" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="198e-23cd-5765-29c3" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="198e-23cd-5765-29c3" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
                   </modifiers>
@@ -7918,7 +7954,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="584a-a953-d861-7f81" name="Adventurer" hidden="false" targetId="ca13-0093-616b-36a5" type="profile"/>
-        <infoLink id="5806-93c8-78a8-008c" name="Auspicio Regina" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="5806-93c8-78a8-008c" name="Auspicio Regina*" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
         <infoLink id="5bde-2165-df8d-792b" name="East India Privateers" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
         <infoLink id="19ed-6bbe-c007-4725" name="Heavy Firepower" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
         <infoLink id="cad0-84c6-1557-24f4" name="Logistical Support" hidden="false" targetId="408e-7b40-68d7-059f" type="rule"/>
@@ -8293,13 +8329,14 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
           </modifiers>
         </infoLink>
         <infoLink id="23fe-ab85-7d23-547a" name="Loyal She Began; Thus She Remains" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
-        <infoLink id="e362-439a-3e05-18f0" name="Combat Air Patrol" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
+        <infoLink id="e362-439a-3e05-18f0" name="Combat Air Patrol*" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
         <infoLink id="a374-fa18-3e17-73a2" name="Lionhearted Crew" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
         <infoLink id="1381-2218-a47f-b308" name="Royal Engineers" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
         <infoLink id="d438-d5d9-5555-041c" name="SRS Mine Clearance" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
         <infoLink id="0c67-fe69-454e-0eae" name="SRS Recon Flight" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
-        <infoLink id="2896-1fbc-8e06-13d2" name="Heavy Firepower" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="2896-1fbc-8e06-13d2" name="Heavy Firepower*" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
         <infoLink id="fc17-157a-31b8-0fed" name="Vulnerable Stern" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="3291-f6c6-0967-b36d" name="Unexpected Air Strike*" hidden="false" targetId="0b23-f545-e684-30e9" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5a1c-5197-4ada-2e99" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -8470,32 +8507,6 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </costs>
     </selectionEntry>
     <selectionEntry id="8ad0-2f74-2bf1-35ea" name="Grail" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="add" field="category" value="d4a3-52d1-9941-7ffb">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="remove" field="category" value="fffb-149d-6db1-4439">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6f5-89b9-de36-1b49" type="min"/>
         <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0015-2c08-5167-a4be" type="max"/>
@@ -8506,9 +8517,9 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <infoLink id="702e-adb5-ccbf-2dd0" name="Keep Calm and Carry On" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
         <infoLink id="b258-3d25-e8bc-c2a6" name="Linear Dash" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
         <infoLink id="053d-fcfc-49c9-1b87" name="Lionhearted Crew" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="8238-3f63-3c4d-a296" name="Radar Relay" hidden="false" targetId="23b6-9bca-f41d-3c83" type="rule"/>
+        <infoLink id="8238-3f63-3c4d-a296" name="Radar Relay*" hidden="false" targetId="39a7-cb6c-ff50-20f1" type="rule"/>
         <infoLink id="2463-446b-7545-e4af" name="Royal Engineers" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="6850-ac18-b01b-7b18" name="Auspicio Regina" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="6850-ac18-b01b-7b18" name="Auspicio Regina*" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
         <infoLink id="96f9-2b83-33c8-220d" name="East India Privateers" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -8600,7 +8611,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
-    <rule id="20dc-3eb1-0ca3-5a54" name="Lionhearted Crew" publicationId="dbca-8d57-b848-457e" hidden="false">
+    <rule id="20dc-3eb1-0ca3-5a54" name="Lionhearted Crew*" publicationId="dbca-8d57-b848-457e" hidden="false">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -8614,7 +8625,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </modifiers>
       <description>This Unit may re-roll Blank Results when it is the Initial Target of an Assault.</description>
     </rule>
-    <rule id="592e-f786-82c0-385e" name="Keep Calm and Carry On" publicationId="dbca-8d57-b848-457e" hidden="false">
+    <rule id="592e-f786-82c0-385e" name="Keep Calm and Carry On*" publicationId="dbca-8d57-b848-457e" hidden="false">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -8626,53 +8637,59 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="hidden" value="false">
+      </modifiers>
+      <description>This Unit treats the effects of Chaos and Disarray as the effects of Emergency
+instead. The Units still counts has having the Chaos and Disarray Level so receiving a further Disorder Condition
+causes damage as normal.</description>
+    </rule>
+    <rule id="4e23-608b-4365-8b65" name="Loyal She Began; Thus She Remains*" publicationId="dbca-8d57-b848-457e" hidden="false">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
                 <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fffb-149d-6db1-4439" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
-      <description>This Unit treats the effects of Chaos and Disarray as the effects of Emergency
-instead. The Units still counts has having the Chaos and Disarray Level so receiving a further Disorder Condition
-causes damage as normal.</description>
+      <description>This Model may add +1 to its Defence Action Dice Pool if it is within 10” of one or more other friendly Units with the CROWN Trait. </description>
     </rule>
-    <rule id="4e23-608b-4365-8b65" name="Loyal She Began; Thus She Remains" publicationId="dbca-8d57-b848-457e" hidden="false">
+    <rule id="f8e2-882b-f962-2997" name="Auspicio Regina*" publicationId="dbca-8d57-b848-457e" hidden="false">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fffb-149d-6db1-4439" type="instanceOf"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d4a3-52d1-9941-7ffb" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fffb-149d-6db1-4439" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
-      <description>This Model may add +1 to its Defence Action Dice Pool if it is within 10” of one or more other friendly Units with the CROWN Trait.</description>
+      <description>After a Force with this Unit in play uses a card to score a Victory Condition, roll an Action Die. On an Exploding Hit, do not discard the Victory &amp; Valour card and instead return it to your hand. You may only roll once per card and cannot play a returned card immediately to score additional points.</description>
     </rule>
-    <rule id="f8e2-882b-f962-2997" name="Auspicio Regina" publicationId="dbca-8d57-b848-457e" hidden="false">
+    <rule id="d665-7d25-9e6d-2fb7" name="East India Privateers*" publicationId="dbca-8d57-b848-457e" hidden="false">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fffb-149d-6db1-4439" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <description>After a Force with this Unit in play uses a card to score a Victory Condition, roll an
-Action Die. On an Exploding Hit, do not discard the Victory &amp; Valour card and instead return it to your hand. You may only roll once per card and cannot play a returned card immediately to score additional points.</description>
-    </rule>
-    <rule id="d665-7d25-9e6d-2fb7" name="East India Privateers" publicationId="dbca-8d57-b848-457e" hidden="false">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fffb-149d-6db1-4439" type="instanceOf"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d4a3-52d1-9941-7ffb" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fffb-149d-6db1-4439" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <description>Models in this Unit may re-roll Blank dice results in any Action Dice Pool. The East India Privateers Rule only applies during each Round where the Force this Unit is part of had more Victory Points than their opponents at the most recent Check for Victory Step.</description>
     </rule>
     <rule id="d257-1d49-933c-9a56" name="New Rule" hidden="false"/>
+    <rule id="0b23-f545-e684-30e9" name="Unexpected Air Strike*" publicationId="dbca-8d57-b848-457e" hidden="false">
+      <description>Instead of being deployed as normal for the Encounter, this Unit may instead be held in Reserve (see Operations for details). Roll to arrive by Reserves as normal, however, from the start of Round two, or the start of any subsequent Rounds, this Unit may automatically arrive from Reserves. When it arrives from Reserves the Unit is placed at any point in the Play Area that is at least 5&quot; from the nearest terrain feature. No Model in the Unit can be deployed touching another Model. On the Round it enters play with this rule, this Unit immediately launches a number of SRS Tokens up to its Capacity value against any Enemy Unit in the Play Area rather than the usual range.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="762f-52e8-89d1-e20f" name="Britannia" publicationId="dbca-8d57-b848-457e" page="" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model    ">

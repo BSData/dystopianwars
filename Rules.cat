@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="edc4-1a6a-03e6-7be9" name="Rules" revision="6" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="edc4-1a6a-03e6-7be9" name="Rules" revision="7" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Rules collection</readme>
   <sharedRules>
     <rule id="b846-c841-35ad-caa2" name="Ablative Armour*" publicationId="5a03-1c6f-8fc8-2be1" page="" hidden="false">
@@ -61,9 +61,6 @@
     </rule>
     <rule id="177e-3490-5f5e-f4b9" name="Contra Rotation*" publicationId="5a03-1c6f-8fc8-2be1" page="" hidden="false">
       <description>This is a Special Operations Action that may be made by any Model in the Unit with the Paddlewheel Trait unless it has a Navigation Lock Critical Damage Marker or is making another Action requiring the Paddlewheels Trait. The Model making a Contra Rotation Action has a Drift of zero and reduces its Speed Attribute by its Mass for the Activation. At any point during its Movement Step the Model may make a single turn on the spot of up to 90 degrees. It may Move and Turn normally in addition to this Action.</description>
-    </rule>
-    <rule id="fdd3-3abf-14fe-d2de" name="Coordinate Support*" publicationId="129d-da97-caec-1ddd" hidden="false">
-      <description>Models using weapons in Support of a single Lead weapon in an Attack may use this rule. The Model may Support with any weapon rather than needing to match all the Qualities. Weapons used in Support in this way have their own Qualities ignored and simply increase the Attack Dice Pool by the value indicated for their Crippled Support at that range. Ramming weapons may not use this rule. Weapons with the Submerged Quality cannot use this rule in Attacks against Aerial Units. Weapons with the Aerial Quality cannot use this rule in Attacks against Submerged Units.</description>
     </rule>
     <rule id="4836-a907-b316-55b2" name="Corvette Duty*" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>This Model may add +1 to the Defence Action Dice Pool on any friendly Models within 5”. This bonus is in addition to any other bonuses such as being part of an Attached Unit.</description>
@@ -131,8 +128,8 @@
     <rule id="4869-03db-33f9-fa82" name="Landing Vessel*" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>Models in this Unit may make a Special Operations Action known as Landing. If this Model comes into contact with terrain identified in the Encounter as a Landing Point, it does not suffer damage and may remain stationary, with a Drift of zero for the Round. Each Model in this Unit may place a number of Ground Assault Tokens equal to its Mass in a stack within 5” of the Landing Point. The Token stack must be placed on Ground Terrain. Once a stack of Ground Assault Tokens has been placed using this Model, then place this Model at least 2” from the Landing Zone in any direction desired. This Model loses the Landing Vessel rule for the remainder of the Encounter. </description>
     </rule>
-    <rule id="565f-36a9-52bb-4e63" name="Launch Catapults" publicationId="129d-da97-caec-1ddd" hidden="false">
-      <description>SRS Tokens launched by Units with this rule may Launch SRS Tokens and place in base contact with a Friendly or Enemy Unit within 23” rather than the usual 20”.</description>
+    <rule id="565f-36a9-52bb-4e63" name="Launch Catapults*" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
+      <description>SRS Tokens launched by Units with this rule may Launch SRS Tokens and place in base contact with a Friendly or Enemy Unit within 45” rather than the usual 40”.</description>
     </rule>
     <rule id="db6c-61a0-22a6-0d7a" name="Linear Dash*" hidden="false">
       <description>This Unit gains +2 Speed during its Movement Step provided that it makes no turns.</description>
@@ -232,9 +229,6 @@
     </rule>
     <rule id="91f7-3138-f1c6-4770" name="Vigour*" publicationId="d854-a2d6-3d52-44c4" hidden="false">
       <description>Once per Activation, this Unit may make the following Valour Effect. Models with this rule gain the Sustained Quality to their Assault Dice Pool. Furthermore as the same Valour Effect they gain +6 to Fray if the Initial Target has the Colossus rule.</description>
-    </rule>
-    <rule id="6336-229a-7ed6-bb3d" name="Rebel Yell*" publicationId="129d-da97-caec-1ddd" hidden="false">
-      <description>Crippled Models with this rule still use the Battle Ready value of their weapons. This rule cannot be used if the Model has the Emergency or Chaos and Disarray Disorder Condition. The Unit ignores the Conscripted Crew rule when making or defending an Assault against a Unit with the Union Trait.</description>
     </rule>
     <rule id="449d-0011-bd00-b031" name="Terminator Assault*" publicationId="129d-da97-caec-1ddd" hidden="false">
       <description>This is a Special Operations Action that may be made by this Unit. All Models in this Unit with this rule may place a number of Talon Autogyro Tokens equal to their Mass in contact with an Initial Target up to 20” away. These Tokens each contribute 5 Action Dice to an Assault made during this Unit’s Activation. The Talon Autogyros count as the Assaulting Model, and they ignore Counter Assaults. They ignore this Unit’s Conscripted Crew rule. Friendly SRS placed in contact with Initial Target may support the Autogyro Token Assault. This Unit may not make an Assault in the same Round that it makes this Special Operation Action.</description>
@@ -377,14 +371,11 @@
     <rule id="2c93-befd-f88b-0881" name="Sharpshooter*" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>The Citadel of the Initial Target receives a -2 against Attacks with the Gunnery Quality by this Unit. </description>
     </rule>
-    <rule id="8df9-9fde-8dae-d24d" name="Field Repair Platform" publicationId="e6a1-85d3-8979-7880" hidden="false">
-      <description>Roll an Action Die each time an Akron Observation Rotor or RC-52 Patriot Automata is destroyed within 10” of this Unit. On a roll of a Counter or Heavy Counter the Akron or Patriot is not removed and instead remains in play with a single Hull point.</description>
+    <rule id="8df9-9fde-8dae-d24d" name="Field Repair Platform*" publicationId="e6a1-85d3-8979-7880" hidden="false">
+      <description>Roll an Action Die each time an Akron Observation Rotor or RC-52 Patriot Automata is destroyed within 10” of this Unit. On a roll of a Counter or Heavy Counter the Akron or Patriot is not removed and instead remains in play with a single Hull point. </description>
     </rule>
     <rule id="666c-5e9f-db4b-8f60" name="Heavy Teslacoils" publicationId="e6a1-85d3-8979-7880" hidden="false">
       <description>When this Unit leads an Attack using its Heavy Electrocannon Battery, both of those weapons may contribute their Lead value instead of their Support value to the Attack Dice Pool, rather than the normal single Lead weapon.</description>
-    </rule>
-    <rule id="0875-9929-1e1f-a032" name="Semper Fortis" publicationId="e6a1-85d3-8979-7880" hidden="false">
-      <description>Union commanders are trained to take advantage of evolving situations. After playing a Valour effect, roll an Action Die. On an Exploding Hit, do not discard the card and instead return it to your hand.</description>
     </rule>
     <rule id="ca4a-ca3a-b489-d441" name="The White Doves*" publicationId="e6a1-85d3-8979-7880" hidden="false">
       <description>SRS Tokens launched by Units with this rule are called White Doves SRS Tokens. Any Attack Run including one or more White Doves SRS Tokens add the Arc and Piercing Quality to any Attack Run they participate in, provided they are the majority of the friendly SRS Tokens in the Attack Run. </description>
@@ -509,9 +500,6 @@
     <rule id="e869-352b-8f2a-e3fd" name="Conscripted Crew*" publicationId="129d-da97-caec-1ddd" hidden="false">
       <description>This Unit counts Heavy Counters or Heavy Hits as a single success rather than two when involved in Assaults. </description>
     </rule>
-    <rule id="6682-4372-1977-72dc" name="Sabre Rattle*" publicationId="129d-da97-caec-1ddd" hidden="false">
-      <description>Once both sides have deployed but before any Vanguard or Shadow Hunter moves have been made, Units in this Battlefleet may be redeployed provided that their new position is closer to an enemy Unit than before this redeployment.  Each Unit in this Battlefleet may only be redeployed once and must be redeployed in their own Deployment area.</description>
-    </rule>
     <rule id="ad15-2a18-161b-7a44" name="Azhdaya Berserkers" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <description>Assaults by this Unit have the Hazardous and Devastating qualities.</description>
     </rule>
@@ -578,20 +566,14 @@
     <rule id="d3de-889d-63a3-56bb" name="Snowbird Strike" publicationId="dbca-8d57-b848-457e" hidden="false">
       <description>A Snowbird Strike may be made at the start of the Second and Fourth Rounds of the Encounter for each Battlefleet has this rule. In a Snowbird Strike, the Crown player creates a stack of SRS Tokens, one Token for each Unit in that Battlefleet in the Play Area at the start of that Round. Each stack is placed on a ship card of a Unit in each Battlefleet. They may be used exactly as though they had been launched by the Unit (allowing them to be placed against targets in the Play Area within 20” of the Unit). They may not carry out SRS Missions such as Long Range Sorties and cannot benefit from the Tail Gunners special rule. All SRS Tokens used with this rule are discarded at the end of the Second and Fourth Rounds.</description>
     </rule>
-    <rule id="04ee-5a1c-f3c8-3e5f" name="Rocketeer Flight" publicationId="dbca-8d57-b848-457e" hidden="false">
-      <description>This Unit may launch an Assault against an enemy Model if it is within 6&quot; of it,
-instead of the usual 4&quot;.</description>
+    <rule id="04ee-5a1c-f3c8-3e5f" name="Rocketeer Flight*" publicationId="dbca-8d57-b848-457e" hidden="false">
+      <description>This Unit may launch an Assault against an enemy Model if it is within 6&quot; of it, instead of the usual 4&quot;. </description>
     </rule>
-    <rule id="23b6-9bca-f41d-3c83" name="Radar Relay" publicationId="dbca-8d57-b848-457e" hidden="false">
-      <description>Attacks against Enemy Models within 7” of this Model ignore the Obscured rule.</description>
+    <rule id="4f0b-ae8b-9840-cbe0" name="Devil’s Own Luck*" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
+      <description>Once per Round, you may Cancel a Valour Effect in an Encounter where this Unit is in the Play Area. The controlling Player of this Unit must discard a Victory &amp; Valour card from their hand of any value rather than having to be of a greater combined value than the card being Cancelled.</description>
     </rule>
-    <rule id="4f0b-ae8b-9840-cbe0" name="Devil’s Own Luck" publicationId="dbca-8d57-b848-457e" hidden="false">
-      <description>Once per Round, you may Cancel a Valour Effect in an Encounter where this
-Unit is in the Play Area. The controlling Player of this Unit must discard a Victory &amp; Valour card from their hand of any value rather than having to be of a greater combined value than the card being Cancelled.</description>
-    </rule>
-    <rule id="8543-0d7a-9a4f-8b17" name="Veteran Repair Teams" publicationId="dbca-8d57-b848-457e" hidden="false">
-      <description>This Unit may add two additional Action Dice to its Repair Test. This is
-in addition to those given by the Model’s Mass.</description>
+    <rule id="8543-0d7a-9a4f-8b17" name="Veteran Repair Teams*" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
+      <description>This Unit may add two additional Action Dice to its Repair Test. This is in addition to those given by the Model’s Mass.</description>
     </rule>
     <rule id="6b16-eaab-a295-2ab3" name="Terror From Below" publicationId="dbca-8d57-b848-457e" hidden="false">
       <description>This Unit may Ram Surface Units even if it moved less than 3” in the Movement Phase. This Unit adds +3 to its Ramming Dice Pool when making a Ram against Surface Units.</description>
@@ -614,8 +596,8 @@ in addition to those given by the Model’s Mass.</description>
     <rule id="b5f3-e99d-c5c2-5670" name="Armour of Contempt" publicationId="dbca-8d57-b848-457e" hidden="false">
       <description>This Unit treats the effects of Chaos and Disarray as the effects of Emergency instead. The Units still counts has having the Chaos and Disarray Level so receiving a further Disorder Condition causes damage as normal.</description>
     </rule>
-    <rule id="563e-1c6c-a525-6552" name="Royal Engineers" publicationId="dbca-8d57-b848-457e" hidden="false">
-      <description>This Unit counts Blank results as a Counter when making Repair Rolls. Furthermore, Actions with the Gunnery Quality gain +1 to their Lead Action Dice value when two or more weapons Support their Action Dice Pool. </description>
+    <rule id="563e-1c6c-a525-6552" name="Royal Engineers*" publicationId="dbca-8d57-b848-457e" hidden="false">
+      <description>This Unit counts Blank results as a Counter when making Repair Rolls. Furthermore, Actions with the Gunnery Quality gain +1 to their Lead Action Dice value when two or more weapons Support their Action Dice Pool.</description>
     </rule>
     <rule id="9a64-1af1-2f0b-358f" name="Vail Midget Subs*" publicationId="33cf-b4a6-bff0-0d70" hidden="false">
       <description>The Battle-Ready Capacity / Crippled Capacity of each Model in this Unit is indicated in parenthesis. Each Model in this Unit may place the indicated number of Vali Midget Sub Tokens up to 20&quot; from this Model in base contact with an enemy Model. Vali Midget Subs can make Attack Runs like SRS Tokens, but with 5 Action Dice. The Attack Run has the Homing, Piercing and Submerged Qualities. Vali Midget Sub cannot be intercepted. They cannot make Attack Runs on Aerial Units and must try to find New Targets if this situation arises (page 26 of the Rules).</description>
