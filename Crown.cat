@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4724-2577-5b2d-0bfe" name="Crown v3.03" revision="10" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4724-2577-5b2d-0bfe" name="Crown v3.03" revision="11" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Last Crown ORBAT 3.03 (published 05/02/2023)</comment>
   <readme>Review 1.02.a0: Initial release
 Review 1.02.a1: minor point correction
@@ -10,7 +10,8 @@ Review 3.03.01: minor correction after the update to ORBAT 3.03
 Review 3.03.02: minor correction after the update to ORBAT 3.03
 Review 3.03.03: minor correction after the update to ORBAT 3.03 (date 2023-02-05)
 Review 3.03.04: correction suggested in internet (ORBAT 3.03 released the 2023-02-05)
-Review 3.03.05: correction suggested in internet (ORBAT 3.03 released the 2023-02-05)</readme>
+Review 3.03.05: correction suggested in internet (ORBAT 3.03 released the 2023-02-05)
+Review 3.03.06: correction suggested in discord (ORBAT 3.03 released the 2023-02-05)</readme>
   <categoryEntries>
     <categoryEntry id="6427-c580-219d-c874" name="Britannia Class" publicationId="dbca-8d57-b848-457e" hidden="false"/>
     <categoryEntry id="ddb5-f0d6-665c-3ac4" name="Protecteur Class" publicationId="dbca-8d57-b848-457e" hidden="false"/>
@@ -3784,6 +3785,17 @@ Review 3.03.05: correction suggested in internet (ORBAT 3.03 released the 2023-0
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="30d1-83da-eb33-46e4" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3633-78da-1fa5-a0ad" type="min"/>
           </constraints>
+        </entryLink>
+        <entryLink id="3682-1a54-5417-75bc" name="Gun Battery" hidden="false" collective="false" import="true" targetId="e32f-eb1d-5c03-b61c" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="20e8-5854-545c-4c13" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10.0"/>
+          </costs>
         </entryLink>
       </entryLinks>
       <costs>
@@ -8305,11 +8317,19 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
           <modifiers>
             <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
           </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0145-95c3-7bd7-8d53" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f098-7166-50be-64f6" type="max"/>
+          </constraints>
         </entryLink>
         <entryLink id="2530-3c59-8f61-9a58" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="26a3-cf78-63bd-dd6b" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
           </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="53db-e16c-e058-bd9d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4f08-e11c-7b06-8b09" type="max"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
