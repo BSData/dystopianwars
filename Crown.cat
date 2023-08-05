@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4724-2577-5b2d-0bfe" name="Crown v3.03" revision="11" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4724-2577-5b2d-0bfe" name="Crown v3.03" revision="12" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Last Crown ORBAT 3.03 (published 05/02/2023)</comment>
   <readme>Review 1.02.a0: Initial release
 Review 1.02.a1: minor point correction
@@ -11,7 +11,8 @@ Review 3.03.02: minor correction after the update to ORBAT 3.03
 Review 3.03.03: minor correction after the update to ORBAT 3.03 (date 2023-02-05)
 Review 3.03.04: correction suggested in internet (ORBAT 3.03 released the 2023-02-05)
 Review 3.03.05: correction suggested in internet (ORBAT 3.03 released the 2023-02-05)
-Review 3.03.06: correction suggested in discord (ORBAT 3.03 released the 2023-02-05)</readme>
+Review 3.03.06: correction suggested in discord (ORBAT 3.03 released the 2023-02-05)
+Review 3.03.07: correction suggested in discord (ORBAT 3.03 released the 2023-02-05)</readme>
   <categoryEntries>
     <categoryEntry id="6427-c580-219d-c874" name="Britannia Class" publicationId="dbca-8d57-b848-457e" hidden="false"/>
     <categoryEntry id="ddb5-f0d6-665c-3ac4" name="Protecteur Class" publicationId="dbca-8d57-b848-457e" hidden="false"/>
@@ -445,6 +446,11 @@ Review 3.03.06: correction suggested in discord (ORBAT 3.03 released the 2023-02
         <categoryLink id="4261-dd76-f515-da27" name="Guinevere Class" hidden="false" targetId="6c4d-9a88-9e9d-ed5f" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a796-811e-8a10-d538" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="3708-d313-2b05-446d" name="Sabre Class" hidden="false" targetId="27ee-3bf4-f5b4-ea57" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="da56-596a-1355-438c" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -1382,7 +1388,6 @@ Review 3.03.06: correction suggested in discord (ORBAT 3.03 released the 2023-02
       </modifiers>
       <categoryLinks>
         <categoryLink id="0c29-a81a-866a-35ec" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
-        <categoryLink id="41bd-608d-9168-7ede" name="Victory Class" hidden="false" targetId="3c0e-3931-32d5-b795" primary="false"/>
         <categoryLink id="b421-1b69-7fb3-008d" name="Sabre squadron" hidden="false" targetId="1ed7-e280-a0e5-78b8" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -3333,6 +3338,117 @@ Review 3.03.06: correction suggested in discord (ORBAT 3.03 released the 2023-02
       </categoryLinks>
       <entryLinks>
         <entryLink id="d574-ddeb-efaa-a73f" name="Guinevere" hidden="false" collective="false" import="true" targetId="94b8-bb98-431a-69be" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9a4f-37c3-6a10-38f1" name="Sabre Command Cruisers Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8dbd-7b09-f7db-0eba" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="0411-e4ee-53c6-6321" name="Sabre squadron" hidden="false" targetId="1ed7-e280-a0e5-78b8" primary="false"/>
+        <categoryLink id="9caa-c594-7ca6-b2a9" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2871-c4e9-4b79-0696" name="Escort Model" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6125-d4b0-1b70-097a" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="bb09-4959-7eff-cb9d" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9b6-2e20-fbc6-a990" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="122d-9676-975e-5021" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="84f5-fa2c-efe9-6663" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0883-115b-6b92-95ed" name="Attached Unit" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f99-a76e-31fe-c617" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="3913-8809-6045-142f" name="Hotspur Support Carrier Squadron" hidden="false" collective="false" import="true" type="unit">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f74f-8064-65f2-260c" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="a943-0bb0-9e97-6eb4" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+                <categoryLink id="c6ff-6c1e-1199-bb78" name="Hotspur Class" hidden="false" targetId="a683-0b8f-09f3-7880" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink id="1a6b-ebbb-3757-541d" name="Hotspur" hidden="false" collective="false" import="true" targetId="fd72-a8a0-a24d-349e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="37b2-91c6-039a-df19" value="1.0"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="dc83-bba4-c9e9-67d7" name="Athelstan Flak Cruiser Squadron" hidden="false" collective="false" import="true" type="unit">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="72c5-4c39-f6bd-c3f3" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="20a1-2161-d795-958a" name="Athelstan Class" hidden="false" targetId="a4c7-ed2c-6f9a-1a54" primary="false"/>
+                <categoryLink id="3192-a1e1-6ad1-7eb2" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink id="2251-7354-774e-a67f" name="Athelstan" hidden="false" collective="false" import="true" targetId="dcca-9848-0265-fdcb" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="53e7-91f3-1620-ab04" value="1.0"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="aebe-d4c9-e513-cb23" name="Albion Cruiser Squadron" hidden="false" collective="false" import="true" type="unit">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="76b4-83e8-445d-3bc5" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="fa64-ea86-0e21-0d99" name="Albion Class" hidden="false" targetId="b6a5-4bf0-cc7d-cef0" primary="false"/>
+                <categoryLink id="d737-309d-ce73-c250" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink id="8cea-df59-f854-e6fc" name="Albion" hidden="false" collective="false" import="true" targetId="3391-de44-4f50-9776" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="e3bb-7676-dcf0-db3b" value="1.0"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="47c2-c0ed-d5c8-3e66" name="Sabre" hidden="false" collective="false" import="true" targetId="e34f-b439-2980-93ea" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
