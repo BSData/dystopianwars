@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="aab7-88e9-70f7-d7f1" name="Alliance v3.04" revision="14" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <comment>Alliance ORBAT 3.04 (published 01/08/2023)</comment>
+<catalogue id="aab7-88e9-70f7-d7f1" name="Alliance v3.04" revision="15" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <comment>Alliance ORBAT 3.04 (published 08/08/2023)</comment>
   <readme>Datafile history:
 0.03.00: Initial publication
 0.04.00: updated to the the ORBAT v0.04
@@ -15,7 +15,7 @@
 3.03.05: correction of French Ship asked in discord (ORBAT v3.03 released the 2023-02-05)
 3.03.06: correction of Columbia asked in discord (ORBAT v3.03 released the 2023-02-05)
 3.03.07: correction of Spatha asked in discord (ORBAT v3.03 released the 2023-02-05)
-3.04.00: new datafile for ORBAT 3.04</readme>
+3.04.00: new datafile for ORBAT 3.04 (rev.1)</readme>
   <categoryEntries>
     <categoryEntry id="534c-9506-e470-8b7c" name="Alliance" publicationId="129d-da97-caec-1ddd" hidden="false"/>
     <categoryEntry id="9aab-6794-6d2b-c1a8" name="French" publicationId="129d-da97-caec-1ddd" hidden="false"/>
@@ -3213,7 +3213,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="2.0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -6995,11 +6995,12 @@
         </infoGroup>
       </infoGroups>
       <infoLinks>
-        <infoLink id="ccf9-9aba-efb7-03ff" name="Ablative Flank Armour" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
+        <infoLink id="ccf9-9aba-efb7-03ff" name="Rostrata" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="c874-c077-64e1-e63f" type="rule"/>
         <infoLink id="0422-c1ba-5e35-2005" name="Coordinate Support" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
         <infoLink id="c1e8-b89a-aada-ddde" name="For Valour!**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
         <infoLink id="be99-3117-0f6a-867e" name="Hammer Sweep**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
         <infoLink id="b5e3-f83a-4d74-e39f" name="Spotter**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="063a-3229-1f27-a3c2" type="rule"/>
+        <infoLink id="f4f9-54b7-d43d-f0c8" name="Ablative Flank Armour**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="91a2-6c7c-eee7-7a68" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -8145,7 +8146,7 @@
     <selectionEntry id="8705-aa4f-cd44-355b" name="Honneur" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="21ac-331c-74e0-50ac" type="min"/>
-        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4419-11a7-5a94-33b3" type="max"/>
+        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4419-11a7-5a94-33b3" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="6881-01a3-337f-c5a8" name="Honneur" hidden="false" targetId="633d-f9dd-4643-86ee" type="profile"/>
@@ -11059,7 +11060,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="100.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="106.0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -11143,15 +11144,6 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
-    <rule id="fdd3-3abf-14fe-d2de" name="Coordinate Support**" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
-      <description>Models using weapons in Support of a single Lead weapon in an Attack may use this rule. The Model may Support with any weapon rather than needing to match all the Qualities. Weapons used in Support in this way have their own Qualities ignored and simply increase the Attack Dice Pool by the value indicated for their Crippled Support at that range. Ramming weapons may not use this rule. Weapons with the Submerged Quality cannot use this rule in Attacks against Aerial Units. Weapons with the Aerial Quality cannot use this rule in Attacks against Submerged Units.</description>
-    </rule>
-    <rule id="6336-229a-7ed6-bb3d" name="Rebel Yell**" publicationId="129d-da97-caec-1ddd" hidden="false">
-      <description>Crippled Models with this rule still use the Battle Ready value of their weapons. This rule cannot be used if the Model has the Emergency or Chaos and Disarray Disorder Condition. The Unit ignores the Conscripted Crew rule when making or defending an Assault against a Unit with the Union Trait.</description>
-    </rule>
-    <rule id="6682-4372-1977-72dc" name="Sabre Rattle**" publicationId="129d-da97-caec-1ddd" hidden="false">
-      <description>Once both sides have deployed but before any Vanguard or Shadow Hunter moves have been made, Units in this Battlefleet may be redeployed provided that their new position is closer to an enemy Unit than before this redeployment. Each Unit in this Battlefleet may only be redeployed once and must be redeployed in their own Deployment area.</description>
-    </rule>
     <rule id="4781-004e-30dd-0347" name="New Rule" hidden="false"/>
   </sharedRules>
   <sharedProfiles>
