@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="aab7-88e9-70f7-d7f1" name="Alliance v3.04" revision="15" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <comment>Alliance ORBAT 3.04 (published 08/08/2023)</comment>
+  <comment>Alliance ORBAT 3.04 (published 17/08/2023)</comment>
   <readme>Datafile history:
 0.03.00: Initial publication
 0.04.00: updated to the the ORBAT v0.04
@@ -15,7 +15,8 @@
 3.03.05: correction of French Ship asked in discord (ORBAT v3.03 released the 2023-02-05)
 3.03.06: correction of Columbia asked in discord (ORBAT v3.03 released the 2023-02-05)
 3.03.07: correction of Spatha asked in discord (ORBAT v3.03 released the 2023-02-05)
-3.04.00: new datafile for ORBAT 3.04 (rev.1)</readme>
+3.04.00: new datafile for ORBAT 3.04 (rev.3)
+3.04.01: new datafile for ORBAT 3.04 (rev.2)</readme>
   <categoryEntries>
     <categoryEntry id="534c-9506-e470-8b7c" name="Alliance" publicationId="129d-da97-caec-1ddd" hidden="false"/>
     <categoryEntry id="9aab-6794-6d2b-c1a8" name="French" publicationId="129d-da97-caec-1ddd" hidden="false"/>
@@ -702,9 +703,15 @@
         <categoryLink id="f57d-0824-2cb7-1234" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false">
           <modifiers>
             <modifier type="set" field="0454-22ef-c6f9-585d" value="0.0">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9aab-6794-6d2b-c1a8" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9aab-6794-6d2b-c1a8" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9db8-15e9-7224-9503" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5a93-5021-42f1-6d6e" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -714,9 +721,15 @@
         <categoryLink id="2d87-75d8-7ed5-87d5" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false">
           <modifiers>
             <modifier type="set" field="3ed1-f60f-85fd-40ea" value="0.0">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd9-298b-2ed3-63b2" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd9-298b-2ed3-63b2" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9db8-15e9-7224-9503" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5a93-5021-42f1-6d6e" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -831,6 +844,62 @@
         <categoryLink id="802d-fa4b-c367-5787" name="Sirene Class" hidden="false" targetId="f178-bbbd-5205-7294" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="986f-3c54-5903-8168" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="2236-f46e-4a36-742d" name="Spanish" hidden="false" targetId="5a93-5021-42f1-6d6e" primary="false">
+          <modifiers>
+            <modifier type="set" field="8877-f777-a775-b328" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd9-298b-2ed3-63b2" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9db8-15e9-7224-9503" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9aab-6794-6d2b-c1a8" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8877-f777-a775-b328" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="fb6f-bf83-9f28-2fcc" name="Portuguese" hidden="false" targetId="9db8-15e9-7224-9503" primary="false">
+          <modifiers>
+            <modifier type="set" field="f6d1-9277-1e2a-e5ca" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fbd9-298b-2ed3-63b2" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5a93-5021-42f1-6d6e" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9aab-6794-6d2b-c1a8" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6d1-9277-1e2a-e5ca" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="5ce1-aaf5-754c-7dfa" name="Elvas Class" hidden="false" targetId="73c3-2b51-8f94-d30a" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abdd-c8c5-d310-70ba" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="b508-6ba8-48c4-e718" name="Pereira Class" hidden="false" targetId="079a-9010-d0a8-2a57" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bfe-43f7-1e40-5dc2" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="7d88-0c36-1840-cf29" name="Vasco Class" hidden="false" targetId="c714-6fd6-c084-666e" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3166-2149-bd73-905b" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="36f2-d77e-d218-e6a7" name="Cordoba Class" hidden="false" targetId="bf9a-2382-3bbb-8a00" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4f5-021f-5cf3-fa10" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -3213,7 +3282,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="2.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10.0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -4004,6 +4073,121 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="df84-6140-ff7d-f6ee" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2325-e806-f9b4-e015" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08cc-f341-6873-338f" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="c37b-6ac1-149d-111d" name="Starboard Rear" hidden="false" collective="false" import="true" defaultSelectionEntryId="bec5-1228-ee89-86d8">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b49-97ea-d136-050e" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f5b0-080f-5450-891c" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="748a-2234-a4fe-cf92" name="Heat Lancette" hidden="false" collective="false" import="true" targetId="4688-bbd1-6ac5-f438" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0fb8-ac14-2de8-e17c" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="bfaa-b9c5-5f11-7775" name="Gun Battery" hidden="false" collective="false" import="true" targetId="e32f-eb1d-5c03-b61c" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="af0a-d008-cb1e-5417" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="bec5-1228-ee89-86d8" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cce0-034b-be35-e2ac" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="c30c-ee32-b8c0-256a" name="Port" hidden="false" collective="false" import="true" defaultSelectionEntryId="07a3-eeb8-514c-c126">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5965-509a-579e-17ba" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bae3-760e-4bb5-21cf" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="ffb8-ac0a-2a31-0331" name="Gun Battery" hidden="false" collective="false" import="true" targetId="e32f-eb1d-5c03-b61c" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="c93d-a414-b1bc-7d2c"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5c7b-74be-e315-242a" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="47f4-c89f-304c-31ad" name="Heat Lancette" hidden="false" collective="false" import="true" targetId="4688-bbd1-6ac5-f438" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="c93d-a414-b1bc-7d2c"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fab9-a7fc-dbb1-c1a3" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="07a3-eeb8-514c-c126" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="c93d-a414-b1bc-7d2c"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5182-ebdb-1280-90f1" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="f441-ae9a-bc15-6250" name="Starboard Front" hidden="false" collective="false" import="true" defaultSelectionEntryId="b335-ce7e-6a22-ae5f">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d9d-318e-f58c-904a" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36ca-94cc-a8a2-0a1a" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="53c4-df2d-be5e-253d" name="Gun Battery" hidden="false" collective="false" import="true" targetId="e32f-eb1d-5c03-b61c" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1269-581e-97e9-52fa" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="31b4-6c68-e6c9-bf4d" name="Heat Lancette" hidden="false" collective="false" import="true" targetId="4688-bbd1-6ac5-f438" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0bbe-5381-166d-11fa" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="b335-ce7e-6a22-ae5f" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8160-8011-5b5c-6fbf" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="021a-a466-3c19-eed5" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="9985-b088-fda6-36d4" type="selectionEntry">
           <modifiers>
@@ -4020,33 +4204,6 @@
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f5e-175a-e313-abc2" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="aa4b-72a0-989b-8c9a" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
-          <modifiers>
-            <modifier type="add" field="category" value="c93d-a414-b1bc-7d2c"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bca0-5946-56c6-96db" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8acb-fb38-b35c-be2c" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="abab-6638-6f02-14e5" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
-          <modifiers>
-            <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9653-738c-8db3-844d" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e528-8402-3680-e309" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="bb82-81d1-7422-9a28" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
-          <modifiers>
-            <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1c81-f7b0-b2e3-fde6" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="62d0-e899-47a8-4984" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -4110,6 +4267,121 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e516-f47f-2201-9d0e" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0263-00fc-3d7a-f8ed" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92cb-dcb8-31ac-62e1" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="d711-9a09-b231-0da2" name="Rear" hidden="false" collective="false" import="true" defaultSelectionEntryId="f066-e4cc-c107-1704">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9e7-fc73-a86a-419d" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="26f7-dbcd-3edf-348d" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="72f0-8f77-7ef2-d698" name="Heat Lancette" hidden="false" collective="false" import="true" targetId="4688-bbd1-6ac5-f438" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6f28-435c-1549-7e22" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="05f8-4874-7ce3-e6d3" name="Gun Battery" hidden="false" collective="false" import="true" targetId="e32f-eb1d-5c03-b61c" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a772-b92f-4176-0068" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="f066-e4cc-c107-1704" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="525f-462a-27d7-bcfd" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="f208-98ec-b9fb-de1d" name="Port" hidden="false" collective="false" import="true" defaultSelectionEntryId="dc8b-1ef8-53e1-5246">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d70-5551-9872-99dd" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2415-45eb-5dcd-05d5" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="92b0-7cfa-5549-2785" name="Gun Battery" hidden="false" collective="false" import="true" targetId="e32f-eb1d-5c03-b61c" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="c93d-a414-b1bc-7d2c"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a3de-ff7c-e86d-2d08" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="981f-84a9-b77d-d377" name="Heat Lancette" hidden="false" collective="false" import="true" targetId="4688-bbd1-6ac5-f438" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="c93d-a414-b1bc-7d2c"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0a32-876b-ca0f-a805" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="dc8b-1ef8-53e1-5246" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="c93d-a414-b1bc-7d2c"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1fc7-0a37-b7cc-cb1f" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="5ccb-9926-1cf9-80a7" name="Starboard" hidden="false" collective="false" import="true" defaultSelectionEntryId="44b0-f846-8def-e8e3">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e33-9674-022f-23fe" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df82-9436-85a4-b728" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="7437-7f0b-6e77-66a0" name="Gun Battery" hidden="false" collective="false" import="true" targetId="e32f-eb1d-5c03-b61c" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="ce6f-067d-9ad4-ddaa"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="20db-b5c1-94dd-9090" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="d371-1695-d0ad-db05" name="Heat Lancette" hidden="false" collective="false" import="true" targetId="4688-bbd1-6ac5-f438" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="ce6f-067d-9ad4-ddaa"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6adc-20d3-b05e-6f12" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="44b0-f846-8def-e8e3" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="ce6f-067d-9ad4-ddaa"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4246-717e-2119-a0c5" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="6b66-e59c-1546-8edb" name="Heavy Rolling Broadside" hidden="false" collective="false" import="true" targetId="9ba0-93e0-a43a-742d" type="selectionEntry">
           <modifiers>
@@ -4138,24 +4410,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b710-48b0-fe7d-1a80" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="c9cb-c582-1864-3de8" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
-          <modifiers>
-            <modifier type="add" field="category" value="c93d-a414-b1bc-7d2c"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fcbe-272e-0a8f-6dfa" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd68-aba4-4779-91d8" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="08b9-2169-ced9-b3fc" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
-          <modifiers>
-            <modifier type="add" field="category" value="ce6f-067d-9ad4-ddaa"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="24a5-95af-d3cc-9651" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ff14-1f5c-bd76-b4cf" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="38a1-2760-6df4-4bcd" name="Heat Lance" hidden="false" collective="false" import="true" targetId="1382-9592-479f-f3b3" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
@@ -4163,15 +4417,6 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8fed-415c-419e-b93b" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0535-94e9-ab07-898c" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="36e2-1f67-1513-34d8" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
-          <modifiers>
-            <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="80c7-c51d-f039-ee07" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ef14-dfdd-aaa9-8fcb" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -5671,8 +5916,8 @@
       <infoLinks>
         <infoLink id="40f7-02fa-46dc-c5d4" name="Sagitta" hidden="false" targetId="2437-3225-ac32-83f0" type="profile"/>
         <infoLink id="fb71-0a07-763c-5c6a" name="Pack Hunter" hidden="false" targetId="112e-82cb-42a3-83d2" type="rule"/>
-        <infoLink id="305c-0596-973e-1486" name="Agile" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
-        <infoLink id="37c8-e055-9c52-d502" name="Auxiliary Mine Layer" hidden="false" targetId="7078-4031-0b1f-1971" type="rule"/>
+        <infoLink id="305c-0596-973e-1486" name="Agile**" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
+        <infoLink id="37c8-e055-9c52-d502" name="Auxiliary Mine Layer**" hidden="false" targetId="6158-153b-d320-6060" type="rule"/>
         <infoLink id="8291-831a-8abf-9259" name="Coordinate Support" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
         <infoLink id="1d85-5b78-dbb0-c05a" name="For Valour!" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
       </infoLinks>
@@ -6202,6 +6447,52 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
+        <selectionEntryGroup id="8c70-8be1-ce51-0e53" name="Secondary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="ab36-0f97-14c4-e055">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5189-8df2-db12-e9f0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6a1b-1e5f-4147-c149" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="fc15-2cdf-095a-fdb9" name="Heat Lancette" hidden="false" collective="false" import="true" targetId="4688-bbd1-6ac5-f438" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f41-a0cb-50b5-527a" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="ab36-0f97-14c4-e055" name="Gun Battery" hidden="false" collective="false" import="true" targetId="e32f-eb1d-5c03-b61c" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57b7-a35e-e324-43a3" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="b09a-b77f-59f2-96d7" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ad7d-6867-22c3-b768" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="4fcf-a023-aab2-f29e" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bea4-b8ef-fb87-a326" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="9805-8c0d-91aa-ccfe" name="Rolling Broadside" hidden="false" collective="false" import="true" targetId="4a24-b555-4fec-a327" type="selectionEntry">
@@ -6520,10 +6811,32 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="cd75-9a9d-b245-4983" name="Vasco" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="fca3-00a8-9f39-e015">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="777d-cdf2-234a-ad0b" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0dd-d971-bf09-58a1" type="min"/>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94f5-093e-03c7-6141" type="max"/>
       </constraints>
+      <infoGroups>
+        <infoGroup id="e2d1-5b79-5cf6-0dde" name="SUSA attached" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="fca3-00a8-9f39-e015" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink id="001d-98eb-654f-805f" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="17c8-533a-9683-29e1" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
       <infoLinks>
         <infoLink id="6d8a-7eeb-0297-0895" name="Vasco" hidden="false" targetId="b02f-3949-776e-a9fa" type="profile"/>
         <infoLink id="96fd-9fb7-f60f-ad8b" name="Coordinate Support" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
@@ -7385,53 +7698,54 @@
         <categoryLink id="a393-feae-0c2e-a5e2" name="Destroyer" hidden="false" targetId="63a3-004a-8e9f-2eb4" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="5bf1-da4b-bf4c-9591" name="Main Weapon" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="2999-62aa-d76c-f0e2" name="Main Weapon" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae7b-608e-9471-f570" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a185-a344-1943-2c8e" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27f0-e6bc-dfd4-4fc9" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ef7-24c1-a71c-2e5a" type="max"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup id="b485-75dd-5fd8-df6c" name="Front" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="05bf-3f99-b74e-b07d" name="Front" hidden="false" collective="false" import="true" defaultSelectionEntryId="c7f3-ecdf-1bba-45bd">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e999-483f-be2d-bb51" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1f08-45e5-6ff2-70b6" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7776-7089-1611-61ce" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="336e-ba83-45e0-5c17" name="Gun Battery" hidden="false" collective="false" import="true" targetId="e32f-eb1d-5c03-b61c" type="selectionEntry">
+                <entryLink id="c7f3-ecdf-1bba-45bd" name="Gun Battery" hidden="false" collective="false" import="true" targetId="e32f-eb1d-5c03-b61c" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c01b-711f-0cc6-ea06" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a9e-e742-8bb9-5df0" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="aa37-f6ce-0975-02c0" name="Heat Lancette" hidden="false" collective="false" import="true" targetId="4688-bbd1-6ac5-f438" type="selectionEntry">
+                <entryLink id="2a0a-926b-3671-40e9" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dba-6b38-79c3-d717" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="5e25-7c90-eccd-a02d" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fa5-1d87-cf3e-a62d" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1879-6749-3b5a-2128" type="max"/>
                   </constraints>
                   <costs>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="4.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="9e39-26b5-5349-c0ec" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
+                <entryLink id="9dba-1a7f-a9be-28a4" name="Heat Lancette" hidden="false" collective="false" import="true" targetId="4688-bbd1-6ac5-f438" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d55-9b53-5b04-f7f3" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="20f2-eb3c-905e-aa4d" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="fdac-1bfe-ca2f-434c" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a248-9e33-dd56-c9e8" type="max"/>
                   </constraints>
                   <costs>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="4.0"/>
@@ -7439,47 +7753,48 @@
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="d91b-6ca8-3306-2808" name="Rear" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="fa35-42b0-f683-b1e3" name="Rear" hidden="false" collective="false" import="true" defaultSelectionEntryId="c034-3578-f743-411a">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ef29-931b-88be-116c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7104-df7c-fd10-eb05" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4097-fe62-b0e7-04da" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="fc86-5120-8124-7774" name="Gun Battery" hidden="false" collective="false" import="true" targetId="e32f-eb1d-5c03-b61c" type="selectionEntry">
+                <entryLink id="c034-3578-f743-411a" name="Gun Battery" hidden="false" collective="false" import="true" targetId="e32f-eb1d-5c03-b61c" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fbd-3840-f371-7810" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a8e2-fb42-46dc-639d" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="b7d9-5eaf-832a-2a79" name="Heat Lancette" hidden="false" collective="false" import="true" targetId="4688-bbd1-6ac5-f438" type="selectionEntry">
+                <entryLink id="8a56-185d-2325-08ae" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2147-dce6-e857-a638" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="d706-d9d3-da37-678a" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbb4-fdae-374d-6f4c" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6de6-082c-1a72-4f81" type="max"/>
                   </constraints>
                   <costs>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="4.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="acfb-b5b7-1d2f-b8b1" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
+                <entryLink id="8faa-ff0a-ce3d-f9fc" name="Heat Lancette" hidden="false" collective="false" import="true" targetId="4688-bbd1-6ac5-f438" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a48-be1b-a485-b218" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5feb-19ba-bfc9-aa9c" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="52b5-e628-5daa-5162" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8238-9ff2-6dbe-8944" type="max"/>
                   </constraints>
                   <costs>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="4.0"/>
@@ -8839,10 +9154,32 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="8838-62f2-c3db-f726" name="Cordoba" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="fca3-00a8-9f39-e015">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="777d-cdf2-234a-ad0b" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="69f2-7d94-917b-4e02" type="min"/>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3a03-7c24-bc17-2ce9" type="max"/>
       </constraints>
+      <infoGroups>
+        <infoGroup id="f498-f3d1-ef79-5e70" name="SUSA attached" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="fca3-00a8-9f39-e015" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink id="d567-561a-8fe5-32cf" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="d82f-27db-4b72-48a4" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
       <infoLinks>
         <infoLink id="b838-63af-9ca4-a27b" name="Cordova" hidden="false" targetId="cd69-ee5a-be11-262f" type="profile"/>
         <infoLink id="da77-af3c-b7c6-5f96" name="Cloud Hunting" hidden="false" targetId="cfe8-adc4-4866-0bc8" type="rule"/>
@@ -9120,10 +9457,32 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="489b-e382-354a-a1b3" name="Pereira" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="fca3-00a8-9f39-e015">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="777d-cdf2-234a-ad0b" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b67-a9cf-2c77-e05e" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15e1-8585-f122-f83f" type="max"/>
       </constraints>
+      <infoGroups>
+        <infoGroup id="62af-6935-5ba2-2eb4" name="SUSA attached" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="fca3-00a8-9f39-e015" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink id="9e72-a9e7-d447-53b6" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="e58b-cdd4-abdf-8eb7" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
       <infoLinks>
         <infoLink id="c25c-56e9-d78d-2915" name="Coordinate Support" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
         <infoLink id="cbf3-75c9-bb50-164d" name="Heavy Escort" hidden="false" targetId="24cb-6c34-eb5b-7dde" type="rule"/>
@@ -9428,10 +9787,32 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="d265-ec15-d550-7273" name="Elvas" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="fca3-00a8-9f39-e015">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="777d-cdf2-234a-ad0b" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d43-1a8f-ad2d-4b56" type="min"/>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="084e-0350-9e89-5d00" type="max"/>
       </constraints>
+      <infoGroups>
+        <infoGroup id="7f1f-744e-fa9e-e32d" name="SUSA attached" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="fca3-00a8-9f39-e015" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink id="de9e-7f89-4e69-2e68" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="b288-39c5-94fe-5594" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
       <infoLinks>
         <infoLink id="f00e-e669-7993-242e" name="Elvas" hidden="false" targetId="b8af-8435-ddd2-31d4" type="profile"/>
         <infoLink id="4cd9-6a53-c25c-9944" name="Advanced Repair Facilities" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule">
@@ -11060,7 +11441,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="106.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="100.0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
       </costs>
     </selectionEntry>

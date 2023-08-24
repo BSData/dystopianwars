@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="6719-1f83-56dd-91fe" name="Commonwealth v3.04" revision="18" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <comment>Commonwealth ORBAT 3.04 (published 08/08/2023)</comment>
+  <comment>Commonwealth ORBAT 3.04 (published 17/08/2023)</comment>
   <readme>Review 1.02.01: correct Rurik and Oleg unit max size
 Review 1.03.00: add new unit and new profile from ORBAT 1.03, fixed Battlefleet bonus managment
 Review 1.04.a0: review after the v1.04a
@@ -18,7 +18,7 @@ Review 3.03.02: minor bug fix after update to 3.03 (publish 2023-02-05)
 Review 3.03.03: minor bug fix after update to 3.03 (publish 2023-02-05)
 Review 3.03.04: Giyena correction (publish 2023-02-05)
 Review 3.03.05: Pakhtusov correction (publish 2023-02-05)
-Review 3.04.00: new datafile for ORBAT 3.04</readme>
+Review 3.04.00: new datafile for ORBAT 3.04 (rev.2)</readme>
   <categoryEntries>
     <categoryEntry id="c7ca-90d2-5214-ece9" name="Commonwealth" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
     <categoryEntry id="43a2-7e77-ff29-fb5c" name="Russian" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
@@ -81,6 +81,17 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="f8d5-fb9d-e4a5-33ec" name="Commonwealth Faction Battlefleet" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+      <infoLinks>
+        <infoLink id="76de-2b26-7a49-b745" name="Strategic Reserve�" hidden="false" targetId="3f21-1511-2bff-8d3b" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="forces" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="fb5d-9525-9bc2-5c4d" name="Patron" hidden="false" targetId="d6e0-2055-9c1b-5e86" primary="false">
           <constraints>
@@ -604,7 +615,7 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
     </forceEntry>
     <forceEntry id="2286-183c-9545-9e58" name="Icebreaker Battlefleet " publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <infoLinks>
-        <infoLink id="2876-b158-7183-e7a1" name="Icebreaker Battlefleet bonus" hidden="false" targetId="98e2-8cce-d8ee-15ad" type="rule"/>
+        <infoLink id="2876-b158-7183-e7a1" name="Icebreaker Battlefleet bonus**" hidden="false" targetId="98e2-8cce-d8ee-15ad" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="fb5d-9525-9bc2-5c4d" name="Patron" hidden="false" targetId="d6e0-2055-9c1b-5e86" primary="false">
@@ -743,7 +754,7 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
     </forceEntry>
     <forceEntry id="1c03-4ace-59f3-9637" name="Ukranian Submersible Battlefleet " publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <infoLinks>
-        <infoLink id="5daf-cdfd-0bec-4d2d" name="Ukranian Battlefleet Bonus" hidden="false" targetId="495f-f4ed-3ef8-a354" type="rule"/>
+        <infoLink id="5daf-cdfd-0bec-4d2d" name="Ukranian Battlefleet Bonus**" hidden="false" targetId="495f-f4ed-3ef8-a354" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="fb5d-9525-9bc2-5c4d" name="Patron" hidden="false" targetId="d6e0-2055-9c1b-5e86" primary="false">
@@ -922,6 +933,9 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="1022-4484-f676-a003" name="Black Wolf Mercenary Battlefleet" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fee-e1e8-bd90-7a03" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="fb5d-9525-9bc2-5c4d" name="Patron" hidden="false" targetId="d6e0-2055-9c1b-5e86" primary="false">
           <constraints>
@@ -1223,7 +1237,7 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
               <entryLinks>
                 <entryLink id="558c-5c99-8bc2-1a5e" name="Rurik" hidden="false" collective="false" import="true" targetId="e4b3-7155-20c6-819b" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="6cc8-bdab-4931-ddde" value="2.0"/>
+                    <modifier type="set" field="6cc8-bdab-4931-ddde" value="4.0"/>
                   </modifiers>
                 </entryLink>
               </entryLinks>
@@ -1941,7 +1955,7 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
         <categoryLink id="e0e1-115e-7db1-bfeb" name="Black Wolf" hidden="false" targetId="79fe-c00f-c7c0-3c7a" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="c538-5113-8c16-c9fb" name="Attached Unit" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="c538-5113-8c16-c9fb" name="Attached Unit" hidden="true" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7485-b9a6-69f2-9b06" type="max"/>
           </constraints>
@@ -3408,7 +3422,7 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="49eb-ebdd-cad6-e4ec" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="8a15-1265-6c91-f6cc" name="Mozhayski Fleet Carrier" hidden="false" targetId="f772-ee74-1de8-0c86" type="profile"/>
+        <infoLink id="8a15-1265-6c91-f6cc" name="Mozhayski" hidden="false" targetId="f772-ee74-1de8-0c86" type="profile"/>
         <infoLink id="c044-dbc8-cef8-f3d7" name="Heavy Firepower**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
         <infoLink id="ad77-6522-7672-01d8" name="Kometa Railguns**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="380b-104f-5cc9-0cf9" type="rule"/>
         <infoLink id="7d5a-5a1c-5c5c-eccc" name="Combat Air Patrol**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
@@ -3441,10 +3455,10 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="e5d8-4000-3c06-d6ae" name="Secondary Weapon" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="e5d8-4000-3c06-d6ae" name="Main Weapon" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="57d4-34cf-4650-03d6" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f5f5-93d2-b878-5ace" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="57d4-34cf-4650-03d6" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f5f5-93d2-b878-5ace" type="max"/>
           </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup id="2f8a-441a-df55-f953" name="Front" hidden="false" collective="false" import="true" defaultSelectionEntryId="5eec-3ca3-de4a-32e0">
@@ -3587,33 +3601,6 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="adfa-31b6-d5db-0b93" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b64f-ef9c-1142-0347" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="da51-9232-3811-e6ad" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
-          <modifiers>
-            <modifier type="add" field="category" value="0cd5-1e4e-c51e-c338"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7c9e-5bb4-c826-3cda" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4de2-12c7-83fc-2f24" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="52de-edb1-36f8-3aff" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
-          <modifiers>
-            <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="532d-6718-d183-28bb" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c363-1f98-4c72-d95d" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="7d88-7811-c293-ebc5" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
-          <modifiers>
-            <modifier type="add" field="category" value="5b70-4095-b55c-9745"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac85-4c23-1e39-4da6" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="345f-d6cf-137d-b7a6" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -4299,7 +4286,7 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
         <infoLink id="2868-d81f-b3cb-4553" name="Ablative Armour**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
         <infoLink id="7f97-fe65-b96e-c518" name="Hammer Sweep**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
         <infoLink id="fdad-2de8-037b-05ab" name="Oleg" hidden="false" targetId="d208-f885-1f6d-bd4f" type="profile"/>
-        <infoLink id="f6f2-87f1-d221-cfa9" name="Quantity is a Quality**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ad4c-d50d-de1f-b975" type="rule"/>
+        <infoLink id="f6f2-87f1-d221-cfa9" name="Quantity is a Quality�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ad4c-d50d-de1f-b975" type="rule"/>
         <infoLink id="7524-010e-321a-ed43" name="Black Wolf Mercenaries*" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
         <infoLink id="0ab6-791c-9b1c-4e4f" name="Shallow Draught**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
       </infoLinks>
@@ -4986,7 +4973,7 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
       </constraints>
       <infoLinks>
         <infoLink id="f4f5-cd3f-2e44-5f53" name="Borodino" hidden="false" targetId="bc73-0715-01c7-2bbf" type="profile"/>
-        <infoLink id="cbe2-3bef-7592-75b7" name="Ablative Armour*" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
+        <infoLink id="cbe2-3bef-7592-75b7" name="Ablative Armour�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
         <infoLink id="849e-f36e-ad03-584c" name="Hammer Sweep*" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
         <infoLink id="7a1b-5b15-9af3-4ad0" name="Heavy Firepower*" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
         <infoLink id="c863-f8ba-aeeb-f8aa" name="Cryo-Capacitors*" hidden="false" targetId="8e0c-5c25-228a-bccf" type="rule"/>
@@ -5183,7 +5170,7 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="6799-5c16-6109-4795" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="110e-749a-0199-27be" type="selectionEntry">
+        <entryLink id="6799-5c16-6109-4795" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="9985-b088-fda6-36d4" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
@@ -5919,7 +5906,7 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac15-976c-2dea-d7cd" type="min"/>
-        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6cc8-bdab-4931-ddde" type="max"/>
+        <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6cc8-bdab-4931-ddde" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="cb42-7225-6209-f98f" name="Ablative Armour" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
@@ -5992,7 +5979,7 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="30.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="31.0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -6121,14 +6108,14 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
         <infoLink id="fd1e-a5b1-7c88-a391" name="Slava Ukraini!*" publicationId="e265-8c7f-a4b2-a48e" hidden="true" targetId="357c-e17f-6054-f320" type="rule"/>
         <infoLink id="18e3-d39b-dd92-ad18" name="Temperamental Design*" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1ea8-5ef6-de30-f3ae" type="rule"/>
         <infoLink id="cfee-b262-e0db-fcd9" name="Black Wolf Mercenaries*" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
-        <infoLink id="4dfe-da16-e071-0821" name="Silent Hunter**" hidden="false" targetId="4073-0c13-d827-7ab1" type="rule"/>
+        <infoLink id="4dfe-da16-e071-0821" name="Silent Hunter�" hidden="false" targetId="4073-0c13-d827-7ab1" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="923b-5af1-0d46-e037" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
         <categoryLink id="e978-cbd0-7d7f-1471" name="Grand Submarine" hidden="false" targetId="75af-d360-cca8-6162" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="58d6-07b9-b532-fadb" name="Secondary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="7c11-5c2c-104d-0720">
+        <selectionEntryGroup id="58d6-07b9-b532-fadb" name="Main Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="7c11-5c2c-104d-0720">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6c6a-5aae-d9dc-7db4" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="752e-1963-a0e7-7867" type="max"/>
@@ -6185,9 +6172,18 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
             <modifier type="add" field="category" value="5888-87ac-f851-165d"/>
           </modifiers>
         </entryLink>
+        <entryLink id="9460-4d94-8eaa-fab2" name="Broadside" hidden="false" collective="false" import="true" targetId="0600-8fa9-227d-91ba" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b039-dab2-c76a-a283" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6761-f2c0-bdfa-cbe9" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="220.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="230.0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -6198,16 +6194,16 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e3c-53a3-6beb-8e18" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="75dc-d7c8-b75e-8ee3" name="Full Steam Ahead*" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
-        <infoLink id="ff66-3f00-d4c3-2a9c" name="Hammer Sweep*" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
+        <infoLink id="75dc-d7c8-b75e-8ee3" name="Full Steam Ahead�" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
+        <infoLink id="ff66-3f00-d4c3-2a9c" name="Hammer Sweep�" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
         <infoLink id="e6b7-7865-0c4a-1cb5" name="Death Bringer" hidden="false" targetId="8e13-8e7e-4435-3b9c" type="profile"/>
-        <infoLink id="498b-e094-e205-c18e" name="Black Wolf Mercenaries*" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
-        <infoLink id="d472-b017-ec97-42e1" name="Silent Hunter**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4073-0c13-d827-7ab1" type="rule"/>
-        <infoLink id="8995-7f88-c038-482d" name="Mine Layer*" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940f-44f3-71bf-f26c" type="rule"/>
-        <infoLink id="97ad-3dcf-97f5-c9f2" name="Fortunes of War**" hidden="false" targetId="949d-d37f-c7c8-1093" type="rule"/>
-        <infoLink id="241a-4fbe-3239-5aa1" name="Breaker of Bows*" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="7128-f088-fcc6-6b08" type="rule"/>
-        <infoLink id="c560-13e3-86b8-e2b2" name="Vulnerable Stern**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
-        <infoLink id="d5bd-fb45-0bfc-744d" name="Piranya Escorts" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1f23-42e4-6c7a-7d44" type="rule"/>
+        <infoLink id="498b-e094-e205-c18e" name="Black Wolf Mercenaries�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="d472-b017-ec97-42e1" name="Submarauder�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="481e-dcda-510f-f32d" type="rule"/>
+        <infoLink id="8995-7f88-c038-482d" name="Mine Layer�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940f-44f3-71bf-f26c" type="rule"/>
+        <infoLink id="97ad-3dcf-97f5-c9f2" name="Fortunes of War�" hidden="false" targetId="949d-d37f-c7c8-1093" type="rule"/>
+        <infoLink id="241a-4fbe-3239-5aa1" name="Breaker of Bows�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="7128-f088-fcc6-6b08" type="rule"/>
+        <infoLink id="c560-13e3-86b8-e2b2" name="Vulnerable Stern�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="d5bd-fb45-0bfc-744d" name="Lone Wolf�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="381a-833b-bfd2-e1f5" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="41c9-8ec0-0c31-a6b1" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
@@ -6336,9 +6332,18 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="646e-cf20-d9ca-bb2f" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="a39c-9375-7766-9ff6" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="9985-b088-fda6-36d4" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="be7a-9042-cd01-0e0f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a2d2-3065-8a9c-4bcf" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="321.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="281.0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -7140,9 +7145,10 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
       </constraints>
       <infoLinks>
         <infoLink id="ad88-3dda-4a47-8985" name="Ablative Armour" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
-        <infoLink id="b1f7-3061-7feb-c35f" name="Shallow Draught*" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
+        <infoLink id="b1f7-3061-7feb-c35f" name="Shallow Draught�" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
         <infoLink id="7649-af00-dbe1-552e" name="Boyar" hidden="false" targetId="7b8f-21e0-6562-5e3f" type="profile"/>
         <infoLink id="fd84-2ed3-acf2-cde2" name="Black Wolf Mercenaries*" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="4c80-c470-af88-8025" name="Rocket Barrage�" hidden="false" targetId="1042-355a-94f3-b6be" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="790a-ad11-b10e-18c2" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
@@ -7217,7 +7223,7 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="38.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="37.0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -7363,7 +7369,7 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
       <infoLinks>
         <infoLink id="0d88-badd-cc35-b110" name="Saransk" hidden="false" targetId="a377-5b14-82f6-cb3c" type="profile"/>
         <infoLink id="6e00-b9ed-ed26-9641" name="Ablative Armour*" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
-        <infoLink id="fa8e-0f23-7dd7-0a47" name="Azhdaya Berserkers" hidden="false" targetId="ad15-2a18-161b-7a44" type="rule"/>
+        <infoLink id="fa8e-0f23-7dd7-0a47" name="Azhdaya Berserkers**" hidden="false" targetId="ad15-2a18-161b-7a44" type="rule"/>
         <infoLink id="51d4-f37c-3744-a8c1" name="Flak Barrage*" hidden="false" targetId="7b67-714d-bb2b-6297" type="rule">
           <modifiers>
             <modifier type="append" field="name" value=" (6)"/>
@@ -7442,7 +7448,7 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
       </constraints>
       <infoLinks>
         <infoLink id="035a-67d1-e41c-fe61" name="Irkutsk" hidden="false" targetId="3ca2-881a-d413-e06e" type="profile"/>
-        <infoLink id="6909-ddbe-78f9-1492" name="Ablative Armour**" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
+        <infoLink id="6909-ddbe-78f9-1492" name="Ablative Armour�" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
         <infoLink id="39f8-1ad6-142d-3ec8" name="Flak Barrage**" hidden="false" targetId="7b67-714d-bb2b-6297" type="rule">
           <modifiers>
             <modifier type="append" field="name" value=" (6)"/>
@@ -7452,9 +7458,10 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
         <infoLink id="615f-f36e-8181-e187" name="Linear Dash**" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
         <infoLink id="b950-f6fd-2121-eeaf" name="Infrasound Detector**" hidden="false" targetId="84f6-ec74-541c-ffd7" type="rule"/>
         <infoLink id="1214-9b75-3e70-3ea0" name="Low Level Strike**" hidden="false" targetId="0054-ea91-5408-283a" type="rule"/>
-        <infoLink id="dde4-e987-b51b-9a70" name="Terror From Above" hidden="false" targetId="6810-cad9-66bc-bada" type="rule"/>
-        <infoLink id="49d6-be4d-125a-9b7b" name="Vulnerable Stern**" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
-        <infoLink id="4a4b-b5be-02a1-84f4" name="Black Wolf Mercenaries*" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="dde4-e987-b51b-9a70" name="Terror From Above�" hidden="false" targetId="eabd-7cf1-b305-2fdb" type="rule"/>
+        <infoLink id="49d6-be4d-125a-9b7b" name="Vulnerable Stern�" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="4a4b-b5be-02a1-84f4" name="Black Wolf Mercenaries�" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="23f8-4b66-1c18-3fcf" name="Cloud Dive�" hidden="false" targetId="52c5-a8f6-6309-f95c" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9b63-2399-3720-da07" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
@@ -7481,7 +7488,7 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="116.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="122.0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -7816,7 +7823,7 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
     <selectionEntry id="a334-6cae-a141-6a37" name="Dragunov" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4698-7b5d-232d-4607" type="min"/>
-        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b6b-de20-dde7-6cb8" type="max"/>
+        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b6b-de20-dde7-6cb8" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="12d2-a2c9-cc71-f7bf" name="Dragunov" hidden="false" targetId="955a-5de7-f8fc-ea11" type="profile"/>
@@ -7983,10 +7990,10 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
       </constraints>
       <infoLinks>
         <infoLink id="beef-830a-3e8d-e18a" name="Prometheus" hidden="false" targetId="b950-93c9-49a7-10d5" type="profile"/>
-        <infoLink id="ee83-494c-21f6-abee" name="Experimental Shield Amplifier*" hidden="false" targetId="e3bb-c3f1-db9c-719c" type="rule"/>
+        <infoLink id="ee83-494c-21f6-abee" name="Experimental Shield Amplifier**" hidden="false" targetId="e3bb-c3f1-db9c-719c" type="rule"/>
         <infoLink id="2a68-ae0a-b6a4-e2cc" name="The Traitor’s Mark" hidden="false" targetId="48ec-1da0-8d75-61fa" type="rule"/>
         <infoLink id="e746-ffbd-d86e-8e5b" name="Temperamental Design" hidden="false" targetId="1ea8-5ef6-de30-f3ae" type="rule"/>
-        <infoLink id="15e4-355e-482a-58d9" name="Experimental Generator Ship*" hidden="false" targetId="ad55-c026-6154-8aed" type="rule"/>
+        <infoLink id="15e4-355e-482a-58d9" name="Experimental Generator Ship**" hidden="false" targetId="ad55-c026-6154-8aed" type="rule"/>
         <infoLink id="d48d-6db8-da01-dea8" name="Black Wolf Mercenaries*" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -8736,7 +8743,7 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="146.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="149.0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -9854,7 +9861,7 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="a1ad-9bc7-baf3-a245" name="New Rule" hidden="false"/>
-    <rule id="ad4c-d50d-de1f-b975" name="Quantity is a Quality**" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+    <rule id="ad4c-d50d-de1f-b975" name="Quantity is a Quality�" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -9862,9 +9869,9 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
           </conditions>
         </modifier>
       </modifiers>
-      <description>If this Unit is destroyed, award Victory Points and complete any Victory Conditions as normal. Then roll a number of Action dice equal to the Round number. On one or more Explosive Hits, a single minimum sized Kutzov or Rurik Unit (of the Player’s choice) may be placed in Reserve. If more than one Explosive Hit is rolled, each additional die provides an additional Kutsov or two additional Ruriks to the Unit, depending on Unit type. The maximum size for the Unit is as indicated by the Unit entry in this ORBAT and any surplus Models generated are lost. The facing of one Action die may be replaced with an Explosive Hit if the destroyed Unit was within 7” of a Flagship Unit. This new Unit is given no further upgrades or additional Models. If it is subsequently destroyed, it can award Victory Points as normal.</description>
+      <description>If this Unit is destroyed, award Victory Points and complete any Victory Conditions as normal. Then roll a number of Action dice equal to the Round number. On one or more Explosive Hits, a single minimum sized Kutsov or Rurik Unit (of the Player’s choice) may be placed in Reserve. If more than one Explosive Hit is rolled, each additional die provides an additional Kutsov or two additional Ruriks to the Unit, depending on Unit type. The maximum size for the Unit is as indicated by the Unit entry in this ORBAT and any surplus Models generated are lost. The facing of one Action die may be replaced with an Explosive Hit if the destroyed Unit was within 7” of a Flagship Unit. This new Unit is given no further upgrades or additional Models. If it is subsequently destroyed, it can award Victory Points as normal.</description>
     </rule>
-    <rule id="357c-e17f-6054-f320" name="Slava Ukraini!**" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+    <rule id="357c-e17f-6054-f320" name="Slava Ukraini!�" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -9874,7 +9881,7 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
       </modifiers>
       <description>Units with the UKRAINIAN Trait. Crippled Models with this rule still use the Battle Ready value of their weapons with the Submerged Quality and may re-roll Blank Results when the Initial Target of an Assault.</description>
     </rule>
-    <rule id="b195-faa8-ae64-9494" name="Black Wolf Mercenaries**" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+    <rule id="b195-faa8-ae64-9494" name="Black Wolf Mercenaries�" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -9887,7 +9894,7 @@ Review 3.04.00: new datafile for ORBAT 3.04</readme>
           </conditionGroups>
         </modifier>
       </modifiers>
-      <description>Models in this Unit may re-roll Blank dice results in any Action Dice Pool. This rule only applies during each Round where the Force this Unit is part of had more Victory Points than their opponents at the most recent Check for Victory Step.</description>
+      <description>Models in this Unit may re-roll Blank dice results in any Action Dice Pool. The Black Wolf Mercenaries Rule only applies during each Round where the Force this Unit is part of had more Victory Points than their opponents at the most recent Check for Victory Step.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
