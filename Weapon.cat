@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="526f-06e7-edaa-02b8" name="Weapon" revision="15" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="526f-06e7-edaa-02b8" name="Weapon" revision="16" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Weapon collection
 Review v1: starting document
 Review v2: imprevment to follow ORBAT requirments
@@ -15,7 +15,8 @@ Review v11: new data for Mid April &apos;23 update
 Review v12: correction for end of April &apos;23 update
 Review v13: correction for end of May &apos;23 update
 Review v14: corrected gun battery profile for June &apos;23 update, review 3.04.04: new data for mid April updated
-Review v15: start of review for 3.04 Orbats (rev.4)</readme>
+Review v15: start of review for 3.04 Orbats (rev.4)
+Review v15: start of review for 3.04 Orbats for Sept &apos;23</readme>
   <categoryEntries>
     <categoryEntry id="dbb4-72d5-bceb-70b3" name="F" hidden="false"/>
     <categoryEntry id="372f-19f1-09ed-e694" name="P&amp;S" hidden="false"/>
@@ -128,6 +129,10 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="0600-8fa9-227d-91ba" name="Broadside" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="87fe-4534-d24f-35a5" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3d76-478b-b3a1-7185" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="fc42-5b89-f463-fc3b" name="Broadside" hidden="false" targetId="ae08-f907-00e0-6554" type="profile">
           <modifierGroups>
@@ -842,6 +847,10 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="fc11-e98a-2d7f-198c" name="Light Broadside" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8e27-2e8a-8b53-ecd8" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9c82-ed43-875f-8bc9" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="8b1f-e8dd-65be-0107" name="Light Broadside" hidden="false" targetId="c017-9b01-2262-f6e7" type="profile">
           <modifierGroups>
@@ -1195,6 +1204,10 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="3e85-ccc4-d939-f7f8" name="Heavy Flak Broadside" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ea68-78bd-0e94-62d6" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a5ee-2899-2b7a-1c38" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="be48-5823-581b-a5c7" name="Heavy Flak Broadside" hidden="false" targetId="a4b7-fe9b-130b-9947" type="profile">
           <modifierGroups>
@@ -1419,6 +1432,10 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="18e7-2755-41be-00c0" name="Heavy Torpedo Salvo " publicationId="7f09-e243-2307-78d0" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8e5f-dcde-3170-9e35" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="565a-7355-74fb-3684" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="dff5-52a0-f277-63f6" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
         <infoLink id="4482-ae5c-d9b6-5657" name="Heavy Torpedo Salvo" hidden="false" targetId="5ce5-2226-6c2d-fb48" type="profile">
@@ -1448,6 +1465,10 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="1420-4e0a-ca1d-6cb7" name="Rocket Battery" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="468e-97f8-6f97-0e97" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="79b2-02f8-de28-7559" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="f6d5-1151-c82b-2825" name="Rocket Battery" hidden="false" targetId="90e8-0288-ed1a-f4fb" type="profile">
           <modifierGroups>
@@ -1685,7 +1706,19 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
     </selectionEntry>
     <selectionEntry id="2dfb-ebc3-cd98-5c05" name="Shockwave Pulse" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="14ea-613f-0e51-da4f" name="Shockwave Pulse" hidden="false" targetId="b572-6de9-ccd4-9032" type="profile"/>
+        <infoLink id="14ea-613f-0e51-da4f" name="Shockwave Pulse" hidden="false" targetId="b572-6de9-ccd4-9032" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="2dfb-ebc3-cd98-5c05" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
         <infoLink id="c135-3bfc-ca50-759b" name="Torrent" hidden="false" targetId="8081-2eef-5594-eb78" type="rule">
           <modifiers>
             <modifier type="append" field="name" value=" (Small)"/>
@@ -1842,6 +1875,10 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="26a3-cf78-63bd-dd6b" name="Heavy Torpedo Turret" publicationId="129d-da97-caec-1ddd" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6e95-846b-a676-59da" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="da5b-4e98-454b-cea9" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="237e-9f91-279f-8a4f" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
         <infoLink id="fb8c-6e4e-f5a4-5b42" name="Heavy Torpedo Turret" hidden="false" targetId="c4fc-e39d-2c42-c337" type="profile">
@@ -1900,7 +1937,11 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0946-1dc0-1c55-5716" name="Bananach Phosphor Bombs" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0946-1dc0-1c55-5716" name="Bananach Phosphor Bombs" publicationId="dbca-8d57-b848-457e" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="05f0-e9ad-1287-28d6" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="87b0-16bd-cf14-c11b" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="1780-8778-db7b-ded7" name="Bananach Phosphor Bombs" hidden="false" targetId="3726-3c02-563d-e218" type="profile">
           <modifiers>
@@ -2029,6 +2070,10 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="3b69-5936-2ff8-bc08" name="Heavy Prow Ram" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aa8f-5d30-ff76-74f4" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d9fa-a20d-cd91-3f36" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="3b53-085c-5a39-82e6" name="Heavy Prow Ram" hidden="false" targetId="d088-251e-5c6b-83bf" type="profile">
           <modifierGroups>
@@ -2081,7 +2126,6 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
             </modifierGroup>
           </modifierGroups>
         </infoLink>
-        <infoLink id="b383-4b19-33d1-b0e5" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
         <infoLink id="67f9-5dde-7839-13a4" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
         <infoLink id="4462-dada-c951-adc0" name="High Velocity" hidden="false" targetId="5b8e-71d1-641d-73f9" type="rule"/>
         <infoLink id="6b19-cc79-4d26-fddb" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
@@ -2303,6 +2347,10 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="7d6e-51f6-d5e5-200b" name="Scything Blades" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9106-16cf-54b9-ede7" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2051-2147-dfd6-8f93" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="74d7-b767-4c50-802e" name="Scything Blades" hidden="false" targetId="2bdd-d4bc-b3ec-2210" type="profile">
           <modifierGroups>
@@ -2420,6 +2468,10 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="8831-12af-37ef-1633" name="Ryoba Prow Saw" publicationId="dbca-8d57-b848-457e" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c3f-64d4-7779-4fc0" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d896-49f4-c80b-3c6e" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="67d0-1d1d-ace6-5d16" name="Ryoba Prow Saw" hidden="false" targetId="d302-22ff-874c-7809" type="profile">
           <modifiers>
@@ -2439,6 +2491,10 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="4e2e-beb0-7b7d-0f80" name="Scalpel Lancette" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00b7-86ac-827d-5052" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0c7d-60da-369a-24a8" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="3222-5eca-406b-584d" name="Scalpel Lancette" hidden="false" targetId="6244-3624-bb86-3bd6" type="profile">
           <modifierGroups>
@@ -2732,7 +2788,11 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9938-990c-3af2-c9b4" name="Alchemical Cluster Bombs" publicationId="7b2b-0f56-3962-5ec1" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9938-990c-3af2-c9b4" name="Alchemical Cluster Bombs" publicationId="7b2b-0f56-3962-5ec1" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="90c4-cbda-f80f-46db" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="182b-753e-47f1-16c2" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="79b5-e71f-d345-aad8" name="Alchemical Cluster Bombs" hidden="false" targetId="2c07-50b0-e9fb-2503" type="profile">
           <modifierGroups>
@@ -2790,7 +2850,7 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b9db-a782-8ccf-23ef" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="a2a6-a13e-1189-4182" name="Alchemical" hidden="false" targetId="b69e-5981-d88e-75de" type="rule"/>
+        <infoLink id="a2a6-a13e-1189-4182" name="Hyperbeam Lense Cannon (3.04)" hidden="false" targetId="f1ec-f03e-cbe8-843e" type="rule"/>
         <infoLink id="43e1-a60c-f5b0-fcb8" name="Hyperbeam Lense Cannon" hidden="false" targetId="3032-2661-6403-a23d" type="profile">
           <modifierGroups>
             <modifierGroup>
@@ -2804,7 +2864,6 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
             </modifierGroup>
           </modifierGroups>
         </infoLink>
-        <infoLink id="e945-3d03-49bc-13f1" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
         <infoLink id="7613-b5fd-1375-2f2e" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
       </infoLinks>
       <costs>
@@ -2987,6 +3046,10 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="db84-1c9c-98de-aa16" name="Orichalcite Flechette Launcher" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6ffa-c0d8-3405-6ab9" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3c82-7423-c7df-9c3d" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="afa5-5683-a1b6-1e3d" name="Fusillade" hidden="false" targetId="4ec1-3aa3-001e-f8f6" type="rule"/>
         <infoLink id="1f7f-ba4b-1fa2-7ca2" name="Blast" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
@@ -2999,6 +3062,10 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="6a66-1016-ae4a-e291" name="Salvo Missile Silo" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0174-f809-f47c-4e8d" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5815-1e28-b031-7115" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="dc7e-3e7e-a65a-adbf" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
         <infoLink id="5ac7-6b55-74b9-7b2d" name="Blast" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
@@ -3219,6 +3286,10 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="fba5-ca79-6f57-9ef2" name="Heat Lancette" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a194-80eb-c093-7e20" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3ea5-5c0b-3b5a-1365" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="13c9-52aa-99c0-890f" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
         <infoLink id="ae19-8ae1-1aef-9f9a" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
@@ -3272,6 +3343,10 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="7dba-1c8d-ba19-7ccb" name="Cymbeline Missile Silo" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="92a1-3f83-172d-77e0" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8da9-9efe-85cc-bb4b" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="0aaa-ecf9-cdf1-0d34" name="Cymbeline Missile Silo" hidden="false" targetId="188b-dba1-865c-23c9" type="profile">
           <modifierGroups>
@@ -3423,6 +3498,10 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="e8d5-6319-67ea-821d" name="Heavy Gun Battery" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fff4-359a-e423-0419" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e367-ab03-77fa-12f0" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="736b-c19a-44a5-0734" name="Heavy Gun Battery" hidden="false" targetId="4307-eab2-99cf-555e" type="profile">
           <modifierGroups>
@@ -3520,7 +3599,6 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
             </modifierGroup>
           </modifierGroups>
         </infoLink>
-        <infoLink id="f3f9-3d91-7a6c-b3be" name="Submerged" hidden="false" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
         <infoLink id="ccea-e710-a69a-6aee" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
         <infoLink id="cabf-f64b-ca95-cbfc" name="High Velocity" hidden="false" targetId="5b8e-71d1-641d-73f9" type="rule"/>
         <infoLink id="62e8-dd01-584c-d27d" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
@@ -3531,6 +3609,10 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="3d0e-d034-a0b1-f724" name="Heavy Alchemical Rockets" publicationId="7b2b-0f56-3962-5ec1" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54e8-a258-659c-9930" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c06-4f20-4b0e-e910" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="7ff2-84ba-6b40-ef0d" name="Heavy Alchemical Rockets" hidden="false" targetId="cbdd-4c2a-6c09-f3d6" type="profile">
           <modifierGroups>
@@ -3601,6 +3683,10 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="f7e0-fd3a-7201-ad0f" name="Heavy Rocket Battery" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5781-1c58-9ef5-797a" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cc37-580e-0bae-89c1" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="1cb1-67df-e60e-41a5" name="Heavy Rocket Battery" hidden="false" targetId="5aa0-82a6-e6bc-6950" type="profile">
           <modifierGroups>
@@ -4071,6 +4157,10 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="e70f-ef5d-1b71-fdf6" name="Pulse Broadside" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="253e-a56f-8405-ef24" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1318-6750-fa1d-2b01" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="7e85-9be0-a67a-ecfc" name="Pulse Broadside" hidden="false" targetId="7477-6c6d-1faa-a8c5" type="profile">
           <modifierGroups>
@@ -4099,6 +4189,10 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="5dcb-4100-3eab-e801" name="Particle Beamer" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="47d2-1442-0f71-ac34" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9cfb-254a-51ab-db0f" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="57cf-dee5-f7b8-2e91" name="Particle Beamer" hidden="false" targetId="31a4-53c0-305c-d8fb" type="profile">
           <modifierGroups>
@@ -5192,6 +5286,10 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="40cf-c845-ac81-afe2" name="Particle Beamer" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="91f5-8f9e-0a8a-cc50" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5515-311d-3473-7308" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="81fb-f031-5303-496c" name="Particle Beamer" hidden="false" targetId="31a4-53c0-305c-d8fb" type="profile">
           <modifierGroups>
@@ -5267,6 +5365,10 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="9985-b088-fda6-36d4" name="Heavy Broadside" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c099-826a-e3fd-19f9" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4e26-5fd4-6ed6-fa67" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="2ec1-3668-aa6e-0537" name="Heavy Broadside" hidden="false" targetId="53dd-93fd-f789-bf9e" type="profile">
           <modifierGroups>
@@ -5274,7 +5376,7 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
               <modifiers>
                 <modifier type="set" field="8739-aae9-7e50-c8d0" value="A &amp; P &amp; S">
                   <conditions>
-                    <condition field="selections" scope="9985-b088-fda6-36d4" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="372f-19f1-09ed-e694" type="instanceOf"/>
+                    <condition field="selections" scope="9985-b088-fda6-36d4" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="27c7-6494-d18b-0d70" type="instanceOf"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" field="8739-aae9-7e50-c8d0" value="F &amp; A">
@@ -5284,7 +5386,7 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
                 </modifier>
                 <modifier type="set" field="8739-aae9-7e50-c8d0" value="P &amp; S">
                   <conditions>
-                    <condition field="selections" scope="9985-b088-fda6-36d4" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="27c7-6494-d18b-0d70" type="instanceOf"/>
+                    <condition field="selections" scope="9985-b088-fda6-36d4" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="372f-19f1-09ed-e694" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5765,6 +5867,10 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="5fe7-329e-4129-b89e" name="Vengeance Keel Saw" publicationId="dbca-8d57-b848-457e" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c9d1-49cb-e900-e771" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2363-7c79-7bd4-3104" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="4fce-3f7a-c8b3-a259" name="Vengeance Keel Saw" hidden="false" targetId="e9f8-1bef-5728-21d9" type="profile">
           <modifiers>
@@ -6126,7 +6232,11 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="558d-7511-d6e9-063d" name="Canberra Gyro-Bomb Launcher" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="558d-7511-d6e9-063d" name="Canberra Gyro-Bomb Launcher" publicationId="dbca-8d57-b848-457e" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d4e7-d774-6c2d-dce2" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2630-bb8e-d487-9008" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="edf2-db9a-957c-29de" name="Canberra Gyro-Bomb Launcher" hidden="false" targetId="9ef7-0f64-746b-7712" type="profile">
           <modifierGroups>
@@ -6145,6 +6255,71 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
         <infoLink id="d0b6-892e-49de-f6e5" name="Homing" hidden="false" targetId="3fdf-3916-52aa-ecf7" type="rule"/>
         <infoLink id="b0e0-6890-39ab-7090" name="Piercing" hidden="false" targetId="0f8e-056c-75a9-caee" type="rule"/>
         <infoLink id="4df1-48b7-e60f-92d0" name="Limited" hidden="false" targetId="3bd4-7e14-0aa2-97db" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="62a4-b440-678e-256f" name="Claw Arc Projector" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbef-d636-3aad-ff0a" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e0b-0077-8fd8-6cfb" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="d992-2040-a566-60b9" name="Claw Arc Projector" hidden="false" targetId="ddea-5254-393b-7b2b" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="62a4-b440-678e-256f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="62a4-b440-678e-256f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="8b12-73e1-2440-f8d9" name="Ramming" hidden="false" targetId="c92a-830a-302c-d3ab" type="rule">
+          <modifiers>
+            <modifier type="append" field="name" value=" 10/8"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="7209-60fb-c4ea-b94e" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+        <infoLink id="4f99-0d79-7ff0-0347" name="Arc" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8cc0-9c4e-e741-ff9c" name="Heavy Magnetic Bombard" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9650-bdaa-f51e-7556" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9192-950c-83df-370d" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="dd01-3871-a746-a3d7" name="Heavy Magnetic Bombard" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9bb9-6b13-3626-ae41" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="8cc0-9c4e-e741-ff9c" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="d775-8ff2-4f5e-50c2" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+        <infoLink id="1345-39dd-116d-02a5" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
+        <infoLink id="3f6d-eeb6-98eb-8e6c" name="Magnetic" hidden="false" targetId="8c21-7eac-4f35-4268" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
@@ -6243,9 +6418,20 @@ Review v15: start of review for 3.04 Orbats (rev.4)</readme>
     <rule id="5f8b-1815-9738-ae2c" name="D-Cannon**" publicationId="d854-a2d6-3d52-44c4" hidden="false">
       <description>As a Valour Effect, before targets are declared using this weapon, all D-Cannons in the Unit lose the Indirect Quality and instead gain the Devastating Quality. D-Cannon Batteries ignore Shield Generators.</description>
     </rule>
-    <rule id="f063-dc19-1b5c-313e" name="Rail" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
-      <description>
-The Citadel of the Initial Target receives a -1 against Actions with this Quality. When making an Action against Models with the Skimming Unit or Aerial Unit Positional Traits, each weapon receives +1 Action Dice. When making an Action against Models with the Submerged Unit Positional Trait, each weapon receives -1 Action Dice.</description>
+    <rule id="f063-dc19-1b5c-313e" name="Rail**" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+      <description>The Citadel of the Initial Target receives a -1 against Actions with this Quality. Furthermore, when making an Action against Models with the Skimming Unit or Aerial Unit Positional Traits, each weapon or SRS Token with this Quality receives +1 Action Dice (to a maximum of +3). When making an Action against Models with the Submerged Unit Positional Trait, each weapon or SRS Token with this Quality receives -1 Action Dice (to a maximum of -3).</description>
+    </rule>
+    <rule id="f1ec-f03e-cbe8-843e" name="Hyperbeam Lense Cannon (3.04)" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
+      <description>A Model armed with this weapon chooses an Initial Target in the Shooting Step as normal. Draw a 5mm wide direct line between the centre point of the Initial Target and this Model. Resolve an Attack against each Model touched by the Beam as a separate Attack, with each of those Models (but, importantly, they are not the Initial Target of the Attack for Generators or other rule effects). Roll the number of Action Dice indicated in the Range Band against each Model touched by the line and consult the following table:
+
+- Critical: The Model suffers a Catastrophic Explosion, and the Player may apply the result of a further Action Dice rolled for that range band (if any additional dice have been rolled).
+- H.vy hit: The touched Model suffers a Catastrophic Explosion.
+- Hit: The touched Model suffers a Critical Hit.
+- H.vy Counter: The touched Model gains a Level of Disorder.
+- Counter: The touched Model gains a Level of Disorder.
+- Blank: No effect.
+
+The attacking Player chooses which die result to apply. One of the Action Dice in the roll against the Initial Target may always be counted as an Exploding Hit if one has not been rolled. The Hyperbeam Lense Cannon ignores being Obscured or any Generator effects on Action Dice Pools.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -6255,7 +6441,7 @@ The Citadel of the Initial Target receives a -1 against Actions with this Qualit
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">9(2) / 6(-)</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">9(5) / 6(3)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">8(4) / 5(3)</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Submerged, Torpedo, High Velocity</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial, Torpedo, High Velocity</characteristic>
       </characteristics>
     </profile>
     <profile id="a0a8-dac0-e58d-85e2" name="Aerial Torpedo" publicationId="d854-a2d6-3d52-44c4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
@@ -6307,8 +6493,8 @@ The Citadel of the Initial Target receives a -1 against Actions with this Qualit
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">5(1) / 4(-)</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">5(2) / 4(1)</characteristic>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">5(2) / 4(1)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">5(2) / 4(2)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">5(2) / 4(2)</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial, Alchemical</characteristic>
       </characteristics>
     </profile>
@@ -6389,7 +6575,7 @@ The Citadel of the Initial Target receives a -1 against Actions with this Qualit
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">4(3) / 3(2)</characteristic>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">4(3) / 3(2)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">4(3) / 3(1)</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Hazardous, Corrosive Mortar</characteristic>
       </characteristics>
     </profile>
@@ -6423,8 +6609,8 @@ The Citadel of the Initial Target receives a -1 against Actions with this Qualit
     <profile id="6834-59ec-a9ed-9dae" name="Dual Magnetic Gatling Guns" publicationId="e6a1-85d3-8979-7880" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">7(4)/ 4(3)</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">4(3)/ 3(2)</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">7(4) / 4(3)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">4(3) / 3(2)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Sustained, Magnetic</characteristic>
       </characteristics>
@@ -6432,8 +6618,8 @@ The Citadel of the Initial Target receives a -1 against Actions with this Qualit
     <profile id="108f-eb40-4fe8-46f5" name="Dual Naval Electrocannons" publicationId="e6a1-85d3-8979-7880" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">5(4)/ 4(2)</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">4(2)/ 3(1)</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">5(4) / 4(2)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">4(2) / 3(1)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Arc</characteristic>
       </characteristics>
@@ -6585,8 +6771,8 @@ The Citadel of the Initial Target receives a -1 against Actions with this Qualit
     <profile id="b8bd-0237-312d-2fee" name="Heavy Huoqiang (Blade)" publicationId="7b2b-0f56-3962-5ec1" page="" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">9(4) / -</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">6(3) / -</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">10(5) / -</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5"> -</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Alchemical, Hazardous</characteristic>
       </characteristics>
@@ -6711,7 +6897,7 @@ The Citadel of the Initial Target receives a -1 against Actions with this Qualit
     <profile id="3237-dbb9-e219-818f" name="Huoqiang (Blade)" publicationId="7b2b-0f56-3962-5ec1" page="" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">7(3) / -</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">6(4) / -</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Alchemical, Hazardous</characteristic>
@@ -6720,7 +6906,7 @@ The Citadel of the Initial Target receives a -1 against Actions with this Qualit
     <profile id="69d0-13df-715a-c7f3" name="Huoqiang (Gout)" publicationId="7b2b-0f56-3962-5ec1" page="" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">7(3) / 7(3)</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">5(3) / 5(3)</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Torrent (Small), Alchemical, Fusillade</characteristic>
@@ -6738,10 +6924,10 @@ The Citadel of the Initial Target receives a -1 against Actions with this Qualit
     <profile id="3032-2661-6403-a23d" name="Hyperbeam Lense Cannon" publicationId="7b2b-0f56-3962-5ec1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">10(0) / -</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">1(0) / -</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">2(0) / 1(0)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">3(0) / 2(0)</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Extreme Range</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Extreme Range, Hyperbeam Lense Cannon</characteristic>
       </characteristics>
     </profile>
     <profile id="8fff-6855-6e17-abc7" name="Judgement Lance" publicationId="d854-a2d6-3d52-44c4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
@@ -6993,7 +7179,7 @@ The Citadel of the Initial Target receives a -1 against Actions with this Qualit
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 12, Devastating</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 12/12, Devastating</characteristic>
       </characteristics>
     </profile>
     <profile id="10f4-a9d7-24c1-a973" name="Salvo Missile Silo" publicationId="d854-a2d6-3d52-44c4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
@@ -7008,7 +7194,7 @@ The Citadel of the Initial Target receives a -1 against Actions with this Qualit
     <profile id="6244-3624-bb86-3bd6" name="Scalpel Lancette" publicationId="7b2b-0f56-3962-5ec1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">7(4) / 5(3)</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">10(5) / 9(4)</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Hazardous, Devastating</characteristic>
@@ -7020,7 +7206,7 @@ The Citadel of the Initial Target receives a -1 against Actions with this Qualit
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 6, Piercing, Sustained</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Ramming 10/8, Piercing, Sustained</characteristic>
       </characteristics>
     </profile>
     <profile id="9d52-19df-1515-2345" name="Seeker Rocket Battery" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">

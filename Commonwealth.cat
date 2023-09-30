@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6719-1f83-56dd-91fe" name="Commonwealth v3.04" revision="19" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6719-1f83-56dd-91fe" name="Commonwealth v3.04" revision="20" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Commonwealth ORBAT 3.04 (published 31/08/2023)</comment>
   <readme>Review 1.02.01: correct Rurik and Oleg unit max size
 Review 1.03.00: add new unit and new profile from ORBAT 1.03, fixed Battlefleet bonus managment
@@ -19,7 +19,8 @@ Review 3.03.03: minor bug fix after update to 3.03 (publish 2023-02-05)
 Review 3.03.04: Giyena correction (publish 2023-02-05)
 Review 3.03.05: Pakhtusov correction (publish 2023-02-05)
 Review 3.04.00: new datafile for ORBAT 3.04 (rev.3)
-Review 3.04.01: updated datafile for ORBAT 3.04 published 31/08/2023</readme>
+Review 3.04.01: updated datafile for ORBAT 3.04 published 31/08/2023
+Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023</readme>
   <categoryEntries>
     <categoryEntry id="c7ca-90d2-5214-ece9" name="Commonwealth" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
     <categoryEntry id="43a2-7e77-ff29-fb5c" name="Russian" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
@@ -3229,8 +3230,8 @@ Review 3.04.01: updated datafile for ORBAT 3.04 published 31/08/2023</readme>
         <entryLink id="1858-c026-53be-5b10" name="Krykun" hidden="false" collective="false" import="true" targetId="c9c8-eda1-3b4c-5bba" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="2.0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c7c9-fee0-bafe-53a4" name="Kyiv Battleship" publicationId="e265-8c7f-a4b2-a48e" page="" hidden="false" collective="false" import="true" type="model">
@@ -3655,6 +3656,9 @@ Review 3.04.01: updated datafile for ORBAT 3.04 published 31/08/2023</readme>
           </constraints>
           <entryLinks>
             <entryLink id="4be1-7c8f-4d1d-bd6f" name="Cryogenic Blast" hidden="false" collective="false" import="true" targetId="a695-145e-2051-86b6" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="894f-9681-8368-b982" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a19-c23d-55fa-897f" type="max"/>
@@ -3907,6 +3911,9 @@ Review 3.04.01: updated datafile for ORBAT 3.04 published 31/08/2023</readme>
           </constraints>
           <entryLinks>
             <entryLink id="0bb1-8b58-dee9-e204" name="Cryogenic Blast" hidden="false" collective="false" import="true" targetId="a695-145e-2051-86b6" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d89-a849-12a8-8b5b" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7249-c792-9f7c-5ebb" type="max"/>
@@ -5158,6 +5165,9 @@ Review 3.04.01: updated datafile for ORBAT 3.04 published 31/08/2023</readme>
           </constraints>
           <entryLinks>
             <entryLink id="6b93-3aa2-5d51-cb32" name="Cryogenic Blast" hidden="false" collective="false" import="true" targetId="a695-145e-2051-86b6" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fe2-f844-53dd-760a" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="234b-71f2-ae3b-a276" type="max"/>
@@ -5585,6 +5595,9 @@ Review 3.04.01: updated datafile for ORBAT 3.04 published 31/08/2023</readme>
           </constraints>
           <entryLinks>
             <entryLink id="e9ed-c6db-b491-9d2c" name="Cryogenic Blast" hidden="false" collective="false" import="true" targetId="a695-145e-2051-86b6" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a72-ad49-bfbf-a4aa" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab25-0dd7-edb3-b94f" type="max"/>
@@ -5841,6 +5854,9 @@ Review 3.04.01: updated datafile for ORBAT 3.04 published 31/08/2023</readme>
           </constraints>
           <entryLinks>
             <entryLink id="a49a-2360-9798-9e98" name="Cryogenic Blast" hidden="false" collective="false" import="true" targetId="a695-145e-2051-86b6" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b993-5b60-7d6f-a954" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="720a-3755-f8c5-baae" type="max"/>
@@ -6779,6 +6795,23 @@ Review 3.04.01: updated datafile for ORBAT 3.04 published 31/08/2023</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86f3-5cb5-d922-d30a" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="1867-e1af-65d7-9ff5" name="Cryo generator" hidden="false" collective="false" import="true" targetId="1a28-0be4-37ed-6e32" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b65-c6bc-adac-12c8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6463-6f8b-21f1-619c" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="ed3b-c56e-1bde-f746" name="Cryogenic Blast" hidden="false" collective="false" import="true" targetId="a695-145e-2051-86b6" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c7d-c985-b7c4-4169" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2b4-8834-5342-da27" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="450.0"/>
@@ -7147,6 +7180,9 @@ Review 3.04.01: updated datafile for ORBAT 3.04 published 31/08/2023</readme>
           </constraints>
           <entryLinks>
             <entryLink id="b5d0-5c57-2edf-e551" name="Shockwave Pulse" hidden="false" collective="false" import="true" targetId="2dfb-ebc3-cd98-5c05" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3ff-1e6d-cabc-6ace" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58cd-1d26-df41-96c9" type="max"/>
@@ -7823,6 +7859,9 @@ Review 3.04.01: updated datafile for ORBAT 3.04 published 31/08/2023</readme>
           </constraints>
           <entryLinks>
             <entryLink id="066d-7384-800b-a2a3" name="Shockwave Pulse" hidden="false" collective="false" import="true" targetId="2dfb-ebc3-cd98-5c05" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ff5-e1c9-eb73-6764" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a90-7262-83b5-5976" type="max"/>
@@ -8455,6 +8494,9 @@ Review 3.04.01: updated datafile for ORBAT 3.04 published 31/08/2023</readme>
           </constraints>
           <entryLinks>
             <entryLink id="fa39-add1-a01c-2aca" name="Cryogenic Blast" hidden="false" collective="false" import="true" targetId="a695-145e-2051-86b6" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a70-9431-d4bd-9eaa" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0dee-c466-a63d-c4fb" type="max"/>
@@ -8551,6 +8593,9 @@ Review 3.04.01: updated datafile for ORBAT 3.04 published 31/08/2023</readme>
           </constraints>
           <entryLinks>
             <entryLink id="de3c-e195-d96d-b5ad" name="Shockwave Pulse" hidden="false" collective="false" import="true" targetId="2dfb-ebc3-cd98-5c05" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4329-6255-72d7-e8fa" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9134-4cf8-1456-c51c" type="max"/>
@@ -8712,6 +8757,9 @@ Review 3.04.01: updated datafile for ORBAT 3.04 published 31/08/2023</readme>
           </constraints>
           <entryLinks>
             <entryLink id="8c62-fbb7-9e56-ab1f" name="Cryogenic Blast" hidden="false" collective="false" import="true" targetId="a695-145e-2051-86b6" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c89-e45b-093f-3b02" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee86-d611-05ff-6c3f" type="max"/>
@@ -8782,9 +8830,6 @@ Review 3.04.01: updated datafile for ORBAT 3.04 published 31/08/2023</readme>
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
-                  <costs>
-                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
-                  </costs>
                 </entryLink>
                 <entryLink id="9409-6156-11d8-4e05" name="Heavy Rocket Battery" hidden="false" collective="false" import="true" targetId="65b3-d9a8-e0a3-a028" type="selectionEntry">
                   <modifiers>
@@ -9096,6 +9141,9 @@ Review 3.04.01: updated datafile for ORBAT 3.04 published 31/08/2023</readme>
           </constraints>
           <entryLinks>
             <entryLink id="91cb-f34b-f551-2b54" name="Cryogenic Blast" hidden="false" collective="false" import="true" targetId="a695-145e-2051-86b6" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="568f-80e7-6209-844c" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51c6-5bb5-a4f5-0b3a" type="max"/>
@@ -9837,6 +9885,9 @@ Review 3.04.01: updated datafile for ORBAT 3.04 published 31/08/2023</readme>
           </constraints>
           <entryLinks>
             <entryLink id="9d40-582f-718e-2372" name="Cryogenic Blast" hidden="false" collective="false" import="true" targetId="a695-145e-2051-86b6" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2591-fef8-8222-3ad9" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfd9-4f71-27b6-d83a" type="max"/>
@@ -9862,7 +9913,7 @@ Review 3.04.01: updated datafile for ORBAT 3.04 published 31/08/2023</readme>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="a1ad-9bc7-baf3-a245" name="New Rule" hidden="false"/>
-    <rule id="ad4c-d50d-de1f-b975" name="Quantity is a Quality�" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+    <rule id="ad4c-d50d-de1f-b975" name="Quantity is a Quality (3.04)" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -9872,7 +9923,7 @@ Review 3.04.01: updated datafile for ORBAT 3.04 published 31/08/2023</readme>
       </modifiers>
       <description>If this Unit is destroyed, award Victory Points and complete any Victory Conditions as normal. Then roll a number of Action dice equal to the Round number. On one or more Explosive Hits, a single minimum sized Kutsov or Rurik Unit (of the Player’s choice) may be placed in Reserve. If more than one Explosive Hit is rolled, each additional die provides an additional Kutsov or two additional Ruriks to the Unit, depending on Unit type. The maximum size for the Unit is as indicated by the Unit entry in this ORBAT and any surplus Models generated are lost. The facing of one Action die may be replaced with an Explosive Hit if the destroyed Unit was within 7” of a Flagship Unit. This new Unit is given no further upgrades or additional Models. If it is subsequently destroyed, it can award Victory Points as normal.</description>
     </rule>
-    <rule id="357c-e17f-6054-f320" name="Slava Ukraini!�" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+    <rule id="357c-e17f-6054-f320" name="Slava Ukraini! (3.04)" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -9882,7 +9933,7 @@ Review 3.04.01: updated datafile for ORBAT 3.04 published 31/08/2023</readme>
       </modifiers>
       <description>Units with the UKRAINIAN Trait. Crippled Models with this rule still use the Battle Ready value of their weapons with the Submerged Quality and may re-roll Blank Results when the Initial Target of an Assault.</description>
     </rule>
-    <rule id="b195-faa8-ae64-9494" name="Black Wolf Mercenaries�" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+    <rule id="b195-faa8-ae64-9494" name="Black Wolf Mercenaries (3.04)" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>

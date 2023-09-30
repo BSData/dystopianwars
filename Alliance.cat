@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="aab7-88e9-70f7-d7f1" name="Alliance v3.04" revision="16" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="aab7-88e9-70f7-d7f1" name="Alliance v3.04" revision="17" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Alliance ORBAT 3.04 (published 01/09/2023)</comment>
   <readme>Datafile history:
 0.03.00: Initial publication
@@ -17,7 +17,8 @@
 3.03.07: correction of Spatha asked in discord (ORBAT v3.03 released the 2023-02-05)
 3.04.00: new datafile for ORBAT 3.04
 3.04.01: new datafile for ORBAT 3.04 (rev.3)
-3.04.02: revivew datafile for ORBAT 3.04 (01/09/2023)</readme>
+3.04.02: revivew datafile for ORBAT 3.04 (01/09/2023)
+3.04.03: correction of datafile for ORBAT 3.04 (01/09/2023)</readme>
   <categoryEntries>
     <categoryEntry id="534c-9506-e470-8b7c" name="Alliance" publicationId="129d-da97-caec-1ddd" hidden="false"/>
     <categoryEntry id="9aab-6794-6d2b-c1a8" name="French" publicationId="129d-da97-caec-1ddd" hidden="false"/>
@@ -4013,7 +4014,8 @@
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d823-36ae-4788-b276" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d823-36ae-4788-b276" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="361a-4745-1001-05e7" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="b53b-b6f1-e765-9eaf" name="Heavy Prow Ram" hidden="false" collective="false" import="true" targetId="3b69-5936-2ff8-bc08" type="selectionEntry">
@@ -4021,7 +4023,8 @@
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ac5-cc90-2a0f-7c52" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ac5-cc90-2a0f-7c52" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6047-24c0-6765-ecc3" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -5893,6 +5896,9 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7a39-f789-e8c9-f512" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+              </costs>
             </entryLink>
             <entryLink id="29c4-8b74-eb52-54e9" name="Heavy Magnetic Bombard" hidden="false" collective="false" import="true" targetId="0473-4529-d230-ee46" type="selectionEntry">
               <modifiers>
@@ -6031,10 +6037,6 @@
           <modifiers>
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c942-7d00-f80c-1901" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="51f7-5613-216a-8e6d" type="max"/>
-          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -7072,12 +7074,6 @@
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6be4-472d-ca9e-7dd5" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
-          </costs>
         </entryLink>
       </entryLinks>
       <costs>
@@ -7969,7 +7965,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a09e-2834-ae8d-be0e" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="4dda-8cc2-86ef-6181" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="22ed-fcf6-f576-bd3d" type="selectionEntry">
+                <entryLink id="4dda-8cc2-86ef-6181" name="Torpedo Turret " hidden="false" collective="false" import="true" targetId="68c3-d207-b8e4-5428" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
                   </modifiers>
@@ -7977,7 +7973,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="170e-77dc-dca9-1728" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="b6d3-9ee3-e80d-327b" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="b6d3-9ee3-e80d-327b" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
                   </modifiers>
@@ -9366,19 +9362,11 @@
           <modifiers>
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d9d8-75e3-e49b-ef49" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="71a5-7c28-7f63-8b07" type="max"/>
-          </constraints>
         </entryLink>
         <entryLink id="1cc4-c2f3-5fb6-4ab4" name="Heavy Flak Broadside" hidden="false" collective="false" import="true" targetId="3e85-ccc4-d939-f7f8" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b994-161b-0269-9fc7" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d579-c4c9-57eb-f410" type="max"/>
-          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -9430,6 +9418,14 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6119-c993-9475-aacd" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="21c0-6234-66e0-ead6" type="max"/>
           </constraints>
+        </entryLink>
+        <entryLink id="525b-bb8a-b223-f833" name="Francisco Solex Projector" hidden="false" collective="false" import="true" targetId="9a69-c020-577f-5b8d" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="5888-87ac-f851-165d"/>
+          </modifiers>
+          <infoLinks>
+            <infoLink id="3b7a-d1c1-969e-9457" name="Francisco Solex Projector (3.04)" hidden="false" targetId="64d5-ad27-abcc-a217" type="rule"/>
+          </infoLinks>
         </entryLink>
       </entryLinks>
       <costs>

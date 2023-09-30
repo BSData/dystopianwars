@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f69c-988c-fae3-e664" name="Generator" revision="8" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f69c-988c-fae3-e664" name="Generator" revision="9" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Review 1.00.00: generator collection
 Review 3.04.00: all generator included and updated
 Review 3.04.01: all generator included and updated. added 3.03 Orbat change
@@ -7,8 +7,9 @@ Review 3.04.02: added after Uniion Orbat update to 3.03
 Review 3.04.03: updated for Sultanate Orbat 3.03
 Review 3.04.04: new data for mid April updated
 Review 3.04.05: new data for mid September updated
-Review 3.05.00: new rules for 3.04 Orbats (rev.2
-)</readme>
+Review 3.04.06: new rules for 3.04 Orbats (rev.2
+)
+Review 3.04.07: update for 3.04 Orbats Sept &apos;23 release</readme>
   <categoryEntries>
     <categoryEntry id="0c85-39c7-9145-efeb" name="1" hidden="true"/>
     <categoryEntry id="8901-cc02-f55e-2ee5" name="2" hidden="false"/>
@@ -258,11 +259,8 @@ Review 3.05.00: new rules for 3.04 Orbats (rev.2
       </costs>
     </selectionEntry>
     <selectionEntry id="51db-ebdc-f4dc-6fff" name="Magma Cast Generator" publicationId="7b2b-0f56-3962-5ec1" page="" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="01d1-315f-ad76-f8b6" type="max"/>
-      </constraints>
       <infoLinks>
-        <infoLink id="27ab-f58e-e9b1-22d0" name="Magma Cast Generator" page="" hidden="false" targetId="0820-8799-3688-c122" type="profile"/>
+        <infoLink id="27ab-f58e-e9b1-22d0" name="Magma Cast generator" page="" hidden="false" targetId="0820-8799-3688-c122" type="profile"/>
         <infoLink id="9eca-a1d2-a85e-9148" name="Magma Cast generator" hidden="false" targetId="19bc-60bc-f7ef-9877" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -291,7 +289,8 @@ Review 3.05.00: new rules for 3.04 Orbats (rev.2
     </selectionEntry>
     <selectionEntry id="163e-8002-bc82-d20f" name="Mirage generator" publicationId="d854-a2d6-3d52-44c4" page="" hidden="false" collective="true" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7596-0780-5406-05de" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7596-0780-5406-05de" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="171e-ccf5-d8ae-0990" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="3907-23d0-234a-241a" name="Mirage generator" page="" hidden="false" targetId="0c80-8c19-6348-9a6c" type="profile"/>
@@ -323,7 +322,8 @@ Review 3.05.00: new rules for 3.04 Orbats (rev.2
     </selectionEntry>
     <selectionEntry id="74b0-d10f-4a04-5321" name="Portal generator" publicationId="d854-a2d6-3d52-44c4" page="" hidden="false" collective="true" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9b2a-d8da-1f24-2615" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9b2a-d8da-1f24-2615" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="639b-ec28-97e7-a357" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="fc3e-a3e1-8d44-8467" name="Portal generator" page="" hidden="false" targetId="bbcb-e6ac-1e89-35d2" type="profile"/>
@@ -499,7 +499,8 @@ Review 3.05.00: new rules for 3.04 Orbats (rev.2
     </selectionEntry>
     <selectionEntry id="b3c7-08d5-6e74-4bbf" name="Magma Cast Generator" publicationId="7b2b-0f56-3962-5ec1" page="" hidden="false" collective="true" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9c55-1e8c-1492-95fd" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9c55-1e8c-1492-95fd" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ea38-0427-1b4a-e0a6" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="65f5-7a36-af9f-2e48" name="Magma Cast Generator" page="" hidden="false" targetId="0820-8799-3688-c122" type="profile"/>
@@ -531,7 +532,8 @@ Review 3.05.00: new rules for 3.04 Orbats (rev.2
     </selectionEntry>
     <selectionEntry id="596e-bbf7-4be2-d494" name="Shield generator" publicationId="7f09-e243-2307-78d0" page="" hidden="false" collective="true" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="75f3-eebc-4a7a-e4df" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="75f3-eebc-4a7a-e4df" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6192-e897-51ff-1d57" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="2355-90ef-cb97-579b" name="Shield generator" hidden="false" targetId="2086-333f-c525-6c88" type="profile"/>
@@ -547,7 +549,8 @@ Review 3.05.00: new rules for 3.04 Orbats (rev.2
     </selectionEntry>
     <selectionEntry id="9bf9-4303-3807-8b33" name="Internal Entropic Generator" publicationId="908d-6feb-2e9e-843b" page="" hidden="false" collective="true" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1731-3e11-53b4-03f9" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1731-3e11-53b4-03f9" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a388-c054-b9eb-63a7" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="c3a9-3979-0e48-6536" name="Internal Entropic Generator" page="" hidden="false" targetId="085f-7931-ddc5-bfdd" type="profile"/>
@@ -563,7 +566,8 @@ Review 3.05.00: new rules for 3.04 Orbats (rev.2
     </selectionEntry>
     <selectionEntry id="63e4-54cd-2af6-ce6c" name="Arc generator" publicationId="e6a1-85d3-8979-7880" page="" hidden="false" collective="true" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c1fb-5db4-703e-47a2" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c1fb-5db4-703e-47a2" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d85a-43cd-bc84-95d8" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="b5f7-b2d6-304e-6b10" name="Arc Generator" page="" hidden="false" targetId="0261-b767-cd91-14ae" type="profile"/>
@@ -595,7 +599,8 @@ Review 3.05.00: new rules for 3.04 Orbats (rev.2
     </selectionEntry>
     <selectionEntry id="b93b-874d-dc0b-5e44" name="Shockwave generator" publicationId="e265-8c7f-a4b2-a48e" page="" hidden="false" collective="true" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5811-9993-3dc4-2847" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5811-9993-3dc4-2847" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f558-af6f-b30e-13ad" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="9bad-73ae-39a3-3e71" name="Shockwave generator" hidden="false" targetId="23d6-0ce1-939e-1fff" type="profile"/>
@@ -611,7 +616,8 @@ Review 3.05.00: new rules for 3.04 Orbats (rev.2
     </selectionEntry>
     <selectionEntry id="fcc9-c0ad-7380-b6a2" name="Guardian generator" publicationId="dbca-8d57-b848-457e" page="" hidden="false" collective="true" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="970f-7b7b-5690-875b" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="970f-7b7b-5690-875b" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b183-2607-58bd-fa7d" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="cce1-d7cc-908e-5daa" name="Guardian generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" targetId="1877-35d1-b915-2b6b" type="profile">
@@ -659,14 +665,73 @@ Review 3.05.00: new rules for 3.04 Orbats (rev.2
     </selectionEntry>
     <selectionEntry id="aaa0-4dc5-d12f-fcf9" name="Magnetic generator" publicationId="7f09-e243-2307-78d0" page="" hidden="false" collective="true" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="384f-d696-2b82-0d7b" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="384f-d696-2b82-0d7b" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4716-8662-ee08-e74c" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="bc4d-78cc-7931-5d2c" name="Magnetic generator" hidden="false" targetId="586f-fde9-3d38-02d0" type="profile"/>
-        <infoLink id="0ad5-f2da-a32e-ab52" name="Magnetic generator" hidden="false" targetId="b4ba-a474-4872-aa00" type="rule"/>
+        <infoLink id="0ad5-f2da-a32e-ab52" name="Magnetic generator�" hidden="false" targetId="b4ba-a474-4872-aa00" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="93cf-dc27-617a-4c56" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="33c4-9a5e-db6d-b083" name="Trident generator" publicationId="dbca-8d57-b848-457e" page="" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="373e-4d96-9d2d-3c0d" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f365-f661-acb8-ec2c" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="0b98-130c-0bc8-a532" name="Trident generator" page="" hidden="false" targetId="9512-f063-fbc2-a039" type="profile"/>
+        <infoLink id="2d0f-c75d-85a3-79df" name="Trident generator" hidden="false" targetId="d2ef-9795-16c8-9014" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="de22-4921-5f4d-e57c" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2c4c-0057-e9cb-3122" name="Ivaldi Shroud generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9794-719f-ecfc-87ca" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="f3e3-36a2-bf74-eeff" name="Shroud generator" hidden="false" targetId="1873-22df-b3ba-49db" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Ivaldi Shround Generetor"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="dfb3-c690-5da9-3293" name="Ivaldi Shroud generator�" hidden="false" targetId="0b05-45a3-00b2-82b2" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0f5b-8c3d-6e26-5286" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9a69-c020-577f-5b8d" name="Francisco Solex Projector" publicationId="129d-da97-caec-1ddd" page="" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="adea-bf9f-58f3-2386" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2de5-2ef7-840a-d917" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="a5e1-107d-7479-46ec" name="Solex generator" page="" hidden="false" targetId="3c61-6b1f-6945-49dd" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Francisco Solex Projector"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="cdc4-193c-2f11-faeb" name="Solex Generator�" hidden="false" targetId="99d4-4010-e285-3397" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5999-9bf4-9bb8-8bbd" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
@@ -778,6 +843,9 @@ Cryogenic Blasts and Iceberg Obstacles cannot cause damage to Aerial Units.</des
     </rule>
     <rule id="d79a-6377-a25e-d47f" name="Point Shield generator�" publicationId="e6a1-85d3-8979-7880" page="" hidden="false">
       <description>This Unit is equipped with a Point Defence Shield Generator. It may not be upgraded or replaced. The Point Defence Shield Generator appears and operates exactly like a Shield Generator except that it can be used when this Model is Obscured.</description>
+    </rule>
+    <rule id="0b05-45a3-00b2-82b2" name="Ivaldi Shroud generator�" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
+      <description>A Model with this Generator is Obscured to Shooting Attacks. Furthermore, as a Special Operations Action, this Model may be removed from Play and replaced at a new point completely within 5” of its original position. After the Model is removed, it must then be placed in Open Water with the same facing as when they were removed. This Generator may not be removed or replaced unless specified.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
