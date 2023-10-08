@@ -20,7 +20,7 @@ Review 3.03.04: Giyena correction (publish 2023-02-05)
 Review 3.03.05: Pakhtusov correction (publish 2023-02-05)
 Review 3.04.00: new datafile for ORBAT 3.04 (rev.3)
 Review 3.04.01: updated datafile for ORBAT 3.04 published 31/08/2023
-Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023</readme>
+Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023 (rev1)</readme>
   <categoryEntries>
     <categoryEntry id="c7ca-90d2-5214-ece9" name="Commonwealth" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
     <categoryEntry id="43a2-7e77-ff29-fb5c" name="Russian" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
@@ -330,7 +330,7 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023</readme>
         </categoryLink>
         <categoryLink id="0515-d675-9b5c-b56d" name="Kostroma Class" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ba7d-d1f6-5e9f-a461" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="87f1-1820-8e61-5bd6" type="max"/>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="87f1-1820-8e61-5bd6" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="5f7a-b943-058b-c096" name="Kutsov Class" hidden="false" targetId="0a00-d349-874e-5599" primary="false">
@@ -345,7 +345,7 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023</readme>
         </categoryLink>
         <categoryLink id="1928-6a0e-b15c-8a97" name="Marena Class" hidden="false" targetId="7947-ec58-ae3a-6d57" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0146-fece-8462-2d9a" type="max"/>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0146-fece-8462-2d9a" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="5667-620d-3f75-54fe" name="Morozko Class" hidden="false" targetId="4b76-e4b0-9958-2155" primary="false">
@@ -1399,7 +1399,6 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023</readme>
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4ca2-058e-2ae4-364f" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="151b-55a6-aedf-b69f" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="daec-c7fc-4ab4-114d" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -1891,8 +1890,8 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023</readme>
         <entryLink id="b9c4-e149-caa4-da1b" name="Khyzhak" hidden="false" collective="false" import="true" targetId="f106-de7d-1dfd-01b2" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="87c9-33c5-227d-05fa" name="Akula Grand Submarine" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="unit">
@@ -1902,7 +1901,6 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023</readme>
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4ca2-058e-2ae4-364f" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="151b-55a6-aedf-b69f" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="daec-c7fc-4ab4-114d" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -2763,6 +2761,7 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023</readme>
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c03-4ace-59f3-9637" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2797,6 +2796,7 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023</readme>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c03-4ace-59f3-9637" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -3791,7 +3791,7 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023</readme>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bdd3-ca3f-8713-d529" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-5.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="c841-27f3-c7a2-1efb" name="Fury generator" hidden="false" collective="false" import="true" targetId="069a-8c90-088f-816d" type="selectionEntry">
@@ -3799,7 +3799,7 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023</readme>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ea24-7f6e-5480-2576" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-5.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="1b1a-fc86-1d90-8072" name="Magnetic generator" hidden="false" collective="false" import="true" targetId="77af-dd4b-51e7-c620" type="selectionEntry">
@@ -3807,7 +3807,7 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023</readme>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7c15-81d7-68aa-ed10" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-5.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="1e1f-ef6c-e14d-729d" name="Shield generator" hidden="false" collective="false" import="true" targetId="0e7f-6ae4-f9b6-0ea1" type="selectionEntry">
@@ -3815,7 +3815,7 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023</readme>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8642-b265-094f-cb26" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-5.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="6905-af72-bbec-356c" name="Shroud generator" hidden="false" collective="false" import="true" targetId="1543-05e3-58ac-6e6d" type="selectionEntry">
@@ -3823,7 +3823,7 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023</readme>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d58c-5173-b5fa-2692" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-5.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="8358-1e78-ae37-c47a" name="Repulsion field generator" hidden="false" collective="false" import="true" targetId="bf96-7810-7d69-a386" type="selectionEntry">
@@ -3831,7 +3831,7 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023</readme>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7e38-2848-2de0-2d98" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-5.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
