@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5037-a8ca-0033-3edc" name="Imperium 3.03" revision="12" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5037-a8ca-0033-3edc" name="Imperium 3.04" revision="12" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Last Imperium ORBAT 3.03 (published 09/02/2023)</comment>
   <readme>Datafile history:
 1.04.01: Initial publication ORBAT v1.04a
@@ -13,7 +13,7 @@
 3.03.03: correction suggested in Discord and online (ORBAT v3.03 released the 2023-02-09)
 3.03.04: more correction from Discord and online (ORBAT v3.03 released the 2023-02-09)
 3.03.05: more correction from Discord and online (ORBAT v3.03 released the 2023-02-09)
-3.04.00: update to Orbat 3.04 published 2023-09-13</readme>
+3.04.00: update to Orbat 3.04 published 2023-09-13  (rev1)</readme>
   <categoryEntries>
     <categoryEntry id="138b-84c8-2ae2-129f" name="Elector Class" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
     <categoryEntry id="5327-366a-b983-42f4" name="Kaiser Pattern" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
@@ -7855,7 +7855,7 @@ Options:
 • Any Model may alter their cost by -10 points and replace a single Heavy Volt Gun Battery weapon with a Magnetic, Repulsion, Shield or Shroud Generator.�</comment>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7511-c2e3-e188-d187" type="min"/>
-        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79d8-caab-0c4b-4c4b" type="max"/>
+        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79d8-caab-0c4b-4c4b" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="d63e-9ec8-e4ef-9ede" name="Odin" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="2fa7-2a6b-de5f-7a84" type="profile"/>
@@ -7965,6 +7965,11 @@ Options:
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
+        </entryLink>
+        <entryLink id="5e16-26c4-4877-5fbe" name="Voltaic Decksweepers" hidden="false" collective="false" import="true" targetId="7dee-5f74-349b-5641" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="18fe-b2d6-8014-7cee" type="max"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>

@@ -13,7 +13,7 @@ Review 3.03.04: correction suggested in internet (ORBAT 3.03 released the 2023-0
 Review 3.03.05: correction suggested in internet (ORBAT 3.03 released the 2023-02-05)
 Review 3.03.06: correction suggested in discord (ORBAT 3.03 released the 2023-02-05)
 Review 3.03.07: correction suggested in discord (ORBAT 3.03 released the 2023-02-05)
-Review 3.04.00: first release of 3.04 Orbat (ORBAT 3.04 2023-09-08 rev2) </readme>
+Review 3.04.00: first release of 3.04 Orbat (ORBAT 3.04 2023-09-08 rev3) </readme>
   <categoryEntries>
     <categoryEntry id="6427-c580-219d-c874" name="Britannia Class" publicationId="dbca-8d57-b848-457e" hidden="false"/>
     <categoryEntry id="ddb5-f0d6-665c-3ac4" name="Protecteur Class" publicationId="dbca-8d57-b848-457e" hidden="false"/>
@@ -3955,8 +3955,8 @@ Review 3.04.00: first release of 3.04 Orbat (ORBAT 3.04 2023-09-08 rev2) </readm
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0472-efeb-3744-46e9" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e186-6524-5dd9-6002" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0472-efeb-3744-46e9" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e186-6524-5dd9-6002" type="max"/>
               </constraints>
               <entryLinks>
                 <entryLink id="b83b-8107-ad81-bbe7" name="Heavy Gun Battery" hidden="false" collective="false" import="true" targetId="90c9-59e3-935f-7a20" type="selectionEntry">
@@ -4008,8 +4008,8 @@ Review 3.04.00: first release of 3.04 Orbat (ORBAT 3.04 2023-09-08 rev2) </readm
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93b8-201c-d797-bd2b" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="771f-d517-39b0-b587" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="93b8-201c-d797-bd2b" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="771f-d517-39b0-b587" type="max"/>
               </constraints>
               <entryLinks>
                 <entryLink id="50e0-95fb-462b-6345" name="Heavy Gun Battery" hidden="false" collective="false" import="true" targetId="90c9-59e3-935f-7a20" type="selectionEntry">
@@ -4017,7 +4017,7 @@ Review 3.04.00: first release of 3.04 Orbat (ORBAT 3.04 2023-09-08 rev2) </readm
                     <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="168a-160f-90b2-203e" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="168a-160f-90b2-203e" type="max"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="ee07-c3da-8ca5-5224" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="57f7-e4c2-6115-938a" type="selectionEntry">
@@ -4141,7 +4141,7 @@ Review 3.04.00: first release of 3.04 Orbat (ORBAT 3.04 2023-09-08 rev2) </readm
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
         </entryLink>
-        <entryLink id="d25f-bbaa-d4a9-97b1" name="Guardian generator" hidden="false" collective="false" import="true" targetId="094a-09c2-c40f-72c2" type="selectionEntry">
+        <entryLink id="d25f-bbaa-d4a9-97b1" name="Guardian generator" hidden="false" collective="false" import="true" targetId="fcc9-c0ad-7380-b6a2" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="0c85-39c7-9145-efeb"/>
           </modifiers>
@@ -7921,18 +7921,24 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="928a-e1fb-abb7-579b" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a73-638c-1f6c-79a2" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5a73-638c-1f6c-79a2" type="max"/>
               </constraints>
               <entryLinks>
                 <entryLink id="5555-7b8d-2d05-d68b" name="Heavy Gun Battery" hidden="false" collective="false" import="true" targetId="90c9-59e3-935f-7a20" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e9e7-ab0d-ac1e-b15a" type="max"/>
+                  </constraints>
                 </entryLink>
-                <entryLink id="ac78-bdd9-f3a0-5caf" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="26a3-cf78-63bd-dd6b" type="selectionEntry">
+                <entryLink id="ac78-bdd9-f3a0-5caf" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="57f7-e4c2-6115-938a" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ae2-788c-7a2b-db91" type="max"/>
+                  </constraints>
                   <costs>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
                   </costs>
@@ -7941,6 +7947,9 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                   <modifiers>
                     <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="311f-f483-3211-82fd" type="max"/>
+                  </constraints>
                   <costs>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
                   </costs>
@@ -7949,6 +7958,9 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                   <modifiers>
                     <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="92cc-68b0-81d4-6bdf" type="max"/>
+                  </constraints>
                   <costs>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
                   </costs>
@@ -8083,18 +8095,24 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53d7-59a9-e8a5-be5a" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8621-4941-0b4a-728c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8621-4941-0b4a-728c" type="max"/>
               </constraints>
               <entryLinks>
                 <entryLink id="cf59-f14f-1dbb-8ed5" name="Heavy Gun Battery" hidden="false" collective="false" import="true" targetId="90c9-59e3-935f-7a20" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e08f-a009-219f-c6f1" type="max"/>
+                  </constraints>
                 </entryLink>
-                <entryLink id="3bb2-cd56-ea75-a73a" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="26a3-cf78-63bd-dd6b" type="selectionEntry">
+                <entryLink id="3bb2-cd56-ea75-a73a" name="Heavy Torpedo Turret" hidden="false" collective="false" import="true" targetId="57f7-e4c2-6115-938a" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d7d8-d97e-732f-77ab" type="max"/>
+                  </constraints>
                   <costs>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
                   </costs>
@@ -8103,6 +8121,9 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                   <modifiers>
                     <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7528-642f-54ee-19f6" type="max"/>
+                  </constraints>
                   <costs>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
                   </costs>
@@ -8111,6 +8132,9 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                   <modifiers>
                     <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4335-7a3a-87f5-968d" type="max"/>
+                  </constraints>
                   <costs>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
                   </costs>
