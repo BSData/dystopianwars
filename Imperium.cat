@@ -13,7 +13,7 @@
 3.03.03: correction suggested in Discord and online (ORBAT v3.03 released the 2023-02-09)
 3.03.04: more correction from Discord and online (ORBAT v3.03 released the 2023-02-09)
 3.03.05: more correction from Discord and online (ORBAT v3.03 released the 2023-02-09)
-3.04.00: update to Orbat 3.04 published 2023-09-13  (rev1)</readme>
+3.04.00: update to Orbat 3.04 published 2023-09-13  (rev2)</readme>
   <categoryEntries>
     <categoryEntry id="138b-84c8-2ae2-129f" name="Elector Class" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
     <categoryEntry id="5327-366a-b983-42f4" name="Kaiser Pattern" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
@@ -1155,7 +1155,6 @@
         <entryLink id="ac74-a478-6cb6-84d6" name="Unexpected Arrival" hidden="false" collective="false" import="true" targetId="d4fe-f63d-7ed8-12d4" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -1520,6 +1519,7 @@
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e053-e57e-10c7-3623" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b4c4-9dc7-5b76-b6c7" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d554-191b-783b-f2c9" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b3fc-2011-ba34-2e15" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d456-5b55-0389-0023" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -1602,7 +1602,7 @@
         <categoryLink id="b711-2339-dd69-8b4c" name="Prussian" hidden="false" targetId="e382-41fb-5f68-ae0a" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="ef50-26f5-ee64-129c" name="Support Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="ef50-26f5-ee64-129c" name="Escort Model" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e41-4a9d-bcc8-7732" type="max"/>
           </constraints>
@@ -2007,7 +2007,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="c07d-c326-4497-3876" name="Support Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="c07d-c326-4497-3876" name="Escort Model" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed0f-7282-882a-0117" type="max"/>
           </constraints>
@@ -2276,7 +2276,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="6943-c4e8-85ea-1e87" name="Support Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="6943-c4e8-85ea-1e87" name="Escort Model" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54bb-8975-38fd-ae09" type="max"/>
           </constraints>
@@ -2357,15 +2357,15 @@
         <categoryLink id="8168-0293-59b6-72d1" name="Scandinavian" hidden="false" targetId="65fc-5b90-c091-9df7" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="bcee-621b-a058-e8d6" name="Support Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="bcee-621b-a058-e8d6" name="Escort Model" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b8b-f56e-52db-8d1d" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b8b-f56e-52db-8d1d" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="dc72-f510-1d4f-c43f" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cd7-5d83-6aa2-deb6" type="min"/>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a6f-f2fb-bebd-f7fd" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a6f-f2fb-bebd-f7fd" type="max"/>
               </constraints>
               <categoryLinks>
                 <categoryLink id="0fe0-d343-010c-195c" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
@@ -2496,7 +2496,7 @@
         <categoryLink id="81b9-6557-ae36-eb41" name="Prussian" hidden="false" targetId="e382-41fb-5f68-ae0a" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="8ace-082d-f9e6-2671" name="Support Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="8ace-082d-f9e6-2671" name="Escort Model" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f1c-e2c2-90b1-31d1" type="max"/>
           </constraints>
@@ -2681,45 +2681,6 @@
         <categoryLink id="fee8-ee9c-61fa-54bd" name="Prussian" hidden="false" targetId="e382-41fb-5f68-ae0a" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="13c4-88b1-7b74-9d78" name="Support Model" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="498e-42cf-0af4-04cb" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="a538-1378-86fa-c59a" name="Corvette" hidden="false" collective="false" import="true" targetId="aae0-e2ef-7700-4fae" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="a1c1-6e7b-ae76-7831" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9cc1-48f6-f9ea-943f" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4366-09a0-f90a-69c9" type="min"/>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1c1-6e7b-ae76-7831" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="2dd3-b12b-a150-1f30" name="Corvette Class" hidden="false" targetId="dfce-ed39-89c4-47a9" primary="false"/>
-              </categoryLinks>
-            </entryLink>
-            <entryLink id="7351-90e6-ccad-05c1" name="Escort" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="41da-55f2-f6d7-8363" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aae0-e2ef-7700-4fae" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0be-d0f1-7e85-ed13" type="min"/>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41da-55f2-f6d7-8363" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="64c8-77b0-5814-26af" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
-              </categoryLinks>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup id="cf2b-65f7-181c-7742" name="Attached Unit [Prussian, Flagship]" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec75-4161-841b-6eb9" type="max"/>
@@ -2890,6 +2851,51 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="cd0b-faab-f470-c6af" name="Escort Model" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d19-70bd-8279-78eb" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="115c-a85c-21c3-4ba9" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+              <modifiers>
+                <modifier type="decrement" field="bd7c-8a2b-d24d-97cb" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16f1-6e6f-fa08-fb56" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbd8-7d81-32e0-ae43" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd7c-8a2b-d24d-97cb" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="9843-e5d6-a0c5-7913" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="c46b-fd5d-8c1d-e7ee" name="Pflicht Escort" hidden="false" collective="false" import="true" targetId="16f1-6e6f-fa08-fb56" type="selectionEntry">
+              <modifiers>
+                <modifier type="decrement" field="7606-fd24-b162-26fe" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9cc1-48f6-f9ea-943f" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78cd-40fe-8c46-64c6" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7606-fd24-b162-26fe" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="728b-e862-fcf2-6f45" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="bcde-ff1f-3724-2b58" name="Tempelhof" hidden="false" collective="false" import="true" targetId="9c00-2130-55a8-318a" type="selectionEntry"/>
@@ -2925,45 +2931,6 @@
         <categoryLink id="3957-2c4b-9c24-0d58" name="Prussian" hidden="false" targetId="e382-41fb-5f68-ae0a" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="d15e-ce51-8a56-ed99" name="Support Model" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fd2-4a0e-a1b9-9442" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="0d78-f8f4-332a-7c9f" name="Corvette" hidden="false" collective="false" import="true" targetId="aae0-e2ef-7700-4fae" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="187c-6849-bfbb-7289" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9cc1-48f6-f9ea-943f" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="296f-43a5-d93d-cbc8" type="min"/>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="187c-6849-bfbb-7289" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="74e7-9ea4-17b0-2501" name="Corvette Class" hidden="false" targetId="dfce-ed39-89c4-47a9" primary="false"/>
-              </categoryLinks>
-            </entryLink>
-            <entryLink id="9d80-293a-c1ea-95d4" name="Escort" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="f5f8-d989-509b-7d4b" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aae0-e2ef-7700-4fae" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bd3-fa75-aa84-c3a6" type="min"/>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5f8-d989-509b-7d4b" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="9989-b61c-d075-08ae" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
-              </categoryLinks>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup id="9058-d0b4-cc2e-3148" name="Attached Unit [Prussian, Flagship]" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b9d-979f-2b07-bdf2" type="max"/>
@@ -3134,6 +3101,51 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="ad6b-2329-84cb-3803" name="Escort Model" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac6c-85ad-837a-aecb" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="12e9-eac9-ba8d-157e" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+              <modifiers>
+                <modifier type="decrement" field="9f9a-6766-d618-6c27" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16f1-6e6f-fa08-fb56" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2747-859e-e8fa-19ad" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f9a-6766-d618-6c27" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="a902-edb1-58f7-2cc1" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="731a-739a-e094-4e56" name="Pflicht Escort" hidden="false" collective="false" import="true" targetId="16f1-6e6f-fa08-fb56" type="selectionEntry">
+              <modifiers>
+                <modifier type="decrement" field="f5e3-9c3e-98ac-3ca0" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9cc1-48f6-f9ea-943f" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f54-fbf3-e361-584e" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5e3-9c3e-98ac-3ca0" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="fce4-c9a9-cc2e-6ea6" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="80ee-6889-9bf8-1f5b" name="Tempelhof-Blitzen" hidden="false" collective="false" import="true" targetId="49a2-b4a7-8431-09f6" type="selectionEntry"/>
@@ -3170,7 +3182,7 @@
         <categoryLink id="861e-6567-e44a-1196" name="Teutonic" hidden="false" targetId="47a7-7ba3-45db-b846" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="18eb-6c9f-38f8-2924" name="Support Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="18eb-6c9f-38f8-2924" name="Escort Model" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5082-5def-95fc-3905" type="max"/>
           </constraints>
@@ -3393,7 +3405,6 @@
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6b7-a5fe-fa1e-484c" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="be40-ff53-14f5-05b4" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d554-191b-783b-f2c9" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b3fc-2011-ba34-2e15" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e053-e57e-10c7-3623" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f762-5ef8-02db-ba33" type="instanceOf"/>
               </conditions>
@@ -3407,7 +3418,7 @@
         <categoryLink id="9efa-0de2-de55-7491" name="Teutonic" hidden="false" targetId="47a7-7ba3-45db-b846" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="de06-a94e-5c75-8c43" name="Support Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="de06-a94e-5c75-8c43" name="Escort Model" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a94-fbd0-e047-83dd" type="max"/>
           </constraints>
@@ -3527,7 +3538,7 @@
         <categoryLink id="ad2c-ac9f-71a2-15bb" name="Prussian" hidden="false" targetId="e382-41fb-5f68-ae0a" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="adbc-6a54-456e-848d" name="Support Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="adbc-6a54-456e-848d" name="Escort Model" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abfb-8c39-8967-cb55" type="max"/>
           </constraints>
@@ -4037,7 +4048,7 @@
         <categoryLink id="81cc-5ba4-5bfd-2b65" name="Teutonic" hidden="false" targetId="47a7-7ba3-45db-b846" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="b571-5f3d-5f79-929a" name="Support Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="b571-5f3d-5f79-929a" name="Escort Model" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7362-0c38-dc37-b6e0" type="max"/>
           </constraints>
@@ -5038,7 +5049,7 @@
         <categoryLink id="217e-d409-1519-d5d9" name="Prussian" hidden="false" targetId="e382-41fb-5f68-ae0a" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="2154-95d0-b756-176b" name="Support Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="2154-95d0-b756-176b" name="Escort Model" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90e4-c46f-22f5-9604" type="max"/>
           </constraints>
@@ -5179,7 +5190,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="1be2-7362-2638-18a2" name="Support Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="1be2-7362-2638-18a2" name="Escort Model" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3188-e7f6-5910-1289" type="max"/>
           </constraints>
@@ -5232,7 +5243,7 @@
         <categoryLink id="0ae3-a4a7-19be-e580" name="Stark Imperium Class" hidden="false" targetId="f396-e777-2eee-9506" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="fcb3-02f9-3d4e-010c" name="Support Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="fcb3-02f9-3d4e-010c" name="Escort Model" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e58-2874-9751-77ea" type="max"/>
           </constraints>
@@ -5430,7 +5441,7 @@
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6fd9-133e-ef87-3241" name="SMS Prinz Eugen" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="6fd9-133e-ef87-3241" name="SMLS Prinz Eugen" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -5457,7 +5468,7 @@
         <categoryLink id="22d3-0149-f78d-4547" name="Prussian" hidden="false" targetId="e382-41fb-5f68-ae0a" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="bf84-a300-5b8d-7074" name="Support Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="bf84-a300-5b8d-7074" name="Escort Model" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de5d-ebb5-e4dd-98b1" type="max"/>
           </constraints>
@@ -6286,15 +6297,15 @@
         <categoryLink id="1851-55cd-d9e4-a54d" name="Scandinavian" hidden="false" targetId="65fc-5b90-c091-9df7" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="243a-8586-f0ce-8be8" name="Support Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="243a-8586-f0ce-8be8" name="Escort Model" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c26-70e9-59fc-b4d2" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c26-70e9-59fc-b4d2" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="f92a-9b1f-6172-4c63" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0080-ce8c-d32a-6fd3" type="min"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd3b-9fb7-8b80-d390" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd3b-9fb7-8b80-d390" type="max"/>
               </constraints>
               <categoryLinks>
                 <categoryLink id="846c-6f44-837d-4df8" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
@@ -6409,7 +6420,7 @@
         <categoryLink id="bea4-a5e5-9055-2867" name="Aerial Unit" hidden="false" targetId="022b-08af-c874-e3f1" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="6191-c436-fa21-2742" name="Support Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="6191-c436-fa21-2742" name="Escort Model" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5eed-f2eb-0a3f-3cda" type="max"/>
           </constraints>
@@ -6463,19 +6474,12 @@
         <categoryLink id="43b1-9c58-f59b-5a1e" name="Teutonic" hidden="false" targetId="47a7-7ba3-45db-b846" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="587e-aa51-befc-4da5" name="Support Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="587e-aa51-befc-4da5" name="Escort Model" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="678e-67f0-7b01-be45" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="a57d-7b92-7e4f-cac1" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
-              <modifiers>
-                <modifier type="decrement" field="4033-5eb5-cf67-ff05" value="1.0">
-                  <repeats>
-                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16f1-6e6f-fa08-fb56" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c687-c9bb-5408-a237" type="min"/>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4033-5eb5-cf67-ff05" type="max"/>
@@ -6485,25 +6489,6 @@
               </categoryLinks>
               <costs>
                 <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="1855-fcd1-32b2-e9c4" name="Pflicht Escort" hidden="false" collective="false" import="true" targetId="16f1-6e6f-fa08-fb56" type="selectionEntry">
-              <modifiers>
-                <modifier type="decrement" field="b8b0-4c97-2163-c32f" value="1.0">
-                  <repeats>
-                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9cc1-48f6-f9ea-943f" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb0a-c056-5feb-d2a7" type="min"/>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8b0-4c97-2163-c32f" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="c8a3-4512-a864-b44c" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -6908,7 +6893,7 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="93ef-06fc-ab1f-6b85" name="Support Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="93ef-06fc-ab1f-6b85" name="Escort Model" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10fd-3253-9681-c154" type="max"/>
           </constraints>
@@ -7013,15 +6998,15 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="e247-22c0-d6bf-e4d1" name="Support Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="e247-22c0-d6bf-e4d1" name="Escort Model" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e70-0487-595f-decb" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e70-0487-595f-decb" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="72a9-1d3e-27e2-10d3" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdd8-f3c7-4203-99c6" type="min"/>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d55f-2242-133e-4f2a" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d55f-2242-133e-4f2a" type="max"/>
               </constraints>
               <categoryLinks>
                 <categoryLink id="c2e7-cae7-c08e-c8ba" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
@@ -8210,7 +8195,7 @@ A single Metzger Unit may be included in Battlefleets with a PRUSSIAN Flagship. 
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="120.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="129.0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -8918,6 +8903,13 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04e1-73fc-2aef-8648" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="559d-1cb1-be68-aeff" type="max"/>
           </constraints>
+          <entryLinks>
+            <entryLink id="4dea-0cd7-2e56-6bf1" name="Lightning Strike" hidden="false" collective="false" import="true" targetId="2580-342d-6f12-cbb2" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </entryLink>
       </entryLinks>
       <costs>
@@ -9028,6 +9020,13 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55b5-b492-9d14-dca8" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8202-fbb0-9951-edd0" type="max"/>
           </constraints>
+          <entryLinks>
+            <entryLink id="27ae-bf65-b8d5-f75d" name="Lightning Strike" hidden="false" collective="false" import="true" targetId="2580-342d-6f12-cbb2" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </entryLink>
       </entryLinks>
       <costs>
@@ -9049,6 +9048,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
         <infoLink id="148a-4b5a-eab3-5a6e" name="Maritime Patrol (3.04)" hidden="false" targetId="0b7c-6003-8433-2817" type="rule"/>
         <infoLink id="22b6-3f07-15ca-9a6d" name="Disciplined (3.04)" hidden="false" targetId="ecf0-d255-3339-4a1b" type="rule"/>
         <infoLink id="aee3-9a09-bd0c-2e2f" name="Heavy Firepower (3.04)" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="7e91-63e0-2077-8984" name="Command Codes (3.04)" hidden="false" targetId="422e-0279-5ff5-c279" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2da0-4932-d441-70f8" name="Imperium" hidden="false" targetId="381f-fee3-786c-1414" primary="true"/>
@@ -9075,9 +9075,13 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1224-efac-d594-b2f2" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="962d-d8bc-5f9a-085d" type="max"/>
           </constraints>
-          <costs>
-            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
-          </costs>
+          <entryLinks>
+            <entryLink id="603d-e562-1157-fcc2" name="Lightning Strike" hidden="false" collective="false" import="true" targetId="2580-342d-6f12-cbb2" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </entryLink>
         <entryLink id="9de4-f07e-62ee-0f9a" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="true" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry">
           <modifiers>
@@ -9503,6 +9507,13 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5860-0cda-1282-7885" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c32-3a0f-cf78-f8a3" type="max"/>
           </constraints>
+          <entryLinks>
+            <entryLink id="026a-049c-d8e2-c9b4" name="Lightning Strike" hidden="false" collective="false" import="true" targetId="2580-342d-6f12-cbb2" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </entryLink>
       </entryLinks>
       <costs>
@@ -10503,10 +10514,17 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90bb-34bc-85b9-fde9" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40cc-a394-7b20-11b5" type="max"/>
           </constraints>
+          <entryLinks>
+            <entryLink id="0521-32f4-d6df-29e2" name="Lightning Strike" hidden="false" collective="false" import="true" targetId="2580-342d-6f12-cbb2" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="205.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="190.0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -10546,6 +10564,13 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf3c-a594-8106-67d6" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1c2-d808-8723-b739" type="max"/>
           </constraints>
+          <entryLinks>
+            <entryLink id="213c-3e5c-0fd2-d24c" name="Lightning Strike" hidden="false" collective="false" import="true" targetId="2580-342d-6f12-cbb2" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </entryLink>
         <entryLink id="684b-1863-3e9f-27ca" name="Gustav Twin Bombard (Phosphor Sh.)" hidden="false" collective="false" import="true" targetId="1cbe-8d6b-2a64-d46e" type="selectionEntry">
           <modifiers>
@@ -10807,7 +10832,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="116.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="121.0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -11689,7 +11714,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
     <selectionEntry id="1b15-319a-2d4a-3d57" name="Malus" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe68-ec79-c42a-d295" type="min"/>
-        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0294-ac9d-f913-3109" type="max"/>
+        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0294-ac9d-f913-3109" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="1540-c095-3387-fa7c" name="Malus" hidden="false" targetId="dc1f-25fe-f7e1-c598" type="profile"/>
@@ -12332,6 +12357,13 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a17-0090-b744-9e2a" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="defe-f7e8-5637-fce9" type="max"/>
           </constraints>
+          <entryLinks>
+            <entryLink id="bc70-b04a-884f-4fe8" name="Lightning Strike" hidden="false" collective="false" import="true" targetId="2580-342d-6f12-cbb2" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </entryLink>
       </entryLinks>
       <costs>
@@ -12464,6 +12496,13 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f70-aec2-e2b9-abfe" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ba8-16ab-89e9-d11c" type="max"/>
           </constraints>
+          <entryLinks>
+            <entryLink id="36d4-0deb-a332-a489" name="Lightning Strike" hidden="false" collective="false" import="true" targetId="2580-342d-6f12-cbb2" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </entryLink>
       </entryLinks>
       <costs>
@@ -12742,16 +12781,25 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
           </constraints>
           <entryLinks>
             <entryLink id="a831-23a0-af68-a1c6" name="Sturmbringer" hidden="false" collective="false" import="true" targetId="9cb1-0419-cc9a-e3ec" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fc39-35b0-ea82-bbda" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="0305-c4e3-a4c9-d06d" name="Uber Volt Vierling" hidden="false" collective="false" import="true" targetId="13a0-0faf-6586-df42" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="785c-2834-d721-ef21" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="86dc-fc66-9c2d-347c" name="Luft Speerschleuders" hidden="false" collective="false" import="true" targetId="6d11-55c5-da39-dc50" type="selectionEntry">
+            <entryLink id="86dc-fc66-9c2d-347c" name="Luft Speerschleuders" hidden="false" collective="false" import="true" targetId="896b-21e4-b704-b87a" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b90a-9f97-bd4b-bfe5" type="max"/>
               </constraints>
@@ -12765,6 +12813,13 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="18ff-ed11-2b2a-b0db" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="918e-c885-68f2-6929" type="max"/>
           </constraints>
+          <entryLinks>
+            <entryLink id="4c22-486d-c216-fd6d" name="Lightning Strike" hidden="false" collective="false" import="true" targetId="2580-342d-6f12-cbb2" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </entryLink>
         <entryLink id="bf75-ba43-f729-12aa" name="Uranium-Trialen Bombs" hidden="false" collective="false" import="true" targetId="e286-abe9-a7a8-38e9" type="selectionEntry">
           <modifiers>
@@ -12839,7 +12894,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
     <selectionEntry id="356b-d41e-e275-1077" name="Nachtsturm" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa20-b609-2d1d-d557" type="min"/>
-        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d763-dc9a-b0e2-70ed" type="max"/>
+        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d763-dc9a-b0e2-70ed" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="0222-575a-9311-6301" name="Nachtsturm" hidden="false" targetId="0afd-f15e-3577-ea0a" type="profile"/>
