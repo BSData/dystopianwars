@@ -7,7 +7,7 @@ Review 3.03.03: new data for Sultanate Orbat 3.03
 Review 3.03.04: new data for the mid April update
 Review 3.03.04: new data for the mid  September update
 Review 3.04.00: new data for the 3.04 Orbats (rev.2)
-Review 3.04.01: new data for the 3.04 Orbats Sept &apos;23 release (rev2)</readme>
+Review 3.04.01: new data for the 3.04 Orbats Sept &apos;23 release (rev3)</readme>
   <categoryEntries>
     <categoryEntry id="7f73-53c5-5468-f039" name="Advanced Cruiser" hidden="false"/>
     <categoryEntry id="77f5-1ac9-0fd1-f299" name="Aerial Destroyer" hidden="false"/>
@@ -159,11 +159,9 @@ Review 3.04.01: new data for the 3.04 Orbats Sept &apos;23 release (rev2)</readm
     <categoryEntry id="acb8-810a-03bf-e2ef" name="Sentry Platform" hidden="false"/>
     <categoryEntry id="e036-10f0-615f-6a77" name="War Platform" hidden="false"/>
     <categoryEntry id="9279-abd9-a10b-b8aa" name="Anti-Air Destroyer" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
-    <categoryEntry id="7fd3-ded2-32db-fea0" name="New CategoryEntry" hidden="false"/>
     <categoryEntry id="df88-9193-acdf-316b" name="Myriapoda Colossus" publicationId="908d-6feb-2e9e-843b" hidden="false"/>
     <categoryEntry id="1b0c-dcbf-1c6f-8564" name="Dive-Cruiser" publicationId="d854-a2d6-3d52-44c4" hidden="false"/>
     <categoryEntry id="b273-5d34-7ed4-05c1" name="Exemplar-Cruiser" publicationId="d854-a2d6-3d52-44c4" hidden="false"/>
-    <categoryEntry id="d94f-e54a-7a89-2648" name="New CategoryEntry" hidden="false"/>
     <categoryEntry id="aa17-42bd-c9d3-a23c" name="Flak Frigate" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
     <categoryEntry id="67af-90aa-7a5c-7a44" name="Grand Carrier" hidden="false"/>
     <categoryEntry id="60a3-ed91-1415-6019" name="Platform Transport" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
@@ -176,8 +174,16 @@ Review 3.04.01: new data for the 3.04 Orbats Sept &apos;23 release (rev2)</readm
     <categoryEntry id="14e0-fa15-b61a-2f89" name="Rotor Tethership" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
     <categoryEntry id="7ef0-791d-3344-58d2" name="Midget Sub Carrier" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
     <categoryEntry id="bf38-f421-2003-fbf2" name="Shock Raider" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
-    <categoryEntry id="f56a-3df4-17d2-db01" name="Main Battlefllet" publicationId="5a03-1c6f-8fc8-2be1" hidden="false"/>
+    <categoryEntry id="f56a-3df4-17d2-db01" name="Main Battlefleet" publicationId="5a03-1c6f-8fc8-2be1" hidden="false"/>
     <categoryEntry id="fdd4-bd61-feb7-592f" name="Research Platform" hidden="false"/>
+    <categoryEntry id="c48b-89e8-94b7-96eb" name="Sentry Airship" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
+    <categoryEntry id="c5b2-f120-7d1f-39d6" name="Aircarrier" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
+    <categoryEntry id="f621-916c-ea03-214d" name="Carryall Rotor" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
+    <categoryEntry id="2e2d-4bef-95cf-2a38" name="Assault Aircruiser" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
+    <categoryEntry id="197e-7969-f3ce-f46b" name="Heavy Aircruiser" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
+    <categoryEntry id="179c-c23b-f414-a165" name="Sentry Aircruiser" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
+    <categoryEntry id="50f8-5d04-e502-e289" name="Specialist Battlefleet" publicationId="5a03-1c6f-8fc8-2be1" hidden="false"/>
+    <categoryEntry id="86ff-88da-5a0b-2d81" name="Mercenary Battlefleet" publicationId="5a03-1c6f-8fc8-2be1" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="401b-9932-c92b-5c5d" name="- No Patron" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" collective="false" import="true" type="upgrade">
@@ -190,4 +196,45 @@ Review 3.04.01: new data for the 3.04 Orbats Sept &apos;23 release (rev2)</readm
       </costs>
     </selectionEntry>
   </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="dd77-1355-2580-a469" name="Main Battlefleet" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ceda-3ea8-5ea1-d391" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="fd7e-8a38-d850-f052" name="Main Battlefllet" hidden="false" targetId="f56a-3df4-17d2-db01" primary="false"/>
+        <categoryLink id="2d7a-b682-7a0d-aed2" name="New CategoryLink" hidden="false" targetId="3226-5cb8-b2fb-ec2c" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4276-0dac-62d7-f428" name="Mercenary Battlefleet" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9f0-4df9-6df6-33c6" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="bb45-35bc-892f-79e1" name="Battlefleet" hidden="false" targetId="3226-5cb8-b2fb-ec2c" primary="true"/>
+        <categoryLink id="6fb2-194b-a8af-3674" name="Mercenaty Battlefleet" hidden="false" targetId="86ff-88da-5a0b-2d81" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1158-6e57-cab4-d521" name="Specialist Battlefleet" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c025-5ad2-d251-59c8" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f589-0f50-debb-39a9" name="Specialist Battlefleet" hidden="false" targetId="50f8-5d04-e502-e289" primary="false"/>
+        <categoryLink id="8040-3009-917c-bb5d" name="New CategoryLink" hidden="false" targetId="3226-5cb8-b2fb-ec2c" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
 </catalogue>

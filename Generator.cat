@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f69c-988c-fae3-e664" name="Generator" revision="9" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f69c-988c-fae3-e664" name="Generator" revision="10" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Review 1.00.00: generator collection
 Review 3.04.00: all generator included and updated
 Review 3.04.01: all generator included and updated. added 3.03 Orbat change
@@ -8,7 +8,8 @@ Review 3.04.03: updated for Sultanate Orbat 3.03
 Review 3.04.04: new data for mid April updated
 Review 3.04.05: new data for mid September updated
 Review 3.04.06: new rules for 3.04 Orbats (rev.2)
-Review 3.04.07: update for 3.04 Orbats Sept &apos;23 release  (rev.1)</readme>
+Review 3.04.07: update for 3.04 Orbats Sept &apos;23 release  (rev.1)
+Review 3.05.00: update for 3.05 Orbats Oct &apos;23 release</readme>
   <categoryEntries>
     <categoryEntry id="0c85-39c7-9145-efeb" name="1" hidden="true"/>
     <categoryEntry id="8901-cc02-f55e-2ee5" name="2" hidden="false"/>
@@ -358,7 +359,7 @@ Review 3.04.07: update for 3.04 Orbats Sept &apos;23 release  (rev.1)</readme>
       </constraints>
       <infoLinks>
         <infoLink id="2a17-399e-b51c-6fa5" name="Shield generator" hidden="false" targetId="2086-333f-c525-6c88" type="profile"/>
-        <infoLink id="89e9-1f91-2a0a-4b7e" name="Shield generator" hidden="false" targetId="2c2f-ebec-49d2-ae7d" type="rule"/>
+        <infoLink id="89e9-1f91-2a0a-4b7e" name="Shield generator (3.04)" hidden="false" targetId="2c2f-ebec-49d2-ae7d" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4214-1ca4-f118-7e8e" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
@@ -737,6 +738,19 @@ Review 3.04.07: update for 3.04 Orbats Sept &apos;23 release  (rev.1)</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="8002-0fb8-db95-1b71" name="Sentinel Generators" publicationId="e6a1-85d3-8979-7880" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5148-3631-1b47-e217" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="c416-6c95-0ae7-89eb" name="Sentinel generator" hidden="false" targetId="49af-b56f-ee26-fc6a" type="profile"/>
+        <infoLink id="d71e-a19f-8a51-80d3" name="Sentinel Generators [3.05]" hidden="false" targetId="ba9d-4be6-4150-0054" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="0bab-bd34-0b75-76b1" name="Arc generator (3.04)" publicationId="e6a1-85d3-8979-7880" hidden="false">
@@ -849,6 +863,9 @@ When Placing Models in the Target Unit they must always be placed in Coherency, 
     <rule id="0b05-45a3-00b2-82b2" name="Ivaldi Shroud generator (3.04)" publicationId="7f09-e243-2307-78d0" page="" hidden="false">
       <description>A Model with this Generator is Obscured to Shooting Attacks. Furthermore, as a Special Operations Action, this Model may be removed from Play and replaced at a new point completely within 5” of its original position. After the Model is removed, it must then be placed in Open Water with the same facing as when they were removed. This Generator may not be removed or replaced unless specified.</description>
     </rule>
+    <rule id="ba9d-4be6-4150-0054" name="Sentinel Generators [3.05]" publicationId="e6a1-85d3-8979-7880" hidden="false">
+      <description>A Model with this Generator or any Model within 5” (not Enemy Models) may use it to remove 2 Action Dice from any Attack against it. The Sentinel Generator cannot be used by Models with a Shield Generator or against Assaults or attacks with the Submerged, Arc or Bomb Qualities. A Model cannot be Obscured if it decides to use a Sentinel Generator against an Attack and cannot remove more than 2 Action Dice by Sentinel Generators from an Action. Furthermore, as a Valour Effect, all Sentinel Generators in the Unit may be used in the Shooting Phase to make an Attack in the Fore Arc against an Initial Target using the Heat Lance weapon profile. Generators listed on a Unit’s profile may not be removed or replaced unless specified.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="0261-b767-cd91-14ae" name="Arc Generator" publicationId="e6a1-85d3-8979-7880" hidden="false" typeId="f5d9-cb1c-6514-45c8" typeName="Stats Generator">
@@ -927,5 +944,6 @@ When Placing Models in the Target Unit they must always be placed in Coherency, 
     <profile id="9512-f063-fbc2-a039" name="Trident generator" publicationId="33cf-b4a6-bff0-0d70" hidden="false" typeId="0397-3287-82a2-e086" typeName="Upgrade Generator"/>
     <profile id="5aa5-a15b-5ffb-2c9f" name="Void-Engine" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="0397-3287-82a2-e086" typeName="Upgrade Generator"/>
     <profile id="bb87-7c6d-9144-497d" name="Point Shield generator" publicationId="7f09-e243-2307-78d0" page="" hidden="false" typeId="0397-3287-82a2-e086" typeName="Upgrade Generator"/>
+    <profile id="49af-b56f-ee26-fc6a" name="Sentinel generator" publicationId="7f09-e243-2307-78d0" page="" hidden="false" typeId="0397-3287-82a2-e086" typeName="Upgrade Generator"/>
   </sharedProfiles>
 </catalogue>

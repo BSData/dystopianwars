@@ -10,7 +10,7 @@ Review 3.03.01: correction after the 3.03 Orbat update
 Review 3.03.02: correction after the 3.03 Orbat update
 Review 3.03.03: correction after the 3.03 Orbat update (date 2023-02-07)
 Review 3.03.04: correction after the 3.03 Orbat update (date 2023-02-07)
-Review 3.04.00: correction after the 3.04 Orbat update (date 2023-08-31 rev2)</readme>
+Review 3.04.00: correction after the 3.04 Orbat update (date 2023-08-31 rev3)</readme>
   <categoryEntries>
     <categoryEntry id="ce97-a91c-c2c9-c566" name="Empire" publicationId="7b2b-0f56-3962-5ec1" hidden="false"/>
     <categoryEntry id="0ad5-d3e2-dc61-f333" name="Chinese" publicationId="7b2b-0f56-3962-5ec1" hidden="false"/>
@@ -273,12 +273,13 @@ Review 3.04.00: correction after the 3.04 Orbat update (date 2023-08-31 rev2)</r
         </categoryLink>
         <categoryLink id="8e74-0946-c372-1914" name="Aerial Unit" hidden="false" targetId="022b-08af-c874-e3f1" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="5c89-c204-4e4b-74fb" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="5c89-c204-4e4b-74fb" type="min"/>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a517-9abd-64bf-2b2f" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="fb0d-4da8-0ac4-a246" name="Tianlong Class" hidden="false" targetId="33f5-001e-d7ac-f6d6" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f0d4-b361-18b5-a51e" type="max"/>
+            <constraint field="selections" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f0d4-b361-18b5-a51e" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="fc06-08ae-9189-d21a" name="Gong Class" hidden="false" targetId="1b8d-aaaf-0a05-4a07" primary="false">
@@ -1642,42 +1643,6 @@ Review 3.04.00: correction after the 3.04 Orbat update (date 2023-08-31 rev2)</r
         <categoryLink id="21bd-233c-b69f-cf68" name="Ziwei Class" hidden="false" targetId="bb25-328a-841b-2c23" primary="false"/>
         <categoryLink id="97dd-08b8-eb40-4a0f" name="New CategoryLink" hidden="false" targetId="022b-08af-c874-e3f1" primary="true"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="6dac-e2d9-959a-df3c" name="Attached Unit" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="691d-b3ff-58a6-48fd" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="fab4-2eff-0054-3af4" name="Tianlong Draconic Colossus" publicationId="7b2b-0f56-3962-5ec1" page="" hidden="false" collective="false" import="true" type="unit">
-              <categoryLinks>
-                <categoryLink id="af6b-cd96-86d4-ea85" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="false">
-                  <constraints>
-                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c865-51bf-141b-4a92" type="min"/>
-                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="709d-0a7d-bd12-20be" type="max"/>
-                  </constraints>
-                </categoryLink>
-                <categoryLink id="beac-36a9-fc51-6183" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="false"/>
-                <categoryLink id="cda4-12ea-624a-4311" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="false"/>
-                <categoryLink id="5f0f-8db9-25cc-5522" name="Aerial Unit" hidden="false" targetId="022b-08af-c874-e3f1" primary="false"/>
-                <categoryLink id="c769-3849-d644-11bc" name="Empire" hidden="false" targetId="ce97-a91c-c2c9-c566" primary="false"/>
-                <categoryLink id="9e33-3328-3466-0206" name="Aerial Unit" hidden="false" targetId="022b-08af-c874-e3f1" primary="true"/>
-                <categoryLink id="e691-0202-7ad4-fad5" name="Tianlong Class" hidden="false" targetId="33f5-001e-d7ac-f6d6" primary="false"/>
-              </categoryLinks>
-              <entryLinks>
-                <entryLink id="6a69-f1b0-a615-5f8b" name="Tianlong" hidden="false" collective="false" import="true" targetId="306f-c7b2-ca4f-e62a" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="8ab9-195c-4b32-5c7d" value="1.0"/>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-                <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="7427-01bf-46ca-43e4" name="Ziwei" hidden="false" collective="false" import="true" targetId="27e6-c65d-77cf-f999" type="selectionEntry"/>
       </entryLinks>
@@ -1736,42 +1701,6 @@ Review 3.04.00: correction after the 3.04 Orbat update (date 2023-08-31 rev2)</r
         <categoryLink id="0375-3f06-9d4e-a59e" name="Korean" hidden="false" targetId="ad45-d5e4-0bb9-043c" primary="false"/>
         <categoryLink id="fc2d-053e-2cfd-b29b" name="Chinese" hidden="false" targetId="0ad5-d3e2-dc61-f333" primary="false"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="b3e9-8c09-644c-28f8" name="Attached Unit" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c44-97bf-1dd1-103d" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="c0d3-1976-fffb-5369" name="Tianlong Draconic Colossus" publicationId="7b2b-0f56-3962-5ec1" page="" hidden="false" collective="false" import="true" type="unit">
-              <categoryLinks>
-                <categoryLink id="e340-8d57-e8fc-793f" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="false">
-                  <constraints>
-                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8489-8677-5f19-8d93" type="min"/>
-                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="441e-01c5-ae78-cb7e" type="max"/>
-                  </constraints>
-                </categoryLink>
-                <categoryLink id="aa04-b568-b759-e6d7" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="false"/>
-                <categoryLink id="02e4-3a85-b79d-0d63" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="false"/>
-                <categoryLink id="4de5-8d76-8df2-782a" name="Aerial Unit" hidden="false" targetId="022b-08af-c874-e3f1" primary="false"/>
-                <categoryLink id="9f80-80c3-5070-94b9" name="Empire" hidden="false" targetId="ce97-a91c-c2c9-c566" primary="false"/>
-                <categoryLink id="4ede-d0fe-727c-8e12" name="Aerial Unit" hidden="false" targetId="022b-08af-c874-e3f1" primary="true"/>
-                <categoryLink id="bc59-ae06-a040-42c6" name="Tianlong Class" hidden="false" targetId="33f5-001e-d7ac-f6d6" primary="false"/>
-              </categoryLinks>
-              <entryLinks>
-                <entryLink id="6c61-e09f-4f94-8aa8" name="Tianlong" hidden="false" collective="false" import="true" targetId="306f-c7b2-ca4f-e62a" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="8ab9-195c-4b32-5c7d" value="1.0"/>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-                <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="fdc2-c44a-92ae-51b7" name="Qianshao" hidden="false" collective="false" import="true" targetId="75cb-cdcc-b759-f057" type="selectionEntry"/>
       </entryLinks>
@@ -6667,67 +6596,29 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup id="480c-cd27-1858-2038" name="Secondary Weapon" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="ad50-14a6-016f-a72f" name="Secondary Weapon" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="13bc-8c5d-ddb1-f10c" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="534f-6c5d-287c-2e2b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9244-9f27-f5e5-62be" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7183-05ca-cb03-c04d" type="max"/>
           </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="b46c-dc58-d256-29ee" name="Front" hidden="false" collective="false" import="true" defaultSelectionEntryId="3f12-355f-ff56-0f32">
+          <entryLinks>
+            <entryLink id="6037-55a0-0cf9-c67a" name="Broadside" hidden="false" collective="false" import="true" targetId="6e1e-9da0-953c-71a1" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cb50-c460-9621-ef55" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1b52-681d-1044-3676" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="03ab-96cc-f4c1-5ac3" type="max"/>
               </constraints>
-              <entryLinks>
-                <entryLink id="3f12-355f-ff56-0f32" name="Broadside" hidden="false" collective="false" import="true" targetId="6e1e-9da0-953c-71a1" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="add" field="category" value="afe0-b5a3-3eac-004f"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a1d9-45c7-20db-7031" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="4e2e-a7dc-2217-651b" name="Huoqiang" hidden="false" collective="false" import="true" targetId="e3e7-988d-2dc9-694e" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="add" field="category" value="afe0-b5a3-3eac-004f"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b302-598b-25a1-3e3f" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10.0"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="15b8-93af-fa37-2dbf" name="Side" hidden="false" collective="false" import="true" defaultSelectionEntryId="3cf5-4647-6c5a-9515">
+            </entryLink>
+            <entryLink id="9ade-535c-5e96-a865" name="Huoqiang" hidden="false" collective="false" import="true" targetId="e3e7-988d-2dc9-694e" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="636b-2723-1815-c8f0" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="abec-3736-fe6e-208b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="351b-1888-4893-bf09" type="max"/>
               </constraints>
-              <entryLinks>
-                <entryLink id="3cf5-4647-6c5a-9515" name="Broadside" hidden="false" collective="false" import="true" targetId="6e1e-9da0-953c-71a1" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d05c-f75d-e68f-4feb" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="ccd7-f5ae-dee5-c985" name="Huoqiang" hidden="false" collective="false" import="true" targetId="e3e7-988d-2dc9-694e" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3a91-70a0-e327-045d" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10.0"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -6751,7 +6642,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="146.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="138.0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
       </costs>
     </selectionEntry>

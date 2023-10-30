@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="edc4-1a6a-03e6-7be9" name="Rules" revision="10" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <comment>Update to ORBAT 3.04 (published 17/08/2023)</comment>
+<catalogue id="edc4-1a6a-03e6-7be9" name="Rules" revision="11" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <comment>Update to ORBAT 3.05 (published 18/10/2023)</comment>
   <readme>Rules collection</readme>
   <sharedRules>
     <rule id="b846-c841-35ad-caa2" name="Ablative Armour (3.04)" publicationId="5a03-1c6f-8fc8-2be1" page="" hidden="false">
@@ -109,7 +109,7 @@
       <description>The weapon ignores shield generetor effect</description>
     </rule>
     <rule id="2ae7-9b96-fd1d-ef29" name="Inductorium (3.04)" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
-      <description>When this Unit makes an Attack or Assault with the Voltaic or Arc Quality, count the number of Exploding Hits results once all Attack Dice have been rolled, including additional dice from Exploding Hits. If the number of Exploding Hits exceeds the number of Models in the Target Unit, the Attack gains a bonus number of Action Dice equal to the number of Models in the Target Unit.</description>
+      <description>When this Unit makes an Attack or Assault with the Voltaic or Arc Quality, count the number of Exploding Hits results once all Attack Dice have been rolled, including additional dice from Exploding Hits. If the number of Exploding Hits equals or exceeds the number of Models in the Target Unit, the Attack gains a bonus number of Action Dice equal to the number of Models in the Target Unit.</description>
     </rule>
     <rule id="8aa1-f648-12bd-a1c6" name="Immobile (3.04)" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>Models with this rule are always deployed at the same time as Aerial Units. Models in this Unit with this rule have a Drift of zero and may not move or be moved. Treat Sturginium Flare Critical Damage as Catastrophic Explosions instead.</description>
@@ -337,7 +337,7 @@
       <description>While Battle Ready and making a Repair roll, any Exploding Hits results remove a point of damage from this Model. A Crippled Model cannot remove damage using this rule.</description>
     </rule>
     <rule id="a888-5b4c-4092-6e2a" name="Pycrete Construction (3.04)" publicationId="33cf-b4a6-bff0-0d70" hidden="false">
-      <description>Catastrophic Explosions cause this Model to receive three points of damage rather than the usual two. During deployment, this Unit may be placed with part of the Model outside of its deployment zone, provided that the Model is touching the edge of the Play Area furthest from the opponent’s deployment zone.</description>
+      <description>This Unit has a Drift of 1” and does not suffer Disorder from Collisions. All Gunnery targeting this Unit may re-roll Blank results on the Action Dice. Any additional levels of Disorder received once at Chaos &amp; Disarray are ignored rather than causing damage. During deployment, this Unit may be placed with part of the Model outside of its deployment zone, provided that the Model is touching the edge of the Play Area furthest from the opponent’s deployment zone.</description>
     </rule>
     <rule id="fbf0-6c31-cb55-ec62" name="Supercharged Munition" hidden="false">
       <description>Once per Activation, when a Model with the Flagship Trait in this Unit leads an Attack using Heavy Volt Gun Batteries or Heavy Rocket Batteries, up to three of those weapons may contribute their Lead value instead of their Support value to the Attack Dice Pool rather than the normal single Lead weapon. Any Gustav Heavy Bombards on this Unit gain +3 to Attack Dice Pools when using this weapon.</description>
@@ -345,8 +345,8 @@
     <rule id="db90-0b63-d0f9-5222" name="Portal Mastery (3.04)" publicationId="d854-a2d6-3d52-44c4" hidden="false">
       <description>A Model with this rule may, as a Special Operations Action, place a second 40mm Portal Token within 20” of itself. While a Model from this Unit is within 5” of a friendly Portal Token, friendly Units with the Sultanate Trait deploying from Reserve may instead be deployed in base contact with any friendly Portal Token in the Play Area. Each Model in the Reserve Unit must be deployed in base contact with the same Portal Token. Remove the friendly Portal Token once a Reserve Unit has been deployed using it.</description>
     </rule>
-    <rule id="1181-0663-f1c1-9047" name="Give Em Hell (3.04)" publicationId="e6a1-85d3-8979-7880" hidden="false">
-      <description>When this Unit makes an Assault, if the result is a Draw, it is instead considered a Havoc result. Furthermore, this Unit may make a Special Operations Action that it will ‘Give Em Hell’. All weapons with the Gunnery or Fusillade special rule in the Unit gain the Devastating Quality for the duration of its Activation. At the end of the Activation, before the Repair Step, unless the player discards a card from their hand, each Model in the Unit gains a Disorder Condition.</description>
+    <rule id="1181-0663-f1c1-9047" name="Give Em Hell [3.05]" publicationId="e6a1-85d3-8979-7880" hidden="false">
+      <description>When this Unit makes an Assault, if the result is a Draw, it is instead considered a Havoc result. Furthermore, this Unit may make a Special Operations Action that it will ‘Give Em Hell’. All weapons with the Broadside, Gunnery or Fusillade special rule in the Unit gain the Devastating Quality for the duration of its Activation. At the end of the Activation, before the Repair Step, unless the player discards a card from their hand, each Model in the Unit gains a Disorder Condition.</description>
     </rule>
     <rule id="00c9-79f7-de6a-b086" name="Akron Observation (no)" publicationId="e6a1-85d3-8979-7880" hidden="false">
       <description>This Unit is accompanied by an Akron Observation Rotor. The Akron is an Escort as described on Page 32 of the Rulebook with the following exceptions: The Akron is armed with a Rocket Pod and may Lead or Support with this weapon in one attack each Activation made by its Parent Unit. The Akron is not an Aerial Unit but the Model has the Aerial Trait and cannot be collided with. It cannot be targeted unless it is in Point Blank Range or the weapon has the Aerial Quality. The Akron gives +1 to the Defence Attributes of every Model in the Unit. The Akron gives the Extreme Range Quality to any Aerial Weapons in the Unit. An Akron counts as being equipped with any Generators present in the Unit. These Models do not benefit from any of the Special Rules or weapons for this Unit. They are destroyed if this Unit is destroyed.</description>
@@ -360,8 +360,8 @@
     <rule id="666c-5e9f-db4b-8f60" name="Heavy Teslacoils" publicationId="e6a1-85d3-8979-7880" hidden="false">
       <description>When this Unit leads an Attack using its Heavy Electrocannon Battery, both of those weapons may contribute their Lead value instead of their Support value to the Attack Dice Pool, rather than the normal single Lead weapon.</description>
     </rule>
-    <rule id="ca4a-ca3a-b489-d441" name="The White Doves�" publicationId="e6a1-85d3-8979-7880" hidden="false">
-      <description>SRS Tokens launched by Units with this rule are called White Doves SRS Tokens. Any Attack Run including one or more White Doves SRS Tokens add the Arc and Piercing Quality to any Attack Run they participate in, provided they are the majority of the friendly SRS Tokens in the Attack Run.</description>
+    <rule id="ca4a-ca3a-b489-d441" name="The White Doves [3.05]" publicationId="e6a1-85d3-8979-7880" hidden="false">
+      <description>Tokens launched by Units with this rule are called White Doves SRS Tokens. Any Attack Run including one or more White Doves SRS Tokens exchange the Piercing Quality for the Arc and Sustained Qualities to any Attack Run they participate in, provided they are the majority of the friendly SRS Tokens in the Attack Run. White Dove SRS Tokens are always the last to be removed from an SRS stack and cannot be singled out by other rules.</description>
     </rule>
     <rule id="7b67-714d-bb2b-6297" name="Flak Barrage (3.04)" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>At the start of the End Phase, before SRS Resolution, Models in this Unit with this rule may each roll a number of Action Dice indicated by the rule. Remove one Enemy SRS Token that is in contact with this Unit or Friendly Units within 15&quot; for each Exploding Hit result.</description>
@@ -579,9 +579,6 @@
     <rule id="f07b-4636-21d5-ac87" name="Accetable Attrition (3.04)" publicationId="e6a1-85d3-8979-7880" hidden="false">
       <description>Provided it numbers 4 Models or less at the start of the Encounter, Destroying this Unit does not confer a Squadron Killer Victory Point bonus.�</description>
     </rule>
-    <rule id="d1aa-3acc-11cb-5002" name="HEC Contractor (3.04)" publicationId="e6a1-85d3-8979-7880" hidden="false">
-      <description>This Model may add +2 to the Defence Action Dice Pool on any friendly Models within 5”. This bonus is in addition to any other bonuses such as being part of an Attached Unit. The HEC Contractor Rule only applies during each Round where the Force this Unit is part of had equal to or less Victory Points than their opponents at the most recent Check for Victory Step.</description>
-    </rule>
     <rule id="b15d-ad13-dfd5-2f24" name="Aerial Attachment (3.04)" publicationId="e6a1-85d3-8979-7880" hidden="false">
       <description>This Aerial Unit may choose a partner Unit with any Position Trait except the Submerged Unit trait.</description>
     </rule>
@@ -622,13 +619,13 @@
       <description>Once per Activation, this Unit may make the following as a Valour Effect provided the Valour card discarded has a value of at least 40 (including by Valorous Conduct). Each Model in the Unit with this rule, that has caused at least one point of damage in a Ramming Action with their Twin Sturginium Hammers or Grant Jackhammer this Activation, may make a second Ramming Action against the same or a new Point of Impact within 2” of the first. The Action Dice Pool for the second Ram is the same as the first. The Moving Model may not make any further movement this Activation if it uses this rule.</description>
     </rule>
     <rule id="bb2a-ac29-b05f-d3d1" name="RJ Afterburner (3.04)" publicationId="e6a1-85d3-8979-7880" hidden="false">
-      <description>During its Activation, this Model may increase its Speed by 9&quot; and is Obscured for the remainder of the Round. If it does so it receives a Disorder Condition and may not use Hammer Song, Turn, Shoot or Assault during the same Activation.�</description>
+      <description>During its Activation, this Model may increase its Speed by 9&quot; and is Obscured for the remainder of the Round. If it does so it receives a Disorder Condition and may not use Hammer Song, Turn, Shoot or Assault during the same Activation.</description>
     </rule>
-    <rule id="ac11-db49-c94e-22bd" name="Helical Rail Guns (3.04)" publicationId="e6a1-85d3-8979-7880" hidden="false">
-      <description>Weapons on this Unit with the Gunnery Quality have a Support value of 3. Attacks with the Gunnery Quality by this Unit treat the Citadel of their Initial Target as one lower than indicated. When making an Attack against Models with the Skimming Unit or Aerial Unit Positional Traits, each weapon with the Gunnery Quality receives +1 Action Dice. When making an Action against Models with the Submerged Unit Positional Trait, each weapon with the Gunnery Quality receives -1 Action Dice.</description>
+    <rule id="ac11-db49-c94e-22bd" name="Helical Rail Guns [3.05]" publicationId="e6a1-85d3-8979-7880" hidden="false">
+      <description>Weapons on this Unit with the Gunnery Quality can never have a Support value greater than 3. Attacks with the Gunnery Quality by this Unit treat the Citadel of their Initial Target as one lower than indicated. When making an Attack against Models with the Skimming Unit or Aerial Unit Positional Traits, each weapon with the Gunnery Quality receives +1 Action Dice. When making an Action against Models with the Submerged Unit Positional Trait, each weapon with the Gunnery Quality receives -1 Action Dice to a minimum of 1.</description>
     </rule>
-    <rule id="d598-ef5b-6064-c21d" name="Thermobaric Volley (3.04)" publicationId="e6a1-85d3-8979-7880" hidden="false">
-      <description>Weapons on this Unit with the Aerial Quality gain the Hazardous Quality. As a Valour Effect after rolling an Attack, if the number of Exploding Hits rolled against the Initial Target exceed its Mass, then all hits and Heavy Hits in the initial roll for the Attack count as Exploding Hits. Action dice generated by the Exploding Hits are unaffected by this rule.</description>
+    <rule id="d598-ef5b-6064-c21d" name="Thermobaric Volley [3.05]" publicationId="e6a1-85d3-8979-7880" hidden="false">
+      <description>Weapons on this Unit with the Aerial Quality gain the Hazardous Quality. As a Valour Effect after rolling an Attack, if the number of Exploding Hits rolled against the Initial Target equals or exceed its Mass, then all Hits and Heavy Hits in the initial roll for the Attack count as Exploding Hits. Action dice generated by the Exploding Hits are unaffected by this rule.</description>
     </rule>
     <rule id="e204-7522-f18d-3ec0" name="Auto-Destruction Sequence (3.04)" publicationId="e6a1-85d3-8979-7880" hidden="false">
       <description>Once per Activation, this Unit may make the following Valour Effect provided the Valour card discarded has a value of at least 40 (including by Valorous Conduct). Any Model in this Unit may be immediately destroyed. For every two Models destroyed in this manner, automatically inflict a Catastrophic Explosion on a Model within 2”.</description>
@@ -886,6 +883,12 @@ Turbo Encabulation rolls may not be re-rolled or otherwise manipulated except by
     </rule>
     <rule id="6598-6f8d-5ad0-3f0c" name="Ruby Focus Crystals (3.04)" publicationId="908d-6feb-2e9e-843b" hidden="false">
       <description>Attacks with the Gunnery Quality by this Unit treat the Citadel of their Initial Target as two lower than indicated. As a Valour Effect declared before rolling an Attack, if the number of Exploding Hits rolled against the Initial Target are equal to or greater than the number of Blanks then all Heavy Hits in the initial roll (before any Sustained re-rolls or other manipulations) for the Attack count as Exploding Hits. Action dice generated by the Exploding Hits are unaffected by this rule.</description>
+    </rule>
+    <rule id="21cf-ffbb-3ff8-71cc" name="Minutemen Assault Bay [3.05]" publicationId="e6a1-85d3-8979-7880" hidden="false">
+      <description>This Model may make assaults within 6” rather than the usual 4” and ignores the Counter Assault result when making an assault. Furthermore, the Assault by this Model gains the Sustained Quality. This rule does not apply to Supporting Assaults.</description>
+    </rule>
+    <rule id="0006-60f1-1ca3-b204" name="Preliminary Survay [3.05]" publicationId="e6a1-85d3-8979-7880" hidden="false">
+      <description>At the start of the Encounter, when revealing the top card from their V&amp;V deck to determine deployment, any Player with one or more Battlefleets with this rule in their Force may draw a second card in place of the first card revealed if they wish. They may only do this once per Encounter and must accept this second card. If both players have Battlefleets with this rule, then neither may draw a second card.</description>
     </rule>
   </sharedRules>
 </catalogue>

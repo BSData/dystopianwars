@@ -10,7 +10,7 @@ Review 3.03.00: 5th release ORBAT update to 3.03
 Review 3.03.01: 5th release ORBAT update to 3.03 (date 2023-02-06)
 Review 3.03.03: correction suggested in discord 3.03 (date 2023-02-06)
 Review 3.04.00: update to ORBAT 3.04 (date 2023-08-17)
-Review 3.04.01: update to ORBAT 3.04 last release (date 2023-09-01 rev1)</readme>
+Review 3.04.01: update to ORBAT 3.04 last release (date 2023-09-01 rev2)</readme>
   <categoryEntries>
     <categoryEntry id="24d7-a2ac-a5bb-a77d" name="Temir Class" publicationId="d854-a2d6-3d52-44c4" hidden="false"/>
     <categoryEntry id="9c13-9a46-5ee3-4981" name="Sultanate" publicationId="d854-a2d6-3d52-44c4" hidden="false"/>
@@ -5835,8 +5835,8 @@ Review 3.04.01: update to ORBAT 3.04 last release (date 2023-09-01 rev1)</readme
       <selectionEntryGroups>
         <selectionEntryGroup id="e791-211c-de8a-dc0b" name="Main Weapon" page="" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3a6-88c3-1922-468c" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb51-6a03-3198-28c2" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a3a6-88c3-1922-468c" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb51-6a03-3198-28c2" type="max"/>
           </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup id="e078-2fb4-a4d8-da67" name="Generator" hidden="false" collective="false" import="true">
@@ -5976,7 +5976,7 @@ Review 3.04.01: update to ORBAT 3.04 last release (date 2023-09-01 rev1)</readme
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ce73-d00e-b0a3-a2cb" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54b2-e645-2647-f367" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="54b2-e645-2647-f367" type="max"/>
               </constraints>
               <entryLinks>
                 <entryLink id="1b6d-a3ec-7106-cdbd" name="Particle Beamer" hidden="false" collective="false" import="true" targetId="5dcb-4100-3eab-e801" type="selectionEntry">
@@ -7036,30 +7036,39 @@ Review 3.04.01: update to ORBAT 3.04 last release (date 2023-09-01 rev1)</readme
       <selectionEntryGroups>
         <selectionEntryGroup id="dc59-3bb0-6548-59a2" name="Main Weapon" publicationId="e265-8c7f-a4b2-a48e" page="4" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e56-5efa-06fe-9ea1" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a554-19f4-7762-2a62" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6e56-5efa-06fe-9ea1" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a554-19f4-7762-2a62" type="max"/>
           </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup id="171a-8ac6-f92f-cfee" name="Port" hidden="false" collective="false" import="true" defaultSelectionEntryId="0953-e16a-4234-075e">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5292-2a5d-823c-4bf8" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de0d-d270-0f62-9cba" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5292-2a5d-823c-4bf8" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="de0d-d270-0f62-9cba" type="max"/>
               </constraints>
               <entryLinks>
                 <entryLink id="0953-e16a-4234-075e" name="Heavy Gun Battery" hidden="false" collective="false" import="true" targetId="90c9-59e3-935f-7a20" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="c93d-a414-b1bc-7d2c"/>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="63be-9068-aaa7-f8e2" type="max"/>
+                  </constraints>
                 </entryLink>
                 <entryLink id="2a70-a825-9e32-3149" name="Heavy Rocket Battery" hidden="false" collective="false" import="true" targetId="65b3-d9a8-e0a3-a028" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="c93d-a414-b1bc-7d2c"/>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="173c-60f5-25bd-bda8" type="max"/>
+                  </constraints>
                 </entryLink>
                 <entryLink id="ede3-870f-1269-f29b" name="Particle Beamer" hidden="false" collective="false" import="true" targetId="5dcb-4100-3eab-e801" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="c93d-a414-b1bc-7d2c"/>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0ae7-da70-befa-60aa" type="max"/>
+                  </constraints>
                   <costs>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
                   </costs>
@@ -7080,23 +7089,32 @@ Review 3.04.01: update to ORBAT 3.04 last release (date 2023-09-01 rev1)</readme
             <selectionEntryGroup id="3a78-4e4f-38ac-8695" name="Starbord" hidden="false" collective="false" import="true" defaultSelectionEntryId="3e29-24eb-8670-c803">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1f77-28cc-a991-81da" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bc7-10a2-8dcf-5ed0" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7bc7-10a2-8dcf-5ed0" type="max"/>
               </constraints>
               <entryLinks>
                 <entryLink id="3e29-24eb-8670-c803" name="Heavy Gun Battery" hidden="false" collective="false" import="true" targetId="90c9-59e3-935f-7a20" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="ce6f-067d-9ad4-ddaa"/>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="99da-9dc6-2093-141c" type="max"/>
+                  </constraints>
                 </entryLink>
                 <entryLink id="b5c0-fd90-a49c-cca2" name="Heavy Rocket Battery" hidden="false" collective="false" import="true" targetId="65b3-d9a8-e0a3-a028" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="ce6f-067d-9ad4-ddaa"/>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5c75-b395-0c1c-90a4" type="max"/>
+                  </constraints>
                 </entryLink>
                 <entryLink id="e973-6d5f-66a7-befd" name="Particle Beamer" hidden="false" collective="false" import="true" targetId="5dcb-4100-3eab-e801" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="ce6f-067d-9ad4-ddaa"/>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9684-ce90-cc57-737c" type="max"/>
+                  </constraints>
                   <costs>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="7.0"/>
                   </costs>
@@ -7179,7 +7197,7 @@ Review 3.04.01: update to ORBAT 3.04 last release (date 2023-09-01 rev1)</readme
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
           </modifiers>
         </entryLink>
-        <entryLink id="7f82-8b46-aa75-40c8" name="Shield generator" hidden="false" collective="false" import="true" targetId="0e7f-6ae4-f9b6-0ea1" type="selectionEntry"/>
+        <entryLink id="7f82-8b46-aa75-40c8" name="Shield generator" hidden="false" collective="false" import="true" targetId="596e-bbf7-4be2-d494" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="160.0"/>

@@ -20,7 +20,7 @@ Review 3.03.04: Giyena correction (publish 2023-02-05)
 Review 3.03.05: Pakhtusov correction (publish 2023-02-05)
 Review 3.04.00: new datafile for ORBAT 3.04 (rev.3)
 Review 3.04.01: updated datafile for ORBAT 3.04 published 31/08/2023
-Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023 (rev1)</readme>
+Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023 (rev2)</readme>
   <categoryEntries>
     <categoryEntry id="c7ca-90d2-5214-ece9" name="Commonwealth" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
     <categoryEntry id="43a2-7e77-ff29-fb5c" name="Russian" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
@@ -470,6 +470,11 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023 (rev1)</
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6b6a-5cd9-2d05-35fb" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="c9a6-3f79-7f6c-110b" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0254-b778-aa27-4011" type="max"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="f248-5a1b-1003-6dc8" name="Aerial Unit" hidden="false" targetId="022b-08af-c874-e3f1" primary="false">
           <modifiers>
             <modifier type="increment" field="8b27-0f18-fa3f-48f3" value="1.0">
@@ -610,11 +615,6 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023 (rev1)</
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="34cf-5170-b385-04ce" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="c9a6-3f79-7f6c-110b" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="false">
-          <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0254-b778-aa27-4011" type="max"/>
-          </constraints>
-        </categoryLink>
         <categoryLink id="936d-b86e-0211-33bc" name="Piranya Class" hidden="false" targetId="3030-3da1-a547-b7cf" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="300b-86ff-bd38-ffce" type="max"/>
@@ -652,6 +652,11 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023 (rev1)</
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ce47-cfe1-8c62-0954" type="min"/>
             <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="cd05-f52f-e971-73c0" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="93e0-812c-0f13-1f37" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3707-4688-5bd0-a053" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="e98d-8c33-057c-9c22" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="false">
@@ -754,11 +759,6 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023 (rev1)</
         <categoryLink id="4403-3060-397b-f0d2" name="Zubr Class" hidden="false" targetId="07e1-96aa-b89b-8fd8" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6e29-b7d6-32c2-7649" type="max"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="93e0-812c-0f13-1f37" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="false">
-          <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3707-4688-5bd0-a053" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="1d52-1166-64e3-e119" name="Akula Class" hidden="false" targetId="6fa0-565c-d833-b014" primary="false">
@@ -981,15 +981,15 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023 (rev1)</
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="cd05-f52f-e971-73c0" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="e98d-8c33-057c-9c22" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="false">
-          <constraints>
-            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6b6a-5cd9-2d05-35fb" type="max"/>
-          </constraints>
-        </categoryLink>
         <categoryLink id="8475-95c7-761b-e593" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="383b-bdc4-3625-b2a3" type="min"/>
             <constraint field="selections" scope="force" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3e25-14e7-02e9-3cdf" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="e98d-8c33-057c-9c22" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6b6a-5cd9-2d05-35fb" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="f248-5a1b-1003-6dc8" name="Aerial Unit" hidden="false" targetId="022b-08af-c874-e3f1" primary="false">
@@ -1838,7 +1838,6 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023 (rev1)</
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4ca2-058e-2ae4-364f" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="151b-55a6-aedf-b69f" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="daec-c7fc-4ab4-114d" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -4985,6 +4984,9 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023 (rev1)</
                   <modifiers>
                     <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="24ec-1455-d3f4-ba4b" type="max"/>
+                  </constraints>
                   <costs>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
                   </costs>
@@ -5027,6 +5029,9 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023 (rev1)</
                   <modifiers>
                     <modifier type="add" field="category" value="c93d-a414-b1bc-7d2c"/>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9ba5-a5a5-fc21-e1a4" type="max"/>
+                  </constraints>
                   <costs>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
                   </costs>
@@ -5119,6 +5124,9 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023 (rev1)</
                   <modifiers>
                     <modifier type="add" field="category" value="ce6f-067d-9ad4-ddaa"/>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa36-104b-adc5-cb56" type="max"/>
+                  </constraints>
                   <costs>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
                   </costs>

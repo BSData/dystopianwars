@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="1242-c30b-419f-8229" name="Dystopian Wars 3.0" revision="9" battleScribeVersion="2.03" authorName="Riccardo Sipone / Ruslan Zakirov" authorContact="siponeric@hotmail.com / ruslan.zakirov.2000@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="1242-c30b-419f-8229" name="Dystopian Wars 3.0" revision="10" battleScribeVersion="2.03" authorName="Riccardo Sipone / Ruslan Zakirov" authorContact="siponeric@hotmail.com / ruslan.zakirov.2000@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <comment>The Dystopian Wars datafile are editied and mantained with Ruslan Zakirov, that with patience has start to managed all profile and debugging.</comment>
   <readme>Revision 1.01: added all ORBAT Publication
 Revision 1.02: managed correctlly Publication, corrected Command Reroll bonus
@@ -9,7 +9,8 @@ Revision 3.03.00: introduction of rules 3.03
 Revision 3.03.01: new feature to support 3.03 Orbat
 Revision 3.03.02: new feature add correction to support 3.03 Orbat
 Revision 3.03.03: new correction to introduce Common library
-Revision 3.04.00: introduction of the 3.04 Orbats</readme>
+Revision 3.04.00: introduction of the 3.04 Orbats
+Revision 3.05.00: introduction of the 3.05 Orbats</readme>
   <publications>
     <publication id="7f09-e243-2307-78d0" name="Dystopian Rulebook"/>
     <publication id="e265-8c7f-a4b2-a48e" name="Commonwhealth ORBAT"/>
@@ -87,6 +88,7 @@ Revision 3.04.00: introduction of the 3.04 Orbats</readme>
     <categoryEntry id="2823-5c19-a89c-6839" name="Fleet Bonus" publicationId="5a03-1c6f-8fc8-2be1" hidden="false"/>
     <categoryEntry id="8cfc-cf5f-6ab7-0db5" name="Special Rules" publicationId="5a03-1c6f-8fc8-2be1" hidden="false"/>
     <categoryEntry id="d6e0-2055-9c1b-5e86" name="Patron" hidden="false"/>
+    <categoryEntry id="3226-5cb8-b2fb-ec2c" name="Battlefleet" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="44e8-1fde-db6e-20f6" name="Battlefleet (generic don&apos;t use)" publicationId="7f09-e243-2307-78d0" hidden="true">
