@@ -11,7 +11,7 @@ Review 3.03.01: 5th release ORBAT update to 3.03 (date 2023-02-06)
 Review 3.03.03: correction suggested in discord 3.03 (date 2023-02-06)
 Review 3.04.00: update to ORBAT 3.04 (date 2023-08-17)
 Review 3.04.01: update to ORBAT 3.04 last release (date 2023-09-01 rev2)
-Review 3.05.00: update to ORBAT 3.05 last release (date 2023-10-19)</readme>
+Review 3.05.00: update to ORBAT 3.05 last release (date 2023-10-19) rev1</readme>
   <categoryEntries>
     <categoryEntry id="24d7-a2ac-a5bb-a77d" name="Temir Class" publicationId="d854-a2d6-3d52-44c4" hidden="false"/>
     <categoryEntry id="9c13-9a46-5ee3-4981" name="Sultanate" publicationId="d854-a2d6-3d52-44c4" hidden="false"/>
@@ -888,6 +888,11 @@ Review 3.05.00: update to ORBAT 3.05 last release (date 2023-10-19)</readme>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" field="name" value="Order Frontline Battlefleet (Main)">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="298e-e364-7701-8899" type="atLeast"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="forces" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="95ac-cd0a-aaf5-a8c3" type="max"/>
@@ -1110,7 +1115,8 @@ Review 3.05.00: update to ORBAT 3.05 last release (date 2023-10-19)</readme>
         </categoryLink>
         <categoryLink id="7ac1-f612-bc05-b06c" name="Aerial Unit" hidden="false" targetId="022b-08af-c874-e3f1" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d44f-5607-8c1e-ced4" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d44f-5607-8c1e-ced4" type="min"/>
+            <constraint field="selections" scope="force" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7f17-7922-4add-3cf6" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="198d-6fe6-8653-9ed6" name="Alsaqr Class" hidden="false" targetId="d769-126e-6928-bda2" primary="false">
@@ -3016,6 +3022,7 @@ Review 3.05.00: update to ORBAT 3.05 last release (date 2023-10-19)</readme>
       </categoryLinks>
       <entryLinks>
         <entryLink id="e35e-6a3d-85c0-c336" name="Lyceum" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" targetId="c2f8-9b38-35a1-a006" type="selectionEntry"/>
+        <entryLink id="6e30-36b9-bf40-be9c" name="Attached Unit [Turkish Aerial]" hidden="false" collective="false" import="true" targetId="2e7e-0328-269a-76cc" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
@@ -3307,6 +3314,7 @@ Review 3.05.00: update to ORBAT 3.05 last release (date 2023-10-19)</readme>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e7b4-36aa-bd2e-35e0" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b7d-3a94-5f90-9f85" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f921-74af-de51-5d2a" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="206a-e800-c094-f4ef" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3483,7 +3491,7 @@ Review 3.05.00: update to ORBAT 3.05 last release (date 2023-10-19)</readme>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="993a-238f-6de1-d96e" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="9572-51aa-ef5c-ff20" name="Heavy Particle Cannon" hidden="false" collective="false" import="true" targetId="1eba-ceab-1cdb-e38d" type="selectionEntry">
+                <entryLink id="9572-51aa-ef5c-ff20" name="Heavy Gun Battery" hidden="false" collective="false" import="true" targetId="90c9-59e3-935f-7a20" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="ce6f-067d-9ad4-ddaa"/>
                   </modifiers>
@@ -8349,8 +8357,8 @@ Review 3.05.00: update to ORBAT 3.05 last release (date 2023-10-19)</readme>
     </selectionEntry>
     <selectionEntry id="3f3c-df85-cd90-0071" name="Hırka" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9a18-5798-56e6-dbcd" type="min"/>
-        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c8a0-d614-6c56-c2c5" type="max"/>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9a18-5798-56e6-dbcd" type="min"/>
+        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c8a0-d614-6c56-c2c5" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="5126-1e76-9289-a328" name="Agile (3.04)" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>

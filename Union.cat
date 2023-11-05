@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="caf4-134c-500d-0cd9" name="Union v3.05" revision="7" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="caf4-134c-500d-0cd9" name="Union v3.05" revision="8" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Union ORBAT 3.04 (published 18/10/2023)</comment>
   <readme>Review 1.03.00: Initial release
 Review 3.03.00: Update to Orbat 3.03
@@ -7,7 +7,8 @@ Review 3.03.01: correction after the update to Orbat 3.03
 Review 3.03.02: 2nd correction wave after the update to Orbat 3.03 (2023-02-05)
 Review 3.04.00: Update to Orbat 3.04 (rev.1)
 Review 3.04.01: complete uodate for Orbat 3.04 (published 20230901 rev1)
-Review 3.05.00: update for Orbat 3.05 (published 20231018) rev1</readme>
+Review 3.05.00: update for Orbat 3.05 (published 20231018) rev1
+Review 3.05.01: correction request by #BillyBones for Orbat 3.05 (published 20231018) </readme>
   <categoryEntries>
     <categoryEntry id="44e3-4b42-5468-18b4" name="Union" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
     <categoryEntry id="165e-baac-9907-80de" name="Constitution Class" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
@@ -832,6 +833,13 @@ Review 3.05.00: update for Orbat 3.05 (published 20231018) rev1</readme>
           </constraints>
         </categoryLink>
         <categoryLink id="8212-79d4-24c2-70f4" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="false">
+          <modifiers>
+            <modifier type="set" field="aa7e-4a98-3c35-d2a5" value="5.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3daf-5c97-f3ab-5537" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="909f-142b-4ef2-1994" type="min"/>
             <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="aa7e-4a98-3c35-d2a5" type="max"/>
@@ -1068,6 +1076,12 @@ Review 3.05.00: update for Orbat 3.05 (published 20231018) rev1</readme>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="e8f0-15d5-4ffd-9f3b" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="160d-d6cd-1846-7736" name="Fleet Bonus" hidden="false" targetId="2823-5c19-a89c-6839" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4ee-3961-0bb3-93b6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="763b-df73-6f3e-f8de" type="max"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="cf6c-a8b1-258f-3d2a" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6106-d32c-a1ed-9f1d" type="min"/>
@@ -1161,6 +1175,13 @@ Review 3.05.00: update for Orbat 3.05 (published 20231018) rev1</readme>
           </constraints>
         </categoryLink>
         <categoryLink id="1caa-a9a0-1eb8-34af" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="false">
+          <modifiers>
+            <modifier type="set" field="309e-df8e-47c8-e6c9" value="5.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3daf-5c97-f3ab-5537" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9a74-f283-2c26-8225" type="min"/>
             <constraint field="selections" scope="force" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="309e-df8e-47c8-e6c9" type="max"/>
@@ -1406,7 +1427,6 @@ Review 3.05.00: update for Orbat 3.05 (published 20231018) rev1</readme>
         </categoryLink>
         <categoryLink id="8a56-1c9f-f1dd-5f9d" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e012-d6ea-1263-abb6" type="min"/>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9761-34c6-de36-860c" type="max"/>
           </constraints>
         </categoryLink>
@@ -2146,7 +2166,6 @@ Review 3.05.00: update for Orbat 3.05 (published 20231018) rev1</readme>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6d21-83d7-8fca-5da0" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c1-eac5-1cc4-65fa" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5812-09d0-43e8-9f4c" type="instanceOf"/>
               </conditions>
@@ -2202,7 +2221,6 @@ Review 3.05.00: update for Orbat 3.05 (published 20231018) rev1</readme>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6d21-83d7-8fca-5da0" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c1-eac5-1cc4-65fa" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5812-09d0-43e8-9f4c" type="instanceOf"/>
               </conditions>
@@ -2263,7 +2281,6 @@ Review 3.05.00: update for Orbat 3.05 (published 20231018) rev1</readme>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6d21-83d7-8fca-5da0" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c1-eac5-1cc4-65fa" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5812-09d0-43e8-9f4c" type="instanceOf"/>
               </conditions>
@@ -2356,7 +2373,6 @@ Review 3.05.00: update for Orbat 3.05 (published 20231018) rev1</readme>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6d21-83d7-8fca-5da0" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c1-eac5-1cc4-65fa" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5812-09d0-43e8-9f4c" type="instanceOf"/>
               </conditions>
@@ -3045,7 +3061,7 @@ Review 3.05.00: update for Orbat 3.05 (published 20231018) rev1</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6ac3-e096-64ed-f420" name="Nashville Strike Cruiser Squadron" publicationId="e6a1-85d3-8979-7880" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="6ac3-e096-64ed-f420" name="Nashville Strike Cruiser Squadron" publicationId="e6a1-85d3-8979-7880" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -3377,7 +3393,6 @@ Review 3.05.00: update for Orbat 3.05 (published 20231018) rev1</readme>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6d21-83d7-8fca-5da0" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c1-eac5-1cc4-65fa" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5812-09d0-43e8-9f4c" type="instanceOf"/>
               </conditions>
@@ -4062,7 +4077,7 @@ Review 3.05.00: update for Orbat 3.05 (published 20231018) rev1</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="159a-83e9-7f9d-fca5" name="Senator Command Cruisers" publicationId="e6a1-85d3-8979-7880" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="159a-83e9-7f9d-fca5" name="Senator Command Cruisers" publicationId="e6a1-85d3-8979-7880" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -4619,7 +4634,7 @@ Review 3.05.00: update for Orbat 3.05 (published 20231018) rev1</readme>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ea1c-7b0e-1390-7653" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f559-51b4-6230-2c74" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6d21-83d7-8fca-5da0" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ea1c-7b0e-1390-7653" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="66f0-94e7-8b7e-44fc" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5812-09d0-43e8-9f4c" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -4997,7 +5012,7 @@ Review 3.05.00: update for Orbat 3.05 (published 20231018) rev1</readme>
         <entryLink id="06a3-950b-544b-aae9" name="Talon Assault" hidden="false" collective="false" import="true" targetId="cc35-3791-97b2-1ec3" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-10.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-12.0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -9173,7 +9188,7 @@ Review 3.05.00: update for Orbat 3.05 (published 20231018) rev1</readme>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b19-8d66-50d9-36bb" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c1-eac5-1cc4-65fa" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -9283,7 +9298,7 @@ Review 3.05.00: update for Orbat 3.05 (published 20231018) rev1</readme>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="4ed6-6e1a-f65b-44d9" name="Heavy Electrocannon Battery" hidden="true" collective="false" import="true" targetId="695f-5aa2-ae54-62e1" type="selectionEntry">
+                <entryLink id="4ed6-6e1a-f65b-44d9" name="Heavy Electrocannon Battery" hidden="true" collective="false" import="true" targetId="e156-9e5b-765e-edc9" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="5347-4855-4421-ed77"/>
                     <modifier type="set" field="hidden" value="false">
@@ -9325,7 +9340,7 @@ Review 3.05.00: update for Orbat 3.05 (published 20231018) rev1</readme>
                     <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="96e7-c430-6010-9086" name="Heavy Electrocannon Battery" hidden="true" collective="false" import="true" targetId="695f-5aa2-ae54-62e1" type="selectionEntry">
+                <entryLink id="96e7-c430-6010-9086" name="Heavy Electrocannon Battery" hidden="true" collective="false" import="true" targetId="e156-9e5b-765e-edc9" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="4e9e-7862-58ad-15e6"/>
                     <modifier type="set" field="hidden" value="false">
@@ -9747,7 +9762,7 @@ Review 3.05.00: update for Orbat 3.05 (published 20231018) rev1</readme>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="027b-ee66-092d-db89" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="cfea-21a0-19c4-2849" name="Heavy Electrocannon Battery" hidden="true" collective="false" import="true" targetId="695f-5aa2-ae54-62e1" type="selectionEntry">
+            <entryLink id="cfea-21a0-19c4-2849" name="Heavy Electrocannon Battery" hidden="true" collective="false" import="true" targetId="e156-9e5b-765e-edc9" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
                 <modifier type="set" field="hidden" value="false">
@@ -11453,12 +11468,7 @@ Review 3.05.00: update for Orbat 3.05 (published 20231018) rev1</readme>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
         </entryLink>
-        <entryLink id="304d-1b03-39ab-30ec" name="Sentinel Generators" hidden="false" collective="false" import="true" targetId="8002-0fb8-db95-1b71" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d53d-59b8-03ea-6299" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d29b-02b4-27d8-90c7" type="max"/>
-          </constraints>
-        </entryLink>
+        <entryLink id="304d-1b03-39ab-30ec" name="Sentinel Generators" hidden="false" collective="false" import="true" targetId="d0e6-f9ac-010c-f5ee" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="120.0"/>
@@ -11621,7 +11631,7 @@ Review 3.05.00: update for Orbat 3.05 (published 20231018) rev1</readme>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink id="0feb-2bd1-4896-128e" name="Lamplighter Napalm" hidden="false" collective="false" import="true" targetId="b3a5-2c6e-7cc9-254a" type="selectionEntry">
+            <entryLink id="0feb-2bd1-4896-128e" name="Lamplighter Napalm" hidden="false" collective="true" import="true" targetId="8b0d-b801-7cbc-4287" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="5888-87ac-f851-165d"/>
               </modifiers>
@@ -11629,7 +11639,7 @@ Review 3.05.00: update for Orbat 3.05 (published 20231018) rev1</readme>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="693d-c70d-5fee-f6bf" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="20df-59f6-c1e6-d802" name="Aerial Torpedo Pod" hidden="false" collective="false" import="true" targetId="dbf1-f5bd-bb5f-3bc5" type="selectionEntry">
+            <entryLink id="20df-59f6-c1e6-d802" name="Aerial Torpedo Pod" hidden="false" collective="true" import="true" targetId="ccc2-7f0c-79ef-eab3" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
               </modifiers>
@@ -11886,6 +11896,7 @@ Review 3.05.00: update for Orbat 3.05 (published 20231018) rev1</readme>
       <modifiers>
         <modifier type="increment" field="8a4c-0ab5-f4fe-4345" value="1.0">
           <repeats>
+            <repeat field="forces" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" childId="f559-51b4-6230-2c74" repeats="1" roundUp="false"/>
             <repeat field="forces" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" childId="6d21-83d7-8fca-5da0" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
@@ -11921,7 +11932,7 @@ Review 3.05.00: update for Orbat 3.05 (published 20231018) rev1</readme>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="12.0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -12813,7 +12824,7 @@ Review 3.05.00: update for Orbat 3.05 (published 20231018) rev1</readme>
         <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">12/10</characteristic>
         <characteristic name="ADV" typeId="6428-9828-bb2e-f923">5/3</characteristic>
         <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">0/0</characteristic>
-        <characteristic name="Fray" typeId="4c54-804a-8993-7325">7/6</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">9/6</characteristic>
         <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">4/2</characteristic>
       </characteristics>
     </profile>
