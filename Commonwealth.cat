@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6719-1f83-56dd-91fe" name="Commonwealth v3.04" revision="20" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6719-1f83-56dd-91fe" name="Commonwealth v3.04" revision="20" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Commonwealth ORBAT 3.04 (published 31/08/2023)</comment>
   <readme>Review 1.02.01: correct Rurik and Oleg unit max size
 Review 1.03.00: add new unit and new profile from ORBAT 1.03, fixed Battlefleet bonus managment
@@ -20,7 +20,7 @@ Review 3.03.04: Giyena correction (publish 2023-02-05)
 Review 3.03.05: Pakhtusov correction (publish 2023-02-05)
 Review 3.04.00: new datafile for ORBAT 3.04 (rev.3)
 Review 3.04.01: updated datafile for ORBAT 3.04 published 31/08/2023
-Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023 (rev2)</readme>
+Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023 (rev3)</readme>
   <categoryEntries>
     <categoryEntry id="c7ca-90d2-5214-ece9" name="Commonwealth" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
     <categoryEntry id="43a2-7e77-ff29-fb5c" name="Russian" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
@@ -3431,6 +3431,9 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023 (rev2)</
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd3f-73b0-b650-0815" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="5eec-3ca3-de4a-32e0" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
@@ -4044,7 +4047,7 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023 (rev2)</
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="02be-d183-5113-bb1f" type="min"/>
-        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1280-49ea-21bc-c29c" type="max"/>
+        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1280-49ea-21bc-c29c" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="dbf4-f489-9ae8-dc16" name="Full Steam Ahead�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
@@ -5410,7 +5413,7 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023 (rev2)</
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac09-a48e-334f-79c0" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="6625-82fe-aaf8-edb9" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="6625-82fe-aaf8-edb9" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="c93d-a414-b1bc-7d2c"/>
                   </modifiers>
@@ -5453,7 +5456,7 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023 (rev2)</
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e2a0-db23-7db7-52d9" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="c78d-27c6-af9b-4d68" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="c78d-27c6-af9b-4d68" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="ce6f-067d-9ad4-ddaa"/>
                   </modifiers>
@@ -5496,7 +5499,7 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023 (rev2)</
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e3dc-6015-d0af-17d1" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="bfd5-9a1a-0526-993e" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="bfd5-9a1a-0526-993e" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="c93d-a414-b1bc-7d2c"/>
                   </modifiers>
@@ -5539,7 +5542,7 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023 (rev2)</
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7ff1-ac0d-eec5-d2ec" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="db5c-39f6-afd1-c29f" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+                <entryLink id="db5c-39f6-afd1-c29f" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="ce6f-067d-9ad4-ddaa"/>
                   </modifiers>
@@ -5643,11 +5646,12 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023 (rev2)</
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fd8-3d3d-b02f-618a" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="620d-8c4b-9307-affd" name="Ablative Armour" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
+        <infoLink id="620d-8c4b-9307-affd" name="Cryo-Capacitors (3.04)" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="8e0c-5c25-228a-bccf" type="rule"/>
         <infoLink id="5b88-007b-4899-f90b" name="Hammer Sweep" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
         <infoLink id="3232-8975-6731-164b" name="Morozko" hidden="false" targetId="2ba8-653c-6fe3-6489" type="profile"/>
         <infoLink id="23f4-4f8f-77d0-3e6d" name="Quantity is a Quality" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ad4c-d50d-de1f-b975" type="rule"/>
         <infoLink id="064d-8556-37c9-c6f6" name="Black Wolf Mercenaries*" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="e5a5-e0de-5b3f-75de" name="Ablative Armour (3.04)" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3f93-385b-eadf-07ec" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
@@ -5893,7 +5897,7 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023 (rev2)</
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac15-976c-2dea-d7cd" type="min"/>
-        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6cc8-bdab-4931-ddde" type="max"/>
+        <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6cc8-bdab-4931-ddde" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="cb42-7225-6209-f98f" name="Ablative Armour" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
@@ -7364,7 +7368,7 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023 (rev2)</
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e715-7b4d-8595-6b4c" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="3.0"/>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -7402,7 +7406,7 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023 (rev2)</
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1507-5a24-3d1f-8b68" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="3.0"/>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -9130,6 +9134,7 @@ Review 3.04.02: correction datafile for ORBAT 3.04 published 31/08/2023 (rev2)</
         <infoLink id="e3f0-9b98-636b-4892" name="Devil’s Own Luck**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="da8d-c041-fd15-a8de" type="rule"/>
         <infoLink id="36a1-6a88-3bc5-4b4c" name="Logistical Support**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="408e-7b40-68d7-059f" type="rule"/>
         <infoLink id="d5dc-b41e-abf6-8efb" name="Black Wolf Mercenaries**" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="4aea-2b5e-088b-e619" name="Cryo-Capacitors (3.04)" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="8e0c-5c25-228a-bccf" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="cd9e-a0d2-6b30-c6a6" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>

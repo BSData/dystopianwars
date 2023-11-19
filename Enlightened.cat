@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="50c4-91af-d01e-a4e1" name="Enlightened v3.04" revision="15" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="50c4-91af-d01e-a4e1" name="Enlightened v3.04" revision="15" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Last Enlightened ORBAT 3.04 (published 08/10/2023)</comment>
   <readme>Review 1.02.00: initial edition according to Enlightened ORBAT 1.02a
 Review 1.02.01: bux fixing and correct Physeter Ambush management
@@ -15,7 +15,7 @@ Review 3.03.05: correction suggested in Discord 3.03 (date 2023-02-07)
 Review 3.03.06: correction suggested in GitHub 3.03 (date 2023-02-07)
 Review 3.03.07: correction suggested in GitHub 3.03 (date 2023-02-07)
 Review 3.03.08: correction suggested in GitHub 3.03 (date 2023-02-07)
-Review 3.04.00: uptate data to version 3.04 (Orbat published 20230908) rev1</readme>
+Review 3.04.00: uptate data to version 3.04 (Orbat published 20230908) rev2</readme>
   <categoryEntries>
     <categoryEntry id="d580-e7cf-5353-e2bb" name="Enlightened" publicationId="908d-6feb-2e9e-843b" hidden="false"/>
     <categoryEntry id="b7da-7d83-7f67-604f" name="Control Ship" hidden="false"/>
@@ -1583,6 +1583,18 @@ Review 3.04.00: uptate data to version 3.04 (Orbat published 20230908) rev1</rea
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="bce8-5337-adc3-4f0d" name="Escort Model" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac73-b437-e688-7563" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="638a-e34b-38c5-749d" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="c6f3-8f9c-a97d-b5d8" name="Claudius" hidden="false" collective="false" import="true" targetId="ab84-f893-c25e-98ef" type="selectionEntry"/>
@@ -2096,6 +2108,18 @@ Review 3.04.00: uptate data to version 3.04 (Orbat published 20230908) rev1</rea
               </costs>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="2f4c-5ad2-940b-4198" name="Escort Model" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d563-3c3c-07b0-9751" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6c54-324a-31b9-81f7" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -2656,6 +2680,20 @@ Review 3.04.00: uptate data to version 3.04 (Orbat published 20230908) rev1</rea
         <categoryLink id="d62f-0aa8-3bac-a2f1" name="Origen Class" hidden="false" targetId="3cd7-1178-4630-ab3b" primary="false"/>
         <categoryLink id="eb40-1420-50f3-3413" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="aa7b-3423-5016-0d78" name="Escort Model" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="866b-ac11-dedf-0f45" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="cb60-bec3-6e9f-5e55" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="c0d6-6794-bd11-40f4" name="Origen" hidden="false" collective="false" import="true" targetId="3e83-0322-5fd5-8cee" type="selectionEntry"/>
       </entryLinks>
@@ -2800,6 +2838,20 @@ Review 3.04.00: uptate data to version 3.04 (Orbat published 20230908) rev1</rea
         <categoryLink id="a762-db0d-355d-6a5c" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="cebf-7931-17fb-3cf6" name="Zumeena Class" hidden="false" targetId="b56b-534a-41a2-7b84" primary="false"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="da50-003a-8f86-2f29" name="Escort Model" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="978c-75df-18dc-f20d" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="a18e-081f-c3ae-2967" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="921a-2a61-cbd6-8f96" name="Zumeena" hidden="false" collective="false" import="true" targetId="983d-cab1-7b0a-8d59" type="selectionEntry"/>
       </entryLinks>
