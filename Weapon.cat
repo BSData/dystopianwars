@@ -17,7 +17,7 @@ Review v13: correction for end of May &apos;23 update
 Review v14: corrected gun battery profile for June &apos;23 update, review 3.04.04: new data for mid April updated
 Review v15: start of review for 3.04 Orbats (rev.4)
 Review v16: start of review for 3.04 Orbats for Sept &apos;23 (rev4)
-Review v17: start of review for 3.05 Orbats (rev1)</readme>
+Review v17: start of review for 3.05 Orbats (rev2)</readme>
   <categoryEntries>
     <categoryEntry id="dbb4-72d5-bceb-70b3" name="F" hidden="false"/>
     <categoryEntry id="372f-19f1-09ed-e694" name="P&amp;S" hidden="false"/>
@@ -6865,6 +6865,33 @@ Review v17: start of review for 3.05 Orbats (rev1)</readme>
         <infoLink id="4215-f4e6-6ab8-293a" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
         <infoLink id="0550-30a8-9e16-c59c" name="Torpedo" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
         <infoLink id="d171-1b1c-0a53-0536" name="High Velocity" hidden="false" targetId="5b8e-71d1-641d-73f9" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ad33-8b91-9e95-24d7" name="Vierling Flak Array" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e53f-4570-c4e9-d418" name="Vierling Flak Array" hidden="false" targetId="a410-4003-c9e7-adf3" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="ad33-8b91-9e95-24d7" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="ad33-8b91-9e95-24d7" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="8d4c-a438-dc74-0fd5" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
