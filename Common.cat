@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f2ed-a910-ca64-9be7" name="Common" revision="7" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f2ed-a910-ca64-9be7" name="Common" revision="8" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <comment>Update to ORBAT 3.04 (published 01/08/2023)</comment>
   <readme>Review 3.03.00: initial library edition
 Review 3.03.01: new data
 Review 3.03.03: new data for Sultanate Orbat 3.03
 Review 3.03.04: new data for the mid April update
-Review 3.03.04: new data for the mid  September update
+Review 3.03.04: new data for the mid September update
 Review 3.04.00: new data for the 3.04 Orbats (rev.2)
 Review 3.04.01: new data for the 3.04 Orbats Sept &apos;23 release (rev3)
-Review 3.05.00: new data for the 3.05 Orbats Oct &apos;23 release</readme>
+Review 3.05.00: new data for the 3.05 Orbats Oct &apos;23 release
+Review 3.05.01: new data for the 3.05 Orbats Jan&apos;24 (to be used with New Recruit)</readme>
   <categoryEntries>
     <categoryEntry id="7f73-53c5-5468-f039" name="Advanced Cruiser" hidden="false"/>
     <categoryEntry id="77f5-1ac9-0fd1-f299" name="Aerial Destroyer" hidden="false"/>
@@ -22,7 +23,7 @@ Review 3.05.00: new data for the 3.05 Orbats Oct &apos;23 release</readme>
     <categoryEntry id="8eec-b25b-a7cd-2093" name="Artillery Submarine" publicationId="129d-da97-caec-1ddd" hidden="false"/>
     <categoryEntry id="b741-93ee-d4fc-460b" name="Assault Airship" hidden="false"/>
     <categoryEntry id="ce30-5002-c213-d238" name="Assault Battleship" hidden="false"/>
-    <categoryEntry id="b50a-9409-1fb4-0491" name="Assault Carrier" publicationId="" hidden="false"/>
+    <categoryEntry id="b50a-9409-1fb4-0491" name="Assault Carrier" hidden="false"/>
     <categoryEntry id="c8e2-2661-07e3-b75a" name="Assault Cruiser" hidden="false"/>
     <categoryEntry id="f69c-ba63-7c93-a71f" name="Assault Submarine" publicationId="dbca-8d57-b848-457e" hidden="false"/>
     <categoryEntry id="7b26-4a40-7d08-ecfb" name="Attack Airship" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
@@ -193,49 +194,49 @@ Review 3.05.00: new data for the 3.05 Orbats Oct &apos;23 release</readme>
         <categoryLink id="a86a-9f35-27b8-0be9" name="New CategoryLink" hidden="false" targetId="d6e0-2055-9c1b-5e86" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="dd77-1355-2580-a469" name="Main Battlefleet" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ceda-3ea8-5ea1-d391" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ceda-3ea8-5ea1-d391" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="fd7e-8a38-d850-f052" name="Main Battlefllet" hidden="false" targetId="f56a-3df4-17d2-db01" primary="false"/>
         <categoryLink id="2d7a-b682-7a0d-aed2" name="New CategoryLink" hidden="false" targetId="3226-5cb8-b2fb-ec2c" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4276-0dac-62d7-f428" name="Mercenary Battlefleet" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9f0-4df9-6df6-33c6" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9f0-4df9-6df6-33c6" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="bb45-35bc-892f-79e1" name="Battlefleet" hidden="false" targetId="3226-5cb8-b2fb-ec2c" primary="true"/>
         <categoryLink id="6fb2-194b-a8af-3674" name="Mercenaty Battlefleet" hidden="false" targetId="86ff-88da-5a0b-2d81" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1158-6e57-cab4-d521" name="Specialist Battlefleet" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c025-5ad2-d251-59c8" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c025-5ad2-d251-59c8" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="f589-0f50-debb-39a9" name="Specialist Battlefleet" hidden="false" targetId="50f8-5d04-e502-e289" primary="false"/>
         <categoryLink id="8040-3009-917c-bb5d" name="New CategoryLink" hidden="false" targetId="3226-5cb8-b2fb-ec2c" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
