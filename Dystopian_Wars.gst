@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="1242-c30b-419f-8229" name="Dystopian Wars 3.0" revision="11" battleScribeVersion="2.03" authorName="Riccardo Sipone / Ruslan Zakirov" authorContact="siponeric@hotmail.com / ruslan.zakirov.2000@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="1242-c30b-419f-8229" name="Dystopian Wars 3.0" revision="12" battleScribeVersion="2.03" authorName="Riccardo Sipone / Ruslan Zakirov" authorContact="siponeric@hotmail.com / ruslan.zakirov.2000@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <comment>The Dystopian Wars datafile are editied and mantained with Ruslan Zakirov, that with patience has start to managed all profile and debugging.</comment>
   <readme>Revision 1.01: added all ORBAT Publication
 Revision 1.02: managed correctlly Publication, corrected Command Reroll bonus
@@ -11,7 +11,8 @@ Revision 3.03.02: new feature add correction to support 3.03 Orbat
 Revision 3.03.03: new correction to introduce Common library
 Revision 3.04.00: introduction of the 3.04 Orbats
 Revision 3.05.00: introduction of the 3.05 Orbats
-Revision 3.05.01: modification of the 3.05 Orbats (to be used with New Recruit)</readme>
+Revision 3.05.01: modification of the 3.05 Orbats (to be used with New Recruit)
+Revision 3.06.00: common categories for 3.06 Orbats</readme>
   <publications>
     <publication id="7f09-e243-2307-78d0" name="Dystopian Rulebook"/>
     <publication id="e265-8c7f-a4b2-a48e" name="Commonwhealth ORBAT"/>
@@ -96,14 +97,16 @@ Revision 3.05.01: modification of the 3.05 Orbats (to be used with New Recruit)<
     <categoryEntry id="3226-5cb8-b2fb-ec2c" name="Battlefleet" hidden="false"/>
     <categoryEntry name="Front First" hidden="false" id="62c7-5eb0-d38e-486"/>
     <categoryEntry name="Front Second" hidden="false" id="c595-958b-800e-2c04"/>
-    <categoryEntry name="First" hidden="false" id="8dd5-28b8-39fb-6304"/>
-    <categoryEntry name="Second" hidden="false" id="2a6f-36d6-5d75-e9fc"/>
+    <categoryEntry name="1st" hidden="false" id="8dd5-28b8-39fb-6304"/>
+    <categoryEntry name="2nd" hidden="false" id="2a6f-36d6-5d75-e9fc"/>
     <categoryEntry name="Port First" hidden="false" id="55de-fe5d-650a-2f4a"/>
     <categoryEntry name="Port Second" hidden="false" id="e1e9-a88-1bb-b8aa"/>
     <categoryEntry name="Starboard First" hidden="false" id="801-696b-9bb1-e4ef"/>
     <categoryEntry name="Starboard Second" hidden="false" id="a036-e1b6-ee86-ebf7"/>
     <categoryEntry name="Rear First" hidden="false" id="1305-ddc0-7c51-79ad"/>
     <categoryEntry name="Rear Second" hidden="false" id="8f47-ccb8-8fba-b472"/>
+    <categoryEntry name="3rd" hidden="false" id="df04-304e-3eb9-52b"/>
+    <categoryEntry name="4th" hidden="false" id="5650-1732-3d85-61a6"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="44e8-1fde-db6e-20f6" name="Battlefleet (generic don&apos;t use)" publicationId="7f09-e243-2307-78d0" hidden="true">

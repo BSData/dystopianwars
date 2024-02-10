@@ -18,7 +18,9 @@ Review v14: corrected gun battery profile for June &apos;23 update, review 3.04.
 Review v15: start of review for 3.04 Orbats (rev.4)
 Review v16: start of review for 3.04 Orbats for Sept &apos;23 (rev4)
 Review v17: start of review for 3.05 Orbats (rev3)
-Review v18: modification for 3.05 Orbats (to be used with New Recruit)</readme>
+Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev1
+
+</readme>
   <categoryEntries>
     <categoryEntry id="dbb4-72d5-bceb-70b3" name="F" hidden="false"/>
     <categoryEntry id="372f-19f1-09ed-e694" name="P&amp;S" hidden="false"/>
@@ -605,6 +607,23 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit)</readme>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="append" value="(1st)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="9cb1-0419-cc9a-e3ec" childId="8dd5-28b8-39fb-6304" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(2st)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="9cb1-0419-cc9a-e3ec" childId="2a6f-36d6-5d75-e9fc" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(3st)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="9cb1-0419-cc9a-e3ec" childId="df04-304e-3eb9-52b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </infoLink>
         <infoLink id="718e-a0df-1476-bd29" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
         <infoLink id="9039-4517-7b02-b62c" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
@@ -773,6 +792,18 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit)</readme>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="append" value="(Front First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="62c7-5eb0-d38e-486" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Front Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c595-958b-800e-2c04" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </infoLink>
         <infoLink id="b966-d270-e3a6-cb87" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
         <infoLink id="c715-bf3f-c363-f864" name="Voltaic" hidden="false" targetId="d5a2-e757-34b5-3774" type="rule"/>
@@ -836,6 +867,28 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit)</readme>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="append" value="(Front First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="62c7-5eb0-d38e-486" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Front Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c595-958b-800e-2c04" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Front Third)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="df04-304e-3eb9-52b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Front Fourth)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5650-1732-3d85-61a6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </infoLink>
         <infoLink id="0dff-b374-81c1-6928" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
         <infoLink id="86af-d54d-5470-dec1" name="Voltaic" hidden="false" targetId="d5a2-e757-34b5-3774" type="rule"/>
@@ -890,6 +943,11 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit)</readme>
                     <condition field="selections" scope="9128-f707-ac48-b896" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="P&amp;S">
+                  <conditions>
+                    <condition field="selections" scope="9128-f707-ac48-b896" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="372f-19f1-09ed-e694" type="instanceOf"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -928,9 +986,31 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit)</readme>
                     <condition field="selections" scope="cc76-e48a-8819-df6c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5347-4855-4421-ed77" type="instanceOf"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
+                  <conditions>
+                    <condition field="selections" scope="cc76-e48a-8819-df6c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ce6f-067d-9ad4-ddaa" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P">
+                  <conditions>
+                    <condition field="selections" scope="cc76-e48a-8819-df6c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="append" value="(First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8dd5-28b8-39fb-6304" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2a6f-36d6-5d75-e9fc" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </infoLink>
         <infoLink id="044d-ef75-6cd8-1ba6" name="Voltaic" hidden="false" targetId="d5a2-e757-34b5-3774" type="rule"/>
         <infoLink id="c187-36cf-9ff3-a573" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
@@ -1074,6 +1154,28 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit)</readme>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="append" value="(1st)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="8301-9820-d5e0-6a8c" childId="8dd5-28b8-39fb-6304" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(2nd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="8301-9820-d5e0-6a8c" childId="2a6f-36d6-5d75-e9fc" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(3rd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="8301-9820-d5e0-6a8c" childId="df04-304e-3eb9-52b" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(4th)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="8301-9820-d5e0-6a8c" childId="5650-1732-3d85-61a6" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </infoLink>
         <infoLink id="c1b1-9091-cdce-a900" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule">
           <modifiers>
@@ -1248,6 +1350,23 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit)</readme>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="append" value="(1st)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="83d8-3c75-f835-fcf2" childId="8dd5-28b8-39fb-6304" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(2nd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="83d8-3c75-f835-fcf2" childId="2a6f-36d6-5d75-e9fc" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(3nd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="83d8-3c75-f835-fcf2" childId="df04-304e-3eb9-52b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </infoLink>
         <infoLink id="7558-71bd-9725-38d8" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
         <infoLink id="a3fd-f871-7437-6a56" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
@@ -1263,6 +1382,21 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit)</readme>
         <infoLink id="1461-3165-b7f6-6c3c" name="Gustav Twin Bombard" hidden="false" targetId="4d4e-34d0-0935-1141" type="profile">
           <modifiers>
             <modifier type="set" field="faa3-d69c-5156-2acf" value="Gunnery, Devastating, Extreme Range, Hazard"/>
+            <modifier type="append" value="(1st)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="1cbe-8d6b-2a64-d46e" childId="8dd5-28b8-39fb-6304" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(2nd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="1cbe-8d6b-2a64-d46e" childId="2a6f-36d6-5d75-e9fc" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(3nd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="1cbe-8d6b-2a64-d46e" childId="df04-304e-3eb9-52b" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <modifierGroups>
             <modifierGroup>
@@ -1300,6 +1434,16 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit)</readme>
         <infoLink id="b472-8343-0c13-3424" name="Uranium-Trialen Bombs" hidden="false" targetId="09a8-1bf3-5cce-0330" type="profile">
           <modifiers>
             <modifier type="set" field="8739-aae9-7e50-c8d0" value="A"/>
+            <modifier type="append" value="(First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="e286-abe9-a7a8-38e9" childId="8dd5-28b8-39fb-6304" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="e286-abe9-a7a8-38e9" childId="2a6f-36d6-5d75-e9fc" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink id="1e7c-8233-08c6-46a0" name="Blast" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
@@ -4717,6 +4861,23 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit)</readme>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="append" value="(1st)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="9300-adba-3ea5-d835" childId="8dd5-28b8-39fb-6304" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(2nd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="9300-adba-3ea5-d835" childId="2a6f-36d6-5d75-e9fc" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(3nd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="9300-adba-3ea5-d835" childId="df04-304e-3eb9-52b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </infoLink>
         <infoLink id="ceb3-794d-1a9e-68f4" name="Arc" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
         <infoLink id="6d9f-e7d9-99df-2bdf" name="Blast" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
@@ -4733,6 +4894,21 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit)</readme>
         <infoLink id="ea1e-5103-7a6e-6c68" name="Bertha Heavy Bombard" hidden="false" targetId="028c-539f-915e-ef7d" type="profile">
           <modifiers>
             <modifier type="set" field="faa3-d69c-5156-2acf" value="Gunnery, Arc, Blast, Extreme Range, Devastating"/>
+            <modifier type="append" value="(1st)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="0932-7678-c653-ea55" childId="8dd5-28b8-39fb-6304" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(2nd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="0932-7678-c653-ea55" childId="2a6f-36d6-5d75-e9fc" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(3nd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="0932-7678-c653-ea55" childId="df04-304e-3eb9-52b" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <modifierGroups>
             <modifierGroup>
@@ -4784,6 +4960,23 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit)</readme>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="append" value="(1st)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="fd8c-87d5-b2c7-e28a" childId="8dd5-28b8-39fb-6304" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(2nd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="fd8c-87d5-b2c7-e28a" childId="2a6f-36d6-5d75-e9fc" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(3nd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="fd8c-87d5-b2c7-e28a" childId="df04-304e-3eb9-52b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </infoLink>
         <infoLink id="9c1b-d8ed-8b0c-667d" name="Arc" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
         <infoLink id="8e30-5b0d-cc66-38b4" name="Blast" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
@@ -4803,6 +4996,21 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit)</readme>
         <infoLink id="4dcf-5cf3-b7eb-b1e5" name="Bertha Heavy Bombard" hidden="false" targetId="028c-539f-915e-ef7d" type="profile">
           <modifiers>
             <modifier type="set" field="faa3-d69c-5156-2acf" value="Gunnery, Arc, Blast, Extreme Range, Devastating"/>
+            <modifier type="append" value="(1st)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="cdad-4014-0c08-2684" childId="8dd5-28b8-39fb-6304" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(2nd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="cdad-4014-0c08-2684" childId="2a6f-36d6-5d75-e9fc" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(3nd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="cdad-4014-0c08-2684" childId="df04-304e-3eb9-52b" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <modifierGroups>
             <modifierGroup>
@@ -4854,6 +5062,23 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit)</readme>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="append" value="(1st)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="43d0-f046-c366-dd53" childId="8dd5-28b8-39fb-6304" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(2nd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="43d0-f046-c366-dd53" childId="2a6f-36d6-5d75-e9fc" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(3nd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="43d0-f046-c366-dd53" childId="df04-304e-3eb9-52b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </infoLink>
         <infoLink id="dd48-54b6-d0a0-1269" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
         <infoLink id="f585-7ce2-6134-ef55" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
@@ -4872,6 +5097,21 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit)</readme>
         <infoLink id="6414-fed8-897c-33c3" name="Gustav Twin Bombard" hidden="false" targetId="4d4e-34d0-0935-1141" type="profile">
           <modifiers>
             <modifier type="set" field="faa3-d69c-5156-2acf" value="Gunnery, Devastating, Extreme Range, Hazard"/>
+            <modifier type="append" value="(1st)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="9da2-10af-ae51-78b2" childId="8dd5-28b8-39fb-6304" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(2nd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="9da2-10af-ae51-78b2" childId="2a6f-36d6-5d75-e9fc" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(3nd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="9da2-10af-ae51-78b2" childId="df04-304e-3eb9-52b" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <modifierGroups>
             <modifierGroup>
@@ -6712,6 +6952,23 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit)</readme>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="append" value="(1st)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="b6c6-cf35-2bcd-4200" childId="8dd5-28b8-39fb-6304" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(2nd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="b6c6-cf35-2bcd-4200" childId="2a6f-36d6-5d75-e9fc" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(3nd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="b6c6-cf35-2bcd-4200" childId="df04-304e-3eb9-52b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </infoLink>
         <infoLink id="8dc9-82f1-2f18-0b95" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
         <infoLink id="9def-60a8-d83c-a62e" name="Arc" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
@@ -6787,6 +7044,33 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit)</readme>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="append" value="(First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8dd5-28b8-39fb-6304" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2a6f-36d6-5d75-e9fc" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(1st)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="2922-fa0a-076a-3713" childId="8dd5-28b8-39fb-6304" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(2st)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="2922-fa0a-076a-3713" childId="2a6f-36d6-5d75-e9fc" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(3st)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="2922-fa0a-076a-3713" childId="df04-304e-3eb9-52b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </infoLink>
         <infoLink id="4cb5-3d8b-ab08-6cfc" name="Voltaic" hidden="false" targetId="d5a2-e757-34b5-3774" type="rule"/>
         <infoLink id="dffa-8405-adb7-3a72" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
@@ -7242,6 +7526,306 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit)</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="493f-b06e-7a69-39d9" name="Heavy Shock Rocket Battery" hidden="false" collective="true" import="false" type="upgrade" collapsible="false">
+      <infoLinks>
+        <infoLink id="221a-18f2-9390-de5a" name="Heavy Schok Rocket Battery" hidden="false" targetId="31e4-7dcf-9fc5-7c75" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P/S">
+                  <conditions>
+                    <condition field="selections" scope="493f-b06e-7a69-39d9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f2af-2773-24ff-2e12" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="493f-b06e-7a69-39d9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="493f-b06e-7a69-39d9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/S">
+                  <conditions>
+                    <condition field="selections" scope="493f-b06e-7a69-39d9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5347-4855-4421-ed77" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P">
+                  <conditions>
+                    <condition field="selections" scope="493f-b06e-7a69-39d9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4e9e-7862-58ad-15e6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/A">
+                  <conditions>
+                    <condition field="selections" scope="493f-b06e-7a69-39d9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0cd5-1e4e-c51e-c338" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S/A">
+                  <conditions>
+                    <condition field="selections" scope="493f-b06e-7a69-39d9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5b70-4095-b55c-9745" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/S">
+                  <conditions>
+                    <condition field="selections" scope="493f-b06e-7a69-39d9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5888-87ac-f851-165d" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="493f-b06e-7a69-39d9" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <modifiers>
+            <modifier type="append" value="(Front First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="493f-b06e-7a69-39d9" childId="62c7-5eb0-d38e-486" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Front Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="493f-b06e-7a69-39d9" childId="c595-958b-800e-2c04" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Front Third)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="493f-b06e-7a69-39d9" childId="df04-304e-3eb9-52b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Front Fourth)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="493f-b06e-7a69-39d9" childId="5650-1732-3d85-61a6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="167a-3164-9df7-c398" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
+        <infoLink id="367e-63a4-e098-a978" name="Voltaic" hidden="false" targetId="d5a2-e757-34b5-3774" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5209-6523-b4ec-6899" name="Vierling Autokannone" hidden="false" collective="true" import="false" type="upgrade">
+      <infoLinks>
+        <infoLink id="8d7e-7bfb-2c9b-c60e" name="Vierling Autokanone" hidden="false" targetId="2bec-2ccf-dad1-822b" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="5209-6523-b4ec-6899" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="5209-6523-b4ec-6899" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P">
+                  <conditions>
+                    <condition field="selections" scope="5209-6523-b4ec-6899" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4e9e-7862-58ad-15e6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/S">
+                  <conditions>
+                    <condition field="selections" scope="5209-6523-b4ec-6899" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5347-4855-4421-ed77" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="afe0-b5a3-3eac-004f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="afe0-b5a3-3eac-004f" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="P&amp;S">
+                  <conditions>
+                    <condition field="selections" scope="5209-6523-b4ec-6899" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="372f-19f1-09ed-e694" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F&amp;A">
+                  <conditions>
+                    <condition field="selections" scope="5209-6523-b4ec-6899" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="afe0-b5a3-3eac-004f" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <modifiers>
+            <modifier type="append" value="(1st)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="5209-6523-b4ec-6899" childId="8dd5-28b8-39fb-6304" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(2nd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="5209-6523-b4ec-6899" childId="2a6f-36d6-5d75-e9fc" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(3rd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="5209-6523-b4ec-6899" childId="df04-304e-3eb9-52b" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(4th)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="5209-6523-b4ec-6899" childId="5650-1732-3d85-61a6" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="8f8f-5d33-71e3-62fe" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="(Aerial Units, Skimming Units)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8624-e150-e178-7df5" name="Heavy Volt Gun Battery" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="true" import="false" type="upgrade">
+      <infoLinks>
+        <infoLink id="ed8c-cf00-d770-972d" name="Heavy Volt Gun Battery" hidden="false" targetId="e8ab-ce18-e798-5a50" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P/S">
+                  <conditions>
+                    <condition field="selections" scope="8624-e150-e178-7df5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f2af-2773-24ff-2e12" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="8624-e150-e178-7df5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="8624-e150-e178-7df5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/A">
+                  <conditions>
+                    <condition field="selections" scope="8624-e150-e178-7df5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0cd5-1e4e-c51e-c338" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S/A">
+                  <conditions>
+                    <condition field="selections" scope="8624-e150-e178-7df5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5b70-4095-b55c-9745" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A">
+                  <conditions>
+                    <condition field="selections" scope="8624-e150-e178-7df5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5888-87ac-f851-165d" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
+                  <conditions>
+                    <condition field="selections" scope="8624-e150-e178-7df5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ce6f-067d-9ad4-ddaa" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P">
+                  <conditions>
+                    <condition field="selections" scope="8624-e150-e178-7df5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="8624-e150-e178-7df5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <modifiers>
+            <modifier type="append" value="(1st)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="8624-e150-e178-7df5" childId="8dd5-28b8-39fb-6304" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(2nd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="8624-e150-e178-7df5" childId="2a6f-36d6-5d75-e9fc" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Front First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="62c7-5eb0-d38e-486" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Front Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c595-958b-800e-2c04" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="a1f5-cb72-4e9e-8f2d" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+        <infoLink id="5e80-a7e9-a93a-fbd" name="Voltaic" hidden="false" targetId="d5a2-e757-34b5-3774" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8bd6-e629-804d-f2c3" name="Sturmbringer" hidden="false" collective="true" import="false" type="upgrade">
+      <infoLinks>
+        <infoLink id="55b9-26a3-8ac7-8cdd" name="Sturmbringer" hidden="false" targetId="58a3-6a7f-02e2-737e" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="8bd6-e629-804d-f2c3" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="8bd6-e629-804d-f2c3" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P">
+                  <conditions>
+                    <condition field="selections" scope="8bd6-e629-804d-f2c3" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4e9e-7862-58ad-15e6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/S">
+                  <conditions>
+                    <condition field="selections" scope="8bd6-e629-804d-f2c3" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5347-4855-4421-ed77" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <modifiers>
+            <modifier type="append" value="(1st)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="8bd6-e629-804d-f2c3" childId="8dd5-28b8-39fb-6304" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(2nd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="8bd6-e629-804d-f2c3" childId="2a6f-36d6-5d75-e9fc" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="c0ec-1a69-f97c-bd31" name="Sustained" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
+        <infoLink id="d236-3e40-5297-e60c" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+        <infoLink id="d479-71dd-5e1a-87bf" name="Devastating" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+        <infoLink id="449a-da06-a357-f62e" name="Arc" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="c475-4c4f-de22-9080" name="Aerial [3.05]" publicationId="7f09-e243-2307-78d0" hidden="false">
@@ -7438,8 +8022,8 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
     <profile id="ae08-f907-00e0-6554" name="Broadside" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">6(3) / 4(2)</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">3(2) / 2(1)</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">6(3) / 3(2)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">4(2) / 2(1)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Broadside, Fusillade</characteristic>
       </characteristics>
@@ -7610,8 +8194,8 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">11(5) / 7(4)</characteristic>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">11(5) / 7(4)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">11(5) / 11(5)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">7(4) / 7(4)</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Susteined, Extreme Range</characteristic>
       </characteristics>
     </profile>
@@ -7672,7 +8256,7 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
     <profile id="a4b7-fe9b-130b-9947" name="Heavy Flak Broadside" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">10(6) / 7(4)</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">10(6) / 8(4)</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">8(4) / 5(3)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Broadside, Sustained (Aerial Units)</characteristic>
@@ -8212,8 +8796,8 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
     <profile id="58a3-6a7f-02e2-737e" name="Sturmbringer" publicationId="33cf-b4a6-bff0-0d70" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">12(8) / 8(5)</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">7(5) / 5(3)</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">12(7) / 8(5)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">8(4) / 5(3)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Sustained, Devastating, Arc</characteristic>
       </characteristics>
@@ -8311,8 +8895,8 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
     <profile id="82bd-aeb5-915a-6071" name="Uber Volt Vierling" publicationId="33cf-b4a6-bff0-0d70" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">16(7) / 10(6)</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">15(6) / 10(5)</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">15(6) / 10(6)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">13(5) / 10(5)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Sustained, Voltaic</characteristic>
       </characteristics>
@@ -8348,7 +8932,7 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">11(6) / 6(4)</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">12(6) / 7(4)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">11(6) / 6(4)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Sustained</characteristic>
       </characteristics>
@@ -8471,8 +9055,8 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">9(5) / 6(4)</characteristic>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">9(5) / 6(4)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">10(6) / 10(6)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">6(4) / 6(4)</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Arc, Blast, Extreme Range</characteristic>
       </characteristics>
     </profile>

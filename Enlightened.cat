@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="50c4-91af-d01e-a4e1" name="Enlightened v3.04" revision="16" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
-  <comment>Last Enlightened ORBAT 3.04 (published 08/10/2023)</comment>
+  <comment>Enlightened ORBAT 3.04 (published 08/10/2023)</comment>
   <readme>Review 1.02.00: initial edition according to Enlightened ORBAT 1.02a
 Review 1.02.01: bux fixing and correct Physeter Ambush management
 Review 1.03.b0: uptate data to version 1.03b
@@ -16,7 +16,8 @@ Review 3.03.06: correction suggested in GitHub 3.03 (date 2023-02-07)
 Review 3.03.07: correction suggested in GitHub 3.03 (date 2023-02-07)
 Review 3.03.08: correction suggested in GitHub 3.03 (date 2023-02-07)
 Review 3.04.00: uptate data to version 3.04 (Orbat published 20230908) rev2
-Review 3.04.01: uptate data to version 3.04 (Orbat published 20230908 to be used with New Recruit) </readme>
+Review 3.04.01: uptate data to version 3.04 (Orbat published 20230908 to be used with New Recruit)
+Review 3.04.02: v16 rev1, minor correction</readme>
   <categoryEntries>
     <categoryEntry id="d580-e7cf-5353-e2bb" name="Enlightened" publicationId="908d-6feb-2e9e-843b" hidden="false"/>
     <categoryEntry id="b7da-7d83-7f67-604f" name="Control Ship" hidden="false"/>
@@ -1955,9 +1956,21 @@ Review 3.04.01: uptate data to version 3.04 (Orbat published 20230908 to be used
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="4bfd-3e3e-dd22-d907" name="Escort Model" hidden="false" collective="false" import="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15da-4644-61e3-d377" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="89df-4cb5-1657-aa45" name="Escort Token" hidden="false" collective="false" import="false" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="3cfa-8121-dc62-7076" name="Vesalius" hidden="false" collective="false" import="false" targetId="01b0-d1e7-aeb1-ca27" type="selectionEntry"/>
+        <entryLink id="3cfa-8121-dc62-7076" name="Vesalius" hidden="false" collective="false" import="false" targetId="01b0-d1e7-aeb1-ca27" type="selectionEntry" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -2155,7 +2168,7 @@ Review 3.04.01: uptate data to version 3.04 (Orbat published 20230908 to be used
       <selectionEntryGroups>
         <selectionEntryGroup id="d5de-ff53-b52e-ce77" name="Escort Model" hidden="false" collective="false" import="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="237b-27a2-6c07-62ca" type="max"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="237b-27a2-6c07-62ca" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="db23-f9f0-1f5a-3f27" name="Escort Token" hidden="false" collective="false" import="false" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
@@ -5349,7 +5362,7 @@ Review 3.04.01: uptate data to version 3.04 (Orbat published 20230908 to be used
         <categoryLink id="5b28-d905-f7c7-0a52" name="Physeter Surgical Ship" hidden="false" targetId="b92d-06c4-6e98-f514" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="53e8-6ff8-f34f-8b88" name="Orca Token" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="true" import="false" type="upgrade">
+        <selectionEntry id="53e8-6ff8-f34f-8b88" name="Orca Token" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="true" import="false" type="upgrade" sortIndex="3">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eeea-cd48-9bed-9e50" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b357-f02b-e0bb-9802" type="max"/>
@@ -5370,7 +5383,7 @@ Review 3.04.01: uptate data to version 3.04 (Orbat published 20230908 to be used
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="b149-3240-3da9-32be" name="Aetheric Lance" hidden="false" collective="false" import="false" targetId="2492-854e-2179-e50b" type="selectionEntry">
+        <entryLink id="b149-3240-3da9-32be" name="Aetheric Lance" hidden="false" collective="false" import="false" targetId="2492-854e-2179-e50b" type="selectionEntry" sortIndex="4">
           <modifiers>
             <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
           </modifiers>
@@ -5380,8 +5393,8 @@ Review 3.04.01: uptate data to version 3.04 (Orbat published 20230908 to be used
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
         </entryLink>
-        <entryLink id="38de-102c-10da-c459" name="Internal Entropic Generator" hidden="false" collective="false" import="false" targetId="9bf9-4303-3807-8b33" type="selectionEntry"/>
-        <entryLink id="8463-556b-a3a0-8803" name="Turbo Encabulation Drives" hidden="false" collective="false" import="false" targetId="44d8-e8fe-9659-45d8" type="selectionEntry"/>
+        <entryLink id="38de-102c-10da-c459" name="Internal Entropic Generator" hidden="false" collective="false" import="false" targetId="9bf9-4303-3807-8b33" type="selectionEntry" sortIndex="1"/>
+        <entryLink id="8463-556b-a3a0-8803" name="Turbo Encabulation Drives" hidden="false" collective="false" import="false" targetId="44d8-e8fe-9659-45d8" type="selectionEntry" sortIndex="2"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="125"/>
@@ -5910,7 +5923,7 @@ Review 3.04.01: uptate data to version 3.04 (Orbat published 20230908 to be used
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
           </modifiers>
         </entryLink>
-        <entryLink id="75ef-35db-32c8-7300" name="Sturginium Agitator" hidden="false" collective="false" import="false" targetId="1517-4505-be0f-996f" type="selectionEntry">
+        <entryLink id="75ef-35db-32c8-7300" name="Sturginium Atomiser" hidden="false" collective="false" import="false" targetId="724c-b6b1-b398-1487" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
           </modifiers>
@@ -5933,13 +5946,13 @@ Review 3.04.01: uptate data to version 3.04 (Orbat published 20230908 to be used
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
         </entryLink>
-        <entryLink id="5f19-77bc-e2b4-97f7" name="Heavy Particle Cannon" hidden="false" collective="false" import="false" targetId="fa1b-fa45-a389-af24" type="selectionEntry">
+        <entryLink id="5f19-77bc-e2b4-97f7" name="Sturginium Atomiser" hidden="false" collective="false" import="false" targetId="eca5-079d-eea0-50ae" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
           </modifiers>
         </entryLink>
-        <entryLink id="36a0-862d-a6c1-000a" name="Internal Entropic Generator" hidden="false" collective="false" import="false" targetId="9bf9-4303-3807-8b33" type="selectionEntry"/>
-        <entryLink id="470d-a66b-2a37-1f35" name="Shield generator" hidden="false" collective="false" import="false" targetId="596e-bbf7-4be2-d494" type="selectionEntry"/>
+        <entryLink id="470d-a66b-2a37-1f35" name="Shield generator" hidden="false" collective="false" import="false" targetId="596e-bbf7-4be2-d494" type="selectionEntry" sortIndex="1"/>
+        <entryLink id="93a2-195c-cb54-c9ee" name="Turbo Encabulation Drives" hidden="false" collective="false" import="false" targetId="44d8-e8fe-9659-45d8" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="170"/>
@@ -6927,12 +6940,12 @@ Review 3.04.01: uptate data to version 3.04 (Orbat published 20230908 to be used
       <entryLinks>
         <entryLink id="8405-8488-7402-d587" name="Internal Entropic Generator" hidden="false" collective="false" import="false" targetId="9bf9-4303-3807-8b33" type="selectionEntry"/>
         <entryLink id="4ba0-17b8-6efb-94cd" name="Shield generator" hidden="false" collective="false" import="false" targetId="596e-bbf7-4be2-d494" type="selectionEntry"/>
-        <entryLink id="fb57-5625-7f64-e042" name="Heavy Aetheric Broadside" hidden="false" collective="false" import="false" targetId="a836-663a-c65f-7759" type="selectionEntry">
+        <entryLink id="fb57-5625-7f64-e042" name="Aetheric Broadside" hidden="false" collective="false" import="false" targetId="45ce-048d-2e64-e32a" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
         </entryLink>
-        <entryLink id="c875-0ebc-1141-b88a" name="Heavy Aetheric Broadside" hidden="false" collective="false" import="false" targetId="a836-663a-c65f-7759" type="selectionEntry">
+        <entryLink id="c875-0ebc-1141-b88a" name="Aetheric Broadside" hidden="false" collective="false" import="false" targetId="45ce-048d-2e64-e32a" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="afe0-b5a3-3eac-004f"/>
           </modifiers>
@@ -7071,12 +7084,12 @@ Review 3.04.01: uptate data to version 3.04 (Orbat published 20230908 to be used
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="bc8c-4e3d-2f68-bc95" name="Shield generator" hidden="false" collective="false" import="false" targetId="596e-bbf7-4be2-d494" type="selectionEntry"/>
-        <entryLink id="5f93-f413-8cb9-466c" name="Heavy Aetheric Broadside" hidden="false" collective="false" import="false" targetId="a836-663a-c65f-7759" type="selectionEntry">
+        <entryLink id="5f93-f413-8cb9-466c" name="Aetheric Broadside" hidden="false" collective="false" import="false" targetId="45ce-048d-2e64-e32a" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
         </entryLink>
-        <entryLink id="39f0-153c-b049-bfa0" name="Heavy Aetheric Broadside" hidden="false" collective="false" import="false" targetId="a836-663a-c65f-7759" type="selectionEntry">
+        <entryLink id="39f0-153c-b049-bfa0" name="Aetheric Broadside" hidden="false" collective="false" import="false" targetId="45ce-048d-2e64-e32a" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="afe0-b5a3-3eac-004f"/>
           </modifiers>
@@ -7225,12 +7238,12 @@ Review 3.04.01: uptate data to version 3.04 (Orbat published 20230908 to be used
       </categoryLinks>
       <entryLinks>
         <entryLink id="392a-0e0e-a803-1c5f" name="Shield generator" hidden="false" collective="false" import="false" targetId="596e-bbf7-4be2-d494" type="selectionEntry"/>
-        <entryLink id="3234-13ff-faaf-a474" name="Heavy Aetheric Broadside" hidden="false" collective="false" import="false" targetId="a836-663a-c65f-7759" type="selectionEntry">
+        <entryLink id="3234-13ff-faaf-a474" name="Aetheric Broadside" hidden="false" collective="false" import="false" targetId="45ce-048d-2e64-e32a" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
         </entryLink>
-        <entryLink id="f31a-fc59-c6d2-e68d" name="Heavy Aetheric Broadside" hidden="false" collective="false" import="false" targetId="a836-663a-c65f-7759" type="selectionEntry">
+        <entryLink id="f31a-fc59-c6d2-e68d" name="Aetheric Broadside" hidden="false" collective="false" import="false" targetId="45ce-048d-2e64-e32a" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="afe0-b5a3-3eac-004f"/>
           </modifiers>

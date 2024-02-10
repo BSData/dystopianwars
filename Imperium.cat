@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5037-a8ca-0033-3edc" name="Imperium 3.05" revision="14" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
-  <comment>Last Imperium ORBAT 3.03 (published 09/02/2023)</comment>
+<catalogue id="5037-a8ca-0033-3edc" name="Imperium 3.06" revision="15" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue" publicationId="33cf-b4a6-bff0-0d70">
+  <comment>Imperium ORBAT 3.06 (published 29/01/2024)</comment>
   <readme>Datafile history:
 1.04.01: Initial publication ORBAT v1.04a
 1.07.03: updated to the the ORBAT v1.07c
@@ -15,7 +15,8 @@
 3.03.05: more correction from Discord and online (ORBAT v3.03 released the 2023-02-09)
 3.04.00: update to Orbat 3.04 published 2023-09-13 (rev5)
 3.05.00: update to Orbat 3.05 published 2023-12-01
-3.05.00: correction after to Orbat 3.05 published 2023-12-01 (to be used with New Recruit)</readme>
+3.05.00: correction after to Orbat 3.05 published 2023-12-01 (to be used with New Recruit)
+3.06.00: updated to Orbat 3.06 published 2024-01-29</readme>
   <categoryEntries>
     <categoryEntry id="138b-84c8-2ae2-129f" name="Elector Class" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
     <categoryEntry id="5327-366a-b983-42f4" name="Kaiser Pattern" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
@@ -66,7 +67,7 @@
     <categoryEntry id="4015-893e-a481-d96e" name="Croatian" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
     <categoryEntry id="dcf7-1399-f4b1-c12a" name="Zrin Class" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
     <categoryEntry id="5326-83c2-f984-9187" name="Varazdin Class" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
-    <categoryEntry id="bbf0-2e29-e5bb-53b7" name="Malus Class" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
+    <categoryEntry id="bbf0-2e29-e5bb-53b7" name="Malus-Class" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
     <categoryEntry id="8770-c046-1af4-a145" name="Loki Class" hidden="false"/>
     <categoryEntry id="d555-509b-cb82-90c3" name="Gungnir Class" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
     <categoryEntry id="3944-157a-5484-3183" name="Eltz Class" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
@@ -96,6 +97,8 @@
     <categoryEntry id="1947-9806-442f-4661" name="Flak" hidden="false"/>
     <categoryEntry id="d7c1-5b36-d08f-9389" name="Rocket Battery" hidden="false"/>
     <categoryEntry id="bd2f-7a17-b8d3-f783" name="Skagerrak" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
+    <categoryEntry name="Maximilian-class" hidden="false" id="afbe-51c2-6a95-573f"/>
+    <categoryEntry name="2" hidden="false" id="abe5-f3c9-d8d-fc42"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="a6b7-a5fe-fa1e-484c" name="Bavarian Linebreaker Battlefleet (Spec)" publicationId="33cf-b4a6-bff0-0d70" hidden="false">
@@ -1525,7 +1528,11 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="195d-d294-8de9-7660" name="Volsung" hidden="false" collective="false" import="false" targetId="19ed-7818-c226-d38f" type="selectionEntry"/>
-        <entryLink id="ac74-a478-6cb6-84d6" name="Unexpected Arrival" hidden="false" collective="false" import="false" targetId="d4fe-f63d-7ed8-12d4" type="selectionEntry"/>
+        <entryLink id="ac74-a478-6cb6-84d6" name="Unexpected Arrival" hidden="false" collective="false" import="false" targetId="d4fe-f63d-7ed8-12d4" type="selectionEntry" sortIndex="1">
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="15"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
@@ -1576,7 +1583,11 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="dafa-f1c0-73ec-ce1c" name="Toten" hidden="false" collective="false" import="false" targetId="ae17-92f1-3924-e01b" type="selectionEntry"/>
-        <entryLink id="e7fe-b275-cf16-faf2" name="Unexpected Arrival" hidden="false" collective="false" import="false" targetId="d4fe-f63d-7ed8-12d4" type="selectionEntry"/>
+        <entryLink id="e7fe-b275-cf16-faf2" name="Unexpected Arrival" hidden="false" collective="false" import="false" targetId="d4fe-f63d-7ed8-12d4" type="selectionEntry" sortIndex="1">
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="15"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -2863,7 +2874,11 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="0ee1-16ca-0701-8362" name="Arminius" hidden="false" collective="false" import="false" targetId="35b1-e708-e60e-53f1" type="selectionEntry"/>
-        <entryLink id="2df7-a8ff-b931-6537" name="Unexpected Arrival" hidden="false" collective="false" import="false" targetId="d4fe-f63d-7ed8-12d4" type="selectionEntry"/>
+        <entryLink id="2df7-a8ff-b931-6537" name="Unexpected Arrival" hidden="false" collective="false" import="false" targetId="d4fe-f63d-7ed8-12d4" type="selectionEntry" sortIndex="1">
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="15"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -2933,7 +2948,11 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="41e0-6651-16d8-d9a6" name="Ferdinand" hidden="false" collective="false" import="false" targetId="ddcc-bb51-2b54-8277" type="selectionEntry"/>
-        <entryLink id="35b0-7fa2-9568-b3b2" name="Unexpected Arrival" hidden="false" collective="false" import="false" targetId="d4fe-f63d-7ed8-12d4" type="selectionEntry"/>
+        <entryLink id="35b0-7fa2-9568-b3b2" name="Unexpected Arrival" hidden="false" collective="false" import="false" targetId="d4fe-f63d-7ed8-12d4" type="selectionEntry" sortIndex="1">
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="15"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -4652,7 +4671,11 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="ef15-9356-6e0a-da7b" name="Nachtsturm" hidden="false" collective="false" import="false" targetId="356b-d41e-e275-1077" type="selectionEntry"/>
-        <entryLink id="cbc2-7aad-2550-d897" name="Unexpected Arrival" hidden="false" collective="false" import="false" targetId="d4fe-f63d-7ed8-12d4" type="selectionEntry"/>
+        <entryLink id="cbc2-7aad-2550-d897" name="Unexpected Arrival" hidden="false" collective="false" import="false" targetId="d4fe-f63d-7ed8-12d4" type="selectionEntry" sortIndex="1">
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="15"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -4715,7 +4738,7 @@
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3b46-1123-c184-054e" name="Zeppelin Aerial Dreadnought" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="3b46-1123-c184-054e" name="Maximilian Aerial Linebeaker" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="false" import="false" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -4729,7 +4752,6 @@
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b3fc-2011-ba34-2e15" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e053-e57e-10c7-3623" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="be40-ff53-14f5-05b4" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c85-4cd6-106f-581e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f762-5ef8-02db-ba33" type="instanceOf"/>
               </conditions>
             </conditionGroup>
@@ -4737,9 +4759,9 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="2fc0-f9d1-89a9-60f7" name="Zeppelin Class" hidden="false" targetId="24e3-6c84-6a9e-2a13" primary="false"/>
-        <categoryLink id="1a23-e56c-1d08-23b3" name="Prussian" hidden="false" targetId="e382-41fb-5f68-ae0a" primary="false"/>
-        <categoryLink id="bea4-a5e5-9055-2867" name="Aerial Unit" hidden="false" targetId="022b-08af-c874-e3f1" primary="true"/>
+        <categoryLink name="Maximilian-class" hidden="false" id="a677-be04-40bc-d24" targetId="afbe-51c2-6a95-573f" primary="false"/>
+        <categoryLink name="Flagship" hidden="false" id="6c7-1f76-b2d9-5885" targetId="fef3-1842-580c-4bef" primary="true"/>
+        <categoryLink name="Bavarian" hidden="false" id="a305-aeb0-6dfe-fc80" targetId="ee36-4047-83f2-7b11" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="6191-c436-fa21-2742" name="Escort Model" hidden="false" collective="false" import="false">
@@ -4763,7 +4785,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="91da-fdbd-0f9c-7010" name="Zeppelin" hidden="false" collective="false" import="false" targetId="85c4-c694-24f4-b485" type="selectionEntry"/>
+        <entryLink id="91da-fdbd-0f9c-7010" name="Maximilian" hidden="false" collective="false" import="false" targetId="dbc4-e492-e82e-31be" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -4796,21 +4818,47 @@
         <categoryLink id="43b1-9c58-f59b-5a1e" name="Teutonic" hidden="false" targetId="47a7-7ba3-45db-b846" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="587e-aa51-befc-4da5" name="Escort Model" hidden="false" collective="false" import="false">
+        <selectionEntryGroup id="500a-59bf-adb2-248a" name="Escort Model" hidden="false" collective="false" import="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="678e-67f0-7b01-be45" type="max"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c6a-6617-a2c4-bf6" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="a57d-7b92-7e4f-cac1" name="Escort Token" hidden="false" collective="false" import="false" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+            <entryLink id="71fe-b5-eec0-a535" name="Escort Token" hidden="false" collective="false" import="false" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+              <modifiers>
+                <modifier type="decrement" field="bb6f-2ab3-2b06-9c06" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16f1-6e6f-fa08-fb56" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c687-c9bb-5408-a237" type="min"/>
-                <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4033-5eb5-cf67-ff05" type="max"/>
+                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba1f-da82-402e-6758" type="min"/>
+                <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb6f-2ab3-2b06-9c06" type="max"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="06bf-4a00-c580-11ad" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
+                <categoryLink id="2e9f-58ee-f9e0-f6b4" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8"/>
+              </costs>
+            </entryLink>
+            <entryLink id="ca31-d204-fc40-2ea2" name="Pflicht Escort" hidden="false" collective="false" import="false" targetId="16f1-6e6f-fa08-fb56" type="selectionEntry">
+              <modifiers>
+                <modifier type="decrement" field="df90-c43d-9283-e20" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9cc1-48f6-f9ea-943f" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a57c-d6a-166f-e2de" type="min"/>
+                <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df90-c43d-9283-e20" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="224-b4f4-3317-16fc" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -6188,7 +6236,7 @@ A single Metzger Unit may be included in Battlefleets with a PRUSSIAN Flagship. 
         <entryLink id="fb3f-6f49-7e87-f30d" name="Teutonic Colossus Ability" hidden="false" collective="false" import="false" targetId="b3a8-dd51-525f-571c" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="158"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="153"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -6555,6 +6603,9 @@ A single Metzger Unit may be included in Battlefleets with a PRUSSIAN Flagship. 
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Front First" hidden="false" id="8b4f-65d-5796-d715" targetId="62c7-5eb0-d38e-486" primary="false"/>
+              </categoryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="d46d-73aa-5138-204d" name="Front Second" hidden="false" collective="false" import="false" defaultSelectionEntryId="e5e0-7fcc-0b9d-87fe">
               <modifiers>
@@ -6589,6 +6640,9 @@ A single Metzger Unit may be included in Battlefleets with a PRUSSIAN Flagship. 
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Front Second" hidden="false" id="e6b0-99ea-99bb-ec73" targetId="c595-958b-800e-2c04" primary="false"/>
+              </categoryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -7172,7 +7226,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             </entryLink>
           </entryLinks>
         </entryLink>
-        <entryLink id="9de4-f07e-62ee-0f9a" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry">
+        <entryLink id="9de4-f07e-62ee-0f9a" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="8624-e150-e178-7df5" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
           </modifiers>
@@ -7180,8 +7234,11 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e7c-78c6-3766-c9fd" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb6e-1d44-56a5-d09e" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="Front First" hidden="false" id="aeed-91fc-c0e4-e4a5" targetId="62c7-5eb0-d38e-486" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="fae3-8677-66ac-f285" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry">
+        <entryLink id="fae3-8677-66ac-f285" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="8624-e150-e178-7df5" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
           </modifiers>
@@ -7189,8 +7246,11 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2ae9-9fda-a946-9334" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd24-9fb0-8d13-ef79" type="min"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="Front Second" hidden="false" id="a349-9c27-c643-1208" targetId="c595-958b-800e-2c04" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="09d6-bb5d-d1e7-d2cd" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry">
+        <entryLink id="09d6-bb5d-d1e7-d2cd" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="8624-e150-e178-7df5" type="selectionEntry" flatten="false">
           <modifiers>
             <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
           </modifiers>
@@ -7198,6 +7258,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8875-07b4-26a1-9ae1" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aaa9-2f83-7b7f-50f8" type="min"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="Rear First" hidden="false" id="4df-a6d1-4127-588a" targetId="1305-ddc0-7c51-79ad" primary="false"/>
+          </categoryLinks>
         </entryLink>
         <entryLink id="6a0b-ee63-6eca-0e6e" name="Heavy Broadside" hidden="false" collective="false" import="false" targetId="9985-b088-fda6-36d4" type="selectionEntry">
           <modifiers>
@@ -7206,7 +7269,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="318"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="303"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -7228,7 +7291,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
         <categoryLink id="6692-d722-d0b6-30c2" name="Heavy Reaver" hidden="false" targetId="e0b0-e2bd-62a0-5b49" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="34b1-73ed-e727-c6eb" name="Main Weapon" page="4" hidden="false" collective="false" import="false">
+        <selectionEntryGroup id="34b1-73ed-e727-c6eb" name="Main Weapon" page="4" hidden="false" collective="false" import="false" sortIndex="3">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e562-ed25-3732-04bd" type="min"/>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a875-e113-2a2b-ad61" type="max"/>
@@ -7302,6 +7365,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Front First" hidden="false" id="b01d-90a2-3490-3317" targetId="62c7-5eb0-d38e-486" primary="false"/>
+              </categoryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="2350-9d60-03ec-3106" name="Front Second" hidden="false" collective="false" import="false" defaultSelectionEntryId="8a0c-e986-1b9e-e072">
               <modifiers>
@@ -7336,17 +7402,20 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Front Second" hidden="false" id="2f38-cef4-f5c4-9f9b" targetId="c595-958b-800e-2c04" primary="false"/>
+              </categoryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="9a88-2589-b3db-3194" name="Broadside" hidden="false" collective="false" import="false" targetId="0600-8fa9-227d-91ba" type="selectionEntry">
+        <entryLink id="9a88-2589-b3db-3194" name="Broadside" hidden="false" collective="false" import="false" targetId="0600-8fa9-227d-91ba" type="selectionEntry" sortIndex="5">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
         </entryLink>
-        <entryLink id="06be-772b-854d-b1ef" name="Sturmbringer" hidden="false" collective="false" import="false" targetId="9cb1-0419-cc9a-e3ec" type="selectionEntry">
+        <entryLink id="06be-772b-854d-b1ef" name="Sturmbringer" hidden="false" collective="false" import="false" targetId="9cb1-0419-cc9a-e3ec" type="selectionEntry" sortIndex="2">
           <modifiers>
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
           </modifiers>
@@ -7355,13 +7424,13 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8066-9e12-b2f9-b896" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="e786-baff-cc57-97ae" name="Fury generator" hidden="false" collective="false" import="false" targetId="069a-8c90-088f-816d" type="selectionEntry">
+        <entryLink id="e786-baff-cc57-97ae" name="Fury generator" hidden="false" collective="false" import="false" targetId="069a-8c90-088f-816d" type="selectionEntry" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0b5d-3dad-4b5b-a4c5" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2f4a-f86d-2306-8969" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="b5bb-93bf-3cc6-ec33" name="Voltaic Decksweepers" hidden="false" collective="false" import="false" targetId="7dee-5f74-349b-5641" type="selectionEntry">
+        <entryLink id="b5bb-93bf-3cc6-ec33" name="Voltaic Decksweepers" hidden="false" collective="false" import="false" targetId="7dee-5f74-349b-5641" type="selectionEntry" sortIndex="4">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="49d9-9505-9d14-b99c" type="max"/>
           </constraints>
@@ -7437,6 +7506,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Front First" hidden="false" id="e353-d5ce-40b3-7661" targetId="62c7-5eb0-d38e-486" primary="false"/>
+              </categoryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="21ab-6164-e5c6-7075" name="Front Second" hidden="false" collective="false" import="false" defaultSelectionEntryId="0fe6-1650-b0f7-d799">
               <modifiers>
@@ -7471,6 +7543,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Front Second" hidden="false" id="e76-c9e1-ae8-d604" targetId="c595-958b-800e-2c04" primary="false"/>
+              </categoryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="1118-f5f1-5dd2-86ac" name="Generator" hidden="false" collective="false" import="false">
               <constraints>
@@ -7606,7 +7681,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="299"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="308"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -7994,6 +8069,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1f35-7e3d-d5c9-7fb5" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7913-94d0-c9ef-bfb4" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="1st" hidden="false" id="ce4c-4f1d-e0c1-f82b" targetId="8dd5-28b8-39fb-6304" primary="false"/>
+          </categoryLinks>
         </entryLink>
         <entryLink id="77f8-c92d-a8c7-7456" name="Sturmbringer" hidden="false" collective="false" import="false" targetId="9cb1-0419-cc9a-e3ec" type="selectionEntry">
           <modifiers>
@@ -8003,6 +8081,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dac7-7c10-ed68-e2e6" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="95b9-8d2b-d17e-8fba" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="2nd" hidden="false" id="fc2-f7ae-6892-1e32" targetId="2a6f-36d6-5d75-e9fc" primary="false"/>
+          </categoryLinks>
         </entryLink>
         <entryLink id="c4c3-94cd-ab12-ab51" name="Sturmbringer" hidden="false" collective="false" import="false" targetId="9cb1-0419-cc9a-e3ec" type="selectionEntry">
           <modifiers>
@@ -8012,6 +8093,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="93b7-0476-95f1-6bb1" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2665-ca98-e00f-0ebc" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="3rd" hidden="false" id="f162-758d-708b-b0cd" targetId="df04-304e-3eb9-52b" primary="false"/>
+          </categoryLinks>
         </entryLink>
         <entryLink id="447d-9740-4137-1d82" name="Vierling Autokannone" hidden="false" collective="false" import="false" targetId="8301-9820-d5e0-6a8c" type="selectionEntry">
           <modifiers>
@@ -8021,6 +8105,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a243-bffb-b5ee-37c9" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5be3-8ab8-41e5-6588" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="1st" hidden="false" id="a6a8-6363-706e-1dad" targetId="8dd5-28b8-39fb-6304" primary="false"/>
+          </categoryLinks>
         </entryLink>
         <entryLink id="5c27-4898-d7da-e322" name="Vierling Autokannone" hidden="false" collective="false" import="false" targetId="8301-9820-d5e0-6a8c" type="selectionEntry">
           <modifiers>
@@ -8030,6 +8117,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6417-b419-f18f-0fff" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a6df-f099-dafd-96cb" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="2nd" hidden="false" id="aece-741b-c3cd-36d1" targetId="2a6f-36d6-5d75-e9fc" primary="false"/>
+          </categoryLinks>
         </entryLink>
         <entryLink id="0714-edee-85fd-d700" name="Vierling Autokannone" hidden="false" collective="false" import="false" targetId="8301-9820-d5e0-6a8c" type="selectionEntry">
           <modifiers>
@@ -8147,6 +8237,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="1st" hidden="false" id="54c6-2623-d995-8f93" targetId="8dd5-28b8-39fb-6304" primary="false"/>
+              </categoryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="fc37-4a30-8e14-2852" name="Front Left" hidden="false" collective="false" import="false" defaultSelectionEntryId="de57-aaed-fcd7-54fd">
               <constraints>
@@ -8171,6 +8264,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="2nd" hidden="false" id="e2cc-9c60-2a5c-97fa" targetId="2a6f-36d6-5d75-e9fc" primary="false"/>
+              </categoryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="2916-2de2-537f-df4d" name="Front Right" hidden="false" collective="false" import="false" defaultSelectionEntryId="9fa6-4b31-e2b0-1b57">
               <constraints>
@@ -8195,6 +8291,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="3rd" hidden="false" id="3e96-240a-2083-164e" targetId="df04-304e-3eb9-52b" primary="false"/>
+              </categoryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -8208,6 +8307,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b8e-a2c2-6c83-a110" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4ec5-52e8-e22a-c646" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="1st" hidden="false" id="e4e2-aee0-6bc1-e8e6" targetId="8dd5-28b8-39fb-6304" primary="false"/>
+          </categoryLinks>
         </entryLink>
         <entryLink id="e2d2-f855-bef6-9d54" name="Vierling Autokannone" hidden="false" collective="false" import="false" targetId="8301-9820-d5e0-6a8c" type="selectionEntry">
           <modifiers>
@@ -8217,6 +8319,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9cb4-5173-81dd-7ed3" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a19-5ad4-9264-9ad5" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="2nd" hidden="false" id="95c6-ab31-f82e-c740" targetId="2a6f-36d6-5d75-e9fc" primary="false"/>
+          </categoryLinks>
         </entryLink>
         <entryLink id="2bd5-43b0-040c-8ee7" name="Vierling Autokannone" hidden="false" collective="false" import="false" targetId="8301-9820-d5e0-6a8c" type="selectionEntry">
           <modifiers>
@@ -8294,7 +8399,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
         <categoryLink id="a2ed-9484-d14a-3dae" name="Unique" hidden="false" targetId="293e-b55a-bcfa-95c3" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="3051-6ea2-d61a-b389" name="SRS" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="false" type="upgrade">
+        <selectionEntry id="3051-6ea2-d61a-b389" name="SRS" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="false" type="upgrade" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4785-a945-04e0-51ab" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="29a3-2853-95dd-81a2" type="max"/>
@@ -8311,7 +8416,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c025-4205-53d9-df1c" name="Blitzen Bombers" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="false" type="upgrade">
+        <selectionEntry id="c025-4205-53d9-df1c" name="Blitzen Bombers" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="false" type="upgrade" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4040-7317-2b93-f5f0" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7efa-8552-579b-1596" type="max"/>
@@ -8340,6 +8445,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="645b-b07d-9339-8c5f" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e35f-571e-5010-a0dc" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="1st" hidden="false" id="c984-7017-158d-589" targetId="8dd5-28b8-39fb-6304" primary="false"/>
+          </categoryLinks>
         </entryLink>
         <entryLink id="4253-0d8f-aaf7-c090" name="Vierling Autokannone" hidden="false" collective="false" import="false" targetId="8301-9820-d5e0-6a8c" type="selectionEntry">
           <modifiers>
@@ -8349,6 +8457,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="47bd-1ee0-536f-856c" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4a97-90a3-ae3b-49c8" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="2nd" hidden="false" id="f205-95ba-4025-1be4" targetId="2a6f-36d6-5d75-e9fc" primary="false"/>
+          </categoryLinks>
         </entryLink>
         <entryLink id="3495-095c-e46e-ed76" name="Vierling Autokannone" hidden="false" collective="false" import="false" targetId="8301-9820-d5e0-6a8c" type="selectionEntry">
           <modifiers>
@@ -8392,7 +8503,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dea4-a135-2463-8d80" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="021e-f123-f938-00e5" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry">
+        <entryLink id="021e-f123-f938-00e5" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry" sortIndex="3">
           <modifiers>
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
           </modifiers>
@@ -8400,8 +8511,11 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a81e-f371-5923-5803" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3dad-79cf-baa0-bce6" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="Front First" hidden="false" id="82b9-97aa-19ea-60aa" targetId="62c7-5eb0-d38e-486" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="ecb8-3914-8126-faa4" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry">
+        <entryLink id="ecb8-3914-8126-faa4" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry" sortIndex="4">
           <modifiers>
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
           </modifiers>
@@ -8409,8 +8523,11 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="38f0-9c0b-cd1c-2561" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb9c-8820-f166-6583" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="Front Second" hidden="false" id="b1e9-15d4-18d9-3251" targetId="c595-958b-800e-2c04" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="07f7-e90a-fd38-8281" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry">
+        <entryLink id="07f7-e90a-fd38-8281" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry" sortIndex="5">
           <modifiers>
             <modifier type="add" field="category" value="c93d-a414-b1bc-7d2c"/>
           </modifiers>
@@ -8418,8 +8535,11 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6ab8-2cc9-2ea3-ef79" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8329-0767-25e6-87d0" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="Front First" hidden="false" id="4c50-c35a-2de5-9d62" targetId="62c7-5eb0-d38e-486" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="fe3f-184d-a0eb-4122" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry">
+        <entryLink id="fe3f-184d-a0eb-4122" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry" sortIndex="6">
           <modifiers>
             <modifier type="add" field="category" value="c93d-a414-b1bc-7d2c"/>
           </modifiers>
@@ -8427,8 +8547,11 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="73a5-ff98-41d9-41c7" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0ce1-5b3a-2139-b459" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="Front Second" hidden="false" id="ad6c-91a-b72-5e96" targetId="c595-958b-800e-2c04" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="8edf-27de-74d4-897f" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry">
+        <entryLink id="8edf-27de-74d4-897f" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry" sortIndex="7">
           <modifiers>
             <modifier type="add" field="category" value="ce6f-067d-9ad4-ddaa"/>
           </modifiers>
@@ -8436,8 +8559,11 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="318a-6adf-8539-15ac" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c6ee-877f-368c-1129" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="Front First" hidden="false" id="da02-fb76-da0-c4d5" targetId="62c7-5eb0-d38e-486" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="0ed8-83ad-125f-3168" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry">
+        <entryLink id="0ed8-83ad-125f-3168" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry" sortIndex="8">
           <modifiers>
             <modifier type="add" field="category" value="ce6f-067d-9ad4-ddaa"/>
           </modifiers>
@@ -8445,6 +8571,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dc6a-ff43-a1f5-1c14" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="43bf-14be-eed2-5a3f" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="Front Second" hidden="false" id="4fca-1c44-5163-a0bc" targetId="c595-958b-800e-2c04" primary="false"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <costs>
@@ -8470,7 +8599,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
         <categoryLink id="1c22-d643-fc01-3f92" name="Battlecruiser" hidden="false" targetId="4307-fa1c-3d84-dba5" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="2edc-bd90-9d70-c374" name="Main Weapon" publicationId="e265-8c7f-a4b2-a48e" page="4" hidden="false" collective="false" import="false">
+        <selectionEntryGroup id="2edc-bd90-9d70-c374" name="Main Weapon" hidden="false" collective="false" import="false">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13ce-46b1-2a83-3257" type="min"/>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="815b-83ae-7287-f93a" type="max"/>
@@ -8544,6 +8673,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Front First" hidden="false" id="6c95-1ec2-b95-ce2b" targetId="62c7-5eb0-d38e-486" primary="false"/>
+              </categoryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="30ed-37f3-3c1d-d270" name="Front Second" hidden="false" collective="false" import="false" defaultSelectionEntryId="edd8-bd8e-b77d-951d">
               <modifiers>
@@ -8578,6 +8710,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Front Second" hidden="false" id="91ab-1846-b893-13a1" targetId="c595-958b-800e-2c04" primary="false"/>
+              </categoryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -8816,6 +8951,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Front First" hidden="false" id="1f9c-178b-6a31-c1c6" targetId="62c7-5eb0-d38e-486" primary="false"/>
+              </categoryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="f68c-8f23-1c05-8b9a" name="Front Second" hidden="false" collective="false" import="false" defaultSelectionEntryId="4a4a-6e32-7e49-25b8">
               <modifiers>
@@ -8850,6 +8988,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Front Second" hidden="false" id="a951-4db7-7c44-8e45" targetId="c595-958b-800e-2c04" primary="false"/>
+              </categoryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -9199,6 +9340,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="672f-13cf-cc34-55d4" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5"/>
+              </costs>
             </entryLink>
             <entryLink id="74a4-f5a1-8da8-5247" name="Sturmbringer" hidden="false" collective="false" import="false" targetId="9cb1-0419-cc9a-e3ec" type="selectionEntry">
               <modifiers>
@@ -9207,6 +9351,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9316-6136-4ed5-383d" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -9219,7 +9366,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="120"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="124"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -9234,11 +9381,11 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
         <infoLink id="58df-da5b-94b5-ec55" name="Focused Gunnery [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9ec9-dd04-5a42-6864" type="rule"/>
         <infoLink id="87aa-f36b-7e01-1c3a" name="In Treue Fest [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="97e8-539e-009a-8ee0" type="rule"/>
         <infoLink id="2fba-2326-573b-bbb7" name="Inductorium [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
+        <infoLink id="bf13-1e0-632c-a42" name="Dirigible Construction  [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="24c5-f8af-aa5d-998e" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6714-95b6-af8f-bbae" name="Imperium" hidden="false" targetId="381f-fee3-786c-1414" primary="true"/>
         <categoryLink id="77b6-40e9-4b6a-2dcd" name="Aerial Destroyer" hidden="false" targetId="77f5-1ac9-0fd1-f299" primary="false"/>
-        <categoryLink id="d225-241d-baa7-6cbc" name="New CategoryLink" hidden="false" targetId="022b-08af-c874-e3f1" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="af6a-bede-6a61-94b8" name="Rudiger Autocannon" hidden="false" collective="false" import="false" targetId="9d88-58ba-56aa-3445" type="selectionEntry">
@@ -9258,7 +9405,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="45"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="49"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -9314,6 +9461,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b0e8-41ef-8af8-fd94" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5"/>
+              </costs>
             </entryLink>
             <entryLink id="b2a9-d3c9-d8ed-ef01" name="Sturmbringer" hidden="false" collective="false" import="false" targetId="9cb1-0419-cc9a-e3ec" type="selectionEntry">
               <modifiers>
@@ -9322,6 +9472,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e50b-80ff-66ba-90ed" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -9334,7 +9487,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="118"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="120"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -9357,6 +9510,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
         <infoLink id="56e7-67bd-695f-3d0b" name="Linear Dash [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
         <infoLink id="7ff1-2271-5976-f5cc" name="Inductorium [3.05]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
         <infoLink id="9a75-c64e-0226-bcaf" name="Pack Hunter [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="112e-82cb-42a3-83d2" type="rule"/>
+        <infoLink id="1442-8360-7f22-a500" name="Dirigible Construction  [3.05]" hidden="false" targetId="24c5-f8af-aa5d-998e" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d4a5-6d32-fbf3-0980" name="Imperium" hidden="false" targetId="381f-fee3-786c-1414" primary="true"/>
@@ -9380,7 +9534,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="44"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="18"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -9920,7 +10074,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9806-48ea-901d-14b0" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="5fe8-017e-786d-69d9" name="Heavy Shock Rocket Battery" hidden="false" collective="false" import="false" targetId="41d6-3e83-ddab-f4f1" type="selectionEntry">
+            <entryLink id="5fe8-017e-786d-69d9" name="Shock Rocket Battery" hidden="false" collective="false" import="false" targetId="cc76-e48a-8819-df6c" type="selectionEntry">
               <modifiers>
                 <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
               </modifiers>
@@ -9928,7 +10082,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1090-1d10-a4a6-9755" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="bb88-c616-2797-0f60" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry">
+            <entryLink id="bb88-c616-2797-0f60" name="Volt Gun Battery" hidden="false" collective="false" import="false" targetId="2922-fa0a-076a-3713" type="selectionEntry" flatten="false">
               <modifiers>
                 <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
               </modifiers>
@@ -10266,6 +10420,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
                   </costs>
                 </entryLink>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="First" hidden="false" id="c2b8-305b-704c-8407" targetId="8dd5-28b8-39fb-6304" primary="false"/>
+              </categoryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="9501-5a37-33f4-28b5" name="Second Weapon" hidden="false" collective="false" import="false" defaultSelectionEntryId="a16c-648b-70f0-b42d">
               <constraints>
@@ -10307,6 +10464,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
                   </costs>
                 </entryLink>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Second" hidden="false" id="ccc8-b5eb-fc99-1bf5" targetId="2a6f-36d6-5d75-e9fc" primary="false"/>
+              </categoryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -10362,7 +10522,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="5c2f-7021-b5e8-6525" name="Main Weapon" publicationId="e265-8c7f-a4b2-a48e" page="4" hidden="false" collective="false" import="false" defaultSelectionEntryId="ac1c-e22a-44ad-6b81">
+        <selectionEntryGroup id="5c2f-7021-b5e8-6525" name="Main Weapon" publicationId="e265-8c7f-a4b2-a48e" page="4" hidden="false" collective="false" import="false" defaultSelectionEntryId="5ce4-3b22-4f25-85df" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e320-53a4-d65e-195d" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08f5-9485-775b-1349" type="max"/>
@@ -10375,6 +10535,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3820-e2f6-63dc-dd63" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3"/>
+              </costs>
             </entryLink>
             <entryLink id="fce8-14d8-d464-5cc2" name="Uber Volt Vierling" hidden="false" collective="false" import="false" targetId="13a0-0faf-6586-df42" type="selectionEntry">
               <modifiers>
@@ -10383,6 +10546,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c57-0fa3-2922-e1e6" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5"/>
+              </costs>
             </entryLink>
             <entryLink id="5ce4-3b22-4f25-85df" name="Luft Speerschleuders" hidden="false" collective="false" import="false" targetId="896b-21e4-b704-b87a" type="selectionEntry">
               <modifiers>
@@ -10396,7 +10562,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="d0ed-12e9-7a47-91f5" name="Vierling Autokannone" hidden="false" collective="false" import="false" targetId="8301-9820-d5e0-6a8c" type="selectionEntry">
+        <entryLink id="d0ed-12e9-7a47-91f5" name="Vierling Autokannone" hidden="false" collective="false" import="false" targetId="5209-6523-b4ec-6899" type="selectionEntry" sortIndex="3">
           <modifiers>
             <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
           </modifiers>
@@ -10404,8 +10570,11 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b5be-0f8d-93ae-4004" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c379-cf48-b30f-56e4" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="1st" hidden="false" id="2b22-a4ea-9c33-c4f3" targetId="8dd5-28b8-39fb-6304" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="9c96-3d83-0660-1df4" name="Vierling Autokannone" hidden="false" collective="false" import="false" targetId="8301-9820-d5e0-6a8c" type="selectionEntry">
+        <entryLink id="9c96-3d83-0660-1df4" name="Vierling Autokannone" hidden="false" collective="false" import="false" targetId="5209-6523-b4ec-6899" type="selectionEntry" sortIndex="4">
           <modifiers>
             <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
           </modifiers>
@@ -10413,8 +10582,11 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f34-276e-ce76-cd52" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b290-2e16-90e3-20de" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="2nd" hidden="false" id="baf3-4f70-ef8-865e" targetId="2a6f-36d6-5d75-e9fc" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="8d0a-4ad4-bda0-3c55" name="Vierling Autokannone" hidden="false" collective="false" import="false" targetId="8301-9820-d5e0-6a8c" type="selectionEntry">
+        <entryLink id="8d0a-4ad4-bda0-3c55" name="Vierling Autokannone" hidden="false" collective="false" import="false" targetId="5209-6523-b4ec-6899" type="selectionEntry" sortIndex="5">
           <modifiers>
             <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
           </modifiers>
@@ -10422,8 +10594,11 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c720-b11c-7bc3-ae79" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1df1-3e3c-c158-9d1f" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="3rd" hidden="false" id="f2b7-5cdf-e01c-eff6" targetId="df04-304e-3eb9-52b" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="0da5-4649-f7b1-37ef" name="Vierling Autokannone" hidden="false" collective="false" import="false" targetId="8301-9820-d5e0-6a8c" type="selectionEntry">
+        <entryLink id="0da5-4649-f7b1-37ef" name="Vierling Autokannone" hidden="false" collective="false" import="false" targetId="5209-6523-b4ec-6899" type="selectionEntry" sortIndex="6">
           <modifiers>
             <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
           </modifiers>
@@ -10431,13 +10606,16 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a811-5344-282c-b332" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b1b4-eb5d-cb1b-bc50" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="4th" hidden="false" id="805a-af79-233a-f4b0" targetId="5650-1732-3d85-61a6" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="b5b8-aee7-8564-70da" name="Heavy Flak Broadside" hidden="false" collective="false" import="false" targetId="3e85-ccc4-d939-f7f8" type="selectionEntry">
+        <entryLink id="b5b8-aee7-8564-70da" name="Heavy Flak Broadside" hidden="false" collective="false" import="false" targetId="3e85-ccc4-d939-f7f8" type="selectionEntry" sortIndex="7">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
         </entryLink>
-        <entryLink id="f4c2-4b26-c3b5-3546" name="Storm generator" hidden="false" collective="false" import="false" targetId="e81d-d125-f14c-1205" type="selectionEntry">
+        <entryLink id="f4c2-4b26-c3b5-3546" name="Storm generator" hidden="false" collective="false" import="false" targetId="e81d-d125-f14c-1205" type="selectionEntry" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a17-0090-b744-9e2a" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="defe-f7e8-5637-fce9" type="max"/>
@@ -10463,15 +10641,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="456c-48eb-8a2e-c836" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="eb05-4313-bd27-c109" name="SMLS Prinz Eugen" hidden="false" targetId="b916-2c41-39a6-9036" type="profile">
-          <modifiers>
-            <modifier type="set" field="4c54-804a-8993-7325" value="13/12">
-              <conditions>
-                <condition field="selections" scope="2a1c-0cc9-eefd-f0aa" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="dbf3-5aa9-f400-27cd" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
+        <infoLink id="eb05-4313-bd27-c109" name="SMLS Prinz Eugen" hidden="false" targetId="b916-2c41-39a6-9036" type="profile"/>
         <infoLink id="2c48-595b-c5f3-2dd2" name="Dirigible Construction  [3.05]" hidden="false" targetId="24c5-f8af-aa5d-998e" type="rule"/>
         <infoLink id="275e-7c26-4720-8ff6" name="Disciplined [3.05]" hidden="false" targetId="ecf0-d255-3339-4a1b" type="rule"/>
         <infoLink id="3490-6c88-d91f-c384" name="Flak Barrage [3.05]" hidden="false" targetId="7b67-714d-bb2b-6297" type="rule">
@@ -10488,6 +10658,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
         <infoLink id="b2a0-9219-e83c-3471" name="SRS Mine Clearance [3.05]" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
         <infoLink id="0b3e-8457-6559-a192" name="Inductorium [3.05]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
         <infoLink id="2dd9-837c-ad12-bd56" name="Priority Signals [3.05]" hidden="false" targetId="4106-315d-4d5c-9e8f" type="rule"/>
+        <infoLink id="aa91-fb0a-dda3-d569" name="Richtofen’s Flying Circus (3.04)" publicationId="33cf-b4a6-bff0-0d70" hidden="false" targetId="578b-41bb-5190-4d7e" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8d87-5c66-0a3c-84c0" name="Sky-Fortress" hidden="false" targetId="acf9-0ce8-92de-91ef" primary="false"/>
@@ -10495,7 +10666,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
         <categoryLink id="eef2-e96a-5342-e877" name="Imperium" hidden="false" targetId="381f-fee3-786c-1414" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="9bb1-aee0-ce04-6087" name="SRS" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="true" import="false" type="upgrade">
+        <selectionEntry id="9bb1-aee0-ce04-6087" name="SRS" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="true" import="false" type="upgrade" sortIndex="7">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f05-1bf9-e771-313c" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5fb2-76bc-8dce-56b4" type="max"/>
@@ -10512,21 +10683,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="dbf3-5aa9-f400-27cd" name="Richtofen’s Flying Circus" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="false" import="false" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5adb-09db-ca56-99a7" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="aa91-fb0a-dda3-d569" name="Richtofen’s Flying Circus (3.04)" publicationId="33cf-b4a6-bff0-0d70" hidden="false" targetId="578b-41bb-5190-4d7e" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="15"/>
-            <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="9de7-42a4-1acb-29b6" name="Vierling Autokannone" hidden="false" collective="false" import="false" targetId="8301-9820-d5e0-6a8c" type="selectionEntry">
+        <entryLink id="9de7-42a4-1acb-29b6" name="Vierling Autokannone" hidden="false" collective="false" import="false" targetId="5209-6523-b4ec-6899" type="selectionEntry" sortIndex="3">
           <modifiers>
             <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
           </modifiers>
@@ -10534,8 +10693,11 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2442-5dd7-c7b3-ec8b" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="22fe-1d96-afc6-1e66" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="1st" hidden="false" id="afe1-dbde-968f-305" targetId="8dd5-28b8-39fb-6304" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="bd9c-34aa-ba74-8bcc" name="Vierling Autokannone" hidden="false" collective="false" import="false" targetId="8301-9820-d5e0-6a8c" type="selectionEntry">
+        <entryLink id="bd9c-34aa-ba74-8bcc" name="Vierling Autokannone" hidden="false" collective="false" import="false" targetId="5209-6523-b4ec-6899" type="selectionEntry" sortIndex="4">
           <modifiers>
             <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
           </modifiers>
@@ -10543,8 +10705,11 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="042e-4c45-3729-0f99" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0bac-b542-8a57-03ba" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="2nd" hidden="false" id="ec94-e32-a9f-9f4b" targetId="2a6f-36d6-5d75-e9fc" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="e5b1-eb8b-cd11-5484" name="Vierling Autokannone" hidden="false" collective="false" import="false" targetId="8301-9820-d5e0-6a8c" type="selectionEntry">
+        <entryLink id="e5b1-eb8b-cd11-5484" name="Vierling Autokannone" hidden="false" collective="false" import="false" targetId="5209-6523-b4ec-6899" type="selectionEntry" sortIndex="5">
           <modifiers>
             <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
           </modifiers>
@@ -10552,8 +10717,11 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2580-132f-a85d-4857" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="212c-3cde-9cca-bdd4" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="3rd" hidden="false" id="57a7-3114-8ae7-7701" targetId="df04-304e-3eb9-52b" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="7de6-a65d-6271-f30a" name="Vierling Autokannone" hidden="false" collective="false" import="false" targetId="8301-9820-d5e0-6a8c" type="selectionEntry">
+        <entryLink id="7de6-a65d-6271-f30a" name="Vierling Autokannone" hidden="false" collective="false" import="false" targetId="5209-6523-b4ec-6899" type="selectionEntry" sortIndex="6">
           <modifiers>
             <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
           </modifiers>
@@ -10561,8 +10729,11 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="14e3-c240-8ed5-9067" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cea5-aa26-7a3a-aeb5" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="4th" hidden="false" id="a4bc-e35b-5db0-7a9" targetId="5650-1732-3d85-61a6" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="a915-34f7-e2c7-9ef6" name="Sturmbringer" hidden="false" collective="false" import="false" targetId="9cb1-0419-cc9a-e3ec" type="selectionEntry">
+        <entryLink id="a915-34f7-e2c7-9ef6" name="Sturmbringer" hidden="false" collective="false" import="false" targetId="9cb1-0419-cc9a-e3ec" type="selectionEntry" sortIndex="2">
           <modifiers>
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
           </modifiers>
@@ -10571,12 +10742,12 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="072c-5fc6-1c48-f374" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="bb4b-f4d8-f925-bc78" name="Heavy Flak Broadside" hidden="false" collective="false" import="false" targetId="3e85-ccc4-d939-f7f8" type="selectionEntry">
+        <entryLink id="bb4b-f4d8-f925-bc78" name="Heavy Flak Broadside" hidden="false" collective="false" import="false" targetId="3e85-ccc4-d939-f7f8" type="selectionEntry" sortIndex="8">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
         </entryLink>
-        <entryLink id="173e-c44a-49e3-d119" name="Storm generator" hidden="false" collective="false" import="false" targetId="e81d-d125-f14c-1205" type="selectionEntry">
+        <entryLink id="173e-c44a-49e3-d119" name="Storm generator" hidden="false" collective="false" import="false" targetId="e81d-d125-f14c-1205" type="selectionEntry" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f70-aec2-e2b9-abfe" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ba8-16ab-89e9-d11c" type="max"/>
@@ -10591,7 +10762,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="305"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="309"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -10855,7 +11026,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1af1-cc8d-fac6-65a5" name="Main Weapon" hidden="false" collective="false" import="false" defaultSelectionEntryId="a831-23a0-af68-a1c6">
+        <selectionEntryGroup id="1af1-cc8d-fac6-65a5" name="Main Weapon" hidden="false" collective="false" import="false" defaultSelectionEntryId="86dc-fc66-9c2d-347c" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22be-a622-1d91-bebe" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05c5-7d47-1f15-4629" type="max"/>
@@ -10868,6 +11039,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fc39-35b0-ea82-bbda" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3"/>
+              </costs>
             </entryLink>
             <entryLink id="0305-c4e3-a4c9-d06d" name="Uber Volt Vierling" hidden="false" collective="false" import="false" targetId="13a0-0faf-6586-df42" type="selectionEntry">
               <modifiers>
@@ -10876,6 +11050,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="785c-2834-d721-ef21" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5"/>
+              </costs>
             </entryLink>
             <entryLink id="86dc-fc66-9c2d-347c" name="Luft Speerschleuders" hidden="false" collective="false" import="false" targetId="896b-21e4-b704-b87a" type="selectionEntry">
               <modifiers>
@@ -10889,7 +11066,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="9727-4f9c-b096-311c" name="Storm generator" hidden="false" collective="false" import="false" targetId="e81d-d125-f14c-1205" type="selectionEntry">
+        <entryLink id="9727-4f9c-b096-311c" name="Storm generator" hidden="false" collective="false" import="false" targetId="e81d-d125-f14c-1205" type="selectionEntry" sortIndex="9">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="18ff-ed11-2b2a-b0db" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="918e-c885-68f2-6929" type="max"/>
@@ -10902,17 +11079,23 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             </entryLink>
           </entryLinks>
         </entryLink>
-        <entryLink id="bf75-ba43-f729-12aa" name="Uranium-Trialen Bombs" hidden="false" collective="false" import="false" targetId="e286-abe9-a7a8-38e9" type="selectionEntry">
+        <entryLink id="bf75-ba43-f729-12aa" name="Uranium-Trialen Bombs" hidden="false" collective="false" import="false" targetId="e286-abe9-a7a8-38e9" type="selectionEntry" sortIndex="8">
           <modifiers>
             <modifier type="add" field="category" value="5888-87ac-f851-165d"/>
           </modifiers>
+          <categoryLinks>
+            <categoryLink name="First" hidden="false" id="393e-63bf-5a32-a5a3" targetId="8dd5-28b8-39fb-6304" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="decb-73e4-1168-e534" name="Uranium-Trialen Bombs" hidden="false" collective="false" import="false" targetId="e286-abe9-a7a8-38e9" type="selectionEntry">
+        <entryLink id="decb-73e4-1168-e534" name="Uranium-Trialen Bombs" hidden="false" collective="false" import="false" targetId="e286-abe9-a7a8-38e9" type="selectionEntry" sortIndex="7">
           <modifiers>
             <modifier type="add" field="category" value="5888-87ac-f851-165d"/>
           </modifiers>
+          <categoryLinks>
+            <categoryLink name="Second" hidden="false" id="5217-ff30-d26f-cdab" targetId="2a6f-36d6-5d75-e9fc" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="4b9a-8ac6-a1a9-d912" name="Heavy Shock Rocket Battery" hidden="false" collective="false" import="false" targetId="41d6-3e83-ddab-f4f1" type="selectionEntry">
+        <entryLink id="4b9a-8ac6-a1a9-d912" name="Heavy Shock Rocket Battery" hidden="false" collective="false" import="false" targetId="493f-b06e-7a69-39d9" type="selectionEntry" sortIndex="2">
           <modifiers>
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
           </modifiers>
@@ -10920,8 +11103,11 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="98f9-46cc-40bc-c1d2" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7c89-c59a-e89d-8602" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="Front First" hidden="false" id="ffd7-7799-fd86-36e6" targetId="62c7-5eb0-d38e-486" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="2d5b-b618-7012-56b9" name="Heavy Shock Rocket Battery" hidden="false" collective="false" import="false" targetId="41d6-3e83-ddab-f4f1" type="selectionEntry">
+        <entryLink id="2d5b-b618-7012-56b9" name="Heavy Shock Rocket Battery" hidden="false" collective="false" import="false" targetId="493f-b06e-7a69-39d9" type="selectionEntry" sortIndex="3">
           <modifiers>
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
           </modifiers>
@@ -10929,8 +11115,11 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f530-d6bc-3644-a15a" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c0c2-8334-23b7-150e" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="Front Second" hidden="false" id="fbe2-eb2a-ff9e-6ad" targetId="c595-958b-800e-2c04" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="51f8-b2f1-9e93-5c81" name="Heavy Shock Rocket Battery" hidden="false" collective="false" import="false" targetId="41d6-3e83-ddab-f4f1" type="selectionEntry">
+        <entryLink id="51f8-b2f1-9e93-5c81" name="Heavy Shock Rocket Battery" hidden="false" collective="false" import="false" targetId="493f-b06e-7a69-39d9" type="selectionEntry" sortIndex="4">
           <modifiers>
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
           </modifiers>
@@ -10938,8 +11127,11 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3f85-3601-6559-fb43" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8161-9dd7-b6d8-e64b" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="Front Third" hidden="false" id="6a57-1cb2-ff78-fac7" targetId="df04-304e-3eb9-52b" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="94d1-2f23-d141-2052" name="Heavy Shock Rocket Battery" hidden="false" collective="false" import="false" targetId="41d6-3e83-ddab-f4f1" type="selectionEntry">
+        <entryLink id="94d1-2f23-d141-2052" name="Heavy Shock Rocket Battery" hidden="false" collective="false" import="false" targetId="493f-b06e-7a69-39d9" type="selectionEntry" sortIndex="5">
           <modifiers>
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
           </modifiers>
@@ -10947,15 +11139,21 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4b41-8a4f-5511-4227" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7a85-4909-b4c8-00ef" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="Front Fourth" hidden="false" id="5291-1dc7-b63d-d3dc" targetId="5650-1732-3d85-61a6" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="285c-1e09-8bc4-4ad1" name="Heavy Flak Broadside" hidden="false" collective="false" import="false" targetId="3e85-ccc4-d939-f7f8" type="selectionEntry">
+        <entryLink id="285c-1e09-8bc4-4ad1" name="Heavy Flak Broadside" hidden="false" collective="false" import="false" targetId="3e85-ccc4-d939-f7f8" type="selectionEntry" sortIndex="6">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
+          <categoryLinks>
+            <categoryLink name="Front Fourth" hidden="false" id="b89f-4aaa-efc7-4476" targetId="5650-1732-3d85-61a6" primary="false"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="275"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="280"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -11035,25 +11233,25 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
         <categoryLink id="6038-8001-220f-7576" name="Unique" hidden="false" targetId="293e-b55a-bcfa-95c3" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="2e71-1e4f-36ed-c14d" name="Heavy Speerschleuder" hidden="false" collective="false" import="false" targetId="bdb5-a5d3-2abb-28f4" type="selectionEntry">
+        <entryLink id="2e71-1e4f-36ed-c14d" name="Heavy Speerschleuder" hidden="false" collective="false" import="false" targetId="bdb5-a5d3-2abb-28f4" type="selectionEntry" sortIndex="8">
           <modifiers>
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
           </modifiers>
         </entryLink>
-        <entryLink id="14f7-0d30-c07f-2236" name="Broadside" hidden="false" collective="false" import="false" targetId="0600-8fa9-227d-91ba" type="selectionEntry">
+        <entryLink id="14f7-0d30-c07f-2236" name="Broadside" hidden="false" collective="false" import="false" targetId="0600-8fa9-227d-91ba" type="selectionEntry" sortIndex="9">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
         </entryLink>
-        <entryLink id="53a0-821e-0dda-7e38" name="Fury generator" hidden="false" collective="false" import="false" targetId="069a-8c90-088f-816d" type="selectionEntry">
+        <entryLink id="53a0-821e-0dda-7e38" name="Fury generator" hidden="false" collective="false" import="false" targetId="069a-8c90-088f-816d" type="selectionEntry" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d21d-a02c-34b2-b268" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d4bc-d7aa-d2a5-272e" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="2002-7245-ac65-2753" name="Magnetic generator" hidden="false" collective="false" import="false" targetId="aaa0-4dc5-d12f-fcf9" type="selectionEntry"/>
-        <entryLink id="7ab0-f3c0-159e-1a33" name="Shield generator" hidden="false" collective="false" import="false" targetId="596e-bbf7-4be2-d494" type="selectionEntry"/>
-        <entryLink id="3e19-5be3-2e95-dddb" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry">
+        <entryLink id="2002-7245-ac65-2753" name="Magnetic generator" hidden="false" collective="false" import="false" targetId="aaa0-4dc5-d12f-fcf9" type="selectionEntry" sortIndex="3"/>
+        <entryLink id="7ab0-f3c0-159e-1a33" name="Shield generator" hidden="false" collective="false" import="false" targetId="596e-bbf7-4be2-d494" type="selectionEntry" sortIndex="2"/>
+        <entryLink id="3e19-5be3-2e95-dddb" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="8624-e150-e178-7df5" type="selectionEntry" sortIndex="4">
           <modifiers>
             <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
           </modifiers>
@@ -11061,8 +11259,11 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3c51-7e98-3d69-31f8" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6be2-8d04-af82-ae28" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="Front First" hidden="false" id="c987-4eb1-146f-60df" targetId="62c7-5eb0-d38e-486" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="b360-494a-61f7-a835" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry">
+        <entryLink id="b360-494a-61f7-a835" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="8624-e150-e178-7df5" type="selectionEntry" sortIndex="5">
           <modifiers>
             <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
           </modifiers>
@@ -11070,13 +11271,16 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="12f8-ad09-c174-0c6b" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8944-f74d-c66f-6d45" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="Front Second" hidden="false" id="eca4-46c4-3526-57c8" targetId="c595-958b-800e-2c04" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="eff2-276e-09a4-e092" name="Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9128-f707-ac48-b896" type="selectionEntry">
+        <entryLink id="eff2-276e-09a4-e092" name="Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9128-f707-ac48-b896" type="selectionEntry" sortIndex="6">
           <modifiers>
             <modifier type="add" field="category" value="c93d-a414-b1bc-7d2c"/>
           </modifiers>
         </entryLink>
-        <entryLink id="6c44-2dab-4554-0a44" name="Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9128-f707-ac48-b896" type="selectionEntry">
+        <entryLink id="6c44-2dab-4554-0a44" name="Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9128-f707-ac48-b896" type="selectionEntry" sortIndex="7">
           <modifiers>
             <modifier type="add" field="category" value="ce6f-067d-9ad4-ddaa"/>
           </modifiers>
@@ -11110,12 +11314,12 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
         <categoryLink id="9bcb-591e-812f-c69c" name="Unique" hidden="false" targetId="293e-b55a-bcfa-95c3" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="53c8-7fa9-0661-8401" name="Broadside" hidden="false" collective="false" import="false" targetId="0600-8fa9-227d-91ba" type="selectionEntry">
+        <entryLink id="53c8-7fa9-0661-8401" name="Broadside" hidden="false" collective="false" import="false" targetId="0600-8fa9-227d-91ba" type="selectionEntry" sortIndex="5">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
         </entryLink>
-        <entryLink id="5798-ab83-e29b-15d6" name="Sturmbringer" hidden="false" collective="false" import="false" targetId="9cb1-0419-cc9a-e3ec" type="selectionEntry">
+        <entryLink id="5798-ab83-e29b-15d6" name="Sturmbringer" hidden="false" collective="false" import="false" targetId="8bd6-e629-804d-f2c3" type="selectionEntry" sortIndex="2">
           <modifiers>
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
           </modifiers>
@@ -11124,13 +11328,13 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afef-a09f-2d22-c6a7" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="65a7-c32b-df0f-868e" name="Fury generator" hidden="false" collective="false" import="false" targetId="069a-8c90-088f-816d" type="selectionEntry">
+        <entryLink id="65a7-c32b-df0f-868e" name="Fury generator" hidden="false" collective="false" import="false" targetId="069a-8c90-088f-816d" type="selectionEntry" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="53af-b05b-dcf5-f93c" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="75af-262e-7e76-e049" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="b478-074b-268c-bb34" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry">
+        <entryLink id="b478-074b-268c-bb34" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="8624-e150-e178-7df5" type="selectionEntry" sortIndex="4">
           <modifiers>
             <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
           </modifiers>
@@ -11138,8 +11342,11 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0167-9a64-558e-40ee" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9df0-c341-6aa5-bc4b" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="1st" hidden="false" id="10e5-c2b1-55a0-1ab8" targetId="8dd5-28b8-39fb-6304" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="01aa-78ce-0e3c-d972" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry">
+        <entryLink id="01aa-78ce-0e3c-d972" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="8624-e150-e178-7df5" type="selectionEntry" sortIndex="3">
           <modifiers>
             <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
           </modifiers>
@@ -11147,6 +11354,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0f13-d8b8-2652-1c6f" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7255-f2ed-1fe4-7028" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="2nd" hidden="false" id="d7e5-b248-82a1-f395" targetId="2a6f-36d6-5d75-e9fc" primary="false"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <costs>
@@ -11497,19 +11707,31 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
       </categoryLinks>
       <entryLinks>
         <entryLink id="6f58-a894-7b11-04fb" name="Shield generator" hidden="false" collective="false" import="false" targetId="596e-bbf7-4be2-d494" type="selectionEntry"/>
-        <entryLink id="da3a-4f0f-1f9a-a3d0" name="Sturmbringer" hidden="false" collective="false" import="false" targetId="9cb1-0419-cc9a-e3ec" type="selectionEntry">
+        <entryLink id="da3a-4f0f-1f9a-a3d0" name="Sturmbringer" hidden="false" collective="false" import="false" targetId="8bd6-e629-804d-f2c3" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c878-e771-8706-8ad7" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5174-b77d-bc12-42bf" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="1st" hidden="false" id="1ab8-ef88-e3e9-b5c9" targetId="8dd5-28b8-39fb-6304" primary="false"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+          </modifiers>
         </entryLink>
-        <entryLink id="f5e0-cb85-2961-4b81" name="Sturmbringer" hidden="false" collective="false" import="false" targetId="9cb1-0419-cc9a-e3ec" type="selectionEntry">
+        <entryLink id="f5e0-cb85-2961-4b81" name="Sturmbringer" hidden="false" collective="false" import="false" targetId="8bd6-e629-804d-f2c3" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="75a0-9100-1573-dd16" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="24f1-213b-8439-f246" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="2nd" hidden="false" id="bc82-1cb2-e2ce-e799" targetId="2a6f-36d6-5d75-e9fc" primary="false"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+          </modifiers>
         </entryLink>
-        <entryLink id="2319-6679-5899-efcb" name="Heavy Broadside" hidden="false" collective="false" import="false" targetId="110e-749a-0199-27be" type="selectionEntry">
+        <entryLink id="2319-6679-5899-efcb" name="Heavy Broadside" hidden="false" collective="false" import="false" targetId="9985-b088-fda6-36d4" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
@@ -11518,7 +11740,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e1b9-71d8-2f8d-4683" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="fa03-7ed7-14a0-3f3b" name="Heavy Shock Rocket Battery" hidden="false" collective="false" import="false" targetId="41d6-3e83-ddab-f4f1" type="selectionEntry">
+        <entryLink id="fa03-7ed7-14a0-3f3b" name="Heavy Shock Rocket Battery" hidden="false" collective="false" import="false" targetId="493f-b06e-7a69-39d9" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
           </modifiers>
@@ -11578,7 +11800,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
         </entryLink>
-        <entryLink id="3b16-5ceb-19b7-2fad" name="Sturmbringer" hidden="false" collective="false" import="false" targetId="9cb1-0419-cc9a-e3ec" type="selectionEntry">
+        <entryLink id="3b16-5ceb-19b7-2fad" name="Sturmbringer" hidden="false" collective="false" import="false" targetId="8bd6-e629-804d-f2c3" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
           </modifiers>
@@ -11586,8 +11808,11 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03c3-c9a4-6be4-c4f4" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d651-b880-349e-6c0e" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="1st" hidden="false" id="72f4-ee42-3823-60b4" targetId="8dd5-28b8-39fb-6304" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="2d54-aecd-b554-99be" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry">
+        <entryLink id="2d54-aecd-b554-99be" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="8624-e150-e178-7df5" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
           </modifiers>
@@ -11595,8 +11820,11 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="41af-cbbb-06dc-d7e5" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="df89-b126-faf5-e77a" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="1st" hidden="false" id="c8ca-2f0b-98a8-1fa2" targetId="8dd5-28b8-39fb-6304" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="d07c-5b4b-f4af-3637" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry">
+        <entryLink id="d07c-5b4b-f4af-3637" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="8624-e150-e178-7df5" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
           </modifiers>
@@ -11604,8 +11832,11 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0611-43fe-5818-f3a7" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2bc5-84be-54ae-2e1a" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="2nd" hidden="false" id="ea2d-4537-2df9-eeaa" targetId="2a6f-36d6-5d75-e9fc" primary="false"/>
+          </categoryLinks>
         </entryLink>
-        <entryLink id="c7af-6422-e95b-68dc" name="Sturmbringer" hidden="false" collective="false" import="false" targetId="9cb1-0419-cc9a-e3ec" type="selectionEntry">
+        <entryLink id="c7af-6422-e95b-68dc" name="Sturmbringer" hidden="false" collective="false" import="false" targetId="8bd6-e629-804d-f2c3" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
           </modifiers>
@@ -11613,6 +11844,9 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc12-2e19-eaed-dd77" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="94f5-fa86-cf97-a8fc" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="2nd" hidden="false" id="fd24-778b-3e71-968b" targetId="2a6f-36d6-5d75-e9fc" primary="false"/>
+          </categoryLinks>
         </entryLink>
         <entryLink id="f6cb-e043-5e13-8d25" name="Heavy Shock Rocket Battery" hidden="false" collective="false" import="false" targetId="41d6-3e83-ddab-f4f1" type="selectionEntry">
           <modifiers>
@@ -12265,6 +12499,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
                       <categoryLinks>
                         <categoryLink id="50eb-d30b-1e59-711c" name="Gun Battery" hidden="false" targetId="27cb-30e8-6501-11c5" primary="false"/>
                         <categoryLink id="801d-9dfa-a068-f93b" name="Battery" hidden="false" targetId="008d-169e-eb03-17d9" primary="false"/>
+                        <categoryLink name="Front First" hidden="false" id="4f0e-1011-1871-a5fd" targetId="62c7-5eb0-d38e-486" primary="false"/>
                       </categoryLinks>
                     </entryLink>
                     <entryLink id="4f12-ea84-3fb4-c17e" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="false" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry">
@@ -12303,6 +12538,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
                       <categoryLinks>
                         <categoryLink id="ad5a-9fce-982e-7e1a" name="Gun Battery" hidden="false" targetId="27cb-30e8-6501-11c5" primary="false"/>
                         <categoryLink id="dda3-f114-23df-3608" name="Battery" hidden="false" targetId="008d-169e-eb03-17d9" primary="false"/>
+                        <categoryLink name="Front Second" hidden="false" id="7ded-613c-67b6-a00f" targetId="c595-958b-800e-2c04" primary="false"/>
                       </categoryLinks>
                     </entryLink>
                   </entryLinks>
@@ -12351,6 +12587,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
                       <categoryLinks>
                         <categoryLink id="263b-0343-d763-01dc" name="Rocket Battery" hidden="false" targetId="79fb-91eb-12b8-4dcc" primary="false"/>
                         <categoryLink id="3f4a-7144-69ba-7931" name="Battery" hidden="false" targetId="008d-169e-eb03-17d9" primary="false"/>
+                        <categoryLink name="Front First" hidden="false" id="aec6-db8f-15a1-4ab" targetId="62c7-5eb0-d38e-486" primary="false"/>
                       </categoryLinks>
                       <costs>
                         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10"/>
@@ -12398,6 +12635,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
                       <categoryLinks>
                         <categoryLink id="e4ee-4ca2-f701-9e5e" name="Rocket Battery" hidden="false" targetId="79fb-91eb-12b8-4dcc" primary="false"/>
                         <categoryLink id="40ea-158b-c5fd-44ea" name="Battery" hidden="false" targetId="008d-169e-eb03-17d9" primary="false"/>
+                        <categoryLink name="Front Second" hidden="false" id="105d-e2f5-719a-df84" targetId="c595-958b-800e-2c04" primary="false"/>
                       </categoryLinks>
                       <costs>
                         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10"/>
@@ -12572,19 +12810,31 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
       </categoryLinks>
       <entryLinks>
         <entryLink id="c8cb-9cd0-1169-e59e" name="Shield generator" hidden="false" collective="false" import="false" targetId="596e-bbf7-4be2-d494" type="selectionEntry"/>
-        <entryLink id="a4ee-bdf9-f0f4-694a" name="Sturmbringer" hidden="false" collective="false" import="false" targetId="9cb1-0419-cc9a-e3ec" type="selectionEntry">
+        <entryLink id="a4ee-bdf9-f0f4-694a" name="Sturmbringer" hidden="false" collective="false" import="false" targetId="8bd6-e629-804d-f2c3" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e744-4091-a3ab-127e" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2afe-e9fe-a5e5-7a30" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="1st" hidden="false" id="2915-f9c-8ea6-8f4d" targetId="8dd5-28b8-39fb-6304" primary="false"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+          </modifiers>
         </entryLink>
-        <entryLink id="49d2-4d33-a2c9-c1c2" name="Sturmbringer" hidden="false" collective="false" import="false" targetId="9cb1-0419-cc9a-e3ec" type="selectionEntry">
+        <entryLink id="49d2-4d33-a2c9-c1c2" name="Sturmbringer" hidden="false" collective="false" import="false" targetId="8bd6-e629-804d-f2c3" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2566-19d9-76c4-f25f" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d4d3-d2af-e291-26b8" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="2nd" hidden="false" id="169f-7531-98c8-8c37" targetId="2a6f-36d6-5d75-e9fc" primary="false"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+          </modifiers>
         </entryLink>
-        <entryLink id="0ded-04a9-f39e-060b" name="Heavy Broadside" hidden="false" collective="false" import="false" targetId="110e-749a-0199-27be" type="selectionEntry">
+        <entryLink id="0ded-04a9-f39e-060b" name="Heavy Broadside" hidden="false" collective="false" import="false" targetId="9985-b088-fda6-36d4" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
@@ -12593,7 +12843,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a15d-e6bf-9408-fce0" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="0b71-b048-7340-625c" name="Heavy Shock Rocket Battery" hidden="false" collective="false" import="false" targetId="41d6-3e83-ddab-f4f1" type="selectionEntry">
+        <entryLink id="0b71-b048-7340-625c" name="Heavy Shock Rocket Battery" hidden="false" collective="false" import="false" targetId="493f-b06e-7a69-39d9" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
           </modifiers>
@@ -12605,6 +12855,197 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="248"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dbc4-e492-e82e-31be" name="Maximilian" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="false" import="false" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f28-22d0-8d01-fb84" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc24-665b-70f5-3f6a" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="27c3-33c2-b808-b8d5" name="Zeppelin" hidden="false" targetId="3437-8029-27da-d32d" type="profile"/>
+        <infoLink id="3aa8-6647-bea9-e119" name="Heavy Firepower [3.05]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="dad5-d93c-1b1d-4851" name="Disciplined [3.05]" hidden="false" targetId="ecf0-d255-3339-4a1b" type="rule"/>
+        <infoLink id="2136-b7aa-2794-b0be" name="Flak Barrage [3.05]" hidden="false" targetId="7b67-714d-bb2b-6297" type="rule">
+          <modifiers>
+            <modifier type="append" field="name" value="(8)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="4d9-4961-53b7-5b35" name="Inductorium [3.05]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
+        <infoLink id="ba22-e2c1-944-aa11" name="Storm Vanes [3.05]" hidden="false" targetId="347f-29f6-295e-e492" type="rule"/>
+        <infoLink id="d942-2ffa-cf89-edf1" name="Lumbering [3.05]" hidden="false" targetId="6b55-0f21-5c85-94cb" type="rule"/>
+        <infoLink id="5f32-6b4e-9d2-69" name="Dirigible Construction  [3.05]" hidden="false" targetId="24c5-f8af-aa5d-998e" type="rule"/>
+        <infoLink id="ed33-5ab7-660c-79c6" name="Focused Bombardament [3.05]" hidden="false" targetId="d279-5cd1-7158-762b" type="rule"/>
+        <infoLink id="28e9-582e-bb8-a51b" name="In Treue Fest [3.05]" hidden="false" targetId="97e8-539e-009a-8ee0" type="rule"/>
+        <infoLink id="254e-1772-7c08-8ad8" name="Linear Dash [3.05]" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d6d0-1594-f33f-b63c" name="New CategoryLink" hidden="false" targetId="381f-fee3-786c-1414" primary="true"/>
+        <categoryLink name="Aerial Linebreaker" hidden="false" id="f5a0-73e0-2633-12ca" targetId="cbad-adb3-56aa-e640" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="ea7c-be7a-84be-1f4f" name="Unexpected Arrival" hidden="true" collective="false" import="false" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d554-191b-783b-f2c9" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9663-a385-56ce-3133" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="568f-dd11-630a-9a35" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="6717-a4cb-9579-e002" name="Unexpected Arrival [3.05]" hidden="false" targetId="f4aa-042e-34e5-1938" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="20"/>
+            <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1b1d-bac6-dc2b-bfd8" name="Main Weapon" hidden="false" collective="false" import="false" defaultSelectionEntryId="573f-2edd-39c7-a20d" sortIndex="1">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="281c-9c42-f481-2ff1" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="5169-45c-1769-8c93" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="244f-ba32-bd59-b14a" name="Bertha Heavy Bombard" hidden="false" collective="false" import="false" targetId="9300-adba-3ea5-d835" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cc84-70ea-88b9-c387" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3"/>
+              </costs>
+            </entryLink>
+            <entryLink id="628c-bd36-8eb8-3009" name="Bertha Heavy Bombard (Phosphor Sh.)" hidden="false" collective="false" import="false" targetId="cdad-4014-0c08-2684" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9875-cc2-432a-e28d" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8"/>
+              </costs>
+            </entryLink>
+            <entryLink id="26ec-7111-2604-db96" name="Gustav Twin Bombard" hidden="false" collective="false" import="false" targetId="83d8-3c75-f835-fcf2" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3538-cd13-8f18-9130" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="5544-c26d-4a41-a8b7" name="Gustav Twin Bombard (Phosphor Sh.)" hidden="false" collective="false" import="false" targetId="9da2-10af-ae51-78b2" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e072-b5af-7158-df45" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="7a22-60c5-fd88-f288" name="Storm generator" hidden="false" collective="false" import="false" targetId="e81d-d125-f14c-1205" type="selectionEntry" sortIndex="9">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1484-bbf5-4d66-8427" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c3d9-1c87-418c-aa7f" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="b3c3-d6a3-4ac8-854b" name="Lightning Strike" hidden="false" collective="false" import="false" targetId="2580-342d-6f12-cbb2" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
+        <entryLink id="aa01-5390-12fe-96b8" name="Uranium-Trialen Bombs" hidden="false" collective="false" import="false" targetId="e286-abe9-a7a8-38e9" type="selectionEntry" sortIndex="8">
+          <modifiers>
+            <modifier type="add" field="category" value="5888-87ac-f851-165d"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="First" hidden="false" id="6faa-518f-5031-7d94" targetId="8dd5-28b8-39fb-6304" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="4357-30ac-4493-4938" name="Uranium-Trialen Bombs" hidden="false" collective="false" import="false" targetId="e286-abe9-a7a8-38e9" type="selectionEntry" sortIndex="7">
+          <modifiers>
+            <modifier type="add" field="category" value="5888-87ac-f851-165d"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Second" hidden="false" id="a8b4-544f-383c-8d02" targetId="2a6f-36d6-5d75-e9fc" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="5ffb-6ea2-9fbd-b93e" name="Heavy Shock Rocket Battery" hidden="false" collective="false" import="false" targetId="493f-b06e-7a69-39d9" type="selectionEntry" sortIndex="2">
+          <modifiers>
+            <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="950b-bcc8-692c-4d7e" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="653d-f6da-8de1-e504" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Front First" hidden="false" id="a91c-82b6-5b6-218f" targetId="62c7-5eb0-d38e-486" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="74a3-7914-b2a8-3db4" name="Heavy Shock Rocket Battery" hidden="false" collective="false" import="false" targetId="493f-b06e-7a69-39d9" type="selectionEntry" sortIndex="3">
+          <modifiers>
+            <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="199d-432a-431f-8d1e" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1418-641a-4180-21b8" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Front Second" hidden="false" id="e64c-7654-b752-7672" targetId="c595-958b-800e-2c04" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="b54b-686d-fe87-227" name="Heavy Shock Rocket Battery" hidden="false" collective="false" import="false" targetId="493f-b06e-7a69-39d9" type="selectionEntry" sortIndex="4">
+          <modifiers>
+            <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4f7d-33ba-e3bd-8b08" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ed71-8c8-faae-c85f" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Front Third" hidden="false" id="bd8a-3e51-eef2-6031" targetId="df04-304e-3eb9-52b" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="af01-1d47-f283-8657" name="Heavy Shock Rocket Battery" hidden="false" collective="false" import="false" targetId="493f-b06e-7a69-39d9" type="selectionEntry" sortIndex="5">
+          <modifiers>
+            <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3c7c-e7a0-cc17-b686" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ef0-b27f-7f13-5411" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Front Fourth" hidden="false" id="913a-9a2f-ce1c-a7e7" targetId="5650-1732-3d85-61a6" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="b51a-5eea-bafa-ee2d" name="Heavy Flak Broadside" hidden="false" collective="false" import="false" targetId="3e85-ccc4-d939-f7f8" type="selectionEntry" sortIndex="6">
+          <modifiers>
+            <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Front Fourth" hidden="false" id="14e9-e798-dda0-e621" targetId="5650-1732-3d85-61a6" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="320"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -13078,7 +13519,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule id="d249-8ba2-9c56-69a3" name="Wolves of the Sea [3.05]" publicationId="33cf-b4a6-bff0-0d70" hidden="true">
+    <rule id="d249-8ba2-9c56-69a3" name="Wolves of the Sea [3.06]" publicationId="33cf-b4a6-bff0-0d70" hidden="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -13088,22 +13529,22 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
       </modifiers>
       <description>Crippled Models in this Unit with this rule still use the Battle-Ready value of their weapons. When making (but not Supporting) an Assault, this Model gains a bonus to its Assault Action Dice Pool equal to its Mass value. If all the Models making the Assault have this rule, then the Assault Action Dice Pool may re-roll blank results and gains the Devastating Quality. Furthermore, as the Moving Model in a Ramming Action, this Model does not suffer from Damage or Disorder.</description>
     </rule>
-    <rule id="ce94-1610-aef0-5f0d" name="Voltaic Decksweepers [3.05]" publicationId="33cf-b4a6-bff0-0d70" hidden="false">
+    <rule id="ce94-1610-aef0-5f0d" name="Voltaic Decksweepers [3.06]" publicationId="33cf-b4a6-bff0-0d70" hidden="false">
       <description>Any Battle-Ready Model with this rule attempting an Assault Action gains a bonus to its Assault Action Dice Pool equal to its target’s Mass value. Supporting or Crippled Models cannot use this rule.</description>
     </rule>
-    <rule id="2b51-7370-fa44-8e4b" name="Blitzschlag [3.05]" publicationId="33cf-b4a6-bff0-0d70" hidden="true">
+    <rule id="2b51-7370-fa44-8e4b" name="Blitzschlag [3.06]" publicationId="33cf-b4a6-bff0-0d70" hidden="true">
       <description>Once per Activation, this Unit may make the following Valour Effect provided the Valour card discarded has a value of at least 40 (including by Valorous Conduct). Each Model in the Unit with this rule, that has caused at least one point of damage in a Ramming Action this Activation, may make a second Ramming Action against the same or a new Point of Impact within 3” of the first. The Action Dice Pool for the second Ram is the same as the first. The Moving Model may not make any further movement this Activation if it uses this rule.</description>
     </rule>
-    <rule id="0391-5875-9393-1f88" name="Fechtbuch [3.05]" publicationId="33cf-b4a6-bff0-0d70" hidden="true">
+    <rule id="0391-5875-9393-1f88" name="Fechtbuch [3.06]" publicationId="33cf-b4a6-bff0-0d70" hidden="true">
       <description>Once per Activation, this Unit may make the following Valour Effect. Models with this rule gain +4 to their Assault Dice Pool when making an Assault, or +6 if the Initial Target has the Colossus rule.</description>
     </rule>
-    <rule id="0795-2dba-01cd-184f" name="Kanzler Great Maul [3.05]" publicationId="33cf-b4a6-bff0-0d70" hidden="true">
+    <rule id="0795-2dba-01cd-184f" name="Kanzler Great Maul [3.06]" publicationId="33cf-b4a6-bff0-0d70" hidden="true">
       <description>While making Ramming Attacks with a Colossal Melee Weapon, this Unit gains the Devastating Quality. Once per Activation, this Unit may make the following Valour Effect. Models in this Unit with this rule gain +2 to their Assault Dice Pool when making an Assault, or +4 if the Initial Target has the Surface Unit or Ground Unit Trait.</description>
     </rule>
-    <rule id="70b6-7cba-d627-84b5" name="Veteran Voltmeister [3.05]" publicationId="33cf-b4a6-bff0-0d70" hidden="false">
+    <rule id="70b6-7cba-d627-84b5" name="Veteran Voltmeister [3.06]" publicationId="33cf-b4a6-bff0-0d70" hidden="false">
       <description>If the Model has Voltaic Decksweepers then, when making an Assault, it gains +1 dice to its Assault Action Dice Pool in addition to the target’s Mass value, even if this Model is Crippled. Furthermore, the Assault by this Model gains the Voltaic Quality. This rule does not apply to Supporting Assaults.</description>
     </rule>
-    <rule id="3113-d747-99f6-9c87" name="Draugr [3.05]" publicationId="33cf-b4a6-bff0-0d70" hidden="true">
+    <rule id="3113-d747-99f6-9c87" name="Draugr [3.06]" publicationId="33cf-b4a6-bff0-0d70" hidden="true">
       <description>Models in this Unit with this rule ignores the effects of Emergency Disorder but counts as having the Disorder Level. Models with this rule may support an assault when they are within 3” of the Assaulting model. Models with this rule that have one or more Critical Damage Markers cannot remove Levels of Disorder.</description>
     </rule>
   </sharedRules>
@@ -13247,7 +13688,7 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
         <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">12/11</characteristic>
         <characteristic name="ADV" typeId="6428-9828-bb2e-f923">8/6</characteristic>
         <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">0/0</characteristic>
-        <characteristic name="Fray" typeId="4c54-804a-8993-7325">11/10</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">13/12</characteristic>
         <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">8/8</characteristic>
       </characteristics>
     </profile>
@@ -13860,6 +14301,19 @@ A maximum sized Konrad Support Carrier Unit may be upgraded for +20pts to take t
         <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">3/3</characteristic>
         <characteristic name="Fray" typeId="4c54-804a-8993-7325">8/8</characteristic>
         <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">3/3</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fdde-da62-683f-6cec" name="Maximilian" publicationId="33cf-b4a6-bff0-0d70" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model">
+      <characteristics>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">4/4</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">6/4</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">4/3</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">7/6</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">13/12</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">6/4</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">0/0</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">11/10</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">8/8</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
