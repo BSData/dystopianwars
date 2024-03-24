@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f69c-988c-fae3-e664" name="Generator" revision="13" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="f69c-988c-fae3-e664" name="Generator" revision="14" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Review 1.00.00: generator collection
 Review 3.04.00: all generator included and updated
 Review 3.04.01: all generator included and updated. added 3.03 Orbat change
@@ -12,7 +12,8 @@ Review 3.04.07: update for 3.04 Orbats Sept &apos;23 release (rev.1)
 Review 3.05.00: update for 3.05 Orbats Oct &apos;23 release
 Review 3.05.01: update for 3.05 Orbats Jan&apos;24 (to be used with New Recruit)
 Review 3.06.00: start of 3.06 updates
-Review 3.06.01: Crown 3.05a data</readme>
+Review 3.06.01: Crown 3.05a data (rev1)
+Review 3.06.02: Alliance 3.05</readme>
   <categoryEntries>
     <categoryEntry id="0c85-39c7-9145-efeb" name="1" hidden="true"/>
     <categoryEntry id="8901-cc02-f55e-2ee5" name="2" hidden="false"/>
@@ -785,9 +786,10 @@ Review 3.06.01: Crown 3.05a data</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4945-f63e-d042-2b72" name="Gisela Shield Projector" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="4945-f63e-d042-2b72" name="Gisela Shield Projector" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="true" import="false" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="74d5-fddb-f988-58d6" type="max"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d133-d3cc-9a3e-1b4" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="74d5-fddb-f988-58d6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <infoLinks>
         <infoLink id="4bd6-adec-77bf-2c4f" name="Gisela Shield Projector" hidden="false" targetId="4d64-56c4-521d-cbbe" type="profile"/>

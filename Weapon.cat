@@ -18,7 +18,7 @@ Review v14: corrected gun battery profile for June &apos;23 update, review 3.04.
 Review v15: start of review for 3.04 Orbats (rev.4)
 Review v16: start of review for 3.04 Orbats for Sept &apos;23 (rev4)
 Review v17: start of review for 3.05 Orbats (rev3)
-Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev2</readme>
+Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev3</readme>
   <categoryEntries>
     <categoryEntry id="dbb4-72d5-bceb-70b3" name="F" hidden="false"/>
     <categoryEntry id="372f-19f1-09ed-e694" name="P&amp;S" hidden="false"/>
@@ -377,7 +377,6 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev2</rea
           </modifiers>
         </infoLink>
         <infoLink id="0f9b-7a22-532d-7a6e" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-        <infoLink id="6938-4ed5-627b-685c" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
         <infoLink id="5ece-6239-1040-a417" name="Magnetic" hidden="false" targetId="8c21-7eac-4f35-4268" type="rule"/>
       </infoLinks>
       <costs>
@@ -799,17 +798,29 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev2</rea
                     <condition field="selections" scope="9f4d-da2c-9379-f4d1" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="A/P" field="8739-aae9-7e50-c8d0">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="9f4d-da2c-9379-f4d1" childId="4e9e-7862-58ad-15e6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="A/S" field="8739-aae9-7e50-c8d0">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="9f4d-da2c-9379-f4d1" childId="5347-4855-4421-ed77" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
           <modifiers>
             <modifier type="append" value="(Front First)" field="faa3-d69c-5156-2acf">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8dd5-28b8-39fb-6304" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="62c7-5eb0-d38e-486" shared="true"/>
               </conditions>
             </modifier>
             <modifier type="append" value="(Front Second)" field="faa3-d69c-5156-2acf">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2a6f-36d6-5d75-e9fc" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c595-958b-800e-2c04" shared="true"/>
               </conditions>
             </modifier>
@@ -825,7 +836,7 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev2</rea
     </selectionEntry>
     <selectionEntry id="41d6-3e83-ddab-f4f1" name="Heavy Shock Rocket Battery" hidden="false" collective="false" import="false" type="upgrade">
       <infoLinks>
-        <infoLink id="fde5-8796-8c64-e8bd" name="Heavy Schok Rocket Battery" hidden="false" targetId="31e4-7dcf-9fc5-7c75" type="profile">
+        <infoLink id="fde5-8796-8c64-e8bd" name="Heavy Shock Rocket Battery" hidden="false" targetId="31e4-7dcf-9fc5-7c75" type="profile">
           <modifierGroups>
             <modifierGroup>
               <modifiers>
@@ -880,11 +891,13 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev2</rea
           <modifiers>
             <modifier type="append" value="(Front First)" field="faa3-d69c-5156-2acf">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8dd5-28b8-39fb-6304" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="62c7-5eb0-d38e-486" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
             <modifier type="append" value="(Front Second)" field="faa3-d69c-5156-2acf">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2a6f-36d6-5d75-e9fc" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c595-958b-800e-2c04" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
@@ -993,7 +1006,7 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev2</rea
                 </modifier>
                 <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P">
                   <conditions>
-                    <condition field="selections" scope="cc76-e48a-8819-df6c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5347-4855-4421-ed77" type="instanceOf"/>
+                    <condition field="selections" scope="cc76-e48a-8819-df6c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4e9e-7862-58ad-15e6" type="instanceOf"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
@@ -1004,6 +1017,11 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev2</rea
                 <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P">
                   <conditions>
                     <condition field="selections" scope="cc76-e48a-8819-df6c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="F/P/S" field="8739-aae9-7e50-c8d0">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="cc76-e48a-8819-df6c" childId="db84-bb03-d026-c3a5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1159,6 +1177,11 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev2</rea
                 <modifier type="set" field="8739-aae9-7e50-c8d0" value="F&amp;A">
                   <conditions>
                     <condition field="selections" scope="8301-9820-d5e0-6a8c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="afe0-b5a3-3eac-004f" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="F/P/S" field="8739-aae9-7e50-c8d0">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="8301-9820-d5e0-6a8c" childId="db84-bb03-d026-c3a5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3643,7 +3666,6 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev2</rea
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="9903-8da6-6175-b96e" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
         <infoLink id="8a00-4e31-7468-9329" name="Magnetic" hidden="false" targetId="8c21-7eac-4f35-4268" type="rule"/>
         <infoLink id="19fe-608c-1181-57d7" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
       </infoLinks>
@@ -4043,6 +4065,16 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev2</rea
                 <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
                   <conditions>
                     <condition field="selections" scope="e8d5-6319-67ea-821d" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="F/P/A" field="8739-aae9-7e50-c8d0">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="e8d5-6319-67ea-821d" childId="0cd5-1e4e-c51e-c338" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="F/S/A" field="8739-aae9-7e50-c8d0">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="e8d5-6319-67ea-821d" childId="5b70-4095-b55c-9745" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7233,7 +7265,6 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev2</rea
           </modifierGroups>
         </infoLink>
         <infoLink id="d775-8ff2-4f5e-50c2" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-        <infoLink id="1345-39dd-116d-02a5" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
         <infoLink id="3f6d-eeb6-98eb-8e6c" name="Magnetic" hidden="false" targetId="8c21-7eac-4f35-4268" type="rule"/>
       </infoLinks>
       <costs>
@@ -7756,6 +7787,10 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev2</rea
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f518-d16f-d97a-72b4" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="189e-8859-9973-dcc5" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="8624-e150-e178-7df5" name="Heavy Volt Gun Battery" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="true" import="false" type="upgrade">
       <infoLinks>
@@ -8254,9 +8289,9 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
     <profile id="94ee-f59f-0606-1f35" name="Aerial Torpedo Salvo" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">6(2) / 5(-)</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">6(5) / 5(3)</characteristic>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">5(4) / 4(3)</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">7(2) / 5(-)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">7(4) / 4(3)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">7(4) / 4(3)</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial, Torpedo, High Velocity</characteristic>
       </characteristics>
     </profile>
@@ -8497,8 +8532,8 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
     <profile id="f2e9-4fb6-4089-1574" name="Heat Lance" publicationId="129d-da97-caec-1ddd" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">9(6) / 7(5)</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">7(5) / 5(3)</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">9(5) / 7(4)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">7(4) / 5(3)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">5(3) / 3(2)</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Hazardous, Devastating</characteristic>
       </characteristics>
@@ -8589,8 +8624,8 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">8(4) / 4(2)</characteristic>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">9(5) / 7(4)</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial, Magnetic, Extreme Range</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">8(4) / 4(2)</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Magnetic, Extreme Range</characteristic>
       </characteristics>
     </profile>
     <profile id="d088-251e-5c6b-83bf" name="Heavy Prow Ram" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
@@ -8629,7 +8664,7 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Fusillade, Broadside, Sustained</characteristic>
       </characteristics>
     </profile>
-    <profile id="31e4-7dcf-9fc5-7c75" name="Heavy Schok Rocket Battery" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="31e4-7dcf-9fc5-7c75" name="Heavy Shock Rocket Battery" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">8(2) / 6(-)</characteristic>
@@ -8832,8 +8867,8 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">5(3) / 3(2)</characteristic>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">6(4) / 5(3)</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial, Magnetic, Extreme Range</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">5(3) / 3(2)</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Magnetic, Extreme Range</characteristic>
       </characteristics>
     </profile>
     <profile id="89b0-511f-6c55-7dce" name="Majestic Gun Battery" publicationId="dbca-8d57-b848-457e" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
