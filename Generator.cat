@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f69c-988c-fae3-e664" name="Generator" revision="14" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="f69c-988c-fae3-e664" name="Generator" revision="15" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Review 1.00.00: generator collection
 Review 3.04.00: all generator included and updated
 Review 3.04.01: all generator included and updated. added 3.03 Orbat change
@@ -13,7 +13,8 @@ Review 3.05.00: update for 3.05 Orbats Oct &apos;23 release
 Review 3.05.01: update for 3.05 Orbats Jan&apos;24 (to be used with New Recruit)
 Review 3.06.00: start of 3.06 updates
 Review 3.06.01: Crown 3.05a data (rev1)
-Review 3.06.02: Alliance 3.05</readme>
+Review 3.06.02: Alliance 3.05
+Review 3.06.03: Empire 3.05</readme>
   <categoryEntries>
     <categoryEntry id="0c85-39c7-9145-efeb" name="1" hidden="true"/>
     <categoryEntry id="8901-cc02-f55e-2ee5" name="2" hidden="false"/>
@@ -541,7 +542,20 @@ Review 3.06.02: Alliance 3.05</readme>
       </constraints>
       <infoLinks>
         <infoLink id="2355-90ef-cb97-579b" name="Shield generator" hidden="false" targetId="2086-333f-c525-6c88" type="profile"/>
-        <infoLink id="e4ec-7410-7da0-1c5e" name="Shield generator" hidden="false" targetId="2c2f-ebec-49d2-ae7d" type="rule"/>
+        <infoLink id="e4ec-7410-7da0-1c5e" name="Shield generator" hidden="false" targetId="2c2f-ebec-49d2-ae7d" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="596e-bbf7-4be2-d494" childId="557f-d9bd-8ef6-812b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Chang&apos;An Tower Generator" field="name">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="596e-bbf7-4be2-d494" childId="557f-d9bd-8ef6-812b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="cd94-789b-6f75-f8f0" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
@@ -844,14 +858,14 @@ Cryogenic Blasts and Iceberg Obstacles cannot cause damage to Aerial Units.</des
     <rule id="f743-5a58-7d27-2ceb" name="Fury generator [3.06]" publicationId="7f09-e243-2307-78d0" hidden="false">
       <description>This Generator gives the Model +1 to its Speed Attribute and +4 to its Fray Attribute. Generators listed on a Unit’s profile may not be removed or replaced unless specified.</description>
     </rule>
-    <rule id="aac8-fdce-2f53-815a" name="Great Wall generator (3.04)" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
+    <rule id="aac8-fdce-2f53-815a" name="Great Wall generator [3.05]" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
       <description>This Generator cannot be used against Ramming, Assaults or Attacks with the Bomb or Submerged Qualities. If a friendly Model within 7” of a Model with a Great Wall Generator, then it is considered to be Protected by that Great Wall Generator. Each additional Great Wall Generator in the Unit increases the range by +3” Models in a Unit where one or more Models has a Great Wall Generator are also considered to be Protected. When the Initial Target of an Attack, a Protected Model can affect a number of Exploding Hit results in the Attack Action Die Pool up to its Mass value. The affected Exploding Hit do not generate additional Action Dice. Generators listed on a Unit’s profile may not be removed or replaced unless specified.</description>
     </rule>
     <rule id="c8ce-067f-fea8-42b3" name="Guardian generator [3.05a]" publicationId="dbca-8d57-b848-457e" hidden="false">
       <description>A Model may have Multiple Guardian Generators. Once per Round, at the start of the Activation Phase before either Player Activates a Unit, the Player(s) add up each Friendly Guardian Generator in Play. Each Friendly Guardian Generator adds points to form a Guardian Points Pool. The number of Guardian Points contributed is indicated as number next to this rule. When any Friendly Model with a Guardian Generator is declared the target of an Attack, before the Attack is rolled, declare how many Guardian Points from the Guardian Points Pool will be used. These Points are deducted from the Pool for the Round. For each Point spent, remove a single die from the Attack Dice Pool. The Guardian Points Pool cannot be used against Ramming or attacks with the Arc, Bomb or Submerged Qualities. The Guardian Points Pool is unaffected by Models with the Generator Offline Critical Marker during the Round, however such Models that have offline Guardian Generators do not contribute to the pool if they still have an offline Guardian Generator at the start of the Activation Phase. Unspent Guardian Points are lost in the Maintenance Step of the End Phase. Generators listed on a Unit’s profile may not be removed or replaced unless specified.</description>
     </rule>
-    <rule id="3856-32b4-29d7-c738" name="Interphase generator (3.04)" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
-      <description>At the start of the Maintenance Step of the End Phase, any Unit where every Model has an online Interphase Generator may become an Interphased Unit. An Interphased Unit is removed from the Play Area, placed into Reserves, and a 50mm Interphase Marker is placed in the position of any one Model in this Unit. In subsequent Rounds, Interphased Units must be the first Units Activated in a Force. When an Interphased Unit is Activated, it is immediately deployed, and must be placed within 20” of any Interphase Marker in the Play Area. You must remove one of your Interphase Markers each time this happens. No Model in this Unit can be deployed touching another Model. When an Interphased Unit is deployed it uses the Crippled profile of their weapons for that Round. Generators listed on a Unit’s profile may not be removed or replaced unless specified.</description>
+    <rule id="3856-32b4-29d7-c738" name="Interphase generator [3.05]" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
+      <description>At the start of the Maintenance Step of the End Phase, any Unit where every Model has an online Interphase Generator may become an Interphased Unit. An Interphased Unit is removed from the Play Area, placed into Reserves, and a 50mm Interphase Marker is placed in the position of any one Model in this Unit. In subsequent Rounds, Interphased Units must be the first Units Activated in a Force. When an Interphased Unit is Activated, it is immediately deployed, and must be placed within 20” of any Interphase Marker in the Play Area. You must remove one of your Interphase Markers each time this happens. No Model in this Unit can be deployed touching another Model. When an Interphased Unit is deployed it uses the Crippled profile of their weapons for that Round except those with the Torrent Quality. Interphased Units and may not make Special Operations Actions, Assault or Ramming Actions. Generators listed on a Unit’s profile may not be removed or replaced unless specified.</description>
     </rule>
     <rule id="9704-6693-8202-319a" name="Langsan generator [3.06]" publicationId="33cf-b4a6-bff0-0d70" hidden="false">
       <description>In the Shooting Phase, a Model with this Generator may make an Attack against an enemy Unit within 10”. Roll an Action die. On a Counter or Heavy Counter result, the target Unit’s Speed is reduced for its next Activation by 3 to a minimum of 1. On a Hit or Heavy Hit result, the Unit is affect as outlined previously and each Model in the Unit also suffers a point of damage. On an Exploding Hit result the Unit is unaffected and instead the closest target Model suffers a Catastrophic Explosion.</description>
@@ -859,7 +873,7 @@ Cryogenic Blasts and Iceberg Obstacles cannot cause damage to Aerial Units.</des
     <rule id="3f2f-ddf5-621b-0b23" name="Levant generator (NO)" publicationId="129d-da97-caec-1ddd" hidden="false">
       <description>This Generator was developed by the Alliance from advances made in Repulsion Field generation. A Model with this Generator is a Skimming Unit. If a Model with this Generator receives a Generator Shutdown Critical Damage Result it must be re-rolled. If this re-rolled result is a Generator Shutdown Critical Damage Result and the model is in contact with a terrain feature, it is immediately destroyed.</description>
     </rule>
-    <rule id="19bc-60bc-f7ef-9877" name="Magma Cast generator (3.04)" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
+    <rule id="19bc-60bc-f7ef-9877" name="Magma Cast generator [3.05]" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
       <description>This Generator may be used in the Shooting Phase to fire a Magma Sear at a Target Model with a 360 degree Fire Arc. Alternatively, the controlling player of this Model rolls an Action Die. 
 - On a result of an Exploding Hit, you may place a 2&quot; long Mass 2 Obstacle of volcanic rock within 25&quot; of this Model. 
 - On a Hit or Heavy Hit, place a 1&quot; Mass 1 Obstacle of volcanic rock within 20&quot; of this Model. 

@@ -18,7 +18,7 @@ Review v14: corrected gun battery profile for June &apos;23 update, review 3.04.
 Review v15: start of review for 3.04 Orbats (rev.4)
 Review v16: start of review for 3.04 Orbats for Sept &apos;23 (rev4)
 Review v17: start of review for 3.05 Orbats (rev3)
-Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev3</readme>
+Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev4</readme>
   <categoryEntries>
     <categoryEntry id="dbb4-72d5-bceb-70b3" name="F" hidden="false"/>
     <categoryEntry id="372f-19f1-09ed-e694" name="P&amp;S" hidden="false"/>
@@ -1595,6 +1595,16 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev3</rea
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c595-958b-800e-2c04" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="append" value="(Rear First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1305-ddc0-7c51-79ad" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Rear Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8f47-ccb8-8fba-b472" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink id="40d1-76d0-cc0d-76a1" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
@@ -2584,6 +2594,28 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev3</rea
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="append" value="(Front First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="62c7-5eb0-d38e-486" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Front Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c595-958b-800e-2c04" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Rear First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1305-ddc0-7c51-79ad" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Rear Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8f47-ccb8-8fba-b472" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </infoLink>
         <infoLink id="7c85-6cfa-131f-becf" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
         <infoLink id="f3fb-7ec1-365a-21ce" name="Alchemical (x)" hidden="false" targetId="b69e-5981-d88e-75de" type="rule"/>
@@ -2611,22 +2643,44 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev3</rea
                   <modifiers>
                     <modifier type="set" field="8739-aae9-7e50-c8d0" value="P &amp; S">
                       <conditions>
-                        <condition field="selections" scope="f3cc-ecc2-59d4-aec6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="372f-19f1-09ed-e694" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="372f-19f1-09ed-e694" type="instanceOf"/>
                       </conditions>
                     </modifier>
                     <modifier type="set" field="8739-aae9-7e50-c8d0" value="F &amp; A">
                       <conditions>
-                        <condition field="selections" scope="f3cc-ecc2-59d4-aec6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="afe0-b5a3-3eac-004f" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="afe0-b5a3-3eac-004f" type="instanceOf"/>
                       </conditions>
                     </modifier>
                     <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
                       <conditions>
-                        <condition field="selections" scope="f3cc-ecc2-59d4-aec6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
+              <modifiers>
+                <modifier type="append" value="(Front First)" field="faa3-d69c-5156-2acf">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="62c7-5eb0-d38e-486" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="(Front Second)" field="faa3-d69c-5156-2acf">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c595-958b-800e-2c04" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="(1st)" field="faa3-d69c-5156-2acf">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8dd5-28b8-39fb-6304" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="(2nd)" field="faa3-d69c-5156-2acf">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2a6f-36d6-5d75-e9fc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </infoLink>
             <infoLink id="ca19-314e-0d0c-0c91" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
             <infoLink id="83bc-cc43-eeb2-3b4e" name="Alchemical (x)" hidden="false" targetId="b69e-5981-d88e-75de" type="rule"/>
@@ -2665,6 +2719,28 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev3</rea
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
+              <modifiers>
+                <modifier type="append" value="(Front First)" field="faa3-d69c-5156-2acf">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="62c7-5eb0-d38e-486" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="(Front Second)" field="faa3-d69c-5156-2acf">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c595-958b-800e-2c04" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="(1st)" field="faa3-d69c-5156-2acf">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8dd5-28b8-39fb-6304" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="(2nd)" field="faa3-d69c-5156-2acf">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2a6f-36d6-5d75-e9fc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </infoLink>
             <infoLink id="ff9c-f233-f863-932c" name="Alchemical (x)" hidden="false" targetId="b69e-5981-d88e-75de" type="rule"/>
             <infoLink id="e53e-99f5-82f4-fc1c" name="Torrent" hidden="false" targetId="8081-2eef-5594-eb78" type="rule"/>
@@ -2680,6 +2756,9 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev3</rea
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Huoqiang [3.05]" hidden="false" id="d29e-466-88bf-ae67" targetId="9983-d8a9-e1bc-7c53" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="4688-bbd1-6ac5-f438" name="Heat Lancette" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -2918,6 +2997,9 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev3</rea
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Huoqiang [3.05]" hidden="false" id="fb17-94b5-fdde-84ae" targetId="9983-d8a9-e1bc-7c53" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="8831-12af-37ef-1633" name="Ryoba Prow Saw" publicationId="dbca-8d57-b848-457e" hidden="false" collective="true" import="true" type="upgrade">
       <constraints>
@@ -3024,6 +3106,18 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev3</rea
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="append" value="(Front First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="62c7-5eb0-d38e-486" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Front Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c595-958b-800e-2c04" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </infoLink>
         <infoLink id="21ca-7d96-84a8-1efd" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
         <infoLink id="60aa-3c79-a86e-d431" name="Alchemical (x)" hidden="false" targetId="b69e-5981-d88e-75de" type="rule"/>
@@ -3082,6 +3176,18 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev3</rea
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="append" value="(Front First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="62c7-5eb0-d38e-486" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Front Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c595-958b-800e-2c04" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </infoLink>
         <infoLink id="2e82-19eb-cb0c-750b" name="Hazardous" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
         <infoLink id="4fe8-2b07-2bd0-e8d5" name="Corrosive Mortar" hidden="false" targetId="2b60-4c92-5c85-3ff6" type="rule"/>
@@ -3262,6 +3368,18 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev3</rea
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="append" value="(1st)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8dd5-28b8-39fb-6304" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(2nd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2a6f-36d6-5d75-e9fc" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </infoLink>
         <infoLink id="0721-b617-e03e-67fe" name="Alchemical" hidden="false" targetId="b69e-5981-d88e-75de" type="rule"/>
         <infoLink id="5283-05e9-d157-bebd" name="Torrent" hidden="false" targetId="8081-2eef-5594-eb78" type="rule"/>
@@ -3291,6 +3409,23 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev3</rea
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="append" value="(Front 1st)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="62c7-5eb0-d38e-486" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Front 2nd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="62c7-5eb0-d38e-486" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Front 3rd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="62c7-5eb0-d38e-486" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </infoLink>
         <infoLink id="35eb-08a7-8e49-2c76" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
         <infoLink id="b144-3114-5f09-c08d" name="Extreme Range" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
@@ -4207,14 +4342,56 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev3</rea
           <modifierGroups>
             <modifierGroup>
               <modifiers>
-                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
                   <conditions>
-                    <condition field="selections" scope="3d0e-d034-a0b1-f724" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                    <condition field="selections" scope="3d0e-d034-a0b1-f724" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="360°" field="8739-aae9-7e50-c8d0">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="3d0e-d034-a0b1-f724" childId="a4f6-2208-db34-4879" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="F" field="8739-aae9-7e50-c8d0">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="3d0e-d034-a0b1-f724" childId="dbb4-72d5-bceb-70b3" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="append" value="(Front First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="62c7-5eb0-d38e-486" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Front Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c595-958b-800e-2c04" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(1st)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8dd5-28b8-39fb-6304" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(2nd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2a6f-36d6-5d75-e9fc" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(3rd)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="df04-304e-3eb9-52b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(4th)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5650-1732-3d85-61a6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </infoLink>
         <infoLink id="fec7-af60-0399-a5d9" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
         <infoLink id="f428-1290-e1d6-da4e" name="Alchemical (x)" hidden="false" targetId="b69e-5981-d88e-75de" type="rule"/>
@@ -6824,22 +7001,74 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev3</rea
                   <modifiers>
                     <modifier type="set" field="8739-aae9-7e50-c8d0" value="P &amp; S">
                       <conditions>
-                        <condition field="selections" scope="58b1-5a36-1519-e457" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="372f-19f1-09ed-e694" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="372f-19f1-09ed-e694" type="instanceOf"/>
                       </conditions>
                     </modifier>
                     <modifier type="set" field="8739-aae9-7e50-c8d0" value="F &amp; A">
                       <conditions>
-                        <condition field="selections" scope="58b1-5a36-1519-e457" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="afe0-b5a3-3eac-004f" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="afe0-b5a3-3eac-004f" type="instanceOf"/>
                       </conditions>
                     </modifier>
                     <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
                       <conditions>
-                        <condition field="selections" scope="58b1-5a36-1519-e457" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="360°" field="8739-aae9-7e50-c8d0">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a4f6-2208-db34-4879" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="F/P/S" field="8739-aae9-7e50-c8d0">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="db84-bb03-d026-c3a5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="A/P/S" field="8739-aae9-7e50-c8d0">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f2af-2773-24ff-2e12" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="A/P" field="8739-aae9-7e50-c8d0">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4e9e-7862-58ad-15e6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="A/S" field="8739-aae9-7e50-c8d0">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5347-4855-4421-ed77" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="F &amp; A" field="8739-aae9-7e50-c8d0">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="58b1-5a36-1519-e457" childId="afe0-b5a3-3eac-004f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
+              <modifiers>
+                <modifier type="append" value="(Front First)" field="faa3-d69c-5156-2acf">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="62c7-5eb0-d38e-486" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="(Front Second)" field="faa3-d69c-5156-2acf">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c595-958b-800e-2c04" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="(Rear First)" field="faa3-d69c-5156-2acf">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1305-ddc0-7c51-79ad" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="(Rear Second)" field="faa3-d69c-5156-2acf">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8f47-ccb8-8fba-b472" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </infoLink>
             <infoLink id="5b0e-40d4-392a-1634" name="Gunnery" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
             <infoLink id="77db-3abd-6456-c64f" name="Alchemical (x)" hidden="false" targetId="b69e-5981-d88e-75de" type="rule"/>
@@ -6862,22 +7091,74 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev3</rea
                   <modifiers>
                     <modifier type="set" field="8739-aae9-7e50-c8d0" value="P &amp; S">
                       <conditions>
-                        <condition field="selections" scope="58b1-5a36-1519-e457" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="372f-19f1-09ed-e694" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="372f-19f1-09ed-e694" type="instanceOf"/>
                       </conditions>
                     </modifier>
                     <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
                       <conditions>
-                        <condition field="selections" scope="58b1-5a36-1519-e457" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
                       </conditions>
                     </modifier>
                     <modifier type="set" field="8739-aae9-7e50-c8d0" value="F &amp; A">
                       <conditions>
-                        <condition field="selections" scope="58b1-5a36-1519-e457" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="afe0-b5a3-3eac-004f" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="afe0-b5a3-3eac-004f" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="360°" field="8739-aae9-7e50-c8d0">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a4f6-2208-db34-4879" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="F/P/S" field="8739-aae9-7e50-c8d0">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="db84-bb03-d026-c3a5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="A/P/S" field="8739-aae9-7e50-c8d0">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f2af-2773-24ff-2e12" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="A/P" field="8739-aae9-7e50-c8d0">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4e9e-7862-58ad-15e6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="A/S" field="8739-aae9-7e50-c8d0">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5347-4855-4421-ed77" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="F &amp; A" field="8739-aae9-7e50-c8d0">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="afe0-b5a3-3eac-004f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
+              <modifiers>
+                <modifier type="append" value="(Front First)" field="faa3-d69c-5156-2acf">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="58b1-5a36-1519-e457" childId="62c7-5eb0-d38e-486" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="(Front Second)" field="faa3-d69c-5156-2acf">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="58b1-5a36-1519-e457" childId="c595-958b-800e-2c04" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="(Rear First)" field="faa3-d69c-5156-2acf">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="58b1-5a36-1519-e457" childId="1305-ddc0-7c51-79ad" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="(Rear Second)" field="faa3-d69c-5156-2acf">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="58b1-5a36-1519-e457" childId="8f47-ccb8-8fba-b472" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </infoLink>
             <infoLink id="e4f3-7b78-5a7a-a1d9" name="Alchemical (x)" hidden="false" targetId="b69e-5981-d88e-75de" type="rule"/>
             <infoLink id="191b-8d3c-3bc3-2ec2" name="Torrent" hidden="false" targetId="8081-2eef-5594-eb78" type="rule"/>
@@ -6893,6 +7174,9 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev3</rea
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Huoqiang [3.05]" hidden="false" id="99ee-9182-e8f7-38b4" targetId="9983-d8a9-e1bc-7c53" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="3b8a-f050-dfb4-04fe" name="Scything Blades" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -6990,6 +7274,9 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev3</rea
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Huoqiang [3.05]" hidden="false" id="ee65-79f2-5ad5-3579" targetId="9983-d8a9-e1bc-7c53" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="b6c6-cf35-2bcd-4200" name="Sturmklaue" hidden="false" collective="false" import="false" type="upgrade">
       <infoLinks>
@@ -8156,13 +8443,62 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev3</rea
         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="be2d-74fd-e730-753b" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="false" name="Inferno Cannon" hidden="false" id="2e57-472d-85a3-8a64" collective="true">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7efc-aa76-8b07-b794" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90dc-5b89-22da-7639" includeChildSelections="false"/>
+      </constraints>
+      <costs>
+        <cost name="Points" hidden="false" id="e48f-6154-d433-7b81" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+        <cost name="Victory Points" hidden="false" id="cfc1-4615-2e70-b71f" typeId="426e-670d-6ddd-9631" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Inferno Cannon" hidden="false" id="5d9b-5ab3-756a-3a0c" targetId="1b07-14b4-78fd-98f9" type="profile">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="P &amp; S" field="8739-aae9-7e50-c8d0">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="2e57-472d-85a3-8a64" childId="372f-19f1-09ed-e694" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="F &amp; A" field="8739-aae9-7e50-c8d0">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="2e57-472d-85a3-8a64" childId="afe0-b5a3-3eac-004f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="F" field="8739-aae9-7e50-c8d0">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="2e57-472d-85a3-8a64" childId="dbb4-72d5-bceb-70b3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <modifiers>
+            <modifier type="append" value="(Front First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="2e57-472d-85a3-8a64" childId="62c7-5eb0-d38e-486" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Front Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="2e57-472d-85a3-8a64" childId="c595-958b-800e-2c04" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Alchemical (3.04)" hidden="false" id="d453-16f0-2e96-f1fe" targetId="b69e-5981-d88e-75de" type="rule"/>
+        <infoLink name="Blast (3.04)" hidden="false" id="13b7-3910-85e1-e81b" targetId="89d8-2e21-11be-005d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="c475-4c4f-de22-9080" name="Aerial [3.05]" publicationId="7f09-e243-2307-78d0" hidden="false">
       <description>Actions made with this Quality cannot usually be used against Initial Targets that are Submerged Units (unless the Action also has the Submerged Quality). The Initial Target may use Aerial Defences against Actions with this Quality.</description>
     </rule>
-    <rule id="b69e-5981-d88e-75de" name="Alchemical (3.04)" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
-      <description>Actions with this Quality that result in a number of Exploding Hit results equal to or greater than the Mass of the target receives a Disorder Condition, in addition to any other effects. Provided the necessary number of Explosive Hits are rolled, if the Target is Crippled or already has a Level of Disorder before this Action is resolved, then in addition to receiving a Disorder Condition it also suffers a Critical Damage roll.</description>
+    <rule id="b69e-5981-d88e-75de" name="Alchemical (3.05)" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
+      <description>If an Action Dice Roll with this Quality has Exploding Hit results equal to or greater than the Mass of the Initial Target, any Target hit by the Action receives a Disorder Condition, in addition to any other effects. Provided the necessary number of Explosive Hits are rolled, if the Initial Target is Crippled or already has a Level of Disorder before this Action is resolved, then in addition to receiving a Disorder Condition it also suffers a Critical Damage roll.</description>
     </rule>
     <rule id="6d56-fa67-1d6d-022b" name="Arc (3.04)" publicationId="7f09-e243-2307-78d0" hidden="false">
       <description>Shield Generators are ignored when making actions with this Quality. Should the Initial Target suffer Critical Damage from an Action with this Quality, it also gains a Disorder Condition in addition to any others that may be applied by the Action.</description>
@@ -8176,7 +8512,7 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev3</rea
     <rule id="cb94-70c0-65b8-d3d0" name="Broadside (3.04)" publicationId="7f09-e243-2307-78d0" hidden="false">
       <description>Actions with this Quality may be used multiple times in the same Activation – once in each Fire Arc specified. Furthermore, a weapon with this Quality must be the Lead weapon when Crossing the T.</description>
     </rule>
-    <rule id="2b60-4c92-5c85-3ff6" name="Corrosive Mortar (3.04)" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
+    <rule id="2b60-4c92-5c85-3ff6" name="Corrosive Mortar [3.05]" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
       <description>These weapons have no effect on Submerged Units. As a Valour Effect before the Action Dice for Attack are rolled, this weapon gains the Alchemical Quality.</description>
     </rule>
     <rule id="d633-3476-6a40-e860" name="Devastating (3.04)" publicationId="7f09-e243-2307-78d0" hidden="false">
@@ -8251,7 +8587,7 @@ Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev3</rea
     <rule id="f063-dc19-1b5c-313e" name="Rail (3.04)" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <description>The Citadel of the Initial Target receives a -1 against Actions with this Quality. Furthermore, when making an Action against Models with the Skimming Unit or Aerial Unit Positional Traits, each weapon or SRS Token with this Quality receives +1 Action Dice (to a maximum of +3). When making an Action against Models with the Submerged Unit Positional Trait, each weapon or SRS Token with this Quality receives -1 Action Dice (to a maximum of -3).</description>
     </rule>
-    <rule id="f1ec-f03e-cbe8-843e" name="Hyperbeam Lense Cannon (3.04)" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
+    <rule id="f1ec-f03e-cbe8-843e" name="Hyperbeam Lense Cannon [3.05]" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
       <description>A Model armed with this weapon chooses an Initial Target in the Shooting Step as normal. Draw a 5mm wide direct line between the centre point of the Initial Target and this Model. Resolve an Attack against each Model touched by the Beam as a separate Attack, with each of those Models (but, importantly, they are not the Initial Target of the Attack for Generators or other rule effects). Roll the number of Action Dice indicated in the Range Band against each Model touched by the line and consult the following table:
 
 - Critical: The Model suffers a Catastrophic Explosion, and the Player may apply the result of a further Action Dice rolled for that range band (if any additional dice have been rolled).
@@ -8265,6 +8601,9 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
     </rule>
     <rule id="8fc1-39b0-6392-bf2c" name="Agitation [3.04]" publicationId="908d-6feb-2e9e-843b" hidden="false">
       <description>A Lead Weapon with this Quality contributes a number of Action Dice equal to the Target Model’s Mass. Target Models with a Mass of 4 or greater are treated as having a Mass of 4 for this purpose. This number is multiplied, depending on range band etc. See the Weapon Reference table for details. Weapons with the Agitation Quality only ever contribute Action Dice equal to the Mass of the Target when used in Support and cannot be used with the Heavy Firepower rule.</description>
+    </rule>
+    <rule name="Huoqiang [3.05]" hidden="false" id="9983-d8a9-e1bc-7c53" publicationId="7b2b-0f56-3962-5ec1">
+      <description>A Model armed with these flame throwing weapons can fire in two ways. Its ‘Gout’ profile is used to launch attacks over a wide area with the torrent template. Alternatively, while Battle-Ready, a Model can instead fire the Huoqiang or Heavy Huoqiang using the ‘Blade’ profile.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -9469,6 +9808,15 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">5(3) / 3(2)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">5(3) / 3(2)</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Submerged, Torpedo, Piercing</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Inferno Cannon" typeId="6c9b-5228-c790-9c90" typeName="Weapon" hidden="false" id="1b07-14b4-78fd-98f9" publicationId="7b2b-0f56-3962-5ec1">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">11(6) / 9(5)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">9(5) / 6(4)</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Blast, Alchemical</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
