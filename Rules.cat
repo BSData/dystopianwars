@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="edc4-1a6a-03e6-7be9" name="Rules" revision="18" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="edc4-1a6a-03e6-7be9" name="Rules" revision="19" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <comment>Update to ORBAT 3.06</comment>
   <readme>Rules collection</readme>
   <sharedRules>
@@ -30,8 +30,8 @@
     <rule id="d894-52c8-4b18-f9f5" name="Armoured Decking [3.06]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
       <description>Attacks with the Aerial Quality gain a single Hit from a Heavy Hit result rather than the usual two when attacking this Model. Exploding Hits are unaffected by this rule. Attacks with the Piercing Quality ignore this rule.</description>
     </rule>
-    <rule id="e0a4-52b6-676c-9b6d" name="Celerity [3.05]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
-      <description>Once per Activation, this Unit may make the following Valour Effect provided the Valour card discarded has a value of at least 40 (including by Valorous Conduct). Each Model in the Unit with this rule, that has caused at least one point of damage in a Ramming Action this Activation, may make a second Ramming Action against the same or a new Point of Impact within 3” of the first. The Action Dice Pool for the second Ram is the same as the first. The Moving Model may not make any further movement this Activation if it uses this rule.</description>
+    <rule id="e0a4-52b6-676c-9b6d" name="Celerity [3.06]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+      <description>Once per Activation, this Unit may make the following Valour Effect provided the Valour card discarded has a value of at least 40 (including by Valorous Conduct). Each Model in the Unit with this rule, that has caused at least one point of damage in a Ramming Action this Activation, may make a second Ramming Action against the same or a new Point of Impact within 3” of the first. The Action Dice Pool for the second Ram is the same as the first. The Moving Model may not use Vigour with this rule and may not make any further movement this Activation if it uses this rule.</description>
     </rule>
     <rule id="cfe8-adc4-4866-0bc8" name="Cloud Hunting [3.06]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>Once per Activation, this Unit gains +2 to an Attack Action Dice Pool for each Model with this rule that contributes to the Attack provided that the Initial target is an Aerial Unit.</description>
@@ -72,7 +72,7 @@
     <rule id="55be-dbb8-d350-5d2a" name="For Valour! [3.05]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>After this Unit uses a Valour effect (or has one cancelled by rules such as Fortunes of War), roll an Action Die. On a Heavy Hit or an Exploding Hit, do not discard the card and instead return it to your hand. You cannot use this rule for Valour effects that do not directly involve this Unit. You may only roll once per card.</description>
     </rule>
-    <rule id="e8f8-a4d2-d40c-1467" name="Forward Deployment [3.05a]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
+    <rule id="e8f8-a4d2-d40c-1467" name="Forward Deployment [3.06]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>Units with this rule can never be held in reserve at the start of an Encounter. They must be deployed anywhere outside of the Encounter’s deployment zones and least 12” from the enemy deployment zone.</description>
     </rule>
     <rule id="9111-7f5e-6eac-7cbe" name="Full Steam Ahead [3.06]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
@@ -81,7 +81,7 @@
     <rule id="0d99-00ae-4c22-20b7" name="Giant Slayer [3.06]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>Each Model in the Unit may re-roll Blank Results in Attacks against an Initial Target with a Mass of 3 or more.</description>
     </rule>
-    <rule id="9f05-9e27-c658-e49f" name="Gun Runner (3.04)" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+    <rule id="9f05-9e27-c658-e49f" name="Gun Runner [3.06]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
       <description>Units with this rule are adept at providing a steady stream of gunfire as they manoeuvre. To gain benefit of this rule, a Model with this rule must have moved at least 7” during the Activation or been Placed by a Mirage Generator during its Activation. A single Attack each Activation led by a Model with this rule with the Gunnery Quality receives +1 Action Dice for each Battle-Ready Model with this rule contributing to that Attack. Additionally, while Battle-Ready, Models in this Unit with this rule gain +2 Speed during its Movement Step provided that it makes no turns.</description>
     </rule>
     <rule id="4a79-7f9b-ba17-59b8" name="Hammer Sweep [3.06]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
@@ -168,7 +168,7 @@
     <rule id="b8d7-281f-b227-a523" name="SRS Mine Clearance [3.06]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>During its Operations Step, while placing its SRS Tokens, this Model may also place tokens in contact with a Minefield Marker within 20”. At the end of the Special Operations Step discard an SRS Token and roll an Action Die. On an Exploding Hit, the Minefield Marker is discarded. You may repeat this attempt as many times as there are SRS Tokens remaining in the stack. If the Minefield Marker is discarded, any remaining SRS Tokens in the stack may be placed on another Minefield Marker within 5”to continue a Mine Clearance attempt on that Marker. If there are not any Minefield Markers within 5”, the SRS Tokens remain in place until the End Phase when they may Scramble or Find New Targets.</description>
     </rule>
-    <rule id="e76e-276f-d917-c7a4" name="SRS Portal Strike [3.05]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+    <rule id="e76e-276f-d917-c7a4" name="SRS Portal Strike [3.06]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
       <description>When Launching SRS during the Operations Step, a Unit with this rule with an online Portal Generator may also place an additional Portal Token within 5” of itself. If it does so, any SRS Tokens launched during that Operations Step by the Unit may be placed within 40” of any Portal Token in the Play Area.</description>
     </rule>
     <rule id="0a26-0b4a-261f-3db0" name="SRS Recon [3.06]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
@@ -204,8 +204,8 @@
     <rule id="f721-8318-3875-0140" name="Vanguard [3.06]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>Starting with Player B, after both sides are deployed, each player may choose one of their Units with the Vanguard rule and make a free Move of up to 5&quot;. This is not an Activation and does not have Drift or Turn Limit. Vanguard alternates between Players until all such Units have been selected.</description>
     </rule>
-    <rule id="91f7-3138-f1c6-4770" name="Vigour (3.04)" publicationId="d854-a2d6-3d52-44c4" hidden="false">
-      <description>Once per Activation, this Unit may make the following Valour Effect. Models in this Unit with this rule gain the Sustained Quality to their Assault Dice Pool. Furthermore, as the same Valour Effect they gain +6 to Fray if the Initial Target has the Colossus rule.</description>
+    <rule id="91f7-3138-f1c6-4770" name="Vigour [3.06]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+      <description>Once per Activation, this Unit may make the following Valour Effect. Models in this Unit with this rule gain the Sustained Quality to their Ramming Action Dice Pool. Furthermore, as the same Valour Effect they gain +6 to their Ramming Dice Pool if the Initial Target has the Colossus rule.</description>
     </rule>
     <rule id="449d-0011-bd00-b031" name="Terminator Assault  [3.05]" publicationId="129d-da97-caec-1ddd" hidden="false">
       <description>As a Special Operations Action that may be made by this Unit instead of a normal Assault, each Model in this Unit with this rule may place a number of Talon Autogyro Tokens equal to their Mass in contact with a non-Submerged Unit Initial Target up to 20” away. These are Assault Tokens. At the beginning of the End Phase, before SRS Resolution, each Talon Autogyro Token contribute 5 Action Dice to an Assault against that Initial Target. The Talon Autogyro Tokens in base contact form a single stack and count as the Assaulting Model, and they ignore Counter Assaults. Friendly SRS placed in contact with Initial Target may support the Autogyro Token stack in the Assault. All Talon Autogyro Tokens in the stack are discarded at the end of that Assault.</description>
@@ -276,7 +276,7 @@
     <rule id="fa8d-bf2f-b48a-9183" name="Sturginium Agitators" publicationId="908d-6feb-2e9e-843b" hidden="false">
       <description>When calculating dice pools, the weapon contributes a number of Action Dice equal to the Target Model’s Mass. This number is multiplied, depending on range band etc. See the Weapon Reference table for details. Sturginium Agitators only ever contribute a single Action Dice when used in Support.</description>
     </rule>
-    <rule id="5a79-12a4-77b3-9619" name="Luminiferous Defences (3.04)" publicationId="908d-6feb-2e9e-843b" hidden="false">
+    <rule id="5a79-12a4-77b3-9619" name="Luminiferous Defences [3.06]" publicationId="908d-6feb-2e9e-843b" hidden="false">
       <description>Units with this rule may use a Defence Action Dice Pool equal to their Crippled ADV to defend against any attack with the Gunnery, Broadside or Fusillade Qualities. This Defence Action Dice Pool cannot be increased higher than the Unit’s Crippled ADV. Mass 1 Units and Models suffering from Shredded Defences cannot use Luminiferous Defences.</description>
     </rule>
     <rule id="dfcd-8fc4-44a8-437f" name="Physeter Launch Tubes" hidden="false">
@@ -300,11 +300,11 @@
     <rule id="a888-5b4c-4092-6e2a" name="Pycrete Construction [3.06]" publicationId="33cf-b4a6-bff0-0d70" hidden="false">
       <description>This Unit has a Drift of 1” and does not suffer Disorder from Collisions. All Gunnery targeting this Unit may re-roll Blank results on the Action Dice. Any additional levels of Disorder received once at Chaos &amp; Disarray are ignored rather than causing damage. During deployment, this Unit may be placed with part of the Model outside of its deployment zone, provided that the Model is touching the edge of the Play Area furthest from the opponent’s deployment zone.</description>
     </rule>
-    <rule id="db90-0b63-d0f9-5222" name="Portal Mastery (3.04)" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+    <rule id="db90-0b63-d0f9-5222" name="Portal Mastery [3.06]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
       <description>A Model with this rule may, as a Special Operations Action, place a second 40mm Portal Token within 20” of itself. While a Model from this Unit is within 5” of a friendly Portal Token, friendly Units with the Sultanate Trait deploying from Reserve may instead be deployed in base contact with any friendly Portal Token in the Play Area. Each Model in the Reserve Unit must be deployed in base contact with the same Portal Token. Remove the friendly Portal Token once a Reserve Unit has been deployed using it.</description>
     </rule>
-    <rule id="1181-0663-f1c1-9047" name="Give Em Hell [3.05]" publicationId="e6a1-85d3-8979-7880" hidden="false">
-      <description>When this Unit makes an Assault, if the result is a Draw, it is instead considered a Havoc result. Furthermore, this Unit may make a Special Operations Action that it will ‘Give Em Hell’. All weapons with the Broadside, Gunnery or Fusillade special rule in the Unit gain the Devastating Quality for the duration of its Activation. At the end of the Activation, before the Repair Step, unless the player discards a card from their hand, each Model in the Unit gains a Disorder Condition.</description>
+    <rule id="1181-0663-f1c1-9047" name="Give Em Hell [3.06]" publicationId="e6a1-85d3-8979-7880" hidden="false">
+      <description>When this Unit makes an Assault, if the result is a Draw, it is instead considered a Havoc result. Furthermore, this Unit may make a Special Operations Action that it will ‘Give Em Hell’. All weapons with the Broadside, Gunnery or Fusillade special rule in the Unit gain the Devastating Quality for the duration of its Activation (Even if making a ‘Crossing the T’ Action). At the end of the Activation, before the Repair Step, unless the player discards a card from their hand, each Model in the Unit gains a Disorder Condition.</description>
     </rule>
     <rule id="2c93-befd-f88b-0881" name="Sharpshooter [3.06]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>The Citadel of the Initial Target receives a -2 against Attacks with the Gunnery Quality by Models with this rule.</description>
@@ -505,7 +505,7 @@
       <description>Resolve the Attack as normal with a Rostratum Naval Ballista. If the Initial Target suffers one or more points of damage, then the Unit making the Attack may make a Valour Effect against an Initial Target of the same Mass or less than the Model making the Attack. As a Valour Effect, the Initial Target receives a Level of Disorder and may be turned up to 90 degrees to a facing of the Attacker’s choosing.</description>
     </rule>
     <rule id="f07b-4636-21d5-ac87" name="Accetable Attrition [3.06]" publicationId="e6a1-85d3-8979-7880" hidden="false">
-      <description>Provided it numbers 4 Models or less at the start of the Encounter, Destroying this Unit does not confer a Squadron Killer Victory Point bonus.�</description>
+      <description>Provided it numbers 4 Models or less at the start of the Encounter, Destroying this Unit does not confer a Squadron Killer Victory Point bonus.</description>
     </rule>
     <rule id="b15d-ad13-dfd5-2f24" name="Aerial Attachment [3.05]" publicationId="e6a1-85d3-8979-7880" hidden="false">
       <description>This Aerial Unit may choose a partner Unit with any Position Trait except the Submerged Unit trait.</description>
@@ -540,11 +540,11 @@
     <rule id="b44f-ea85-bc94-f729" name="Long Range Support [3.05]" publicationId="e6a1-85d3-8979-7880" hidden="false">
       <description>Akron Aerial Escorts within 15” of this Model provide +2 to Attack Action Dice Pools at Point Blank Range rather than the usual +1. Talon Autogyro Tokens may re-roll blank results in any Assault that they participate in within 15” of this Unit.</description>
     </rule>
-    <rule id="aa42-18e0-bcd6-4b04" name="Hammer Song [3.05]" publicationId="e6a1-85d3-8979-7880" hidden="false">
+    <rule id="aa42-18e0-bcd6-4b04" name="Hammer Song [3.06]" publicationId="e6a1-85d3-8979-7880" hidden="false">
       <description>Once per Activation, this Unit may make the following as a Valour Effect provided the Valour card discarded has a value of at least 40 (including by Valorous Conduct). Each Model in the Unit with this rule, that has caused at least one point of damage in a Ramming Action with their Twin Sturginium Hammers or Grant Jackhammer this Activation, may make a second Ramming Action against the same or a new Point of Impact within 2” of the first. The Action Dice Pool for the second Ram is the same as the first. The Moving Model may not make any further movement this Activation if it uses this rule.</description>
     </rule>
-    <rule id="bb2a-ac29-b05f-d3d1" name="RJ Afterburner (3.04)" publicationId="e6a1-85d3-8979-7880" hidden="false">
-      <description>During its Activation, this Model may increase its Speed by 9&quot; and is Obscured for the remainder of the Round. If it does so it receives a Disorder Condition and may not use Hammer Song, Turn, Shoot or Assault during the same Activation.</description>
+    <rule id="bb2a-ac29-b05f-d3d1" name="RJ Afterburner [3.06]" publicationId="e6a1-85d3-8979-7880" hidden="false">
+      <description>As a Special Operation, this Model may increase its Speed by 9&quot; and Exploding Hits from Attacks against this Model do not generate additional dice for the remainder of the Round. When using this rule, this Model receives a Disorder Condition and may not use Hammer Song during the same Activation.</description>
     </rule>
     <rule id="ac11-db49-c94e-22bd" name="Helical Rail Guns [3.05]" publicationId="e6a1-85d3-8979-7880" hidden="false">
       <description>Weapons on this Unit with the Gunnery Quality can never have a Support value greater than 3. Attacks with the Gunnery Quality by this Unit treat the Citadel of their Initial Target as one lower than indicated. When making an Attack against Models with the Skimming Unit or Aerial Unit Positional Traits, each weapon with the Gunnery Quality receives +1 Action Dice. When making an Action against Models with the Submerged Unit Positional Trait, each weapon with the Gunnery Quality receives -1 Action Dice to a minimum of 1.</description>
@@ -585,43 +585,43 @@
     <rule id="2fd2-fa8e-f3fc-8f8b" name="Caspian Battlefleet Bonus (3.04)" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <description>Units with the Caspian Overthruster rule gain +1 to the number of inches indicated by the rule.</description>
     </rule>
-    <rule id="a0d9-f4d0-a016-2331" name="Khepri SRS Tokens (3.04)" publicationId="d854-a2d6-3d52-44c4" hidden="false">
-      <description>These are a type of SRS Token with the following differences. Each Model in this Unit with this rule may place Khepri SRS Tokens in contact with an Initial Target up to 25” away. Each Token contributes 3 Action Dice to their Attack Run and it has the Piercing and Homing Qualities. Resolve the Attack Run by Khepri SRS before any others on the Attack Run Target. If the number of Khepri SRS Tokens in the Attack Run is greater than the Mass of the Attack Run Target, the Action Dice Pool gains the Devastating Quality. Khepri SRS Tokens cannot make Attack Runs on Submerged Units and must try to find New Targets if this situation arises (page 26 of the Rules).</description>
+    <rule id="a0d9-f4d0-a016-2331" name="Khepri SRS Tokens [3.06]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+      <description>These are a type of SRS Token with the following differences. Each Model in this Unit with this rule may place Khepri SRS Tokens in contact with an Initial Target up to 20” away. Each Token contributes 3 Action Dice to their Attack Run and it has the Piercing and Homing Qualities. Resolve the Attack Run by Khepri SRS before any others on the Attack Run Target. If the number of Khepri SRS Tokens in the Attack Run is greater than the Mass of the Attack Run Target, the Action Dice Pool gains the Devastating Quality. Khepri SRS Tokens cannot make Attack Runs on Submerged Units and must try to find New Targets if this situation arises (page 26 of the Rules).</description>
     </rule>
-    <rule id="4fec-a47c-2c2e-b9ea" name="Khepri SRS Capacity (3.04)" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+    <rule id="4fec-a47c-2c2e-b9ea" name="Khepri SRS Capacity [3.06]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
       <description>The Battle-Ready Capacity / Crippled Capacity of each Model in this Unit is indicated in parenthesis. Each Model in this Unit may launch the indicated number of Khepri SRS Tokens and place those Tokens in base contact with Enemy Models in any combination Attack Runs. Any remaining Khepri SRS Tokens in the Play Area are removed in the Maintenance Step of the End Phase.</description>
     </rule>
-    <rule id="ef6d-9cb4-5273-88bb" name="Khepri Portal Strike (3.04)" publicationId="d854-a2d6-3d52-44c4" hidden="false">
-      <description>When Launching Khepri SRS during the Operations Step, a Unit with this rule with an online Portal Generator may also place an additional Portal Token within 5” of itself. If it does so, any Khepri SRS Tokens launched during that Operations Step by the Unit may be placed within 25” of any Portal Token in the Play Area.</description>
+    <rule id="ef6d-9cb4-5273-88bb" name="Khepri Portal Strike [3.06]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+      <description>When Launching Khepri SRS during the Operations Step, a Unit with this rule with an online Portal Generator may also place an additional Portal Token within 5” of itself. If it does so, any Khepri SRS Tokens launched during that Operations Step by the Unit may be placed within 20” of any Portal Token in the Play Area.</description>
     </rule>
     <rule id="52c5-a8f6-6309-f95c" name="Cloud Dive [3.06]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>Aerial Units with this rule may be deployed at the start of an Encounter in a Cloud Dive. Aerial Units that do so are deployed at the same time as Vanguard moves and may be deployed anywhere at least 20” from the enemy deployment zone. Aerial Units performing a Cloud Dive are Obscured until the end of that Round.</description>
     </rule>
-    <rule id="f151-e7cf-bb48-e823" name="Cor Caroli (3.04)" publicationId="d854-a2d6-3d52-44c4" hidden="false">
-      <description>Models in this Unit with this rule ignores the effects of the Emergency Condition but counts as having the Disorder Level. Models in the Unit support Assaults with +3 AD to Fray. Models with this rule may support an assault when they are within 3” of the Assaulting model.</description>
+    <rule id="f151-e7cf-bb48-e823" name="Cor Caroli [3.06]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+      <description>Models in this Unit with this rule ignores the effects of the Emergency Condition but counts as having the Disorder Level. Models with this rule may re-roll their Blank dice results in Assaults. While supporting an Assault, Models in this Unit within 3” of the Assaulting Model gain +3 AD.</description>
     </rule>
     <rule id="dcc2-5c28-d9d5-d220" name="Ferik Escort Skiff (3.04)" publicationId="d854-a2d6-3d52-44c4" hidden="false">
       <description>The Ferik Skiff Escort is an Escort Token. They are still removed if an Escorted Unit would suffer a Catastrophic Explosion but doesn’t due to Orichalcite Construction.</description>
     </rule>
-    <rule id="a0e5-69d2-4798-ec1d" name="Ikili Hull (3.04)" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+    <rule id="a0e5-69d2-4798-ec1d" name="Ikili Hull [3.06]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
       <description>Models in this Unit with this rule have a catamaran design, common in the Sultanate. Models in this Unit with this rule gain +3 Speed during its Movement Step provided that it makes no turns. Furthermore, the duplication of parts across the hulls allows for easier repairs. This Unit may add an additional Action Die to its Repair Test. This is in addition to those given by the Model’s Mass. Furthermore, when making a Jury-Rigged Repair on a Model with this rule, a Hit or Heavy Hit is treated like an Exploding Hit.</description>
     </rule>
     <rule id="ebed-2a52-5ef9-5148" name="Two per Force (3.04)" publicationId="d854-a2d6-3d52-44c4" hidden="false">
       <description>You may only include up to two of this Unit in a Force.</description>
     </rule>
-    <rule id="797a-6783-86f3-738a" name="Orichalcite Construction (3.04)" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+    <rule id="797a-6783-86f3-738a" name="Orichalcite Construction [3.06]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
       <description>Battle-Ready Models in this Unit with this rule do not suffer a Catastrophic Explosion if the Attack exceeds the value of their Citadel by double or more. Crippled Models with this rule or Models with this rule suffering multiples of the same Critical Damage results suffer Catastrophic Explosions as normal.</description>
     </rule>
-    <rule id="9c22-14a9-21ca-d77f" name="Skiff Dock (3.04)" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+    <rule id="9c22-14a9-21ca-d77f" name="Skiff Dock [3.06]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
       <description>Ferik Skiff Escorts in Units within 10” of one or more Models in this Unit with this rule provide +2 to Attack Action Dice Pools at Point Blank Range rather than the usual +1. Furthermore, roll an Action Die each time a Ferik Skiff Escort Token is removed from a Unit within 10” of one or more Models with this rule (including if there are still Tokens present when a Unit with Skiff Escorts is destroyed). On a roll of a Counter or Heavy Counter the Skiff Escort Token is not removed. Instead, it is placed in Base contact with either Models with this rule, the Unit the Escort Token was originally lost from or another Friendly Model within 7” of this Unit.�</description>
     </rule>
-    <rule id="0621-51de-26b8-202f" name="The Sultan’s Hammer [3.05]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+    <rule id="0621-51de-26b8-202f" name="The Sultan’s Hammer [3.06]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
       <description>Provided the Model with this rule declares all its Attacks with the Aerial Quality against a single Initial Target, each weapon on this Model with the Aerial Quality gains the High Velocity Quality and receives +1 Action Dice for that Shooting Step.</description>
     </rule>
     <rule id="7459-7c35-54e7-3655" name="The Sultan’s Monitor [3.05]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
       <description>Each Round, a single friendly Unit (excluding this Unit) within 15&quot; may remove all Disorder Levels from itself at the start of their Activation.</description>
     </rule>
-    <rule id="9702-61f2-9adf-2829" name="Portal Focus (3.04)" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+    <rule id="9702-61f2-9adf-2829" name="Portal Focus [3.06]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
       <description>A Unit with this rule may, as a Special Operations Action, place a 40mm Portal Token within 20” of itself. During the Round, when this Unit has a friendly Portal Token within 4” and makes an Attack with the Bomb or Broadside Qualities or an Assault, this Unit may measure the range of the Attack or Assault as though being made from any other friendly Portal Token. This Unit still requires Line of Sight to the Initial Target, but the weapon must replace their listed Fire Arc with a 360-degree Fire Arc if used with a Portal. Escort Tokens cannot provide a benefit to this Attack. Remove a friendly Portal Token from the Play Area once an Action has been taken. This does not have to be the Portal used for that Action. Any remaining Portal Tokens are removed from the Play Area at the start of the Maintenance Step.</description>
     </rule>
     <rule id="8d45-38e1-cce2-fbf2" name="Triangulated Solution [3.05]" publicationId="e6a1-85d3-8979-7880" hidden="false">
@@ -680,7 +680,7 @@ Turbo Encabulation rolls may not be re-rolled or otherwise manipulated except by
     <rule id="d365-8bce-3797-d732" name="Familiar Locale (3.04)" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>At the start of the Encounter, after terrain placement but before deployment, the Player may remove and replace a single piece of Terrain. The Terrain selected cannot contain an Objective or be Impassible Terrain and may have a maximum Mass of 5. The Terrain cannot be placed in a deployment zone and must be placed in Open Water at least 3” from any other Terrain. Furthermore, the deployment zone for a Player that has one or more of these Battlefleets may be increased by a total of +1” towards the opposing Player’s deployment zone.</description>
     </rule>
-    <rule id="3348-f492-40ac-7e07" name="Orichalcite Crafted (3.04)" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+    <rule id="3348-f492-40ac-7e07" name="Orichalcite Crafted [3.06]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
       <description>Mass 1 Models in this Unit with this rule are not automatically destroyed if their Citadel is exceeded by an Attack. They suffer critical damage instead.</description>
     </rule>
     <rule id="904b-b97c-9150-5ada" name="Decentralised Systems [3.05]" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
@@ -803,20 +803,29 @@ Turbo Encabulation rolls may not be re-rolled or otherwise manipulated except by
     <rule id="0006-60f1-1ca3-b204" name="Preliminary Survey [3.06]" publicationId="e6a1-85d3-8979-7880" hidden="false">
       <description>At the start of the Encounter, when revealing the top card from their V&amp;V deck to determine deployment, any Player with one or more Battlefleets with this rule in their Force may draw a second card in place of the first card revealed if they wish. They may only do this once per Encounter and must accept this second card. If both players have Battlefleets with this rule, then neither may draw a second card.</description>
     </rule>
-    <rule id="c7e0-dffa-47c5-ffb2" name="Crimson Privateers [3.05]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+    <rule id="c7e0-dffa-47c5-ffb2" name="Crimson Privateers [3.06]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
       <description>This Model ignores the Counter Assault result when making an Assault. Furthermore, the Assault by this Model gains the Hazardous Quality. This rule does not apply to Supporting Assaults.</description>
     </rule>
-    <rule id="2dad-7a98-4ebc-75d6" name="Janissary Assault Bay [3.05]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+    <rule id="2dad-7a98-4ebc-75d6" name="Janissary Assault Bay [3.06]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
       <description>This Model ignores the Counter Assault result when making an Assault. Furthermore, the Assault by this Model gains the Devastating Quality. This rule does not apply to Supporting Assaults.</description>
     </rule>
-    <rule id="fd53-7d70-2295-859c" name="Cruor [3.05]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
-      <description>Once per Activation, this Unit may make the following Valour Effect provided the Valour card discarded has a value of at least 40 (including by Valorous Conduct). Target a single enemy Unit within 10”, all Models in the Unit immediately gain a level of Disorder.</description>
+    <rule id="fd53-7d70-2295-859c" name="Cruor [3.06]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+      <description>Once per Activation, this Unit may make the following Valour Effect provided the Valour card discarded has a value of at least 40 (including by Valorous Conduct). All Models in all enemy Units within 7” immediately gain a level of Disorder.</description>
     </rule>
-    <rule id="9d00-3fe4-a530-c93b" name="Soul Gnawing Dirge" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+    <rule id="9d00-3fe4-a530-c93b" name="Soul Gnawing Dirge [3.06]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
       <description>Enemy Models within 7” of one or more Models with this rule have -2 to their Citadel Attribute.</description>
     </rule>
-    <rule name="Deep Dive [3.05]" hidden="false" id="32b6-97c2-a527-a1f9" publicationId="129d-da97-caec-1ddd">
-      <description>In the Special Operations phase of the round, while Battle Ready and in Open Water, this Unit may declare it is going to Deep Dive. For the remainder of that Round, the Unit doubles its Drift Movement but cannot make any other Movement. The Unit also cannot launch SRS or make any Action that does not have the Submerged Quality. Furthermore, while it carries out a Deep Dive Special Operation, this Unit cannot be the Initial Target of any Action that does not have the Submerged Quality. A Unit cannot be part of an Attached Unit if it carries out a Deep Dive Special Operation, unless both Units have this rule. A Unit cannot carry out a Deep Special Operation if it has already done so the previous Round.</description>
+    <rule name="Deep Dive [3.06]" hidden="false" id="32b6-97c2-a527-a1f9" publicationId="129d-da97-caec-1ddd">
+      <description>In the Special Operations phase of the round, while Battle Ready and in Open Water, this Unit may declare it is going to Deep Dive. For the remainder of that Round, the Unit doubles its Drift Movement but cannot make any other Movement. The Unit also cannot launch SRS or make any Action that does not have the Submerged Quality. Furthermore, while it carries out a Deep Dive Special Operation, this Unit cannot be the Initial Target of any Action that does not have the Submerged Quality. A Unit cannot be part of an Attached Unit if it carries out a Deep Dive Special Operation, unless both Units have this rule. A Unit cannot carry out a Deep Dive Special Operation if it has already done so the previous Round.</description>
+    </rule>
+    <rule name="Cor Carolus Icon [3.06]" hidden="false" id="5cc3-215b-4d38-3609" publicationId="d854-a2d6-3d52-44c4">
+      <description>Models in this Unit may not make Assaults. Models in this Unit with this rule ignores the effects of the Emergency Condition but counts as having the Disorder Level. Any friendly Model within 10” of a Model with this rule (but not including any Model with this rule) may either reduce a single Disorder Level or may re-roll all their Action Die from an Action once during their Activation.</description>
+    </rule>
+    <rule name="Limited Generation [3.06]" hidden="false" id="f581-17a1-44d1-abcf" publicationId="d854-a2d6-3d52-44c4">
+      <description>This Unit may use one Generator type per Round.</description>
+    </rule>
+    <rule name="Air-Razor Munitions [3.06]" id="fd1c-f38c-6317-138a" hidden="false" publicationId="e6a1-85d3-8979-7880">
+      <description>When making Attacks with the Broadside Quality against Aerial Units, this Unit gains the Sustained (Aerial Units) Quality.</description>
     </rule>
   </sharedRules>
 </catalogue>

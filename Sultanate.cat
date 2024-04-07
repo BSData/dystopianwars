@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7b3f-8541-c5c8-b666" name="Sultanate v3.05" revision="12" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
-  <comment>ORBAT 3.04 (published 18/10/2023)</comment>
+<catalogue id="7b3f-8541-c5c8-b666" name="Sultanate v3.06" revision="13" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+  <comment>ORBAT 3.06 (published 07/02/2024)</comment>
   <readme>Review 0.03.a0: First version published
 Review 1.01.a0: Second release
 Review 1.02.b0: Third release
@@ -12,7 +12,8 @@ Review 3.03.03: correction suggested in discord 3.03 (date 2023-02-06)
 Review 3.04.00: update to ORBAT 3.04 (date 2023-08-17)
 Review 3.04.01: update to ORBAT 3.04 last release (date 2023-09-01 rev2)
 Review 3.05.00: update to ORBAT 3.05 last release (date 2023-10-19) rev2
-Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)</readme>
+Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
+Review 3.06.00: update to ORBAT 3.06</readme>
   <categoryEntries>
     <categoryEntry id="24d7-a2ac-a5bb-a77d" name="Temir Class" publicationId="d854-a2d6-3d52-44c4" hidden="false"/>
     <categoryEntry id="9c13-9a46-5ee3-4981" name="Sultanate" publicationId="d854-a2d6-3d52-44c4" hidden="false"/>
@@ -86,6 +87,7 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
     <categoryEntry id="0824-773a-ce93-7eb9" name="Qualor-class" publicationId="d854-a2d6-3d52-44c4" hidden="false"/>
     <categoryEntry id="e64d-72dc-2bd8-9391" name="Sultanate Main Fleet" hidden="false"/>
     <categoryEntry id="298e-e364-7701-8899" name="Faizel" publicationId="d854-a2d6-3d52-44c4" hidden="false"/>
+    <categoryEntry id="5bb5-4129-acb5-d9f2" name="Scout Skimmer" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="1d1b-a7dc-5580-855f" name="Sultanate Faction Battlefleet (Main)" publicationId="d854-a2d6-3d52-44c4" hidden="false">
@@ -899,7 +901,7 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
         <constraint field="forces" scope="roster" value="0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="95ac-cd0a-aaf5-a8c3" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="1fe5-9045-9dbb-f845" name="Strategic Reserve (3.04)" hidden="false" targetId="3f21-1511-2bff-8d3b" type="rule">
+        <infoLink id="1fe5-9045-9dbb-f845" name="Preliminary Survey [3.06]" hidden="false" targetId="0006-60f1-1ca3-b204" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false"/>
           </modifiers>
@@ -2275,7 +2277,7 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d72f-4d4b-e248-102b" name="Kopesh Fast Skimmer Squadron" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="d72f-4d4b-e248-102b" name="Kopesh Scout Skimmer Squadron" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -2971,7 +2973,7 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
     <selectionEntry id="f570-8d39-8d98-7837" name="Faizel Osman, the Sultan&apos;s Sircan" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="91d7-65e7-94d1-0d50" name="Faizel Osman, the Sultan&apos;s Sircan" publicationId="d854-a2d6-3d52-44c4" hidden="false">
-          <description>All Sultanate Models in your Force gain +1 to Fray. If the Model has the Order Trait it gains +2 to Fray instead. Order Battlefleets s are Main Battlefleets in a Force with Faizel Osman as its Patron.</description>
+          <description>All Models with the Cor Caroli rule in your Force gain +1 to Fray. Order Battlefleets are Main Battlefleets in a Force with Faizel Osman as its Patron.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -3014,6 +3016,11 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="remove" value="03eb-089a-0c01-5751" field="category">
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="force" childId="05bf-6a5e-ead2-512c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -3316,6 +3323,7 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b7d-3a94-5f90-9f85" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f921-74af-de51-5d2a" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="206a-e800-c094-f4ef" type="instanceOf"/>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="1d1b-a7dc-5580-855f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3969,7 +3977,15 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
         <constraint field="selections" scope="parent" value="4" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a203-65de-3ea7-ef98" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="3f13-7953-7ea4-5a91" name="Carolus" hidden="false" targetId="5f27-d832-5cb3-e31e" type="profile"/>
+        <infoLink id="3f13-7953-7ea4-5a91" name="Carolus" hidden="false" targetId="5f27-d832-5cb3-e31e" type="profile">
+          <modifiers>
+            <modifier type="set" value="7" field="4c54-804a-8993-7325">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f570-8d39-8d98-7837" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="1716-c06b-4fdb-daab" name="Agile (3.04)" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
         <infoLink id="4fe5-3943-e5e4-df6b" name="Cor Caroli (3.04)" hidden="false" targetId="f151-e7cf-bb48-e823" type="rule"/>
         <infoLink id="ceae-1330-688b-0668" name="Elite Crew (3.04)" hidden="false" targetId="4f7a-f51a-a60e-e6ba" type="rule"/>
@@ -4007,12 +4023,12 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
         <infoLink id="a67d-ab8b-c289-0588" name="Hashashin" hidden="false" targetId="18fb-8f1c-9a38-6871" type="profile"/>
         <infoLink id="0061-8106-f18d-ba0d" name="Agile (3.04)" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
         <infoLink id="9d1e-fd07-2dd5-63ef" name="Armoured Decking (3.04)" hidden="false" targetId="d894-52c8-4b18-f9f5" type="rule"/>
-        <infoLink id="5861-9d2d-0549-ba46" name="Shadow Hunter (3.04)" hidden="false" targetId="741b-a6ce-dbe7-9409" type="rule"/>
         <infoLink id="870b-9613-011b-17b9" name="Gun Runner (3.04)" hidden="false" targetId="9f05-9e27-c658-e49f" type="rule"/>
+        <infoLink name="Powerslide [3.06]" hidden="false" id="8768-74fc-5160-58b0" targetId="cd09-dbc0-dee4-b921" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="15fa-b805-c100-6e69" name="Sultanate�" hidden="false" targetId="9c13-9a46-5ee3-4981" primary="true"/>
-        <categoryLink id="50c9-2b8f-5ecf-acea" name="Destroyer" hidden="false" targetId="63a3-004a-8e9f-2eb4" primary="false"/>
+        <categoryLink name="Fast Destroyer" hidden="false" id="c3da-190f-43f-3c2b" targetId="5ff2-dbb6-8bd2-a160" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="0ee7-7720-005f-5f88" name="Main Weapon" hidden="false" collective="false" import="true">
@@ -4338,8 +4354,8 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
     </selectionEntry>
     <selectionEntry id="e3df-1720-fdc8-abb4" name="Temir" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f25-68f5-f673-37f8" type="min"/>
-        <constraint field="selections" scope="parent" value="8" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9e5f-2523-214e-7b18" type="max"/>
+        <constraint field="selections" scope="parent" value="4" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f25-68f5-f673-37f8" type="min"/>
+        <constraint field="selections" scope="parent" value="6" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9e5f-2523-214e-7b18" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="0cf9-0312-53f6-6af0" name="Temir" hidden="false" targetId="d277-7cf6-bd96-289b" type="profile"/>
@@ -5551,7 +5567,15 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a77-9b28-b19e-d84c" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="af61-199f-20dd-618d" name="Retaj" hidden="false" targetId="3a62-ea9f-4ec9-9e40" type="profile"/>
+        <infoLink id="af61-199f-20dd-618d" name="Retaj" hidden="false" targetId="3a62-ea9f-4ec9-9e40" type="profile">
+          <modifiers>
+            <modifier type="set" value="15/15" field="4c54-804a-8993-7325">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f570-8d39-8d98-7837" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="3af7-5c0c-223b-9cfb" name="Agile (3.04)" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
         <infoLink id="e888-d9bf-fbc8-4ce2" name="Armoured Decking (3.04)" hidden="false" targetId="d894-52c8-4b18-f9f5" type="rule"/>
         <infoLink id="02a1-664a-afc5-686f" name="Cor Caroli (3.04)" hidden="false" targetId="f151-e7cf-bb48-e823" type="rule"/>
@@ -6531,6 +6555,11 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Torpedo Salvo" hidden="false" id="ba41-97a1-ae85-5303" collective="false" targetId="8ef1-9bd8-9674-29cd" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" value="dbb4-72d5-bceb-70b3" field="category"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="320"/>
@@ -7238,11 +7267,13 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
         <infoLink id="2af5-9fe1-fb21-fa9c" name="Kopesh" hidden="false" targetId="5aa6-c6ee-6cf9-e716" type="profile"/>
         <infoLink id="71c9-803b-f20d-7ab0" name="Mine Sweeper (3.04)" hidden="false" targetId="3c38-dac5-4a88-5358" type="rule"/>
         <infoLink id="a038-193b-7e69-3f0a" name="Shadow Hunter (3.04)" hidden="false" targetId="741b-a6ce-dbe7-9409" type="rule"/>
-        <infoLink id="705b-dd19-1b05-e67b" name="Vanguard (3.04)" hidden="false" targetId="f721-8318-3875-0140" type="rule"/>
+        <infoLink id="705b-dd19-1b05-e67b" name="Hydrophone Relay [3.06]" hidden="false" targetId="1b80-20ba-6dae-7094" type="rule"/>
+        <infoLink id="6b2d-15ca-60d2-565e" name="Powerslide [3.06]" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
+        <infoLink id="cd1a-3f7e-c130-8226" name="Vanguard [3.06]" hidden="false" targetId="f721-8318-3875-0140" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3931-ac84-1c05-bdde" name="Sultanate" hidden="false" targetId="9c13-9a46-5ee3-4981" primary="true"/>
-        <categoryLink id="e93c-5429-0cf2-6e7d" name="Fast Skimmer" hidden="false" targetId="8383-53fc-d230-487a" primary="false"/>
+        <categoryLink name="Scout Skimmer" hidden="false" id="8f93-a14d-a95e-c65" targetId="5bb5-4129-acb5-d9f2" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="a2a1-3717-e479-1b92" name="Main Weapon" hidden="false" collective="false" import="true">
@@ -7332,7 +7363,7 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="38"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="43"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -7760,7 +7791,7 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="122"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="126"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -7892,9 +7923,14 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
             <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Torpedo Salvo" hidden="false" id="fe71-b056-b174-866b" collective="false" targetId="8ef1-9bd8-9674-29cd" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" value="dbb4-72d5-bceb-70b3" field="category"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="120"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="130"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -8087,6 +8123,36 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9ae6-177d-d3b0-9762" type="max"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Heavy Rocket Battery" hidden="false" id="d764-5d5-de91-50b0" collective="false" targetId="65b3-d9a8-e0a3-a028" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" value="db84-bb03-d026-c3a5" field="category"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="533b-6228-a196-946e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="D-Cannon Battery" hidden="false" id="6140-df6e-9ac1-2226" collective="false" targetId="10f7-c717-2887-f9ca" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" value="db84-bb03-d026-c3a5" field="category"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f7e6-8d45-f879-d75f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" hidden="false" id="1601-6579-e6eb-4d0c" typeId="7c9b-6b09-b5ac-2249" value="4"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Particle Beamer" hidden="false" id="dd4c-7890-a479-7826" collective="false" targetId="5dcb-4100-3eab-e801" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="add" value="db84-bb03-d026-c3a5" field="category"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="fc42-f733-2abf-535" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" hidden="false" id="d5a2-5ff6-8b71-85fc" typeId="7c9b-6b09-b5ac-2249" value="7"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -8135,7 +8201,7 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="35"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="38"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -8178,6 +8244,7 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink name="Orichalcite Construction [3.06]" hidden="false" id="f873-da97-cab7-b583" targetId="797a-6783-86f3-738a" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="85e1-d036-1108-4998" name="Sultanate" hidden="false" targetId="9c13-9a46-5ee3-4981" primary="true"/>
@@ -8325,15 +8392,14 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
         <infoLink id="aad4-624f-8763-8e15" name="Agile (3.04)" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
         <infoLink id="c626-59d5-b77a-d9f1" name="Armoured Decking (3.04)" hidden="false" targetId="d894-52c8-4b18-f9f5" type="rule"/>
         <infoLink id="bdb4-63ac-8310-9119" name="Celerity [3.05]" hidden="false" targetId="e0a4-52b6-676c-9b6d" type="rule"/>
-        <infoLink id="dcde-dd85-8a66-94ad" name="Inspirational (3.04)" hidden="false" targetId="b48d-b4e0-19e8-d85a" type="rule"/>
         <infoLink id="5972-61ab-0c1d-6a5c" name="Strategic Withdrawal (3.04)" hidden="false" targetId="950e-974b-d566-0e66" type="rule"/>
         <infoLink id="d77a-dc38-0e18-53f5" name="Colossus (3.04)" hidden="false" targetId="f9be-f519-a9c2-f311" type="rule"/>
-        <infoLink id="ec7a-3554-1b38-5b15" name="Cor Caroli (3.04)" hidden="false" targetId="f151-e7cf-bb48-e823" type="rule"/>
-        <infoLink id="3a1c-7f48-e3fa-bd6d" name="Elite Crew (3.04)" hidden="false" targetId="4f7a-f51a-a60e-e6ba" type="rule"/>
         <infoLink id="2cb8-7ab4-f690-852e" name="Powerslide (3.04)" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
         <infoLink id="8ca6-9629-1d96-9b3d" name="Unexpected Arrival (3.04)" hidden="false" targetId="f4aa-042e-34e5-1938" type="rule"/>
         <infoLink id="9a45-ad8e-27b5-3a3a" name="Vigour (3.04)" hidden="false" targetId="91f7-3138-f1c6-4770" type="rule"/>
         <infoLink id="b1b0-fc20-4ff0-82f1" name="Chaska" hidden="false" targetId="27ce-8bc7-7c97-9a8d" type="profile"/>
+        <infoLink name="Cor Carolus Icon [3.06]" hidden="false" id="197d-693f-5756-3c81" targetId="5cc3-215b-4d38-3609" type="rule"/>
+        <infoLink name="Limited Generation [3.06]" hidden="false" id="4700-d6cf-7c1-a8af" targetId="f581-17a1-44d1-abcf" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9b70-3e54-2f52-7a4a" name="Vitruvian Colossus" hidden="false" targetId="8ecc-741e-13ac-3fd8" primary="false"/>
@@ -8350,16 +8416,22 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
             <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Mirage generator" hidden="false" id="a4c2-f340-5446-78a0" collective="false" targetId="163e-8002-bc82-d20f" type="selectionEntry">
+          <costs>
+            <cost name="Points" hidden="false" id="7a70-2f58-b115-e9b8" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Portal generator" hidden="false" id="30b5-2eff-6a6-9c2d" collective="false" targetId="74b0-d10f-4a04-5321" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="160"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="165"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3f3c-df85-cd90-0071" name="Hırka" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9a18-5798-56e6-dbcd" type="min"/>
-        <constraint field="selections" scope="parent" value="5" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c8a0-d614-6c56-c2c5" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9a18-5798-56e6-dbcd" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c8a0-d614-6c56-c2c5" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="5126-1e76-9289-a328" name="Agile (3.04)" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
@@ -8380,11 +8452,6 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
         </entryLink>
-        <entryLink id="2241-0a5a-e38b-aa5a" name="Gun Battery" hidden="false" collective="false" import="true" targetId="bc09-4e9a-a2ad-3d68" type="selectionEntry">
-          <modifiers>
-            <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
-          </modifiers>
-        </entryLink>
         <entryLink id="1356-319f-a548-012e" name="Aerial Torpedo Salvo" hidden="false" collective="false" import="true" targetId="09d0-01c4-9075-9480" type="selectionEntry">
           <modifiers>
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
@@ -8395,6 +8462,46 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="52"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Main Weapon" hidden="false" id="9c3b-f443-8c7d-bc79" collective="false" import="true" defaultSelectionEntryId="491-6c95-3ae6-579d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="47de-9fcc-3717-6ae" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="496-e914-6ac-3288" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Aetheric Lance" hidden="false" id="9c6-ac86-f170-8efd" collective="false" targetId="e3d2-a74b-69dd-e97a" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" value="db84-bb03-d026-c3a5" field="category"/>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3c70-1cad-3649-62c9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Gun Battery" hidden="false" id="491-6c95-3ae6-579d" collective="false" targetId="e32f-eb1d-5c03-b61c" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" value="db84-bb03-d026-c3a5" field="category"/>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a163-3257-6ffd-17f6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Rocket Battery" hidden="false" id="c765-fad9-5de2-450" collective="false" targetId="148c-d625-907c-1bf0" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" value="db84-bb03-d026-c3a5" field="category"/>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="add3-432d-9b0c-b955" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="703c-73db-79d6-f000" name="Nasr" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -8406,7 +8513,7 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
         <infoLink id="9b87-7656-3eac-0127" name="Linear Dash (3.04)" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
         <infoLink id="2e94-d923-aec4-b5c6" name="Powerslide (3.04)" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
         <infoLink id="0960-67c2-a282-45c6" name="Skyfire (3.04)" hidden="false" targetId="1083-2af1-7bfc-7a55" type="rule"/>
-        <infoLink id="9c7c-ce68-02ed-d3ca" name="Vulnerable Stern (3.04)" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="9c7c-ce68-02ed-d3ca" name="Orichalcite Construction (3.04)" hidden="false" targetId="797a-6783-86f3-738a" type="rule"/>
         <infoLink id="fe10-5763-145f-abb4" name="Nasr" hidden="false" targetId="9cc1-8cb2-dece-7561" type="profile"/>
         <infoLink id="aecd-6582-f8a7-7fa3" name="Luminiferous Defences (3.04)" hidden="false" targetId="5a79-12a4-77b3-9619" type="rule">
           <modifiers>
@@ -8421,6 +8528,7 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink name="Vulnerable Stern [3.06]" hidden="false" id="44d3-9e83-c929-ca35" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9059-da4a-83e9-fdbc" name="Sultanate" hidden="false" targetId="9c13-9a46-5ee3-4981" primary="true"/>
@@ -8807,7 +8915,15 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
         <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="71db-d23d-92e6-c253" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="e494-78a3-0496-174f" name="Lesath" hidden="false" targetId="d59c-0b45-6dbf-b74e" type="profile"/>
+        <infoLink id="e494-78a3-0496-174f" name="Lesath" hidden="false" targetId="d59c-0b45-6dbf-b74e" type="profile">
+          <modifiers>
+            <modifier type="set" value="10/10" field="4c54-804a-8993-7325">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f570-8d39-8d98-7837" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="27ed-388d-0447-29ef" name="Agile (3.04)" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
         <infoLink id="9c7b-e80a-d7d8-f2aa" name="Armoured Decking (3.04)" hidden="false" targetId="d894-52c8-4b18-f9f5" type="rule"/>
         <infoLink id="74f0-d0aa-d5c2-2fd9" name="Cor Caroli (3.04)" hidden="false" targetId="f151-e7cf-bb48-e823" type="rule"/>
@@ -9242,9 +9358,14 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
             <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Torpedo Salvo" hidden="false" id="58e5-5996-1c64-7085" collective="false" targetId="8ef1-9bd8-9674-29cd" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" value="dbb4-72d5-bceb-70b3" field="category"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="335"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="345"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -9433,9 +9554,14 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Torpedo Salvo" hidden="false" id="d2bf-d2d-1382-ec72" collective="false" targetId="8ef1-9bd8-9674-29cd" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" value="dbb4-72d5-bceb-70b3" field="category"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="335"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="345"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -9663,6 +9789,7 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
         <infoLink id="c5df-947b-625f-a659" name="Lyceum" hidden="false" targetId="6de4-5b43-0788-b170" type="profile">
           <modifiers>
             <modifier type="set" field="name" value="Badroulbadour"/>
+            <modifier type="set" value="15/14" field="c141-3bcf-41f5-6c24"/>
           </modifiers>
         </infoLink>
         <infoLink id="1579-085d-e9bf-b70d" name="Flak Barrage (3.04)" hidden="false" targetId="7b67-714d-bb2b-6297" type="rule">
@@ -9738,8 +9865,8 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
         </entryLink>
       </entryLinks>
       <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="370"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="365"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a4a2-68dd-faf6-19f4" name="Lotan" publicationId="908d-6feb-2e9e-843b" hidden="false" collective="false" import="true" type="model">
@@ -10056,6 +10183,7 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
         <infoLink id="b33d-c2da-954c-223d" name="Cloud Dive (3.04)" hidden="false" targetId="52c5-a8f6-6309-f95c" type="rule"/>
         <infoLink id="6b87-3180-8ae6-de39" name="Janissary Assault Bay [3.05]" hidden="false" targetId="2dad-7a98-4ebc-75d6" type="rule"/>
         <infoLink id="7603-7ff0-e4b9-956b" name="Linear Dash (3.04)" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
+        <infoLink name="Vulnerable Stern [3.06]" hidden="false" id="3da0-6f07-c1b5-f0b8" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3dec-678f-25df-67ec" name="Sultanate" hidden="false" targetId="9c13-9a46-5ee3-4981" primary="true"/>
@@ -10173,14 +10301,13 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
         <infoLink id="11fc-13c2-091f-f786" name="Agile (3.04)" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
         <infoLink id="bdbe-3516-dbcb-d699" name="Armoured Decking (3.04)" hidden="false" targetId="d894-52c8-4b18-f9f5" type="rule"/>
         <infoLink id="c882-b2b2-d7b0-786a" name="Cruor [3.05]" hidden="false" targetId="fd53-7d70-2295-859c" type="rule"/>
-        <infoLink id="ce00-4654-3bb8-176a" name="Inspirational (3.04)" hidden="false" targetId="b48d-b4e0-19e8-d85a" type="rule"/>
         <infoLink id="5c72-0d99-041c-d246" name="Portal Mastery (3.04)" hidden="false" targetId="db90-0b63-d0f9-5222" type="rule"/>
         <infoLink id="b741-470c-c6d6-f20d" name="Colossus (3.04)" hidden="false" targetId="f9be-f519-a9c2-f311" type="rule"/>
-        <infoLink id="2634-07db-27c6-fce3" name="Cor Caroli (3.04)" hidden="false" targetId="f151-e7cf-bb48-e823" type="rule"/>
-        <infoLink id="9933-2132-d04f-2171" name="Elite Crew (3.04)" hidden="false" targetId="4f7a-f51a-a60e-e6ba" type="rule"/>
         <infoLink id="e710-028f-ef48-803c" name="Powerslide (3.04)" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
-        <infoLink id="fb22-4d36-894f-a10e" name="Soul Gnawing Dirge" hidden="false" targetId="9d00-3fe4-a530-c93b" type="rule"/>
+        <infoLink id="fb22-4d36-894f-a10e" name="Soul Gnawing Dirge [3.06]" hidden="false" targetId="9d00-3fe4-a530-c93b" type="rule"/>
         <infoLink id="8c96-228a-f69e-505f" name="Qualor" hidden="false" targetId="18d4-e728-5686-0af1" type="profile"/>
+        <infoLink name="Cor Carolus Icon [3.06]" hidden="false" id="1788-e64c-5bb9-8c2f" targetId="5cc3-215b-4d38-3609" type="rule"/>
+        <infoLink name="Limited Generation [3.06]" hidden="false" id="f41d-8a3e-d018-19b2" targetId="f581-17a1-44d1-abcf" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="46e7-415b-e534-63f5" name="Vitruvian Colossus" hidden="false" targetId="8ecc-741e-13ac-3fd8" primary="false"/>
@@ -10197,6 +10324,11 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
           </constraints>
         </entryLink>
         <entryLink id="9d23-3d72-7f06-a4f9" name="Portal generator" hidden="false" collective="false" import="true" targetId="74b0-d10f-4a04-5321" type="selectionEntry"/>
+        <entryLink import="true" name="Mirage generator" hidden="false" id="cff5-c0e8-ddcd-96bd" collective="false" targetId="163e-8002-bc82-d20f" type="selectionEntry">
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="175"/>
@@ -10284,14 +10416,17 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
           <entryLinks>
             <entryLink id="bf3e-a3ae-a055-e2ae" name="Temir" hidden="false" collective="false" import="true" targetId="e3df-1720-fdc8-abb4" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="9e5f-2523-214e-7b18" value="2"/>
+                <modifier type="set" field="9e5f-2523-214e-7b18" value="4"/>
               </modifiers>
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="20"/>
             <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b05d-77b8-bcbf-d2db" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry id="af69-3537-a0ad-ef37" name="Pasha Light Cruiser" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="unit">
           <categoryLinks>
@@ -10692,10 +10827,10 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
     <profile id="24a4-9e2d-89cc-eb6e" name="Abydos" publicationId="d854-a2d6-3d52-44c4" page="8" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model">
       <characteristics>
         <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">4/4</characteristic>
-        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">3/3</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">5/4</characteristic>
         <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">3/3</characteristic>
-        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">7/7</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">14/13</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">8/7</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">15/13</characteristic>
         <characteristic name="ADV" typeId="6428-9828-bb2e-f923">5/3</characteristic>
         <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">5/3</characteristic>
         <characteristic name="Fray" typeId="4c54-804a-8993-7325">12/11</characteristic>
@@ -10757,7 +10892,7 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
     <profile id="5aa6-c6ee-6cf9-e716" name="Kopesh" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model">
       <characteristics>
         <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">1</characteristic>
-        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">12</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">10</characteristic>
         <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">10</characteristic>
         <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">5</characteristic>
         <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">10</characteristic>
@@ -10854,7 +10989,7 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
         <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">14/13</characteristic>
         <characteristic name="ADV" typeId="6428-9828-bb2e-f923">2/1</characteristic>
         <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">2/1</characteristic>
-        <characteristic name="Fray" typeId="4c54-804a-8993-7325">8/6</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">0/0</characteristic>
         <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">5/2</characteristic>
       </characteristics>
     </profile>
@@ -10915,8 +11050,8 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
         <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">4/4</characteristic>
         <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">5/4</characteristic>
         <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">3/3</characteristic>
-        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">7/7</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">14/13</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">8/7</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">15/13</characteristic>
         <characteristic name="ADV" typeId="6428-9828-bb2e-f923">5/3</characteristic>
         <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">5/3</characteristic>
         <characteristic name="Fray" typeId="4c54-804a-8993-7325">12/11</characteristic>
@@ -10928,8 +11063,8 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
         <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">4/4</characteristic>
         <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">5/4</characteristic>
         <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">3/3</characteristic>
-        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">7/7</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">13/12</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">8/7</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">14/13</characteristic>
         <characteristic name="ADV" typeId="6428-9828-bb2e-f923">5/3</characteristic>
         <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">5/3</characteristic>
         <characteristic name="Fray" typeId="4c54-804a-8993-7325">12/11</characteristic>
@@ -10941,9 +11076,9 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
         <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">4/4</characteristic>
         <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">6/5</characteristic>
         <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">5/4</characteristic>
-        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">7/6</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">14/11</characteristic>
-        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">7/6</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">7/7</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">14/13</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">8/7</characteristic>
         <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">5/3</characteristic>
         <characteristic name="Fray" typeId="4c54-804a-8993-7325">10/9</characteristic>
         <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">7/6</characteristic>
@@ -11023,7 +11158,7 @@ Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
         <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">14/13</characteristic>
         <characteristic name="ADV" typeId="6428-9828-bb2e-f923">2/1</characteristic>
         <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">2/1</characteristic>
-        <characteristic name="Fray" typeId="4c54-804a-8993-7325">8/6</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">0/0</characteristic>
         <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">5/2</characteristic>
       </characteristics>
     </profile>

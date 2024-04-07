@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f69c-988c-fae3-e664" name="Generator" revision="15" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="f69c-988c-fae3-e664" name="Generator" revision="16" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Review 1.00.00: generator collection
 Review 3.04.00: all generator included and updated
 Review 3.04.01: all generator included and updated. added 3.03 Orbat change
@@ -14,7 +14,8 @@ Review 3.05.01: update for 3.05 Orbats Jan&apos;24 (to be used with New Recruit)
 Review 3.06.00: start of 3.06 updates
 Review 3.06.01: Crown 3.05a data (rev1)
 Review 3.06.02: Alliance 3.05
-Review 3.06.03: Empire 3.05</readme>
+Review 3.06.03: Empire 3.05
+Review 3.06.03: Sultanate / Union 3.06</readme>
   <categoryEntries>
     <categoryEntry id="0c85-39c7-9145-efeb" name="1" hidden="true"/>
     <categoryEntry id="8901-cc02-f55e-2ee5" name="2" hidden="false"/>
@@ -817,18 +818,34 @@ Review 3.06.03: Empire 3.05</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="5f77-65e4-62cc-6904" name="Null-Clone generator (3.04)" publicationId="908d-6feb-2e9e-843b" hidden="false" collective="false" import="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ab96-6bf7-b0e3-67a2" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="3793-afd8-38a3-5a9e" name="Null generator" hidden="false" targetId="2543-507b-1a7b-8c8e" type="profile"/>
+        <infoLink id="dbe7-f82c-ea30-2be2" name="Null-Clone generator (3.04)" hidden="false" targetId="5d2c-346f-ccb2-645b" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4e6f-c29f-63f4-b3b8" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
-    <rule id="0bab-bd34-0b75-76b1" name="Arc generator (3.04)" publicationId="e6a1-85d3-8979-7880" hidden="false">
+    <rule id="0bab-bd34-0b75-76b1" name="Arc generator [3.06]" publicationId="e6a1-85d3-8979-7880" hidden="false">
       <description>This Generator provides +2 to the Model’s Speed Attribute. This Generator may be used in the Shooting Phase with a 360-degree Line of Sight to make an Attack against an Initial Target within 20” using the Lightning Strike weapon profile. The Attack ignores Shield Generators and Shroud Generators. A Model that uses its Arc Generator to make an Attack gains a level of Disorder. Generators listed on a Unit’s profile may not be removed or replaced unless specified.</description>
     </rule>
     <rule id="3fe1-73f5-bc98-7db7" name="Atomic generator [3.06]" publicationId="7f09-e243-2307-78d0" hidden="false">
       <description>The Model adds +2 to its Speed Attribute and +2 to its Turn Limit. The Model suffers an additional Point of Damage whenever it suffers a Catastrophic Explosion caused by receiving a duplicate Reactor Leak Critical Damage Marker. Generators listed on a Unit’s profile may not be removed or replaced unless specified.</description>
     </rule>
-    <rule id="8a3a-28b1-dc83-dfca" name="Callimachus Chrono-Lathe (3.04)" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
-      <description>During the Special Operations Step of this Unit’s Activation, it may use its Callimachus Chrono-Lathe to immediately remove a point of damage from each Battle-Ready Model in single Unit within 15”. You may remove additional points from the same Unit during the Activation, but you must discard a card from your hand for each additional point removed using this rule. Furthermore, as a Valour Effect during the Reserves Step, the device may be used to immediately bring a Unit from Reserve and deploy them within 3” of this Unit. The Unit brought from Reserve immediately receives the Hazard Condition but may Activate as normal this Round. This device is unaffected by Generator Offline Critical Damage.</description>
+    <rule id="8a3a-28b1-dc83-dfca" name="Callimachus Chrono-Lathe [3.06]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
+      <description>During the Special Operations Step of this Unit’s Activation, it may use its Callimachus Chrono-Lathe to immediately remove a point of damage from each Battle-Ready Model in single Unit within 15”. You may remove additional points from the same Unit during the Activation, but you must discard a card from your hand each time an additional point is removed from all the Models in the Unit. Furthermore, as a Valour Effect during this Unit’s Reserves Step, the device may be used to immediately bring a Unit from Reserve and deploy them within 3” of this Unit. The Unit brought from Reserve immediately receives the Hazard Condition but may Activate as normal this Round. This device is unaffected by Generator Offline Critical Damage.</description>
     </rule>
-    <rule id="a94e-7233-0f8b-6e68" name="Chrono generetor (3.04)" publicationId="908d-6feb-2e9e-843b" hidden="false">
+    <rule id="a94e-7233-0f8b-6e68" name="Chrono generetor [3.05]" publicationId="908d-6feb-2e9e-843b" hidden="false">
       <description>Each time a Model in a Unit is destroyed, provided there is an active Chrono Generator in the Unit, the controlling Player may choose to roll an Action die and consult the following table. A Model that is Destroyed cannot use its own Chrono Generator to replace itself.
 
 - Exploding Hit: Replace the Destroyed Model with an identical Model with full Hull Points at its Crippled value.
@@ -849,8 +866,8 @@ The Identical Model has the exact same upgrades, weapons and traits as the Model
 
 Cryogenic Blasts and Iceberg Obstacles cannot cause damage to Aerial Units.</description>
     </rule>
-    <rule id="09b1-d883-924a-e86a" name="Diophantus Chaos-Orb (3.04)" publicationId="908d-6feb-2e9e-843b" hidden="false">
-      <description>During the Special Operations Step of this Unit’s Activation, it may use its Diophantus Chaos-Orb to draw three Victory and Valour Cards, examine them, discard two and keep one to add to the Player’s hand for the Round. Then, during the End Phase, the player must discard a card of their choice from their hand. Furthermore, as a Valour Effect in the Shooting Step, the player may use the device as a Heavy Particle Cannon with a 360 Fire Arc. A Model may not be Wavelurking while using a Diophantus Chaos-Orb. This device is unaffected by Generator Offline Critical Damage.</description>
+    <rule id="09b1-d883-924a-e86a" name="Diophantus Chaos-Orb [3.005]" publicationId="908d-6feb-2e9e-843b" hidden="false">
+      <description>In the Special Operations Step of the Operations Phase, all Enemy Models within 5” of this Model receive the Shredded Defences Critical Damage Marker unless they already have it. During the Special Operations Step of this Unit’s Activation, it may use its Diophantus Chaos-Orb to draw three Victory and Valour Cards, examine them, discard two and keep one to add to the Player’s hand for the Round. Then, during the End Phase, the player must discard a card of their choice from their hand. Furthermore, as a Valour Effect in the Shooting Step, the player may use the device as a Heavy Particle Cannon with a 360 Fire Arc. The Heavy Particle Cannon may also trigger its own Valour Effect in the same Step. A Model may not be Wavelurking while using a Diophantus Chaos-Orb. This device is unaffected by Generator Shutdown Critical Damage.</description>
     </rule>
     <rule id="d85c-a48a-5ea6-8ddb" name="Entropic generator (3.04)" publicationId="908d-6feb-2e9e-843b" hidden="false">
       <description>Remove a single Action die from each Action Dice Pool used in Attacks against a Model with this Generator. Furthermore, Attacks against a Model with an Entropic Generator must cause a number of hits greater than the Model’s Armour attribute, rather than equal to or greater to cause a point of damage. If the number of hits exceeds the Armour attribute, then this Generator has no effect on the Attack. A Model cannot use a Shield Generator if it decides to use an Entropic Generator against an Attack. This Generator cannot be used against Ramming or Assaults. Generators listed on a Unit’s profile may not be removed or replaced unless specified.</description>
@@ -870,9 +887,6 @@ Cryogenic Blasts and Iceberg Obstacles cannot cause damage to Aerial Units.</des
     <rule id="9704-6693-8202-319a" name="Langsan generator [3.06]" publicationId="33cf-b4a6-bff0-0d70" hidden="false">
       <description>In the Shooting Phase, a Model with this Generator may make an Attack against an enemy Unit within 10”. Roll an Action die. On a Counter or Heavy Counter result, the target Unit’s Speed is reduced for its next Activation by 3 to a minimum of 1. On a Hit or Heavy Hit result, the Unit is affect as outlined previously and each Model in the Unit also suffers a point of damage. On an Exploding Hit result the Unit is unaffected and instead the closest target Model suffers a Catastrophic Explosion.</description>
     </rule>
-    <rule id="3f2f-ddf5-621b-0b23" name="Levant generator (NO)" publicationId="129d-da97-caec-1ddd" hidden="false">
-      <description>This Generator was developed by the Alliance from advances made in Repulsion Field generation. A Model with this Generator is a Skimming Unit. If a Model with this Generator receives a Generator Shutdown Critical Damage Result it must be re-rolled. If this re-rolled result is a Generator Shutdown Critical Damage Result and the model is in contact with a terrain feature, it is immediately destroyed.</description>
-    </rule>
     <rule id="19bc-60bc-f7ef-9877" name="Magma Cast generator [3.05]" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
       <description>This Generator may be used in the Shooting Phase to fire a Magma Sear at a Target Model with a 360 degree Fire Arc. Alternatively, the controlling player of this Model rolls an Action Die. 
 - On a result of an Exploding Hit, you may place a 2&quot; long Mass 2 Obstacle of volcanic rock within 25&quot; of this Model. 
@@ -883,14 +897,14 @@ Cryogenic Blasts and Iceberg Obstacles cannot cause damage to Aerial Units.</des
     <rule id="b4ba-a474-4872-aa00" name="Magnetic generator [3.06]" publicationId="7f09-e243-2307-78d0" hidden="false">
       <description>Any Heavy Hits against a Model with this Generator by weapons with the Aerial Quality or by Enemy SRS must be re-rolled. Exploding Hits are unaffected. Once per Activation this Model may target itself or a friendly or enemy Unit within 10”. Roll an Action Dice for each SRS Token, Escort Token or Assault Token within 3” of the targeted Unit (roll separately for each stack). Remove one Token for each Exploding Hit result. If the Unit targeted is an Aerial Unit, then it also receives a level of Disorder on the closest Model in the Unit. Generators listed on a Unit’s profile may not be removed or replaced unless specified.</description>
     </rule>
-    <rule id="8466-6d75-968e-c1e7" name="Mirage generator (3.04)" publicationId="d854-a2d6-3d52-44c4" hidden="false">
-      <description>Unless the attacker is at Point Blank Range, a Model with this Generator is Obscured to attacks with the Gunnery Quality. Furthermore, if each Model in an unattached Unit is equipped with this Generator, then as a Special Operations Action, the entire Unit may be removed from Play and replaced at a new point completely within 7” of its original position. After the Unit is removed, each Model must then be placed with the same facing as when they were removed, in Coherency and in Open Water. Models with the Immobile rule are unaffected by Mirage generators. Generators listed on a Unit’s profile may not be removed or replaced unless specified.</description>
+    <rule id="8466-6d75-968e-c1e7" name="Mirage generator [3.06]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+      <description>Unless the attacker is at Point Blank Range, a Model with this Generator is Obscured to attacks with the Gunnery Quality. Furthermore, if each Model in an unattached Unit is equipped with this Generator, then as a Special Operations Action, the entire Unit may be removed from Play and replaced at a new point completely within 7” of its original position. All Models in the Unit receive a Level of Disorder. After the Unit is removed, each Model must then be placed with the same facing as when they were removed, in Coherency and in Open Water. Models with the Immobile rule are unaffected by Mirage generators. Generators listed on a Unit’s profile may not be removed or replaced unless specified.</description>
     </rule>
     <rule id="be12-5593-7285-1b98" name="Null generator (3.04)" publicationId="908d-6feb-2e9e-843b" hidden="false">
       <description>In the Special Operations Step of the Operations Phase, the controlling player may target a single enemy Unit within 15&quot; of this Model. All Models in the Unit receive the Generator Offline Critical Damage Marker, unless they already have it. Generators listed on a Unit’s profile may not be removed or replaced unless specified.</description>
     </rule>
-    <rule id="7934-e919-e869-4ef7" name="Portal generator (3.04)" publicationId="d854-a2d6-3d52-44c4" hidden="false">
-      <description>This Generator may be used by a Unit as a Special Operations Action. This Unit may place a 40mm Portal Token within 5” of itself. Each additional Portal Generator in this Unit increases the distance that each Portal Token may be deployed by +10” (to a maximum range of 25”). If there are three or more Models in the Unit with Portal Generators, the Unit may instead place up to two Portal Tokens within 5”. During the Round, any friendly Unit with the Sultanate Trait making an Attack with the Bomb or Broadside Qualities that has a friendly Portal Token within 4” of that Unit may measure the range of the Attack as though being made from any other friendly Portal Token. The Attacking Unit still requires Line of Sight to the Initial Target, but the weapon must replace their listed Fire Arc with a 360-degree Fire Arc if used with a Portal. Escort Tokens cannot provide a benefit to this Attack. Furthermore, during the Reserves Step of that Round, when a friendly Mass 2 or Mass 1 Unit deploys from reserves, it may be deployed in base contact with any friendly Portal Token rather than using any other deployment options. Each Model in the Reserve Unit must be deployed in base contact with the same Portal Token. Remove the friendly Portal Token once a Reserve Unit has been deployed using it, or an Attack using the Bomb or Broadside Qualities has been measured from it. Finally, remove all remaining Portal Tokens from the Play Area at the start of the Maintenance Step. Joining Units cannot take Portal Generators. Generators listed on a Unit’s profile may not be removed or replaced unless specified.</description>
+    <rule id="7934-e919-e869-4ef7" name="Portal generator [3.06]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+      <description>This Generator may be used by a Unit as a Special Operations Action. This Unit may place a 40mm Portal Token within 5” of itself. Each additional Portal Generator in this Unit increases the distance that each Portal Token may be deployed by +10” (to a maximum range of 25”). If there are three or more Models in the Unit with Portal Generators, the Unit may instead place up to two Portal Tokens within 5”. During the Round, any friendly Unit with the Sultanate Trait making an Attack with the Bomb or Broadside Qualities that has a friendly Portal Token within 4” of that Unit may measure the range of the Attack as though being made from any other friendly Portal Token. The Attacking Unit still requires Line of Sight to the Initial Target, but the weapon must replace their listed Fire Arc with a 360-degree Fire Arc if used with a Portal. Escort Tokens cannot provide a benefit to this Attack. Furthermore, during the Reserves Step of that Round, when a friendly Mass 2 or Mass 1 Unit deploys from reserves, it may be deployed in base contact with any friendly Portal Token rather than using any other deployment options. Each Model in the Reserve Unit must be deployed in base contact with the same Portal Token and receives a Level of Disorder. Remove the friendly Portal Token once a Reserve Unit has been deployed using it, or an Attack using the Bomb or Broadside Qualities has been measured from it. Finally, remove all remaining Portal Tokens from the Play Area at the start of the Maintenance Step. Joining Units cannot take Portal Generators. Generators listed on a Unit’s profile may not be removed or replaced unless specified.</description>
     </rule>
     <rule id="67a0-4bf1-a4e1-f28e" name="Repulsion field generator [3.06]" publicationId="7f09-e243-2307-78d0" hidden="false">
       <description>This Model gains +3SDV. Furthermore, this Model may Move over any terrain or other Models during its Movement without causing a Collision. After it completes its Movement, this Model must not be touching any other Models or Terrain Features. Generators listed on a Unit’s profile may not be removed or replaced unless specified.</description>
@@ -904,7 +918,7 @@ Cryogenic Blasts and Iceberg Obstacles cannot cause damage to Aerial Units.</des
     <rule id="ef22-2b56-207c-7d3f" name="Shroud generator [3.06]" publicationId="7f09-e243-2307-78d0" hidden="false">
       <description>This Model is Obscured while the generator is active. This Model still blocks line of sight as normal. Assaults, Ramming and Attack Runs ignore Shroud Generators. Generators listed on a Unit’s profile may not be removed or replaced unless specified.</description>
     </rule>
-    <rule id="99d4-4010-e285-3397" name="Solex Generator (3.04)" publicationId="129d-da97-caec-1ddd" hidden="false">
+    <rule id="99d4-4010-e285-3397" name="Solex Generator [3.05]" publicationId="129d-da97-caec-1ddd" hidden="false">
       <description>This Generator gives the Sustained Quality to any Heat Lance, Heat Lancette or Thermal Bombs weapons used by this Model. As a Valour Effect, all Solex Generators in the Unit may be used in the Shooting Phase with a 360-degree Line of Sight to make an Attack against an Initial Target using the Heat Lancette weapon profile. Generators listed on a Unit’s profile may not be removed or replaced unless specified.</description>
     </rule>
     <rule id="5a6c-4169-1e85-3b02" name="Storm Generetor [3.06]" publicationId="33cf-b4a6-bff0-0d70" hidden="false">
@@ -929,11 +943,14 @@ When Placing Models in the Target Unit they must always be placed in Coherency, 
     <rule id="0b05-45a3-00b2-82b2" name="Ivaldi Shroud generator [3.05]" publicationId="7f09-e243-2307-78d0" hidden="false">
       <description>A Model with this Generator is Obscured to Shooting Attacks. Furthermore, as a Special Operations Action, this Model may be removed from Play and replaced at a new point completely within 5” of its original position. After the Model is removed, it must then be placed in Open Water with the same facing as when they were removed. This Generator may not be removed or replaced unless specified.</description>
     </rule>
-    <rule id="ba9d-4be6-4150-0054" name="Sentinel Generators [3.05]" publicationId="e6a1-85d3-8979-7880" hidden="false">
-      <description>A Model with this Generator or any Model within 5” (not Enemy Models) may use it to remove 2 Action Dice from any Attack against it. The Sentinel Generator cannot be used by Models with a Shield Generator or against Assaults or attacks with the Submerged, Arc or Bomb Qualities. A Model cannot be Obscured if it decides to use a Sentinel Generator against an Attack and cannot remove more than 2 Action Dice by Sentinel Generators from an Action. Furthermore, as a Valour Effect, all Sentinel Generators in the Unit may be used in the Shooting Phase to make an Attack in the Fore Arc against an Initial Target using the Heat Lance weapon profile. Generators listed on a Unit’s profile may not be removed or replaced unless specified.</description>
+    <rule id="ba9d-4be6-4150-0054" name="Sentinel Generators [3.06]" publicationId="e6a1-85d3-8979-7880" hidden="false">
+      <description>A Model with this Generator or any Model within 5” may remove 2 Action Dice from any Attack against it. The Generator cannot be used by Enemy Models or Models with a Shield Generator or against Actions with the Submerged, Arc or Bomb Qualities. No more than 2 Action Dice in total may be removed and a Model cannot be Obscured if it uses a Sentinel Generator to remove any dice. Furthermore, each Sentinel Generator in the Unit may be used in the Shooting Phase to make an Attack in the Fore Arc against an Initial Target using the Heat Lance weapon crippled profile. As a Valour effect, all Sentinel Generators may use the Battle Ready weapon profile for the Heat Lance instead. Models with a Mass of 3 or higher will always use the Battle Ready Heat Lance Profile, they do not need a Valour Effect. Generators listed on a Unit’s profile may not be removed or replaced unless specified.</description>
     </rule>
     <rule name="Gisela Shield Projector [3.06]" hidden="false" id="2397-3c39-eda1-c586" publicationId="33cf-b4a6-bff0-0d70">
       <description>Any Friendly Aerial Units within 7” of Models with this rule counts as having a Mass of +1 for calculating the effectiveness of their Shield Generators (to a Maximum of 3 Action Dice as normal). If a Friendly Aerial Unit does not have a Shield Generator (including Mass 1 Models), then it counts as having one while within 7” of a Model with this rule, though it does not then gain the bonus to its effectiveness. This bonus to Shield Generators does not stack with any other bonus.</description>
+    </rule>
+    <rule id="5d2c-346f-ccb2-645b" name="Null-Clone generator (3.04)" publicationId="908d-6feb-2e9e-843b" hidden="false">
+      <description>In the Special Operations Step of the Operations Phase, all Enemy Models that have Generators and are within 5” of this Model receive the Generator Shutdown Critical Damage Marker unless they already have it. Furthermore, in the same Step, this Unit may target a Model within 15&quot; of this Model. If the target has an Atomic, Fury, Magnetic, Repulsion Field, Shield or Shroud Generator then this Unit counts as having that Generator for the remainder of the Round.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -1115,6 +1132,11 @@ When Placing Models in the Target Unit they must always be placed in Coherency, 
       </characteristics>
     </profile>
     <profile id="4d64-56c4-521d-cbbe" name="Gisela Shield Projector" publicationId="33cf-b4a6-bff0-0d70" hidden="false" typeId="0397-3287-82a2-e086" typeName="Upgrade Generator">
+      <characteristics>
+        <characteristic name="-" typeId="f006-3903-beba-e6c5">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e846-8113-34a2-4548" name="Null-Clone generator" publicationId="7f09-e243-2307-78d0" page="35" hidden="false" typeId="0397-3287-82a2-e086" typeName="Upgrade Generator">
       <characteristics>
         <characteristic name="-" typeId="f006-3903-beba-e6c5">-</characteristic>
       </characteristics>
