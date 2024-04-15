@@ -21,7 +21,7 @@
 3.04.03: correction of datafile for ORBAT 3.04 (01/09/2023 rev3)
 3.04.04: check datafile for ORBAT 3.04 (01/09/2023 to be used in New Recruit)
 3.04.05: v18 rev2, error correction (03/03/2024)
-3.05.00: v19 (Orbat 3.05 12/02/2024) rev1</readme>
+3.05.00: v19 (Orbat 3.05 12/02/2024) rev2</readme>
   <categoryEntries>
     <categoryEntry id="534c-9506-e470-8b7c" name="Alliance" publicationId="129d-da97-caec-1ddd" hidden="false"/>
     <categoryEntry id="9aab-6794-6d2b-c1a8" name="French" publicationId="129d-da97-caec-1ddd" hidden="false"/>
@@ -564,6 +564,20 @@
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="4b12-326a-7360-9ab2" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="10" field="4b12-326a-7360-9ab2">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f56a-3df4-17d2-db01" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </forceEntry>
     <forceEntry id="e4e7-881b-52b8-fdc7" name="Italian Frontline Battlefleet (Main)" publicationId="129d-da97-caec-1ddd" hidden="false">
       <infoLinks>
@@ -742,6 +756,20 @@
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="be3-c50-e2fd-d88" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="10" field="be3-c50-e2fd-d88">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f56a-3df4-17d2-db01" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </forceEntry>
     <forceEntry id="777d-cdf2-234a-ad0b" name="SUSA Battlefleet (Spec)" publicationId="129d-da97-caec-1ddd" hidden="false">
       <infoLinks>
@@ -993,6 +1021,20 @@
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="1382-c81-2e68-8020" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="10" field="1382-c81-2e68-8020">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f56a-3df4-17d2-db01" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </forceEntry>
     <forceEntry id="3109-412a-81a8-362a" name="- Alliance Force Patron" publicationId="d854-a2d6-3d52-44c4" hidden="false">
       <constraints>
@@ -1060,6 +1102,20 @@
       <infoLinks>
         <infoLink name="Preliminary Survay [3.06]" hidden="false" id="e794-ea65-8923-c597" targetId="0006-60f1-1ca3-b204" type="rule"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="e5d5-9547-ee44-221" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="10" field="e5d5-9547-ee44-221">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f56a-3df4-17d2-db01" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </forceEntry>
   </forceEntries>
   <selectionEntries>
@@ -5111,11 +5167,11 @@
         <infoLink id="f75f-b408-a84b-8a62" name="For Valour!" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
         <infoLink id="f627-b32f-a0a4-761f" name="Spotter**" hidden="false" targetId="063a-3229-1f27-a3c2" type="rule"/>
         <infoLink name="Deep Dive [3.05]" hidden="false" id="a015-cc4b-cb3-f369" targetId="32b6-97c2-a527-a1f9" type="rule"/>
+        <infoLink name="Deep Dive [3.06]" id="105e-a541-47f-ebbe" hidden="false" targetId="3bf2-4bf2-c33d-95ab" type="rule" publicationId="5a03-1c6f-8fc8-2be1"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4dd3-f82b-f9a5-0379" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
-        <categoryLink id="26eb-4d81-7fb9-13a2" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="false"/>
-        <categoryLink id="69ee-e970-8092-b1e7" name="Levant Grand Corvette" hidden="false" targetId="8aa3-849c-a914-5c57" primary="false"/>
+        <categoryLink name="Artillery Submarine" hidden="false" id="f463-79a4-58fb-79de" targetId="8eec-b25b-a7cd-2093" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="bf1a-04c3-f705-3a90" name="Magnetic Bombard" hidden="false" collective="false" import="true" targetId="62f4-ccf4-3d32-06b4" type="selectionEntry">
@@ -5423,7 +5479,8 @@
         <infoLink id="37c8-e055-9c52-d502" name="Auxiliary Mine Layer**" hidden="false" targetId="6158-153b-d320-6060" type="rule"/>
         <infoLink id="8291-831a-8abf-9259" name="Coordinated Support (3.04)" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
         <infoLink id="1d85-5b78-dbb0-c05a" name="For Valour!" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink name="Agile [3.06]" hidden="false" id="c0a5-eadf-9a5-a59b" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
+        <infoLink name="Deep Dive [3.06]" hidden="false" id="c0a5-eadf-9a5-a59b" targetId="3bf2-4bf2-c33d-95ab" type="rule" publicationId="5a03-1c6f-8fc8-2be1"/>
+        <infoLink name="Agile [3.06]" hidden="false" id="8151-f5a5-cde5-ad4d" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6583-73d8-5289-b1e7" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -5480,6 +5537,7 @@
         <infoLink id="50b5-9430-032e-c69a" name="Deep Dive [3.05]" hidden="false" targetId="32b6-97c2-a527-a1f9" type="rule"/>
         <infoLink id="202a-280c-f2e2-4874" name="Strategic Withdrawal�" hidden="false" targetId="950e-974b-d566-0e66" type="rule"/>
         <infoLink name="Agile [3.06]" hidden="false" id="ed55-1e9a-1d67-62d7" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
+        <infoLink name="Deep Dive [3.06]" id="6368-ef6b-aca0-10f2" hidden="false" targetId="3bf2-4bf2-c33d-95ab" type="rule" publicationId="5a03-1c6f-8fc8-2be1"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8969-1889-f4b6-5346" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>

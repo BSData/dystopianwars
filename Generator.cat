@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f69c-988c-fae3-e664" name="Generator" revision="16" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="f69c-988c-fae3-e664" name="Generator" revision="17" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Review 1.00.00: generator collection
 Review 3.04.00: all generator included and updated
 Review 3.04.01: all generator included and updated. added 3.03 Orbat change
@@ -15,7 +15,8 @@ Review 3.06.00: start of 3.06 updates
 Review 3.06.01: Crown 3.05a data (rev1)
 Review 3.06.02: Alliance 3.05
 Review 3.06.03: Empire 3.05
-Review 3.06.03: Sultanate / Union 3.06</readme>
+Review 3.06.03: Sultanate / Union 3.06
+Review 3.06.04: Enlightened 3.05</readme>
   <categoryEntries>
     <categoryEntry id="0c85-39c7-9145-efeb" name="1" hidden="true"/>
     <categoryEntry id="8901-cc02-f55e-2ee5" name="2" hidden="false"/>
@@ -455,7 +456,7 @@ Review 3.06.03: Sultanate / Union 3.06</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="04c9-bf08-c943-86bd" name="Void-Engine" publicationId="908d-6feb-2e9e-843b" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="04c9-bf08-c943-86bd" name="Superior Void-Engine" publicationId="908d-6feb-2e9e-843b" hidden="false" collective="false" import="false" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4878-134e-e1cf-daf3" type="max"/>
       </constraints>
@@ -520,13 +521,13 @@ Review 3.06.03: Sultanate / Union 3.06</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8d0a-2807-b5a9-aae3" name="Point Shield generator" publicationId="7f09-e243-2307-78d0" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="8d0a-2807-b5a9-aae3" name="Point Defence Shield generator" publicationId="7f09-e243-2307-78d0" hidden="false" collective="false" import="false" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f83a-d09e-467c-8dbe" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="ad1f-1be7-12fe-6080" name="Point Shield generator" hidden="false" targetId="bb87-7c6d-9144-497d" type="profile"/>
-        <infoLink id="f6a9-a716-24c4-650e" name="Point Shield generator" hidden="false" targetId="d79a-6377-a25e-d47f" type="rule"/>
+        <infoLink id="ad1f-1be7-12fe-6080" name="Point Defecese Shield generator" hidden="false" targetId="bb87-7c6d-9144-497d" type="profile"/>
+        <infoLink id="f6a9-a716-24c4-650e" name="Point Defences Shield generator" hidden="false" targetId="d79a-6377-a25e-d47f" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f263-bb17-eb5d-e09a" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
@@ -818,7 +819,7 @@ Review 3.06.03: Sultanate / Union 3.06</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5f77-65e4-62cc-6904" name="Null-Clone generator (3.04)" publicationId="908d-6feb-2e9e-843b" hidden="false" collective="false" import="false" type="upgrade">
+    <selectionEntry id="5f77-65e4-62cc-6904" name="Null-Clone generator" publicationId="908d-6feb-2e9e-843b" hidden="false" collective="false" import="false" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ab96-6bf7-b0e3-67a2" type="max"/>
       </constraints>
@@ -866,11 +867,11 @@ The Identical Model has the exact same upgrades, weapons and traits as the Model
 
 Cryogenic Blasts and Iceberg Obstacles cannot cause damage to Aerial Units.</description>
     </rule>
-    <rule id="09b1-d883-924a-e86a" name="Diophantus Chaos-Orb [3.005]" publicationId="908d-6feb-2e9e-843b" hidden="false">
+    <rule id="09b1-d883-924a-e86a" name="Diophantus Chaos-Orb [3.05]" publicationId="908d-6feb-2e9e-843b" hidden="false">
       <description>In the Special Operations Step of the Operations Phase, all Enemy Models within 5” of this Model receive the Shredded Defences Critical Damage Marker unless they already have it. During the Special Operations Step of this Unit’s Activation, it may use its Diophantus Chaos-Orb to draw three Victory and Valour Cards, examine them, discard two and keep one to add to the Player’s hand for the Round. Then, during the End Phase, the player must discard a card of their choice from their hand. Furthermore, as a Valour Effect in the Shooting Step, the player may use the device as a Heavy Particle Cannon with a 360 Fire Arc. The Heavy Particle Cannon may also trigger its own Valour Effect in the same Step. A Model may not be Wavelurking while using a Diophantus Chaos-Orb. This device is unaffected by Generator Shutdown Critical Damage.</description>
     </rule>
-    <rule id="d85c-a48a-5ea6-8ddb" name="Entropic generator (3.04)" publicationId="908d-6feb-2e9e-843b" hidden="false">
-      <description>Remove a single Action die from each Action Dice Pool used in Attacks against a Model with this Generator. Furthermore, Attacks against a Model with an Entropic Generator must cause a number of hits greater than the Model’s Armour attribute, rather than equal to or greater to cause a point of damage. If the number of hits exceeds the Armour attribute, then this Generator has no effect on the Attack. A Model cannot use a Shield Generator if it decides to use an Entropic Generator against an Attack. This Generator cannot be used against Ramming or Assaults. Generators listed on a Unit’s profile may not be removed or replaced unless specified.</description>
+    <rule id="d85c-a48a-5ea6-8ddb" name="Entropic generator [3.05]" publicationId="908d-6feb-2e9e-843b" hidden="false">
+      <description>Enemy Models making an Attack within 15” of one or more Models with an Entropic Generator remove a single die from the Attack Action Dice Pool. Furthermore, if that Attack is also against a Model with an Entropic Generator, the Action Dice in those Attacks may not be re-rolled. This Generator cannot be used against Attacks with the Torpedo or Arc Qualities or against SRS Attack Runs, Ramming or Assaults.</description>
     </rule>
     <rule id="f743-5a58-7d27-2ceb" name="Fury generator [3.06]" publicationId="7f09-e243-2307-78d0" hidden="false">
       <description>This Generator gives the Model +1 to its Speed Attribute and +4 to its Fray Attribute. Generators listed on a Unit’s profile may not be removed or replaced unless specified.</description>
@@ -927,17 +928,10 @@ Cryogenic Blasts and Iceberg Obstacles cannot cause damage to Aerial Units.</des
     <rule id="d2ef-9795-16c8-9014" name="Trident generator [3.05a]" publicationId="dbca-8d57-b848-457e" hidden="false">
       <description>This Generator may be used to launch a rapidly coalescing bolt of aetheric energy in the Shooting Phase using the Trident Projector Bolt weapon profile. The Generator has a 360-degree Firing Arc unless it replaces a weapon with a different Fire Arc on a Model, in which case it retains the Fire Arc of the weapon it replaces. Furthermore, any Attack Dice Pool with the Torpedo Quality gains the Homing Quality provided the friendly Model with the Lead weapon has this Generator or is within 7&quot; of a Model with this Generator. Generators listed on a Unit’s profile may not be removed or replaced unless specified.</description>
     </rule>
-    <rule id="ee09-5a15-1ff5-a60d" name="Void-Engine (3.04)" publicationId="908d-6feb-2e9e-843b" hidden="false">
-      <description>As a Special Operations Action during its Activation, the Unit may all activate their Void Engines. Roll an Action die for each Battle-Ready Model in this Unit and discard all the results except one. Apply that result to a friendly or enemy unit (Mass 3 or less) within 20” of any Model in this Unit’s Fore arc.
-
-- On a result of a Blank the Void-Engine has no effect. 
-- On a result of a Counter or Heavy Counter, immediately resolve the effects of a Sturginium Flare on the Target Unit but do not apply any Critical Damage Markers. 
-- On a result of a Hit or Heavy Hit, each Model in the Target Unit is removed from Play and replaced at a new point within 10” of this Unit, facing any direction. Each additional Model in this Unit adds +5” to the distance the Target can be placed from this Unit. 
-- On a roll of an Exploding Hit, the Target Unit may either be placed as though a Heavy Hit has been rolled or may be placed anywhere in the Play Area but suffers a Catastrophic Explosion. 
-
-When Placing Models in the Target Unit they must always be placed in Coherency, in Open Water and at least 7” from the edge of the Play Area.</description>
+    <rule id="ee09-5a15-1ff5-a60d" name="Superior Void-Engine [3.05]" publicationId="908d-6feb-2e9e-843b" hidden="false">
+      <description>As a Special Operations Action during its Activation, this Unit may declare that it will activate its Superior Void Engines. The Unit may either target an Enemy or a Friendly Unit within 10”. If this Unit targets an Enemy Unit, it creates lethal spatial rift. The Active Player applies a Catastrophic Explosion to a Model in the targeted Unit, with an additional point of damage caused equal to the number of additional Models with this rule in this Unit. Alternatively, if this Unit targets either itself or a Friendly Unit, roll a number of Action dice equal to the number of Models in this Unit and choose one result as a Turbo Encabulation test (see Turbo Encabulation Drive). Apply the result of the test to the targeted Unit. The number of dice rolled in this specific test is not affected by the number of times a Turbo Encabulation test has already been made this Round, though it is still a Turbo Encabulation test and may affect other tests made that Round.</description>
     </rule>
-    <rule id="d79a-6377-a25e-d47f" name="Point Shield generator (3.04)" publicationId="e6a1-85d3-8979-7880" hidden="false">
+    <rule id="d79a-6377-a25e-d47f" name="Point Defence Shield generator [3.06]" publicationId="e6a1-85d3-8979-7880" hidden="false">
       <description>This Unit is equipped with a Point Defence Shield Generator. It may not be upgraded or replaced. The Point Defence Shield Generator appears and operates exactly like a Shield Generator except that it can be used when this Model is Obscured.</description>
     </rule>
     <rule id="0b05-45a3-00b2-82b2" name="Ivaldi Shroud generator [3.05]" publicationId="7f09-e243-2307-78d0" hidden="false">
@@ -949,7 +943,7 @@ When Placing Models in the Target Unit they must always be placed in Coherency, 
     <rule name="Gisela Shield Projector [3.06]" hidden="false" id="2397-3c39-eda1-c586" publicationId="33cf-b4a6-bff0-0d70">
       <description>Any Friendly Aerial Units within 7” of Models with this rule counts as having a Mass of +1 for calculating the effectiveness of their Shield Generators (to a Maximum of 3 Action Dice as normal). If a Friendly Aerial Unit does not have a Shield Generator (including Mass 1 Models), then it counts as having one while within 7” of a Model with this rule, though it does not then gain the bonus to its effectiveness. This bonus to Shield Generators does not stack with any other bonus.</description>
     </rule>
-    <rule id="5d2c-346f-ccb2-645b" name="Null-Clone generator (3.04)" publicationId="908d-6feb-2e9e-843b" hidden="false">
+    <rule id="5d2c-346f-ccb2-645b" name="Null-Clone generator [3.05]" publicationId="908d-6feb-2e9e-843b" hidden="false">
       <description>In the Special Operations Step of the Operations Phase, all Enemy Models that have Generators and are within 5” of this Model receive the Generator Shutdown Critical Damage Marker unless they already have it. Furthermore, in the same Step, this Unit may target a Model within 15&quot; of this Model. If the target has an Atomic, Fury, Magnetic, Repulsion Field, Shield or Shroud Generator then this Unit counts as having that Generator for the remainder of the Round.</description>
     </rule>
   </sharedRules>
@@ -1116,12 +1110,12 @@ When Placing Models in the Target Unit they must always be placed in Coherency, 
         <characteristic name="-" typeId="f006-3903-beba-e6c5">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="5aa5-a15b-5ffb-2c9f" name="Void-Engine" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="0397-3287-82a2-e086" typeName="Upgrade Generator">
+    <profile id="5aa5-a15b-5ffb-2c9f" name="Superior Void-Engine" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="0397-3287-82a2-e086" typeName="Upgrade Generator">
       <characteristics>
         <characteristic name="-" typeId="f006-3903-beba-e6c5">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="bb87-7c6d-9144-497d" name="Point Shield generator" publicationId="7f09-e243-2307-78d0" hidden="false" typeId="0397-3287-82a2-e086" typeName="Upgrade Generator">
+    <profile id="bb87-7c6d-9144-497d" name="Point Defence Shield generator" publicationId="7f09-e243-2307-78d0" hidden="false" typeId="0397-3287-82a2-e086" typeName="Upgrade Generator">
       <characteristics>
         <characteristic name="-" typeId="f006-3903-beba-e6c5">-</characteristic>
       </characteristics>
