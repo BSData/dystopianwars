@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="526f-06e7-edaa-02b8" name="Weapon" revision="19" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="526f-06e7-edaa-02b8" name="Weapon" revision="20" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Weapon collection
 Review v1: starting document
 Review v2: imprevment to follow ORBAT requirments
@@ -19,7 +19,8 @@ Review v15: start of review for 3.04 Orbats (rev.4)
 Review v16: start of review for 3.04 Orbats for Sept &apos;23 (rev4)
 Review v17: start of review for 3.05 Orbats (rev3)
 Review v18: modification for 3.05 Orbats (to be used with New Recruit) rev5
-Review v19: modification for Enlightened 3.05 Orbat (15/04/24)</readme>
+Review v19: modification for Enlightened 3.05 Orbat (15/04/24)
+Review v20: modification for Union 3.07a Orbat (24/04/24)</readme>
   <categoryEntries>
     <categoryEntry id="dbb4-72d5-bceb-70b3" name="F" hidden="false"/>
     <categoryEntry id="372f-19f1-09ed-e694" name="P&amp;S" hidden="false"/>
@@ -1901,6 +1902,16 @@ Review v19: modification for Enlightened 3.05 Orbat (15/04/24)</readme>
             <modifier type="append" value="2nd" field="faa3-d69c-5156-2acf">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2a6f-36d6-5d75-e9fc" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="3nd" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="df04-304e-3eb9-52b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="4th" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5650-1732-3d85-61a6" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4536,6 +4547,18 @@ Review v19: modification for Enlightened 3.05 Orbat (15/04/24)</readme>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="append" value="1st" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8dd5-28b8-39fb-6304" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="2nd" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2a6f-36d6-5d75-e9fc" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </infoLink>
       </infoLinks>
       <costs>
@@ -6653,6 +6676,11 @@ Review v19: modification for Enlightened 3.05 Orbat (15/04/24)</readme>
             <modifier type="append" value="2nd" field="faa3-d69c-5156-2acf">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2a6f-36d6-5d75-e9fc" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="3rd" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="df04-304e-3eb9-52b" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -9298,11 +9326,11 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
     </profile>
     <profile id="6834-59ec-a9ed-9dae" name="Dual Magnetic Gatling Guns" publicationId="e6a1-85d3-8979-7880" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
-        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">7(4) / 4(3)</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">4(3) / 3(2)</characteristic>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Sustained, Magnetic</characteristic>
+        <characteristic name="Arc" id="1fe1-95e7-f9ec-2a90" hidden="false" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" id="fc95-aa86-4b3a-5a6c" hidden="false" typeId="4209-eb47-9807-b834">8(4) / 5(3)</characteristic>
+        <characteristic name="Closing" id="bb47-1ea0-e2cc-5a18" hidden="false" typeId="d025-b048-0c22-fad5">5(3) / 3(2)</characteristic>
+        <characteristic name="Long" id="7661-decc-7ae2-3848" hidden="false" typeId="06b8-7f5e-e2df-751a">-</characteristic>
+        <characteristic name="Quality" id="5686-d4a4-f5dc-22af" hidden="false" typeId="faa3-d69c-5156-2acf">Sustained, Magnetic</characteristic>
       </characteristics>
     </profile>
     <profile id="108f-eb40-4fe8-46f5" name="Dual Naval Electrocannons" publicationId="e6a1-85d3-8979-7880" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
