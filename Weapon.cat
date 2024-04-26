@@ -984,7 +984,7 @@ Review v19: modification for Enlightened 3.05 Orbat (15/04/24)</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cc76-e48a-8819-df6c" name="Shock Rocket Battery" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="cc76-e48a-8819-df6c" name="Shock Rocket Battery" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="54b4-46a9-0837-9979" name="Shock Rocket Battery" hidden="false" targetId="1917-29b8-de32-b5c0" type="profile">
           <modifiers>
@@ -9004,6 +9004,71 @@ Review v19: modification for Enlightened 3.05 Orbat (15/04/24)</readme>
         </infoLink>
         <infoLink id="ec3-dd6a-35ec-73e9" name="Torpedo (3.04)" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
         <infoLink id="8e2e-be44-d89e-cc6c" name="Sustained (3.04)" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="58e1-9892-208e-54fc" name="Shock Rocket Battery" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="fc01-3a5d-1bb4-4049" name="Shock Rocket Battery" hidden="false" targetId="1917-29b8-de32-b5c0" type="profile">
+          <modifiers>
+            <modifier type="append" field="faa3-d69c-5156-2acf" value="(First)">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8dd5-28b8-39fb-6304" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" field="faa3-d69c-5156-2acf" value="(Second)">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2a6f-36d6-5d75-e9fc" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="58e1-9892-208e-54fc" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="58e1-9892-208e-54fc" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/S">
+                  <conditions>
+                    <condition field="selections" scope="58e1-9892-208e-54fc" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5347-4855-4421-ed77" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P">
+                  <conditions>
+                    <condition field="selections" scope="58e1-9892-208e-54fc" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4e9e-7862-58ad-15e6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
+                  <conditions>
+                    <condition field="selections" scope="58e1-9892-208e-54fc" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ce6f-067d-9ad4-ddaa" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P">
+                  <conditions>
+                    <condition field="selections" scope="58e1-9892-208e-54fc" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="58e1-9892-208e-54fc" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="ea3a-9930-1dc5-cab3" name="Voltaic" hidden="false" targetId="d5a2-e757-34b5-3774" type="rule"/>
+        <infoLink id="f4cc-1777-181b-9533" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
