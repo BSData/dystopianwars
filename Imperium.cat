@@ -463,7 +463,7 @@
         <categoryLink id="00a0-cc0c-53c9-9512" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ce47-cfe1-8c62-0954" type="min"/>
-            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="cd05-f52f-e971-73c0" type="max"/>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f822-b36a-862e-e66b" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="8475-95c7-761b-e593" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="false">
@@ -494,8 +494,8 @@
         </categoryLink>
         <categoryLink id="00a0-cc0c-53c9-9512" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce47-cfe1-8c62-0954" type="min"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd05-f52f-e971-73c0" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f3ce-8e6e-9054-0f4e" type="min"/>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="bc68-6a97-4afb-9c42" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="8475-95c7-761b-e593" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="false">
@@ -517,9 +517,6 @@
       </categoryLinks>
     </forceEntry>
     <forceEntry id="b917-d93e-967e-dbfa" name="Teutonic Advanced Battlefleet (Main)" publicationId="33cf-b4a6-bff0-0d70" hidden="false">
-      <infoLinks>
-        <infoLink id="8605-ef5e-d353-056c" name="Command Override [3.06]" hidden="false" targetId="78c8-6a85-daa7-3625" type="rule"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="3d9b-3a63-7799-b2ba" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="false">
           <constraints>
@@ -1847,7 +1844,7 @@
         <categoryLink id="a9d0-2c7d-5223-69dd" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="0809-559f-bace-8886" name="Valkyrie Hunt Rotor Squadron" hidden="false" collective="false" import="true" targetId="5949-3878-9cf9-a367" type="selectionEntry">
+    <entryLink id="0809-559f-bace-8886" name="Valkyrie Hunt Rotor Squadron" hidden="true" collective="false" import="true" targetId="5949-3878-9cf9-a367" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -1916,7 +1913,7 @@
                 </entryLink>
                 <entryLink id="2866-8de8-fd2a-5943" name="Shock Rocket Battery" hidden="false" collective="false" import="true" targetId="58e1-9892-208e-54fc" type="selectionEntry">
                   <modifiers>
-                    <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+                    <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e6bd-82c6-4415-0ed5" type="min"/>
@@ -1945,7 +1942,7 @@
                 </entryLink>
                 <entryLink id="33f8-1535-30e0-cf5e" name="Sturmklaue" hidden="false" collective="false" import="true" targetId="889a-f14e-74ef-b45e" type="selectionEntry">
                   <modifiers>
-                    <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+                    <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c417-0c5c-899b-ce63" type="min"/>
@@ -1974,7 +1971,7 @@
                 </entryLink>
                 <entryLink id="a8e9-b5d3-c972-78d2" name="Volt Gun Battery" hidden="false" collective="false" import="true" targetId="9128-f707-ac48-b896" type="selectionEntry">
                   <modifiers>
-                    <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+                    <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2f34-6e72-818c-f268" type="min"/>
@@ -3720,26 +3717,6 @@
         <categoryLink id="726d-b4c4-61e5-957b" name="Imperium" hidden="false" targetId="381f-fee3-786c-1414" primary="false"/>
         <categoryLink id="9928-bdb8-4a19-e8bd" name="Fleet Carrier" hidden="false" targetId="408c-1732-73f9-379d" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="8273-7439-02cd-8e60" name="Freya Array" hidden="false" collective="false" import="false" type="upgrade">
-          <modifiers>
-            <modifier type="add" field="category" value="e6ef-ae36-6c03-3de8"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="19ee-de62-5170-d903" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1a5-87b2-4295-617e" type="min"/>
-          </constraints>
-          <rules>
-            <rule id="e510-12fa-cb09-843b" name="Freya Array" hidden="false">
-              <description>Blank Results may be re-rolled in Attacks against Submerged Unit Initial Targets.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-            <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="0554-9a9d-6117-0fe1" name="Pattern" hidden="false" collective="false" import="true" defaultSelectionEntryId="a951-2e20-1e55-6f7d">
           <constraints>
@@ -3903,6 +3880,12 @@
           </modifiers>
         </entryLink>
         <entryLink id="9eff-a56c-b4d4-0609" name="Attached Unit [Prussian, Flagship]" hidden="false" collective="false" import="true" targetId="6ec9-ce1c-a35e-f7b1" type="selectionEntryGroup"/>
+        <entryLink id="6d44-86f6-aeeb-c96e" name="Freya Array" hidden="false" collective="false" import="true" targetId="235d-d06b-43ee-dd22" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="423f-4b47-97f0-016e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2578-f50e-8956-dbc6" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
@@ -5484,9 +5467,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="16f1-6e6f-fa08-fb56" name="Pflicht Escort" publicationId="7f09-e243-2307-78d0" hidden="false" collective="false" import="false" type="unit">
+      <rules>
+        <rule id="2caa-d45a-4914-d324" name="Pflicht Aerial Escort [3.06]" publicationId="33cf-b4a6-bff0-0d70" hidden="false">
+          <description>Catastrophic Explosions can only remove a Pflicht Aerial Escort Token if caused by Attacks with the Aerial Quality.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="0d5e-fc9f-e1cd-58e0" name="Pflicht" hidden="false" targetId="cbde-f9d7-e52f-89c0" type="profile"/>
-        <infoLink id="54e4-c502-8855-b240" name="Pflicht Escort" hidden="false" targetId="3de2-727b-d075-6149" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="859e-6498-8782-81a1" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
@@ -5570,10 +5557,24 @@
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8b8c-cc3b-ecc2-d468" type="max"/>
       </constraints>
+      <profiles>
+        <profile id="3fcf-9200-b4d4-6917" name="Falkenstein" publicationId="33cf-b4a6-bff0-0d70" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model">
+          <characteristics>
+            <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">3/3</characteristic>
+            <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">6/5</characteristic>
+            <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">3/2</characteristic>
+            <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">8/7</characteristic>
+            <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">15/14</characteristic>
+            <characteristic name="ADV" typeId="6428-9828-bb2e-f923">9/3</characteristic>
+            <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">6/3</characteristic>
+            <characteristic name="Fray" typeId="4c54-804a-8993-7325">11/10</characteristic>
+            <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">5/5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <infoLinks>
-        <infoLink id="8f9e-d476-9a5c-52e8" name="Falkenstein" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="311f-4842-d196-0213" type="profile"/>
         <infoLink id="2337-a135-1e2c-e24e" name="Spotter [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="063a-3229-1f27-a3c2" type="rule"/>
-        <infoLink id="f894-0318-ca33-6e2e" name="Disciplined [3.05]" hidden="false" targetId="ecf0-d255-3339-4a1b" type="rule"/>
+        <infoLink id="f894-0318-ca33-6e2e" name="Disciplined [3.06]" hidden="false" targetId="ecf0-d255-3339-4a1b" type="rule"/>
         <infoLink id="63dc-e026-db6a-fcd0" name="Inductorium [3.05]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
         <infoLink id="57f1-83d9-fe4b-56d3" name="Heavy Firepower [3.05]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
         <infoLink id="514e-ecb4-00c4-0a0d" name="SRS Mine Clearance [3.05]" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
@@ -5766,23 +5767,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fad9-68bd-21ad-5160" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e9d-cc9b-8c2f-cb03" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="bfb6-dc42-145a-45c0" name="Freya Array" hidden="false" collective="false" import="false" type="upgrade">
-              <modifiers>
-                <modifier type="add" field="category" value="e6ef-ae36-6c03-3de8"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="06dc-7331-5b0c-fe09" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="c055-2546-1a30-9e75" name="Freya Array [3.06]" hidden="false" targetId="ed63-d88a-ee61-eadb" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
-                <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <entryLinks>
             <entryLink id="068a-efa2-3436-3b6c" name="Vierling Autokannone" hidden="false" collective="false" import="false" targetId="8301-9820-d5e0-6a8c" type="selectionEntry">
               <modifiers>
@@ -5802,6 +5786,11 @@
               <costs>
                 <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="15.0"/>
               </costs>
+            </entryLink>
+            <entryLink id="ca8e-911d-5397-4295" name="Freya Array" hidden="false" collective="false" import="true" targetId="235d-d06b-43ee-dd22" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8d50-38bb-013b-e00e" type="max"/>
+              </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -5886,7 +5875,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup id="329a-d5d3-2398-57db" name="Escort Model" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6188-a533-bab9-16a5" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6188-a533-bab9-16a5" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="89c0-bdd5-3bdd-f557" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
@@ -5899,7 +5888,7 @@
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0ed-dbcc-e0b6-26fd" type="min"/>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5162-c162-0074-40b1" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5162-c162-0074-40b1" type="max"/>
               </constraints>
               <categoryLinks>
                 <categoryLink id="f6c5-8ca4-9de7-d7ae" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
@@ -5918,7 +5907,7 @@
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3be3-06ba-a1bc-0de3" type="min"/>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2246-f08c-67c9-f6c7" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2246-f08c-67c9-f6c7" type="max"/>
               </constraints>
               <categoryLinks>
                 <categoryLink id="2b8c-e558-35f8-56b7" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
@@ -6372,9 +6361,13 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="c6a1-7b04-fa10-5a53" name="Unexpected Arrival" hidden="false" collective="false" import="true" targetId="d4fe-f63d-7ed8-12d4" type="selectionEntry">
-          <costs>
-            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="15.0"/>
-          </costs>
+          <modifiers>
+            <modifier type="increment" field="7c9b-6b09-b5ac-2249" value="15.0">
+              <repeats>
+                <repeat field="selections" scope="6ae3-df10-e3fe-033f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
@@ -7077,7 +7070,7 @@
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="8e26-38a5-86a7-86ec" name="Jaeger Fast Destroyer" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="false" import="true" type="model">
-          <comment>While the Prussians and Bavarians prefers to use dirigibles for their aerial warfare, the Scandinavians deploy nimble Valkyrie rotors to support their rapid operations.</comment>
+          <comment></comment>
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34ed-4c3b-e938-6b51" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a7a-2aa8-fd89-520d" type="min"/>
@@ -7996,9 +7989,13 @@
           </modifiers>
         </entryLink>
         <entryLink id="d64f-2675-1c4c-fee7" name="Unexpected Arrival" hidden="false" collective="false" import="true" targetId="d4fe-f63d-7ed8-12d4" type="selectionEntry">
-          <costs>
-            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="15.0"/>
-          </costs>
+          <modifiers>
+            <modifier type="increment" field="7c9b-6b09-b5ac-2249" value="15.0">
+              <repeats>
+                <repeat field="selections" scope="23f3-52d1-f3cf-9353" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
@@ -8053,9 +8050,13 @@
       </selectionEntries>
       <entryLinks>
         <entryLink id="46ea-be5f-cf74-3fc8" name="Unexpected Arrival" hidden="false" collective="false" import="true" targetId="d4fe-f63d-7ed8-12d4" type="selectionEntry">
-          <costs>
-            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="15.0"/>
-          </costs>
+          <modifiers>
+            <modifier type="increment" field="7c9b-6b09-b5ac-2249" value="15.0">
+              <repeats>
+                <repeat field="selections" scope="9c3f-a040-99d0-8185" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
@@ -8123,9 +8124,13 @@
       </selectionEntries>
       <entryLinks>
         <entryLink id="6658-14af-3c85-3850" name="Unexpected Arrival" hidden="false" collective="false" import="true" targetId="d4fe-f63d-7ed8-12d4" type="selectionEntry">
-          <costs>
-            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="15.0"/>
-          </costs>
+          <modifiers>
+            <modifier type="increment" field="7c9b-6b09-b5ac-2249" value="15.0">
+              <repeats>
+                <repeat field="selections" scope="12f9-b923-8a4d-fa38" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink id="df80-b1ad-2882-5b61" name="Veteran Voltmeister" hidden="false" collective="false" import="true" targetId="d208-a5d8-ace3-5df3" type="selectionEntry">
           <modifiers>
@@ -8230,9 +8235,13 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="f20e-6533-82a2-aeb3" name="Unexpected Arrival" hidden="false" collective="false" import="true" targetId="d4fe-f63d-7ed8-12d4" type="selectionEntry">
-          <costs>
-            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="15.0"/>
-          </costs>
+          <modifiers>
+            <modifier type="increment" field="7c9b-6b09-b5ac-2249" value="15.0">
+              <repeats>
+                <repeat field="selections" scope="defe-122f-423c-34a1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
@@ -8364,6 +8373,11 @@
           </modifiers>
         </entryLink>
         <entryLink id="8e6c-1984-6860-d4a4" name="Attached Unit [Teutonic, Flagship]" hidden="false" collective="false" import="true" targetId="3bfa-b7bd-d620-b60b" type="selectionEntryGroup"/>
+        <entryLink id="457e-3f4d-f702-985a" name="Unexpected Arrival" hidden="false" collective="false" import="true" targetId="d4fe-f63d-7ed8-12d4" type="selectionEntry">
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="15.0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="270.0"/>
@@ -8397,7 +8411,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b9d-1f57-2398-7dc1" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="256c-6280-8f75-5433" name="Heavy Volt Batteries" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="256c-6280-8f75-5433" name="Heavy Volt Batteries x2" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
                 <entryLink id="c602-60aa-5a52-f1bd" name="Heavy Volt Gun Battery" hidden="false" collective="false" import="true" targetId="9f4d-da2c-9379-f4d1" type="selectionEntry">
                   <modifiers>
@@ -8595,6 +8609,11 @@
           </modifiers>
         </entryLink>
         <entryLink id="6f79-93a7-6718-1596" name="Attached Unit [Teutonic, Flagship]" hidden="false" collective="false" import="true" targetId="3bfa-b7bd-d620-b60b" type="selectionEntryGroup"/>
+        <entryLink id="25a6-e0aa-68f7-04b9" name="Unexpected Arrival" hidden="false" collective="false" import="true" targetId="d4fe-f63d-7ed8-12d4" type="selectionEntry">
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="15.0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="260.0"/>
@@ -9469,7 +9488,7 @@
         <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">5/4</characteristic>
         <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">4/3</characteristic>
         <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">7/6</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">12/11</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">13/12</characteristic>
         <characteristic name="ADV" typeId="6428-9828-bb2e-f923">8/6</characteristic>
         <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">0/0</characteristic>
         <characteristic name="Fray" typeId="4c54-804a-8993-7325">11/10</characteristic>
@@ -9508,7 +9527,7 @@
         <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">5/4</characteristic>
         <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">4/3</characteristic>
         <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">7/6</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">12/11</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">13/12</characteristic>
         <characteristic name="ADV" typeId="6428-9828-bb2e-f923">6/4</characteristic>
         <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">0/0</characteristic>
         <characteristic name="Fray" typeId="4c54-804a-8993-7325">11/10</characteristic>
@@ -9581,19 +9600,6 @@
       </characteristics>
     </profile>
     <profile id="6069-c8ab-822f-3774" name="Heidelberg" publicationId="33cf-b4a6-bff0-0d70" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model">
-      <characteristics>
-        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">3/3</characteristic>
-        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">6/5</characteristic>
-        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">3/2</characteristic>
-        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">8/7</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">15/14</characteristic>
-        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">8/3</characteristic>
-        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">6/3</characteristic>
-        <characteristic name="Fray" typeId="4c54-804a-8993-7325">10/9</characteristic>
-        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">7/4</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="8bcc-4212-a193-db47" name="Holtzendorff" publicationId="33cf-b4a6-bff0-0d70" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model">
       <characteristics>
         <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">3/3</characteristic>
         <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">6/5</characteristic>
@@ -9808,8 +9814,8 @@
         <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">-</characteristic>
         <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">-</characteristic>
         <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">-</characteristic>
-        <characteristic name="ADV" typeId="6428-9828-bb2e-f923"/>
-        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da"/>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">+1</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">+1</characteristic>
         <characteristic name="Fray" typeId="4c54-804a-8993-7325">+1</characteristic>
         <characteristic name="Hull" typeId="ff43-364b-8da9-bce9"/>
       </characteristics>
@@ -9838,19 +9844,6 @@
         <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">7/3</characteristic>
         <characteristic name="Fray" typeId="4c54-804a-8993-7325">13/12</characteristic>
         <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">7/4</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="311f-4842-d196-0213" name="Falkenstein" publicationId="33cf-b4a6-bff0-0d70" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model">
-      <characteristics>
-        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">3/3</characteristic>
-        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">6/4</characteristic>
-        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">3/2</characteristic>
-        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">8/8</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">16/15</characteristic>
-        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">9/3</characteristic>
-        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">7/3</characteristic>
-        <characteristic name="Fray" typeId="4c54-804a-8993-7325">13/12</characteristic>
-        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">5/5</characteristic>
       </characteristics>
     </profile>
     <profile id="fdde-da62-683f-6cec" name="Maximilian" publicationId="33cf-b4a6-bff0-0d70" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model">
