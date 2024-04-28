@@ -21,7 +21,7 @@
 3.04.03: correction of datafile for ORBAT 3.04 (01/09/2023 rev3)
 3.04.04: check datafile for ORBAT 3.04 (01/09/2023 to be used in New Recruit)
 3.04.05: v18 rev2, error correction (03/03/2024)
-3.05.00: v19 (Orbat 3.05 12/02/2024) rev2</readme>
+3.05.00: v19 (Orbat 3.05 12/02/2024) rev3</readme>
   <categoryEntries>
     <categoryEntry id="534c-9506-e470-8b7c" name="Alliance" publicationId="129d-da97-caec-1ddd" hidden="false"/>
     <categoryEntry id="9aab-6794-6d2b-c1a8" name="French" publicationId="129d-da97-caec-1ddd" hidden="false"/>
@@ -1175,7 +1175,6 @@
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aaa0-551a-1cbe-e5a1" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ad0-5ffc-da79-2fd0" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4e7-881b-52b8-fdc7" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="777d-cdf2-234a-ad0b" type="instanceOf"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="9337-a069-74ed-d4a8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
@@ -1208,7 +1207,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="e079-a2bf-e06d-c6ed" name="Minerva" hidden="false" collective="false" import="true" targetId="14d9-95de-1318-cd06" type="selectionEntry"/>
-        <entryLink import="true" name="Attached Unit [Italian]" hidden="false" id="b190-747e-cb4d-a912" type="selectionEntryGroup" targetId="9d3d-76e9-4711-758e"/>
+        <entryLink import="true" name="Attached Unit [Italian]" hidden="false" id="b190-747e-cb4d-a912" type="selectionEntryGroup" targetId="9d3d-76e9-4711-758e" collapsible="true"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -6307,7 +6306,7 @@
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5d31-d094-8762-5d58" name="Vulcan" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="5d31-d094-8762-5d58" name="Vulcan" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="model" collapsible="true">
       <modifiers>
         <modifier type="add" field="category" value="fca3-00a8-9f39-e015">
           <conditions>
@@ -11950,7 +11949,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7a6-9fa6-e618-cd39" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Vulcan Repair Ship" hidden="false" id="19c5-98d1-d9eb-d2b3" publicationId="129d-da97-caec-1ddd" collective="false">
+        <selectionEntry type="model" import="true" name="Vulcan Repair Ship" hidden="false" id="19c5-98d1-d9eb-d2b3" publicationId="129d-da97-caec-1ddd" collective="false" collapsible="true">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>

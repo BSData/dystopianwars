@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="caf4-134c-500d-0cd9" name="Union v3.06" revision="10" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
-  <comment>Union ORBAT 3.06 (published 06/02/2024)</comment>
+<catalogue id="caf4-134c-500d-0cd9" name="Union v3.07a" revision="11" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+  <comment>Union ORBAT 3.07a (published 19/04/2024)</comment>
   <readme>Review 1.03.00: Initial release
 Review 3.03.00: Update to Orbat 3.03
 Review 3.03.01: correction after the update to Orbat 3.03
@@ -10,7 +10,8 @@ Review 3.04.01: complete uodate for Orbat 3.04 (published 20230901 rev1)
 Review 3.05.00: update for Orbat 3.05 (published 20231018) rev1
 Review 3.05.01: correction request by #BillyBones for Orbat 3.05 (published 20231018 rev1)
 Review 3.05.02: correction for Orbat 3.05 (to be used with New Recruit)
-Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
+Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)
+Review 3.07.a0: updated to Orbat 3.07a (24/04/2024)</readme>
   <categoryEntries>
     <categoryEntry id="44e3-4b42-5468-18b4" name="Union" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
     <categoryEntry id="165e-baac-9907-80de" name="Constitution Class" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
@@ -75,6 +76,8 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
     <categoryEntry id="944b-7759-7ddf-e29b" name="Silas" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
     <categoryEntry id="91e1-3dae-d54d-14d6" name="Union Main Battlefleet" hidden="false"/>
     <categoryEntry id="2933-d355-8ebe-11a7" name="White Dove" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
+    <categoryEntry name="Titan-class" id="932b-e5d-10bd-b794" hidden="false" publicationId="e6a1-85d3-8979-7880"/>
+    <categoryEntry name="Grand Conveyor" id="bee0-e82f-b4d3-8590" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="ea1c-7b0e-1390-7653" name="Union Faction Battlefleet (Main)" publicationId="e6a1-85d3-8979-7880" hidden="false">
@@ -335,6 +338,11 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6abf-269d-2db3-8d39" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Titan-class" hidden="false" id="fccc-270d-fe5b-6414" targetId="932b-e5d-10bd-b794" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="false" id="8e24-82b3-5cd0-3e2e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="b4a5-f9f4-4bd9-1ff0" name="Union Frontline Battlefleet (Main)" publicationId="e6a1-85d3-8979-7880" hidden="false">
@@ -565,6 +573,11 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
             <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="7b84-7b00-9a3f-2636" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Titan-class" hidden="false" id="98-623-8dcb-2fb7" targetId="932b-e5d-10bd-b794" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="false" id="d4f-c76b-af65-190e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="66f0-94e7-8b7e-44fc" name="Union Support Battlefleet (Main)" publicationId="e6a1-85d3-8979-7880" hidden="false">
@@ -791,6 +804,11 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
         <categoryLink id="33f2-3860-a5ed-1be0" name="White Dove" hidden="false" targetId="2933-d355-8ebe-11a7" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="2337-e845-dd6d-2d9d" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Titan-class" hidden="false" id="1a22-8aee-6db-12fd" targetId="932b-e5d-10bd-b794" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="false" id="cfe5-f0b3-4e67-4bc5" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -1034,6 +1052,11 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
         <categoryLink id="4ef9-1cdd-6a39-88d0" name="White Dove" hidden="false" targetId="2933-d355-8ebe-11a7" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="3c10-f56b-1f9f-ecb8" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Titan-class" hidden="false" id="fe79-fca5-38fe-c5a1" targetId="932b-e5d-10bd-b794" primary="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="false" id="92d6-dee5-665c-965d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -1403,9 +1426,10 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
         </modifier>
         <modifier type="set" field="812a-5500-ba85-73a6" value="10">
           <conditionGroups>
-            <conditionGroup type="or">
+            <conditionGroup type="and">
               <conditions>
                 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="944b-7759-7ddf-e29b" type="atLeast"/>
+                <condition type="atLeast" value="2" field="selections" scope="force" childId="464e-890a-84b2-8ce9" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1429,7 +1453,7 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
         </categoryLink>
         <categoryLink id="8a56-1c9f-f1dd-5f9d" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9761-34c6-de36-860c" type="max"/>
+            <constraint field="selections" scope="force" value="2" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="9761-34c6-de36-860c" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="e818-af08-ab2d-0a01" name="Aerial Unit" hidden="false" targetId="022b-08af-c874-e3f1" primary="false">
@@ -1547,7 +1571,7 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
         </categoryLink>
         <categoryLink id="0c5a-335f-92cf-26bd" name="Valiant Class" hidden="false" targetId="f182-aac9-5131-1ced" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="dcf3-d1b3-a70e-a0c9" type="max"/>
+            <constraint field="selections" scope="force" value="2" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="dcf3-d1b3-a70e-a0c9" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="f2c5-0a47-1f1b-d383" name="Washington Class" hidden="false" targetId="70ef-5ca8-d30b-0aa6" primary="false">
@@ -1625,9 +1649,10 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
           <modifiers>
             <modifier type="set" field="28ad-d43f-20fc-4bc6" value="0">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
                     <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="944b-7759-7ddf-e29b" type="atLeast"/>
+                    <condition type="atLeast" value="2" field="selections" scope="force" childId="464e-890a-84b2-8ce9" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1645,6 +1670,11 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
         <categoryLink id="ed79-b0bc-3cb4-8ff6" name="White Dove" hidden="false" targetId="2933-d355-8ebe-11a7" primary="false">
           <constraints>
             <constraint field="selections" scope="ed79-b0bc-3cb4-8ff6" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="ff0c-db72-777f-22f8" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Titan-class" hidden="false" id="dc0-4d52-8a02-9eba" targetId="932b-e5d-10bd-b794" primary="false" type="category">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="force" shared="false" id="4569-848e-e9e9-1049" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -3976,6 +4006,7 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="66f0-94e7-8b7e-44fc" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b71-85d4-ba13-9a8e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5812-09d0-43e8-9f4c" type="instanceOf"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6d21-83d7-8fca-5da0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4049,6 +4080,7 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c1-eac5-1cc4-65fa" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b71-85d4-ba13-9a8e" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5812-09d0-43e8-9f4c" type="instanceOf"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="6d21-83d7-8fca-5da0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4647,7 +4679,7 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
     <selectionEntry id="e727-37e5-81f7-a456" name="Silas Hodge, Executive-General of the Honorable Eclipse" publicationId="e6a1-85d3-8979-7880" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="1973-3d44-b178-8399" name="Silas Hodge, Executive-General of the Honorable Eclipse" publicationId="e6a1-85d3-8979-7880" hidden="false">
-          <description>Honorable Eclipse Company Battlefleets are Main Battlefleets rather than Specialist Battlefleets in a Force with Executive-General Silas Hodge as its Patron. Furthermore, there is no limit to the number of Honorable Eclipse Company Battlefleets included in that Force.</description>
+          <description>Honorable Eclipse Company Battlefleets that include two Surface Units are Main Battlefleets rather than Specialist Battlefleets in a Force with Executive-General Silas Hodge as its Patron. Furthermore, there is no limit to the number of Honorable Eclipse Company Battlefleets included in a Force that only includes Honorable Eclipse Company Battlefleets.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -4716,7 +4748,6 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c1-eac5-1cc4-65fa" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b4a5-f9f4-4bd9-1ff0" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ea1c-7b0e-1390-7653" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6d21-83d7-8fca-5da0" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="66f0-94e7-8b7e-44fc" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5812-09d0-43e8-9f4c" type="instanceOf"/>
@@ -4727,7 +4758,6 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
       </modifiers>
       <categoryLinks>
         <categoryLink id="7261-b05a-f6e0-91c5" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
-        <categoryLink id="3025-378c-ed22-56fb" name="Honourable Eclipse Company" hidden="false" targetId="b5f5-bb43-88ad-a268" primary="false"/>
         <categoryLink id="5358-ad7f-516f-706c" name="Excelsior-class" hidden="false" targetId="d152-f60d-eceb-51b5" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -4749,7 +4779,11 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="9bef-9b69-304c-d89e" name="Excelsior" hidden="false" collective="false" import="true" targetId="0a49-47ee-43fe-f2c1" type="selectionEntry"/>
+        <entryLink id="9bef-9b69-304c-d89e" name="Excelsior" hidden="false" collective="false" import="true" targetId="0a49-47ee-43fe-f2c1" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="1" field="4d8f-4916-fe30-5f3b"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -5048,7 +5082,243 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
         <entryLink id="06a3-950b-544b-aae9" name="Talon Assault" hidden="false" collective="false" import="true" targetId="cc35-3791-97b2-1ec3" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-12"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="-5"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="876d-47bb-1fc3-a4d3" name="Excelsior Heavy Aircruiser" publicationId="e6a1-85d3-8979-7880" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c1-eac5-1cc4-65fa" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6d21-83d7-8fca-5da0" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5812-09d0-43e8-9f4c" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="ed8-54fc-8c5e-3a6c" name="Excelsior-class" hidden="false" targetId="d152-f60d-eceb-51b5" primary="false"/>
+        <categoryLink name="Aerial Unit" hidden="false" id="b061-ad93-d94f-be47" targetId="022b-08af-c874-e3f1" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7dbe-8795-c821-d45a" name="Escort Model" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="94de-fc4-7af9-bed" name="Akron Aerial Escort Token" hidden="false" collective="false" import="true" targetId="9877-9153-0e6d-5501" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bacd-a802-f5c1-a09a" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6856-b4c6-d83c-8641" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="ef69-dc39-351f-b48f" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="15"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b4-d107-b40c-e64d" name="Excelsior" hidden="false" collective="false" import="true" targetId="0a49-47ee-43fe-f2c1" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="34fd-cd43-2421-86a1" name="Titan Mass Conveyor" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c1-eac5-1cc4-65fa" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5812-09d0-43e8-9f4c" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="remove" field="category" value="44e3-4b42-5468-18b4">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b71-85d4-ba13-9a8e" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="b5f5-bb43-88ad-a268">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b71-85d4-ba13-9a8e" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="4a7b-4c17-f278-d61c" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink name="Titan-class" hidden="false" id="aed-2c6d-e9eb-8314" targetId="932b-e5d-10bd-b794" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="32ad-9885-8092-5cad" name="Escort Model" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Escort Token" hidden="false" id="fc57-ca87-2dea-81c2" collective="false" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a387-24dd-ea85-4f33" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="881f-5b9-2512-57c7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink name="Escort Class" hidden="false" id="cd86-559a-1efc-4aa9" targetId="a8dc-2c16-e614-7894" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" id="80fa-ae99-39fd-661e" hidden="false" typeId="7c9b-6b09-b5ac-2249" value="8"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="5757-e9ed-3f1-4c5d" name="Titan" hidden="false" collective="false" import="true" targetId="2bd0-1285-4bf8-4d33" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e3bd-84b6-9d72-d8c8" name="Titan Mass Conveyor [Olympia-Tattern]" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c1-eac5-1cc4-65fa" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5812-09d0-43e8-9f4c" type="instanceOf"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="9b71-85d4-ba13-9a8e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="remove" field="category" value="44e3-4b42-5468-18b4">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b71-85d4-ba13-9a8e" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="b5f5-bb43-88ad-a268">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b71-85d4-ba13-9a8e" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Titan-class" hidden="false" id="4db6-c8e8-4813-9848" targetId="932b-e5d-10bd-b794" primary="false"/>
+        <categoryLink name="Skimming Unit" hidden="false" id="a2e6-d383-8065-915f" targetId="3b53-19a3-12fd-34b1" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5918-e100-367c-ffe1" name="Escort Model" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Escort Token" hidden="false" id="d07c-2a42-10a9-647a" collective="false" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b6ad-b06-cbd9-3564" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="18be-fd0b-9e30-c85a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink name="Escort Class" hidden="false" id="117-5708-d9c5-3bfa" targetId="a8dc-2c16-e614-7894" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" id="a561-2bf-97af-34f0" hidden="false" typeId="7c9b-6b09-b5ac-2249" value="8"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="6028-9cbc-44c0-f591" name="Titan Olympia-Pattern" hidden="false" collective="false" import="true" targetId="7f55-6b43-dfc0-29be" type="selectionEntry">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Olympia-Pattern" hidden="false" id="49bc-27dc-84d6-ba5b">
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10"/>
+                <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a507-b835-5ce9-6f8e"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f065-46c7-4ba0-b68a"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </entryLink>
+        <entryLink id="5e2e-1cf-c927-fb1f" name="Attached Unit [Union]" hidden="false" collective="false" import="true" targetId="ef82-33d4-654e-61dd" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ebd3-6b38-d6ff-41ca" name="Destiny Skyfortress" publicationId="e6a1-85d3-8979-7880" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c1-eac5-1cc4-65fa" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b4a5-f9f4-4bd9-1ff0" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b71-85d4-ba13-9a8e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6d21-83d7-8fca-5da0" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5812-09d0-43e8-9f4c" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="66f0-94e7-8b7e-44fc" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="91e1-3dae-d54d-14d6">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="66f0-94e7-8b7e-44fc" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b4a5-f9f4-4bd9-1ff0" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ea1c-7b0e-1390-7653" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6d21-83d7-8fca-5da0" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c1-eac5-1cc4-65fa" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="remove" field="category" value="44e3-4b42-5468-18b4">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b71-85d4-ba13-9a8e" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="b5f5-bb43-88ad-a268">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b71-85d4-ba13-9a8e" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="b167-eb60-1fb0-3219" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
+        <categoryLink id="22a0-6665-120a-5e05" name="Venture-class" hidden="false" targetId="18c4-db42-48ec-9b58" primary="false"/>
+        <categoryLink id="1642-bdc6-3326-dc76" name="Union" hidden="false" targetId="44e3-4b42-5468-18b4" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1bbf-7394-1aeb-bc90" name="Escort Model" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="594-b907-db2d-c179" name="Akron Aerial Escort Token" hidden="false" collective="false" import="true" targetId="9877-9153-0e6d-5501" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcbd-c51e-aaab-2e31" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfd-d5ba-1c0-fc0f" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="e5de-1145-58c5-24db" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="15"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e46b-e553-b95c-10f" name="Destiny" hidden="false" collective="false" import="true" targetId="16d-b5c0-5d26-fded" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -5086,7 +5356,7 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbac-34e3-e46c-5305" type="min"/>
-        <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9c7-fa09-65ba-e1af" type="max"/>
+        <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9c7-fa09-65ba-e1af" type="max"/>
       </constraints>
       <rules>
         <rule id="a75e-19a3-6a9b-52de" name="HEC Contractor (3.04)" publicationId="e6a1-85d3-8979-7880" hidden="false">
@@ -5525,6 +5795,9 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f8d2-1356-833d-2ff1" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -5854,7 +6127,7 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="135"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="130"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -6336,10 +6609,14 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
       <infoLinks>
         <infoLink id="cfa8-b168-4cfc-ab4d" name="Defiant" hidden="false" targetId="41a4-d109-9ed0-d918" type="profile"/>
         <infoLink id="b9ed-0aea-ad1f-5881" name="Contra Rotation**" hidden="false" targetId="177e-3490-5f5e-f4b9" type="rule"/>
-        <infoLink id="a034-c064-dd5e-a4a1" name="Focused Gunnery*" hidden="false" targetId="9ec9-dd04-5a42-6864" type="rule"/>
         <infoLink id="03d7-ae18-cdd0-4987" name="Give Em Hell*" hidden="false" targetId="1181-0663-f1c1-9047" type="rule"/>
         <infoLink id="51a2-0f42-0f3b-2d03" name="Flashlamps**" hidden="false" targetId="ee33-07eb-77e7-c5aa" type="rule"/>
         <infoLink id="9fef-3d7c-9e4b-2eb5" name="Tactical Cavitation*" hidden="false" targetId="e89c-d342-c776-60c3" type="rule"/>
+        <infoLink name="Focused Fire (X) [3.07a]" id="f6ec-a127-46cb-f85d" hidden="false" targetId="6c94-ad2b-60d8-2c4f" type="rule">
+          <modifiers>
+            <modifier type="set" value="Focused Fire (Gunnery) [3.07a]" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f2d9-5312-2bf4-f6cf" name="Union" hidden="false" targetId="44e3-4b42-5468-18b4" primary="true"/>
@@ -6815,7 +7092,7 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="59"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="63"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -6895,7 +7172,7 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
         </entryLink>
         <entryLink id="8d2f-337d-2c01-e9c6" name="Heavy Rocket Battery" hidden="false" collective="false" import="true" targetId="f7e0-fd3a-7201-ad0f" type="selectionEntry">
           <modifiers>
-            <modifier type="add" field="category" value="4e9e-7862-58ad-15e6"/>
+            <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8bb6-bd91-c044-7ccd" type="min"/>
@@ -6925,7 +7202,11 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
         <infoLink id="df3a-33b2-e4a0-2bcd" name="Heavy Firepower�" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
         <infoLink id="703a-46a7-00ff-d39a" name="Inductorium**" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
         <infoLink id="6df1-5f55-7dfb-0f90" name="Tactical Cavitation�" hidden="false" targetId="e89c-d342-c776-60c3" type="rule"/>
-        <infoLink id="f999-93cb-0f64-470d" name="Focused Gunnery**" hidden="false" targetId="9ec9-dd04-5a42-6864" type="rule"/>
+        <infoLink id="f999-93cb-0f64-470d" name="Focused Fire (X) [3.07a]" hidden="false" targetId="6c94-ad2b-60d8-2c4f" type="rule">
+          <modifiers>
+            <modifier type="set" value="Focused Fire (Gunnery) [3.07a]" field="name"/>
+          </modifiers>
+        </infoLink>
         <infoLink id="5d21-75c8-e14c-9152" name="Give Em Hell**" hidden="false" targetId="1181-0663-f1c1-9047" type="rule"/>
         <infoLink id="1282-68c8-45d6-b720" name="Temperamental Design�" hidden="false" targetId="1ea8-5ef6-de30-f3ae" type="rule"/>
       </infoLinks>
@@ -7007,12 +7288,16 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
         <infoLink id="1a4f-d63d-9bc5-2ab8" name="Give Em Hell**" hidden="false" targetId="1181-0663-f1c1-9047" type="rule"/>
         <infoLink id="7dfc-2b2a-2f59-e41e" name="Inspirational**" hidden="false" targetId="b48d-b4e0-19e8-d85a" type="rule"/>
         <infoLink id="c75b-550d-c29f-b1bc" name="Heavy Firepower**" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="8c67-c75d-84c7-12ae" name="Focused Gunnery**" hidden="false" targetId="9ec9-dd04-5a42-6864" type="rule"/>
         <infoLink id="51f9-58fd-63b7-1c7c" name="Fortunes of War**" hidden="false" targetId="949d-d37f-c7c8-1093" type="rule"/>
         <infoLink id="1037-ba99-14db-25f4" name="Semper Fortis**" hidden="false" targetId="0875-9929-1e1f-a032" type="rule"/>
         <infoLink id="2f00-51df-3f9c-cfd2" name="Tactical Cavitation**" hidden="false" targetId="e89c-d342-c776-60c3" type="rule"/>
         <infoLink id="d60e-f036-13ed-7eb8" name="Veteran Repair Teams**" hidden="false" targetId="8543-0d7a-9a4f-8b17" type="rule"/>
         <infoLink id="215c-8bcf-e79f-8c1c" name="Triangulated Solution�" hidden="false" targetId="8d45-38e1-cce2-fbf2" type="rule"/>
+        <infoLink name="Focused Fire (X) [3.07a]" id="631c-e740-50db-c19c" hidden="false" targetId="6c94-ad2b-60d8-2c4f" type="rule">
+          <modifiers>
+            <modifier type="set" value="Focused Fire (Gunnery) [3.07a]" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7697-641a-1faf-4255" name="Union" hidden="false" targetId="44e3-4b42-5468-18b4" primary="true"/>
@@ -7435,6 +7720,11 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
         <infoLink id="4c60-8352-a5aa-b9cb" name="Minutemen Assault Bay [3.05]" hidden="false" targetId="21cf-ffbb-3ff8-71cc" type="rule"/>
         <infoLink id="3ef-fb02-d4db-e8d7" name="Dirigible Construction  [3.06]" hidden="false" targetId="24c5-f8af-aa5d-998e" type="rule"/>
         <infoLink id="7db7-9cae-4858-e339" name="Rocket Barrage [3.06]" hidden="false" targetId="1042-355a-94f3-b6be" type="rule"/>
+        <infoLink id="97cd-bddf-84f8-bea3" name="Focused Fire (X) [3.07a]" hidden="false" targetId="6c94-ad2b-60d8-2c4f" type="rule">
+          <modifiers>
+            <modifier type="set" value="Focused Fire (Aerial) [3.07a]" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="691b-562f-3782-7035" name="Assault Airship" hidden="false" targetId="b741-93ee-d4fc-460b" primary="false"/>
@@ -7458,7 +7748,7 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="128"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="124"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -7538,17 +7828,9 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
             <categoryLink name="1st" hidden="false" id="a38e-85e3-a0ae-4183" targetId="8dd5-28b8-39fb-6304" primary="false"/>
           </categoryLinks>
         </entryLink>
-        <entryLink id="63b3-2dea-148d-1b72" name="Dual Magnetic Gatling Guns" hidden="false" collective="false" import="true" targetId="88ad-deda-e9b7-9068" type="selectionEntry">
-          <modifiers>
-            <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
-          </modifiers>
-          <categoryLinks>
-            <categoryLink name="2nd" hidden="false" id="e65d-3dec-7431-43d6" targetId="2a6f-36d6-5d75-e9fc" primary="false"/>
-          </categoryLinks>
-        </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="127"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="122"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -7598,11 +7880,15 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
             <modifier type="append" field="name" value="(5)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="8220-68e2-dd50-e4bc" name="Focused Gunnery [3.06]" hidden="false" targetId="9ec9-dd04-5a42-6864" type="rule"/>
         <infoLink id="de02-8c7d-9ada-32ee" name="Give Em Hell (3.04)" hidden="false" targetId="1181-0663-f1c1-9047" type="rule"/>
         <infoLink id="c851-cad4-dce6-3d86" name="Vanguard (3.04)" hidden="false" targetId="f721-8318-3875-0140" type="rule"/>
         <infoLink id="1614-6dc4-e160-ab6f" name="Dirigible Construction  [3.06]" hidden="false" targetId="24c5-f8af-aa5d-998e" type="rule"/>
         <infoLink id="75cd-7fed-8100-9a62" name="Flashlamps [3.05]" hidden="false" targetId="ee33-07eb-77e7-c5aa" type="rule"/>
+        <infoLink name="Focused Fire (X) [3.07a]" id="2758-9738-54b7-f147" hidden="false" targetId="6c94-ad2b-60d8-2c4f" type="rule">
+          <modifiers>
+            <modifier type="set" value="Focused Fire (Gunnery) [3.07a]" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="dcd1-431a-f0ec-ca89" name="Attack Airship" hidden="false" targetId="7b26-4a40-7d08-ecfb" primary="false"/>
@@ -8680,7 +8966,7 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="123"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="104"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -8822,7 +9108,7 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="57"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="62"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -9646,11 +9932,6 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
                 <entryLink id="cdff-954c-ae18-7776" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
-                    <modifier type="append" value="1st" field="faa3-d69c-5156-2acf">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8dd5-28b8-39fb-6304" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e3a4-fd82-7755-3385" type="max"/>
@@ -11604,7 +11885,7 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="124"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="125"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -11692,7 +11973,7 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="115"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="121"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -11739,6 +12020,7 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
         <infoLink id="5265-18b0-3725-bd8f" name="Flashlamps (3.04)" hidden="false" targetId="ee33-07eb-77e7-c5aa" type="rule"/>
         <infoLink id="7c89-e275-db8a-0bc4" name="Powerslide (3.04)" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
         <infoLink id="1567-c8be-465b-ae50" name="Vanguard (3.04)" hidden="false" targetId="f721-8318-3875-0140" type="rule"/>
+        <infoLink name="Give Em Hell [3.07a]" id="ed0e-dd4f-d54d-97c9" hidden="false" targetId="1181-0663-f1c1-9047" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0595-ec20-efd6-9518" name="Union" hidden="false" targetId="44e3-4b42-5468-18b4" primary="true"/>
@@ -11811,7 +12093,7 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="297a-790c-66d1-462b" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="208d-13fa-8b3c-cf05" type="max"/>
+        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="208d-13fa-8b3c-cf05" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="7810-87a9-010d-af71" name="Venture" hidden="false" targetId="2a9e-47d9-18d1-fbca" type="profile"/>
@@ -11824,8 +12106,10 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
         <infoLink id="29e4-c67f-48e7-666d" name="Flashlamps (3.04)" hidden="false" targetId="ee33-07eb-77e7-c5aa" type="rule"/>
         <infoLink id="1f0a-5e19-5646-c301" name="Give Em Hell [3.05]" hidden="false" targetId="1181-0663-f1c1-9047" type="rule"/>
         <infoLink id="6263-7db3-a12e-cf97" name="Landing Vessel (3.04)" hidden="false" targetId="4869-03db-33f9-fa82" type="rule"/>
-        <infoLink id="e7b5-24ec-864f-e9ef" name="Minutemen Assault Bay [3.05]" hidden="false" targetId="21cf-ffbb-3ff8-71cc" type="rule"/>
+        <infoLink id="e7b5-24ec-864f-e9ef" name="Unexpected Arrival [3.07a]" hidden="false" targetId="f4aa-042e-34e5-1938" type="rule"/>
         <infoLink id="2f0c-2a16-df79-440c" name="Dirigible Construction  [3.06]" hidden="false" targetId="24c5-f8af-aa5d-998e" type="rule"/>
+        <infoLink id="f013-ea7f-f752-255a" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="c483-5f14-37a5-777" name="Minutemen Assault Bay [3.07a]" hidden="false" targetId="21cf-ffbb-3ff8-71cc" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5155-ea17-f3e9-be04" name="New CategoryLink" hidden="false" targetId="44e3-4b42-5468-18b4" primary="true"/>
@@ -11843,22 +12127,6 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
           </modifiers>
           <categoryLinks>
             <categoryLink name="1st" hidden="false" id="7a5a-5cbe-abf0-e922" targetId="8dd5-28b8-39fb-6304" primary="false"/>
-          </categoryLinks>
-        </entryLink>
-        <entryLink id="beae-79d1-be84-9725" name="Dual Magnetic Gatling Guns" hidden="false" collective="false" import="true" targetId="88ad-deda-e9b7-9068" type="selectionEntry">
-          <modifiers>
-            <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
-          </modifiers>
-          <categoryLinks>
-            <categoryLink name="1st" hidden="false" id="c41-265f-e8e2-e77b" targetId="8dd5-28b8-39fb-6304" primary="false"/>
-          </categoryLinks>
-        </entryLink>
-        <entryLink id="7f5c-0a85-9275-da97" name="Dual Magnetic Gatling Guns" hidden="false" collective="false" import="true" targetId="88ad-deda-e9b7-9068" type="selectionEntry">
-          <modifiers>
-            <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
-          </modifiers>
-          <categoryLinks>
-            <categoryLink name="2nd" hidden="false" id="f759-8d6a-5b51-1a41" targetId="2a6f-36d6-5d75-e9fc" primary="false"/>
           </categoryLinks>
         </entryLink>
         <entryLink id="b62d-d432-edcd-e215" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
@@ -11885,16 +12153,21 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
             <categoryLink name="2nd" hidden="false" id="202e-7e32-8f1e-da8" targetId="2a6f-36d6-5d75-e9fc" primary="false"/>
           </categoryLinks>
         </entryLink>
+        <entryLink import="true" name="Dual Magnetic Gatling Guns" hidden="false" id="c38a-7f8e-2a6f-7757" collective="false" targetId="88ad-deda-e9b7-9068" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" value="dbb4-72d5-bceb-70b3" field="category"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="240"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="236"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0a49-47ee-43fe-f2c1" name="Excelsior" publicationId="e6a1-85d3-8979-7880" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7bde-8c08-71b9-13ef" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d8f-4916-fe30-5f3b" type="max"/>
+        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d8f-4916-fe30-5f3b" type="max"/>
       </constraints>
       <rules>
         <rule id="72aa-35cc-8e99-7e6a" name="HEC Contractor (3.04)" publicationId="e6a1-85d3-8979-7880" hidden="false">
@@ -11925,11 +12198,16 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
             <modifier type="append" field="name" value="(8)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="172a-6087-f5a3-cd50" name="Flashlamps (3.04)" hidden="false" targetId="ee33-07eb-77e7-c5aa" type="rule"/>
+        <infoLink id="172a-6087-f5a3-cd50" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
         <infoLink id="a066-9e32-eff5-b4f1" name="Give Em Hell [3.05]" hidden="false" targetId="1181-0663-f1c1-9047" type="rule"/>
         <infoLink id="796e-caa6-1c90-d59f" name="Vanguard (3.04)" hidden="false" targetId="f721-8318-3875-0140" type="rule"/>
         <infoLink name="Air-Razor Munitions [3.06]" id="4e6d-84e8-5ead-4ae2" hidden="false" targetId="fd1c-f38c-6317-138a" type="rule"/>
-        <infoLink id="59ef-5191-2119-a503" name="Focused Gunnery [3.06]" hidden="false" targetId="9ec9-dd04-5a42-6864" type="rule"/>
+        <infoLink id="59ef-5191-2119-a503" name="Focused Fire (X) [3.07a]" hidden="false" targetId="6c94-ad2b-60d8-2c4f" type="rule">
+          <modifiers>
+            <modifier type="set" value="Focused Fire (Aerial, Gunnery) [3.07a]" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="4c95-351b-336-9db0" name="Flashlamps [3.07a]" hidden="false" targetId="ee33-07eb-77e7-c5aa" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1488-8b27-2088-ca34" name="New CategoryLink" hidden="false" targetId="44e3-4b42-5468-18b4" primary="true"/>
@@ -12099,9 +12377,29 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
       <modifiers>
         <modifier type="increment" field="8a4c-0ab5-f4fe-4345" value="1">
           <repeats>
-            <repeat field="forces" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" childId="f559-51b4-6230-2c74" repeats="1" roundUp="false"/>
-            <repeat field="forces" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" childId="6d21-83d7-8fca-5da0" repeats="1" roundUp="false"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="f559-51b4-6230-2c74" shared="false" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="true"/>
+            <repeat value="1" repeats="1" field="forces" scope="roster" childId="6d21-83d7-8fca-5da0" shared="false" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="true"/>
           </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="8a4c-0ab5-f4fe-4345">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f559-51b4-6230-2c74" shared="true" includeChildForces="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="6d21-83d7-8fca-5da0" shared="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" value="1" field="8a4c-0ab5-f4fe-4345">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="f559-51b4-6230-2c74" shared="true" includeChildForces="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="6d21-83d7-8fca-5da0" shared="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -12135,9 +12433,387 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="12"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="16d-b5c0-5d26-fded" name="Destiny" publicationId="e6a1-85d3-8979-7880" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7453-1c1d-1337-d27a" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="93b2-ccd8-6dce-9a85" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="3304-2e02-5b3a-f27f" name="Destiny" hidden="false" targetId="34e2-c6d7-13f1-149a" type="profile"/>
+        <infoLink id="f508-3a3d-1744-df0d" name="Air-Razor Munitions [3.07a]" hidden="false" targetId="fd1c-f38c-6317-138a" type="rule"/>
+        <infoLink id="6e80-7035-a8d9-d4a1" name="Flak Barrage [3.07a]" hidden="false" targetId="7b67-714d-bb2b-6297" type="rule">
+          <modifiers>
+            <modifier type="append" field="name" value="(10)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="e410-a4bf-e059-4e4b" name="Flashlamps [3.07a]" hidden="false" targetId="ee33-07eb-77e7-c5aa" type="rule"/>
+        <infoLink id="258b-ef1b-a68e-bf72" name="Give Em Hell [3.07a]" hidden="false" targetId="1181-0663-f1c1-9047" type="rule"/>
+        <infoLink id="46d9-4a85-5795-f97d" name="HEC Contractor [3.07a]" hidden="false" targetId="d1aa-3acc-11cb-5002" type="rule"/>
+        <infoLink id="4101-84f9-2c59-786a" name="Launch Catapults [3.07a]" hidden="false" targetId="565f-36a9-52bb-4e63" type="rule"/>
+        <infoLink id="d58c-e4b6-59ec-78fb" name="Field Repair Platform [3.07a]" hidden="false" targetId="8df9-9fde-8dae-d24d" type="rule"/>
+        <infoLink id="87c9-2c30-5dc6-89da" name="Dirigible Construction  [3.07a]" hidden="false" targetId="24c5-f8af-aa5d-998e" type="rule"/>
+        <infoLink id="f0fa-239b-46fb-b5b3" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="e83c-6ae1-ea00-4f48" name="Minutemen Assault Bay [3.07a]" hidden="false" targetId="21cf-ffbb-3ff8-71cc" type="rule"/>
+        <infoLink id="a7ec-1148-d4de-5616" name="Light Rotor Wing [3.07a]" hidden="false" targetId="ff08-8da7-1ce8-a3d2" type="rule"/>
+        <infoLink id="304f-5da9-d264-5f2b" name="Lumbering [3.07a]" hidden="false" targetId="6b55-0f21-5c85-94cb" type="rule"/>
+        <infoLink name="SRS Mine Clearance [3.07a]" id="f89c-5464-751a-7d06" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
+        <infoLink name="SRS Recon [3.07a]" id="8621-fdb0-aa53-de17" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Sky Fortress" hidden="false" id="bc7c-9dca-e92c-1e48" targetId="6102-d10f-f8a1-c435" primary="false"/>
+        <categoryLink name="Union" hidden="false" id="23f4-633e-7bae-73a0" targetId="44e3-4b42-5468-18b4" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="216f-bd76-c2dc-5dbc" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="9985-b088-fda6-36d4" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="1st" hidden="false" id="4f8a-1a80-60af-58ae" targetId="8dd5-28b8-39fb-6304" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="290d-d77d-986-7ab2" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="1st" hidden="false" id="9bdb-bd73-bdd0-3812" targetId="8dd5-28b8-39fb-6304" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="8566-f21-de6e-9e4f" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="2nd" hidden="false" id="72fe-218f-efe3-bcb1" targetId="2a6f-36d6-5d75-e9fc" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="1c2d-5a58-e83d-6360" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="9985-b088-fda6-36d4" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="2nd" hidden="false" id="993-5fa2-49e0-db38" targetId="2a6f-36d6-5d75-e9fc" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="ba15-d3b3-4a2-88e9" name="Dual Magnetic Gatling Guns" hidden="false" collective="false" import="true" targetId="88ad-deda-e9b7-9068" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="1st" hidden="false" id="65ff-2bd7-8610-e517" targetId="8dd5-28b8-39fb-6304" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="6469-e0c9-6b2b-5fa9" name="Aerial Torpedo Salvo" hidden="false" collective="false" import="true" targetId="09d0-01c4-9075-9480" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="2nd" hidden="false" id="7bae-a305-3f64-1a5b" targetId="2a6f-36d6-5d75-e9fc" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="1f0a-6772-d01a-ace9" name="Heavy Broadside" hidden="false" collective="false" import="true" targetId="9985-b088-fda6-36d4" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="3rd" hidden="false" id="2fe6-be6f-4102-6b19" targetId="df04-304e-3eb9-52b" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="4860-febb-1d31-7c05" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="3rd" hidden="false" id="d96e-3725-30e-86ff" targetId="df04-304e-3eb9-52b" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="f3ea-3545-99a9-b1d5" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="4th" hidden="false" id="523-1b72-8903-4287" targetId="5650-1732-3d85-61a6" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="3bf-2901-45ed-a5d3" name="Aerial Torpedo Salvo" hidden="false" collective="false" import="true" targetId="09d0-01c4-9075-9480" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="1st" hidden="false" id="5ecc-3cb3-6674-d335" targetId="8dd5-28b8-39fb-6304" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="3ee2-740d-802a-adce" name="Dual Magnetic Gatling Guns" hidden="false" collective="false" import="true" targetId="88ad-deda-e9b7-9068" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="2nd" hidden="false" id="b358-24e-5208-ab4f" targetId="2a6f-36d6-5d75-e9fc" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="368"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="SRS" hidden="false" id="647d-aff9-5249-13bc" publicationId="e265-8c7f-a4b2-a48e" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d926-478a-9562-611" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="13f5-1885-5de1-c108" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="SRS" id="ed79-aa00-459a-1f12" hidden="false" publicationId="e265-8c7f-a4b2-a48e" targetId="b5a8-5584-f221-f445" type="profile">
+              <modifiers>
+                <modifier type="set" value="8/4" field="38e6-209c-1587-2cd0"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="Points" id="ed0a-f163-f0e-d024" hidden="false" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+            <cost name="Victory Points" id="af4a-af78-dd2d-5944" hidden="false" typeId="426e-670d-6ddd-9631" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="2bd0-1285-4bf8-4d33" name="Titan" publicationId="e6a1-85d3-8979-7880" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="remove" field="category" value="44e3-4b42-5468-18b4">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b71-85d4-ba13-9a8e" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="b5f5-bb43-88ad-a268">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b71-85d4-ba13-9a8e" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="bee0-e82f-b4d3-8590" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="84ab-f37f-971a-40dc" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c742-2ffd-a3c1-5e61" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2184-6940-302f-af85" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="4756-27f7-8b40-8b42" name="HEC Contractor (3.04)" publicationId="e6a1-85d3-8979-7880" hidden="false">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ea1c-7b0e-1390-7653" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c1-eac5-1cc4-65fa" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="66f0-94e7-8b7e-44fc" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b4a5-f9f4-4bd9-1ff0" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6d21-83d7-8fca-5da0" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ea1c-7b0e-1390-7653" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>This Model may add +2 to the Defence Action Dice Pool on any friendly Models within 5”. This bonus is in addition to any other bonuses such as being part of an Attached Unit. The HEC Contractor Rule only applies during each Round where the Force this Unit is part of had equal to or less Victory Points than their opponents at the most recent Check for Victory Step.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="7e12-92e4-f05a-bab0" name="Titan" hidden="false" targetId="c13b-4ce6-b456-9e2d" type="profile">
+          <modifiers>
+            <modifier type="set" value="6/4" field="ff43-364b-8da9-bce9">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="2bd0-1285-4bf8-4d33" childId="84ab-f37f-971a-40dc" shared="false" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="6653-3d1e-5428-ccfb" name="Devil’s Own Luck [3.07a]" hidden="false" targetId="da8d-c041-fd15-a8de" type="rule"/>
+        <infoLink id="1bed-dde9-7411-962a" name="Strategic Asset [3.07a]" hidden="false" targetId="12ec-f9c6-b68b-913b" type="rule"/>
+        <infoLink id="4c53-e374-5ae2-283c" name="Useful Freight [3.07a]" hidden="false" targetId="2fcd-3a8e-8d93-52af" type="rule"/>
+        <infoLink id="a403-6605-cedd-c40b" name="Forward Deployment [3.07a]" hidden="false" targetId="e8f8-a4d2-d40c-1467" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b574-4b11-7d6a-635f" name="Union" hidden="false" targetId="44e3-4b42-5468-18b4" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8678-a0fa-3bb-aba7" name="Main Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="780e-b98-cb70-3af">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad1a-8d08-2ec4-16d" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a88-bd6f-7c7c-f60c" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="780e-b98-cb70-3af" name="Gun Battery" hidden="false" collective="false" import="true" targetId="e32f-eb1d-5c03-b61c" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" value="db84-bb03-d026-c3a5" field="category"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d86-7334-8f88-7f3e" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="c46d-5312-c848-965a" name="Chesapeake Gatling Gun" hidden="false" collective="false" import="true" targetId="6a09-b3d9-f16a-c349" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" value="db84-bb03-d026-c3a5" field="category"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="956-fc49-deec-d90c" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink id="38b0-d2f0-78b2-f877" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a536-95b4-897-d219" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Shield generator" hidden="false" id="9453-e75a-36ea-7a83" collective="false" targetId="596e-bbf7-4be2-d494" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="100"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Grand Conveyor" hidden="false" id="84ab-f37f-971a-40dc">
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="20"/>
+            <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72f4-5375-5a52-17d"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="7f55-6b43-dfc0-29be" name="Titan Olympia-Pattern" publicationId="e6a1-85d3-8979-7880" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="remove" field="category" value="44e3-4b42-5468-18b4">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b71-85d4-ba13-9a8e" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="b5f5-bb43-88ad-a268">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b71-85d4-ba13-9a8e" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="bee0-e82f-b4d3-8590" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="c600-9f5c-881d-172a" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf3f-7179-b44-e85b" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e859-8ee1-13ff-db5e" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="3a78-a339-f41e-bc08" name="HEC Contractor (3.04)" publicationId="e6a1-85d3-8979-7880" hidden="false">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ea1c-7b0e-1390-7653" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c1-eac5-1cc4-65fa" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="66f0-94e7-8b7e-44fc" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b4a5-f9f4-4bd9-1ff0" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6d21-83d7-8fca-5da0" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ea1c-7b0e-1390-7653" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <description>This Model may add +2 to the Defence Action Dice Pool on any friendly Models within 5”. This bonus is in addition to any other bonuses such as being part of an Attached Unit. The HEC Contractor Rule only applies during each Round where the Force this Unit is part of had equal to or less Victory Points than their opponents at the most recent Check for Victory Step.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="3c39-86c-3e38-4de0" name="Titan" hidden="false" targetId="c13b-4ce6-b456-9e2d" type="profile">
+          <modifiers>
+            <modifier type="set" value="6/4" field="ff43-364b-8da9-bce9">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="7f55-6b43-dfc0-29be" childId="c600-9f5c-881d-172a" shared="false" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="e3a6-16cd-dc21-d3fa" name="Devil’s Own Luck [3.07a]" hidden="false" targetId="da8d-c041-fd15-a8de" type="rule"/>
+        <infoLink id="2d03-8833-a168-2b0a" name="Strategic Asset [3.07a]" hidden="false" targetId="12ec-f9c6-b68b-913b" type="rule"/>
+        <infoLink id="27d3-69b6-8099-c507" name="Useful Freight [3.07a]" hidden="false" targetId="2fcd-3a8e-8d93-52af" type="rule"/>
+        <infoLink id="d056-df10-216f-189a" name="Forward Deployment [3.07a]" hidden="false" targetId="e8f8-a4d2-d40c-1467" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9d74-4bbb-9199-19a4" name="Union" hidden="false" targetId="44e3-4b42-5468-18b4" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="fb47-b1a1-73e2-1d76" name="Main Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="780e-b98-cb70-3af">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a98-6ccb-7140-51fd" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4cb-c1ff-bf4e-4d03" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="d14b-7e6f-8499-6007" name="Gun Battery" hidden="false" collective="false" import="true" targetId="e32f-eb1d-5c03-b61c" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" value="db84-bb03-d026-c3a5" field="category"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a16b-241d-41ca-5d72" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="2f3a-e12d-303d-5ec6" name="Chesapeake Gatling Gun" hidden="false" collective="false" import="true" targetId="6a09-b3d9-f16a-c349" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" value="db84-bb03-d026-c3a5" field="category"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97b8-b810-8de3-c602" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink id="a498-6359-d62c-3825" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="148c-d625-907c-1bf0" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d014-3563-f149-517d" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Shield generator" hidden="false" id="bcdd-b0c5-9a92-3dde" collective="false" targetId="596e-bbf7-4be2-d494" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="100"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Grand Conveyor" hidden="false" id="c600-9f5c-881d-172a">
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="20"/>
+            <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c3b-c8c9-f756-e04f"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -12386,7 +13062,7 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
     <rule id="5ac7-509a-c07e-293b" name="Pipeworks Battlefleet Bonus (3.05)" publicationId="e6a1-85d3-8979-7880" hidden="false">
       <description>All Actions with the Arc Quality by Units in this Battlefleet, gain the Sustained Quality.</description>
     </rule>
-    <rule id="d1aa-3acc-11cb-5002" name="HEC Contractor (3.04)" publicationId="e6a1-85d3-8979-7880" hidden="false">
+    <rule id="d1aa-3acc-11cb-5002" name="HEC Contractor [3.07a]" publicationId="e6a1-85d3-8979-7880" hidden="false">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -13094,6 +13770,32 @@ Review 3.06.00: updated to Orbat 3.06 rev1 (07/04/2024)</readme>
         <characteristic name="SDV" id="92c0-5db1-3896-5121" hidden="false" typeId="b001-8ebf-b7fe-74da">0/0</characteristic>
         <characteristic name="Fray" id="6893-edc4-947f-75ef" hidden="false" typeId="4c54-804a-8993-7325">10/8</characteristic>
         <characteristic name="Hull" id="5d11-7d84-d763-db8d" hidden="false" typeId="ff43-364b-8da9-bce9">8/5</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="34e2-c6d7-13f1-149a" name="Destiny" publicationId="e6a1-85d3-8979-7880" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model">
+      <characteristics>
+        <characteristic name="Mass" id="1bf0-367e-3ce2-edf2" hidden="false" typeId="dbde-866b-70b0-d5e9">5/5</characteristic>
+        <characteristic name="Speed" id="9b5b-36df-1a44-6b53" hidden="false" typeId="9e4a-2ba1-f396-74b9">6/5</characteristic>
+        <characteristic name="Turn Limit" id="271d-e993-3868-7b8a" hidden="false" typeId="b9f6-2f65-e8c8-b906">4/3</characteristic>
+        <characteristic name="Armour" id="9d86-5fbd-b0d1-b15a" hidden="false" typeId="29a3-02bb-e7f3-0ddb">7/6</characteristic>
+        <characteristic name="Citadel" id="1158-6658-c135-f750" hidden="false" typeId="c141-3bcf-41f5-6c24">14/10</characteristic>
+        <characteristic name="ADV" id="78a0-6e7a-8e4f-526e" hidden="false" typeId="6428-9828-bb2e-f923">9/5</characteristic>
+        <characteristic name="SDV" id="6837-471f-bfcf-d468" hidden="false" typeId="b001-8ebf-b7fe-74da">0/0</characteristic>
+        <characteristic name="Fray" id="c50a-3780-56b2-4bd1" hidden="false" typeId="4c54-804a-8993-7325">11/9</characteristic>
+        <characteristic name="Hull" id="bbfa-5b72-7ca5-32bd" hidden="false" typeId="ff43-364b-8da9-bce9">10/8</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c13b-4ce6-b456-9e2d" name="Titan" publicationId="e6a1-85d3-8979-7880" hidden="false" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model">
+      <characteristics>
+        <characteristic name="Mass" id="c63e-602f-8f0b-3250" hidden="false" typeId="dbde-866b-70b0-d5e9">2/2</characteristic>
+        <characteristic name="Speed" id="9969-b62e-f2d6-f568" hidden="false" typeId="9e4a-2ba1-f396-74b9">8/7</characteristic>
+        <characteristic name="Turn Limit" id="13a5-55bb-44a5-bbae" hidden="false" typeId="b9f6-2f65-e8c8-b906">4/3</characteristic>
+        <characteristic name="Armour" id="5280-b35d-d4cf-da14" hidden="false" typeId="29a3-02bb-e7f3-0ddb">5/5</characteristic>
+        <characteristic name="Citadel" id="b92d-3bd7-c3f9-f0f1" hidden="false" typeId="c141-3bcf-41f5-6c24">10/10</characteristic>
+        <characteristic name="ADV" id="eae5-fa5b-d4b1-4c66" hidden="false" typeId="6428-9828-bb2e-f923">2/1</characteristic>
+        <characteristic name="SDV" id="9d7a-e3dc-2f24-75ad" hidden="false" typeId="b001-8ebf-b7fe-74da">2/1</characteristic>
+        <characteristic name="Fray" id="8fa0-daaf-d365-b36b" hidden="false" typeId="4c54-804a-8993-7325">2/3</characteristic>
+        <characteristic name="Hull" id="8a26-c59b-e5d1-4f1b" hidden="false" typeId="ff43-364b-8da9-bce9">4/4</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
