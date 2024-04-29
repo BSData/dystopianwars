@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<catalogue id="526f-06e7-edaa-02b8" name="Weapon" revision="20" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar, UrsinePatriarch" authorContact="siponeric@hotmail.com
-Discord: zharrpostingghoroth" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="526f-06e7-edaa-02b8" name="Weapon" revision="20" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar, UrsinePatriarch" authorContact="siponeric@hotmail.com / Discord: zharrpostingghoroth" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
 
   <readme>Weapon collection
 Review v1: starting document
@@ -1848,7 +1847,16 @@ Review v21: Various edits for Imperium
                 <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a6f-36d6-5d75-e9fc" type="instanceOf"/>
               </conditions>
             </modifier>
-          </modifiers>
+            <modifier type="append" value="3nd" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="df04-304e-3eb9-52b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="4th" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5650-1732-3d85-61a6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>          </modifiers>
           <modifierGroups>
             <modifierGroup>
               <modifiers>
@@ -1910,58 +1918,6 @@ Review v21: Various edits for Imperium
               </modifiers>
             </modifierGroup>
           </modifierGroups>
-          <modifiers>
-            <modifier type="append" value="(Front First)" field="faa3-d69c-5156-2acf">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="1420-4e0a-ca1d-6cb7" childId="62c7-5eb0-d38e-486" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="(Front Second)" field="faa3-d69c-5156-2acf">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c595-958b-800e-2c04" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="(Rear First)" field="faa3-d69c-5156-2acf">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1305-ddc0-7c51-79ad" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="(Rear Second)" field="faa3-d69c-5156-2acf">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8f47-ccb8-8fba-b472" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="(Starboard First)" field="faa3-d69c-5156-2acf">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="801-696b-9bb1-e4ef" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="(Starboard Second)" field="faa3-d69c-5156-2acf">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a036-e1b6-ee86-ebf7" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="1st" field="faa3-d69c-5156-2acf">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8dd5-28b8-39fb-6304" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="2nd" field="faa3-d69c-5156-2acf">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2a6f-36d6-5d75-e9fc" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="3nd" field="faa3-d69c-5156-2acf">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="df04-304e-3eb9-52b" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="4th" field="faa3-d69c-5156-2acf">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5650-1732-3d85-61a6" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </infoLink>
         <infoLink id="104c-86c5-93c7-ead9" name="Aerial" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
       </infoLinks>
@@ -6704,6 +6660,11 @@ Review v21: Various edits for Imperium
                 <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a6f-36d6-5d75-e9fc" type="instanceOf"/>
               </conditions>
             </modifier>
+            <modifier type="append" value="3rd" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="df04-304e-3eb9-52b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <modifierGroups>
             <modifierGroup>
@@ -6726,24 +6687,6 @@ Review v21: Various edits for Imperium
               </modifiers>
             </modifierGroup>
           </modifierGroups>
-
-          <modifiers>
-            <modifier type="append" value="1st" field="faa3-d69c-5156-2acf">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8dd5-28b8-39fb-6304" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="2nd" field="faa3-d69c-5156-2acf">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2a6f-36d6-5d75-e9fc" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="3rd" field="faa3-d69c-5156-2acf">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="df04-304e-3eb9-52b" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </infoLink>
         <infoLink id="c46c-0546-c637-8187" name="Fusillade" hidden="false" targetId="4ec1-3aa3-001e-f8f6" type="rule"/>
         <infoLink id="d727-09c3-c6f8-4581" name="Broadside" hidden="false" targetId="cb94-70c0-65b8-d3d0" type="rule"/>
