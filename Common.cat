@@ -193,15 +193,15 @@ Review 3.06.05: Union 3.07a data included</readme>
     <categoryEntry id="50f8-5d04-e502-e289" name="Specialist Battlefleet" publicationId="5a03-1c6f-8fc8-2be1" hidden="false"/>
     <categoryEntry id="86ff-88da-5a0b-2d81" name="Mercenary Battlefleet" publicationId="5a03-1c6f-8fc8-2be1" hidden="false"/>
     <categoryEntry id="0c88-380c-e521-7c86" name="Skyrunner" publicationId="d854-a2d6-3d52-44c4" hidden="false"/>
-    <categoryEntry name="Aerial Linebreaker" hidden="false" id="cbad-adb3-56aa-e640"/>
+    <categoryEntry id="cbad-adb3-56aa-e640" name="Aerial Linebreaker" hidden="false"/>
     <categoryEntry id="e25-780f-6ca8-1ca5" name="Indiaman" hidden="false"/>
-    <categoryEntry id="80a2-c7cb-97fd-f614" name="Guardian Platform" hidden="false" publicationId="dbca-8d57-b848-457e"/>
+    <categoryEntry id="80a2-c7cb-97fd-f614" name="Guardian Platform" publicationId="dbca-8d57-b848-457e" hidden="false"/>
     <categoryEntry id="2530-e0e4-d623-9933" name="Tactical Cruiser" hidden="false"/>
-    <categoryEntry name="Gyro-Bomb Carrier" hidden="false" id="1491-c6e8-5829-bc2e" publicationId="dbca-8d57-b848-457e"/>
-    <categoryEntry name="Support Battleship" hidden="false" id="5309-1647-26b0-bebb"/>
-    <categoryEntry name="Subnautical Explorer" id="8af5-8f0-bb19-767b" hidden="false" publicationId="908d-6feb-2e9e-843b"/>
-    <categoryEntry name="Ambush Submarine" id="3b4c-5e56-c351-b3ae" hidden="false" publicationId="908d-6feb-2e9e-843b"/>
-    <categoryEntry name="Mass Conveyor" id="d719-9442-5eb2-6c91" hidden="false" publicationId="e6a1-85d3-8979-7880"/>
+    <categoryEntry id="1491-c6e8-5829-bc2e" name="Gyro-Bomb Carrier" publicationId="dbca-8d57-b848-457e" hidden="false"/>
+    <categoryEntry id="5309-1647-26b0-bebb" name="Support Battleship" hidden="false"/>
+    <categoryEntry id="8af5-8f0-bb19-767b" name="Subnautical Explorer" publicationId="908d-6feb-2e9e-843b" hidden="false"/>
+    <categoryEntry id="3b4c-5e56-c351-b3ae" name="Ambush Submarine" publicationId="908d-6feb-2e9e-843b" hidden="false"/>
+    <categoryEntry id="dfe9-b90a-3878-78f5" name="Fleet Abilities" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="401b-9932-c92b-5c5d" name="- No Patron" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" collective="false" import="true" type="upgrade">
@@ -209,50 +209,113 @@ Review 3.06.05: Union 3.07a data included</readme>
         <categoryLink id="a86a-9f35-27b8-0be9" name="New CategoryLink" hidden="false" targetId="d6e0-2055-9c1b-5e86" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="dd77-1355-2580-a469" name="Main Battlefleet" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ceda-3ea8-5ea1-d391" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ceda-3ea8-5ea1-d391" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="fd7e-8a38-d850-f052" name="Main Battlefllet" hidden="false" targetId="f56a-3df4-17d2-db01" primary="false"/>
         <categoryLink id="2d7a-b682-7a0d-aed2" name="New CategoryLink" hidden="false" targetId="3226-5cb8-b2fb-ec2c" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4276-0dac-62d7-f428" name="Mercenary Battlefleet" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9f0-4df9-6df6-33c6" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9f0-4df9-6df6-33c6" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="bb45-35bc-892f-79e1" name="Battlefleet" hidden="false" targetId="3226-5cb8-b2fb-ec2c" primary="true"/>
         <categoryLink id="6fb2-194b-a8af-3674" name="Mercenaty Battlefleet" hidden="false" targetId="86ff-88da-5a0b-2d81" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1158-6e57-cab4-d521" name="Specialist Battlefleet" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c025-5ad2-d251-59c8" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c025-5ad2-d251-59c8" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="f589-0f50-debb-39a9" name="Specialist Battlefleet" hidden="false" targetId="50f8-5d04-e502-e289" primary="false"/>
         <categoryLink id="8040-3009-917c-bb5d" name="New CategoryLink" hidden="false" targetId="3226-5cb8-b2fb-ec2c" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6cf9-25df-c7f5-0fcb" name="Battlefleet" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4f1-c25b-f29d-5cf1" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="46a8-133b-9d86-5320" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="de3b-b8f0-91fb-a01f" name="Battlefleet" hidden="false" collective="false" import="true" targetId="b04e-8a86-bb32-797a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="b04e-8a86-bb32-797a" name="Battlefleet" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="99de-38a4-48e8-8d76" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="145b-d139-1802-66e4" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5150-b759-87ef-753f" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="9d10-79d8-817f-1266" name="Main Battlefleet" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6dbc-12a4-d7ad-4b82" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="85f6-8b18-fb07-fa16" name="Main Battlefllet" hidden="false" targetId="f56a-3df4-17d2-db01" primary="false"/>
+            <categoryLink id="77a5-765f-016c-79b7" name="New CategoryLink" hidden="false" targetId="3226-5cb8-b2fb-ec2c" primary="true"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="efbe-2d34-0ae7-9fcf" name="Specialist Battlefleet" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="465a-b376-ec41-0443" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="7ec8-ff82-5269-a03b" name="Specialist Battlefleet" hidden="false" targetId="50f8-5d04-e502-e289" primary="false"/>
+            <categoryLink id="c095-bca1-0a28-b3b8" name="New CategoryLink" hidden="false" targetId="3226-5cb8-b2fb-ec2c" primary="true"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9006-ff07-1b2e-1dcb" name="Mercenary Battlefleet" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6421-75f6-62b5-f366" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="6e55-71e8-8d70-1b62" name="Battlefleet" hidden="false" targetId="3226-5cb8-b2fb-ec2c" primary="true"/>
+            <categoryLink id="762b-f450-d355-8e86" name="Mercenaty Battlefleet" hidden="false" targetId="86ff-88da-5a0b-2d81" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0.0"/>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>
