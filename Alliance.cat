@@ -21,7 +21,7 @@
 3.04.03: correction of datafile for ORBAT 3.04 (01/09/2023 rev3)
 3.04.04: check datafile for ORBAT 3.04 (01/09/2023 to be used in New Recruit)
 3.04.05: v18 rev2, error correction (03/03/2024)
-3.05.00: v19 (Orbat 3.05 12/02/2024) rev3</readme>
+3.05.00: v19 (Orbat 3.05 12/02/2024) rev4</readme>
   <categoryEntries>
     <categoryEntry id="534c-9506-e470-8b7c" name="Alliance" publicationId="129d-da97-caec-1ddd" hidden="false"/>
     <categoryEntry id="9aab-6794-6d2b-c1a8" name="French" publicationId="129d-da97-caec-1ddd" hidden="false"/>
@@ -85,7 +85,7 @@
   <forceEntries>
     <forceEntry id="5271-9000-49cf-7fff" name="Alliance Faction Battlefleet  (Main)" publicationId="129d-da97-caec-1ddd" hidden="false">
       <infoLinks>
-        <infoLink id="271a-3204-0fa2-3065" name="Strategic Reserve" hidden="false" targetId="3f21-1511-2bff-8d3b" type="rule">
+        <infoLink id="271a-3204-0fa2-3065" name="Strategic Reserve [3.07a]" hidden="false" targetId="3f21-1511-2bff-8d3b" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -339,7 +339,7 @@
     </forceEntry>
     <forceEntry id="5ad0-5ffc-da79-2fd0" name="French Frontline Battlefleet (Main)" publicationId="129d-da97-caec-1ddd" hidden="false">
       <infoLinks>
-        <infoLink id="ed04-a470-d398-dc9d" name="Command Override**" hidden="false" targetId="78c8-6a85-daa7-3625" type="rule"/>
+        <infoLink id="ed04-a470-d398-dc9d" name="Command Override [3.06]" hidden="false" targetId="78c8-6a85-daa7-3625" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4c05-fa88-e0f9-b8f9" name="Battlefleet" hidden="false" targetId="3226-5cb8-b2fb-ec2c" primary="false">
@@ -475,7 +475,7 @@
     </forceEntry>
     <forceEntry id="aaa0-551a-1cbe-e5a1" name="French Levant Battlefleet (Spec)" publicationId="129d-da97-caec-1ddd" hidden="false">
       <infoLinks>
-        <infoLink id="75d9-0186-bc6a-a748" name="Sabre Rattle**" hidden="false" targetId="6682-4372-1977-72dc" type="rule">
+        <infoLink id="75d9-0186-bc6a-a748" name="Sabre Rattle [3.05a]" hidden="false" targetId="6682-4372-1977-72dc" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -581,7 +581,7 @@
     </forceEntry>
     <forceEntry id="e4e7-881b-52b8-fdc7" name="Italian Frontline Battlefleet (Main)" publicationId="129d-da97-caec-1ddd" hidden="false">
       <infoLinks>
-        <infoLink id="15d6-1d2d-7d0f-5907" name="Sabre Rattle" hidden="false" targetId="6682-4372-1977-72dc" type="rule"/>
+        <infoLink id="15d6-1d2d-7d0f-5907" name="Sabre Rattle [3.05a]" hidden="false" targetId="6682-4372-1977-72dc" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Battlefleet" hidden="false" id="7365-a53a-e67d-7366" targetId="3226-5cb8-b2fb-ec2c" primary="false">
@@ -670,7 +670,7 @@
     </forceEntry>
     <forceEntry id="62d7-3b23-3e74-2a0d" name="Italian Support Battlefleet (Spec)" publicationId="129d-da97-caec-1ddd" hidden="false">
       <infoLinks>
-        <infoLink id="3aef-3939-8bd2-3d39" name="Valorous Conduct" hidden="false" targetId="0d1b-0810-3b49-e25e" type="rule"/>
+        <infoLink id="3aef-3939-8bd2-3d39" name="Valorous Conduct [3.06]" hidden="false" targetId="0d1b-0810-3b49-e25e" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Battlefleet" hidden="false" id="bf1d-2568-e7e4-3b05" targetId="3226-5cb8-b2fb-ec2c" primary="false">
@@ -757,7 +757,7 @@
         </categoryLink>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="be3-c50-e2fd-d88" includeChildSelections="true"/>
+        <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="be3-c50-e2fd-d88" includeChildSelections="true"/>
       </constraints>
       <modifiers>
         <modifier type="set" value="10" field="be3-c50-e2fd-d88">
@@ -773,7 +773,7 @@
     </forceEntry>
     <forceEntry id="777d-cdf2-234a-ad0b" name="SUSA Battlefleet (Spec)" publicationId="129d-da97-caec-1ddd" hidden="false">
       <infoLinks>
-        <infoLink id="4d21-84a3-dba2-e2e3" name="Command Override**" hidden="false" targetId="78c8-6a85-daa7-3625" type="rule"/>
+        <infoLink id="4d21-84a3-dba2-e2e3" name="Command Override [3.06]" hidden="false" targetId="78c8-6a85-daa7-3625" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Battlefleet" hidden="false" id="6b42-ee35-46a9-1b37" targetId="3226-5cb8-b2fb-ec2c" primary="false">
@@ -1100,7 +1100,7 @@
         </categoryLink>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Preliminary Survay [3.06]" hidden="false" id="e794-ea65-8923-c597" targetId="0006-60f1-1ca3-b204" type="rule"/>
+        <infoLink name="Preliminary Survey [3.06]" hidden="false" id="e794-ea65-8923-c597" targetId="0006-60f1-1ca3-b204" type="rule"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="e5d5-9547-ee44-221" includeChildSelections="true"/>
@@ -1231,7 +1231,7 @@
       <categoryLinks>
         <categoryLink id="b64a-bc61-02db-eed3" name="Chevalier Class" hidden="false" targetId="0177-7075-63bf-8514" primary="false"/>
         <categoryLink id="efdb-70bd-818a-8120" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="5c44-87f7-d5e7-df95" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="5c44-87f7-d5e7-df95" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8d28-25b0-cc25-7bc9" name="Chevalier" hidden="false" collective="false" import="true" targetId="a5a8-3c6a-6e3a-9db3" type="selectionEntry"/>
@@ -1307,7 +1307,7 @@
       <categoryLinks>
         <categoryLink id="8105-ba57-277c-2595" name="Ecuyere Class" hidden="false" targetId="b340-0d07-c45f-d5a4" primary="false"/>
         <categoryLink id="ec11-fbeb-7f75-899d" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="1939-358b-f883-1a7d" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="1939-358b-f883-1a7d" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="ddff-0f5a-10b5-6760" name="Ecuyere" hidden="false" collective="false" import="true" targetId="4cac-c4a1-3eaf-e0fe" type="selectionEntry"/>
@@ -1420,7 +1420,7 @@
       <categoryLinks>
         <categoryLink id="3637-4763-1020-62ea" name="Chasseur Class" hidden="false" targetId="d1f3-f1e2-00b8-ccaf" primary="false"/>
         <categoryLink id="7ec5-d206-bb6f-1863" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="dc38-3eba-8047-ea11" name="New CategoryLink" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="true"/>
+        <categoryLink id="dc38-3eba-8047-ea11" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="975f-7c54-7a59-4ed2" name="Chasseur" hidden="false" collective="false" import="true" targetId="0a0d-8f93-a5ef-a7cd" type="selectionEntry"/>
@@ -1447,7 +1447,7 @@
       <categoryLinks>
         <categoryLink id="bfc0-2bcb-65d7-730e" name="Epaulard Class" hidden="false" targetId="ae74-6fbc-8c0a-022b" primary="false"/>
         <categoryLink id="36e1-adcd-7e88-12b2" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="e45b-0651-d339-754b" name="New CategoryLink" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
+        <categoryLink id="e45b-0651-d339-754b" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="cb20-78fa-88b3-896e" name="Epaulard" hidden="false" collective="false" import="true" targetId="2067-72c0-3fe7-03b9" type="selectionEntry"/>
@@ -1474,7 +1474,7 @@
       <categoryLinks>
         <categoryLink id="1d91-5009-29fb-d407" name="Furieux Class" hidden="false" targetId="498a-eb65-a773-e629" primary="false"/>
         <categoryLink id="c1b0-5f0d-c14c-5dd3" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="7b92-d65f-d616-b672" name="New CategoryLink" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="true"/>
+        <categoryLink id="7b92-d65f-d616-b672" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="3700-b0e1-de5f-c8f4" name="Furieux" hidden="false" collective="false" import="true" targetId="e63a-73d1-c314-2c3e" type="selectionEntry"/>
@@ -1501,7 +1501,7 @@
       <categoryLinks>
         <categoryLink id="0f4f-217b-499f-1c57" name="Sagitta Class" hidden="false" targetId="250b-a319-2fc4-f4b9" primary="false"/>
         <categoryLink id="b569-8207-7e47-933d" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
-        <categoryLink id="b210-9b12-4427-7eef" name="New CategoryLink" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
+        <categoryLink id="b210-9b12-4427-7eef" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="40c5-b4c0-e362-830b" name="Sagitta" hidden="false" collective="false" import="true" targetId="59d3-9766-efa5-4b84" type="selectionEntry"/>
@@ -1528,7 +1528,7 @@
       <categoryLinks>
         <categoryLink id="d7f5-5391-6ba3-3018" name="Sirene Class" hidden="false" targetId="f178-bbbd-5205-7294" primary="false"/>
         <categoryLink id="f32c-66bd-1a92-8e0d" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="3bef-a81a-6265-d9d8" name="New CategoryLink" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
+        <categoryLink id="3bef-a81a-6265-d9d8" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="eeca-871f-3c3b-1529" name="Sirene" hidden="false" collective="false" import="true" targetId="9685-3e4b-51f3-a0a2" type="selectionEntry"/>
@@ -1554,7 +1554,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="b465-70ef-890a-fc17" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="461f-83cf-f4e4-1551" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="461f-83cf-f4e4-1551" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="f48e-e3df-47a9-f885" name="Charlemagne Class" hidden="false" targetId="f053-171a-557e-6a05" primary="false"/>
       </categoryLinks>
       <entryLinks>
@@ -1582,8 +1582,8 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="b3c9-be4e-f17e-54b3" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
-        <categoryLink id="1003-8ff5-d9b5-10e7" name="Picardy" hidden="false" targetId="555f-57ea-febb-f19e" primary="false"/>
-        <categoryLink id="99a7-ef0b-666a-6208" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="1003-8ff5-d9b5-10e7" name="Picardy Class" hidden="false" targetId="555f-57ea-febb-f19e" primary="false"/>
+        <categoryLink id="99a7-ef0b-666a-6208" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="9880-f5d1-4668-30cf" name="Picardy" hidden="false" collective="false" import="true" targetId="b859-638f-8f4f-9cfe" type="selectionEntry"/>
@@ -1611,7 +1611,7 @@
       <categoryLinks>
         <categoryLink id="c9cf-0ff7-a65e-eee2" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
         <categoryLink id="e098-9820-8c3a-a8c1" name="Loire Class" hidden="false" targetId="317e-5eb9-f1ae-8ff8" primary="false"/>
-        <categoryLink id="d5e6-0c41-2c42-3221" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="d5e6-0c41-2c42-3221" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="ea51-e931-0d62-ddad" name="Loire" hidden="false" collective="false" import="true" targetId="62ee-fc74-9ba8-67dd" type="selectionEntry"/>
@@ -2117,8 +2117,8 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="1579-0613-7211-9077" name="New CategoryLink" hidden="false" targetId="022b-08af-c874-e3f1" primary="true"/>
-        <categoryLink id="aa2e-6fde-0a91-9bd3" name="Cordova Class" hidden="false" targetId="bf9a-2382-3bbb-8a00" primary="false"/>
+        <categoryLink id="1579-0613-7211-9077" name="Aerial Unit" hidden="false" targetId="022b-08af-c874-e3f1" primary="true"/>
+        <categoryLink id="aa2e-6fde-0a91-9bd3" name="Cordoba Class" hidden="false" targetId="bf9a-2382-3bbb-8a00" primary="false"/>
         <categoryLink id="c381-7d58-8297-0b44" name="Spanish" hidden="false" targetId="5a93-5021-42f1-6d6e" primary="false"/>
       </categoryLinks>
       <entryLinks>
@@ -2143,7 +2143,7 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="762f-2a68-e92d-486c" name="New CategoryLink" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="true"/>
+        <categoryLink id="762f-2a68-e92d-486c" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="true"/>
         <categoryLink id="b0b7-88f4-8c8c-c437" name="Dieppe Class" hidden="false" targetId="ff65-4772-f6e5-4704" primary="false"/>
         <categoryLink id="b56f-9ed4-5386-8480" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
       </categoryLinks>
@@ -2243,7 +2243,7 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="ce7b-9fae-cc5d-3ee3" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="ce7b-9fae-cc5d-3ee3" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="7bf1-44ea-ab5f-a9fd" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
         <categoryLink id="5cc4-03bf-6e0d-b6a3" name="Auxilia Class" hidden="false" targetId="1439-2fa4-15a8-b97a" primary="false"/>
       </categoryLinks>
@@ -2271,7 +2271,7 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="aa7c-309a-3b16-861b" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="aa7c-309a-3b16-861b" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="29bd-6af3-e8f0-29fd" name="Italian" hidden="false" targetId="fbd9-298b-2ed3-63b2" primary="false"/>
         <categoryLink id="ed49-01a7-595c-5eea" name="Cestus Class" hidden="false" targetId="93d4-cb98-2ff1-1d48" primary="false"/>
       </categoryLinks>
@@ -2302,7 +2302,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="03a9-5a77-7ed5-21c7" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
-        <categoryLink id="f21f-47f5-02b7-7d3c" name="Colombia Class" hidden="false" targetId="bb95-5e59-afce-dfe8" primary="false"/>
+        <categoryLink id="f21f-47f5-02b7-7d3c" name="Columbia Class" hidden="false" targetId="bb95-5e59-afce-dfe8" primary="false"/>
         <categoryLink id="c5c3-67aa-b60f-dce9" name="SUSA" hidden="false" targetId="fca3-00a8-9f39-e015" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -2349,7 +2349,7 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="b40b-ca97-4503-de06" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
+        <categoryLink id="b40b-ca97-4503-de06" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="1dae-ce4c-eaae-5662" name="Vauban Class" hidden="false" targetId="cd28-9d0b-297b-7e6a" primary="false"/>
         <categoryLink id="12e9-fd22-bf52-8f10" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
       </categoryLinks>
@@ -2594,7 +2594,7 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="69de-4952-1148-f6c9" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="69de-4952-1148-f6c9" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="014e-72d1-f89a-1074" name="Elvas Class" hidden="false" targetId="73c3-2b51-8f94-d30a" primary="false"/>
         <categoryLink id="4a43-9d04-d090-7290" name="Portuguese" hidden="false" targetId="9db8-15e9-7224-9503" primary="false"/>
       </categoryLinks>
@@ -2665,12 +2665,12 @@
     </selectionEntry>
     <selectionEntry id="ba5b-8ecf-2423-d240" name="Special Rules" hidden="true" collective="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink id="9f70-10d6-f07e-8e93" name="New CategoryLink" hidden="false" targetId="8cfc-cf5f-6ab7-0db5" primary="true"/>
+        <categoryLink id="9f70-10d6-f07e-8e93" name="Special Rules" hidden="false" targetId="8cfc-cf5f-6ab7-0db5" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="e1a0-0cb1-4564-da44" name="Strategic Reserve" hidden="false" collective="false" import="true" targetId="36f8-37c6-9978-f26d" type="selectionEntry">
           <infoLinks>
-            <infoLink id="a148-4993-6d3f-9265" name="Strategic Reserve" hidden="false" targetId="3f21-1511-2bff-8d3b" type="rule"/>
+            <infoLink id="a148-4993-6d3f-9265" name="Strategic Reserve [3.07a]" hidden="false" targetId="3f21-1511-2bff-8d3b" type="rule"/>
           </infoLinks>
         </entryLink>
       </entryLinks>
@@ -2699,7 +2699,7 @@
       <categoryLinks>
         <categoryLink id="ef67-1a3a-ccea-62ac" name="French" hidden="false" targetId="9aab-6794-6d2b-c1a8" primary="false"/>
         <categoryLink id="c1c3-a6f7-8256-4f99" name="Loire Class" hidden="false" targetId="317e-5eb9-f1ae-8ff8" primary="false"/>
-        <categoryLink id="4ac3-cade-b8d9-15c2" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="4ac3-cade-b8d9-15c2" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="eeb7-a4bc-9636-cc4e" name="Les Ratons Laveur" hidden="false" targetId="a41e-7942-8059-4a66" primary="false"/>
       </categoryLinks>
       <entryLinks>
@@ -2825,7 +2825,7 @@
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="5b11-45cb-043e-c196" name="New CategoryLink" hidden="false" targetId="d6e0-2055-9c1b-5e86" primary="true"/>
+        <categoryLink id="5b11-45cb-043e-c196" name="Patron" hidden="false" targetId="d6e0-2055-9c1b-5e86" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="2"/>
@@ -2839,7 +2839,7 @@
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="e182-36fe-1b8b-3f8c" name="New CategoryLink" hidden="false" targetId="d6e0-2055-9c1b-5e86" primary="true"/>
+        <categoryLink id="e182-36fe-1b8b-3f8c" name="Patron" hidden="false" targetId="d6e0-2055-9c1b-5e86" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="1"/>
@@ -2901,13 +2901,13 @@
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6840-08e1-407a-89bb" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="5e27-ba8e-0318-17dd" name="Co-ordinate Support�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="d6bd-5af6-9993-b564" name="Reinforced Waterline�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4979-45a9-d374-3663" type="rule"/>
+        <infoLink id="5e27-ba8e-0318-17dd" name="Co-ordinated Support [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="d6bd-5af6-9993-b564" name="Reinforced Waterline [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4979-45a9-d374-3663" type="rule"/>
         <infoLink id="e1e5-34d1-8d0d-a1f1" name="Oriflamme" hidden="false" targetId="bdae-2f4b-e7e4-75e9" type="profile"/>
-        <infoLink id="5a80-e1ca-3444-d624" name="Maritime Patrol�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b7c-6003-8433-2817" type="rule"/>
-        <infoLink id="92ec-8172-f73d-783a" name="Heavy Firepower�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="d6c3-16c3-e832-f39b" name="For Valour!�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="68f3-7223-d136-1aa2" name="Protected Gun Crews�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1108-5d87-5267-d3a4" type="rule"/>
+        <infoLink id="5a80-e1ca-3444-d624" name="Maritime Patrol [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b7c-6003-8433-2817" type="rule"/>
+        <infoLink id="92ec-8172-f73d-783a" name="Heavy Firepower [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="d6c3-16c3-e832-f39b" name="For Valour! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="68f3-7223-d136-1aa2" name="Protected Gun Crews [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1108-5d87-5267-d3a4" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="46c6-b93c-f4d0-e9f3" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -3151,16 +3151,16 @@
       </constraints>
       <infoLinks>
         <infoLink id="987d-b8ca-b0cf-94f7" name="Mars" hidden="false" targetId="9963-0b2f-3891-bbfa" type="profile"/>
-        <infoLink id="4a6a-f421-7f05-5571" name="Co-ordinate Support�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="7a04-09c3-eb56-99ec" name="Heavy Firepower�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="391b-61db-2fb2-4d11" name="Advanced Repair Facilities" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule">
+        <infoLink id="4a6a-f421-7f05-5571" name="Co-ordinated Support [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="7a04-09c3-eb56-99ec" name="Heavy Firepower [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="391b-61db-2fb2-4d11" name="Advanced Repair Facilities (x) [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule">
           <modifiers>
             <modifier type="append" field="name" value="(1)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="6094-7d70-d1b0-5dc0" name="For Valour!�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="dc11-7980-d5ba-df19" name="Hammer Sweep�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
-        <infoLink id="9bf5-0d0b-3990-bd09" name="Ablative Flank Armour�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
+        <infoLink id="6094-7d70-d1b0-5dc0" name="For Valour! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="dc11-7980-d5ba-df19" name="Hammer Sweep [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
+        <infoLink id="9bf5-0d0b-3990-bd09" name="Ablative Flank Armour [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="48a9-8b1a-12ba-a182" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -3451,19 +3451,19 @@
       </constraints>
       <infoLinks>
         <infoLink id="a7ab-5c82-343d-4df5" name="Minerva" hidden="false" targetId="fd72-7c80-a3f4-9970" type="profile"/>
-        <infoLink id="9aa5-1199-6c21-752d" name="Malinois Strike Fighters" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ed8a-5968-81b4-27d5" type="rule"/>
-        <infoLink id="e069-303a-2f22-0776" name="Ablative Flank Armour" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
-        <infoLink id="8236-4390-91b3-80d3" name="Advanced Repair Facilities" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule">
+        <infoLink id="9aa5-1199-6c21-752d" name="Malinois Strike Fighters [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ed8a-5968-81b4-27d5" type="rule"/>
+        <infoLink id="e069-303a-2f22-0776" name="Ablative Flank Armour [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
+        <infoLink id="8236-4390-91b3-80d3" name="Advanced Repair Facilities (x) [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule">
           <modifiers>
             <modifier type="append" field="name" value="(3)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="d77a-9318-a7ab-5703" name="For Valour!" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="9406-5dee-1ae4-8848" name="SRS Mine Clearance" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
-        <infoLink id="2bfe-2159-8cae-8354" name="SRS Recon" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
-        <infoLink id="f3c7-68e7-475f-b1f4" name="Heavy Firepower" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="54a3-cc71-2ebc-7c62" name="Combat Air Patrol" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
-        <infoLink id="bd3f-51b8-0131-2aa8" name="Coordinate Support" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="d77a-9318-a7ab-5703" name="For Valour! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="9406-5dee-1ae4-8848" name="SRS Mine Clearance [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
+        <infoLink id="2bfe-2159-8cae-8354" name="SRS Recon [3.07a]" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
+        <infoLink id="f3c7-68e7-475f-b1f4" name="Heavy Firepower [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="54a3-cc71-2ebc-7c62" name="Combat Air Patrol [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
+        <infoLink id="bd3f-51b8-0131-2aa8" name="Co-ordinated Support [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3f0e-03d1-0395-4fc5" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -3640,17 +3640,17 @@
       </constraints>
       <infoLinks>
         <infoLink id="173a-1243-1546-5274" name="Couronne" hidden="false" targetId="3104-a11b-4d08-b9f9" type="profile"/>
-        <infoLink id="c497-c6a3-a217-0c1c" name="Maritime Patrol�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b7c-6003-8433-2817" type="rule"/>
-        <infoLink id="78fb-09f0-3e4c-6cb6" name="Combat Air Patrol�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
-        <infoLink id="5ebd-2dfd-e60d-2655" name="Malinois Strike Fighters�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ed8a-5968-81b4-27d5" type="rule"/>
-        <infoLink id="fc91-df9f-03cd-8ef8" name="Fortunes of War�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="949d-d37f-c7c8-1093" type="rule"/>
-        <infoLink id="4a9b-f02e-0196-a5bb" name="Coordinate Support**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="dcff-724f-71bb-7932" name="Protected Gun Crews�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1108-5d87-5267-d3a4" type="rule"/>
-        <infoLink id="40ab-95d5-766a-03b6" name="Reinforced Waterline�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4979-45a9-d374-3663" type="rule"/>
-        <infoLink id="c5f3-a876-2d9f-053c" name="SRS Mine Clearance�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
-        <infoLink id="2f21-e883-e72c-200f" name="SRS Recon�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
-        <infoLink id="ea5e-343a-da4a-0daf" name="For Valour!�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="fc22-e2e0-f87f-1334" name="Heavy Firepower�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="c497-c6a3-a217-0c1c" name="Maritime Patrol [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b7c-6003-8433-2817" type="rule"/>
+        <infoLink id="78fb-09f0-3e4c-6cb6" name="Combat Air Patrol [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
+        <infoLink id="5ebd-2dfd-e60d-2655" name="Malinois Strike Fighters [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ed8a-5968-81b4-27d5" type="rule"/>
+        <infoLink id="fc91-df9f-03cd-8ef8" name="Fortunes of War [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="949d-d37f-c7c8-1093" type="rule"/>
+        <infoLink id="4a9b-f02e-0196-a5bb" name="Co-ordinated Support [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="dcff-724f-71bb-7932" name="Protected Gun Crews [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1108-5d87-5267-d3a4" type="rule"/>
+        <infoLink id="40ab-95d5-766a-03b6" name="Reinforced Waterline [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4979-45a9-d374-3663" type="rule"/>
+        <infoLink id="c5f3-a876-2d9f-053c" name="SRS Mine Clearance [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
+        <infoLink id="2f21-e883-e72c-200f" name="SRS Recon [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
+        <infoLink id="ea5e-343a-da4a-0daf" name="For Valour! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="fc22-e2e0-f87f-1334" name="Heavy Firepower [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="b8b5-03f8-0afc-9009" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -3679,8 +3679,8 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2d7-c4e0-e176-f60e" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="df7e-8224-9da2-ddc1" name="Solex Generator" hidden="false" targetId="99d4-4010-e285-3397" type="rule"/>
-            <infoLink id="5d71-94ea-0033-36a4" name="Inspirational**" hidden="false" targetId="b48d-b4e0-19e8-d85a" type="rule"/>
+            <infoLink id="df7e-8224-9da2-ddc1" name="Solex Generator [3.05]" hidden="false" targetId="99d4-4010-e285-3397" type="rule"/>
+            <infoLink id="5d71-94ea-0033-36a4" name="Inspirational [3.07a]" hidden="false" targetId="b48d-b4e0-19e8-d85a" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="15"/>
@@ -3868,17 +3868,17 @@
             </modifier>
           </modifiers>
           <infoLinks>
-            <infoLink id="92a1-b302-bfa4-07c6" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
-            <infoLink id="d3bb-9135-aba4-e5b5" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+            <infoLink id="92a1-b302-bfa4-07c6" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="d3bb-9135-aba4-e5b5" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
       <infoLinks>
-        <infoLink id="92f3-b572-f9b3-5701" name="Co-ordinate Support�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="0395-8368-1cbb-602f" name="Reinforced Waterline�" hidden="false" targetId="4979-45a9-d374-3663" type="rule"/>
+        <infoLink id="92f3-b572-f9b3-5701" name="Co-ordinated Support [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="0395-8368-1cbb-602f" name="Reinforced Waterline [3.05]" hidden="false" targetId="4979-45a9-d374-3663" type="rule"/>
         <infoLink id="7779-08d1-35cf-d74f" name="Ecuyere" hidden="false" targetId="56c3-55f4-0d50-fae6" type="profile"/>
-        <infoLink id="86a2-87cc-7f7e-040d" name="Corvette Duty�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4836-a907-b316-55b2" type="rule"/>
-        <infoLink id="d05f-7c3-f4a4-8226" name="For Valour!�" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="86a2-87cc-7f7e-040d" name="Corvette Duty [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4836-a907-b316-55b2" type="rule"/>
+        <infoLink id="d05f-7c3-f4a4-8226" name="For Valour! [3.05]" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7b8b-fd34-cec6-3162" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -3931,17 +3931,17 @@
             </modifier>
           </modifiers>
           <infoLinks>
-            <infoLink id="28ee-4297-0d3e-2c18" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
-            <infoLink id="3eba-2cc2-c168-934d" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+            <infoLink id="28ee-4297-0d3e-2c18" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="3eba-2cc2-c168-934d" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
       <infoLinks>
-        <infoLink id="a2d4-58a5-20b0-ab0d" name="Coordinate Support" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="a2d4-58a5-20b0-ab0d" name="Co-ordinated Support [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
         <infoLink id="2a9b-d283-1a59-8de9" name="Chevalier" hidden="false" targetId="7e1c-7aed-bee4-aa25" type="profile"/>
-        <infoLink id="629b-07e6-bf3f-0881" name="Reinforced Waterline" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4979-45a9-d374-3663" type="rule"/>
-        <infoLink id="7ba0-9065-4b90-0616" name="For Valour!" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="260f-4411-1237-7e1a" name="Protected Gun Crews" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1108-5d87-5267-d3a4" type="rule"/>
+        <infoLink id="629b-07e6-bf3f-0881" name="Reinforced Waterline [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4979-45a9-d374-3663" type="rule"/>
+        <infoLink id="7ba0-9065-4b90-0616" name="For Valour! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="260f-4411-1237-7e1a" name="Protected Gun Crews [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1108-5d87-5267-d3a4" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c258-b7fc-e5b4-ca07" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -4181,13 +4181,13 @@
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1b5-8a32-beec-9ff6" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="3009-cf20-f554-efc9" name="Agile�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
-        <infoLink id="4e1c-69d4-5269-5245" name="Co-ordinate Support�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="ca58-638e-d670-c02e" name="Levant Surge�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
+        <infoLink id="3009-cf20-f554-efc9" name="Agile [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
+        <infoLink id="4e1c-69d4-5269-5245" name="Co-ordinated Support [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="ca58-638e-d670-c02e" name="Levant Surge [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
         <infoLink id="b9d9-ddbc-01ab-ec68" name="Magenta" hidden="false" targetId="d90f-84b5-1762-fb7a" type="profile"/>
-        <infoLink id="210d-e6c3-bfa3-e464" name="For Valour!�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="c762-297f-d080-9844" name="Heavy Firepower�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="7b0c-4a0b-5956-712a" name="Full Steam Ahead�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
+        <infoLink id="210d-e6c3-bfa3-e464" name="For Valour! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="c762-297f-d080-9844" name="Heavy Firepower [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="7b0c-4a0b-5956-712a" name="Full Steam Ahead [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0cdc-4dda-3873-f123" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -4506,21 +4506,21 @@
       </constraints>
       <infoLinks>
         <infoLink id="5cee-4967-ed35-53a8" name="Saint-Michel" hidden="false" targetId="5464-e726-755c-3e1c" type="profile"/>
-        <infoLink id="bb03-75ee-d99e-1eb2" name="Agile" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
-        <infoLink id="6b17-1314-c4b6-1152" name="Combat Air Patrol**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
-        <infoLink id="55db-2051-32ab-3e73" name="SRS Mine Clearance**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
-        <infoLink id="5126-5765-48ad-8436" name="SRS Recon **" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
-        <infoLink id="4feb-1a0b-1ee1-38be" name="Command Codes**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="422e-0279-5ff5-c279" type="rule"/>
-        <infoLink id="8ca9-7bd1-47d7-9635" name="For Valour!" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="85b9-1b0c-b242-f47b" name="Full Steam Ahead**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
-        <infoLink id="46c0-3879-a45a-d3a7" name="Levant Surge**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
-        <infoLink id="93de-ec25-944a-2b35" name="Malinois Strike Fighters**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ed8a-5968-81b4-27d5" type="rule"/>
-        <infoLink id="5dfb-1098-daac-5327" name="Heavy Firepower**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="6334-eafe-a6cd-2c48" name="Coordinate Support**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="bb03-75ee-d99e-1eb2" name="Agile [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
+        <infoLink id="6b17-1314-c4b6-1152" name="Combat Air Patrol [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
+        <infoLink id="55db-2051-32ab-3e73" name="SRS Mine Clearance [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
+        <infoLink id="5126-5765-48ad-8436" name="SRS Recon [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
+        <infoLink id="4feb-1a0b-1ee1-38be" name="Command Codes [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="422e-0279-5ff5-c279" type="rule"/>
+        <infoLink id="8ca9-7bd1-47d7-9635" name="For Valour! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="85b9-1b0c-b242-f47b" name="Full Steam Ahead [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
+        <infoLink id="46c0-3879-a45a-d3a7" name="Levant Surge [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
+        <infoLink id="93de-ec25-944a-2b35" name="Malinois Strike Fighters [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ed8a-5968-81b4-27d5" type="rule"/>
+        <infoLink id="5dfb-1098-daac-5327" name="Heavy Firepower [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="6334-eafe-a6cd-2c48" name="Co-ordinated Support [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="ce90-ba7e-375f-025c" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
-        <categoryLink id="9870-2997-da09-8fed" name="Levant Assault Carrier" hidden="false" targetId="0f4e-80de-1d9f-48c8" primary="false"/>
+        <categoryLink id="9870-2997-da09-8fed" name="Levant Battle Carrier" hidden="false" targetId="0f4e-80de-1d9f-48c8" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="a689-e0a5-bb30-bfc3" name="SRS" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="upgrade">
@@ -4750,19 +4750,19 @@
       </constraints>
       <infoLinks>
         <infoLink id="2c2a-df82-e80c-dae1" name="Voliere" hidden="false" targetId="e9aa-19b7-36b0-5f6a" type="profile"/>
-        <infoLink id="83b7-b6c1-17a3-34d0" name="Agile" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
-        <infoLink id="8425-12a3-bb99-8e8e" name="Combat Air Patrol" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
-        <infoLink id="f6cf-06bf-7aa7-18e8" name="SRS Mine Clearance" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
-        <infoLink id="ea4e-26ca-ab5a-a7bb" name="SRS Recon Flight" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
-        <infoLink id="9971-fd6c-6fa8-d158" name="Co-ordinate Support**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="4dd9-ed09-5046-fb3a" name="Levant Surge**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
-        <infoLink id="0bf5-ee10-5b97-0c98" name="For Valour!**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="1983-45ab-8c2f-2bcb" name="Malinois Strike Fighters" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ed8a-5968-81b4-27d5" type="rule"/>
-        <infoLink id="2252-2660-d835-4f9d" name="Full Steam Ahead**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
+        <infoLink id="83b7-b6c1-17a3-34d0" name="Agile [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
+        <infoLink id="8425-12a3-bb99-8e8e" name="Combat Air Patrol [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
+        <infoLink id="f6cf-06bf-7aa7-18e8" name="SRS Mine Clearance [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
+        <infoLink id="ea4e-26ca-ab5a-a7bb" name="SRS Recon [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
+        <infoLink id="9971-fd6c-6fa8-d158" name="Co-ordinated Support [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="4dd9-ed09-5046-fb3a" name="Levant Surge [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
+        <infoLink id="0bf5-ee10-5b97-0c98" name="For Valour! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="1983-45ab-8c2f-2bcb" name="Malinois Strike Fighters [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ed8a-5968-81b4-27d5" type="rule"/>
+        <infoLink id="2252-2660-d835-4f9d" name="Full Steam Ahead [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="57b0-4b3e-6159-6a07" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
-        <categoryLink id="a3f8-bbd9-7861-c6c6" name="Levant Support Carrier" hidden="false" targetId="1a02-dc75-7bf6-f0f5" primary="false"/>
+        <categoryLink id="a3f8-bbd9-7861-c6c6" name="Levant Strike Carrier" hidden="false" targetId="1a02-dc75-7bf6-f0f5" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="b401-5004-93f9-60c8" name="SRS" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="upgrade">
@@ -4876,16 +4876,16 @@
         <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ad0-bdb8-4736-72d2" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="e790-d9c0-d6d5-3a7a" name="Coordinate Support" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="3f7b-db8f-49f0-87e4" name="Agile" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
+        <infoLink id="e790-d9c0-d6d5-3a7a" name="Co-ordinated Support [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="3f7b-db8f-49f0-87e4" name="Agile [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
         <infoLink id="4df6-9c5f-f7c8-8683" name="Chasseur" hidden="false" targetId="c1bd-311b-929b-94b2" type="profile"/>
-        <infoLink id="f7be-2e3f-95f7-49cc" name="Levant Surge" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
-        <infoLink id="aff8-afd6-4893-0e7d" name="For Valour!**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="2cb4-d723-875e-48b4" name="Full Steam Ahead**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
+        <infoLink id="f7be-2e3f-95f7-49cc" name="Levant Surge [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
+        <infoLink id="aff8-afd6-4893-0e7d" name="For Valour! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="2cb4-d723-875e-48b4" name="Full Steam Ahead [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0fa2-6d51-05e1-1484" name="Levant Strike Cruiser" hidden="false" targetId="c203-f8a6-3732-872d" primary="false"/>
-        <categoryLink id="3431-4c41-2e10-9d13" name="New CategoryLink" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
+        <categoryLink id="3431-4c41-2e10-9d13" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="d58e-80da-f2e2-b800" name="Secondary Weapon" hidden="false" collective="false" import="true">
@@ -5153,20 +5153,20 @@
             </modifier>
           </modifiers>
           <infoLinks>
-            <infoLink id="24b4-b982-4cfb-ac8f" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
-            <infoLink id="62be-a4a7-af61-d0dc" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+            <infoLink id="24b4-b982-4cfb-ac8f" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="62be-a4a7-af61-d0dc" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
       <infoLinks>
         <infoLink id="fffb-2923-ee79-414f" name="Epaulard" hidden="false" targetId="2815-c2d3-91a0-e64e" type="profile"/>
-        <infoLink id="37fc-da88-7574-f800" name="Agile" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
-        <infoLink id="427d-1014-1135-ca94" name="Coordinate Support" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="f5e8-d372-4be4-c78d" name="Shadow Hunter**" hidden="false" targetId="741b-a6ce-dbe7-9409" type="rule"/>
-        <infoLink id="f75f-b408-a84b-8a62" name="For Valour!" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="f627-b32f-a0a4-761f" name="Spotter**" hidden="false" targetId="063a-3229-1f27-a3c2" type="rule"/>
-        <infoLink name="Deep Dive [3.05]" hidden="false" id="a015-cc4b-cb3-f369" targetId="32b6-97c2-a527-a1f9" type="rule"/>
-        <infoLink name="Deep Dive [3.06]" id="105e-a541-47f-ebbe" hidden="false" targetId="3bf2-4bf2-c33d-95ab" type="rule" publicationId="5a03-1c6f-8fc8-2be1"/>
+        <infoLink id="37fc-da88-7574-f800" name="Agile [3.07a]" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
+        <infoLink id="427d-1014-1135-ca94" name="Co-ordinated Support [3.05]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="f5e8-d372-4be4-c78d" name="Shadow Hunter [3.07a]" hidden="false" targetId="741b-a6ce-dbe7-9409" type="rule"/>
+        <infoLink id="f75f-b408-a84b-8a62" name="For Valour! [3.05]" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="f627-b32f-a0a4-761f" name="Spotter [3.07a]" hidden="false" targetId="063a-3229-1f27-a3c2" type="rule"/>
+        <infoLink name="Delicate Gyroscopics [3.05]" hidden="false" id="a015-cc4b-cb3-f369" targetId="32b6-97c2-a527-a1f9" type="rule"/>
+        <infoLink name="Deep Dive [3.07a]" id="105e-a541-47f-ebbe" hidden="false" targetId="3bf2-4bf2-c33d-95ab" type="rule" publicationId="5a03-1c6f-8fc8-2be1"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4dd3-f82b-f9a5-0379" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -5194,15 +5194,15 @@
         <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="398e-fe71-d0d9-e55e" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="54fe-9939-3918-e09e" name="For Valour! (3.04)" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="500d-cfe0-1cf5-4fcc" name="Agile [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
+        <infoLink id="54fe-9939-3918-e09e" name="For Valour! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="500d-cfe0-1cf5-4fcc" name="Agile [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
         <infoLink id="e782-8386-a554-4c2c" name="Furieux" hidden="false" targetId="4a3b-fbfc-b517-7d8f" type="profile"/>
-        <infoLink id="1b80-637b-4698-984a" name="Coordinated Support (3.04)" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="b39e-0ddb-6fca-c5a0" name="Corvette Duty [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4836-a907-b316-55b2" type="rule"/>
-        <infoLink id="60bf-6dc8-c70d-22d2" name="Legionnaire Assault Pods (3.04)" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="147c-599d-5190-bbaa" type="rule"/>
-        <infoLink id="fae7-50a9-846a-5e1b" name="Levant Surge (3.04)" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
-        <infoLink id="3d5c-0653-238f-62a3" name="Full Steam Ahead [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
-        <infoLink id="f458-103a-5432-4afd" name="Landing Vessel [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4869-03db-33f9-fa82" type="rule"/>
+        <infoLink id="1b80-637b-4698-984a" name="Co-ordinated Support [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="b39e-0ddb-6fca-c5a0" name="Corvette Duty [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4836-a907-b316-55b2" type="rule"/>
+        <infoLink id="60bf-6dc8-c70d-22d2" name="Legionnaire Assault Pods [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="147c-599d-5190-bbaa" type="rule"/>
+        <infoLink id="fae7-50a9-846a-5e1b" name="Levant Surge [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
+        <infoLink id="3d5c-0653-238f-62a3" name="Full Steam Ahead [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
+        <infoLink id="f458-103a-5432-4afd" name="Landing Vessel [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4869-03db-33f9-fa82" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c76a-986c-b455-9e2d" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -5466,20 +5466,20 @@
             </modifier>
           </modifiers>
           <infoLinks>
-            <infoLink id="be0c-4a5e-f6e3-2ff6" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
-            <infoLink id="05bd-f8bd-a4df-c629" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+            <infoLink id="be0c-4a5e-f6e3-2ff6" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="05bd-f8bd-a4df-c629" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
       <infoLinks>
         <infoLink id="40f7-02fa-46dc-c5d4" name="Sagitta" hidden="false" targetId="2437-3225-ac32-83f0" type="profile"/>
-        <infoLink id="fb71-0a07-763c-5c6a" name="Pack Hunter" hidden="false" targetId="112e-82cb-42a3-83d2" type="rule"/>
-        <infoLink id="305c-0596-973e-1486" name="Deep Dive [3.05]" hidden="false" targetId="32b6-97c2-a527-a1f9" type="rule"/>
-        <infoLink id="37c8-e055-9c52-d502" name="Auxiliary Mine Layer**" hidden="false" targetId="6158-153b-d320-6060" type="rule"/>
-        <infoLink id="8291-831a-8abf-9259" name="Coordinated Support (3.04)" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="1d85-5b78-dbb0-c05a" name="For Valour!" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink name="Deep Dive [3.06]" hidden="false" id="c0a5-eadf-9a5-a59b" targetId="3bf2-4bf2-c33d-95ab" type="rule" publicationId="5a03-1c6f-8fc8-2be1"/>
-        <infoLink name="Agile [3.06]" hidden="false" id="8151-f5a5-cde5-ad4d" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
+        <infoLink id="fb71-0a07-763c-5c6a" name="Pack Hunter [3.07a]" hidden="false" targetId="112e-82cb-42a3-83d2" type="rule"/>
+        <infoLink id="305c-0596-973e-1486" name="Delicate Gyroscopics [3.05]" hidden="false" targetId="32b6-97c2-a527-a1f9" type="rule"/>
+        <infoLink id="37c8-e055-9c52-d502" name="Auxiliary Mine Layer [3.07a]" hidden="false" targetId="6158-153b-d320-6060" type="rule"/>
+        <infoLink id="8291-831a-8abf-9259" name="Co-ordinated Support [3.05]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="1d85-5b78-dbb0-c05a" name="For Valour! [3.05]" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink name="Deep Dive [3.07a]" hidden="false" id="c0a5-eadf-9a5-a59b" targetId="3bf2-4bf2-c33d-95ab" type="rule" publicationId="5a03-1c6f-8fc8-2be1"/>
+        <infoLink name="Agile [3.07a]" hidden="false" id="8151-f5a5-cde5-ad4d" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6583-73d8-5289-b1e7" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -5523,20 +5523,20 @@
             </modifier>
           </modifiers>
           <infoLinks>
-            <infoLink id="f93d-38ab-9299-bf7d" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
-            <infoLink id="ebb8-c4e7-bdff-448f" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+            <infoLink id="f93d-38ab-9299-bf7d" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="ebb8-c4e7-bdff-448f" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
       <infoLinks>
         <infoLink id="6824-3964-10a0-4246" name="Sirene" hidden="false" targetId="d940-73fc-7bec-6559" type="profile"/>
-        <infoLink id="449c-31ac-e555-9c0e" name="For Valour!" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="802e-6582-422f-7682" name="Forward Deployment**" hidden="false" targetId="e8f8-a4d2-d40c-1467" type="rule"/>
-        <infoLink id="e629-2bc0-2cb1-3a17" name="Coordinated Support (3.04)" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="50b5-9430-032e-c69a" name="Deep Dive [3.05]" hidden="false" targetId="32b6-97c2-a527-a1f9" type="rule"/>
-        <infoLink id="202a-280c-f2e2-4874" name="Strategic Withdrawal�" hidden="false" targetId="950e-974b-d566-0e66" type="rule"/>
-        <infoLink name="Agile [3.06]" hidden="false" id="ed55-1e9a-1d67-62d7" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
-        <infoLink name="Deep Dive [3.06]" id="6368-ef6b-aca0-10f2" hidden="false" targetId="3bf2-4bf2-c33d-95ab" type="rule" publicationId="5a03-1c6f-8fc8-2be1"/>
+        <infoLink id="449c-31ac-e555-9c0e" name="For Valour! [3.05]" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="802e-6582-422f-7682" name="Forward Deployment [3.07a]" hidden="false" targetId="e8f8-a4d2-d40c-1467" type="rule"/>
+        <infoLink id="e629-2bc0-2cb1-3a17" name="Co-ordinated Support [3.05]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="50b5-9430-032e-c69a" name="Delicate Gyroscopics [3.05]" hidden="false" targetId="32b6-97c2-a527-a1f9" type="rule"/>
+        <infoLink id="202a-280c-f2e2-4874" name="Strategic Withdrawal [3.07a]" hidden="false" targetId="950e-974b-d566-0e66" type="rule"/>
+        <infoLink name="Agile [3.07a]" hidden="false" id="ed55-1e9a-1d67-62d7" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
+        <infoLink name="Deep Dive [3.07a]" id="6368-ef6b-aca0-10f2" hidden="false" targetId="3bf2-4bf2-c33d-95ab" type="rule" publicationId="5a03-1c6f-8fc8-2be1"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8969-1889-f4b6-5346" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -5576,18 +5576,18 @@
             </modifier>
           </modifiers>
           <infoLinks>
-            <infoLink id="bc0d-0e9f-e3c3-f033" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
-            <infoLink id="72be-af51-b9bb-7d25" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+            <infoLink id="bc0d-0e9f-e3c3-f033" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="72be-af51-b9bb-7d25" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
       <infoLinks>
-        <infoLink id="475a-1fbd-5148-637f" name="Protected Gun Crews" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1108-5d87-5267-d3a4" type="rule"/>
+        <infoLink id="475a-1fbd-5148-637f" name="Protected Gun Crews [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1108-5d87-5267-d3a4" type="rule"/>
         <infoLink id="6070-9d77-e39c-2b3e" name="Charlemagne" hidden="false" targetId="215b-7ed4-73bb-2da0" type="profile"/>
-        <infoLink id="c6af-eec5-11ae-464b" name="Reinforced Waterline" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4979-45a9-d374-3663" type="rule"/>
-        <infoLink id="06c1-9a14-64d8-6185" name="Coordinate Support" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="03ca-ced3-1d86-d428" name="For Valour!" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="e4b1-2a00-648a-cdd6" name="Heavy Firepower" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="c6af-eec5-11ae-464b" name="Reinforced Waterline [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4979-45a9-d374-3663" type="rule"/>
+        <infoLink id="06c1-9a14-64d8-6185" name="Co-ordinated Support [3.05]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="03ca-ced3-1d86-d428" name="For Valour! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="e4b1-2a00-648a-cdd6" name="Heavy Firepower [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0fb7-47e3-b69b-a51e" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -5888,19 +5888,19 @@
             </modifier>
           </modifiers>
           <infoLinks>
-            <infoLink id="3c11-4b8a-bc4d-7a33" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
-            <infoLink id="965d-8192-c7a0-a888" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+            <infoLink id="3c11-4b8a-bc4d-7a33" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="965d-8192-c7a0-a888" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
       <infoLinks>
-        <infoLink id="a4a2-94e1-13bf-ee54" name="Coordinate Support" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="a4a2-94e1-13bf-ee54" name="Co-ordinated Support [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
         <infoLink id="58e9-7fd4-e8ee-f867" name="Loire" hidden="false" targetId="f0d0-f9c8-630a-0aad" type="profile"/>
-        <infoLink id="b6c9-7717-69fd-d36a" name="Reinforced Waterline" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4979-45a9-d374-3663" type="rule"/>
-        <infoLink id="f7e9-cff8-11d6-1f64" name="Mine Sweeper" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="3c38-dac5-4a88-5358" type="rule"/>
-        <infoLink id="b53b-84d8-5c61-3765" name="Vanguard" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="f721-8318-3875-0140" type="rule"/>
-        <infoLink id="a4bd-12fb-ea27-1e48" name="For Valour!" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="acac-1fb8-c349-a981" name="Protected Gun Crews" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1108-5d87-5267-d3a4" type="rule"/>
+        <infoLink id="b6c9-7717-69fd-d36a" name="Reinforced Waterline [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4979-45a9-d374-3663" type="rule"/>
+        <infoLink id="f7e9-cff8-11d6-1f64" name="Mine Sweeper [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="3c38-dac5-4a88-5358" type="rule"/>
+        <infoLink id="b53b-84d8-5c61-3765" name="Vanguard [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="f721-8318-3875-0140" type="rule"/>
+        <infoLink id="a4bd-12fb-ea27-1e48" name="For Valour! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="acac-1fb8-c349-a981" name="Protected Gun Crews [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1108-5d87-5267-d3a4" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1427-b04d-3745-f681" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -6131,19 +6131,19 @@
             </modifier>
           </modifiers>
           <infoLinks>
-            <infoLink id="c73e-ea65-05b5-312a" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
-            <infoLink id="46f3-43f8-877a-b665" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+            <infoLink id="c73e-ea65-05b5-312a" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="46f3-43f8-877a-b665" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
       <infoLinks>
-        <infoLink id="5f95-b504-28d2-6310" name="Maritime Patrol�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b7c-6003-8433-2817" type="rule"/>
+        <infoLink id="5f95-b504-28d2-6310" name="Maritime Patrol [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b7c-6003-8433-2817" type="rule"/>
         <infoLink id="1687-dd99-633f-5ef2" name="Picardy" hidden="false" targetId="da8f-deef-275c-4cce" type="profile"/>
-        <infoLink id="eddf-ba6d-b23d-f91e" name="Reinforced Waterline�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4979-45a9-d374-3663" type="rule"/>
-        <infoLink id="4689-6268-92b6-f015" name="Co-ordinate Support�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="9a77-e55b-cbd8-540d" name="Shallow Draught�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
-        <infoLink id="9022-829f-d98e-25e1" name="For Valour!�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="146e-1e8c-ccfd-fd6d" name="Protected Gun Crews�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1108-5d87-5267-d3a4" type="rule"/>
+        <infoLink id="eddf-ba6d-b23d-f91e" name="Reinforced Waterline [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4979-45a9-d374-3663" type="rule"/>
+        <infoLink id="4689-6268-92b6-f015" name="Co-ordinated Support [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="9a77-e55b-cbd8-540d" name="Shallow Draught [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
+        <infoLink id="9022-829f-d98e-25e1" name="For Valour! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="146e-1e8c-ccfd-fd6d" name="Protected Gun Crews [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1108-5d87-5267-d3a4" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a1a3-4436-5c3c-3508" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -6328,25 +6328,25 @@
             </modifier>
           </modifiers>
           <infoLinks>
-            <infoLink id="4c00-4625-a489-b202" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
-            <infoLink id="9523-acc4-b40a-1b7f" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+            <infoLink id="4c00-4625-a489-b202" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="9523-acc4-b40a-1b7f" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
       <infoLinks>
-        <infoLink id="cd92-1d98-5848-f0a8" name="Ablative Flank Armour" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
-        <infoLink id="3ece-c89f-8362-14b7" name="Coordinate Support" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="4c59-0eb8-80ff-6a33" name="Advanced Repair Facilities" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule">
+        <infoLink id="cd92-1d98-5848-f0a8" name="Ablative Flank Armour [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
+        <infoLink id="3ece-c89f-8362-14b7" name="Co-ordinated Support [3.05]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="4c59-0eb8-80ff-6a33" name="Advanced Repair Facilities (x) [3.07a]" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule">
           <modifiers>
             <modifier type="append" field="name" value="(2)"/>
           </modifiers>
         </infoLink>
         <infoLink id="0016-47d9-5901-b4df" name="Vulcan" hidden="false" targetId="a635-8702-ccd1-2007" type="profile"/>
-        <infoLink id="b774-f527-e834-0aac" name="For Valour!" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="b774-f527-e834-0aac" name="For Valour! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="67c6-6970-20fa-fa9a" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
-        <categoryLink id="dee1-62d7-c5ec-6e39" name="Repair Ship" hidden="false" targetId="ae62-663c-4616-0aab" primary="false"/>
+        <categoryLink id="dee1-62d7-c5ec-6e39" name="Repairship" hidden="false" targetId="ae62-663c-4616-0aab" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="cb1e-58f0-813d-5ea9" name="Prow Ram" hidden="false" collective="false" import="true" targetId="b9d2-4d96-fe6c-c015" type="selectionEntry">
@@ -6404,18 +6404,18 @@
             </modifier>
           </modifiers>
           <infoLinks>
-            <infoLink id="001d-98eb-654f-805f" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
-            <infoLink id="17c8-533a-9683-29e1" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+            <infoLink id="001d-98eb-654f-805f" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="17c8-533a-9683-29e1" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
       <infoLinks>
         <infoLink id="6d8a-7eeb-0297-0895" name="Vasco" hidden="false" targetId="b02f-3949-776e-a9fa" type="profile"/>
-        <infoLink id="96fd-9fb7-f60f-ad8b" name="Coordinate Support" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="5f25-260e-84c8-82d2" name="Immobile" hidden="false" targetId="8aa1-f648-12bd-a1c6" type="rule"/>
-        <infoLink id="7a5b-d388-f169-cab4" name="Heavy Escort" hidden="false" targetId="24cb-6c34-eb5b-7dde" type="rule"/>
-        <infoLink id="c862-036c-65cf-9651" name="Strategic Asset" hidden="false" targetId="12ec-f9c6-b68b-913b" type="rule"/>
-        <infoLink id="3ef7-3289-13a9-be46" name="Forward Deployment" hidden="false" targetId="e8f8-a4d2-d40c-1467" type="rule"/>
+        <infoLink id="96fd-9fb7-f60f-ad8b" name="Co-ordinated Support [3.05]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="5f25-260e-84c8-82d2" name="Immobile [3.07a]" hidden="false" targetId="8aa1-f648-12bd-a1c6" type="rule"/>
+        <infoLink id="7a5b-d388-f169-cab4" name="Heavy Escort [3.07a]" hidden="false" targetId="24cb-6c34-eb5b-7dde" type="rule"/>
+        <infoLink id="c862-036c-65cf-9651" name="Strategic Asset [3.07a]" hidden="false" targetId="12ec-f9c6-b68b-913b" type="rule"/>
+        <infoLink id="3ef7-3289-13a9-be46" name="Forward Deployment [3.07a]" hidden="false" targetId="e8f8-a4d2-d40c-1467" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="161a-9360-1c74-24c8" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -6523,14 +6523,14 @@
         <constraint field="selections" scope="parent" value="3" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="048f-036a-6b68-c965" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="5843-797b-d908-6d44" name="Contra Rotation [3.05]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" targetId="177e-3490-5f5e-f4b9" type="rule"/>
-        <infoLink id="3b36-d3ca-3b61-7540" name="Co-ordinate Support**" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="7ddc-587b-b316-95cd" name="Rebel Yell**" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+        <infoLink id="5843-797b-d908-6d44" name="Contra Rotation [3.07a]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" targetId="177e-3490-5f5e-f4b9" type="rule"/>
+        <infoLink id="3b36-d3ca-3b61-7540" name="Co-ordinated Support [3.05]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="7ddc-587b-b316-95cd" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
         <infoLink id="cb91-16c5-7fd4-54f4" name="Sumter" hidden="false" targetId="16c2-4de1-c6c0-f3a8" type="profile"/>
-        <infoLink id="3c69-d4dc-614d-5c02" name="Landing Vessel" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4869-03db-33f9-fa82" type="rule"/>
-        <infoLink id="d07b-b24c-3b01-a349" name="Terminator Assault" hidden="false" targetId="449d-0011-bd00-b031" type="rule"/>
-        <infoLink id="e56f-81c2-1aa8-6c9f" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
-        <infoLink id="c20b-138c-3a27-1f32" name="Shallow Draught**" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
+        <infoLink id="3c69-d4dc-614d-5c02" name="Landing Vessel [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4869-03db-33f9-fa82" type="rule"/>
+        <infoLink id="d07b-b24c-3b01-a349" name="Terminator Assault  [3.05]" hidden="false" targetId="449d-0011-bd00-b031" type="rule"/>
+        <infoLink id="e56f-81c2-1aa8-6c9f" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+        <infoLink id="c20b-138c-3a27-1f32" name="Shallow Draught [3.07a]" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="ceaf-6473-def5-c928" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -6603,11 +6603,11 @@
         <constraint field="selections" scope="parent" value="8" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="989e-8285-7973-2772" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="2b67-67d4-d72e-5a51" name="Contra Rotation" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="177e-3490-5f5e-f4b9" type="rule"/>
-        <infoLink id="99c9-a21b-a864-630f" name="Coordinate Support" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="2b67-67d4-d72e-5a51" name="Contra Rotation [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="177e-3490-5f5e-f4b9" type="rule"/>
+        <infoLink id="99c9-a21b-a864-630f" name="Co-ordinated Support [3.05]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
         <infoLink id="6c5c-7339-eef3-f1ad" name="Springfield" hidden="false" targetId="d1f2-8b2c-dac4-5fa5" type="profile"/>
-        <infoLink id="eb33-a269-3bd8-608d" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
-        <infoLink id="b61f-a7be-4ceb-c9f1" name="Corvette Duty**" hidden="false" targetId="4836-a907-b316-55b2" type="rule"/>
+        <infoLink id="eb33-a269-3bd8-608d" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+        <infoLink id="b61f-a7be-4ceb-c9f1" name="Corvette Duty [3.07a]" hidden="false" targetId="4836-a907-b316-55b2" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a09c-13eb-f232-8c34" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -6661,17 +6661,17 @@
             </modifier>
           </modifiers>
           <infoLinks>
-            <infoLink id="9e96-4f85-456b-539a" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
-            <infoLink id="a077-19ef-54c1-8441" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+            <infoLink id="9e96-4f85-456b-539a" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="a077-19ef-54c1-8441" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
       <infoLinks>
-        <infoLink id="c51b-332c-7488-9fe0" name="Ablative Flank Armour�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
-        <infoLink id="4f38-9a7a-43df-27c0" name="Coordinate Support" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="3e4c-e1a0-ec8a-1c9e" name="For Valour!" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="fd97-2729-ca26-fc62" name="Hammer Sweep" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
-        <infoLink id="9475-d8dd-2add-d8db" name="Mine Sweeper" hidden="false" targetId="3c38-dac5-4a88-5358" type="rule"/>
+        <infoLink id="c51b-332c-7488-9fe0" name="Ablative Flank Armour [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
+        <infoLink id="4f38-9a7a-43df-27c0" name="Co-ordinated Support [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="3e4c-e1a0-ec8a-1c9e" name="For Valour! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="fd97-2729-ca26-fc62" name="Hammer Sweep [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
+        <infoLink id="9475-d8dd-2add-d8db" name="Mine Sweeper [3.07a]" hidden="false" targetId="3c38-dac5-4a88-5358" type="rule"/>
         <infoLink id="0822-42b6-82e3-0821" name="Pilum" hidden="false" targetId="7c7f-617a-cf52-8195" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -6684,7 +6684,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abc1-1f5b-a4a9-a225" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="9258-50b8-0e24-b3b9" name="Scutum Mine Layer" hidden="false" targetId="ae67-f1be-5c85-c984" type="rule"/>
+            <infoLink id="9258-50b8-0e24-b3b9" name="Scutum Mine Layer  [3.05]" hidden="false" targetId="ae67-f1be-5c85-c984" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10"/>
@@ -6869,18 +6869,18 @@
             </modifier>
           </modifiers>
           <infoLinks>
-            <infoLink id="2d80-04d6-5d70-5c69" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
-            <infoLink id="c610-7e89-5d50-47f0" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+            <infoLink id="2d80-04d6-5d70-5c69" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="c610-7e89-5d50-47f0" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
       <infoLinks>
-        <infoLink id="ccf9-9aba-efb7-03ff" name="Rostrata�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="c874-c077-64e1-e63f" type="rule"/>
-        <infoLink id="0422-c1ba-5e35-2005" name="Co-ordinate Support�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="c1e8-b89a-aada-ddde" name="For Valour!�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="be99-3117-0f6a-867e" name="Hammer Sweep�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
-        <infoLink id="b5e3-f83a-4d74-e39f" name="Spotter�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="063a-3229-1f27-a3c2" type="rule"/>
-        <infoLink id="f4f9-54b7-d43d-f0c8" name="Ablative Flank Armour�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
+        <infoLink id="ccf9-9aba-efb7-03ff" name="Rostrata  [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="c874-c077-64e1-e63f" type="rule"/>
+        <infoLink id="0422-c1ba-5e35-2005" name="Co-ordinated Support [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="c1e8-b89a-aada-ddde" name="For Valour! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="be99-3117-0f6a-867e" name="Hammer Sweep [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
+        <infoLink id="b5e3-f83a-4d74-e39f" name="Spotter [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="063a-3229-1f27-a3c2" type="rule"/>
+        <infoLink id="f4f9-54b7-d43d-f0c8" name="Ablative Flank Armour [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
         <infoLink id="904f-5a22-9a89-de83" name="Scorpio" hidden="false" targetId="8899-fd9c-af1c-1773" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -6981,15 +6981,15 @@
         <constraint field="selections" scope="parent" value="3" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e1c7-ff53-2e9f-6cbb" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="3cc5-f336-25d6-8fb6" name="Contra Rotation�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="177e-3490-5f5e-f4b9" type="rule"/>
-        <infoLink id="c1a6-119e-c5f1-df21" name="Co-ordinate Support�" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="8fa9-a89f-4745-c7f0" name="Rebel Yell�" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+        <infoLink id="3cc5-f336-25d6-8fb6" name="Contra Rotation [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="177e-3490-5f5e-f4b9" type="rule"/>
+        <infoLink id="c1a6-119e-c5f1-df21" name="Co-ordinated Support [3.05]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="8fa9-a89f-4745-c7f0" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
         <infoLink id="3ff7-fa32-1339-04e5" name="Gettysburg" hidden="false" targetId="0b6c-01d1-fd83-8053" type="profile"/>
-        <infoLink id="ceb7-dccf-8680-49aa" name="Mine Sweeper�" hidden="false" targetId="3c38-dac5-4a88-5358" type="rule"/>
-        <infoLink id="0ae6-e748-9b92-f4b9" name="Conscripted Crew�" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
-        <infoLink id="0c0b-b7c3-7cd4-4b57" name="Full Steam Ahead�" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
-        <infoLink id="1b4e-1034-a5ef-23ef" name="Reliable Design�" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
-        <infoLink id="306f-73b1-86e0-2253" name="Shallow Draught�" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
+        <infoLink id="ceb7-dccf-8680-49aa" name="Mine Sweeper [3.07a]" hidden="false" targetId="3c38-dac5-4a88-5358" type="rule"/>
+        <infoLink id="0ae6-e748-9b92-f4b9" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+        <infoLink id="0c0b-b7c3-7cd4-4b57" name="Full Steam Ahead [3.07a]" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
+        <infoLink id="1b4e-1034-a5ef-23ef" name="Reliable Design [3.07a]" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
+        <infoLink id="306f-73b1-86e0-2253" name="Shallow Draught [3.07a]" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2b8e-9319-3339-e111" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -7258,17 +7258,17 @@
             </modifier>
           </modifiers>
           <infoLinks>
-            <infoLink id="1476-37bb-dbc0-c9d5" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
-            <infoLink id="fff9-a777-f80b-74bc" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+            <infoLink id="1476-37bb-dbc0-c9d5" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="fff9-a777-f80b-74bc" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
       <infoLinks>
-        <infoLink id="cfd5-42f8-3055-c67b" name="Co-ordinate Support**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="0687-10a4-bb54-91d9" name="Ablative Flank Armour**" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
+        <infoLink id="cfd5-42f8-3055-c67b" name="Co-ordinated Support [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="0687-10a4-bb54-91d9" name="Ablative Flank Armour [3.05]" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
         <infoLink id="ce78-712e-fef8-befc" name="Pugio" hidden="false" targetId="dfc1-4552-ab6e-912d" type="profile"/>
-        <infoLink id="f874-299c-0e29-397c" name="Pack Hunter" hidden="false" targetId="112e-82cb-42a3-83d2" type="rule"/>
-        <infoLink id="2763-0295-8733-e20d" name="For Valour!" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="f874-299c-0e29-397c" name="Pack Hunter [3.07a]" hidden="false" targetId="112e-82cb-42a3-83d2" type="rule"/>
+        <infoLink id="2763-0295-8733-e20d" name="For Valour! [3.05]" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="826a-0c64-d7a5-346a" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -7404,14 +7404,14 @@
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7096-920b-b545-9099" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="bc63-1d02-496e-0610" name="Coordinate Support" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="72e2-acc3-970c-5f32" name="Contra Rotation" hidden="false" targetId="177e-3490-5f5e-f4b9" type="rule"/>
-        <infoLink id="67f5-596f-aeee-f663" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+        <infoLink id="bc63-1d02-496e-0610" name="Co-ordinated Support [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="72e2-acc3-970c-5f32" name="Contra Rotation [3.07a]" hidden="false" targetId="177e-3490-5f5e-f4b9" type="rule"/>
+        <infoLink id="67f5-596f-aeee-f663" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
         <infoLink id="b34c-764e-1170-3019" name="Providence" hidden="false" targetId="0bd9-22da-1fb0-a179" type="profile"/>
-        <infoLink id="f1a4-603c-1a80-8617" name="Rebel Yell**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
-        <infoLink id="c739-e084-3025-acd8" name="Useful Freight" hidden="false" targetId="2fcd-3a8e-8d93-52af" type="rule"/>
-        <infoLink id="0410-b06e-06f7-6d51" name="Reliable Design**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
-        <infoLink id="8661-25d3-68cc-d251" name="Shallow Draught**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
+        <infoLink id="f1a4-603c-1a80-8617" name="Rebel Yell  [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+        <infoLink id="c739-e084-3025-acd8" name="Useful Freight [3.07a]" hidden="false" targetId="2fcd-3a8e-8d93-52af" type="rule"/>
+        <infoLink id="0410-b06e-06f7-6d51" name="Reliable Design [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
+        <infoLink id="8661-25d3-68cc-d251" name="Shallow Draught [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d589-327e-a316-97e3" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -7554,17 +7554,17 @@
             </modifier>
           </modifiers>
           <infoLinks>
-            <infoLink id="59fc-6cfc-7c65-db7b" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
-            <infoLink id="8b5c-1d7c-1fe0-399c" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+            <infoLink id="59fc-6cfc-7c65-db7b" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="8b5c-1d7c-1fe0-399c" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
       <infoLinks>
-        <infoLink id="a9f0-431d-d7c5-82ad" name="Ablative Flank Armour" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
-        <infoLink id="0b90-9afc-ae7a-4abd" name="Coordinate Support" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="2c51-0417-9c23-6778" name="Focused Gunnery" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9ec9-dd04-5a42-6864" type="rule"/>
-        <infoLink id="f511-5ead-b8dd-8c71" name="Hammer Sweep" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
-        <infoLink id="a9a2-4e88-b91d-48e1" name="For Valour!" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="a9f0-431d-d7c5-82ad" name="Ablative Flank Armour [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
+        <infoLink id="0b90-9afc-ae7a-4abd" name="Co-ordinated Support [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="2c51-0417-9c23-6778" name="Focused Gunnery [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9ec9-dd04-5a42-6864" type="rule"/>
+        <infoLink id="f511-5ead-b8dd-8c71" name="Hammer Sweep [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
+        <infoLink id="a9a2-4e88-b91d-48e1" name="For Valour! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
         <infoLink id="05a5-85d0-0710-d7db" name="Spatha" hidden="false" targetId="cb36-77eb-e642-be70" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -7577,7 +7577,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3b2-a10e-4222-f73b" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="7635-3b17-f6d3-a6d9" name="Scutum Mine Layer" hidden="false" targetId="ae67-f1be-5c85-c984" type="rule"/>
+            <infoLink id="7635-3b17-f6d3-a6d9" name="Scutum Mine Layer  [3.05]" hidden="false" targetId="ae67-f1be-5c85-c984" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10"/>
@@ -7840,11 +7840,11 @@
       </constraints>
       <infoLinks>
         <infoLink id="3451-3453-0b29-348c" name="Marseilles" hidden="false" targetId="e6cd-c858-4088-1b8b" type="profile"/>
-        <infoLink id="ca78-7e36-5fb8-e023" name="Combat Air Patrol**" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
-        <infoLink id="54c9-8b86-9526-a01a" name="For Valour!**" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="26e4-a9ec-24b7-c59d" name="Levant Surge**" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
-        <infoLink id="8e55-bdb6-7898-8d89" name="Co-ordinate Support**" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="5369-f99c-d335-c8e5" name="Vulnerable Stern**" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="ca78-7e36-5fb8-e023" name="Combat Air Patrol [3.07a]" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
+        <infoLink id="54c9-8b86-9526-a01a" name="For Valour! [3.05]" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="26e4-a9ec-24b7-c59d" name="Levant Surge [3.05]" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
+        <infoLink id="8e55-bdb6-7898-8d89" name="Co-ordinated Support [3.05]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="5369-f99c-d335-c8e5" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="88ef-ef3d-fe19-9065" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -7863,7 +7863,7 @@
                 <modifier type="set" field="name" value="Frelon Bombers"/>
               </modifiers>
             </infoLink>
-            <infoLink id="45cc-a764-de21-1d1b" name="Frelon SRS Capacity**" hidden="false" targetId="f1b0-26eb-f8e8-8d3b" type="rule"/>
+            <infoLink id="45cc-a764-de21-1d1b" name="Frelon SRS Capacity (3.04)" hidden="false" targetId="f1b0-26eb-f8e8-8d3b" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -7966,19 +7966,19 @@
             </modifier>
           </modifiers>
           <infoLinks>
-            <infoLink id="f14b-9861-ee3d-3cc1" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
-            <infoLink id="0359-f740-0003-d073" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+            <infoLink id="f14b-9861-ee3d-3cc1" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="0359-f740-0003-d073" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
       <infoLinks>
         <infoLink id="a4aa-9c2d-22a6-e170" name="Jupiter" hidden="false" targetId="5a76-84e3-6fdb-ff5e" type="profile"/>
-        <infoLink id="e7b6-5503-c2c8-b386" name="Ablative Flank Armour�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
-        <infoLink id="fb40-c8b0-950d-3292" name="Co-ordinate Support�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="4407-541e-8dd2-1e78" name="SRS Mine Clearance�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
-        <infoLink id="ce4b-e2cd-6c5d-25ab" name="SRS Recon�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
-        <infoLink id="27d3-d367-0530-de98" name="For Valour!�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="bdee-72b7-f718-c0b9" name="Malinois Strike Fighters�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ed8a-5968-81b4-27d5" type="rule"/>
+        <infoLink id="e7b6-5503-c2c8-b386" name="Ablative Flank Armour [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
+        <infoLink id="fb40-c8b0-950d-3292" name="Co-ordinated Support [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="4407-541e-8dd2-1e78" name="SRS Mine Clearance [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
+        <infoLink id="ce4b-e2cd-6c5d-25ab" name="SRS Recon [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
+        <infoLink id="27d3-d367-0530-de98" name="For Valour! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="bdee-72b7-f718-c0b9" name="Malinois Strike Fighters [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ed8a-5968-81b4-27d5" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6435-6958-6f84-49f1" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -8044,16 +8044,16 @@
       </constraints>
       <infoLinks>
         <infoLink id="6881-01a3-337f-c5a8" name="Honneur" hidden="false" targetId="633d-f9dd-4643-86ee" type="profile"/>
-        <infoLink id="468d-43f6-d1ef-2845" name="Agile" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
-        <infoLink id="cac3-a24e-d9d0-6e19" name="Coordinate Support" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="9538-f87b-ddd4-ee14" name="For Valour!" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="ff93-bb1b-9859-d592" name="Levant Surge" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
-        <infoLink id="3350-e7da-d942-295a" name="Mine Sweeper" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="3c38-dac5-4a88-5358" type="rule"/>
-        <infoLink id="d61f-b173-7f8b-f1fe" name="Vulnerable Stern" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="468d-43f6-d1ef-2845" name="Agile [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
+        <infoLink id="cac3-a24e-d9d0-6e19" name="Co-ordinated Support [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="9538-f87b-ddd4-ee14" name="For Valour! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="ff93-bb1b-9859-d592" name="Levant Surge [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
+        <infoLink id="3350-e7da-d942-295a" name="Mine Sweeper [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="3c38-dac5-4a88-5358" type="rule"/>
+        <infoLink id="d61f-b173-7f8b-f1fe" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a081-4d7d-04dc-544d" name="Levant Destroyer" hidden="false" targetId="e0b9-456b-bad4-4fe0" primary="false"/>
-        <categoryLink id="e4b0-ff23-5d46-d96e" name="New CategoryLink" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
+        <categoryLink id="e4b0-ff23-5d46-d96e" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="167d-c971-5696-bc3f" name="Main Weapon" hidden="false" collective="false" import="true">
@@ -8182,11 +8182,11 @@
       </constraints>
       <infoLinks>
         <infoLink id="b515-0501-a5a5-9617" name="Hoche" hidden="false" targetId="cb1b-9bdf-16c6-50d9" type="profile"/>
-        <infoLink id="e495-45c4-bb35-cd9a" name="Combat Air Patrol" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
-        <infoLink id="d2fd-6f03-f6e1-f2b6" name="Coordinate Support" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="e9f2-3129-bbc1-6b05" name="Levant Surge" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
-        <infoLink id="5629-6919-3408-3c50" name="For Valour!" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="7868-03bd-a995-1e47" name="Frelon Bombers" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="f1b0-26eb-f8e8-8d3b" type="rule"/>
+        <infoLink id="e495-45c4-bb35-cd9a" name="Combat Air Patrol [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
+        <infoLink id="d2fd-6f03-f6e1-f2b6" name="Co-ordinated Support [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="e9f2-3129-bbc1-6b05" name="Levant Surge [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
+        <infoLink id="5629-6919-3408-3c50" name="For Valour! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="7868-03bd-a995-1e47" name="Frelon SRS Capacity (3.04)" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="f1b0-26eb-f8e8-8d3b" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7148-7db0-d4df-2afe" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -8242,16 +8242,16 @@
             </modifier>
           </modifiers>
           <infoLinks>
-            <infoLink id="0898-4ac5-45e0-3211" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
-            <infoLink id="a1c5-5c6e-826e-dd5b" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+            <infoLink id="0898-4ac5-45e0-3211" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="a1c5-5c6e-826e-dd5b" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
       <infoLinks>
-        <infoLink id="d9e9-b905-dcbb-c5d2" name="Ablative Flank Armour�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
-        <infoLink id="b25a-a6e5-2fa1-43ea" name="Co-ordinate Support�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="f501-5965-0dc4-8f0b" name="For Valour!**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="c9d2-ff0a-a39e-5306" name="Sharpshooter**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="2c93-befd-f88b-0881" type="rule"/>
+        <infoLink id="d9e9-b905-dcbb-c5d2" name="Ablative Flank Armour [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
+        <infoLink id="b25a-a6e5-2fa1-43ea" name="Co-ordinated Support [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="f501-5965-0dc4-8f0b" name="For Valour! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="c9d2-ff0a-a39e-5306" name="Sharpshooter [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="2c93-befd-f88b-0881" type="rule"/>
         <infoLink id="3f0f-7de7-1749-c52d" name="Gladius" hidden="false" targetId="eaae-b51a-8ce4-1270" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -8264,7 +8264,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d42d-2d55-4200-113e" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="f8f3-e116-13ec-7072" name="Scutum Mine Layer" hidden="false" targetId="ae67-f1be-5c85-c984" type="rule"/>
+            <infoLink id="f8f3-e116-13ec-7072" name="Scutum Mine Layer  [3.05]" hidden="false" targetId="ae67-f1be-5c85-c984" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10"/>
@@ -8491,14 +8491,14 @@
         <constraint field="selections" scope="parent" value="3" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4887-efbf-b647-c574" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="9c74-c43a-f9b6-cadf" name="Contra Rotation�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="177e-3490-5f5e-f4b9" type="rule"/>
-        <infoLink id="76e7-170e-4ec3-a4eb" name="Co-ordinate Support�" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="c721-0b2f-c510-c1c3" name="Rebel Yell�" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+        <infoLink id="9c74-c43a-f9b6-cadf" name="Contra Rotation [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="177e-3490-5f5e-f4b9" type="rule"/>
+        <infoLink id="76e7-170e-4ec3-a4eb" name="Co-ordinated Support [3.05]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="c721-0b2f-c510-c1c3" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
         <infoLink id="f25c-e9f3-30e0-d19d" name="Saratoga" hidden="false" targetId="81df-8d0e-3a70-3242" type="profile"/>
-        <infoLink id="c1af-bac0-e88d-42bc" name="Terminator Assault�" hidden="false" targetId="449d-0011-bd00-b031" type="rule"/>
-        <infoLink id="8a18-b5b6-6e98-fd0d" name="Coastal Bombardment�" hidden="false" targetId="50d4-3fc7-f4ae-9736" type="rule"/>
-        <infoLink id="6f0b-b603-c020-6d2c" name="Conscripted Crew�" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
-        <infoLink id="271b-581b-4dad-4c39" name="Shallow Draught�" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
+        <infoLink id="c1af-bac0-e88d-42bc" name="Terminator Assault  [3.05]" hidden="false" targetId="449d-0011-bd00-b031" type="rule"/>
+        <infoLink id="8a18-b5b6-6e98-fd0d" name="Coastal Bombardment [3.07a]" hidden="false" targetId="50d4-3fc7-f4ae-9736" type="rule"/>
+        <infoLink id="6f0b-b603-c020-6d2c" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+        <infoLink id="271b-581b-4dad-4c39" name="Shallow Draught [3.07a]" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c1d4-f850-6a08-bb86" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -8684,14 +8684,14 @@
         <constraint field="selections" scope="parent" value="3" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9876-be71-9d3a-f62a" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="a7fd-e42b-727f-79fe" name="Co-ordinate Support�" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="a7fd-e42b-727f-79fe" name="Co-ordinated Support [3.05]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
         <infoLink id="031b-44c3-fe0d-01f8" name="Gascony" hidden="false" targetId="6cfc-4500-5c30-89bb" type="profile"/>
-        <infoLink id="0cb0-62cc-f6d3-943c" name="Mine Layer�" hidden="false" targetId="940f-44f3-71bf-f26c" type="rule"/>
-        <infoLink id="d236-63bc-638e-fa3a" name="For Valour!�" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="1127-8e07-9c6e-bb1a" name="Levant Surge�" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
-        <infoLink id="0b00-33d2-d641-8c01" name="Logistical Support�" hidden="false" targetId="408e-7b40-68d7-059f" type="rule"/>
-        <infoLink id="1fcf-4060-7b1d-84c2" name="Supply Depot**" hidden="false" targetId="23f5-7a90-116f-cba1" type="rule"/>
-        <infoLink id="4b7e-52f7-96f6-5903" name="Vulnerable Stern**" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="0cb0-62cc-f6d3-943c" name="Mine Layer [3.07a]" hidden="false" targetId="940f-44f3-71bf-f26c" type="rule"/>
+        <infoLink id="d236-63bc-638e-fa3a" name="For Valour! [3.05]" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="1127-8e07-9c6e-bb1a" name="Levant Surge [3.05]" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
+        <infoLink id="0b00-33d2-d641-8c01" name="Logistical Support [3.07a]" hidden="false" targetId="408e-7b40-68d7-059f" type="rule"/>
+        <infoLink id="1fcf-4060-7b1d-84c2" name="Supply Depot [3.07a]" hidden="false" targetId="23f5-7a90-116f-cba1" type="rule"/>
+        <infoLink id="4b7e-52f7-96f6-5903" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4648-92ce-7689-54ab" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -8783,23 +8783,23 @@
             </modifier>
           </modifiers>
           <infoLinks>
-            <infoLink id="d567-561a-8fe5-32cf" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
-            <infoLink id="d82f-27db-4b72-48a4" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+            <infoLink id="d567-561a-8fe5-32cf" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="d82f-27db-4b72-48a4" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
       <infoLinks>
         <infoLink id="b838-63af-9ca4-a27b" name="Cordoba" hidden="false" targetId="cd69-ee5a-be11-262f" type="profile"/>
-        <infoLink id="da77-af3c-b7c6-5f96" name="Cloud Hunting" hidden="false" targetId="cfe8-adc4-4866-0bc8" type="rule"/>
-        <infoLink id="8edb-3686-1c31-00ea" name="Coordinated Support (3.04)" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="ea07-e103-d3d1-8b65" name="Dirigible Construction" hidden="false" targetId="24c5-f8af-aa5d-998e" type="rule"/>
-        <infoLink id="f57e-b809-ca3d-001d" name="Flak Barrage [3.05]" hidden="false" targetId="7b67-714d-bb2b-6297" type="rule">
+        <infoLink id="da77-af3c-b7c6-5f96" name="Cloud Hunting [3.07a]" hidden="false" targetId="cfe8-adc4-4866-0bc8" type="rule"/>
+        <infoLink id="8edb-3686-1c31-00ea" name="Co-ordinated Support [3.05]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="ea07-e103-d3d1-8b65" name="Dirigible Construction [3.07a]" hidden="false" targetId="24c5-f8af-aa5d-998e" type="rule"/>
+        <infoLink id="f57e-b809-ca3d-001d" name="Flak Barrage (x) [3.07a]" hidden="false" targetId="7b67-714d-bb2b-6297" type="rule">
           <modifiers>
             <modifier type="append" field="name" value="(10)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="2776-7a6c-1a6d-f79b" name="For Valour!**" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="375c-323f-dd2e-39a2" name="Vulnerable Stern**" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="2776-7a6c-1a6d-f79b" name="For Valour! [3.05]" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="375c-323f-dd2e-39a2" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9c9a-f843-7b6e-14d7" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -8907,11 +8907,11 @@
       </constraints>
       <infoLinks>
         <infoLink id="90cc-c066-59ef-4e61" name="Dieppe" hidden="false" targetId="af71-5587-a4af-f164" type="profile"/>
-        <infoLink id="58a8-e31c-9ff2-36fe" name="Coordinate Support" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="6f2d-1b4f-c633-881a" name="For Valour!" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="2d03-ff9b-4680-94de" name="Francisco Solex Projector�" hidden="false" targetId="64d5-ad27-abcc-a217" type="rule"/>
-        <infoLink id="f1fb-f4c5-d141-190e" name="Levant Surge" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
-        <infoLink id="c998-aecd-8336-376e" name="Vulnerable Stern" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="58a8-e31c-9ff2-36fe" name="Co-ordinated Support [3.05]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="6f2d-1b4f-c633-881a" name="For Valour! [3.05]" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="2d03-ff9b-4680-94de" name="Francisco Solex Projector (3.04)" hidden="false" targetId="64d5-ad27-abcc-a217" type="rule"/>
+        <infoLink id="f1fb-f4c5-d141-190e" name="Levant Surge [3.05]" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
+        <infoLink id="c998-aecd-8336-376e" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="55e2-7a6a-8ac0-c859" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -8974,24 +8974,24 @@
             </modifier>
           </modifiers>
           <infoLinks>
-            <infoLink id="da1a-e523-f963-e095" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
-            <infoLink id="142f-7dc6-6946-522e" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+            <infoLink id="da1a-e523-f963-e095" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="142f-7dc6-6946-522e" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
       <infoLinks>
         <infoLink id="f500-abbe-ae4a-f214" name="Alma" hidden="false" targetId="49f1-7e32-70da-841d" type="profile"/>
-        <infoLink id="7203-8f7f-a01f-4d89" name="Advanced Repair Facilities [3.05]" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule">
+        <infoLink id="7203-8f7f-a01f-4d89" name="Advanced Repair Facilities (x) [3.07a]" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule">
           <modifiers>
             <modifier type="append" field="name" value="(2)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="6547-5bef-67a5-1b41" name="Co-ordinate Support" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="38f9-a328-c358-d7b1" name="For Valour!" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="1471-5717-ec36-7e60" name="Levant Surge" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
-        <infoLink id="7a51-e2ae-5f9b-baec" name="Heavy Escort" hidden="false" targetId="24cb-6c34-eb5b-7dde" type="rule"/>
-        <infoLink id="a2a8-a7b3-7790-aba4" name="Mine Layer" hidden="false" targetId="940f-44f3-71bf-f26c" type="rule"/>
-        <infoLink id="b1cd-787b-90e9-4c95" name="Vulnerable Stern" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="6547-5bef-67a5-1b41" name="Co-ordinated Support [3.05]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="38f9-a328-c358-d7b1" name="For Valour! [3.05]" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="1471-5717-ec36-7e60" name="Levant Surge [3.05]" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
+        <infoLink id="7a51-e2ae-5f9b-baec" name="Heavy Escort [3.07a]" hidden="false" targetId="24cb-6c34-eb5b-7dde" type="rule"/>
+        <infoLink id="a2a8-a7b3-7790-aba4" name="Mine Layer [3.07a]" hidden="false" targetId="940f-44f3-71bf-f26c" type="rule"/>
+        <infoLink id="b1cd-787b-90e9-4c95" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d929-fff1-01db-d7d7" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -9086,22 +9086,22 @@
             </modifier>
           </modifiers>
           <infoLinks>
-            <infoLink id="9e72-a9e7-d447-53b6" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
-            <infoLink id="e58b-cdd4-abdf-8eb7" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+            <infoLink id="9e72-a9e7-d447-53b6" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="e58b-cdd4-abdf-8eb7" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
       <infoLinks>
-        <infoLink id="c25c-56e9-d78d-2915" name="Co-ordinate Support�" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="cbf3-75c9-bb50-164d" name="Heavy Escort�" hidden="false" targetId="24cb-6c34-eb5b-7dde" type="rule"/>
-        <infoLink id="cbc1-7a20-32fb-9f29" name="Strategic Asset�" hidden="false" targetId="12ec-f9c6-b68b-913b" type="rule"/>
+        <infoLink id="c25c-56e9-d78d-2915" name="Co-ordinated Support [3.05]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="cbf3-75c9-bb50-164d" name="Heavy Escort [3.07a]" hidden="false" targetId="24cb-6c34-eb5b-7dde" type="rule"/>
+        <infoLink id="cbc1-7a20-32fb-9f29" name="Strategic Asset [3.07a]" hidden="false" targetId="12ec-f9c6-b68b-913b" type="rule"/>
         <infoLink id="0258-2c1d-b40e-1578" name="Periera" hidden="false" targetId="a923-e947-7126-b583" type="profile"/>
-        <infoLink id="f61b-2afc-cc04-8227" name="Immobile�" hidden="false" targetId="8aa1-f648-12bd-a1c6" type="rule"/>
-        <infoLink id="2eb1-4056-2ca3-7403" name="Forward Deployment�" hidden="false" targetId="e8f8-a4d2-d40c-1467" type="rule"/>
+        <infoLink id="f61b-2afc-cc04-8227" name="Immobile [3.07a]" hidden="false" targetId="8aa1-f648-12bd-a1c6" type="rule"/>
+        <infoLink id="2eb1-4056-2ca3-7403" name="Forward Deployment [3.07a]" hidden="false" targetId="e8f8-a4d2-d40c-1467" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f6ce-e41f-c3f1-dfbf" name="War Platform" hidden="false" targetId="e036-10f0-615f-6a77" primary="false"/>
-        <categoryLink id="1418-3a0d-3c48-2ce3" name="New CategoryLink" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
+        <categoryLink id="1418-3a0d-3c48-2ce3" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="92f6-7c18-1649-5c4c" name="Main Weapon" hidden="false" collective="false" import="true">
@@ -9416,28 +9416,28 @@
             </modifier>
           </modifiers>
           <infoLinks>
-            <infoLink id="de9e-7f89-4e69-2e68" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
-            <infoLink id="b288-39c5-94fe-5594" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+            <infoLink id="de9e-7f89-4e69-2e68" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="b288-39c5-94fe-5594" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
       <infoLinks>
         <infoLink id="f00e-e669-7993-242e" name="Elvas" hidden="false" targetId="b8af-8435-ddd2-31d4" type="profile"/>
-        <infoLink id="4cd9-6a53-c25c-9944" name="Advanced Repair Facilities" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule">
+        <infoLink id="4cd9-6a53-c25c-9944" name="Advanced Repair Facilities (x) [3.07a]" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule">
           <modifiers>
             <modifier type="append" field="name" value="(2)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="6189-28cf-232f-12f4" name="Forward Deployment [3.05]" hidden="false" targetId="e8f8-a4d2-d40c-1467" type="rule"/>
-        <infoLink id="9f8d-570d-2a98-93fd" name="Heavy Escort [3.05]" hidden="false" targetId="24cb-6c34-eb5b-7dde" type="rule"/>
-        <infoLink id="90ac-3254-706d-0ef7" name="Immobile�" hidden="false" targetId="8aa1-f648-12bd-a1c6" type="rule"/>
-        <infoLink id="5a52-1df5-1bf6-f012" name="Useful Freight�" hidden="false" targetId="2fcd-3a8e-8d93-52af" type="rule"/>
-        <infoLink id="18f6-6321-9706-44f2" name="Strategic Asset�" hidden="false" targetId="12ec-f9c6-b68b-913b" type="rule"/>
-        <infoLink id="94ee-2e72-55ec-461c" name="Supply Depot�" hidden="false" targetId="23f5-7a90-116f-cba1" type="rule"/>
+        <infoLink id="6189-28cf-232f-12f4" name="Forward Deployment [3.07a]" hidden="false" targetId="e8f8-a4d2-d40c-1467" type="rule"/>
+        <infoLink id="9f8d-570d-2a98-93fd" name="Heavy Escort [3.07a]" hidden="false" targetId="24cb-6c34-eb5b-7dde" type="rule"/>
+        <infoLink id="90ac-3254-706d-0ef7" name="Immobile [3.07a]" hidden="false" targetId="8aa1-f648-12bd-a1c6" type="rule"/>
+        <infoLink id="5a52-1df5-1bf6-f012" name="Useful Freight [3.07a]" hidden="false" targetId="2fcd-3a8e-8d93-52af" type="rule"/>
+        <infoLink id="18f6-6321-9706-44f2" name="Strategic Asset [3.07a]" hidden="false" targetId="12ec-f9c6-b68b-913b" type="rule"/>
+        <infoLink id="94ee-2e72-55ec-461c" name="Supply Depot [3.07a]" hidden="false" targetId="23f5-7a90-116f-cba1" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="ebcc-1c55-ac9d-e711" name="Offshore Support Platform" hidden="false" targetId="a197-5d9c-5624-4e41" primary="false"/>
-        <categoryLink id="dc10-37f4-1c89-5d48" name="New CategoryLink" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
+        <categoryLink id="dc10-37f4-1c89-5d48" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="a838-c06f-9d4b-e3ff" name="Main Weapon" hidden="false" collective="false" import="true">
@@ -9488,7 +9488,7 @@
                 </entryLink>
               </entryLinks>
               <categoryLinks>
-                <categoryLink targetId="8dd5-28b8-39fb-6304" id="a69f-25b0-d45c-509f" primary="false" name="First"/>
+                <categoryLink targetId="8dd5-28b8-39fb-6304" id="a69f-25b0-d45c-509f" primary="false" name="1st"/>
               </categoryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="7e8a-82a8-ac17-37d8" name="Second Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="fa29-1ceb-da4b-20ef">
@@ -9537,7 +9537,7 @@
                 </entryLink>
               </entryLinks>
               <categoryLinks>
-                <categoryLink targetId="2a6f-36d6-5d75-e9fc" id="5e91-f06a-8f91-9c2a" primary="false" name="Second"/>
+                <categoryLink targetId="2a6f-36d6-5d75-e9fc" id="5e91-f06a-8f91-9c2a" primary="false" name="2nd"/>
               </categoryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -9570,18 +9570,18 @@
             </modifier>
           </modifiers>
           <infoLinks>
-            <infoLink id="8039-f78e-59a4-cfcb" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
-            <infoLink id="60de-066f-a1b6-e958" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+            <infoLink id="8039-f78e-59a4-cfcb" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="60de-066f-a1b6-e958" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
       <infoLinks>
         <infoLink id="eff3-8dbb-3d1b-ccdf" name="Cestus" hidden="false" targetId="862c-242f-46ce-d3ab" type="profile"/>
-        <infoLink id="da68-e277-a749-ea2d" name="Ablative Flank Armour" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
-        <infoLink id="f832-9e78-b1e8-18f7" name="Coordinate Support**" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="f573-0899-62a0-de11" name="For Valour!**" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="9a78-3603-ac1a-ef3e" name="Focused Gunnery" hidden="false" targetId="9ec9-dd04-5a42-6864" type="rule"/>
-        <infoLink id="9e8b-9a56-087c-1c76" name="Flak Barrage [3.05]" hidden="false" targetId="7b67-714d-bb2b-6297" type="rule">
+        <infoLink id="da68-e277-a749-ea2d" name="Ablative Flank Armour [3.05]" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
+        <infoLink id="f832-9e78-b1e8-18f7" name="Co-ordinated Support [3.05]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="f573-0899-62a0-de11" name="For Valour! [3.05]" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="9a78-3603-ac1a-ef3e" name="Focused Gunnery [3.06]" hidden="false" targetId="9ec9-dd04-5a42-6864" type="rule"/>
+        <infoLink id="9e8b-9a56-087c-1c76" name="Flak Barrage (x) [3.07a]" hidden="false" targetId="7b67-714d-bb2b-6297" type="rule">
           <modifiers>
             <modifier type="append" field="name" value="(2)"/>
           </modifiers>
@@ -9638,18 +9638,18 @@
             </modifier>
           </modifiers>
           <infoLinks>
-            <infoLink id="1545-3bf9-7620-56b5" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
-            <infoLink id="c261-c17b-1716-b234" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+            <infoLink id="1545-3bf9-7620-56b5" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="c261-c17b-1716-b234" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
       <infoLinks>
         <infoLink id="27c0-858d-cd86-fa0b" name="Auxilia" hidden="false" targetId="666f-f55d-815b-5ee3" type="profile"/>
-        <infoLink id="2a42-bdc0-bb67-a7b2" name="Ablative Flank Armour�" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
-        <infoLink id="df2b-ad0a-8670-c3be" name="Co-ordinate Support�" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="032e-db27-d83d-5975" name="For Valour!�" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="8e23-0c03-9a6c-b537" name="Linear Dash�" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
-        <infoLink id="4e51-de69-b6cd-4c6b" name="Vanguard�" hidden="false" targetId="f721-8318-3875-0140" type="rule"/>
+        <infoLink id="2a42-bdc0-bb67-a7b2" name="Ablative Flank Armour [3.05]" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
+        <infoLink id="df2b-ad0a-8670-c3be" name="Co-ordinated Support [3.05]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="032e-db27-d83d-5975" name="For Valour! [3.05]" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="8e23-0c03-9a6c-b537" name="Linear Dash [3.07a]" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
+        <infoLink id="4e51-de69-b6cd-4c6b" name="Vanguard [3.07a]" hidden="false" targetId="f721-8318-3875-0140" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="649d-4b7d-b3c1-5ec5" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -9661,7 +9661,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="001d-6bd2-3047-aeef" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="a61f-4858-472d-1de2" name="Scutum Mine Layer" hidden="false" targetId="ae67-f1be-5c85-c984" type="rule"/>
+            <infoLink id="a61f-4858-472d-1de2" name="Scutum Mine Layer  [3.05]" hidden="false" targetId="ae67-f1be-5c85-c984" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10"/>
@@ -9879,12 +9879,12 @@
       </constraints>
       <infoLinks>
         <infoLink id="03bb-0a20-ca9a-0eff" name="Columbia" hidden="false" targetId="71ec-3e1e-f318-66ad" type="profile"/>
-        <infoLink id="14f4-afbc-7d0b-5981" name="Conscripted Crew�" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
-        <infoLink id="ea91-71c4-b662-66d0" name="Rebel Yell�" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
-        <infoLink id="1b42-7cf1-84b0-7dba" name="Contra Rotation�" hidden="false" targetId="177e-3490-5f5e-f4b9" type="rule"/>
-        <infoLink id="955f-0675-7624-7ddb" name="Coordinate Support**" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="0c89-934e-c391-d9c6" name="Heavy Firepower�" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="c0b0-6d75-6627-ac09" name="Full Steam Ahead�" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
+        <infoLink id="14f4-afbc-7d0b-5981" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+        <infoLink id="ea91-71c4-b662-66d0" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+        <infoLink id="1b42-7cf1-84b0-7dba" name="Contra Rotation [3.07a]" hidden="false" targetId="177e-3490-5f5e-f4b9" type="rule"/>
+        <infoLink id="955f-0675-7624-7ddb" name="Co-ordinated Support [3.05]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="0c89-934e-c391-d9c6" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="c0b0-6d75-6627-ac09" name="Full Steam Ahead [3.07a]" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="811d-40e7-bb8b-6237" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -10258,15 +10258,15 @@
       </constraints>
       <infoLinks>
         <infoLink id="d439-9513-c6f8-78e9" name="Vauban" hidden="false" targetId="766b-12cf-6e4d-8a03" type="profile"/>
-        <infoLink id="3db3-ed21-faa3-9f51" name="Combat Air Patrol [3.05]" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
-        <infoLink id="0cdc-0cb7-dd72-fb07" name="Co-ordinate Support�" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="d4ea-4c06-0624-4cd8" name="For Valour!�" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="80db-fa6d-b22a-05e9" name="Heavy Firepower�" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="8aa6-f77a-9e13-837b" name="Lumbering�" hidden="false" targetId="6b55-0f21-5c85-94cb" type="rule"/>
-        <infoLink id="2772-f6e0-8c01-c7db" name="Malinois Strike Fighters�" hidden="false" targetId="ed8a-5968-81b4-27d5" type="rule"/>
-        <infoLink id="6a04-165c-7af3-2e01" name="Priority Signals�" hidden="false" targetId="4106-315d-4d5c-9e8f" type="rule"/>
-        <infoLink id="af35-e5a5-d089-4720" name="SRS Mine Clearance�" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
-        <infoLink id="c2af-b35c-db4d-a3c4" name="SRS Recon�" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
+        <infoLink id="3db3-ed21-faa3-9f51" name="Combat Air Patrol [3.07a]" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
+        <infoLink id="0cdc-0cb7-dd72-fb07" name="Co-ordinated Support [3.05]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="d4ea-4c06-0624-4cd8" name="For Valour! [3.05]" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="80db-fa6d-b22a-05e9" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="8aa6-f77a-9e13-837b" name="Lumbering [3.07a]" hidden="false" targetId="6b55-0f21-5c85-94cb" type="rule"/>
+        <infoLink id="2772-f6e0-8c01-c7db" name="Malinois Strike Fighters [3.05]" hidden="false" targetId="ed8a-5968-81b4-27d5" type="rule"/>
+        <infoLink id="6a04-165c-7af3-2e01" name="Priority Signals [3.07a]" hidden="false" targetId="4106-315d-4d5c-9e8f" type="rule"/>
+        <infoLink id="af35-e5a5-d089-4720" name="SRS Mine Clearance [3.07a]" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
+        <infoLink id="c2af-b35c-db4d-a3c4" name="SRS Recon [3.07a]" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="956f-911e-67dc-eec1" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -10302,7 +10302,7 @@
                 <modifier type="set" field="name" value="Frelon Bombers"/>
               </modifiers>
             </infoLink>
-            <infoLink id="253e-8637-7bda-d84a" name="Frelon Bombers" hidden="false" targetId="f1b0-26eb-f8e8-8d3b" type="rule"/>
+            <infoLink id="253e-8637-7bda-d84a" name="Frelon SRS Capacity (3.04)" hidden="false" targetId="f1b0-26eb-f8e8-8d3b" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -10416,7 +10416,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3c45-d07b-c764-c63b" type="max"/>
           </constraints>
           <categoryLinks>
-            <categoryLink targetId="8dd5-28b8-39fb-6304" id="d56-f6d0-1e02-5ab5" primary="false" name="First"/>
+            <categoryLink targetId="8dd5-28b8-39fb-6304" id="d56-f6d0-1e02-5ab5" primary="false" name="1st"/>
           </categoryLinks>
         </entryLink>
         <entryLink id="781c-fc8d-2d9e-4f9d" name="Thermal Cluster Bombs" hidden="false" collective="false" import="true" targetId="7236-7e18-7fb9-3b6d" type="selectionEntry">
@@ -10428,7 +10428,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d12c-5e8e-3a2d-91e2" type="max"/>
           </constraints>
           <categoryLinks>
-            <categoryLink targetId="2a6f-36d6-5d75-e9fc" id="a349-8beb-b8d-242" primary="false" name="Second"/>
+            <categoryLink targetId="2a6f-36d6-5d75-e9fc" id="a349-8beb-b8d-242" primary="false" name="2nd"/>
           </categoryLinks>
         </entryLink>
         <entryLink id="9056-4669-6a8d-97b2" name="Rocket Battery" hidden="false" collective="false" import="true" targetId="1420-4e0a-ca1d-6cb7" type="selectionEntry">
@@ -10492,17 +10492,17 @@
       </constraints>
       <infoLinks>
         <infoLink id="5ab5-2500-7bd3-5d06" name="Virginia" hidden="false" targetId="4356-54b6-6ea2-aec5" type="profile"/>
-        <infoLink id="225f-1885-8b69-1996" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
-        <infoLink id="7c7d-7eb9-0aca-a62d" name="Rebel Yell**" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
-        <infoLink id="1931-9195-0487-7c94" name="Contra Rotation" hidden="false" targetId="177e-3490-5f5e-f4b9" type="rule"/>
-        <infoLink id="7d50-e488-c556-6ed8" name="Coordinate Support" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="55d4-43b4-2e93-5046" name="Terminator Assault**" hidden="false" targetId="449d-0011-bd00-b031" type="rule"/>
-        <infoLink id="8f5c-ba79-dea1-88d4" name="Flak Barrage [3.05]" hidden="false" targetId="7b67-714d-bb2b-6297" type="rule">
+        <infoLink id="225f-1885-8b69-1996" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+        <infoLink id="7c7d-7eb9-0aca-a62d" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+        <infoLink id="1931-9195-0487-7c94" name="Contra Rotation [3.07a]" hidden="false" targetId="177e-3490-5f5e-f4b9" type="rule"/>
+        <infoLink id="7d50-e488-c556-6ed8" name="Co-ordinated Support [3.05]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="55d4-43b4-2e93-5046" name="Terminator Assault  [3.05]" hidden="false" targetId="449d-0011-bd00-b031" type="rule"/>
+        <infoLink id="8f5c-ba79-dea1-88d4" name="Flak Barrage (x) [3.07a]" hidden="false" targetId="7b67-714d-bb2b-6297" type="rule">
           <modifiers>
             <modifier type="append" field="name" value="(10)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="6a29-388c-bde4-b6e3" name="Heavy Firepower**" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="6a29-388c-bde4-b6e3" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d396-7150-bd65-f37e" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -10799,7 +10799,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34c0-551e-5b81-185b" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="41ca-b28c-ef3e-5d3a" name="Heavy Firepower" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+            <infoLink id="41ca-b28c-ef3e-5d3a" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
           </infoLinks>
         </entryLink>
       </entryLinks>
@@ -10815,20 +10815,20 @@
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1a7d-705f-fbf4-f25a" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="dde2-5251-d539-775e" name="Co-ordinate Support�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="0973-1532-9d39-627c" name="Reinforced Waterline�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4979-45a9-d374-3663" type="rule"/>
+        <infoLink id="dde2-5251-d539-775e" name="Co-ordinated Support [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="0973-1532-9d39-627c" name="Reinforced Waterline [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4979-45a9-d374-3663" type="rule"/>
         <infoLink id="aac8-4600-8b4b-c14f" name="Oriflamme" hidden="false" targetId="bdae-2f4b-e7e4-75e9" type="profile">
           <modifiers>
             <modifier type="set" field="name" value="Fesch"/>
             <modifier type="set" field="4c54-804a-8993-7325" value="14/13"/>
           </modifiers>
         </infoLink>
-        <infoLink id="d56b-607d-8a93-08ca" name="Maritime Patrol�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b7c-6003-8433-2817" type="rule"/>
-        <infoLink id="ef4f-365e-6094-e791" name="Heavy Firepower�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="7cdc-9a86-957b-7a98" name="For Valour!�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="28cc-3174-38fd-954a" name="Protected Gun Crews�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1108-5d87-5267-d3a4" type="rule"/>
-        <infoLink id="7532-4870-cb98-21c3" name="Command Codes�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="422e-0279-5ff5-c279" type="rule"/>
-        <infoLink id="b5e1-ae16-0860-3c57" name="Focused Gunnery�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9ec9-dd04-5a42-6864" type="rule"/>
+        <infoLink id="d56b-607d-8a93-08ca" name="Maritime Patrol [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b7c-6003-8433-2817" type="rule"/>
+        <infoLink id="ef4f-365e-6094-e791" name="Heavy Firepower [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="7cdc-9a86-957b-7a98" name="For Valour! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="28cc-3174-38fd-954a" name="Protected Gun Crews [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1108-5d87-5267-d3a4" type="rule"/>
+        <infoLink id="7532-4870-cb98-21c3" name="Command Codes [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="422e-0279-5ff5-c279" type="rule"/>
+        <infoLink id="b5e1-ae16-0860-3c57" name="Focused Gunnery [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9ec9-dd04-5a42-6864" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="626c-c366-97a7-69cb" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -10911,18 +10911,18 @@
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d648-4799-1acf-a1a0" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="10b5-8eb7-e17e-6146" name="Coordinate Support" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="39e0-8249-28a5-8cf1" name="Reinforced Waterline" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4979-45a9-d374-3663" type="rule"/>
+        <infoLink id="10b5-8eb7-e17e-6146" name="Co-ordinated Support [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="39e0-8249-28a5-8cf1" name="Reinforced Waterline [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4979-45a9-d374-3663" type="rule"/>
         <infoLink id="adde-c398-2e20-99c6" name="Oriflamme" hidden="false" targetId="bdae-2f4b-e7e4-75e9" type="profile">
           <modifiers>
             <modifier type="set" field="name" value="Richelieu"/>
           </modifiers>
         </infoLink>
-        <infoLink id="ca63-76fe-838a-990f" name="Maritime Patrol" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b7c-6003-8433-2817" type="rule"/>
-        <infoLink id="f2f9-4c77-6070-9903" name="Heavy Firepower" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="73fa-35de-35b0-6fbd" name="For Valour!" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="7483-6328-280b-881c" name="Protected Gun Crews" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1108-5d87-5267-d3a4" type="rule"/>
-        <infoLink id="3b8b-a545-e075-cfd5" name="Focused Gunnery" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9ec9-dd04-5a42-6864" type="rule"/>
+        <infoLink id="ca63-76fe-838a-990f" name="Maritime Patrol [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b7c-6003-8433-2817" type="rule"/>
+        <infoLink id="f2f9-4c77-6070-9903" name="Heavy Firepower [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="73fa-35de-35b0-6fbd" name="For Valour! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="7483-6328-280b-881c" name="Protected Gun Crews [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1108-5d87-5267-d3a4" type="rule"/>
+        <infoLink id="3b8b-a545-e075-cfd5" name="Focused Gunnery [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9ec9-dd04-5a42-6864" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="76c6-5f62-92a4-eedc" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -11017,13 +11017,13 @@
             </modifier>
           </modifiers>
           <infoLinks>
-            <infoLink id="a099-dfad-8a34-1911" name="Rebel Yell" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
-            <infoLink id="7018-2e5f-6f0e-7891" name="Conscripted Crew" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
+            <infoLink id="a099-dfad-8a34-1911" name="Rebel Yell  [3.05]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
+            <infoLink id="7018-2e5f-6f0e-7891" name="Conscripted Crew [3.05]" hidden="false" targetId="e869-352b-8f2a-e3fd" type="rule"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
       <infoLinks>
-        <infoLink id="c8b9-9155-e8c7-7f52" name="Co-ordinate Support�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="c8b9-9155-e8c7-7f52" name="Co-ordinated Support [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
         <infoLink id="18aa-9697-0213-c2ad" name="Loire" hidden="false" targetId="f0d0-f9c8-630a-0aad" type="profile">
           <modifiers>
             <modifier type="set" field="4c54-804a-8993-7325" value="8/7"/>
@@ -11050,13 +11050,13 @@
             </modifierGroup>
           </modifierGroups>
         </infoLink>
-        <infoLink id="1b35-81a7-b646-763e" name="Reinforced Waterline�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4979-45a9-d374-3663" type="rule"/>
-        <infoLink id="2074-7144-ba6d-2153" name="Focused Gunnery�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9ec9-dd04-5a42-6864" type="rule"/>
-        <infoLink id="2ef7-2849-99c8-3979" name="Shadow Hunter�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="741b-a6ce-dbe7-9409" type="rule"/>
-        <infoLink id="9fb5-78fe-82a1-5c16" name="For Valour!�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="9765-c4c1-68f4-2b5b" name="Protected Gun Crews�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1108-5d87-5267-d3a4" type="rule"/>
-        <infoLink id="bea8-e1f5-82ac-6219" name="Devil’s Own Luck�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="da8d-c041-fd15-a8de" type="rule"/>
-        <infoLink id="3e0d-7f16-a267-a2fa" name="Mine Sweeper�" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="3c38-dac5-4a88-5358" type="rule"/>
+        <infoLink id="1b35-81a7-b646-763e" name="Reinforced Waterline [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4979-45a9-d374-3663" type="rule"/>
+        <infoLink id="2074-7144-ba6d-2153" name="Focused Gunnery [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9ec9-dd04-5a42-6864" type="rule"/>
+        <infoLink id="2ef7-2849-99c8-3979" name="Shadow Hunter [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="741b-a6ce-dbe7-9409" type="rule"/>
+        <infoLink id="9fb5-78fe-82a1-5c16" name="For Valour! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="9765-c4c1-68f4-2b5b" name="Protected Gun Crews [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1108-5d87-5267-d3a4" type="rule"/>
+        <infoLink id="bea8-e1f5-82ac-6219" name="Devil’s Own Luck [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="da8d-c041-fd15-a8de" type="rule"/>
+        <infoLink id="3e0d-7f16-a267-a2fa" name="Mine Sweeper [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="3c38-dac5-4a88-5358" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="325f-5f1f-aa95-81db" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -11126,21 +11126,21 @@
             <modifier type="set" field="name" value="Le Phénix"/>
           </modifiers>
         </infoLink>
-        <infoLink id="2bb7-9c65-06ff-9c7b" name="Agile**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
-        <infoLink id="3bff-6cc9-297f-ccb4" name="Combat Air Patrol**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
-        <infoLink id="9936-c555-aecc-f4ab" name="SRS Mine Clearance**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
-        <infoLink id="319b-c383-aefb-ae9c" name="SRS Recon **" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
-        <infoLink id="fe3d-8c0e-d076-5b9b" name="For Valour!**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="5284-a0ce-bf99-e089" name="Full Steam Ahead**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
-        <infoLink id="ade5-1d27-d380-ca35" name="Levant Surge**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
-        <infoLink id="6dc9-5241-cde0-5a8b" name="Malinois Strike Fighters**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ed8a-5968-81b4-27d5" type="rule"/>
-        <infoLink id="9ee5-b55a-3737-8c20" name="Heavy Firepower**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="020d-4f7d-39c5-f41e" name="Coordinate Support**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="b01e-6ff0-6ead-5ca8" name="Fortunes of War**" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="949d-d37f-c7c8-1093" type="rule"/>
+        <infoLink id="2bb7-9c65-06ff-9c7b" name="Agile [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
+        <infoLink id="3bff-6cc9-297f-ccb4" name="Combat Air Patrol [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
+        <infoLink id="9936-c555-aecc-f4ab" name="SRS Mine Clearance [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
+        <infoLink id="319b-c383-aefb-ae9c" name="SRS Recon [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
+        <infoLink id="fe3d-8c0e-d076-5b9b" name="For Valour! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
+        <infoLink id="5284-a0ce-bf99-e089" name="Full Steam Ahead [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
+        <infoLink id="ade5-1d27-d380-ca35" name="Levant Surge [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
+        <infoLink id="6dc9-5241-cde0-5a8b" name="Malinois Strike Fighters [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ed8a-5968-81b4-27d5" type="rule"/>
+        <infoLink id="9ee5-b55a-3737-8c20" name="Heavy Firepower [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="020d-4f7d-39c5-f41e" name="Co-ordinated Support [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
+        <infoLink id="b01e-6ff0-6ead-5ca8" name="Fortunes of War [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="949d-d37f-c7c8-1093" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6350-5082-b700-17e7" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
-        <categoryLink id="e5a4-6c22-1389-f120" name="Levant Assault Carrier" hidden="false" targetId="0f4e-80de-1d9f-48c8" primary="false"/>
+        <categoryLink id="e5a4-6c22-1389-f120" name="Levant Battle Carrier" hidden="false" targetId="0f4e-80de-1d9f-48c8" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="aa96-f4d4-5058-0eec" name="SRS" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" type="upgrade">
@@ -11817,8 +11817,8 @@
   </sharedProfiles>
   <catalogueLinks>
     <catalogueLink id="fa0c-fc52-b3a9-22ed" name="Weapon" targetId="526f-06e7-edaa-02b8" type="catalogue" importRootEntries="false"/>
-    <catalogueLink id="12ea-9837-1300-d825" name="Generator" targetId="f69c-988c-fae3-e664" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="29e2-230e-c012-f228" name="Rules" targetId="edc4-1a6a-03e6-7be9" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="12ea-9837-1300-d825" name="Generator" targetId="f69c-988c-fae3-e664" type="catalogue" importRootEntries="false"/>
+    <catalogueLink id="29e2-230e-c012-f228" name="Rules" targetId="edc4-1a6a-03e6-7be9" type="catalogue" importRootEntries="false"/>
     <catalogueLink id="d32e-2e8d-5cef-21e5" name="Common" targetId="f2ed-a910-ca64-9be7" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>

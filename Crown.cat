@@ -15,7 +15,7 @@ Review 3.03.06: correction suggested in discord (ORBAT 3.03 released the 2023-02
 Review 3.03.07: correction suggested in discord (ORBAT 3.03 released the 2023-02-05)
 Review 3.04.00: first release of 3.04 Orbat (ORBAT 3.04 2023-09-08 rev4) to be used in New Recruit
 Review 3.04.01: correction of datafile for 3.04 Orbat (ORBAT 3.04 2023-09-08 to be used in New Recruit)
-Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</readme>
+Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev3</readme>
   <categoryEntries>
     <categoryEntry id="6427-c580-219d-c874" name="Britannia Class" publicationId="dbca-8d57-b848-457e" hidden="false"/>
     <categoryEntry id="ddb5-f0d6-665c-3ac4" name="Protecteur Class" publicationId="dbca-8d57-b848-457e" hidden="false"/>
@@ -84,7 +84,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
   <forceEntries>
     <forceEntry id="012e-2bdb-8192-e8ca" name="Crown Faction Battlefleet (Main)" publicationId="dbca-8d57-b848-457e" hidden="false">
       <infoLinks>
-        <infoLink id="488c-76d6-d2e1-7d46" name="Strategic Reserve" hidden="false" targetId="3f21-1511-2bff-8d3b" type="rule">
+        <infoLink id="488c-76d6-d2e1-7d46" name="Strategic Reserve [3.07a]" hidden="false" targetId="3f21-1511-2bff-8d3b" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -266,32 +266,32 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
             <constraint field="selections" scope="force" value="0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="910f-40fa-60f-b7c3" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="7f40-1189-af46-d5cf" name="Ceylon-class" hidden="false" targetId="9681-960e-5120-c47f" primary="false" type="category">
+        <categoryLink id="7f40-1189-af46-d5cf" name="Ceylon-class" hidden="false" targetId="9681-960e-5120-c47f" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="68bb-14a-3ce-20c5" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="a8d7-e5c7-f851-2b0b" name="Chanura-class" hidden="false" targetId="ddf0-7966-1aed-9c97" primary="false" type="category">
+        <categoryLink id="a8d7-e5c7-f851-2b0b" name="Chanura-class" hidden="false" targetId="ddf0-7966-1aed-9c97" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a16c-634d-36f3-68b7" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="77dc-930-c3fb-11e6" name="Devaki-class" hidden="false" targetId="a7f3-6ecd-f043-422f" primary="false" type="category">
+        <categoryLink id="77dc-930-c3fb-11e6" name="Devaki-class" hidden="false" targetId="a7f3-6ecd-f043-422f" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ec86-6f65-4745-b280" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="8d-ce11-4059-f4d6" name="Godavari-class" hidden="false" targetId="d794-9597-8a6c-65e5" primary="false" type="category">
+        <categoryLink id="8d-ce11-4059-f4d6" name="Godavari-class" hidden="false" targetId="d794-9597-8a6c-65e5" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="1f0a-e4b2-c134-1972" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="9445-22d7-57fe-aaa5" name="Indus-class" hidden="false" targetId="5e02-379b-7284-bf9b" primary="false" type="category">
+        <categoryLink id="9445-22d7-57fe-aaa5" name="Indus-class" hidden="false" targetId="5e02-379b-7284-bf9b" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4f54-4b41-51d9-9e7d" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="1aa8-553a-e010-b65c" name="Nagaraja-class" hidden="false" targetId="ec35-1c4b-62d2-9f3" primary="false" type="category">
+        <categoryLink id="1aa8-553a-e010-b65c" name="Nagaraja-class" hidden="false" targetId="ec35-1c4b-62d2-9f3" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ac87-5c6-379a-96ae" type="max"/>
           </constraints>
@@ -300,7 +300,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
     </forceEntry>
     <forceEntry id="7b54-608f-353d-8628" name="British Frontline Battlefleet (Main)" publicationId="dbca-8d57-b848-457e" hidden="false">
       <infoLinks>
-        <infoLink id="d144-79bb-9c83-f2c1" name="Valorous Conduct (3.04)" hidden="false" targetId="0d1b-0810-3b49-e25e" type="rule"/>
+        <infoLink id="d144-79bb-9c83-f2c1" name="Valorous Conduct [3.06]" hidden="false" targetId="0d1b-0810-3b49-e25e" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9317-476b-9787-697e" name="Battlefleet" hidden="false" targetId="3226-5cb8-b2fb-ec2c" primary="false">
@@ -425,7 +425,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
             <constraint field="selections" scope="force" value="0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="1351-b82a-8be6-c3b3" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="bb09-d815-4510-97a0" name="Ceylon-class" hidden="false" targetId="9681-960e-5120-c47f" primary="false" type="category">
+        <categoryLink id="bb09-d815-4510-97a0" name="Ceylon-class" hidden="false" targetId="9681-960e-5120-c47f" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2443-3225-6e2a-ae06" type="max"/>
           </constraints>
@@ -434,7 +434,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
     </forceEntry>
     <forceEntry id="74f8-a93e-d127-d4f7" name="British Support Battlefleet (Main)" publicationId="dbca-8d57-b848-457e" hidden="false">
       <infoLinks>
-        <infoLink id="76ee-753b-47dc-5508" name="Command Override" hidden="false" targetId="78c8-6a85-daa7-3625" type="rule"/>
+        <infoLink id="76ee-753b-47dc-5508" name="Command Override [3.06]" hidden="false" targetId="78c8-6a85-daa7-3625" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9317-476b-9787-697e" name="Battlefleet" hidden="false" targetId="3226-5cb8-b2fb-ec2c" primary="false">
@@ -624,7 +624,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
     </forceEntry>
     <forceEntry id="f771-8c4b-877d-735f" name="Canadian Frontline Battlefleet (Main)" publicationId="dbca-8d57-b848-457e" hidden="false">
       <infoLinks>
-        <infoLink id="22c0-eae6-5767-c366" name="Snowbird Strike" hidden="false" targetId="d3de-889d-63a3-56bb" type="rule"/>
+        <infoLink id="22c0-eae6-5767-c366" name="Snowbird Strike [3.05a]" hidden="false" targetId="d3de-889d-63a3-56bb" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9317-476b-9787-697e" name="Battlefleet" hidden="false" targetId="3226-5cb8-b2fb-ec2c" primary="false">
@@ -744,7 +744,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7bff-5e81-4f2a-28c9" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="ef20-b6d0-d074-6648" name="B" hidden="false" targetId="f67c-be0d-7a70-d19a" primary="false">
+        <categoryLink id="ef20-b6d0-d074-6648" name="British Vessel" hidden="false" targetId="f67c-be0d-7a70-d19a" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b9b3-4de7-b7e8-edfe" type="max"/>
           </constraints>
@@ -768,7 +768,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
     </forceEntry>
     <forceEntry id="655a-768e-4dd7-479e" name="Nautilus Battlefleet (Merc)" publicationId="dbca-8d57-b848-457e" hidden="false">
       <infoLinks>
-        <infoLink id="af16-76c0-d77f-a1be" name="Command Override" hidden="false" targetId="78c8-6a85-daa7-3625" type="rule"/>
+        <infoLink id="af16-76c0-d77f-a1be" name="Command Override [3.06]" hidden="false" targetId="78c8-6a85-daa7-3625" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9317-476b-9787-697e" name="Battlefleet" hidden="false" targetId="3226-5cb8-b2fb-ec2c" primary="false">
@@ -1081,12 +1081,12 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="122e-1fc0-edd7-8e9b" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Chanura-class" hidden="false" id="9de7-16a6-d515-db74" targetId="ddf0-7966-1aed-9c97" type="category">
+        <categoryLink name="Chanura-class" hidden="false" id="9de7-16a6-d515-db74" targetId="ddf0-7966-1aed-9c97">
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ef22-f289-8de5-ed77" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Devaki-class" hidden="false" id="69c4-a1eb-bb78-8ffd" targetId="a7f3-6ecd-f043-422f" type="category">
+        <categoryLink name="Devaki-class" hidden="false" id="69c4-a1eb-bb78-8ffd" targetId="a7f3-6ecd-f043-422f">
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b006-ff26-ed70-6e76" type="max"/>
           </constraints>
@@ -1096,7 +1096,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="df41-1d4b-bed2-194" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="c313-f71e-afb6-941e" name="Godavari-class" hidden="false" targetId="d794-9597-8a6c-65e5" primary="false" type="category">
+        <categoryLink id="c313-f71e-afb6-941e" name="Godavari-class" hidden="false" targetId="d794-9597-8a6c-65e5" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a981-42-ef-2f0f" type="max"/>
           </constraints>
@@ -1111,7 +1111,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f051-5c21-6ef5-41f1" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="81b1-bff-9789-8ad6" name="Indus-class" hidden="false" targetId="5e02-379b-7284-bf9b" primary="false" type="category">
+        <categoryLink id="81b1-bff-9789-8ad6" name="Indus-class" hidden="false" targetId="5e02-379b-7284-bf9b" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2b3e-c471-1055-9991" type="max"/>
           </constraints>
@@ -1121,7 +1121,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="c7d2-b56c-2be6-4854" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="6ff7-ee33-bbb9-dc28" name="Nagaraja-class" hidden="false" targetId="ec35-1c4b-62d2-9f3" primary="false" type="category">
+        <categoryLink id="6ff7-ee33-bbb9-dc28" name="Nagaraja-class" hidden="false" targetId="ec35-1c4b-62d2-9f3" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a942-5b4f-b66a-bf1f" type="max"/>
           </constraints>
@@ -1219,7 +1219,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
       </modifiers>
       <categoryLinks>
         <categoryLink id="e70b-9ec4-822e-2a7b" name="Orca Class" hidden="false" targetId="67f5-80e9-aef2-3097" primary="false"/>
-        <categoryLink id="4b1b-d251-2e7d-33a9" name="New CategoryLink" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
+        <categoryLink id="4b1b-d251-2e7d-33a9" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
         <categoryLink id="166a-8641-359a-4529" name="Canadian" hidden="false" targetId="d4a3-52d1-9941-7ffb" primary="false"/>
       </categoryLinks>
       <entryLinks>
@@ -1249,7 +1249,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
       </modifiers>
       <categoryLinks>
         <categoryLink id="8e59-42d8-b0b2-55a8" name="Yukon Class" hidden="false" targetId="ac46-6066-cc04-9c42" primary="false"/>
-        <categoryLink id="4cec-7ba8-6547-eb71" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="4cec-7ba8-6547-eb71" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="cc0f-3f4a-9f0a-b3c4" name="Canadian" hidden="false" targetId="d4a3-52d1-9941-7ffb" primary="false"/>
       </categoryLinks>
       <entryLinks>
@@ -1279,7 +1279,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
       </modifiers>
       <categoryLinks>
         <categoryLink id="42f0-37f6-a677-5cff" name="Newfoundland Class" hidden="false" targetId="3f99-efd1-acc8-e530" primary="false"/>
-        <categoryLink id="40c4-f617-8822-7118" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="40c4-f617-8822-7118" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="c741-ef99-39fe-ef76" name="Canadian" hidden="false" targetId="d4a3-52d1-9941-7ffb" primary="false"/>
       </categoryLinks>
       <entryLinks>
@@ -1339,9 +1339,9 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
       </modifiers>
       <categoryLinks>
         <categoryLink id="4de0-8f7f-5877-9d6b" name="Picton Class" hidden="false" targetId="d3ce-dad9-4684-d657" primary="false"/>
-        <categoryLink id="fb80-6c7c-962a-c446" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="fb80-6c7c-962a-c446" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="6d0d-aa3a-0db2-ab31" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
-        <categoryLink id="cdf2-abcf-221b-2e4e" name="B" hidden="false" targetId="f67c-be0d-7a70-d19a" primary="false"/>
+        <categoryLink id="cdf2-abcf-221b-2e4e" name="British Vessel" hidden="false" targetId="f67c-be0d-7a70-d19a" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="7793-2c36-aea7-c3be" name="Picton" hidden="false" collective="false" import="false" targetId="0170-c308-289d-ff01" type="selectionEntry"/>
@@ -1366,7 +1366,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
       </modifiers>
       <categoryLinks>
         <categoryLink id="7f94-2d4a-6d12-d94f" name="Morgana Class" hidden="false" targetId="cb90-9d6d-4a1b-d87e" primary="false"/>
-        <categoryLink id="bc02-bb79-d3bc-0663" name="New CategoryLink" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
+        <categoryLink id="bc02-bb79-d3bc-0663" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
         <categoryLink id="183e-c825-118a-1869" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
       </categoryLinks>
       <entryLinks>
@@ -1426,9 +1426,9 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
       </modifiers>
       <categoryLinks>
         <categoryLink id="bc0e-ad9c-8f11-a765" name="Lancelot Class" hidden="false" targetId="2315-8265-0cb0-b2a7" primary="false"/>
-        <categoryLink id="0c8e-ad02-2e1f-79a8" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="0c8e-ad02-2e1f-79a8" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="5762-91c5-7a3e-7f00" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
-        <categoryLink id="e975-a843-70ce-587b" name="B" hidden="false" targetId="f67c-be0d-7a70-d19a" primary="false"/>
+        <categoryLink id="e975-a843-70ce-587b" name="British Vessel" hidden="false" targetId="f67c-be0d-7a70-d19a" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="bdeb-fd0b-1b43-b9ea" name="Lancelot" hidden="false" collective="false" import="false" targetId="55c5-8998-e45f-3d6f" type="selectionEntry"/>
@@ -1488,8 +1488,8 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
       <categoryLinks>
         <categoryLink id="170d-b409-c313-810d" name="Hotspur Class" hidden="false" targetId="a683-0b8f-09f3-7880" primary="false"/>
         <categoryLink id="f5d4-fb7a-5a7a-7670" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
-        <categoryLink id="52f1-dfa9-2529-5a37" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
-        <categoryLink id="6757-f8b2-4292-4762" name="B" hidden="false" targetId="f67c-be0d-7a70-d19a" primary="false"/>
+        <categoryLink id="52f1-dfa9-2529-5a37" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="6757-f8b2-4292-4762" name="British Vessel" hidden="false" targetId="f67c-be0d-7a70-d19a" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="25f1-d840-4f0e-7b9c" name="Hotspur" hidden="false" collective="false" import="false" targetId="fd72-a8a0-a24d-349e" type="selectionEntry"/>
@@ -1562,9 +1562,9 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
       </modifiers>
       <categoryLinks>
         <categoryLink id="079e-49c2-8707-2bf2" name="Excalibur Class" hidden="false" targetId="ce49-79cb-7795-08b2" primary="false"/>
-        <categoryLink id="bb4d-fb9b-3919-07b6" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="bb4d-fb9b-3919-07b6" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="a5ce-05da-460d-dfd1" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
-        <categoryLink id="1dd0-7e49-2e12-157a" name="B" hidden="false" targetId="f67c-be0d-7a70-d19a" primary="false"/>
+        <categoryLink id="1dd0-7e49-2e12-157a" name="British Vessel" hidden="false" targetId="f67c-be0d-7a70-d19a" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="e908-b7bd-ee9a-1b40" name="Excalibur" hidden="false" collective="false" import="false" targetId="2f17-6256-56c3-1725" type="selectionEntry"/>
@@ -1653,9 +1653,9 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
       </modifiers>
       <categoryLinks>
         <categoryLink id="42fb-4c55-6689-bedd" name="Albion Class" hidden="false" targetId="b6a5-4bf0-cc7d-cef0" primary="false"/>
-        <categoryLink id="b2d6-81b7-3932-48b8" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="b2d6-81b7-3932-48b8" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="95b4-eaa1-56fa-d5b4" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
-        <categoryLink id="7462-6fb7-1fa5-8021" name="B" hidden="false" targetId="f67c-be0d-7a70-d19a" primary="false"/>
+        <categoryLink id="7462-6fb7-1fa5-8021" name="British Vessel" hidden="false" targetId="f67c-be0d-7a70-d19a" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="9cd3-0ddf-dd38-211c" name="Albion" hidden="false" collective="false" import="false" targetId="3391-de44-4f50-9776" type="selectionEntry"/>
@@ -1714,9 +1714,9 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
       </modifiers>
       <categoryLinks>
         <categoryLink id="56cc-67fa-80ba-8b17" name="Caliburn Class" hidden="false" targetId="6404-9e52-94ad-87cd" primary="false"/>
-        <categoryLink id="fa9b-51bd-b490-92c4" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="fa9b-51bd-b490-92c4" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="75f4-4cf3-fdbd-96cd" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
-        <categoryLink id="afaa-43a5-3710-c15d" name="B" hidden="false" targetId="f67c-be0d-7a70-d19a" primary="false"/>
+        <categoryLink id="afaa-43a5-3710-c15d" name="British Vessel" hidden="false" targetId="f67c-be0d-7a70-d19a" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="3c68-27c2-3cf8-ca9e" name="Caliburn" hidden="false" collective="false" import="false" targetId="9482-5ed0-b7b8-e060" type="selectionEntry"/>
@@ -1777,7 +1777,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         <categoryLink id="7764-2744-ae33-687a" name="Agincourt Class" hidden="false" targetId="eedb-3308-3474-4f3b" primary="false"/>
         <categoryLink id="2b7c-d956-a821-fc75" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="0a81-e8e8-f343-5cb0" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
-        <categoryLink id="cb1a-39b5-5510-7569" name="B" hidden="false" targetId="f67c-be0d-7a70-d19a" primary="false"/>
+        <categoryLink id="cb1a-39b5-5510-7569" name="British Vessel" hidden="false" targetId="f67c-be0d-7a70-d19a" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="54bb-95a7-702e-1b3d" name="Agincourt" hidden="false" collective="false" import="false" targetId="3919-a80d-c0f2-d6e6" type="selectionEntry"/>
@@ -1836,9 +1836,9 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
       </modifiers>
       <categoryLinks>
         <categoryLink id="c4b7-c779-18f1-c2de" name="Bedivere Class" hidden="false" targetId="d50a-ca78-5e3b-8fb7" primary="false"/>
-        <categoryLink id="da13-4c93-95ca-f88b" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="da13-4c93-95ca-f88b" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="e51a-e4f3-a532-cb17" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
-        <categoryLink id="92a3-243b-77f4-1879" name="B" hidden="false" targetId="f67c-be0d-7a70-d19a" primary="false"/>
+        <categoryLink id="92a3-243b-77f4-1879" name="British Vessel" hidden="false" targetId="f67c-be0d-7a70-d19a" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="3f94-5a44-d3ac-68c5" name="Bedivere" hidden="false" collective="false" import="false" targetId="36b8-c29d-c7c7-9d48" type="selectionEntry"/>
@@ -1899,7 +1899,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         <categoryLink id="e6ad-5688-7331-1d2c" name="Athelstan Class" hidden="false" targetId="a4c7-ed2c-6f9a-1a54" primary="false"/>
         <categoryLink id="21d6-ff57-73dd-3a4c" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="f92a-d5c4-2917-b86e" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
-        <categoryLink id="8621-44c4-7de3-4524" name="B" hidden="false" targetId="f67c-be0d-7a70-d19a" primary="false"/>
+        <categoryLink id="8621-44c4-7de3-4524" name="British Vessel" hidden="false" targetId="f67c-be0d-7a70-d19a" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="0657-aa06-1283-417c" name="Athelstan" hidden="false" collective="false" import="false" targetId="dcca-9848-0265-fdcb" type="selectionEntry"/>
@@ -1928,7 +1928,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
       </modifiers>
       <categoryLinks>
         <categoryLink id="d1ef-91be-7d9e-0e43" name="Bonaventure Class" hidden="false" targetId="6e57-abee-d1b8-c2e0" primary="false"/>
-        <categoryLink id="fbd4-0ace-a1c9-487a" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="fbd4-0ace-a1c9-487a" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="05a6-95c3-93f8-0fbc" name="Canadian" hidden="false" targetId="d4a3-52d1-9941-7ffb" primary="false"/>
       </categoryLinks>
       <entryLinks>
@@ -1958,7 +1958,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="0c29-a81a-866a-35ec" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
+        <categoryLink id="0c29-a81a-866a-35ec" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="b421-1b69-7fb3-008d" name="Sabre squadron" hidden="false" targetId="1ed7-e280-a0e5-78b8" primary="false"/>
         <categoryLink id="e997-ca31-4837-6ccb" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
       </categoryLinks>
@@ -1992,7 +1992,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="00bd-d6f2-8aec-e978" type="max"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="e8d7-d51a-7fa6-c35c" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+                <categoryLink id="e8d7-d51a-7fa6-c35c" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
                 <categoryLink id="b3e3-22a6-bd76-5945" name="Hotspur Class" hidden="false" targetId="a683-0b8f-09f3-7880" primary="false"/>
               </categoryLinks>
               <entryLinks>
@@ -2033,7 +2033,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
               </constraints>
               <categoryLinks>
                 <categoryLink id="feb7-a3ee-26a2-638b" name="Albion Class" hidden="false" targetId="b6a5-4bf0-cc7d-cef0" primary="false"/>
-                <categoryLink id="2f47-0786-2a25-eeba" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+                <categoryLink id="2f47-0786-2a25-eeba" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="fd94-4ef0-b635-4092" name="Albion" hidden="false" collective="false" import="false" targetId="3391-de44-4f50-9776" type="selectionEntry">
@@ -2080,7 +2080,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a77-5e82-1951-ea43" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="3c90-9021-4dd5-9bc5" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
+        <categoryLink id="3c90-9021-4dd5-9bc5" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="2d12-b974-6c3e-62c1" name="Victory Class" hidden="false" targetId="3c0e-3931-32d5-b795" primary="false"/>
         <categoryLink id="6cdc-6e47-c33f-96aa" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
       </categoryLinks>
@@ -2114,7 +2114,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f57f-8358-2144-ede0" type="max"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="7b7e-4926-dcb6-de5e" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+                <categoryLink id="7b7e-4926-dcb6-de5e" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
                 <categoryLink id="92bc-ef80-d6b6-676e" name="Hotspur Class" hidden="false" targetId="a683-0b8f-09f3-7880" primary="false"/>
               </categoryLinks>
               <entryLinks>
@@ -2155,7 +2155,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
               </constraints>
               <categoryLinks>
                 <categoryLink id="9156-4535-2a25-38b4" name="Albion Class" hidden="false" targetId="b6a5-4bf0-cc7d-cef0" primary="false"/>
-                <categoryLink id="c49f-d6ff-9602-2fd4" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+                <categoryLink id="c49f-d6ff-9602-2fd4" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="7a59-4850-ed10-cfef" name="Albion" hidden="false" collective="false" import="false" targetId="3391-de44-4f50-9776" type="selectionEntry">
@@ -2229,7 +2229,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a76-84bc-6918-db8d" type="max"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="7223-12ad-812a-d3e6" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+                <categoryLink id="7223-12ad-812a-d3e6" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
                 <categoryLink id="f5a0-59c8-5932-f91a" name="Hotspur Class" hidden="false" targetId="a683-0b8f-09f3-7880" primary="false"/>
               </categoryLinks>
               <entryLinks>
@@ -2270,7 +2270,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
               </constraints>
               <categoryLinks>
                 <categoryLink id="6f54-613f-05cb-92e2" name="Albion Class" hidden="false" targetId="b6a5-4bf0-cc7d-cef0" primary="false"/>
-                <categoryLink id="3678-c0e9-0e5d-f83d" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+                <categoryLink id="3678-c0e9-0e5d-f83d" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="ab39-8e12-c9d5-3a6f" name="Albion" hidden="false" collective="false" import="false" targetId="3391-de44-4f50-9776" type="selectionEntry">
@@ -2314,7 +2314,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="a4e5-8dae-611c-75b4" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
+        <categoryLink id="a4e5-8dae-611c-75b4" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="6a51-2630-dddf-4ed1" name="Victory Class" hidden="false" targetId="3c0e-3931-32d5-b795" primary="false"/>
         <categoryLink id="a70c-6a8a-2e05-d1f8" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
       </categoryLinks>
@@ -2348,7 +2348,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c562-67c8-b721-cf0f" type="max"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="339c-1ddb-17ff-2d0f" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+                <categoryLink id="339c-1ddb-17ff-2d0f" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
                 <categoryLink id="96f7-9ba7-28b9-633c" name="Hotspur Class" hidden="false" targetId="a683-0b8f-09f3-7880" primary="false"/>
               </categoryLinks>
               <entryLinks>
@@ -2389,7 +2389,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
               </constraints>
               <categoryLinks>
                 <categoryLink id="026c-7cff-d9a8-5b01" name="Albion Class" hidden="false" targetId="b6a5-4bf0-cc7d-cef0" primary="false"/>
-                <categoryLink id="25a9-1c86-b46d-0b42" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+                <categoryLink id="25a9-1c86-b46d-0b42" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="edbb-f9e6-976e-a30b" name="Albion" hidden="false" collective="false" import="false" targetId="3391-de44-4f50-9776" type="selectionEntry">
@@ -2470,7 +2470,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0db4-8e61-b386-665c" type="max"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="ec53-284f-442d-d8c6" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+                <categoryLink id="ec53-284f-442d-d8c6" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
                 <categoryLink id="4283-0345-05a2-9b6b" name="Hotspur Class" hidden="false" targetId="a683-0b8f-09f3-7880" primary="false"/>
               </categoryLinks>
               <entryLinks>
@@ -2491,7 +2491,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
               </constraints>
               <categoryLinks>
                 <categoryLink id="29bb-41bf-24b5-f250" name="Albion Class" hidden="false" targetId="b6a5-4bf0-cc7d-cef0" primary="false"/>
-                <categoryLink id="40a7-a812-7cf4-2415" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+                <categoryLink id="40a7-a812-7cf4-2415" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="ff95-3a69-9a03-0a55" name="Albion" hidden="false" collective="false" import="false" targetId="3391-de44-4f50-9776" type="selectionEntry">
@@ -2584,7 +2584,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="bdd2-2477-fdfd-a0d5" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
+        <categoryLink id="bdd2-2477-fdfd-a0d5" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="4d57-e6f3-d5eb-066a" name="Toronto Class" hidden="false" targetId="01d6-2c71-3552-49ae" primary="false"/>
         <categoryLink id="9a63-c7cb-e85e-4ba9" name="Canadian" hidden="false" targetId="d4a3-52d1-9941-7ffb" primary="false"/>
       </categoryLinks>
@@ -2619,7 +2619,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
               </constraints>
               <categoryLinks>
                 <categoryLink id="5848-4127-3e46-2582" name="Orca Class" hidden="false" targetId="67f5-80e9-aef2-3097" primary="false"/>
-                <categoryLink id="8c5b-e49e-12d0-bad1" name="New CategoryLink" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
+                <categoryLink id="8c5b-e49e-12d0-bad1" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="8eab-19ba-0022-3227" name="Orca" hidden="false" collective="false" import="false" targetId="9bdd-872b-dbfb-4a53" type="selectionEntry">
@@ -2683,7 +2683,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="85d6-f17f-f98c-7cdd" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
+        <categoryLink id="85d6-f17f-f98c-7cdd" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="2337-91ef-efcd-9ac1" name="Protecteur Class" hidden="false" targetId="ddb5-f0d6-665c-3ac4" primary="false"/>
         <categoryLink id="84e0-8ca0-d80c-fdeb" name="Canadian" hidden="false" targetId="d4a3-52d1-9941-7ffb" primary="false"/>
       </categoryLinks>
@@ -2699,7 +2699,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
               </constraints>
               <categoryLinks>
                 <categoryLink id="aacf-872e-b15a-21e9" name="Orca Class" hidden="false" targetId="67f5-80e9-aef2-3097" primary="false"/>
-                <categoryLink id="7ce1-a6ed-a834-6188" name="New CategoryLink" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
+                <categoryLink id="7ce1-a6ed-a834-6188" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="be42-3332-a046-cb2f" name="Orca" hidden="false" collective="false" import="false" targetId="9bdd-872b-dbfb-4a53" type="selectionEntry">
@@ -2835,7 +2835,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="8849-af4b-ada4-5f9f" name="New CategoryLink" hidden="false" targetId="022b-08af-c874-e3f1" primary="true"/>
+        <categoryLink id="8849-af4b-ada4-5f9f" name="Aerial Unit" hidden="false" targetId="022b-08af-c874-e3f1" primary="true"/>
         <categoryLink id="255d-d75c-1b5e-2acb" name="Saxon Class" hidden="false" targetId="1e20-4e31-f760-52ca" primary="false"/>
         <categoryLink id="3223-da9b-66a5-57c6" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
       </categoryLinks>
@@ -2928,10 +2928,10 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="c18c-8528-d6b1-dd04" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="c18c-8528-d6b1-dd04" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="220b-081c-641c-b48f" name="Secace Class" hidden="false" targetId="4f55-03fe-35e0-e261" primary="false"/>
         <categoryLink id="ec09-b5c4-0a2b-4021" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
-        <categoryLink id="afd4-463b-8bce-2b0a" name="B" hidden="false" targetId="f67c-be0d-7a70-d19a" primary="false"/>
+        <categoryLink id="afd4-463b-8bce-2b0a" name="British Vessel" hidden="false" targetId="f67c-be0d-7a70-d19a" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="1b46-ff6b-8cb3-4ae7" name="Secace" hidden="false" collective="false" import="false" targetId="bae7-03e9-ce08-82fb" type="selectionEntry"/>
@@ -2985,7 +2985,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="c4cc-930c-2c35-5123" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="c4cc-930c-2c35-5123" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink name="Ceylon-class" hidden="false" id="4a3e-4459-f4c-7d16" targetId="9681-960e-5120-c47f" primary="false"/>
         <categoryLink name="British" hidden="false" id="ab3a-e87f-ab6d-6fb2" targetId="fffb-149d-6db1-4439" primary="false"/>
       </categoryLinks>
@@ -3037,7 +3037,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="142f-1b82-a0c0-a5f2" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="142f-1b82-a0c0-a5f2" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="b962-8ec4-02b1-65dd" name="Dublin Class" hidden="false" targetId="ff20-d441-da28-93f5" primary="false"/>
         <categoryLink id="80b4-5cf6-24e8-5565" name="Irish" hidden="false" targetId="bf1b-5d15-a572-6d42" primary="false"/>
       </categoryLinks>
@@ -3050,7 +3050,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
             <selectionEntry id="97a5-63e6-8f29-b47c" name="Ross Battle Platforms" hidden="false" collective="false" import="false" type="unit">
               <categoryLinks>
                 <categoryLink id="712a-dd0b-e0b1-e81e" name="Orca Class" hidden="false" targetId="67f5-80e9-aef2-3097" primary="false"/>
-                <categoryLink id="2f29-43a0-1372-b797" name="New CategoryLink" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
+                <categoryLink id="2f29-43a0-1372-b797" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="06fa-baac-e0a6-a58c" name="Ross" hidden="false" collective="false" import="false" targetId="27d9-943b-1840-698b" type="selectionEntry">
@@ -3094,8 +3094,8 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="22e4-b61c-ebbe-609b" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
-        <categoryLink id="0d97-aa6b-588f-07c4" name="Gloriana Class" hidden="false" targetId="0867-653c-99f4-e50a" primary="false"/>
+        <categoryLink id="22e4-b61c-ebbe-609b" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
+        <categoryLink id="0d97-aa6b-588f-07c4" name="Gloriana-Class" hidden="false" targetId="0867-653c-99f4-e50a" primary="false"/>
         <categoryLink id="c1e1-9b3e-ca13-d002" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -3124,7 +3124,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="68ef-e25d-4f55-1f6f" type="max"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="95c4-74b1-db45-7e8e" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+                <categoryLink id="95c4-74b1-db45-7e8e" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
                 <categoryLink id="404b-694d-8097-6253" name="Hotspur Class" hidden="false" targetId="a683-0b8f-09f3-7880" primary="false"/>
               </categoryLinks>
               <entryLinks>
@@ -3165,7 +3165,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
               </constraints>
               <categoryLinks>
                 <categoryLink id="39ab-cd35-ead3-f064" name="Albion Class" hidden="false" targetId="b6a5-4bf0-cc7d-cef0" primary="false"/>
-                <categoryLink id="c709-e973-155f-4df7" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+                <categoryLink id="c709-e973-155f-4df7" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="c9df-6747-8ba3-e5e3" name="Albion" hidden="false" collective="false" import="false" targetId="3391-de44-4f50-9776" type="selectionEntry">
@@ -3208,7 +3208,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="129d-4a8f-6857-00c6" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
+        <categoryLink id="129d-4a8f-6857-00c6" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="3bb1-0495-40c3-8c3e" name="Avalon Class" hidden="false" targetId="7aac-825d-39cf-beac" primary="false"/>
         <categoryLink id="7b5a-8843-a3bc-207a" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
       </categoryLinks>
@@ -3304,7 +3304,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="49f1-6165-b181-38d2" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
+        <categoryLink id="49f1-6165-b181-38d2" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="8bc8-7956-2f3f-dcf3" name="Adventurer Class" hidden="false" targetId="d384-c76d-f387-5327" primary="false"/>
         <categoryLink id="0b23-9396-976c-ada2" name="EITC" hidden="false" targetId="b20c-c6ec-bdc4-faed" primary="false"/>
       </categoryLinks>
@@ -3356,7 +3356,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="b924-2438-c523-5b45" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
+        <categoryLink id="b924-2438-c523-5b45" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="274d-9e22-6426-5356" name="Camelot Class" hidden="false" targetId="a6ac-3d74-b227-9660" primary="false"/>
         <categoryLink id="39ad-70df-0d37-544d" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
       </categoryLinks>
@@ -3390,7 +3390,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cc72-bdf3-9026-76a1" type="max"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="6925-2046-cd72-e889" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+                <categoryLink id="6925-2046-cd72-e889" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
                 <categoryLink id="296d-6bd6-d803-5d72" name="Hotspur Class" hidden="false" targetId="a683-0b8f-09f3-7880" primary="false"/>
               </categoryLinks>
               <entryLinks>
@@ -3431,7 +3431,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
               </constraints>
               <categoryLinks>
                 <categoryLink id="e9f7-d35e-d582-6756" name="Albion Class" hidden="false" targetId="b6a5-4bf0-cc7d-cef0" primary="false"/>
-                <categoryLink id="0fd4-c417-97ba-722c" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+                <categoryLink id="0fd4-c417-97ba-722c" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="d200-694e-c29a-78ff" name="Albion" hidden="false" collective="false" import="false" targetId="3391-de44-4f50-9776" type="selectionEntry">
@@ -3475,7 +3475,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="6e5c-cdc0-eae8-a161" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="6e5c-cdc0-eae8-a161" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="b85b-7ddd-73d2-c735" name="Belfast Class" hidden="false" targetId="128d-7d4d-d692-0978" primary="false"/>
         <categoryLink id="4070-695a-47f4-e0cc" name="Irish" hidden="false" targetId="bf1b-5d15-a572-6d42" primary="false"/>
       </categoryLinks>
@@ -3488,7 +3488,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
             <selectionEntry id="75a4-e18e-bf94-1e4a" name="Ross Battle Platforms" hidden="false" collective="false" import="false" type="unit">
               <categoryLinks>
                 <categoryLink id="2faa-7baa-6add-c317" name="Orca Class" hidden="false" targetId="67f5-80e9-aef2-3097" primary="false"/>
-                <categoryLink id="3a02-8702-dd14-bd17" name="New CategoryLink" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
+                <categoryLink id="3a02-8702-dd14-bd17" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="8028-d836-983c-26fe" name="Ross" hidden="false" collective="false" import="false" targetId="27d9-943b-1840-698b" type="selectionEntry">
@@ -3558,7 +3558,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
       <categoryLinks>
         <categoryLink id="1c4f-8498-d6b8-38aa" name="Prydain Class" hidden="false" targetId="45d9-d5ed-03ea-3310" primary="false"/>
         <categoryLink id="e35e-6f4d-37d4-d172" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
-        <categoryLink id="2c54-d6b6-aca4-7191" name="New CategoryLink" hidden="false" targetId="022b-08af-c874-e3f1" primary="true"/>
+        <categoryLink id="2c54-d6b6-aca4-7191" name="Aerial Unit" hidden="false" targetId="022b-08af-c874-e3f1" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="0cca-d85b-8bae-8795" name="Prydain" hidden="false" collective="false" import="false" targetId="ebe7-a2f0-c340-1e0c" type="selectionEntry"/>
@@ -3637,7 +3637,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d114-83da-62c9-e92e" type="max"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="99b8-912f-4889-0df4" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+                <categoryLink id="99b8-912f-4889-0df4" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
                 <categoryLink id="fa09-9678-0f06-b7ff" name="Hotspur Class" hidden="false" targetId="a683-0b8f-09f3-7880" primary="false"/>
               </categoryLinks>
               <entryLinks>
@@ -3678,7 +3678,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
               </constraints>
               <categoryLinks>
                 <categoryLink id="1f11-7861-8929-a38a" name="Albion Class" hidden="false" targetId="b6a5-4bf0-cc7d-cef0" primary="false"/>
-                <categoryLink id="88d3-9f6c-407e-0dba" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+                <categoryLink id="88d3-9f6c-407e-0dba" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="1b4f-2b02-7b4a-66b0" name="Albion" hidden="false" collective="false" import="false" targetId="3391-de44-4f50-9776" type="selectionEntry">
@@ -3755,7 +3755,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9112-d21d-2784-c6b9" type="max"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="5222-694a-085f-dd6b" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+                <categoryLink id="5222-694a-085f-dd6b" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
                 <categoryLink id="009e-ec65-b596-ab1f" name="Hotspur Class" hidden="false" targetId="a683-0b8f-09f3-7880" primary="false"/>
               </categoryLinks>
               <entryLinks>
@@ -3796,7 +3796,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
               </constraints>
               <categoryLinks>
                 <categoryLink id="ed7a-a211-0fc5-88ca" name="Albion Class" hidden="false" targetId="b6a5-4bf0-cc7d-cef0" primary="false"/>
-                <categoryLink id="cef4-a5e3-0058-46ca" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+                <categoryLink id="cef4-a5e3-0058-46ca" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="9f30-2077-f029-c842" name="Albion" hidden="false" collective="false" import="false" targetId="3391-de44-4f50-9776" type="selectionEntry">
@@ -3843,7 +3843,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a54-be95-b964-e08b" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="8243-f46d-460f-ed15" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
+        <categoryLink id="8243-f46d-460f-ed15" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="e6e1-3dc6-00cf-ec84" name="Protecteur Class" hidden="false" targetId="ddb5-f0d6-665c-3ac4" primary="false"/>
         <categoryLink id="e383-357e-016a-1eaf" name="Canadian" hidden="false" targetId="d4a3-52d1-9941-7ffb" primary="false"/>
       </categoryLinks>
@@ -3859,7 +3859,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
               </constraints>
               <categoryLinks>
                 <categoryLink id="244f-297c-59db-5fe1" name="Orca Class" hidden="false" targetId="67f5-80e9-aef2-3097" primary="false"/>
-                <categoryLink id="38a7-e370-f659-1e72" name="New CategoryLink" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
+                <categoryLink id="38a7-e370-f659-1e72" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="2a99-d182-3240-6317" name="Orca" hidden="false" collective="false" import="false" targetId="9bdd-872b-dbfb-4a53" type="selectionEntry">
@@ -3905,7 +3905,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1987-14f1-2273-3218" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="9064-6dbd-f5e9-67a2" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
+        <categoryLink id="9064-6dbd-f5e9-67a2" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="8580-2e7c-fbf0-9cb5" name="Camelot Class" hidden="false" targetId="a6ac-3d74-b227-9660" primary="false"/>
         <categoryLink id="dd23-8f3e-2f4c-5fba" name="Canadian" hidden="false" targetId="d4a3-52d1-9941-7ffb" primary="false"/>
       </categoryLinks>
@@ -3936,7 +3936,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
               </constraints>
               <categoryLinks>
                 <categoryLink id="8e8e-87a4-f0c1-7347" name="Orca Class" hidden="false" targetId="67f5-80e9-aef2-3097" primary="false"/>
-                <categoryLink id="bf93-0c62-d1dd-46e0" name="New CategoryLink" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
+                <categoryLink id="bf93-0c62-d1dd-46e0" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="8cc6-4e5c-06cf-7805" name="Orca" hidden="false" collective="false" import="false" targetId="9bdd-872b-dbfb-4a53" type="selectionEntry">
@@ -4029,10 +4029,10 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="1b3b-ace7-a8fc-e36d" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="1b3b-ace7-a8fc-e36d" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="d7a3-75fd-ee61-e45d" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
         <categoryLink id="5587-8296-2170-a86d" name="Grail Class" hidden="false" targetId="5098-82a2-6f80-b36a" primary="false"/>
-        <categoryLink id="436c-6b57-a198-19bb" name="B" hidden="false" targetId="f67c-be0d-7a70-d19a" primary="false"/>
+        <categoryLink id="436c-6b57-a198-19bb" name="British Vessel" hidden="false" targetId="f67c-be0d-7a70-d19a" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="7dd0-f97c-7087-b05e" name="Grail" hidden="false" collective="false" import="false" targetId="8ad0-2f74-2bf1-35ea" type="selectionEntry"/>
@@ -4056,7 +4056,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="3c70-3281-89f0-851e" name="New CategoryLink" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
+        <categoryLink id="3c70-3281-89f0-851e" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
         <categoryLink id="adc7-eb09-d6a4-6a71" name="Guinevere Class" hidden="false" targetId="6c4d-9a88-9e9d-ed5f" primary="false"/>
         <categoryLink id="1115-6e9e-c7f3-6099" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
       </categoryLinks>
@@ -4100,7 +4100,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
             <selectionEntry id="6926-f3c1-e975-7562" name="Ross Battle Platforms" hidden="false" collective="false" import="false" type="unit">
               <categoryLinks>
                 <categoryLink id="1eba-f773-4f2e-a3b6" name="Orca Class" hidden="false" targetId="67f5-80e9-aef2-3097" primary="false"/>
-                <categoryLink id="00a6-8e25-0109-91e6" name="New CategoryLink" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
+                <categoryLink id="00a6-8e25-0109-91e6" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="9d71-078e-bb47-d6ff" name="Ross" hidden="false" collective="false" import="false" targetId="27d9-943b-1840-698b" type="selectionEntry">
@@ -4131,7 +4131,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
               </constraints>
               <categoryLinks>
                 <categoryLink id="f641-bac2-cce1-3fb8" name="Albion Class" hidden="false" targetId="b6a5-4bf0-cc7d-cef0" primary="false"/>
-                <categoryLink id="c0ec-b6e3-c66a-7574" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+                <categoryLink id="c0ec-b6e3-c66a-7574" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="6be4-2476-accc-3c77" name="Albion" hidden="false" collective="false" import="false" targetId="3391-de44-4f50-9776" type="selectionEntry">
@@ -4192,7 +4192,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="99f9-b771-2d06-557d" type="max"/>
               </constraints>
               <categoryLinks>
-                <categoryLink id="3de6-5ee5-d5ef-3958" name="New CategoryLink" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+                <categoryLink id="3de6-5ee5-d5ef-3958" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
                 <categoryLink id="a8ea-abda-4d2b-73c6" name="Hotspur Class" hidden="false" targetId="a683-0b8f-09f3-7880" primary="false"/>
               </categoryLinks>
               <entryLinks>
@@ -4240,7 +4240,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="71a9-311a-8612-e944" name="New CategoryLink" hidden="false" targetId="d6e0-2055-9c1b-5e86" primary="true"/>
+        <categoryLink id="71a9-311a-8612-e944" name="Patron" hidden="false" targetId="d6e0-2055-9c1b-5e86" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="3"/>
@@ -4254,7 +4254,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="e1af-5b0a-5afb-96ce" name="New CategoryLink" hidden="false" targetId="d6e0-2055-9c1b-5e86" primary="true"/>
+        <categoryLink id="e1af-5b0a-5afb-96ce" name="Patron" hidden="false" targetId="d6e0-2055-9c1b-5e86" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="2"/>
@@ -4281,7 +4281,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="a258-03a8-2fa9-d5b3" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
+        <categoryLink id="a258-03a8-2fa9-d5b3" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink id="abe8-2f4a-86f5-23d9" name="Irish" hidden="false" targetId="bf1b-5d15-a572-6d42" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -4293,7 +4293,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
             <selectionEntry id="e2dc-5925-b56e-8f7e" name="Ross Battle Platforms" hidden="false" collective="false" import="false" type="unit">
               <categoryLinks>
                 <categoryLink id="e080-62ef-1c22-19d9" name="Orca Class" hidden="false" targetId="67f5-80e9-aef2-3097" primary="false"/>
-                <categoryLink id="c958-874f-8139-e6b4" name="New CategoryLink" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
+                <categoryLink id="c958-874f-8139-e6b4" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="8a75-4f01-72f0-042a" name="Ross" hidden="false" collective="false" import="false" targetId="27d9-943b-1840-698b" type="selectionEntry">
@@ -4337,7 +4337,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="c63f-9b5e-2335-6d94" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
+        <categoryLink id="c63f-9b5e-2335-6d94" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink name="Indian Raj" hidden="false" id="7072-b268-254c-7657" targetId="851a-9181-e40c-ec64" primary="false"/>
         <categoryLink name="Ganges-class" hidden="false" id="ca8d-5bf-93b9-21d6" targetId="705c-c4a7-2e74-1d74" primary="false"/>
       </categoryLinks>
@@ -4385,7 +4385,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="d092-7f8c-84b-77a2" name="New CategoryLink" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
+        <categoryLink id="d092-7f8c-84b-77a2" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="true"/>
         <categoryLink name="Palashi-class" hidden="false" id="21df-5ede-f33e-640d" targetId="104b-7fe7-d1e-1a13" primary="false"/>
         <categoryLink name="Indiaman" hidden="false" id="45a6-c20f-1c9a-1ced" targetId="e25-780f-6ca8-1ca5" primary="false"/>
       </categoryLinks>
@@ -4677,7 +4677,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="b0b7-bda5-7362-fc25" name="New CategoryLink" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+        <categoryLink id="b0b7-bda5-7362-fc25" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
         <categoryLink id="e8e5-8786-6720-112a" name="Ross Class" hidden="false" targetId="cae3-7197-a87a-66a9" primary="false"/>
       </categoryLinks>
       <entryLinks>
@@ -4696,12 +4696,12 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1d3-5936-0797-d3d7" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="03b5-a439-a5de-67ab" name="Keep Calm and Carry On*" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="03b5-a439-a5de-67ab" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
         <infoLink id="749d-6973-c61e-69ff" name="Agincourt" hidden="false" targetId="c4bb-53f6-b701-4255" type="profile"/>
-        <infoLink id="6e3a-8bb4-ecb1-0f6d" name="Lionhearted Crew*" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="2dfc-1fb1-8331-306c" name="Royal Engineers" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="0313-f21d-c42c-ba77" name="Auspicio Regina�" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
-        <infoLink id="9d90-76e0-ad50-78ed" name="East India Privateers*" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="6e3a-8bb4-ecb1-0f6d" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="2dfc-1fb1-8331-306c" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="0313-f21d-c42c-ba77" name="Auspicio Regina [3.05a]" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="9d90-76e0-ad50-78ed" name="East India Privateers [3.05a]" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e820-6474-45dd-a625" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -4722,8 +4722,8 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ba76-3929-60c9-2d4e" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="d53c-185a-a4b1-42af" name="Submerged" hidden="true" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
-                <infoLink id="20b5-23d5-9d93-72c7" name="Torpedo" hidden="true" targetId="d673-c4da-202e-fbfc" type="rule"/>
+                <infoLink id="d53c-185a-a4b1-42af" name="Submerged (3.04)" hidden="true" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+                <infoLink id="20b5-23d5-9d93-72c7" name="Torpedo (3.04)" hidden="true" targetId="d673-c4da-202e-fbfc" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="15"/>
@@ -4738,8 +4738,8 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="10b6-76ec-d070-1096" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="86d9-6338-9403-9f21" name="Blast" hidden="true" targetId="89d8-2e21-11be-005d" type="rule"/>
-                <infoLink id="d3b7-3537-0662-3f80" name="Hazardous" hidden="true" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+                <infoLink id="86d9-6338-9403-9f21" name="Blast (3.04)" hidden="true" targetId="89d8-2e21-11be-005d" type="rule"/>
+                <infoLink id="d3b7-3537-0662-3f80" name="Hazardous (3.04)" hidden="true" targetId="ee84-8367-93d5-8d3f" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10"/>
@@ -4754,7 +4754,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa40-fe23-9b98-4a88" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="3046-d273-4bf1-172f" name="Devastating" hidden="true" targetId="d633-3476-6a40-e860" type="rule"/>
+                <infoLink id="3046-d273-4bf1-172f" name="Devastating (3.04)" hidden="true" targetId="d633-3476-6a40-e860" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="20"/>
@@ -4769,7 +4769,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1940-259c-5e8f-d95d" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="d9f6-9d4d-9772-7bc2" name="Sustained" hidden="true" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
+                <infoLink id="d9f6-9d4d-9772-7bc2" name="Sustained (3.04)" hidden="true" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10"/>
@@ -4853,13 +4853,13 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
         <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3bb-7676-dcf0-db3b" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="e288-6848-269b-8e66" name="Keep Calm and Carry On�" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink id="e906-e82c-ea20-bae5" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="80e4-0961-e696-6a53" name="Reliable Design�" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
+        <infoLink id="e288-6848-269b-8e66" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="e906-e82c-ea20-bae5" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="80e4-0961-e696-6a53" name="Reliable Design [3.07a]" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
         <infoLink id="2bf2-130c-c22d-8ead" name="Albion" hidden="false" targetId="601f-0d50-16b6-b76c" type="profile"/>
-        <infoLink id="8dc5-53e9-842d-0127" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="5b10-6b0b-9aee-74a9" name="Auspicio Regina�" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
-        <infoLink id="1a9c-692a-f202-0053" name="East India Privateers�" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="8dc5-53e9-842d-0127" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="5b10-6b0b-9aee-74a9" name="Auspicio Regina [3.05a]" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="1a9c-692a-f202-0053" name="East India Privateers [3.05a]" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="87b9-3d07-46f4-d5cb" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -5085,17 +5085,17 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
       </constraints>
       <infoLinks>
         <infoLink id="ea64-5e38-d7d0-ce62" name="Athelstan" hidden="false" targetId="3cfa-aca1-05c5-88e3" type="profile"/>
-        <infoLink id="ad17-3055-c92c-292a" name="Shrapnel�" hidden="false" targetId="806d-f937-7b54-eae9" type="rule"/>
-        <infoLink id="9bf5-1413-390e-c33c" name="Flak Barrage�" hidden="false" targetId="7b67-714d-bb2b-6297" type="rule">
+        <infoLink id="ad17-3055-c92c-292a" name="Shrapnel [3.07a]" hidden="false" targetId="806d-f937-7b54-eae9" type="rule"/>
+        <infoLink id="9bf5-1413-390e-c33c" name="Flak Barrage (x) [3.07a]" hidden="false" targetId="7b67-714d-bb2b-6297" type="rule">
           <modifiers>
             <modifier type="append" field="name" value="(10)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="f9bf-7064-8acb-9b58" name="Royal Engineers" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="5090-5d7e-628b-7b27" name="Lionhearted Crew*" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="3be4-25de-74d3-2567" name="Keep Calm and Carry On*" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink id="2b9e-287a-a44a-6466" name="Auspicio Regina*" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
-        <infoLink id="6ff1-9055-f344-4291" name="East India Privateers*" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="f9bf-7064-8acb-9b58" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="5090-5d7e-628b-7b27" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="3be4-25de-74d3-2567" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="2b9e-287a-a44a-6466" name="Auspicio Regina [3.05a]" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="6ff1-9055-f344-4291" name="East India Privateers [3.05a]" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2227-bf44-f410-a482" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -5193,12 +5193,12 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
       </constraints>
       <infoLinks>
         <infoLink id="dd9a-d3b8-6c91-8856" name="Bonaventure" hidden="false" targetId="836a-e8ad-8cc4-1481" type="profile"/>
-        <infoLink id="dd19-9cff-4983-957f" name="Linear Dash [3.06]" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
-        <infoLink id="a79f-7bc3-36e6-cc49" name="Loyal She Began; Thus She Remains�" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
-        <infoLink id="0d7d-3887-1367-6721" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="68e8-7a69-c559-96e3" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="44df-ea8d-db48-ca28" name="Vulnerable Stern�" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
-        <infoLink name="Ablative Prow Armour [3.05a]" hidden="false" id="639a-4677-682e-9cf" targetId="2823-33a9-a62b-e29a" type="rule"/>
+        <infoLink id="dd19-9cff-4983-957f" name="Linear Dash [3.07a]" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
+        <infoLink id="a79f-7bc3-36e6-cc49" name="Loyal She Began; Thus She Remains [3.05a]" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
+        <infoLink id="0d7d-3887-1367-6721" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="68e8-7a69-c559-96e3" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="44df-ea8d-db48-ca28" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink name="Ablative Prow Armour [3.06]" hidden="false" id="639a-4677-682e-9cf" targetId="2823-33a9-a62b-e29a" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="af1c-464a-2723-5d38" name="Strike Cruiser" hidden="false" targetId="ec0f-66dd-f28e-e778" primary="false"/>
@@ -5411,11 +5411,11 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
       </constraints>
       <infoLinks>
         <infoLink id="3ad6-94e7-e89e-79e4" name="Britannia" hidden="false" targetId="762f-52e8-89d1-e20f" type="profile"/>
-        <infoLink id="69af-add5-7ad4-f807" name="Keep Calm and Carry On" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink id="49b7-a372-1c97-ae8d" name="Heavy Firepower" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="7d90-7abb-6fe6-9642" name="Lionhearted Crew" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="aacb-a470-fc7d-58f9" name="Royal Engineers" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="5469-0a98-4302-e722" name="Reliable Design" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
+        <infoLink id="69af-add5-7ad4-f807" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="49b7-a372-1c97-ae8d" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="7d90-7abb-6fe6-9642" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="aacb-a470-fc7d-58f9" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="5469-0a98-4302-e722" name="Reliable Design [3.07a]" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="59d8-b277-0d39-806e" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -5659,14 +5659,14 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
       </constraints>
       <infoLinks>
         <infoLink id="56d5-873d-b8df-45e0" name="Caliburn" hidden="false" targetId="40c5-de80-7148-acd1" type="profile"/>
-        <infoLink id="8f81-94a6-d1f1-ba76" name="Auxiliary Mine Layer�" hidden="false" targetId="6158-153b-d320-6060" type="rule"/>
-        <infoLink id="35e0-fd18-60c0-cdfe" name="Focused Gunnery�" hidden="false" targetId="9ec9-dd04-5a42-6864" type="rule"/>
-        <infoLink id="3f5c-812a-f5a8-32f5" name="Linear Dash�" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
-        <infoLink id="b3fb-2336-e32f-c8ee" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="419f-c522-0d45-6349" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="b642-e5e3-dacb-905f" name="Keep Calm and Carry On�" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink id="9731-a234-98ec-06e8" name="Auspicio Regina*" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
-        <infoLink id="ab3f-034a-dae8-07ae" name="East India Privateers�" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="8f81-94a6-d1f1-ba76" name="Auxiliary Mine Layer [3.07a]" hidden="false" targetId="6158-153b-d320-6060" type="rule"/>
+        <infoLink id="35e0-fd18-60c0-cdfe" name="Focused Gunnery [3.06]" hidden="false" targetId="9ec9-dd04-5a42-6864" type="rule"/>
+        <infoLink id="3f5c-812a-f5a8-32f5" name="Linear Dash [3.07a]" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
+        <infoLink id="b3fb-2336-e32f-c8ee" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="419f-c522-0d45-6349" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="b642-e5e3-dacb-905f" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="9731-a234-98ec-06e8" name="Auspicio Regina [3.05a]" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="ab3f-034a-dae8-07ae" name="East India Privateers [3.05a]" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="405d-9937-f5e1-9744" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -5731,13 +5731,13 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
       </constraints>
       <infoLinks>
         <infoLink id="327f-e25a-d458-cc9c" name="Excalibur" hidden="false" targetId="e977-1226-3a79-1a0d" type="profile"/>
-        <infoLink id="8120-baa1-fc1b-94fc" name="Keep Calm and Carry On�" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink id="4578-22c4-43e2-34b1" name="Giant Slayer�" hidden="false" targetId="0d99-00ae-4c22-20b7" type="rule"/>
-        <infoLink id="b4f0-d44c-8342-ec91" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="8fe1-33f2-d157-58f8" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="2dc9-05a0-00fd-f173" name="Vanguard�" hidden="false" targetId="f721-8318-3875-0140" type="rule"/>
-        <infoLink id="c351-d868-f872-f9fc" name="Auspicio Regina�" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
-        <infoLink id="6260-3998-8baa-2bc9" name="East India Privateers�" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="8120-baa1-fc1b-94fc" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="4578-22c4-43e2-34b1" name="Giant Slayer [3.07a]" hidden="false" targetId="0d99-00ae-4c22-20b7" type="rule"/>
+        <infoLink id="b4f0-d44c-8342-ec91" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="8fe1-33f2-d157-58f8" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="2dc9-05a0-00fd-f173" name="Vanguard [3.07a]" hidden="false" targetId="f721-8318-3875-0140" type="rule"/>
+        <infoLink id="c351-d868-f872-f9fc" name="Auspicio Regina [3.05a]" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="6260-3998-8baa-2bc9" name="East India Privateers [3.05a]" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c9d5-5708-75c6-49b9" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -5853,12 +5853,12 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
       </constraints>
       <infoLinks>
         <infoLink id="22be-3a6f-a085-75bb" name="Picton" hidden="false" targetId="47b7-df74-8b69-2a7e" type="profile"/>
-        <infoLink id="2992-4ed7-0706-f8d3" name="Keep Calm and Carry On" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink id="62fc-a332-5988-6243" name="Lionhearted Crew*" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="c8be-27bf-beb7-08c1" name="Pack Hunter" hidden="false" targetId="112e-82cb-42a3-83d2" type="rule"/>
-        <infoLink id="77a1-ac43-7616-6497" name="Royal Engineers" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="fdff-08cc-9449-2a4c" name="Auspicio Regina" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
-        <infoLink id="38d0-41b8-df31-575b" name="East India Privateers" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="2992-4ed7-0706-f8d3" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="62fc-a332-5988-6243" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="c8be-27bf-beb7-08c1" name="Pack Hunter [3.07a]" hidden="false" targetId="112e-82cb-42a3-83d2" type="rule"/>
+        <infoLink id="77a1-ac43-7616-6497" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="fdff-08cc-9449-2a4c" name="Auspicio Regina [3.05a]" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="38d0-41b8-df31-575b" name="East India Privateers [3.05a]" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="28e1-a564-3b9d-a8d3" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -6052,13 +6052,13 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
       </constraints>
       <infoLinks>
         <infoLink id="cfaa-3a30-d317-5721" name="Yukon" hidden="false" targetId="30c1-b306-afed-4c4e" type="profile"/>
-        <infoLink id="00d8-0877-afdf-8a50" name="Ablative Prow Armour�" hidden="false" targetId="2823-33a9-a62b-e29a" type="rule"/>
-        <infoLink id="fe6c-59d8-ad74-f190" name="Loyal She Began; Thus She Remains�" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
-        <infoLink id="29aa-7d6b-2aec-12d8" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="397a-99a1-c0fc-0578" name="Mine Layer�" hidden="false" targetId="940f-44f3-71bf-f26c" type="rule"/>
-        <infoLink id="92bf-e4b5-7e02-c8e5" name="Mine Sweeper�" hidden="false" targetId="3c38-dac5-4a88-5358" type="rule"/>
-        <infoLink id="589c-5a0b-f807-3f76" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="2bc9-3a74-6455-e40a" name="Vulnerable Stern�" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="00d8-0877-afdf-8a50" name="Ablative Prow Armour [3.06]" hidden="false" targetId="2823-33a9-a62b-e29a" type="rule"/>
+        <infoLink id="fe6c-59d8-ad74-f190" name="Loyal She Began; Thus She Remains [3.05a]" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
+        <infoLink id="29aa-7d6b-2aec-12d8" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="397a-99a1-c0fc-0578" name="Mine Layer [3.07a]" hidden="false" targetId="940f-44f3-71bf-f26c" type="rule"/>
+        <infoLink id="92bf-e4b5-7e02-c8e5" name="Mine Sweeper [3.07a]" hidden="false" targetId="3c38-dac5-4a88-5358" type="rule"/>
+        <infoLink id="589c-5a0b-f807-3f76" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="2bc9-3a74-6455-e40a" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9ed0-cbfb-d7da-5986" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -6255,15 +6255,15 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev2</read
       </constraints>
       <infoLinks>
         <infoLink id="025c-ea73-92e4-1f83" name="Hotspur" hidden="false" targetId="c14b-b3e9-dfdb-02b8" type="profile"/>
-        <infoLink id="7dd9-a4bd-384a-ad83" name="Combat Air Patrol�" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
-        <infoLink id="1574-4ca9-4bba-6bad" name="Full Steam Ahead�" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
-        <infoLink id="6632-9de2-2c26-bf17" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="ab84-5582-a10e-9239" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="456f-fe23-d767-f779" name="SRS Mine Clearance�" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
-        <infoLink id="40ed-da34-92ff-ff34" name="SRS Recon�" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
-        <infoLink id="e60d-64e5-8827-99b4" name="Keep Calm and Carry On�" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink id="b592-8bdb-569a-2a4b" name="Auspicio Regina�" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
-        <infoLink id="d1c1-eabe-d50a-4d91" name="East India Privateers�" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="7dd9-a4bd-384a-ad83" name="Combat Air Patrol [3.07a]" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
+        <infoLink id="1574-4ca9-4bba-6bad" name="Full Steam Ahead [3.07a]" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
+        <infoLink id="6632-9de2-2c26-bf17" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="ab84-5582-a10e-9239" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="456f-fe23-d767-f779" name="SRS Mine Clearance [3.07a]" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
+        <infoLink id="40ed-da34-92ff-ff34" name="SRS Recon [3.07a]" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
+        <infoLink id="e60d-64e5-8827-99b4" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="b592-8bdb-569a-2a4b" name="Auspicio Regina [3.05a]" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="d1c1-eabe-d50a-4d91" name="East India Privateers [3.05a]" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0902-3b09-713b-9caf" name="Support Carrier" hidden="false" targetId="dc06-6d22-be64-c6eb" primary="false"/>
@@ -6315,12 +6315,12 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="13db-db40-4074-7087" name="Halifax" hidden="false" targetId="22a9-52fd-a014-e9cf" type="profile"/>
-        <infoLink id="c309-ebad-cda4-8996" name="Ablative Prow Armour�" hidden="false" targetId="2823-33a9-a62b-e29a" type="rule"/>
-        <infoLink id="5a2d-e87e-ad62-21bb" name="Loyal She Began; Thus She Remains�" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
-        <infoLink id="1ca2-ce81-384d-cfd5" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="c2f3-efa5-4b0a-4d0d" name="McCurdy Shield Amplifier�" hidden="false" targetId="4e80-1d7c-8f72-bb13" type="rule"/>
-        <infoLink id="86c2-fe2d-75ba-a39f" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="7de8-be43-7de7-4131" name="Vulnerable Stern�" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="c309-ebad-cda4-8996" name="Ablative Prow Armour [3.06]" hidden="false" targetId="2823-33a9-a62b-e29a" type="rule"/>
+        <infoLink id="5a2d-e87e-ad62-21bb" name="Loyal She Began; Thus She Remains [3.05a]" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
+        <infoLink id="1ca2-ce81-384d-cfd5" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="c2f3-efa5-4b0a-4d0d" name="McCurdy Shield Amplifier (3.04)" hidden="false" targetId="4e80-1d7c-8f72-bb13" type="rule"/>
+        <infoLink id="86c2-fe2d-75ba-a39f" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="7de8-be43-7de7-4131" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a5b6-3c4f-810a-c05b" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -6441,13 +6441,13 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="8bde-6014-9a3e-37d3" name="Morgana" hidden="false" targetId="d804-ed50-9392-66d9" type="profile"/>
-        <infoLink id="67e7-a4a8-60e1-ad06" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="866b-6db0-8abc-24e1" name="Full Steam Ahead�" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
-        <infoLink id="2360-3f07-abc3-0718" name="Giant Slayer�" hidden="false" targetId="0d99-00ae-4c22-20b7" type="rule"/>
-        <infoLink id="2fcc-45a3-3c57-e8e2" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="02a8-590f-233f-54f9" name="Keep Calm and Carry On�" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink id="71f8-0a3e-1a46-d4b8" name="Terror From Belove�" hidden="false" targetId="405a-6e4d-45ad-b188" type="rule"/>
-        <infoLink id="4979-f091-1de9-3cef" name="Silent Hunter�" hidden="false" targetId="4073-0c13-d827-7ab1" type="rule"/>
+        <infoLink id="67e7-a4a8-60e1-ad06" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="866b-6db0-8abc-24e1" name="Full Steam Ahead [3.07a]" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
+        <infoLink id="2360-3f07-abc3-0718" name="Giant Slayer [3.07a]" hidden="false" targetId="0d99-00ae-4c22-20b7" type="rule"/>
+        <infoLink id="2fcc-45a3-3c57-e8e2" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="02a8-590f-233f-54f9" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="71f8-0a3e-1a46-d4b8" name="Terror From Below [3.07a]" hidden="false" targetId="405a-6e4d-45ad-b188" type="rule"/>
+        <infoLink id="4979-f091-1de9-3cef" name="Silent Hunter [3.07a]" hidden="false" targetId="4073-0c13-d827-7ab1" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d27b-9183-bfb8-bcfd" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -6481,14 +6481,14 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="690b-ffa0-0a94-27dc" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="1da0-cd6b-1659-8c65" name="Hammer Sweep�" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
-        <infoLink id="7b49-c049-7c78-834c" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="0a06-811f-f277-f3f2" name="Keep Calm and Carry On�" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="1da0-cd6b-1659-8c65" name="Hammer Sweep [3.07a]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
+        <infoLink id="7b49-c049-7c78-834c" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="0a06-811f-f277-f3f2" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
         <infoLink id="846d-8cb5-9dce-b3b5" name="Lancelot" hidden="false" targetId="8f62-3f08-75e7-4a8b" type="profile"/>
-        <infoLink id="ab33-a838-2825-14a6" name="Reliable Design�" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
-        <infoLink id="5884-69c6-f84f-d3c4" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="5bfc-996d-219a-dfcc" name="Auspicio Regina�" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
-        <infoLink id="6d35-0351-ef75-2f94" name="East India Privateers" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="ab33-a838-2825-14a6" name="Reliable Design [3.07a]" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
+        <infoLink id="5884-69c6-f84f-d3c4" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="5bfc-996d-219a-dfcc" name="Auspicio Regina [3.05a]" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="6d35-0351-ef75-2f94" name="East India Privateers [3.05a]" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="b90c-8f51-2715-9622" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -6750,11 +6750,11 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="e67c-3b33-0db3-b05d" name="Sabre" hidden="false" targetId="9ab1-1a8f-d454-f105" type="profile"/>
-        <infoLink id="0acd-81fb-0fe3-5e6a" name="Keep Calm and Carry On" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink id="6c91-2239-1046-6015" name="Giant Slayer [3.06]" hidden="false" targetId="0d99-00ae-4c22-20b7" type="rule"/>
-        <infoLink id="fd25-efa0-c312-0c7d" name="Lionhearted Crew" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="96cd-250e-48b1-4ee9" name="Royal Engineers" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink name="Fortunes of War [3.06]" hidden="false" id="f81a-1843-fb99-9c0f" targetId="949d-d37f-c7c8-1093" type="rule"/>
+        <infoLink id="0acd-81fb-0fe3-5e6a" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="6c91-2239-1046-6015" name="Giant Slayer [3.07a]" hidden="false" targetId="0d99-00ae-4c22-20b7" type="rule"/>
+        <infoLink id="fd25-efa0-c312-0c7d" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="96cd-250e-48b1-4ee9" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink name="Fortunes of War [3.07a]" hidden="false" id="f81a-1843-fb99-9c0f" targetId="949d-d37f-c7c8-1093" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="b200-872f-3c1c-2aa4" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -6992,15 +6992,15 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="0373-7ae0-0f7d-ac8b" name="Protecteur" hidden="false" targetId="ced3-c53b-ff9b-fe92" type="profile"/>
-        <infoLink id="0aaa-0d57-dded-e243" name="Loyal She Began; Thus She Remains�" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
-        <infoLink id="b9dc-1b56-e1a8-5829" name="Combat Air Patrol�" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
-        <infoLink id="4b74-1dd5-044c-6f40" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="d1f0-9acf-c026-3b07" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="ffaa-eb5c-aabb-394b" name="SRS Mine Clearance�" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
-        <infoLink id="2e6c-fc9d-f527-a135" name="SRS Recon�" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
-        <infoLink id="aecd-6426-ecef-c2b2" name="Heavy Firepower�" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="68a0-0e98-c99c-40b5" name="Vulnerable Stern�" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
-        <infoLink id="55c7-4b9b-e8b6-9a9f" name="Unexpected Arrival�" hidden="false" targetId="f4aa-042e-34e5-1938" type="rule"/>
+        <infoLink id="0aaa-0d57-dded-e243" name="Loyal She Began; Thus She Remains [3.05a]" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
+        <infoLink id="b9dc-1b56-e1a8-5829" name="Combat Air Patrol [3.07a]" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
+        <infoLink id="4b74-1dd5-044c-6f40" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="d1f0-9acf-c026-3b07" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="ffaa-eb5c-aabb-394b" name="SRS Mine Clearance [3.07a]" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
+        <infoLink id="2e6c-fc9d-f527-a135" name="SRS Recon [3.07a]" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
+        <infoLink id="aecd-6426-ecef-c2b2" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="68a0-0e98-c99c-40b5" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="55c7-4b9b-e8b6-9a9f" name="Unexpected Arrival [3.07a]" hidden="false" targetId="f4aa-042e-34e5-1938" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="053d-a666-3d7c-aee1" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -7069,10 +7069,10 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b57b-42bb-1c6b-6067" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="da03-b94f-4957-f4e1" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="d171-c869-2fd4-ecf6" name="Loyal She Began; Thus She Remains�" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
-        <infoLink id="1ccb-a0d6-285c-8764" name="Pack Hunter�" hidden="false" targetId="112e-82cb-42a3-83d2" type="rule"/>
-        <infoLink id="28a1-8383-20ec-2f9c" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="da03-b94f-4957-f4e1" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="d171-c869-2fd4-ecf6" name="Loyal She Began; Thus She Remains [3.05a]" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
+        <infoLink id="1ccb-a0d6-285c-8764" name="Pack Hunter [3.07a]" hidden="false" targetId="112e-82cb-42a3-83d2" type="rule"/>
+        <infoLink id="28a1-8383-20ec-2f9c" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
         <infoLink id="a011-b639-40df-8049" name="Orca" hidden="false" targetId="36d3-f255-efd1-0807" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -7099,21 +7099,21 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="8611-c045-4296-966f" name="Nautilus" hidden="false" targetId="f656-2295-8ee9-83a5" type="profile"/>
-        <infoLink id="7c6f-2628-156f-5899" name="Devil’s Own Luck�" hidden="false" targetId="da8d-c041-fd15-a8de" type="rule"/>
-        <infoLink id="49d9-b75e-840c-f1ce" name="Terror From Belove�" hidden="false" targetId="405a-6e4d-45ad-b188" type="rule"/>
-        <infoLink id="52e2-9f8b-f577-3a9d" name="Full Steam Ahead�" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
-        <infoLink id="4cf2-4574-d2e7-2b27" name="Shadow Hunter�" hidden="false" targetId="741b-a6ce-dbe7-9409" type="rule"/>
-        <infoLink id="ab76-0005-3e7b-82cb" name="Unstoppable�" hidden="false" targetId="0a8e-d42a-454f-e75c" type="rule"/>
-        <infoLink id="ee7b-27d1-a25e-8c6f" name="Disciplined�" hidden="false" targetId="ecf0-d255-3339-4a1b" type="rule"/>
-        <infoLink id="57d2-8ed6-3a03-bfb0" name="Veteran Repair Teams�" hidden="false" targetId="8543-0d7a-9a4f-8b17" type="rule"/>
-        <infoLink id="4327-8475-74be-08e7" name="Silent Hunter�" hidden="false" targetId="4073-0c13-d827-7ab1" type="rule"/>
-        <infoLink id="adc5-c32d-fa91-eae6" name="Elite Crew�" hidden="false" targetId="4f7a-f51a-a60e-e6ba" type="rule"/>
-        <infoLink id="9076-8d40-689a-11b9" name="Strategic Withdrawal�" hidden="false" targetId="950e-974b-d566-0e66" type="rule"/>
+        <infoLink id="7c6f-2628-156f-5899" name="Devil’s Own Luck [3.07a]" hidden="false" targetId="da8d-c041-fd15-a8de" type="rule"/>
+        <infoLink id="49d9-b75e-840c-f1ce" name="Terror From Below [3.07a]" hidden="false" targetId="405a-6e4d-45ad-b188" type="rule"/>
+        <infoLink id="52e2-9f8b-f577-3a9d" name="Full Steam Ahead [3.07a]" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
+        <infoLink id="4cf2-4574-d2e7-2b27" name="Shadow Hunter [3.07a]" hidden="false" targetId="741b-a6ce-dbe7-9409" type="rule"/>
+        <infoLink id="ab76-0005-3e7b-82cb" name="Unstoppable [3.06]" hidden="false" targetId="0a8e-d42a-454f-e75c" type="rule"/>
+        <infoLink id="ee7b-27d1-a25e-8c6f" name="Disciplined [3.07a]" hidden="false" targetId="ecf0-d255-3339-4a1b" type="rule"/>
+        <infoLink id="57d2-8ed6-3a03-bfb0" name="Veteran Repair Teams [3.07a]" hidden="false" targetId="8543-0d7a-9a4f-8b17" type="rule"/>
+        <infoLink id="4327-8475-74be-08e7" name="Silent Hunter [3.07a]" hidden="false" targetId="4073-0c13-d827-7ab1" type="rule"/>
+        <infoLink id="adc5-c32d-fa91-eae6" name="Elite Crew [3.07a]" hidden="false" targetId="4f7a-f51a-a60e-e6ba" type="rule"/>
+        <infoLink id="9076-8d40-689a-11b9" name="Strategic Withdrawal [3.07a]" hidden="false" targetId="950e-974b-d566-0e66" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="27fd-cf18-7fa6-921f" name="Assault Submarine" hidden="false" targetId="f69c-ba63-7c93-a71f" primary="false"/>
         <categoryLink id="fc25-6873-18b9-172f" name="Unique" hidden="false" targetId="293e-b55a-bcfa-95c3" primary="false"/>
-        <categoryLink id="02c0-32bd-e34d-f9d0" name="New CategoryLink" hidden="false" targetId="1e28-4ab8-662e-f4c3" primary="true"/>
+        <categoryLink id="02c0-32bd-e34d-f9d0" name="Privateer" hidden="false" targetId="1e28-4ab8-662e-f4c3" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="fbbc-a127-25dc-e688" name="Heavy Torpedo Salvo" hidden="false" collective="false" import="false" targetId="18e7-2755-41be-00c0" type="selectionEntry">
@@ -7143,15 +7143,15 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ae8-12fc-4300-1d42" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="43b2-017e-360e-ce6a" name="Ablative Prow Armour�" hidden="false" targetId="2823-33a9-a62b-e29a" type="rule"/>
+        <infoLink id="43b2-017e-360e-ce6a" name="Ablative Prow Armour [3.06]" hidden="false" targetId="2823-33a9-a62b-e29a" type="rule"/>
         <infoLink id="bf54-158b-bea3-4a8d" name="Newfoundland" hidden="false" targetId="841c-c422-2f0a-6a19" type="profile"/>
-        <infoLink id="11a3-f2af-1e54-86ac" name="Loyal She Began; Thus She Remains�" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
-        <infoLink id="35b4-1230-d980-d206" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="4449-43eb-9ca1-c9c5" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="d2d2-d34e-4178-8fd5" name="Vulnerable Stern�" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="11a3-f2af-1e54-86ac" name="Loyal She Began; Thus She Remains [3.05a]" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
+        <infoLink id="35b4-1230-d980-d206" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="4449-43eb-9ca1-c9c5" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="d2d2-d34e-4178-8fd5" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="7df7-6920-ff08-51cd" name="Crown�" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
+        <categoryLink id="7df7-6920-ff08-51cd" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
         <categoryLink id="e3ed-c288-9e5a-4463" name="Attack Cruiser" hidden="false" targetId="884d-f947-5522-d6e7" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -7345,13 +7345,13 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="e0cf-64c8-2562-1782" name="Bedivere" hidden="false" targetId="9a89-b5c4-303a-87e9" type="profile"/>
-        <infoLink id="f940-d224-aae4-0cc6" name="Keep Calm and Carry On�" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink id="c711-273f-b29d-ceda" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="df14-ec8f-b14d-4a8c" name="Skyfire�" hidden="false" targetId="1083-2af1-7bfc-7a55" type="rule"/>
-        <infoLink id="644c-7384-242c-ffa2" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="4a00-231c-141a-823b" name="Auspicio Regina�" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
-        <infoLink id="45db-78f8-a674-1010" name="East India Privateers�" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
-        <infoLink id="6794-11f5-cae9-5530" name="Maritime Patrol�" hidden="false" targetId="0b7c-6003-8433-2817" type="rule"/>
+        <infoLink id="f940-d224-aae4-0cc6" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="c711-273f-b29d-ceda" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="df14-ec8f-b14d-4a8c" name="Skyfire [3.07a]" hidden="false" targetId="1083-2af1-7bfc-7a55" type="rule"/>
+        <infoLink id="644c-7384-242c-ffa2" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="4a00-231c-141a-823b" name="Auspicio Regina [3.05a]" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="45db-78f8-a674-1010" name="East India Privateers [3.05a]" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="6794-11f5-cae9-5530" name="Maritime Patrol [3.07a]" hidden="false" targetId="0b7c-6003-8433-2817" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="cf94-1089-1994-0e48" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -7513,14 +7513,14 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="c4fe-c4f6-26a8-150d" name="Victory" hidden="false" targetId="6b25-6398-76ad-74aa" type="profile"/>
-        <infoLink id="12d2-ee75-6afb-5c54" name="Heavy Firepower�" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="5e49-d3a1-728c-b9c2" name="Vulnerable Stern [3.06]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
-        <infoLink id="8bf6-68f9-4306-e475" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="9e8b-a939-eb2b-d599" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="0e5d-0bc6-fcb4-1f3f" name="SRS Mine Clearance�" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
-        <infoLink id="ed3e-7152-8865-024d" name="SRS Recon�" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
-        <infoLink id="70ad-11db-39c5-19c5" name="Keep Calm and Carry On�" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink name="Combat Air Patrol [3.06]" hidden="false" id="b61-1a57-1b6d-43e2" targetId="5eca-214c-5274-55db" type="rule"/>
+        <infoLink id="12d2-ee75-6afb-5c54" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="5e49-d3a1-728c-b9c2" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="8bf6-68f9-4306-e475" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="9e8b-a939-eb2b-d599" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="0e5d-0bc6-fcb4-1f3f" name="SRS Mine Clearance [3.07a]" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
+        <infoLink id="ed3e-7152-8865-024d" name="SRS Recon [3.07a]" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
+        <infoLink id="70ad-11db-39c5-19c5" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink name="Combat Air Patrol [3.07a]" hidden="false" id="b61-1a57-1b6d-43e2" targetId="5eca-214c-5274-55db" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="b60e-e656-b882-9148" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -7662,13 +7662,13 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="5502-6fe7-5444-f92e" name="HMS Ark Royal" hidden="false" targetId="514d-4cc4-06f1-3f20" type="profile"/>
-        <infoLink id="9115-cc09-db83-6788" name="Heavy Firepower�" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="c818-f748-8213-f8ae" name="Combat Air Patrol�" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
-        <infoLink id="d8e8-b6b4-814f-eb6e" name="Royal Engineers (3.04)" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="c5f8-17cd-79c2-fac8" name="Inspirational�" hidden="false" targetId="b48d-b4e0-19e8-d85a" type="rule"/>
-        <infoLink id="228c-ac4d-70c3-a49d" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="1bf0-799d-def5-063a" name="Keep Calm and Carry On�" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink name="Vulnerable Stern [3.06]" hidden="false" id="3d1-62cb-2242-8fe4" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="9115-cc09-db83-6788" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="c818-f748-8213-f8ae" name="Combat Air Patrol [3.07a]" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
+        <infoLink id="d8e8-b6b4-814f-eb6e" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="c5f8-17cd-79c2-fac8" name="Inspirational [3.07a]" hidden="false" targetId="b48d-b4e0-19e8-d85a" type="rule"/>
+        <infoLink id="228c-ac4d-70c3-a49d" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="1bf0-799d-def5-063a" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink name="Vulnerable Stern [3.07a]" hidden="false" id="3d1-62cb-2242-8fe4" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0ea6-a69c-c716-6aaf" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -7757,13 +7757,13 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             </modifierGroup>
           </modifierGroups>
         </infoLink>
-        <infoLink id="aa0a-da1d-e4f1-090b" name="Keep Calm and Carry On�" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink id="3645-2b50-69c3-4a4c" name="Heavy Firepower�" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="77b7-b533-46cf-09d8" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="27d5-727d-4cd2-0c3d" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="8044-ed68-4cb5-18ac" name="Fortunes of War�" hidden="false" targetId="949d-d37f-c7c8-1093" type="rule"/>
-        <infoLink id="0bfe-d985-8961-92b3" name="Logistical Support�" hidden="false" targetId="408e-7b40-68d7-059f" type="rule"/>
-        <infoLink id="1fa6-ea55-43f5-7a42" name="Giant Slayer�" hidden="false" targetId="0d99-00ae-4c22-20b7" type="rule"/>
+        <infoLink id="aa0a-da1d-e4f1-090b" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="3645-2b50-69c3-4a4c" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="77b7-b533-46cf-09d8" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="27d5-727d-4cd2-0c3d" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="8044-ed68-4cb5-18ac" name="Fortunes of War [3.07a]" hidden="false" targetId="949d-d37f-c7c8-1093" type="rule"/>
+        <infoLink id="0bfe-d985-8961-92b3" name="Logistical Support [3.07a]" hidden="false" targetId="408e-7b40-68d7-059f" type="rule"/>
+        <infoLink id="1fa6-ea55-43f5-7a42" name="Giant Slayer [3.07a]" hidden="false" targetId="0d99-00ae-4c22-20b7" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2e0b-7e65-070b-e4ce" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -7818,13 +7818,13 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="a3e5-3360-0fd1-d935" name="Toronto" hidden="false" targetId="cd8a-4413-9e89-5497" type="profile"/>
-        <infoLink id="b0e8-e5f2-cb26-f57f" name="Ablative Prow Armour" hidden="false" targetId="2823-33a9-a62b-e29a" type="rule"/>
-        <infoLink id="1b97-036a-81f5-454d" name="Loyal She Began; Thus She Remains" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
-        <infoLink id="60a3-4d36-98cb-a030" name="Rocket Barrage�" hidden="false" targetId="1042-355a-94f3-b6be" type="rule"/>
-        <infoLink id="99d9-cf98-1491-3492" name="Anti-Air Specialist" hidden="false" targetId="7baa-3e4c-35ea-5614" type="rule"/>
-        <infoLink id="d2ea-4851-2856-f246" name="Lionhearted Crew" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="d2dc-20a3-64f1-6e7e" name="Fortunes of War" hidden="false" targetId="949d-d37f-c7c8-1093" type="rule"/>
-        <infoLink id="a249-44ca-6281-e414" name="Vulnerable Stern�" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule">
+        <infoLink id="b0e8-e5f2-cb26-f57f" name="Ablative Prow Armour [3.06]" hidden="false" targetId="2823-33a9-a62b-e29a" type="rule"/>
+        <infoLink id="1b97-036a-81f5-454d" name="Loyal She Began; Thus She Remains [3.05a]" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
+        <infoLink id="60a3-4d36-98cb-a030" name="Rocket Barrage [3.06]" hidden="false" targetId="1042-355a-94f3-b6be" type="rule"/>
+        <infoLink id="99d9-cf98-1491-3492" name="Anti-Air Specialist [3.07a]" hidden="false" targetId="7baa-3e4c-35ea-5614" type="rule"/>
+        <infoLink id="d2ea-4851-2856-f246" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="d2dc-20a3-64f1-6e7e" name="Fortunes of War [3.07a]" hidden="false" targetId="949d-d37f-c7c8-1093" type="rule"/>
+        <infoLink id="a249-44ca-6281-e414" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -7833,7 +7833,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="f2f9-eb4b-d9dc-320d" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="f2f9-eb4b-d9dc-320d" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="ee8b-4977-6ffd-1207" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -7953,16 +7953,16 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="515d-bc9a-9a92-1a5b" name="Tintagel" hidden="false" targetId="057a-b246-8282-d746" type="profile"/>
-        <infoLink id="218c-028e-6998-aa48" name="Keep Calm and Carry On�" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink id="d2a3-81e5-d3c1-d4dd" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="9c75-5475-6d34-48e7" name="Powerslide�" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
-        <infoLink id="78aa-06bd-76ca-b665" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="313b-7219-90a1-6ce0" name="Landing Vessel�" hidden="false" targetId="4869-03db-33f9-fa82" type="rule"/>
-        <infoLink id="4202-0f5a-e357-426b" name="Hydrophone Relay�" hidden="false" targetId="1b80-20ba-6dae-7094" type="rule"/>
-        <infoLink id="6a30-6287-9b40-24b9" name="Rocketeer Flight�" hidden="false" targetId="04ee-5a1c-f3c8-3e5f" type="rule"/>
-        <infoLink id="4f7d-1e2a-f5df-5d57" name="Loyal She Began; Thus She Remains�" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
-        <infoLink id="c3ab-d9fb-b848-2f03" name="Auspicio Regina�" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
-        <infoLink id="f76e-a21d-1faf-d32a" name="East India Privateers�" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="218c-028e-6998-aa48" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="d2a3-81e5-d3c1-d4dd" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="9c75-5475-6d34-48e7" name="Powerslide [3.07a]" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
+        <infoLink id="78aa-06bd-76ca-b665" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="313b-7219-90a1-6ce0" name="Landing Vessel [3.07a]" hidden="false" targetId="4869-03db-33f9-fa82" type="rule"/>
+        <infoLink id="4202-0f5a-e357-426b" name="Hydrophone Relay [3.07a]" hidden="false" targetId="1b80-20ba-6dae-7094" type="rule"/>
+        <infoLink id="6a30-6287-9b40-24b9" name="Rocketeer Flight [3.05a]" hidden="false" targetId="04ee-5a1c-f3c8-3e5f" type="rule"/>
+        <infoLink id="4f7d-1e2a-f5df-5d57" name="Loyal She Began; Thus She Remains [3.05a]" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
+        <infoLink id="c3ab-d9fb-b848-2f03" name="Auspicio Regina [3.05a]" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="f76e-a21d-1faf-d32a" name="East India Privateers [3.05a]" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0ff9-d6ed-4da6-e214" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -8002,17 +8002,17 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="e7e7-69a7-b302-836e" name="Saxon" hidden="false" targetId="49c8-8dab-53f7-a13d" type="profile"/>
-        <infoLink id="7b19-81e8-35f8-1ad7" name="Keep Calm and Carry On�" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink id="f65f-a53d-88df-e00e" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="2c3f-1f05-157f-af84" name="Powerslide�" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
-        <infoLink id="fecf-ac58-a174-e9cf" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="d2a5-9933-d9de-a691" name="Linear Dash�" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
-        <infoLink id="6009-50a0-b9ab-d9c8" name="Skyfire�" hidden="false" targetId="1083-2af1-7bfc-7a55" type="rule"/>
-        <infoLink id="d196-3b32-c0f6-537b" name="Vanguard�" hidden="false" targetId="f721-8318-3875-0140" type="rule"/>
-        <infoLink id="8a5e-7ba8-3d0d-e45a" name="Loyal She Began; Thus She Remains�" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
-        <infoLink id="58c9-858f-8997-8dfe" name="Corvette Duty�" hidden="false" targetId="4836-a907-b316-55b2" type="rule"/>
-        <infoLink id="c826-0b39-a6a7-0e16" name="East India Privateers�" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
-        <infoLink id="4a89-cc17-7062-252a" name="Auspicio Regina�" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="7b19-81e8-35f8-1ad7" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="f65f-a53d-88df-e00e" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="2c3f-1f05-157f-af84" name="Powerslide [3.07a]" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
+        <infoLink id="fecf-ac58-a174-e9cf" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="d2a5-9933-d9de-a691" name="Linear Dash [3.07a]" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
+        <infoLink id="6009-50a0-b9ab-d9c8" name="Skyfire [3.07a]" hidden="false" targetId="1083-2af1-7bfc-7a55" type="rule"/>
+        <infoLink id="d196-3b32-c0f6-537b" name="Vanguard [3.07a]" hidden="false" targetId="f721-8318-3875-0140" type="rule"/>
+        <infoLink id="8a5e-7ba8-3d0d-e45a" name="Loyal She Began; Thus She Remains [3.05a]" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
+        <infoLink id="58c9-858f-8997-8dfe" name="Corvette Duty [3.07a]" hidden="false" targetId="4836-a907-b316-55b2" type="rule"/>
+        <infoLink id="c826-0b39-a6a7-0e16" name="East India Privateers [3.05a]" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="4a89-cc17-7062-252a" name="Auspicio Regina [3.05a]" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="32e9-4b83-085f-c9ea" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -8042,13 +8042,13 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="6e82-5be0-6729-6fe9" name="Prydain" hidden="false" targetId="dbfc-8c6f-cbcf-7daf" type="profile"/>
-        <infoLink id="b5a2-a9b6-0a95-3992" name="Cloud Hunting" hidden="false" targetId="cfe8-adc4-4866-0bc8" type="rule"/>
-        <infoLink id="ad55-be57-fb3c-7d9b" name="Keep Calm and Carry On" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink id="3326-51e2-bba6-5ef8" name="Powerslide" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
-        <infoLink id="4faa-f1a9-1958-7225" name="Royal Engineers" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="ef51-07ae-af78-d077" name="Lionhearted Crew" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="acc2-c609-906d-84f3" name="Auspicio Regina" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
-        <infoLink id="88a5-26de-5bb2-2f42" name="East India Privateers" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="b5a2-a9b6-0a95-3992" name="Cloud Hunting [3.07a]" hidden="false" targetId="cfe8-adc4-4866-0bc8" type="rule"/>
+        <infoLink id="ad55-be57-fb3c-7d9b" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="3326-51e2-bba6-5ef8" name="Powerslide [3.07a]" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
+        <infoLink id="4faa-f1a9-1958-7225" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="ef51-07ae-af78-d077" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="acc2-c609-906d-84f3" name="Auspicio Regina [3.05a]" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="88a5-26de-5bb2-2f42" name="East India Privateers [3.05a]" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6f19-ebee-9e38-b298" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -8221,15 +8221,15 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="3911-ca37-ff29-fdd3" name="Secace" hidden="false" targetId="5f30-e85d-263d-33d5" type="profile"/>
-        <infoLink id="280d-1447-0025-a502" name="Keep Calm and Carry On�" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink id="b0e8-4f91-22bc-685b" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="a0ac-e123-566f-828f" name="Hydrophone Relay�" hidden="false" targetId="1b80-20ba-6dae-7094" type="rule"/>
-        <infoLink id="d7f4-202c-7bb7-881b" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="5dd2-f365-c428-b454" name="Forward Deployment�" hidden="false" targetId="e8f8-a4d2-d40c-1467" type="rule"/>
-        <infoLink id="7df8-b0f4-74e8-bcc0" name="Cloud Hunting�" hidden="false" targetId="cfe8-adc4-4866-0bc8" type="rule"/>
-        <infoLink id="cc88-a22d-b3b3-4ea2" name="East India Privateers�" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
-        <infoLink id="dcd1-0fad-f718-167e" name="Linear Dash (3.04)" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
-        <infoLink id="d0ec-76d8-0c87-2d63" name="Auspicio Regina�" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="280d-1447-0025-a502" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="b0e8-4f91-22bc-685b" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="a0ac-e123-566f-828f" name="Hydrophone Relay [3.07a]" hidden="false" targetId="1b80-20ba-6dae-7094" type="rule"/>
+        <infoLink id="d7f4-202c-7bb7-881b" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="5dd2-f365-c428-b454" name="Forward Deployment [3.07a]" hidden="false" targetId="e8f8-a4d2-d40c-1467" type="rule"/>
+        <infoLink id="7df8-b0f4-74e8-bcc0" name="Cloud Hunting [3.07a]" hidden="false" targetId="cfe8-adc4-4866-0bc8" type="rule"/>
+        <infoLink id="cc88-a22d-b3b3-4ea2" name="East India Privateers [3.05a]" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="dcd1-0fad-f718-167e" name="Linear Dash [3.07a]" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
+        <infoLink id="d0ec-76d8-0c87-2d63" name="Auspicio Regina [3.05a]" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="13bb-e230-64bf-0c26" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -8264,12 +8264,12 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="4c43-a27f-dc55-df5a" name="Ross" hidden="false" targetId="d724-8d4c-2694-283c" type="profile"/>
-        <infoLink id="c252-bf3c-648d-080c" name="Forward Deployment�" hidden="false" targetId="e8f8-a4d2-d40c-1467" type="rule"/>
-        <infoLink id="adbb-6b57-95dc-c092" name="Immobile�" hidden="false" targetId="8aa1-f648-12bd-a1c6" type="rule"/>
-        <infoLink id="06cf-1cbd-24ab-66a0" name="Heavy Escort�" hidden="false" targetId="24cb-6c34-eb5b-7dde" type="rule"/>
-        <infoLink id="a3d5-c262-76f3-2839" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="6c6d-fc8a-5eed-b654" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="ff90-f845-8cbf-3d2d" name="Strategic Asset�" hidden="false" targetId="12ec-f9c6-b68b-913b" type="rule"/>
+        <infoLink id="c252-bf3c-648d-080c" name="Forward Deployment [3.07a]" hidden="false" targetId="e8f8-a4d2-d40c-1467" type="rule"/>
+        <infoLink id="adbb-6b57-95dc-c092" name="Immobile [3.07a]" hidden="false" targetId="8aa1-f648-12bd-a1c6" type="rule"/>
+        <infoLink id="06cf-1cbd-24ab-66a0" name="Heavy Escort [3.07a]" hidden="false" targetId="24cb-6c34-eb5b-7dde" type="rule"/>
+        <infoLink id="a3d5-c262-76f3-2839" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="6c6d-fc8a-5eed-b654" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="ff90-f845-8cbf-3d2d" name="Strategic Asset [3.07a]" hidden="false" targetId="12ec-f9c6-b68b-913b" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e142-75b3-b857-716b" name="Battle Platform" hidden="false" targetId="8b0e-929f-ad70-2b6a" primary="false"/>
@@ -8346,13 +8346,13 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a184-ff30-7b59-e29a" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="5435-f4bf-2c29-bd49" name="Forward Deployment�" hidden="false" targetId="e8f8-a4d2-d40c-1467" type="rule"/>
-        <infoLink id="61be-73ff-db17-498d" name="Heavy Escort�" hidden="false" targetId="24cb-6c34-eb5b-7dde" type="rule"/>
-        <infoLink id="8afd-a414-24f9-f3db" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="5435-f4bf-2c29-bd49" name="Forward Deployment [3.07a]" hidden="false" targetId="e8f8-a4d2-d40c-1467" type="rule"/>
+        <infoLink id="61be-73ff-db17-498d" name="Heavy Escort [3.07a]" hidden="false" targetId="24cb-6c34-eb5b-7dde" type="rule"/>
+        <infoLink id="8afd-a414-24f9-f3db" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
         <infoLink id="0ef3-fdd4-e7ff-7a93" name="Dublin" hidden="false" targetId="a70e-d863-1d48-c46f" type="profile"/>
-        <infoLink id="6659-7c64-b017-1683" name="Immobile�" hidden="false" targetId="8aa1-f648-12bd-a1c6" type="rule"/>
-        <infoLink id="ceb6-1afb-d27a-acc9" name="Strategic Asset�" hidden="false" targetId="12ec-f9c6-b68b-913b" type="rule"/>
-        <infoLink id="de8c-b88c-8298-4f2d" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="6659-7c64-b017-1683" name="Immobile [3.07a]" hidden="false" targetId="8aa1-f648-12bd-a1c6" type="rule"/>
+        <infoLink id="ceb6-1afb-d27a-acc9" name="Strategic Asset [3.07a]" hidden="false" targetId="12ec-f9c6-b68b-913b" type="rule"/>
+        <infoLink id="de8c-b88c-8298-4f2d" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d48a-02e5-0e69-b1d1" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -8651,19 +8651,19 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="dbd9-3fb1-9708-652d" name="Belfast" hidden="false" targetId="c22b-10cc-06f6-5d4e" type="profile"/>
-        <infoLink id="1bdf-e61f-4e4f-f6ca" name="Advanced Repair Facilities" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule">
+        <infoLink id="1bdf-e61f-4e4f-f6ca" name="Advanced Repair Facilities (x) [3.07a]" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule">
           <modifiers>
             <modifier type="append" field="name" value="(2)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="58cd-209e-5ef9-9d5e" name="Forward Deployment�" hidden="false" targetId="e8f8-a4d2-d40c-1467" type="rule"/>
-        <infoLink id="bd79-1a35-dde6-2000" name="Heavy Escort�" hidden="false" targetId="24cb-6c34-eb5b-7dde" type="rule"/>
-        <infoLink id="f074-94cf-57e6-988f" name="Immobile�" hidden="false" targetId="8aa1-f648-12bd-a1c6" type="rule"/>
-        <infoLink id="89f6-ed39-66e4-fb14" name="Useful Freight�" hidden="false" targetId="2fcd-3a8e-8d93-52af" type="rule"/>
-        <infoLink id="83ba-c30f-a34a-3dca" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="99d8-9f54-15c7-d7ea" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="5856-165f-5965-6e02" name="Strategic Asset�" hidden="false" targetId="12ec-f9c6-b68b-913b" type="rule"/>
-        <infoLink id="546b-7703-e2b5-f646" name="Supply Depot�" hidden="false" targetId="23f5-7a90-116f-cba1" type="rule"/>
+        <infoLink id="58cd-209e-5ef9-9d5e" name="Forward Deployment [3.07a]" hidden="false" targetId="e8f8-a4d2-d40c-1467" type="rule"/>
+        <infoLink id="bd79-1a35-dde6-2000" name="Heavy Escort [3.07a]" hidden="false" targetId="24cb-6c34-eb5b-7dde" type="rule"/>
+        <infoLink id="f074-94cf-57e6-988f" name="Immobile [3.07a]" hidden="false" targetId="8aa1-f648-12bd-a1c6" type="rule"/>
+        <infoLink id="89f6-ed39-66e4-fb14" name="Useful Freight [3.07a]" hidden="false" targetId="2fcd-3a8e-8d93-52af" type="rule"/>
+        <infoLink id="83ba-c30f-a34a-3dca" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="99d8-9f54-15c7-d7ea" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="5856-165f-5965-6e02" name="Strategic Asset [3.07a]" hidden="false" targetId="12ec-f9c6-b68b-913b" type="rule"/>
+        <infoLink id="546b-7703-e2b5-f646" name="Supply Depot [3.07a]" hidden="false" targetId="23f5-7a90-116f-cba1" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="761d-71d8-1ea7-4bd6" name="Offshore Support Platform" hidden="false" targetId="a197-5d9c-5624-4e41" primary="false"/>
@@ -8763,11 +8763,11 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="d095-dc1f-bc54-d3d7" name="Gloriana" hidden="false" targetId="e910-6811-d55a-8c8e" type="profile"/>
-        <infoLink id="803b-de8d-a42c-4026" name="Heavy Firepower�" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="4927-ad7c-9a86-4b6a" name="Inspirational�" hidden="false" targetId="b48d-b4e0-19e8-d85a" type="rule"/>
-        <infoLink id="58a8-ca9c-c27f-511b" name="Keep Calm and Carry On�" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink id="a4fe-276a-a166-ea03" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="1b3c-61e8-ce77-8967" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="803b-de8d-a42c-4026" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="4927-ad7c-9a86-4b6a" name="Inspirational [3.07a]" hidden="false" targetId="b48d-b4e0-19e8-d85a" type="rule"/>
+        <infoLink id="58a8-ca9c-c27f-511b" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="a4fe-276a-a166-ea03" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="1b3c-61e8-ce77-8967" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="bee6-70e3-a3ee-bacb" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -9283,12 +9283,12 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="9b01-b00d-87cd-e08e" name="Camelot" hidden="false" targetId="38c0-8e49-ff56-3705" type="profile"/>
-        <infoLink id="bc66-7714-6250-93d3" name="Heavy Firepower�" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="4271-579d-42bb-d14b" name="Keep Calm and Carry On�" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink id="a6f3-44d0-1aed-719d" name="Inspirational�" hidden="false" targetId="b48d-b4e0-19e8-d85a" type="rule"/>
-        <infoLink id="3431-7d6b-ade1-a2b6" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="4998-2a27-92d2-f9d5" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="1fcf-8966-b835-4bd3" name="Guardian Surge�" hidden="false" targetId="25ea-b812-952e-dd7d" type="rule"/>
+        <infoLink id="bc66-7714-6250-93d3" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="4271-579d-42bb-d14b" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="a6f3-44d0-1aed-719d" name="Inspirational [3.07a]" hidden="false" targetId="b48d-b4e0-19e8-d85a" type="rule"/>
+        <infoLink id="3431-7d6b-ade1-a2b6" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="4998-2a27-92d2-f9d5" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="1fcf-8966-b835-4bd3" name="Guardian Surge [3.05a]" hidden="false" targetId="25ea-b812-952e-dd7d" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="46b7-97a7-c6f1-60b0" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -9455,20 +9455,20 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="632f-6d59-750f-5917" name="Avalon" hidden="false" targetId="4e93-90f9-8f72-2ec5" type="profile"/>
-        <infoLink id="705d-9aa7-84df-4d0d" name="Combat Air Patrol�" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
-        <infoLink id="3af5-a61b-c409-576a" name="Flak Barrage�" hidden="false" targetId="7b67-714d-bb2b-6297" type="rule">
+        <infoLink id="705d-9aa7-84df-4d0d" name="Combat Air Patrol [3.07a]" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
+        <infoLink id="3af5-a61b-c409-576a" name="Flak Barrage (x) [3.07a]" hidden="false" targetId="7b67-714d-bb2b-6297" type="rule">
           <modifiers>
             <modifier type="append" field="name" value="(10)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="d74a-3649-6657-54e8" name="Heavy Firepower�" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="8a7f-3622-1647-d644" name="Keep Calm and Carry On�" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink id="5050-a436-7a1e-4ce4" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="bfb2-c43d-747e-f128" name="Lumbering�" hidden="false" targetId="6b55-0f21-5c85-94cb" type="rule"/>
-        <infoLink id="d8ac-dd16-cb11-6c8c" name="Powerslide�" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
-        <infoLink id="9762-bc53-caf6-4e2e" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="4d18-3182-41b8-1016" name="SRS Mine Clearance�" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
-        <infoLink id="04aa-e617-2a16-e62b" name="SRS Recon�" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
+        <infoLink id="d74a-3649-6657-54e8" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="8a7f-3622-1647-d644" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="5050-a436-7a1e-4ce4" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="bfb2-c43d-747e-f128" name="Lumbering [3.07a]" hidden="false" targetId="6b55-0f21-5c85-94cb" type="rule"/>
+        <infoLink id="d8ac-dd16-cb11-6c8c" name="Powerslide [3.07a]" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
+        <infoLink id="9762-bc53-caf6-4e2e" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="4d18-3182-41b8-1016" name="SRS Mine Clearance [3.07a]" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
+        <infoLink id="04aa-e617-2a16-e62b" name="SRS Recon [3.07a]" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2eba-d61b-4a56-55a9" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -9548,13 +9548,13 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="584a-a953-d861-7f81" name="Adventurer" hidden="false" targetId="619-7fb6-a26b-2493" type="profile"/>
-        <infoLink id="5806-93c8-78a8-008c" name="Auspicio Regina�" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
-        <infoLink id="5bde-2165-df8d-792b" name="East India Privateers�" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
-        <infoLink id="19ed-6bbe-c007-4725" name="Heavy Firepower�" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="cad0-84c6-1557-24f4" name="Logistical Support�" hidden="false" targetId="408e-7b40-68d7-059f" type="rule"/>
-        <infoLink id="14c6-5848-46c0-03c3" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="f626-8c2a-c7ef-f500" name="Supply Depot�" hidden="false" targetId="23f5-7a90-116f-cba1" type="rule"/>
-        <infoLink id="eba4-9d60-d6ba-b3d7" name="Useful Freight�" hidden="false" targetId="2fcd-3a8e-8d93-52af" type="rule"/>
+        <infoLink id="5806-93c8-78a8-008c" name="Auspicio Regina [3.05a]" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="5bde-2165-df8d-792b" name="East India Privateers [3.05a]" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="19ed-6bbe-c007-4725" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="cad0-84c6-1557-24f4" name="Logistical Support [3.07a]" hidden="false" targetId="408e-7b40-68d7-059f" type="rule"/>
+        <infoLink id="14c6-5848-46c0-03c3" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="f626-8c2a-c7ef-f500" name="Supply Depot [3.07a]" hidden="false" targetId="23f5-7a90-116f-cba1" type="rule"/>
+        <infoLink id="eba4-9d60-d6ba-b3d7" name="Useful Freight [3.07a]" hidden="false" targetId="2fcd-3a8e-8d93-52af" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="fde9-468f-17d0-34a6" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -9969,13 +9969,13 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             <modifier type="set" field="name" value="HMS Indefatigable"/>
           </modifiers>
         </infoLink>
-        <infoLink id="0037-b33f-4586-9412" name="Keep Calm and Carry On�" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink id="72f5-0464-f19b-e561" name="Heavy Firepower�" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="414b-e76a-0066-0b1d" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="506b-ed46-50f1-57b3" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="1bd4-d16e-c24c-6b46" name="Reliable Design�" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
-        <infoLink id="33a4-294c-dd98-e424" name="Devil’s Own Luck�" hidden="false" targetId="da8d-c041-fd15-a8de" type="rule"/>
-        <infoLink id="c8fb-8f98-c3fc-5881" name="Giant Slayer�" hidden="false" targetId="0d99-00ae-4c22-20b7" type="rule"/>
+        <infoLink id="0037-b33f-4586-9412" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="72f5-0464-f19b-e561" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="414b-e76a-0066-0b1d" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="506b-ed46-50f1-57b3" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="1bd4-d16e-c24c-6b46" name="Reliable Design [3.07a]" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
+        <infoLink id="33a4-294c-dd98-e424" name="Devil’s Own Luck [3.07a]" hidden="false" targetId="da8d-c041-fd15-a8de" type="rule"/>
+        <infoLink id="c8fb-8f98-c3fc-5881" name="Giant Slayer [3.07a]" hidden="false" targetId="0d99-00ae-4c22-20b7" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5e3b-5d4b-f389-f188" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -10040,12 +10040,12 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             <modifier type="set" field="name" value="HMS Phaeton"/>
           </modifiers>
         </infoLink>
-        <infoLink id="3fa3-f984-a146-4269" name="Keep Calm and Carry On�" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink id="599c-21f6-ff51-219f" name="Heavy Firepower�" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="4997-6021-2c8d-88c5" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="e057-5632-5e1d-5a1a" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="2c67-071d-1f85-c92f" name="Reliable Design�" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
-        <infoLink id="469b-289e-4506-11eb" name="Torpedo Master-Calculator�" hidden="false" targetId="d7bf-054e-82a4-bec0" type="rule"/>
+        <infoLink id="3fa3-f984-a146-4269" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="599c-21f6-ff51-219f" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="4997-6021-2c8d-88c5" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="e057-5632-5e1d-5a1a" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="2c67-071d-1f85-c92f" name="Reliable Design [3.07a]" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
+        <infoLink id="469b-289e-4506-11eb" name="Torpedo Master-Calculator (3.04)" hidden="false" targetId="d7bf-054e-82a4-bec0" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="ac66-8202-4e5a-2d74" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -10108,14 +10108,14 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             <modifier type="set" field="name" value="HMCS Saskatchewan"/>
           </modifiers>
         </infoLink>
-        <infoLink id="23fe-ab85-7d23-547a" name="Loyal She Began; Thus She Remains�" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
-        <infoLink id="a374-fa18-3e17-73a2" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="1381-2218-a47f-b308" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="d438-d5d9-5555-041c" name="SRS Mine Clearance�" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
-        <infoLink id="0c67-fe69-454e-0eae" name="SRS Recon�" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
-        <infoLink id="2896-1fbc-8e06-13d2" name="Heavy Firepower�" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="fc17-157a-31b8-0fed" name="Vulnerable Stern�" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
-        <infoLink id="8717-1e9d-825b-bd34" name="Unexpected Air Strike�" hidden="false" targetId="db2e-417f-31d3-8909" type="rule"/>
+        <infoLink id="23fe-ab85-7d23-547a" name="Loyal She Began; Thus She Remains [3.05a]" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
+        <infoLink id="a374-fa18-3e17-73a2" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="1381-2218-a47f-b308" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="d438-d5d9-5555-041c" name="SRS Mine Clearance [3.07a]" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
+        <infoLink id="0c67-fe69-454e-0eae" name="SRS Recon [3.07a]" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
+        <infoLink id="2896-1fbc-8e06-13d2" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="fc17-157a-31b8-0fed" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="8717-1e9d-825b-bd34" name="Unexpected Air Strike [3.05a]" hidden="false" targetId="db2e-417f-31d3-8909" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5a1c-5197-4ada-2e99" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -10191,14 +10191,14 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             <modifier type="set" field="name" value="HMCS Tilloch Galt"/>
           </modifiers>
         </infoLink>
-        <infoLink id="25b7-d3a3-8857-c752" name="Heavy Firepower�" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="34ba-78fa-b04c-6cbb" name="Inspirational�" hidden="false" targetId="b48d-b4e0-19e8-d85a" type="rule"/>
-        <infoLink id="7e5c-1c4f-105f-9b70" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="db1d-14ee-bf5e-e936" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="302a-28c8-cc12-f4b0" name="Guardian Surge�" hidden="false" targetId="25ea-b812-952e-dd7d" type="rule"/>
-        <infoLink id="8588-2972-fc80-695d" name="Ablative Prow Armour�" hidden="false" targetId="2823-33a9-a62b-e29a" type="rule"/>
-        <infoLink id="ba2d-11b3-bb49-15df" name="Loyal She Began; Thus She Remains�" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
-        <infoLink id="9629-bfdc-fc56-2978" name="Vulnerable Stern�" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="25b7-d3a3-8857-c752" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="34ba-78fa-b04c-6cbb" name="Inspirational [3.07a]" hidden="false" targetId="b48d-b4e0-19e8-d85a" type="rule"/>
+        <infoLink id="7e5c-1c4f-105f-9b70" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="db1d-14ee-bf5e-e936" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="302a-28c8-cc12-f4b0" name="Guardian Surge [3.05a]" hidden="false" targetId="25ea-b812-952e-dd7d" type="rule"/>
+        <infoLink id="8588-2972-fc80-695d" name="Ablative Prow Armour [3.06]" hidden="false" targetId="2823-33a9-a62b-e29a" type="rule"/>
+        <infoLink id="ba2d-11b3-bb49-15df" name="Loyal She Began; Thus She Remains [3.05a]" hidden="false" targetId="4e23-608b-4365-8b65" type="rule"/>
+        <infoLink id="9629-bfdc-fc56-2978" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="25cc-5bfd-ba08-5513" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -10258,13 +10258,13 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="adec-9e6c-bf9d-2197" name="Grail" hidden="false" targetId="3218-4158-8105-9080" type="profile"/>
-        <infoLink id="702e-adb5-ccbf-2dd0" name="Keep Calm and Carry On�" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink id="053d-fcfc-49c9-1b87" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="8238-3f63-3c4d-a296" name="Infrasound Detector [3.05]" hidden="false" targetId="84f6-ec74-541c-ffd7" type="rule"/>
-        <infoLink id="2463-446b-7545-e4af" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="6850-ac18-b01b-7b18" name="Auspicio Regina�" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
-        <infoLink id="96f9-2b83-33c8-220d" name="East India Privateers�" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
-        <infoLink id="10fb-f297-b34c-93a8" name="Gyroscopic Control (3.04)" hidden="false" targetId="29f1-d3f5-7db3-08ec" type="rule"/>
+        <infoLink id="702e-adb5-ccbf-2dd0" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="053d-fcfc-49c9-1b87" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="8238-3f63-3c4d-a296" name="Infrasound Detector [3.06]" hidden="false" targetId="84f6-ec74-541c-ffd7" type="rule"/>
+        <infoLink id="2463-446b-7545-e4af" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="6850-ac18-b01b-7b18" name="Auspicio Regina [3.05a]" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="96f9-2b83-33c8-220d" name="East India Privateers [3.05a]" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="10fb-f297-b34c-93a8" name="Gyroscopic Control [3.05a]" hidden="false" targetId="29f1-d3f5-7db3-08ec" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="42b3-ccd9-7b05-60c2" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -10319,11 +10319,11 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="f124-55ec-dced-0b58" name="Guinevere" hidden="false" targetId="e405-c151-4415-ba97" type="profile"/>
-        <infoLink id="d679-adcd-4a7a-2d20" name="Keep Calm and Carry On�" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
-        <infoLink id="c86d-99b0-e09f-2c43" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="f3b5-927b-64ee-16d4" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="803b-9303-3a65-a402" name="Spotter�" hidden="false" targetId="063a-3229-1f27-a3c2" type="rule"/>
-        <infoLink id="bf5c-4ad6-be63-b057" name="Unexpected Arrival�" hidden="false" targetId="f4aa-042e-34e5-1938" type="rule"/>
+        <infoLink id="d679-adcd-4a7a-2d20" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="c86d-99b0-e09f-2c43" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="f3b5-927b-64ee-16d4" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="803b-9303-3a65-a402" name="Spotter [3.07a]" hidden="false" targetId="063a-3229-1f27-a3c2" type="rule"/>
+        <infoLink id="bf5c-4ad6-be63-b057" name="Unexpected Arrival [3.07a]" hidden="false" targetId="f4aa-042e-34e5-1938" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f5af-fa56-285e-7148" name="Strike Submarine" hidden="false" targetId="eaca-b02c-43a7-0b54" primary="false"/>
@@ -10357,15 +10357,15 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2291-5ecb-bc32-4bef" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="cec2-6cae-34ee-ee6f" name="Forward Deployment�" hidden="false" targetId="e8f8-a4d2-d40c-1467" type="rule"/>
-        <infoLink id="3282-b155-3252-c03f" name="Heavy Escort�" hidden="false" targetId="24cb-6c34-eb5b-7dde" type="rule"/>
-        <infoLink id="411d-8351-b94c-6074" name="Keep Calm and Carry On�" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
+        <infoLink id="cec2-6cae-34ee-ee6f" name="Forward Deployment [3.07a]" hidden="false" targetId="e8f8-a4d2-d40c-1467" type="rule"/>
+        <infoLink id="3282-b155-3252-c03f" name="Heavy Escort [3.07a]" hidden="false" targetId="24cb-6c34-eb5b-7dde" type="rule"/>
+        <infoLink id="411d-8351-b94c-6074" name="Keep Calm and Carry On [3.05a]" hidden="false" targetId="592e-f786-82c0-385e" type="rule"/>
         <infoLink id="2493-b822-4ec0-5225" name="Windsor" hidden="false" targetId="df5c-6718-483d-a416" type="profile"/>
-        <infoLink id="cfe5-aa73-b675-4a4d" name="Immobile�" hidden="false" targetId="8aa1-f648-12bd-a1c6" type="rule"/>
-        <infoLink id="53c7-0f64-f041-e91e" name="Rotational Mount�" hidden="false" targetId="9340-6761-3544-4b29" type="rule"/>
-        <infoLink id="1036-d430-7ca3-1b60" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="81ed-be86-4249-827f" name="Heavy Firepower�" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="b473-773b-dbcd-767d" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="cfe5-aa73-b675-4a4d" name="Immobile [3.07a]" hidden="false" targetId="8aa1-f648-12bd-a1c6" type="rule"/>
+        <infoLink id="53c7-0f64-f041-e91e" name="Rotational Mount (3.04)" hidden="false" targetId="9340-6761-3544-4b29" type="rule"/>
+        <infoLink id="1036-d430-7ca3-1b60" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="81ed-be86-4249-827f" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="b473-773b-dbcd-767d" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4bbb-e79e-746b-f7cd" name="War Platform" hidden="false" targetId="e036-10f0-615f-6a77" primary="false"/>
@@ -10546,8 +10546,8 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0de3-aef1-55ce-c74a" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="cf13-7757-bdae-52a6" name="Submerged" hidden="true" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
-                <infoLink id="09f8-6fbc-da44-31b6" name="Torpedo" hidden="true" targetId="d673-c4da-202e-fbfc" type="rule"/>
+                <infoLink id="cf13-7757-bdae-52a6" name="Submerged (3.04)" hidden="true" targetId="4c9f-29cc-d354-a5f9" type="rule"/>
+                <infoLink id="09f8-6fbc-da44-31b6" name="Torpedo (3.04)" hidden="true" targetId="d673-c4da-202e-fbfc" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5"/>
@@ -10562,8 +10562,8 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd85-9e94-082c-c541" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="2f27-0bea-6a47-03c3" name="Blast" hidden="true" targetId="89d8-2e21-11be-005d" type="rule"/>
-                <infoLink id="e482-f04b-1190-7455" name="Hazardous" hidden="true" targetId="ee84-8367-93d5-8d3f" type="rule"/>
+                <infoLink id="2f27-0bea-6a47-03c3" name="Blast (3.04)" hidden="true" targetId="89d8-2e21-11be-005d" type="rule"/>
+                <infoLink id="e482-f04b-1190-7455" name="Hazardous (3.04)" hidden="true" targetId="ee84-8367-93d5-8d3f" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10"/>
@@ -10578,7 +10578,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="35b8-1b46-9233-f038" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="0439-150b-42be-5dda" name="Devastating" hidden="true" targetId="d633-3476-6a40-e860" type="rule"/>
+                <infoLink id="0439-150b-42be-5dda" name="Devastating (3.04)" hidden="true" targetId="d633-3476-6a40-e860" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="20"/>
@@ -10593,7 +10593,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c2b0-77e9-cc8e-741d" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="fccd-815b-69b3-7f62" name="Sustained" hidden="true" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
+                <infoLink id="fccd-815b-69b3-7f62" name="Sustained (3.04)" hidden="true" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10"/>
@@ -10657,12 +10657,12 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="1fed-755b-3eb3-cf41" name="Nagaraja" hidden="false" targetId="c60-6e1-80e4-9824" type="profile"/>
-        <infoLink id="cf5c-fa1a-a2e2-2628" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="8dfb-ccec-d6ea-4999" name="Reliable Design [3.06]" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
-        <infoLink id="c2a1-5e22-de76-902a" name="Shallow Draught [3.06]" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
-        <infoLink id="6ba0-2858-c849-6b93" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="451b-7c1d-d685-f107" name="East India Privateers�" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
-        <infoLink id="b2b-95e4-1171-5251" name="Auspicio Regina�" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="cf5c-fa1a-a2e2-2628" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="8dfb-ccec-d6ea-4999" name="Reliable Design [3.07a]" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
+        <infoLink id="c2a1-5e22-de76-902a" name="Shallow Draught [3.07a]" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
+        <infoLink id="6ba0-2858-c849-6b93" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="451b-7c1d-d685-f107" name="East India Privateers [3.05a]" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="b2b-95e4-1171-5251" name="Auspicio Regina [3.05a]" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3bb1-ea47-a328-c81b" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -10843,12 +10843,12 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="9174-e035-a7a9-3a2c" name="Indus" hidden="false" targetId="67f3-cc38-ee32-7946" type="profile"/>
-        <infoLink id="515c-fbb4-c96e-1ecb" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="31e9-9bca-65d-569a" name="Reliable Design [3.06]" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
-        <infoLink id="7e06-4992-e162-2fcb" name="Shallow Draught [3.06]" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
-        <infoLink id="5f5e-57d-a5ef-3efb" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="7b28-2574-b3e6-6d72" name="Auspicio Regina�" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
-        <infoLink id="be81-cc14-af24-fd52" name="East India Privateers�" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="515c-fbb4-c96e-1ecb" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="31e9-9bca-65d-569a" name="Reliable Design [3.07a]" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
+        <infoLink id="7e06-4992-e162-2fcb" name="Shallow Draught [3.07a]" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
+        <infoLink id="5f5e-57d-a5ef-3efb" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="7b28-2574-b3e6-6d72" name="Auspicio Regina [3.05a]" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="be81-cc14-af24-fd52" name="East India Privateers [3.05a]" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
         <infoLink id="4ef-7cc4-3852-c233" name="Focused Gunnery [3.06]" hidden="false" targetId="9ec9-dd04-5a42-6864" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -11040,18 +11040,18 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="841a-b76d-47b4-2f20" name="Godavari" hidden="false" targetId="6307-d2a-ef90-2e9" type="profile"/>
-        <infoLink id="1166-111d-54ad-3f10" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="1905-b5d3-b6b5-5218" name="Reliable Design [3.06]" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
-        <infoLink id="9ac1-dbea-4ef4-6545" name="Landing Vessel [3.06]" hidden="false" targetId="4869-03db-33f9-fa82" type="rule"/>
-        <infoLink id="566c-87e4-4602-d134" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="e713-17e4-1c3f-71e9" name="Auspicio Regina�" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
-        <infoLink id="c72-39a9-e9b0-b6d0" name="East India Privateers�" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
-        <infoLink id="5339-9541-3814-e658" name="Coastal Bombardment [3.06]" hidden="false" targetId="50d4-3fc7-f4ae-9736" type="rule"/>
-        <infoLink name="Shallow Draught [3.06]" hidden="false" id="f3fa-6e92-3c67-d119" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
+        <infoLink id="1166-111d-54ad-3f10" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="1905-b5d3-b6b5-5218" name="Reliable Design [3.07a]" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
+        <infoLink id="9ac1-dbea-4ef4-6545" name="Landing Vessel [3.07a]" hidden="false" targetId="4869-03db-33f9-fa82" type="rule"/>
+        <infoLink id="566c-87e4-4602-d134" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="e713-17e4-1c3f-71e9" name="Auspicio Regina [3.05a]" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="c72-39a9-e9b0-b6d0" name="East India Privateers [3.05a]" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="5339-9541-3814-e658" name="Coastal Bombardment [3.07a]" hidden="false" targetId="50d4-3fc7-f4ae-9736" type="rule"/>
+        <infoLink name="Shallow Draught [3.07a]" hidden="false" id="f3fa-6e92-3c67-d119" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="260f-1cca-6079-2690" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
-        <categoryLink name="Littoral Cruiser" hidden="false" id="9626-e37e-dfcd-e935" targetId="2da0-6f6d-3371-34c8" primary="false"/>
+        <categoryLink name="Immolation Cruiser" hidden="false" id="9626-e37e-dfcd-e935" targetId="2da0-6f6d-3371-34c8" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="6230-57a9-566e-9cb3" name="Main Weapon" hidden="false" collective="false" import="false">
@@ -11190,14 +11190,14 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="45b4-f9c4-c8dc-d263" name="Devaki" hidden="false" targetId="a244-891e-fa9b-ea47" type="profile"/>
-        <infoLink id="83dd-8fef-5908-369b" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="f227-7009-9a96-a8c3" name="Reliable Design [3.06]" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
-        <infoLink id="ebe2-fe9b-b73d-2c97" name="Shallow Draught [3.06]" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
-        <infoLink id="ddf0-6df2-f82c-6a70" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="9399-6e8b-8398-f76f" name="Auspicio Regina�" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
-        <infoLink id="9e06-a776-7f46-5ce4" name="East India Privateers�" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
-        <infoLink id="933c-3eea-5bc3-534c" name="Coastal Bombardment [3.06]" hidden="false" targetId="50d4-3fc7-f4ae-9736" type="rule"/>
-        <infoLink id="8099-a48b-d1d0-7bb2" name="Landing Vessel [3.06]" hidden="false" targetId="4869-03db-33f9-fa82" type="rule"/>
+        <infoLink id="83dd-8fef-5908-369b" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="f227-7009-9a96-a8c3" name="Reliable Design [3.07a]" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
+        <infoLink id="ebe2-fe9b-b73d-2c97" name="Shallow Draught [3.07a]" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
+        <infoLink id="ddf0-6df2-f82c-6a70" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="9399-6e8b-8398-f76f" name="Auspicio Regina [3.05a]" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="9e06-a776-7f46-5ce4" name="East India Privateers [3.05a]" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="933c-3eea-5bc3-534c" name="Coastal Bombardment [3.07a]" hidden="false" targetId="50d4-3fc7-f4ae-9736" type="rule"/>
+        <infoLink id="8099-a48b-d1d0-7bb2" name="Landing Vessel [3.07a]" hidden="false" targetId="4869-03db-33f9-fa82" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4de6-e4aa-ad62-6686" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -11350,13 +11350,13 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="99a-2502-944c-ea3e" name="Chanura" hidden="false" targetId="e700-1d94-c478-7b72" type="profile"/>
-        <infoLink id="3afb-37e0-191e-f396" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="d7cc-e5c6-74f8-8e27" name="Reliable Design [3.06]" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
-        <infoLink id="6726-64f7-4d56-3ee6" name="Shallow Draught [3.06]" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
-        <infoLink id="438b-c18b-43ec-e9a1" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="c43b-fad3-4174-4091" name="Auspicio Regina�" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
-        <infoLink id="9f26-78df-6d7f-268e" name="East India Privateers�" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
-        <infoLink id="f75b-91c3-d7e3-7c42" name="Advanced Repair Facilities" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule">
+        <infoLink id="3afb-37e0-191e-f396" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="d7cc-e5c6-74f8-8e27" name="Reliable Design [3.07a]" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
+        <infoLink id="6726-64f7-4d56-3ee6" name="Shallow Draught [3.07a]" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
+        <infoLink id="438b-c18b-43ec-e9a1" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="c43b-fad3-4174-4091" name="Auspicio Regina [3.05a]" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="9f26-78df-6d7f-268e" name="East India Privateers [3.05a]" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="f75b-91c3-d7e3-7c42" name="Advanced Repair Facilities (x) [3.07a]" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule">
           <modifiers>
             <modifier type="append" field="name" value="(2)"/>
           </modifiers>
@@ -11514,13 +11514,13 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="6958-d120-50cc-6905" name="Ceylon" hidden="false" targetId="3de4-8226-e7a9-8ef7" type="profile"/>
-        <infoLink id="2fe8-1b6d-c9f1-5cc6" name="Forward Deployment�" hidden="false" targetId="e8f8-a4d2-d40c-1467" type="rule"/>
+        <infoLink id="2fe8-1b6d-c9f1-5cc6" name="Forward Deployment [3.07a]" hidden="false" targetId="e8f8-a4d2-d40c-1467" type="rule"/>
         <infoLink id="4443-c230-f4f8-4c2c" name="Guardian Surge [3.05a]" hidden="false" targetId="25ea-b812-952e-dd7d" type="rule"/>
-        <infoLink id="8d3f-1d26-9ba9-81c3" name="Immobile�" hidden="false" targetId="8aa1-f648-12bd-a1c6" type="rule"/>
-        <infoLink id="b81f-8351-48e0-f9b6" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="e3e7-2197-fb2d-dc6a" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="dbd9-5f7d-a74b-a810" name="Auspicio Regina�" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
-        <infoLink id="5487-e5ef-690-2a94" name="East India Privateers�" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="8d3f-1d26-9ba9-81c3" name="Immobile [3.07a]" hidden="false" targetId="8aa1-f648-12bd-a1c6" type="rule"/>
+        <infoLink id="b81f-8351-48e0-f9b6" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="e3e7-2197-fb2d-dc6a" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="dbd9-5f7d-a74b-a810" name="Auspicio Regina [3.05a]" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="5487-e5ef-690-2a94" name="East India Privateers [3.05a]" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c5b8-6f39-ac59-9974" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -11633,16 +11633,16 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="17c2-4948-2b0e-d07a" name="Palashi" hidden="false" targetId="ca13-0093-616b-36a5" type="profile"/>
-        <infoLink id="19df-4aeb-925b-3fc8" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="2e49-3839-d2ce-d35e" name="Heavy Firepower [3.06]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="bd78-617e-aea7-47cf" name="Shallow Draught [3.06]" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
-        <infoLink id="8e51-aba3-ecc6-9dde" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="d966-1ea-fe6f-993e" name="Auspicio Regina�" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
-        <infoLink id="2146-900a-2e53-6f21" name="East India Privateers�" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
-        <infoLink id="87fe-9998-2ba2-bee8" name="Reliable Design [3.06]" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
-        <infoLink id="9aac-5319-192e-aa40" name="Logistical Support [3.06]" hidden="false" targetId="408e-7b40-68d7-059f" type="rule"/>
-        <infoLink id="7abf-acd5-1ccf-f639" name="Supply Depot [3.06]" hidden="false" targetId="23f5-7a90-116f-cba1" type="rule"/>
-        <infoLink id="aae-be60-c7b3-315f" name="Useful Freight [3.06]" hidden="false" targetId="2fcd-3a8e-8d93-52af" type="rule"/>
+        <infoLink id="19df-4aeb-925b-3fc8" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="2e49-3839-d2ce-d35e" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="bd78-617e-aea7-47cf" name="Shallow Draught [3.07a]" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
+        <infoLink id="8e51-aba3-ecc6-9dde" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="d966-1ea-fe6f-993e" name="Auspicio Regina [3.05a]" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="2146-900a-2e53-6f21" name="East India Privateers [3.05a]" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="87fe-9998-2ba2-bee8" name="Reliable Design [3.07a]" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
+        <infoLink id="9aac-5319-192e-aa40" name="Logistical Support [3.07a]" hidden="false" targetId="408e-7b40-68d7-059f" type="rule"/>
+        <infoLink id="7abf-acd5-1ccf-f639" name="Supply Depot [3.07a]" hidden="false" targetId="23f5-7a90-116f-cba1" type="rule"/>
+        <infoLink id="aae-be60-c7b3-315f" name="Useful Freight [3.07a]" hidden="false" targetId="2fcd-3a8e-8d93-52af" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4481-31a4-7dce-fb63" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -11913,13 +11913,13 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
       <infoLinks>
         <infoLink id="df7b-11d-84e5-76aa" name="Ganges" hidden="false" targetId="98ee-d294-9814-e10a" type="profile"/>
-        <infoLink id="829-dc12-d1f0-adf" name="Lionhearted Crew�" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
-        <infoLink id="eb38-1191-115a-5297" name="Heavy Firepower [3.06]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="72f7-aab5-ec08-64e4" name="Shallow Draught [3.06]" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
-        <infoLink id="2daf-7deb-2e88-901" name="Royal Engineers�" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
-        <infoLink id="2937-4567-395a-2e5e" name="Auspicio Regina" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
-        <infoLink id="1ff2-5986-88e8-77c8" name="East India Privateers" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
-        <infoLink id="81c9-5917-c936-8d5f" name="Reliable Design [3.06]" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
+        <infoLink id="829-dc12-d1f0-adf" name="Lionhearted Crew [3.05a]" hidden="false" targetId="20dc-3eb1-0ca3-5a54" type="rule"/>
+        <infoLink id="eb38-1191-115a-5297" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="72f7-aab5-ec08-64e4" name="Shallow Draught [3.07a]" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
+        <infoLink id="2daf-7deb-2e88-901" name="Royal Engineers [3.05a]" hidden="false" targetId="563e-1c6c-a525-6552" type="rule"/>
+        <infoLink id="2937-4567-395a-2e5e" name="Auspicio Regina [3.05a]" hidden="false" targetId="f8e2-882b-f962-2997" type="rule"/>
+        <infoLink id="1ff2-5986-88e8-77c8" name="East India Privateers [3.05a]" hidden="false" targetId="d665-7d25-9e6d-2fb7" type="rule"/>
+        <infoLink id="81c9-5917-c936-8d5f" name="Reliable Design [3.07a]" hidden="false" targetId="6f17-ddcb-35bc-4e97" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2f66-7ab9-cab7-7c40" name="Crown" hidden="false" targetId="9512-6963-5c9a-e15f" primary="true"/>
@@ -12196,6 +12196,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="Lionhearted Crew" field="name"/>
       </modifiers>
       <description>Crippled Models with this rule still use the Battle Ready value of their weapons with the Gunnery Quality and may re-roll Blank Results when making or the Initial Target of an Assault. This rule cannot be used if the Model has the Chaos and Disarray Disorder Condition.</description>
     </rule>
@@ -12211,6 +12212,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="Keep Calm and Carry On" field="name"/>
       </modifiers>
       <description>This Unit treats the effects of Chaos and Disarray as the effects of Emergency instead. The Units still counts has having the Chaos and Disarray Level so receiving a further Disorder Condition causes damage as normal. Furthermore, in a Ramming Action this Model does not suffer from Disorder. As the Moving Model in a Ramming Action, this Model also does not suffer from Damage.</description>
     </rule>
@@ -12225,6 +12227,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="Loyal She Began; Thus She Remains" field="name"/>
       </modifiers>
       <description>This Model may add +2 to its Defence Action Dice Pool if it is within 10” of one or more other friendly Models with the CROWN Trait. Once per Activation a single Aerial Attack from this Unit may gain the Gunnery Quality.</description>
     </rule>
@@ -12241,6 +12244,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="Auspicio Regina" field="name"/>
       </modifiers>
       <description>After a Force with this Unit in play uses a card to score a Victory Condition, roll an Action Die. On an Exploding Hit, do not discard the Victory &amp; Valour card and instead return it to your hand. You may only roll once per card and cannot play a returned card immediately to score additional points.</description>
     </rule>
@@ -12257,6 +12261,7 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="East India Privateers" field="name"/>
       </modifiers>
       <description>Models in this Unit may re-roll Blank dice results in any Action Dice Pool. The East India Privateers Rule only applies during each Round where the Force this Unit is part of had more Victory Points than their opponents at the most recent Check for Victory Step.</description>
     </rule>
@@ -12871,7 +12876,4 @@ A single maximum sized Hotspur Support Carrier Unit may be upgraded for +20pts t
       </constraints>
     </entryLink>
   </entryLinks>
-  <infoLinks>
-    <infoLink name="Ablative Prow Armour [3.05a]" hidden="false" id="c3a5-228f-e987-2789" targetId="2823-33a9-a62b-e29a" type="rule"/>
-  </infoLinks>
 </catalogue>
