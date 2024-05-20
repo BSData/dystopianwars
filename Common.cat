@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f2ed-a910-ca64-9be7" name="Common" revision="16" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="f2ed-a910-ca64-9be7" name="Common" revision="17" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <comment>Update to ORBAT 3.04 (published 01/08/2023)</comment>
   <readme>Review 3.03.00: initial library edition
 Review 3.03.01: new data
@@ -16,7 +16,8 @@ Review 3.06.02: Alliance 3.05 data included
 Review 3.06.03: Empire 3.05 data included
 Review 3.06.04: Enlightened 3.05 data included
 Review 3.06.05: Union 3.07a data included
-Review 3.06.06: new Imperium datafile format</readme>
+Review 3.06.06: new Imperium datafile format
+Review 3.06.07: Commonwealth update</readme>
   <categoryEntries>
     <categoryEntry id="7f73-53c5-5468-f039" name="Advanced Cruiser" hidden="false"/>
     <categoryEntry id="77f5-1ac9-0fd1-f299" name="Aerial Destroyer" hidden="false"/>
@@ -213,6 +214,8 @@ Review 3.06.06: new Imperium datafile format</readme>
     <categoryEntry id="13e0-c893-bd54-895c" name="Flak-Raider" hidden="false"/>
     <categoryEntry id="1af2-8161-98fd-183" name="Flak Rider" hidden="false"/>
     <categoryEntry id="a2fd-a5a3-9443-2fd5" name="Raider" hidden="false"/>
+    <categoryEntry name="Heavy Skycannon" id="a424-c9e2-9d03-9f33" hidden="false" publicationId="e265-8c7f-a4b2-a48e"/>
+    <categoryEntry name="Heavy Skycruiser" id="ce13-38b5-a9f4-2594" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="401b-9932-c92b-5c5d" name="- No Patron" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" collective="false" import="true" type="upgrade">
@@ -282,8 +285,8 @@ Review 3.06.06: new Imperium datafile format</readme>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="b04e-8a86-bb32-797a" name="Battlefleet" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="145b-d139-1802-66e4" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5150-b759-87ef-753f" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="145b-d139-1802-66e4" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5150-b759-87ef-753f" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="9d10-79d8-817f-1266" name="Main Battlefleet" hidden="false" collective="false" import="true" type="upgrade">

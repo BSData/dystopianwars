@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="82c-5b7d-a1e8-b68d" name="Jutland addendum" revision="1" battleScribeVersion="2.03" authorName="UrsinePatriarch / Siponer" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="33cf-b4a6-bff0-0d70" type="catalogue">
-  <readme>Version 3.06.00: new library with Jutland data</readme>
+<catalogue id="82c-5b7d-a1e8-b68d" name="Jutland addendum" revision="2" battleScribeVersion="2.03" authorName="UrsinePatriarch / Siponer" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="33cf-b4a6-bff0-0d70" type="catalogue">
+  <readme>Version 3.06.00: new library with Jutland data
+Version 3.06.01: library Correction</readme>
   <categoryEntries>
     <categoryEntry id="ea28-f0c6-7f02-85ca" name="Asgard in Scion Battlefleet" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
     <categoryEntry id="23ad-0c8f-26b7-f9f8" name="Asgard-class" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
@@ -21,7 +22,7 @@
     <categoryEntry id="1ed7-2114-4871-06f4" name="Skagerrak" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
     <categoryEntry id="25f2-f446-45f8-aa74" name="Thor-class" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
     <categoryEntry id="c325-3f1f-7b80-8577" name="Vahalla in Scion Battlefleet" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
-    <categoryEntry id="6937-8266-83b4-392a" name="Valkyrie Class" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
+    <categoryEntry id="6937-8266-83b4-392a" name="Valkyrie-Class" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
     <categoryEntry id="ae9d-3328-ab43-d1e0" name="Valkyrie Support" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
@@ -233,11 +234,6 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="58ee-f859-bdd5-ecbd" name="Shield generator" hidden="false" collective="false" import="true" targetId="596e-bbf7-4be2-d494" type="selectionEntry" sortIndex="7">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cd5-4598-47e8-b163" type="min"/>
-          </constraints>
-        </entryLink>
         <entryLink id="a6e3-568e-9433-129f" name="Sturmbringer" hidden="false" collective="false" import="true" targetId="8bd6-e629-804d-f2c3" type="selectionEntry" sortIndex="6">
           <modifiers>
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
@@ -436,43 +432,39 @@
         <categoryLink name="Scandinavian" hidden="false" id="2ab3-56bb-c926-3253" targetId="a56c-f22b-481d-315d" primary="false"/>
         <categoryLink name="Flak Rider" hidden="false" id="2d9b-2d66-24c7-d32f" targetId="1af2-8161-98fd-183" primary="false"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Variants" id="ffe2-7cda-aff1-5efc" hidden="false" sortIndex="2">
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Variant" hidden="false" id="3d9f-7046-5c09-2252" collective="false">
-              <entryLinks>
-                <entryLink import="true" name="Broadside" hidden="false" id="9186-88a3-508e-584c" collective="false" targetId="0600-8fa9-227d-91ba" type="selectionEntry" sortIndex="1">
-                  <modifiers>
-                    <modifier type="add" value="372f-19f1-09ed-e694" field="category"/>
-                  </modifiers>
-                </entryLink>
-                <entryLink import="true" name="Heavy Sturmklaue" hidden="false" id="aba4-18d7-b5ee-f26f" collective="false" targetId="fd66-72c6-fe59-5eaa" type="selectionEntry" sortIndex="2">
-                  <modifiers>
-                    <modifier type="add" value="dbb4-72d5-bceb-70b3" field="category"/>
-                  </modifiers>
-                </entryLink>
-                <entryLink import="true" name="Vierling Autokannone" hidden="false" id="5ae1-3d51-d732-8c4c" collective="false" targetId="5209-6523-b4ec-6899" type="selectionEntry" sortIndex="3">
-                  <modifiers>
-                    <modifier type="add" value="db84-bb03-d026-c3a5" field="category"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="a248-aa4e-8947-3f0f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="37e7-6831-9240-c9cc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="72"/>
-                <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Bogmaor" hidden="false" id="3d9f-7046-5c09-2252" collective="false">
+          <entryLinks>
+            <entryLink import="true" name="Broadside" hidden="false" id="9186-88a3-508e-584c" collective="false" targetId="0600-8fa9-227d-91ba" type="selectionEntry" sortIndex="1">
+              <modifiers>
+                <modifier type="add" value="372f-19f1-09ed-e694" field="category"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Heavy Sturmklaue" hidden="false" id="aba4-18d7-b5ee-f26f" collective="false" targetId="fd66-72c6-fe59-5eaa" type="selectionEntry" sortIndex="2">
+              <modifiers>
+                <modifier type="add" value="dbb4-72d5-bceb-70b3" field="category"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Vierling Autokannone" hidden="false" id="5ae1-3d51-d732-8c4c" collective="false" targetId="5209-6523-b4ec-6899" type="selectionEntry" sortIndex="3">
+              <modifiers>
+                <modifier type="add" value="db84-bb03-d026-c3a5" field="category"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="a248-aa4e-8947-3f0f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="37e7-6831-9240-c9cc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="72"/>
+            <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+          </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e48c-d046-1f1e-9f67" includeChildSelections="false"/>
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="abcd-4b79-6ae-ed2d" includeChildSelections="false"/>
           </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="2169-35f2-f557-22f0" name="Einherjar Colossus Squadron" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -2048,7 +2040,6 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="8900-ef27-0fff-7172" name="Shield generator" hidden="false" collective="false" import="true" targetId="596e-bbf7-4be2-d494" type="selectionEntry" sortIndex="6"/>
         <entryLink id="31b6-0835-734b-7e5c" name="Sturmbringer" hidden="false" collective="false" import="true" targetId="8bd6-e629-804d-f2c3" type="selectionEntry" sortIndex="4">
           <modifiers>
             <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
@@ -2111,7 +2102,7 @@
         <infoLink id="c684-b9e9-3852-fd54" name="Freya Array [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ed63-d88a-ee61-eadb" type="rule"/>
         <infoLink id="5af3-a1f6-ba65-5336" name="Advanced Repair Facilities (x) [3.07a]" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule">
           <modifiers>
-            <modifier type="append" field="name" value="(2)"/>
+            <modifier type="append" field="name" value="Advanced Repair Facilities (2)"/>
           </modifiers>
         </infoLink>
         <infoLink id="76fb-3c8d-df18-34bd" name="Hammer Sweep [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
@@ -2702,7 +2693,7 @@
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5949-3878-9cf9-a367" name="Valkyrie Hunt Rotor Squadron" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="5949-3878-9cf9-a367" name="Valkyrie Hunt Rotor Squadron" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="false" import="false" type="unit">
       <infoLinks>
         <infoLink id="c49b-55ea-234f-d771" name="Powerslide [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
         <infoLink id="07a3-779c-f3a2-1fd6" name="Wolves of the Sea [3.06]" hidden="false" targetId="6ccb-0ea0-6ce7-e987" type="rule"/>
@@ -2729,30 +2720,25 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="618d-a70a-e877-7da3" name="Variants" hidden="false" collective="false" import="true" defaultSelectionEntryId="8aa8-3233-f406-4e50">
           <modifiers>
-            <modifier type="increment" field="a2e9-2d2a-229e-19f9" value="1">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="bb05-1230-b037-0f66" type="atLeast"/>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="6f88-9e58-8350-7985" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
             <modifier type="set" value="2" field="a2e9-2d2a-229e-19f9">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="39ef-ce79-404-f6e9" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="8bdf-bac2-bd40-84b5" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="39ef-ce79-404-f6e9" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6577-4eb0-6db0-3c34" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="increment" value="1" field="a2e9-2d2a-229e-19f9">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ae9d-3328-ab43-d1e0" shared="false" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2354-54e1-be3e-3825" type="min"/>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="a2e9-2d2a-229e-19f9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2354-54e1-be3e-3825" type="min"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="false" id="a2e9-2d2a-229e-19f9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="8aa8-3233-f406-4e50" name="[Heavy Sturmklaue]" hidden="false" collective="false" import="true" type="model">
@@ -2881,9 +2867,21 @@
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c626-2b15-4bd2-a0c1" type="max"/>
       </constraints>
       <entryLinks>
-        <entryLink id="9946-4a72-10b5-fab0" name="Hoth Heavy Corvette Squadron" hidden="false" collective="false" import="true" targetId="c7d1-107e-0e7e-b27d" type="selectionEntry" sortIndex="2"/>
-        <entryLink id="738-cfb4-1dd-ba97" name="Gefjon Merchantman Squadron" hidden="false" collective="false" import="true" targetId="b794-beed-6262-8461" type="selectionEntry" sortIndex="1"/>
-        <entryLink import="true" name="Valkyrie Hunt Rotor Squadron" hidden="false" id="b226-c05b-3d42-5b0f" collective="false" targetId="5949-3878-9cf9-a367" type="selectionEntry" sortIndex="3"/>
+        <entryLink id="9946-4a72-10b5-fab0" name="Hoth Heavy Corvette Squadron" hidden="false" collective="false" import="true" targetId="c7d1-107e-0e7e-b27d" type="selectionEntry" sortIndex="2">
+          <categoryLinks>
+            <categoryLink name="Surface Unit" hidden="false" id="77f2-8c6d-dc68-c57" targetId="464e-890a-84b2-8ce9" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="738-cfb4-1dd-ba97" name="Gefjon Merchantman Squadron" hidden="false" collective="false" import="true" targetId="b794-beed-6262-8461" type="selectionEntry" sortIndex="1">
+          <categoryLinks>
+            <categoryLink name="Surface Unit" hidden="false" id="c100-eba9-fc7-da4f" targetId="464e-890a-84b2-8ce9" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Valkyrie Hunt Rotor Squadron" hidden="false" id="b226-c05b-3d42-5b0f" collective="false" targetId="5949-3878-9cf9-a367" type="selectionEntry" sortIndex="3">
+          <categoryLinks>
+            <categoryLink name="Surface Unit" hidden="false" id="90ad-f419-fe32-e5ca" targetId="464e-890a-84b2-8ce9" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
@@ -2916,6 +2914,18 @@
       <description>Once per Activation, this Unit may make the following Valour Effect provided the Valour card discarded has a value of at least 40 (including by Valorous Conduct). Each Model in the Unit with this rule, that has caused at least one point of damage in a Ramming Action this Activation, may make a second Ramming Action against the same or a new Point of Impact within 3” of the first. The Action Dice Pool for the second Ram is the same as the first. The Moving Model may not make any further movement this Activation if it uses this rule.</description>
       <modifiers>
         <modifier type="set" value="Blitzschlag" field="name"/>
+      </modifiers>
+    </rule>
+    <rule name="Fechtbuch [3.06]" id="4672-bde6-682f-51b4" hidden="true" publicationId="33cf-b4a6-bff0-0d70">
+      <description>By using its Zweihänder Great Sword to full effect with both hands, once per Activation, this Unit may make the following Valour Effect. Models in this Unit with this rule gain +4 to their Assault Dice Pool when making an Assault, or +6 if the Initial Target has the Colossus rule.</description>
+      <modifiers>
+        <modifier type="set" value="Fechtbuch" field="name"/>
+      </modifiers>
+    </rule>
+    <rule name="Kanzler Great Maul [3.06]" id="5bb-d6de-4731-f810" hidden="true" publicationId="33cf-b4a6-bff0-0d70">
+      <description>While making Ramming Attacks with a Colossal Melee Weapon, this Unit gains the Devastating Quality. Once per Activation, this Unit may make the following Valour Effect. Models in this Unit with this rule gain +2 to their Assault Dice Pool when making an Assault, or +4 if the Initial Target has the Surface Unit or Ground Unit Trait.</description>
+      <modifiers>
+        <modifier type="set" value="Kanzler Great Maul" field="name"/>
       </modifiers>
     </rule>
   </sharedRules>
