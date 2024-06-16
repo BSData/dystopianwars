@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="edc4-1a6a-03e6-7be9" name="Rules" revision="21" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+
+<catalogue id="edc4-1a6a-03e6-7be9" name="Rules" revision="23" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+
   <comment>Update to ORBAT 3.06</comment>
   <readme>Rules collection</readme>
   <sharedRules>
@@ -114,7 +116,10 @@
       </modifiers>
       <description>A single Attack each Activation, led by a Model with this rule with the Gunnery Quality, receives +2 Action Dice and may re-roll Blank results.</description>
     </rule>
-    <rule id="55be-dbb8-d350-5d2a" name="For Valour! [3.05]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
+
+    <rule id="55be-dbb8-d350-5d2a" name="For Valour! [3.06]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
+      <description>After this Unit uses a Valour effect (or has one cancelled by rules such as Fortunes of War), roll an Action Die. On a Heavy Hit or an Exploding Hit, do not discard the card and instead return it to your hand. You cannot use this rule for Valour effects that do not directly involve this Unit. You may only roll once per card.</description>
+
       <modifiers>
         <modifier type="set" field="name" value="For Valour!"/>
       </modifiers>
@@ -210,7 +215,10 @@
       </modifiers>
       <description>This Unit adds +1 to the number of Victory and Valour Cards in a player’s hand. Should this Unit be destroyed, the bonus is lost at the end of the Round. This ability does not stack so multiple Units with this rule still only confers +1 to the hand size in total.</description>
     </rule>
-    <rule id="ed8a-5968-81b4-27d5" name="Malinois Strike Fighters [3.05]" publicationId="129d-da97-caec-1ddd" hidden="false">
+
+    <rule id="ed8a-5968-81b4-27d5" name="Malinois Strike Fighters [3.06]" publicationId="129d-da97-caec-1ddd" hidden="false">
+      <description>These are a type of SRS Token with the following differences. Tokens launched by Units with this rule may Scramble up to 10”. Attack Runs by SRS Tokens from Units with this rule have the Hazardous and Piercing Qualities. This rule does not apply to Frelon Levant Bomber SRS Tokens.</description>
+
       <modifiers>
         <modifier type="set" field="name" value="Malinois Strike Fighters"/>
       </modifiers>
@@ -258,7 +266,10 @@
       </modifiers>
       <description>Once per Round, if the Player with this Battle Ready Unit has a Valour Effect Cancelled in the Play Area, this Player may immediately attempt the Valour Effect again by using the Initiative value of a new card. That card is discarded as normal when making the Valour Effect and can be cancelled as normal if the opponent has a rule that enables them to do so.</description>
     </rule>
-    <rule id="4979-45a9-d374-3663" name="Reinforced Waterline [3.05]" publicationId="129d-da97-caec-1ddd" hidden="false">
+
+    <rule id="4979-45a9-d374-3663" name="Reinforced Waterline [3.06]" publicationId="129d-da97-caec-1ddd" hidden="false">
+      <description>Attacks with the Submerged Quality gain a single Hit from a Heavy Hit result rather than the usual two when attacking this Model. Exploding Hits are unaffected by this rule. Attacks with the Piercing Quality ignore this rule.</description>
+
       <modifiers>
         <modifier type="set" field="name" value="Reinforced Waterline"/>
       </modifiers>
@@ -378,25 +389,34 @@
       </modifiers>
       <description>Once per Activation, this Unit may make the following Valour Effect. Models in this Unit with this rule gain the Sustained Quality to their Ramming Action Dice Pool. Furthermore, as the same Valour Effect they gain +6 to their Ramming Dice Pool if the Initial Target has the Colossus rule.</description>
     </rule>
-    <rule id="449d-0011-bd00-b031" name="Terminator Assault  [3.05]" publicationId="129d-da97-caec-1ddd" hidden="false">
+
+    <rule id="449d-0011-bd00-b031" name="Terminator Assault  [3.06]" publicationId="129d-da97-caec-1ddd" hidden="false">
+      <description>As a Special Operations Action that may be made by this Unit instead of a normal Assault, each Model in this Unit with this rule may place a number of Talon Autogyro Tokens equal to their Mass in contact with a non-Submerged Unit Initial Target up to 20” away. These are Assault Tokens. At the beginning of the End Phase, before SRS Resolution, each Talon Autogyro Token contribute 5 Action Dice to an Assault against that Initial Target. The Talon Autogyro Tokens in base contact form a single stack and count as the Assaulting Model, and they ignore Counter Assaults. Friendly SRS placed in contact with Initial Target may support the Autogyro Token stack in the Assault. All Talon Autogyro Tokens in the stack are discarded at the end of that Assault.</description>
+
       <modifiers>
         <modifier type="set" field="name" value="Terror From Above"/>
       </modifiers>
       <description>As a Special Operations Action that may be made by this Unit instead of a normal Assault, each Model in this Unit with this rule may place a number of Talon Autogyro Tokens equal to their Mass in contact with a non-Submerged Unit Initial Target up to 20” away. These are Assault Tokens. At the beginning of the End Phase, before SRS Resolution, each Talon Autogyro Token contribute 5 Action Dice to an Assault against that Initial Target. The Talon Autogyro Tokens in base contact form a single stack and count as the Assaulting Model, and they ignore Counter Assaults. Friendly SRS placed in contact with Initial Target may support the Autogyro Token stack in the Assault. All Talon Autogyro Tokens in the stack are discarded at the end of that Assault.</description>
     </rule>
-    <rule id="64d5-ad27-abcc-a217" name="Francisco Solex Projector (3.04)" publicationId="129d-da97-caec-1ddd" hidden="false">
+
+    <rule id="64d5-ad27-abcc-a217" name="Francisco Solex Projector [3.06]" publicationId="129d-da97-caec-1ddd" hidden="false">
+      <description>Any Friendly Skimming Unit or Surface Unit Models within 10” of this Unit with a Mass of 2 or greater, counts as being equipped with a Solex Generator but may not use the Solex Generator Valour effect.</description>
+
       <modifiers>
         <modifier type="set" field="name" value="Francisco Solex Projector"/>
       </modifiers>
       <description>This Model and Friendly Models within 10” of this Unit with a Mass of 2 or greater, counts as being equipped with a Solex Generator.</description>
     </rule>
-    <rule id="f1b0-26eb-f8e8-8d3b" name="Frelon SRS Capacity (3.04)" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
+    <rule id="f1b0-26eb-f8e8-8d3b" name="Frelon SRS Capacity [3.06]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
+      <description>The Battle-Ready Capacity and Crippled Capacity for each Model in this Unit is indicated in parenthesis. Frelon Bombers are a type of SRS Token with the following differences. They are launched with a range of 30” and contribute 5 Action Dice to Attack Runs. They can be combined with other friendly SRS Tokens in Attack Runs. A Frelon SRS Token is removed for every two successes in Interception, but they can only be Intercepted once all other Friendly SRS Tokens have been Intercepted. Any Attack Run that has most of the Tokens as Frelon SRS Tokens has the Sustained, Bomb and Hazardous Qualities. If the number of Frelon SRS Tokens in the Attack Run is greater than the Mass of the Attack Run Target, the Action Dice Pool gains the Devastating Quality. Frelon SRS Tokens cannot make a SRS Recon or SRS Mine Clearance but may use the Combat Air Patrol rule. Frelon SRS Tokens cannot make Attack Runs on Aerial Units and must try to find New Targets in this situation.</description>
+
       <modifiers>
         <modifier type="set" field="name" value="Frelon SRS Capacity"/>
       </modifiers>
       <description>The Battle-Ready Capacity and Crippled Capacity for each Model in this Unit is indicated in parenthesis. Frelon Bombers are a type of SRS Token with the following differences. They are launched with a range of 30” and contribute 5 Action Dice to Attack Runs. They can be combined with other friendly SRS Tokens in Attack Runs. A Frelon SRS Token is removed for every two successes in Interception, but they can only be Intercepted once all other Friendly SRS Tokens have been Intercepted. Any Attack Run that has most of the Tokens as Frelon SRS Tokens has the Sustained, Bomb and Hazardous Qualities. If the number of Frelon SRS Tokens in the Attack Run is greater than the Mass of the Attack Run Target, the Action Dice Pool gains the Devastating Quality. Frelon SRS Tokens cannot make a SRS Recon or SRS Mine Clearance but may use the Combat Air Patrol rule. Frelon SRS Tokens cannot make Attack Runs on Aerial Units and must try to find New Targets in this situation.</description>
     </rule>
-    <rule id="147c-599d-5190-bbaa" name="Legionnaire Assault Pods [3.05]" publicationId="129d-da97-caec-1ddd" hidden="false">
+    <rule id="147c-599d-5190-bbaa" name="Legionnaire Assault Pods [3.06]" publicationId="129d-da97-caec-1ddd" hidden="false">
+      <description>This Model may make assaults within 6” rather than the usual 4” and ignores the Counter Assault result when making an assault. Furthermore, the Assault by this Model gains the Sustained and Hazardous Qualities. This rule does not apply to Supporting Assaults.</description>
       <modifiers>
         <modifier type="set" field="name" value="Legionnaire Assault Pods"/>
       </modifiers>
@@ -615,7 +635,9 @@
       </modifiers>
       <description>This rule affects Shooting Attacks against this Model, where this Model’s Aft Fire Arc is the closest point to the Model making the Attack. Such Attacks gain the Devastating Quality. After any other effects or Critical Damage Markers have been applied from that Attack, if at least one Point of Damage has been caused by that Attack, inflict a Navigation Lock Critical Damage Marker if the target does not already have one. Attacks with the Blast, Bomb or Magnetic Qualities ignore this rule.</description>
     </rule>
-    <rule id="ae67-f1be-5c85-c984" name="Scutum Mine Layer [3.05]" publicationId="129d-da97-caec-1ddd" hidden="false">
+    <rule id="ae67-f1be-5c85-c984" name="Scutum Mine Layer [3.06]" publicationId="129d-da97-caec-1ddd" hidden="false">
+      <description>Before Submerged Unit Deployment, for each Model in a Unit with this rule, the controlling Player may place a Minefield Marker anywhere in the Play Area provided that the Marker it is at least 10” from any Deployment Zone.</description>
+
       <modifiers>
         <modifier type="set" field="name" value="Scutum Mine Layer"/>
       </modifiers>
@@ -663,19 +685,25 @@
       </modifiers>
       <description>Once per Round, this Model, or a Model within 5” of this Unit, may re-roll a single blank result on a Turbo Encabulation roll.</description>
     </rule>
-    <rule id="0b78-1d53-06c0-1b42" name="Levant Surge [3.05]" publicationId="129d-da97-caec-1ddd" hidden="false">
+<    <rule id="0b78-1d53-06c0-1b42" name="Levant Surge [3.06]" publicationId="129d-da97-caec-1ddd" hidden="false">
+      <description>Attacks with the Submerged Quality gain a single Hit from a Heavy Hit result rather than the usual two when attacking this Model. Exploding Hits are unaffected by this rule. This Unit may make a Levant Surge in the Special Operations phase of the round. For the remainder of that Round, the Unit is Obscured, doubles its Drift, ceases to be a Skimming Unit, and instead becomes an Aerial Unit. A Unit cannot make a Levant Surge if it has already done so the previous Round or if it is part of an Attached Unit where not all Models have this rule. During deployment, any Unit with this rule may deploy as an Aerial Unit making a Levant Surge for the first Round (though still counts as Skimming Unit for battlefleet selection purposes).</description>
+
       <modifiers>
         <modifier type="set" field="name" value="Levant Surge"/>
       </modifiers>
       <description>Attacks with the Submerged Quality gain a single Hit from a Heavy Hit result rather than the usual two when attacking this Model. Exploding Hits are unaffected by this rule. This Unit may make a Levant Surge in the Special Operations phase of the round. For the remainder of that Round, the Unit is Obscured, doubles its Drift, ceases to be a Skimming Unit, and instead becomes an Aerial Unit. A Unit cannot make a Levant Surge if it has already done so the previous Round or if it is part of an Attached Unit where not all Models have this rule. During deployment, any Unit with this rule may deploy as an Aerial Unit making a Levant Surge for the first Round (though still counts as Skimming Unit for battlefleet selection purposes).</description>
     </rule>
-    <rule id="1108-5d87-5267-d3a4" name="Protected Gun Crews [3.05]" publicationId="129d-da97-caec-1ddd" hidden="false">
+    <rule id="1108-5d87-5267-d3a4" name="Protected Gun Crews [3.06]" publicationId="129d-da97-caec-1ddd" hidden="false">
+      <description>Crippled Models with this rule still use the Battle-Ready value of their weapons with the Gunnery or Broadside Qualities. This rule cannot be used if the Model has the Chaos and Disarray Disorder Condition and has no effect on supporting with the Coordinated Support rule.</description>
+
       <modifiers>
         <modifier type="set" field="name" value="Protected Gun Crews"/>
       </modifiers>
       <description>Crippled Models with this rule still use the Battle-Ready value of their weapons with the Gunnery or Broadside Qualities. This rule cannot be used if the Model has the Chaos and Disarray Disorder Condition and has no effect on supporting with the Coordinated Support rule.</description>
     </rule>
-    <rule id="e869-352b-8f2a-e3fd" name="Conscripted Crew [3.05]" publicationId="129d-da97-caec-1ddd" hidden="false">
+    <rule id="e869-352b-8f2a-e3fd" name="Conscripted Crew [3.06]" publicationId="129d-da97-caec-1ddd" hidden="false">
+      <description>This Unit counts Heavy Counters or Heavy Hits as a single success rather than two when involved in Assaults.</description>
+
       <modifiers>
         <modifier type="set" field="name" value="Conscripted Crew"/>
       </modifiers>
@@ -873,7 +901,9 @@
       </modifiers>
       <description>Attacks against Enemy Models within 10” of this Model ignore the Obscured rule.</description>
     </rule>
-    <rule id="c874-c077-64e1-e63f" name="Rostrata  [3.05]" publicationId="129d-da97-caec-1ddd" hidden="false">
+    <rule id="c874-c077-64e1-e63f" name="Rostrata  [3.06]" publicationId="129d-da97-caec-1ddd" hidden="false">
+      <description>Resolve the Attack as normal with a Rostratum Naval Ballista. If the Initial Target suffers one or more points of damage, then the Unit making the Attack may make a Valour Effect against an Initial Target of the same Mass or less than the Model making the Attack. As a Valour Effect, the Initial Target receives a Level of Disorder and may be turned up to 90 degrees to a facing of the Attacker’s choosing.</description>
+
       <modifiers>
         <modifier type="set" field="name" value="Rostrata"/>
       </modifiers>
@@ -891,19 +921,25 @@
       </modifiers>
       <description>This Aerial Unit may choose a partner Unit with any Position Trait except the Submerged Unit trait.</description>
     </rule>
-    <rule id="fdd3-3abf-14fe-d2de" name="Co-ordinated Support [3.05]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
+    <rule id="fdd3-3abf-14fe-d2de" name="Co-ordinated Support [3.06]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
+      <description>Models using weapons in Support of a single Lead weapon in an Attack may use this rule. The Model may Support with any weapon rather than needing to match all the Qualities. Weapons used in Support in this way have their own Qualities ignored and simply increase the Attack Dice Pool by the value indicated for their Crippled Support at that range. An Attack dice Pool increased by this rule loses the Sustained Quality if it has it. Ramming weapons may not use this rule. Weapons with the Submerged Quality cannot use this rule in Attacks against Aerial Units. Weapons with the Aerial Quality cannot use this rule in Attacks against Submerged Units.</description>
+
       <modifiers>
         <modifier type="set" field="name" value="Co-ordinated Support"/>
       </modifiers>
       <description>Models using weapons in Support of a single Lead weapon in an Attack may use this rule. The Model may Support with any weapon rather than needing to match all the Qualities. Weapons used in Support in this way have their own Qualities ignored and simply increase the Attack Dice Pool by the value indicated for their Crippled Support at that range. An Attack dice Pool increased by this rule loses the Sustained Quality if it has it. Ramming weapons may not use this rule. Weapons with the Submerged Quality cannot use this rule in Attacks against Aerial Units. Weapons with the Aerial Quality cannot use this rule in Attacks against Submerged Units.</description>
     </rule>
-    <rule id="6336-229a-7ed6-bb3d" name="Rebel Yell [3.05]" publicationId="129d-da97-caec-1ddd" hidden="false">
+    <rule id="6336-229a-7ed6-bb3d" name="Rebel Yell [3.06]" publicationId="129d-da97-caec-1ddd" hidden="false">
+      <description>Crippled Models with this rule still use the Battle Ready value of their weapons. This rule cannot be used if the Model has the Emergency or Chaos and Disarray Disorder Condition. The Unit ignores the Conscripted Crew rule when making or defending an Assault against a Unit with the Union Trait.</description>
+
       <modifiers>
         <modifier type="set" field="name" value="Rebel Yell"/>
       </modifiers>
       <description>Crippled Models with this rule still use the Battle Ready value of their weapons. This rule cannot be used if the Model has the Emergency or Chaos and Disarray Disorder Condition. The Unit ignores the Conscripted Crew rule when making or defending an Assault against a Unit with the Union Trait.</description>
     </rule>
-    <rule id="6682-4372-1977-72dc" name="Sabre Rattle [3.05a]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
+    <rule id="6682-4372-1977-72dc" name="Sabre Rattle [3.06]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
+      <description>Once both sides have deployed but before any Vanguard or Deceptive Deployment moves have been made, Units in this Battlefleet may be redeployed within their Deployment Zone up to 5” provided that their new position is closer to the enemy Deployment Zone than before this redeployment. Each Unit in this Battlefleet may only be redeployed once.</description>
+
       <modifiers>
         <modifier type="set" field="name" value="Sabre Rattle"/>
       </modifiers>
@@ -1481,7 +1517,8 @@ Turbo Encabulation tests may not be re-rolled or otherwise manipulated except by
     </rule>
     <rule id="2cf8-528-4663-c619" name="Restricted Fire Arcs [3.05]" publicationId="908d-6feb-2e9e-843b" hidden="false">
       <modifiers>
-        <modifier type="set" field="name" value="Restricted Fire Arcs"/>
+        <modifier type="set" value="Restricted Fire Arcs" field="name"/>
+        <modifier type="set" value="true" field="hidden"/>
       </modifiers>
       <description>This Unit may only support an Attack with up to three weapons.</description>
     </rule>
