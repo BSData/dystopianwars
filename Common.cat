@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f2ed-a910-ca64-9be7" name="Common" revision="17" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="f2ed-a910-ca64-9be7" name="Common" revision="18" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <comment>Update to ORBAT 3.04 (published 01/08/2023)</comment>
   <readme>Review 3.03.00: initial library edition
 Review 3.03.01: new data
@@ -17,7 +17,8 @@ Review 3.06.03: Empire 3.05 data included
 Review 3.06.04: Enlightened 3.05 data included
 Review 3.06.05: Union 3.07a data included
 Review 3.06.06: new Imperium datafile format
-Review 3.06.07: Commonwealth update</readme>
+Review 3.06.07: Commonwealth update
+Review 3.06.08: Alliance correction</readme>
   <categoryEntries>
     <categoryEntry id="7f73-53c5-5468-f039" name="Advanced Cruiser" hidden="false"/>
     <categoryEntry id="77f5-1ac9-0fd1-f299" name="Aerial Destroyer" hidden="false"/>
@@ -270,8 +271,8 @@ Review 3.06.07: Commonwealth update</readme>
     </selectionEntry>
     <selectionEntry id="6cf9-25df-c7f5-0fcb" name="Battlefleet" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4f1-c25b-f29d-5cf1" type="max"/>
-        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="46a8-133b-9d86-5320" type="min"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e4f1-c25b-f29d-5cf1" type="min"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="46a8-133b-9d86-5320" type="max"/>
       </constraints>
       <entryLinks>
         <entryLink id="de3b-b8f0-91fb-a01f" name="Battlefleet" hidden="false" collective="false" import="true" targetId="b04e-8a86-bb32-797a" type="selectionEntryGroup"/>
