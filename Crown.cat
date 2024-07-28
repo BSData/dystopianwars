@@ -15,7 +15,7 @@ Review 3.03.06: correction suggested in discord (ORBAT 3.03 released the 2023-02
 Review 3.03.07: correction suggested in discord (ORBAT 3.03 released the 2023-02-05)
 Review 3.04.00: first release of 3.04 Orbat (ORBAT 3.04 2023-09-08 rev4) to be used in New Recruit
 Review 3.04.01: correction of datafile for 3.04 Orbat (ORBAT 3.04 2023-09-08 to be used in New Recruit)
-Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev4</readme>
+Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev5</readme>
   <categoryEntries>
     <categoryEntry id="6427-c580-219d-c874" name="Britannia Class" publicationId="dbca-8d57-b848-457e" hidden="false"/>
     <categoryEntry id="ddb5-f0d6-665c-3ac4" name="Protecteur Class" publicationId="dbca-8d57-b848-457e" hidden="false"/>
@@ -1197,7 +1197,7 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev4</read
         </categoryLink>
       </categoryLinks>
       <infoLinks>
-        <infoLink id="8703-bd09-cde7-e44c" name="Sabre Rattle [3.05a]" hidden="false" targetId="6682-4372-1977-72dc" type="rule"/>
+        <infoLink id="8703-bd09-cde7-e44c" name="Sabre Rattle [3.06]" hidden="false" targetId="6682-4372-1977-72dc" type="rule"/>
       </infoLinks>
     </forceEntry>
   </forceEntries>
@@ -4682,6 +4682,125 @@ Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev4</read
       </categoryLinks>
       <entryLinks>
         <entryLink id="ddfc-f3a3-8e68-d34a" name="Ross" hidden="false" collective="false" import="false" targetId="27d9-943b-1840-698b" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="112d-3020-64aa-d18b" name="Sabre Command Cruisers Squadron" hidden="false" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b54-608f-353d-8628" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8dbd-7b09-f7db-0eba" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2239-8cf9-77dd-6673" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b875-c5a1-3bf6-fb2a" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="52f1-16d9-86fe-77b3" name="Sabre squadron" hidden="false" targetId="1ed7-e280-a0e5-78b8" primary="false"/>
+        <categoryLink id="b392-293b-84f4-e840" name="British" hidden="false" targetId="fffb-149d-6db1-4439" primary="false"/>
+        <categoryLink name="Surface Unit" hidden="false" id="8532-38a2-4e52-cbdd" targetId="464e-890a-84b2-8ce9" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="65fc-dbf9-f4cd-9851" name="Escort Model" hidden="false" collective="false" import="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1126-f412-398b-4468" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="f731-9857-72c4-aa88" name="Escort Token" hidden="false" collective="false" import="false" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d70e-598d-79dc-bf97" type="min"/>
+                <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94bb-3200-85b7-cab9" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="760b-4e32-a91a-1598" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="8"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0f9c-3750-31d8-5092" name="Attached Unit" hidden="false" collective="false" import="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0690-870f-3b0e-026a" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="d530-3ef0-8d51-a688" name="Hotspur Support Carrier Squadron" hidden="false" collective="false" import="false" type="unit">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c2b5-84e5-eccd-33fa" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="3f36-34d7-fc22-0e63" name="Unit" hidden="false" targetId="d216-bc05-71f1-0fb4" primary="true"/>
+                <categoryLink id="1492-5eba-a425-7ece" name="Hotspur Class" hidden="false" targetId="a683-0b8f-09f3-7880" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink id="d60b-cdba-22b6-00fc" name="Hotspur" hidden="false" collective="false" import="false" targetId="fd72-a8a0-a24d-349e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="37b2-91c6-039a-df19" value="1"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+                <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5366-1cc8-6bdf-bc49" name="Athelstan Flak Cruiser Squadron" hidden="false" collective="false" import="false" type="unit">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8643-9c39-8b22-498d" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="cc55-3b9c-977d-7e8a" name="Athelstan Class" hidden="false" targetId="a4c7-ed2c-6f9a-1a54" primary="false"/>
+                <categoryLink id="ffc7-d508-8fd9-aa9e" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink id="6b7c-9a4f-e47a-b5ff" name="Athelstan" hidden="false" collective="false" import="false" targetId="dcca-9848-0265-fdcb" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="53e7-91f3-1620-ab04" value="1"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+                <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0e90-8a9b-1dcd-0dc5" name="Albion Cruiser Squadron" hidden="false" collective="false" import="false" type="unit">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="757f-bde1-eaf1-1f42" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="a4a7-6bd8-ab3c-9671" name="Albion Class" hidden="false" targetId="b6a5-4bf0-cc7d-cef0" primary="false"/>
+                <categoryLink id="72e1-6293-680e-0de4" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink id="889a-9eda-2e50-e18d" name="Albion" hidden="false" collective="false" import="false" targetId="3391-de44-4f50-9776" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="e3bb-7676-dcf0-db3b" value="1"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+                <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ef40-afc7-2d6e-859d" name="Sabre" hidden="false" collective="false" import="false" targetId="e34f-b439-2980-93ea" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>

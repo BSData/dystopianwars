@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="526f-06e7-edaa-02b8" name="Weapon" revision="23" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar, UrsinePatriarch" authorContact="siponeric@hotmail.com / Discord: zharrpostingghoroth" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="526f-06e7-edaa-02b8" name="Weapon" revision="24" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar, UrsinePatriarch" authorContact="siponeric@hotmail.com / Discord: zharrpostingghoroth" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Weapon collection
 Review v1: starting document
 Review v2: imprevment to follow ORBAT requirments
@@ -23,7 +23,8 @@ Review v19: modification for Enlightened 3.05 Orbat (15/04/24)
 Review v20: modification for Union 3.07a Orbat (24/04/24)
 Review v21: modification for Empire 3.06 Orbat (10/05/24)
 Review v22: modification for Commonwealth 3.06 Orbat (20/05/24)
-Review v23: rev1 modification for Alliance 3.06 Orbat (06/07/24)</readme>
+Review v23: rev1 modification for Alliance 3.06 Orbat (06/07/24)
+Review v24: modification for Enlightment 3.06 Orbat (xx/07/24)</readme>
   <categoryEntries>
     <categoryEntry id="dbb4-72d5-bceb-70b3" name="F" hidden="false"/>
     <categoryEntry id="372f-19f1-09ed-e694" name="P&amp;S" hidden="false"/>
@@ -1562,9 +1563,19 @@ Review v23: rev1 modification for Alliance 3.06 Orbat (06/07/24)</readme>
                 <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f47-ccb8-8fba-b472" type="instanceOf"/>
               </conditions>
             </modifier>
-            <modifier type="append" field="faa3-d69c-5156-2acf" value="3rd">
+            <modifier type="append" field="faa3-d69c-5156-2acf" value="1st">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a6f-36d6-5d75-e9fc" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8dd5-28b8-39fb-6304" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="2nd" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2a6f-36d6-5d75-e9fc" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="3rd" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="df04-304e-3eb9-52b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2253,6 +2264,21 @@ Review v23: rev1 modification for Alliance 3.06 Orbat (06/07/24)</readme>
             <modifier type="append" field="faa3-d69c-5156-2acf" value="(Front Second)">
               <conditions>
                 <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c595-958b-800e-2c04" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="1st" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8dd5-28b8-39fb-6304" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="2nd" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2a6f-36d6-5d75-e9fc" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="3rd" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="df04-304e-3eb9-52b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3345,9 +3371,9 @@ Review v23: rev1 modification for Alliance 3.06 Orbat (06/07/24)</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e3d2-a74b-69dd-e97a" name="Aetheric Lance" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e3d2-a74b-69dd-e97a" name="Advanced Aetheric Lance" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="44e3-cc09-f558-6610" name="Aetheric Lance" hidden="false" targetId="502c-add9-c3b2-02ab" type="profile">
+        <infoLink id="44e3-cc09-f558-6610" name="Advanced Aetheric Lance" hidden="false" targetId="502c-add9-c3b2-02ab" type="profile">
           <modifierGroups>
             <modifierGroup>
               <modifiers>
@@ -5270,7 +5296,7 @@ Review v23: rev1 modification for Alliance 3.06 Orbat (06/07/24)</readme>
             </modifier>
             <modifier type="append" field="faa3-d69c-5156-2acf" value="3rd">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a6f-36d6-5d75-e9fc" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df04-304e-3eb9-52b" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5682,7 +5708,7 @@ Review v23: rev1 modification for Alliance 3.06 Orbat (06/07/24)</readme>
             </modifier>
             <modifier type="append" field="faa3-d69c-5156-2acf" value="3rd">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a6f-36d6-5d75-e9fc" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df04-304e-3eb9-52b" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5767,7 +5793,7 @@ Review v23: rev1 modification for Alliance 3.06 Orbat (06/07/24)</readme>
             </modifier>
             <modifier type="append" field="faa3-d69c-5156-2acf" value="3rd">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a6f-36d6-5d75-e9fc" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df04-304e-3eb9-52b" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5853,7 +5879,7 @@ Review v23: rev1 modification for Alliance 3.06 Orbat (06/07/24)</readme>
             </modifier>
             <modifier type="append" field="faa3-d69c-5156-2acf" value="3rd">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a6f-36d6-5d75-e9fc" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df04-304e-3eb9-52b" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5938,7 +5964,7 @@ Review v23: rev1 modification for Alliance 3.06 Orbat (06/07/24)</readme>
             </modifier>
             <modifier type="append" field="faa3-d69c-5156-2acf" value="3rd">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a6f-36d6-5d75-e9fc" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df04-304e-3eb9-52b" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6001,7 +6027,6 @@ Review v23: rev1 modification for Alliance 3.06 Orbat (06/07/24)</readme>
         </infoLink>
         <infoLink id="60b1-eb15-4a7c-ae50" name="Gunnery (3.04)" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
         <infoLink id="1f1e-e387-c28c-9f26" name="Arc (3.04)" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
-        <infoLink id="d226-aa25-0f67-2f6e" name="Piercing (3.04)" hidden="false" targetId="0f8e-056c-75a9-caee" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -6069,13 +6094,13 @@ Review v23: rev1 modification for Alliance 3.06 Orbat (06/07/24)</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2492-854e-2179-e50b" name="Aetheric Lance" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="2492-854e-2179-e50b" name="Advanced Aetheric Lance" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" collective="true" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e390-dfac-9120-69e4" type="min"/>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0fd5-549b-a3d1-712a" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="ffbc-4e12-15f0-f4f4" name="Aetheric Lance" hidden="false" targetId="502c-add9-c3b2-02ab" type="profile">
+        <infoLink id="ffbc-4e12-15f0-f4f4" name="Advanced Aetheric Lance" hidden="false" targetId="502c-add9-c3b2-02ab" type="profile">
           <modifierGroups>
             <modifierGroup>
               <modifiers>
@@ -6137,7 +6162,7 @@ Review v23: rev1 modification for Alliance 3.06 Orbat (06/07/24)</readme>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6a76-8caf-98b2-bc14" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="7aa4-7c0e-2359-2389" name="Seeker Rocket Battery" hidden="false" targetId="9d52-19df-1515-2345" type="profile">
+        <infoLink id="7aa4-7c0e-2359-2389" name="Rocket Battery" hidden="false" targetId="90e8-0288-ed1a-f4fb" type="profile">
           <modifierGroups>
             <modifierGroup>
               <modifiers>
@@ -8923,7 +8948,7 @@ Review v23: rev1 modification for Alliance 3.06 Orbat (06/07/24)</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7e16-f5fa-b61c-89ae" name="Heavy Conodontic Flenser" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7e16-f5fa-b61c-89ae" name="Heavy Conodontic Flenser" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="d76e-d7bd-9061-6f0e" name="Heavy Conodontic Flenser" hidden="false" targetId="25c6-8405-adc3-daee" type="profile">
           <modifierGroups>
@@ -8985,13 +9010,18 @@ Review v23: rev1 modification for Alliance 3.06 Orbat (06/07/24)</readme>
         </infoLink>
         <infoLink id="173c-b717-6527-c1e8" name="Torrent (3.04)" hidden="false" targetId="8081-2eef-5594-eb78" type="rule"/>
         <infoLink id="461d-705-438b-2362" name="Devastating (3.04)" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
+        <infoLink name="Heavy Conodontic Flenser [3.06]" id="cef6-bda2-6ffb-87f9" hidden="false" targetId="9bf2-a945-5888-a99f" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="08f9-d02d-30db-3a4b" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d858-e204-153f-c9e8" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
-    <selectionEntry id="b941-b323-c165-d706" name="Conodontic Flenser" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="b941-b323-c165-d706" name="Conodontic Flenser" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="9356-19c9-920e-8b16" name="Conodontic Flenser" hidden="false" targetId="3f61-35fe-a8b9-f0ae" type="profile">
           <modifierGroups>
@@ -9062,6 +9092,10 @@ Review v23: rev1 modification for Alliance 3.06 Orbat (06/07/24)</readme>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="36bf-03c7-3ab8-721e" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56e3-d054-be6d-2de3" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="1c64-8379-217c-7a53" name="Aetheric Torsion Array" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -9597,7 +9631,10 @@ Review v23: rev1 modification for Alliance 3.06 Orbat (06/07/24)</readme>
       <description>This weapon can be use with each profile (Axe and Gun) once each Activation.</description>
     </rule>
     <rule id="c865-1e57-eb77-0063" name="Gravitronic Imperilator [3.05]" publicationId="908d-6feb-2e9e-843b" hidden="false">
-      <description>Resolve the Attack as normal. If the Initial Target suffers one or more points of damage, then the Unit making the Attack may make a Valour Effect against the Initial Target. As a Valour Effect, the Initial Target is affected depending on its Position Trait. If the Target is a Surface Unit or Skimming Unit, it is lifted into air before crashing down on the water. The Initial Target suffers a Catastrophic Explosion. If the Target is a Submerged Unit or Ground Unit the effect is more damaging and it suffers two Catastrophic Explosions. If the Initial Target is an Aerial Unit, it suffers no additional damage but receives a Level of Disorder and may be turned to any facing of the Attacker’s choosing.</description>
+      <description>Model with this weapon is considered to be equipped with a Repulsion Field Generator. Furthermore, this weapon may be used to make attacks using the Gravitronic Imperilator weapon profile.</description>
+      <modifiers>
+        <modifier type="set" value="Gravitronic Imperilator" field="name"/>
+      </modifiers>
     </rule>
     <rule id="f28a-65ec-04cc-c66d" name="Heavy Particle Cannon [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <description>Attacks using a Heavy Particle Cannon are resolved as normal. Furthermore, a Unit making the Attack may make a Valour Effect if the Initial Target has Enlightened SRS Tokens in base contact. As a Valour Effect, you may discard up to three of those Enlightened SRS Tokens to add +2 Dice to the Action Dice Pool for each SRS Token discarded. The discarded SRS Tokens do not need to be Friendly, only Enlightened. This rule cannot be used with Orca SRS Tokens.</description>
@@ -9628,6 +9665,12 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
     </rule>
     <rule id="9983-d8a9-e1bc-7c53" name="Huoqiang [3.05]" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
       <description>A Model armed with these flame throwing weapons can fire in two ways. Its ‘Gout’ profile is used to launch attacks over a wide area with the torrent template. Alternatively, while Battle-Ready, a Model can instead fire the Huoqiang or Heavy Huoqiang using the ‘Blade’ profile.</description>
+    </rule>
+    <rule name="Heavy Conodontic Flenser [3.06]" id="9bf2-a945-5888-a99f" hidden="false" publicationId="908d-6feb-2e9e-843b">
+      <description>A Model armed with this weapon can fire in two ways when making an Attack. Using the Heavy Conodontic Flenser profile or as a Valour Effect, you may use the Heavy Particle Cannon profile instead.</description>
+      <modifiers>
+        <modifier type="set" value="Heavy Conodontic Flenser" field="name"/>
+      </modifiers>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -9667,11 +9710,11 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Broadside, Sustained</characteristic>
       </characteristics>
     </profile>
-    <profile id="502c-add9-c3b2-02ab" name="Aetheric Lance" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="502c-add9-c3b2-02ab" name="Advanced Aetheric Lance" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">6(3) / 4(2)</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">5(3) / 3(2)</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">6(4) / 4(2)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">6(4) / 4(2)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Sustained, Gunnery</characteristic>
       </characteristics>
@@ -10258,7 +10301,7 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">4(8) / 3(5)</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">3(7) / 2(4)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">2(6) / 1(3)</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Piercing, Gunnery, Arc</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Arc</characteristic>
       </characteristics>
     </profile>
     <profile id="a76a-8df5-3648-13a9" name="Orichalcite Flechette Launcher" publicationId="d854-a2d6-3d52-44c4" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
@@ -10300,7 +10343,7 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
     <profile id="7477-6c6d-1faa-a8c5" name="Pulse Broadside" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">4(3) / 3(2)</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">5(2) / 3(2)</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Broadside, Fusillade</characteristic>
@@ -10693,9 +10736,9 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
     <profile id="9c61-3695-a75a-f545" name="Gravitronic Imperilator" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">6(4) / 4(2)</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">8(4) / 5(3)</characteristic>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">6(4) / 4(2)</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">7(4) / 4(2)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">9(6) / 6(4)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">7(4) / 4(2)</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Blast, Magnetic, Gravitronic Imperilator</characteristic>
       </characteristics>
     </profile>
@@ -10846,10 +10889,10 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
     <profile id="25c6-8405-adc3-daee" name="Heavy Conodontic Flenser" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">10(6) / 10(6)</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">8(5) / 8(5)</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">-</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Torrent, Devastating</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Torrent, Devastating, Heavy Conodontic Flenser</characteristic>
       </characteristics>
     </profile>
     <profile id="3f61-35fe-a8b9-f0ae" name="Conodontic Flenser" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">

@@ -22,8 +22,7 @@
 3.04.04: check datafile for ORBAT 3.04 (01/09/2023 to be used in New Recruit)
 3.04.05: v18 rev2, error correction (03/03/2024)
 3.05.00: v19 (Orbat 3.05 12/02/2024) rev4
-3.06.01: v20 rev1 (Orbat 3.06 08/05/2024 released 06/07/2024)
-</readme>
+3.06.01: v20 rev1 (Orbat 3.06 08/05/2024 released 06/07/2024)</readme>
   <categoryEntries>
     <categoryEntry id="534c-9506-e470-8b7c" name="Alliance" publicationId="129d-da97-caec-1ddd" hidden="false"/>
     <categoryEntry id="9aab-6794-6d2b-c1a8" name="French" publicationId="129d-da97-caec-1ddd" hidden="false"/>
@@ -12432,10 +12431,50 @@
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Alliance Patrons" hidden="false" id="8b2a-2ff4-8bd2-d8bd">
-      <entryLinks>
-        <entryLink import="true" name="Alliance Patrons" hidden="false" id="c25f-07a1-6c73-e771" type="selectionEntryGroup" targetId="f29a-d916-c53e-b273"/>
-      </entryLinks>
+    <selectionEntry type="upgrade" import="false" name="Alliance Patrons" hidden="false" id="8b2a-2ff4-8bd2-d8bd">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Louis-Napoleon Bonaparte, the Prince President" hidden="false" id="d0b8-3782-8b25-c7e8" publicationId="129d-da97-caec-1ddd" collective="false">
+          <rules>
+            <rule name="Louis-Napoleon Bonaparte, the Prince President" id="b8ab-a457-1b98-73e4" hidden="false" publicationId="129d-da97-caec-1ddd">
+              <description>All French Units in the Force gain the Disciplined and Elite Crew rules.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="Patron" hidden="false" id="be20-d24b-6464-f3a4" targetId="d6e0-2055-9c1b-5e86" primary="true"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="2"/>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="false" id="d338-7a1d-aae0-fe0e" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f0dc-ba8a-56a9-271f" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Rafa Cortez, Grand Admirals of the People" hidden="false" id="6d82-cbae-c222-e8d8" publicationId="129d-da97-caec-1ddd" collective="false">
+          <rules>
+            <rule name="Rafa Cortez, Grand Admirals of the People" id="f6cc-ee5e-dd31-bbfa" hidden="false" publicationId="129d-da97-caec-1ddd">
+              <description>All SUSA Units in the Force lose the Conscripted Crew rule.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="Patron" hidden="false" id="1036-8ecf-9e71-b863" targetId="d6e0-2055-9c1b-5e86" primary="true"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="1"/>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="false" id="d1f9-e889-21c8-0990" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9184-2658-5d50-1704" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="839d-ebe8-8fda-99d3" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b533-63eb-1dc8-6b04" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="74c1-2729-a23a-e2c7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -13413,46 +13452,6 @@
             <cost name="Points" hidden="false" id="a680-3d05-59a1-699" typeId="7c9b-6b09-b5ac-2249" value="0"/>
             <cost name="Victory Points" hidden="false" id="57a9-ceb3-8c3e-8562" typeId="426e-670d-6ddd-9631" value="0"/>
           </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Alliance Patrons" id="f29a-d916-c53e-b273" hidden="false" collective="false" import="true" defaultSelectionEntryId="81ba-aaba-0335-2de6">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c9bb-df93-a000-c201" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1611-00f2-a1e8-e2fd" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b19-dba4-edec-38a3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Rafa Cortez, Grand Admirals of the People" hidden="false" id="e0ba-d0dc-8f37-88ba" publicationId="129d-da97-caec-1ddd" collective="false">
-          <rules>
-            <rule name="Rafa Cortez, Grand Admirals of the People" id="1e61-3558-a330-b3ca" hidden="false" publicationId="129d-da97-caec-1ddd">
-              <description>All SUSA Units in the Force lose the Conscripted Crew rule.</description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink name="Patron" hidden="false" id="e182-36fe-1b8b-3f8c" targetId="d6e0-2055-9c1b-5e86" primary="true"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="1"/>
-            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Louis-Napoleon Bonaparte, the Prince President" hidden="false" id="47f2-47a3-2549-e6e1" publicationId="129d-da97-caec-1ddd" collective="false">
-          <rules>
-            <rule name="Louis-Napoleon Bonaparte, the Prince President" id="9467-008a-f740-18e0" hidden="false" publicationId="129d-da97-caec-1ddd">
-              <description>All French Units in the Force gain the Disciplined and Elite Crew rules.</description>
-            </rule>
-          </rules>
-          <categoryLinks>
-            <categoryLink name="Patron" hidden="false" id="5b11-45cb-043e-c196" targetId="d6e0-2055-9c1b-5e86" primary="true"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="2"/>
-            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="80f2-6511-60b4-0bf5" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
