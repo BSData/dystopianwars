@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="edc4-1a6a-03e6-7be9" name="Rules" revision="25" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="edc4-1a6a-03e6-7be9" name="Rules" revision="26" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <comment>Update to ORBAT 3.06</comment>
   <readme>Rules collection</readme>
   <sharedRules>
@@ -9,13 +9,13 @@
         <modifier type="set" value="Ablative Armour" field="name"/>
       </modifiers>
     </rule>
-    <rule id="940a-68a8-b107-96e4" name="Ablative Flank Armour [3.05]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
+    <rule id="940a-68a8-b107-96e4" name="Ablative Flank Armour [3.06]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>When this Model is Initial Target of an Attack originating from a point in this Model’s Port or Starboard arc, it uses this rule. This Unit can affect a number of Exploding Hit results in the Attack Action Die Pool up to its Mass value. The affected Exploding Hit results do not generate additional Action Dice. Attacks with Piercing, Rail, Ramming or Submerged Qualities ignores this rule.</description>
       <modifiers>
         <modifier type="set" value="Ablative Flank Armour" field="name"/>
       </modifiers>
     </rule>
-    <rule id="2823-33a9-a62b-e29a" name="Ablative Prow Armour [3.06]" publicationId="dbca-8d57-b848-457e" hidden="false">
+    <rule id="2823-33a9-a62b-e29a" name="Ablative Prow Armour [3.06a]" publicationId="dbca-8d57-b848-457e" hidden="false">
       <description>When this Model is Initial Target of an Attack originating from a point in this Model’s Fore arc, it uses this rule This Unit can affect a number of Exploding Hit results in the Attack Action Die Pool up to its Mass value. The affected Exploding Hit results do not generate additional Action Dice. Attacks with Piercing, Rail, Ramming or Submerged Qualities ignores this rule.</description>
       <modifiers>
         <modifier type="set" value="Ablative Prow Armour" field="name"/>
@@ -359,7 +359,7 @@ Encounter.</description>
       </modifiers>
     </rule>
     <rule id="2fcd-3a8e-8d93-52af" name="Useful Freight [3.07a]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
-      <description>Once per turn on their Activation, for each Model in this Unit, the controlling Player may look at the top card from their Victory and Valour Deck. They may discard the card or return it to the top of the deck.</description>
+      <description>Once per Round on their Activation, for each Model in this Unit, the controlling Player may look at the top card from their Victory and Valour Deck. They may discard the card or return it to the top of the deck.</description>
       <modifiers>
         <modifier type="set" value="Useful Freight" field="name"/>
       </modifiers>
@@ -754,13 +754,13 @@ Encounter.</description>
         <modifier type="set" value="Unstoppable" field="name"/>
       </modifiers>
     </rule>
-    <rule id="e4c0-65b1-6461-2f51" name="No.1 Squadron [3.05a]" publicationId="dbca-8d57-b848-457e" hidden="false">
-      <description>SRS Tokens launched by Units with this rule are called Number One Squadron SRS Tokens. Any Attack Run including one or more Number One Squadron SRS Tokens has the Sustained and Piercing Qualities, provided that the Number One Squadron SRS Tokens are the majority of friendly SRS Tokens in the Attack Run. Number One Squadron SRS Tokens can only be intercepted if there are no other SRS Tokens remaining to make an Attack Run on the same target.</description>
+    <rule id="e4c0-65b1-6461-2f51" name="Number One Squadron [3.06a]" publicationId="dbca-8d57-b848-457e" hidden="false">
+      <description>SRS Tokens launched by HMS Ark Royal are called Number One Squadron SRS Tokens. Any Attack Run including one or more Number One Squadron SRS Tokens has the Leithal and Piercing Qualities, provided that the Number One Squadron SRS Tokens are the majority of friendly SRS Tokens in the Attack Run. The Attack Run counts as having one weapon with the Quality supporting and being within 20” for the purposes of the Leithal rule. Number One Squadron SRS Tokens can only be intercepted if there are no other SRS Tokens remaining to make an Attack Run on the same target.</description>
       <modifiers>
         <modifier type="set" value="No.1 Squadron" field="name"/>
       </modifiers>
     </rule>
-    <rule id="4e80-1d7c-8f72-bb13" name="McCurdy Shield Amplifier [3.05a]" publicationId="dbca-8d57-b848-457e" hidden="false">
+    <rule id="4e80-1d7c-8f72-bb13" name="McCurdy Shield Amplifier [3.06]" publicationId="dbca-8d57-b848-457e" hidden="false">
       <description>Any Model with a Guardian Generator within 7” of one or more Models with this rule gains +1 to their Guardian Point value. A Model cannot benefit from this bonus multiple times.</description>
       <modifiers>
         <modifier type="set" value="McCurdy Shield Amplifier" field="name"/>
@@ -784,8 +784,8 @@ Encounter.</description>
         <modifier type="set" value="Snowbird Strike" field="name"/>
       </modifiers>
     </rule>
-    <rule id="04ee-5a1c-f3c8-3e5f" name="Rocketeer Flight [3.05a]" publicationId="dbca-8d57-b848-457e" hidden="false">
-      <description>This Unit may launch an Assault against an enemy Model if it is within 6&quot; of it, instead of the usual 4&quot;.</description>
+    <rule id="04ee-5a1c-f3c8-3e5f" name="Spitfire Rocketeer Flight [3.06a]" publicationId="dbca-8d57-b848-457e" hidden="false">
+      <description>This Unit may launch or support an Assault against an enemy Model if it is within 6&quot; of it, instead of the usual 4&quot;. Furthermore, this Model may Assault Units with any Positional Trait except Submerged.</description>
       <modifiers>
         <modifier type="set" value="Rocketeer Flight" field="name"/>
       </modifiers>
@@ -802,26 +802,26 @@ Encounter.</description>
         <modifier type="set" value="Reliable Design" field="name"/>
       </modifiers>
     </rule>
-    <rule id="25ea-b812-952e-dd7d" name="Guardian Surge [3.05a]" publicationId="dbca-8d57-b848-457e" hidden="false">
-      <description>As a Valour Effect, Models with this rule in this Unit may double its contribution to the Guardian Points Pool provided the Valour card discarded has a value of at least 40 (including by Valorous Conduct).</description>
+    <rule id="25ea-b812-952e-dd7d" name="Guardian Surge [3.06a]" publicationId="dbca-8d57-b848-457e" hidden="false">
+      <description>As a Valour Effect at the start of the Activation Phase before either Player Activates a Unit, Models with this rule in this Unit may double its contribution to the Guardian Points Pool provided the Valour card discarded has a value of at least 40 (including by Valorous Conduct).</description>
       <modifiers>
         <modifier type="set" value="Guardian Surge" field="name"/>
       </modifiers>
     </rule>
-    <rule id="d7bf-054e-82a4-bec0" name="Torpedo Master-Calculator [3.05a]" publicationId="dbca-8d57-b848-457e" hidden="false">
+    <rule id="d7bf-054e-82a4-bec0" name="Torpedo Master-Calculator [3.06]" publicationId="dbca-8d57-b848-457e" hidden="false">
       <description>A single Attack with the Torpedo Quality by this Unit each Activation receives +2 Action Dice and gains the Devastating Quality.</description>
       <modifiers>
         <modifier type="set" value="Torpedo Master-Calculator" field="name"/>
       </modifiers>
     </rule>
-    <rule id="db2e-417f-31d3-8909" name="Unexpected Air Strike [3.05a]" publicationId="dbca-8d57-b848-457e" hidden="false">
-      <description>Instead of being deployed as normal for the Encounter, this Unit may instead be held in Reserve (see Operations for details). Roll to arrive by Reserves as normal, however, from the start of Round two, or the start of any subsequent Rounds, this Unit may automatically arrive from Reserves. When it arrives from Reserves the Unit is placed at any point in the Play Area that is at least 5&quot; from the nearest terrain feature. No Model in the Unit can be deployed touching another Model. On the Round it enters play with this rule, this Unit immediately launches a number of SRS Tokens up to its Capacity value against any Enemy Unit in the Play Area rather than the usual range.</description>
+    <rule id="db2e-417f-31d3-8909" name="Unexpected Air Strike [3.06]" publicationId="dbca-8d57-b848-457e" hidden="false">
+      <description>Instead of being deployed as normal for the Encounter, this Unit may instead be held in Reserve (see Operations for details). Roll to arrive by Reserves as normal, however, from the start of Round two, or the start of any subsequent Rounds, this Unit may automatically arrive from Reserves. When it arrives from Reserves the Unit is placed at any point in the Play Area that is at least 5&quot; from the nearest terrain feature. No Model in the Unit can be deployed touching another Model. On the Round it enters play with this rule, this Unit immediately launches a number of SRS Tokens up to its Capacity value against any Enemy Unit in the Play Area rather than the usual range. The Unit may not Deep Dive in the same Round it uses this rule.</description>
       <modifiers>
         <modifier type="set" value="Unexpected Air Strike" field="name"/>
       </modifiers>
     </rule>
-    <rule id="563e-1c6c-a525-6552" name="Royal Engineers [3.05a]" publicationId="dbca-8d57-b848-457e" hidden="false">
-      <description>This Unit counts Blank results as a Counter when making Repair Rolls. Furthermore, Actions with the Gunnery or Broadside Qualities gain +1 to their Lead Action Dice value when two or more weapons Support their Action Dice Pool. Finally, if after rolling an Attack with the Gunnery or Broadside Quality, if the number of Exploding Hits rolled against an Initial Target within 20” is double or greater than the Initial Target’s Mass, then the Attack gains the Devastating Quality.</description>
+    <rule id="563e-1c6c-a525-6552" name="Royal Engineers [3.06a]" publicationId="dbca-8d57-b848-457e" hidden="false">
+      <description>This Unit counts Blank results as a Counter when making Repair Rolls.</description>
       <modifiers>
         <modifier type="set" value="Royal Engineers" field="name"/>
       </modifiers>
@@ -898,7 +898,7 @@ Encounter.</description>
         <modifier type="set" value="Rebel Yell" field="name"/>
       </modifiers>
     </rule>
-    <rule id="6682-4372-1977-72dc" name="Sabre Rattle [3.06]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
+    <rule id="6682-4372-1977-72dc" name="Sabre Rattle [3.06a]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>Once both sides have deployed but before any Vanguard or Deceptive Deployment moves have been made, Units in this Battlefleet may be redeployed within their Deployment Zone up to 5” provided that their new position is closer to the enemy Deployment Zone than before this redeployment. Each Unit in this Battlefleet may only be redeployed once.</description>
       <modifiers>
         <modifier type="set" value="Sabre Rattle" field="name"/>
@@ -1181,8 +1181,8 @@ Turbo Encabulation tests may not be re-rolled or otherwise manipulated except by
         <modifier type="set" value="Rotational Mount" field="name"/>
       </modifiers>
     </rule>
-    <rule id="29f1-d3f5-7db3-08ec" name="Gyroscopic Control [3.05a]" publicationId="dbca-8d57-b848-457e" hidden="false">
-      <description>A single Attack by this Unit each Activation, with the Homing Quality, gains the Sustained Quality provided the Initial Target is a Surface Unit or a Ground Unit. If the Initial Target also has the Immobile or Lumbering rule, the Attack gains the Devastating Quality.</description>
+    <rule id="29f1-d3f5-7db3-08ec" name="Gyroscopic Control [3.06a]" publicationId="dbca-8d57-b848-457e" hidden="false">
+      <description>A single Attack by this Unit each Activation, with the Homing Quality, gains the Sustained Quality provided the Initial Target is a Surface Unit or a Ground Unit. If the Initial Target also has a Mass of 5 or more or has the Immobile or Lumbering rule, the Attack gains the Devastating Quality.</description>
       <modifiers>
         <modifier type="set" value="Gyroscopic Control" field="name"/>
       </modifiers>
@@ -1521,31 +1521,73 @@ Turbo Encabulation tests may not be re-rolled or otherwise manipulated except by
         <modifier type="set" value="Light Rotor Wing" field="name"/>
       </modifiers>
     </rule>
-    <rule name="Deceptive Deployment [3.06]" id="fd5a-cf78-1cd5-6c63" hidden="false" publicationId="5a03-1c6f-8fc8-2be1">
+    <rule name="Deceptive Deployment [3.06a]" id="fd5a-cf78-1cd5-6c63" hidden="false" publicationId="5a03-1c6f-8fc8-2be1">
       <description>Once both sides have deployed but before any Vanguard moves have been made, the Players take it in turns (in initiative order) to redeploy a Unit in their Force with this rule. Each Unit with this rule may only be redeployed once and must be redeployed in their own Deployment area. If any Units with this rule also has one or more Shroud Generators, then it gains the Vanguard rule.</description>
       <modifiers>
-        <modifier type="set" value="Decentralised Systems" field="name"/>
+        <modifier type="set" value="Deceptive Deployment" field="name"/>
       </modifiers>
     </rule>
-    <rule id="6eb5-5dd3-57d9-993f" name="Silent Stalker [3.06]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
+    <rule id="6eb5-5dd3-57d9-993f" name="Silent Stalker [3.06a]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>Units with this rule may be deployed at the start of an Encounter as a Silent Stalker. Units that do so are deployed at the same time as Vanguard moves and may be deployed anywhere at least 20” from the enemy deployment zone. Units deploying with Silent Stalker gain the Homing Quality to any Attacks with the Torpedo Quality until the end of that Round.</description>
       <modifiers>
         <modifier type="set" value="Silent Stalker" field="name"/>
       </modifiers>
     </rule>
-    <rule id="fae5-d154-470a-ac54" name="Bombardment (x) [3.06]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
+    <rule id="fae5-d154-470a-ac54" name="Bombardment (x) [3.06a]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>Models in this Unit may re-roll blanks when shooting at Ground Units or Surface Units with weapons that have the Quality indicated in brackets.</description>
     </rule>
-    <rule id="a81f-96a2-3f13-18f9" name="Hunter (x) [3.06]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
+    <rule id="a81f-96a2-3f13-18f9" name="Hunter (x) [3.06a]" publicationId="5a03-1c6f-8fc8-2be1" hidden="false">
       <description>To use this rule this Unit to at least be at its minimum Unit size. Once per Activation, this Unit gains +1 to an Assault or Attack Action Dice Pool for each Model with this rule that contributes to the Dice Pool provided that the Initial target has the Trait in brackets indicated by this rule.</description>
     </rule>
-    <rule id="6266-3217-d898-9935" name="Tracer Fire (x) [3.06]" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
+    <rule id="6266-3217-d898-9935" name="Tracer Fire (x) [3.06a]" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
       <description>Models in this Unit with weapons that have the Quality in brackets indicated may re-roll blanks when making Attacks against Initial Targets.</description>
     </rule>
     <rule name="Tyndall Cyclonic Auger [3.06]" id="d95f-5bf9-b233-0257" hidden="false" publicationId="908d-6feb-2e9e-843b">
       <description>Attacks with the Aerial Quality by this Unit gain the Extreme Range, High Velocity and Piercing Qualities.</description>
       <modifiers>
         <modifier type="set" value="Tyndall Cyclonic Auger" field="name"/>
+      </modifiers>
+    </rule>
+    <rule name="Dark Hand [3.06a]" id="00c3-af87-0b9f-d939" hidden="false" publicationId="dbca-8d57-b848-457e">
+      <description>Once per Round, you may automatically Cancel a Valour Effect without discarding a card from your hand, provided this Unit is in the Play Area. This Unit gains a Level of Disorder if it uses this rule.</description>
+      <modifiers>
+        <modifier type="set" value="Dark Hand" field="name"/>
+      </modifiers>
+    </rule>
+    <rule name="Snowbird Barcap [3.06a]" id="b18a-257b-eb7a-01cc" hidden="false" publicationId="dbca-8d57-b848-457e">
+      <description>In the Special Operations phase of the round, this Unit may request a Snowbird Barcap. For the remainder of that Round, the Unit has two SRS Tokens that must be placed in base contact with one or two Models in it. These act as normal for SRS Tokens in base contact with a friendly Model. Furthermore, Enemy Units with the Submarauder rule cannot be deployed within 10” of any Model in this Unit. SRS Tokens created by Snowbird Barcap cannot make Attack Runs and are immediately removed if this Unit is destroyed.</description>
+      <modifiers>
+        <modifier type="set" value="Snowbird Barcap" field="name"/>
+      </modifiers>
+    </rule>
+    <rule name="Vikrant Rangefinder [3.06]" id="6a39-1859-7262-4d32" hidden="false" publicationId="dbca-8d57-b848-457e">
+      <description>Gun Batteries on this Unit use the dice value for Point Blank when Attacking targets at Long Range. If they do so they exchange the Leithal Quality for the Extreme Range Quality.</description>
+      <modifiers>
+        <modifier type="set" value="Vikrant Rangefinder" field="name"/>
+      </modifiers>
+    </rule>
+    <rule name="Amphion Cannisters [3.06]" id="1c3e-0835-6fef-aaaa" hidden="false" publicationId="dbca-8d57-b848-457e">
+      <description>In the Special Operations phase of the round, this Unit may declare it is loading its Taranis Naval Mortar with Amphion Cannisters for that Round. If it does so, any Attacks made using the Taranis Naval Mortar by this Unit this Round lose the Blast and Leithal Qualities and instead gain the Piercing, Submerged and Torpedo Qualities.</description>
+      <modifiers>
+        <modifier type="set" value="Amphion Cannisters" field="name"/>
+      </modifiers>
+    </rule>
+    <rule id="614d-6063-e572-5bcb" name="Mark of Fate [3.06a]" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
+      <description>Once during each Round, you may attempt to Cancel a Valour Effect provided this Unit has at least one Battle Ready Model in the Play Area. You may make further attempts to Cancel a Valour Effect in that same Round using this rule, but this Unit gains a Level of Disorder each additional attempt.</description>
+      <modifiers>
+        <modifier type="set" value="Mark of Fate" field="name"/>
+      </modifiers>
+    </rule>
+    <rule name="Chowkidar Crew [3.06a]" id="20da-af8c-8214-5753" hidden="false" publicationId="dbca-8d57-b848-457e">
+      <description>Models in this Unit ignore the effects of the Emergency Disorder Condition, though still count as having Disorder at that level. Furthermore, in a Ramming Action, this Model does not suffer from Disorder. This Unit may add two additional Action Dice to its Repair Test. This is in addition to those given by the Model’s Mass.</description>
+      <modifiers>
+        <modifier type="set" value="Chowkidar Crew" field="name"/>
+      </modifiers>
+    </rule>
+    <rule name="Fury of Nimue [3.06a]" id="fdfb-fe05-fc23-df10" hidden="false" publicationId="dbca-8d57-b848-457e">
+      <description>This Unit may Ram Surface Units. This Unit scores an additional Victory Point each time it scores Victory Points for destroying a Surface Unit with an Assault or Ramming Action. This Unit may re-roll Blank Results in Attacks and Assaults against an Initial Target with a Mass of 3 or more.</description>
+      <modifiers>
+        <modifier type="set" value="Fury of Nimue" field="name"/>
       </modifiers>
     </rule>
   </sharedRules>

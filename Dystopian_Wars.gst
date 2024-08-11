@@ -107,6 +107,7 @@ Revision 3.06.00: common categories for 3.06 Orbats</readme>
     <categoryEntry name="Rear Second" hidden="false" id="8f47-ccb8-8fba-b472"/>
     <categoryEntry name="3rd" hidden="false" id="df04-304e-3eb9-52b"/>
     <categoryEntry name="4th" hidden="false" id="5650-1732-3d85-61a6"/>
+    <categoryEntry id="9512-6963-5c9a-e15f" name="Crown" publicationId="dbca-8d57-b848-457e" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="44e8-1fde-db6e-20f6" name="Battlefleet (generic don&apos;t use)" publicationId="7f09-e243-2307-78d0" hidden="true">
@@ -140,7 +141,7 @@ Revision 3.06.00: common categories for 3.06 Orbats</readme>
     </selectionEntry>
     <selectionEntry id="36f8-37c6-9978-f26d" name="Strategic Reserve" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink id="2c27-c7fb-e881-d200" name="New CategoryLink" hidden="false" targetId="8cfc-cf5f-6ab7-0db5" primary="true"/>
+        <categoryLink id="2c27-c7fb-e881-d200" name="Special Rules" hidden="false" targetId="8cfc-cf5f-6ab7-0db5" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>

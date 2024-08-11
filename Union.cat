@@ -34,7 +34,7 @@ Review 3.07.a0: format overhaul via UrsinePatriarch (5/12/2024)</readme>
     <categoryEntry id="e1e6-754f-cc2b-81e8" name="Yorktown Class Full" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
     <categoryEntry id="4bf9-6243-25f6-e855" name="Dead President" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
     <categoryEntry id="4c48-d7c0-0dca-5b5d" name="Cheyenne support" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
-    <categoryEntry id="a617-3285-b825-e051" name="America Class" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
+    <categoryEntry id="a617-3285-b825-e051" name="America-Class" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
     <categoryEntry id="8bb2-2d61-ca78-10ce" name="Columbia Class" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
     <categoryEntry id="6eb5-6a5c-d5ca-86eb" name="Independence Class" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
     <categoryEntry id="6378-5c16-ade2-b59b" name="Liberty Class" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
@@ -54,7 +54,7 @@ Review 3.07.a0: format overhaul via UrsinePatriarch (5/12/2024)</readme>
     <categoryEntry id="8a87-f383-cdb6-8823" name="John Henry Class" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
     <categoryEntry id="7953-d29a-abe6-b7c4" name="Lakota Class" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
     <categoryEntry id="0afb-a487-b623-456d" name="Cheyenne Class" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
-    <categoryEntry id="6b7b-fbc6-8c5c-d712" name="Akron Class" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
+    <categoryEntry id="6b7b-fbc6-8c5c-d712" name="Akron-Class" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
     <categoryEntry id="6ae8-b554-6a12-0129" name="Constellation Class" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
     <categoryEntry id="2ee4-cdd5-1a3d-7c51" name="Republic Class" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
     <categoryEntry id="bde9-a54c-ac8b-4833" name="Ticonderoga Class" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
@@ -393,11 +393,6 @@ Review 3.07.a0: format overhaul via UrsinePatriarch (5/12/2024)</readme>
             <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="3c10-f56b-1f9f-ecb8" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="aafc-d39f-12db-fb94" name="Fleet Abilities" hidden="false" targetId="dfe9-b90a-3878-78f5" primary="false">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af38-fe6a-db0f-5d0d" type="min"/>
-          </constraints>
-        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="f559-51b4-6230-2c74" name="Union Aerial Battlefleet (Spec)" publicationId="e6a1-85d3-8979-7880" hidden="false">
@@ -500,11 +495,6 @@ Review 3.07.a0: format overhaul via UrsinePatriarch (5/12/2024)</readme>
         <categoryLink id="8c83-840d-2c99-e970" name="Mercenary Battlefleet" hidden="false" targetId="86ff-88da-5a0b-2d81" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="9860-6e33-fadd-c983" type="min"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="1ef7-08d6-416d-5d45" name="Fleet Abilities" hidden="false" targetId="dfe9-b90a-3878-78f5" primary="false">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ab2-eec1-de74-d982" type="min"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -693,9 +683,9 @@ Review 3.07.a0: format overhaul via UrsinePatriarch (5/12/2024)</readme>
             <constraint field="selections" scope="ed79-b0bc-3cb4-8ff6" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="ff0c-db72-777f-22f8" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="3bcd-0b10-4c53-d207" name="Fleet Abilities" hidden="false" targetId="dfe9-b90a-3878-78f5" primary="false">
+        <categoryLink name="Specialist Battlefleet" hidden="false" id="be4a-4296-1080-d41f" targetId="50f8-5d04-e502-e289" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46fe-e9e1-f3d2-a9a5" type="min"/>
+            <constraint type="max" value="0" field="selections" scope="force" shared="false" id="96a0-7c57-1ee3-f80d" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -1508,7 +1498,7 @@ Review 3.07.a0: format overhaul via UrsinePatriarch (5/12/2024)</readme>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="203f-2111-4740-bcc6" name="Aerial Unit" hidden="false" targetId="022b-08af-c874-e3f1" primary="true"/>
+        <categoryLink name="Skimming Unit" hidden="false" id="3481-f01f-e0d9-20e2" targetId="3b53-19a3-12fd-34b1" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="e139-dc60-c837-1368" name="Intrepid Light Cruiser Squadron" hidden="false" collective="false" import="true" targetId="aed0-ac12-f450-a43d" type="selectionEntry">
@@ -1863,21 +1853,26 @@ Review 3.07.a0: format overhaul via UrsinePatriarch (5/12/2024)</readme>
       <selectionEntries>
         <selectionEntry id="4e8b-917a-0e71-b624" name="The White Doves" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="ef70-fbbe-ddd5-ead6" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="greaterThan"/>
-              </conditions>
-            </modifier>
             <modifier type="set" field="92b1-2966-3520-e128" value="1">
               <conditions>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a8c1-eac5-1cc4-65fa" type="instanceOf"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="fef3-1842-580c-4bef" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="179e-1bd0-f31f-5cd3" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f5da-d489-2ae1-3162" type="max"/>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2daa-f8f5-f4cb-190d" type="max"/>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="92b1-2966-3520-e128" type="min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f5da-d489-2ae1-3162" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2daa-f8f5-f4cb-190d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <infoLinks>
             <infoLink id="a62f-43f1-ca3a-0c5d" name="The White Doves [3.05]" hidden="false" targetId="ca4a-ca3a-b489-d441" type="rule"/>
@@ -5023,7 +5018,7 @@ Review 3.07.a0: format overhaul via UrsinePatriarch (5/12/2024)</readme>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3023-180f-0733-3556" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="de80-ff0e-ae4e-70ed" name="Chesapeake Gatling Gun" hidden="false" collective="false" import="true" targetId="6a09-b3d9-f16a-c349" type="selectionEntry">
+                <entryLink id="de80-ff0e-ae4e-70ed" name="Chesapeake Gatling Battery" hidden="false" collective="false" import="true" targetId="2235-311f-9985-c092" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="5b70-4095-b55c-9745"/>
                   </modifiers>
@@ -8207,7 +8202,7 @@ Review 3.07.a0: format overhaul via UrsinePatriarch (5/12/2024)</readme>
             <entryLink id="22ec-1e23-4b6c-1b37" name="Escort Token" hidden="false" collective="false" import="true" targetId="9cc1-48f6-f9ea-943f" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac72-6b5d-bf5b-8621" type="min"/>
-                <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffcd-841f-6c42-dd31" type="max"/>
+                <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffcd-841f-6c42-dd31" type="max"/>
               </constraints>
               <categoryLinks>
                 <categoryLink id="fe31-bc63-d0be-2b12" name="Escort Class" hidden="false" targetId="a8dc-2c16-e614-7894" primary="false"/>

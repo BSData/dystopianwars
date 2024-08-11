@@ -22,7 +22,7 @@
 3.04.04: check datafile for ORBAT 3.04 (01/09/2023 to be used in New Recruit)
 3.04.05: v18 rev2, error correction (03/03/2024)
 3.05.00: v19 (Orbat 3.05 12/02/2024) rev4
-3.06.01: v20 rev1 (Orbat 3.06 08/05/2024 released 06/07/2024)</readme>
+3.06.01: v20 rev2 (Orbat 3.06 08/05/2024 released 11/08/2024)</readme>
   <categoryEntries>
     <categoryEntry id="534c-9506-e470-8b7c" name="Alliance" publicationId="129d-da97-caec-1ddd" hidden="false"/>
     <categoryEntry id="9aab-6794-6d2b-c1a8" name="French" publicationId="129d-da97-caec-1ddd" hidden="false"/>
@@ -306,7 +306,7 @@
     </forceEntry>
     <forceEntry id="aaa0-551a-1cbe-e5a1" name="French Levant Battlefleet (Spec)" publicationId="129d-da97-caec-1ddd" hidden="false">
       <infoLinks>
-        <infoLink id="75d9-0186-bc6a-a748" name="Sabre Rattle [3.06]" hidden="false" targetId="6682-4372-1977-72dc" type="rule">
+        <infoLink id="75d9-0186-bc6a-a748" name="Sabre Rattle [3.06a]" hidden="false" targetId="6682-4372-1977-72dc" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -392,7 +392,7 @@
         </categoryLink>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="4b12-326a-7360-9ab2" includeChildSelections="true"/>
+        <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="4b12-326a-7360-9ab2" includeChildSelections="true"/>
       </constraints>
       <modifiers>
         <modifier type="set" value="10" field="4b12-326a-7360-9ab2">
@@ -408,7 +408,7 @@
     </forceEntry>
     <forceEntry id="e4e7-881b-52b8-fdc7" name="Italian Frontline Battlefleet (Main)" publicationId="129d-da97-caec-1ddd" hidden="false">
       <infoLinks>
-        <infoLink id="15d6-1d2d-7d0f-5907" name="Sabre Rattle [3.06]" hidden="false" targetId="6682-4372-1977-72dc" type="rule"/>
+        <infoLink id="15d6-1d2d-7d0f-5907" name="Sabre Rattle [3.06a]" hidden="false" targetId="6682-4372-1977-72dc" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="b548-aabe-3f0e-f65d" name="Fleet Abilities" hidden="false" targetId="dfe9-b90a-3878-78f5" primary="false"/>
@@ -674,7 +674,7 @@
         </categoryLink>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="1382-c81-2e68-8020" includeChildSelections="true"/>
+        <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="1382-c81-2e68-8020" includeChildSelections="true"/>
       </constraints>
       <modifiers>
         <modifier type="set" value="10" field="1382-c81-2e68-8020">
@@ -738,7 +738,7 @@
         <infoLink name="Preliminary Survey [3.06]" hidden="false" id="e794-ea65-8923-c597" targetId="0006-60f1-1ca3-b204" type="rule"/>
       </infoLinks>
       <constraints>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="e5d5-9547-ee44-221" includeChildSelections="true"/>
+        <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="e5d5-9547-ee44-221" includeChildSelections="true"/>
       </constraints>
       <modifiers>
         <modifier type="set" value="10" field="e5d5-9547-ee44-221">
@@ -3283,7 +3283,7 @@
         </infoLink>
         <infoLink id="6094-7d70-d1b0-5dc0" name="For Valour! [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
         <infoLink id="dc11-7980-d5ba-df19" name="Hammer Sweep [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
-        <infoLink id="9bf5-0d0b-3990-bd09" name="Ablative Flank Armour [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
+        <infoLink id="9bf5-0d0b-3990-bd09" name="Ablative Flank Armour [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="48a9-8b1a-12ba-a182" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -3575,7 +3575,7 @@
       <infoLinks>
         <infoLink id="a7ab-5c82-343d-4df5" name="Minerva" hidden="false" targetId="fd72-7c80-a3f4-9970" type="profile"/>
         <infoLink id="9aa5-1199-6c21-752d" name="Malinois Strike Fighters [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ed8a-5968-81b4-27d5" type="rule"/>
-        <infoLink id="e069-303a-2f22-0776" name="Ablative Flank Armour [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
+        <infoLink id="e069-303a-2f22-0776" name="Ablative Flank Armour [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
         <infoLink id="8236-4390-91b3-80d3" name="Advanced Repair Facilities (x) [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule">
           <modifiers>
             <modifier type="append" field="name" value="Advanced Repair Facilities (3)"/>
@@ -4911,7 +4911,7 @@
         <infoLink id="4dd9-ed09-5046-fb3a" name="Levant Surge [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
         <infoLink id="0bf5-ee10-5b97-0c98" name="For Valour! [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
         <infoLink id="1983-45ab-8c2f-2bcb" name="Malinois Strike Fighters [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ed8a-5968-81b4-27d5" type="rule"/>
-        <infoLink id="466e-6772-d7c4-8c8d" name="Deceptive Deployment [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
+        <infoLink id="466e-6772-d7c4-8c8d" name="Deceptive Deployment [3.06a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="57b0-4b3e-6159-6a07" name="Alliance" hidden="false" targetId="534c-9506-e470-8b7c" primary="true"/>
@@ -5365,7 +5365,7 @@
         <infoLink id="427d-1014-1135-ca94" name="Co-ordinated Support [3.06]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
         <infoLink id="f75f-b408-a84b-8a62" name="For Valour! [3.06]" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
         <infoLink id="f627-b32f-a0a4-761f" name="Spotter [3.07a]" hidden="false" targetId="063a-3229-1f27-a3c2" type="rule"/>
-        <infoLink name="Deceptive Deployment [3.06]" hidden="false" id="a015-cc4b-cb3-f369" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
+        <infoLink name="Deceptive Deployment [3.06a]" hidden="false" id="a015-cc4b-cb3-f369" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
         <infoLink name="Deep Dive [3.07a]" id="105e-a541-47f-ebbe" hidden="false" targetId="3bf2-4bf2-c33d-95ab" type="rule" publicationId="5a03-1c6f-8fc8-2be1"/>
       </infoLinks>
       <categoryLinks>
@@ -5665,7 +5665,7 @@
       </infoGroups>
       <infoLinks>
         <infoLink id="40f7-02fa-46dc-c5d4" name="Sagitta" hidden="false" targetId="2437-3225-ac32-83f0" type="profile"/>
-        <infoLink id="fb71-0a07-763c-5c6a" name="Silent Stalker [3.06]" hidden="false" targetId="6eb5-5dd3-57d9-993f" type="rule"/>
+        <infoLink id="fb71-0a07-763c-5c6a" name="Silent Stalker [3.06a]" hidden="false" targetId="6eb5-5dd3-57d9-993f" type="rule"/>
         <infoLink id="37c8-e055-9c52-d502" name="Auxiliary Mine Layer [3.07a]" hidden="false" targetId="6158-153b-d320-6060" type="rule"/>
         <infoLink id="8291-831a-8abf-9259" name="Co-ordinated Support [3.06]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
         <infoLink id="1d85-5b78-dbb0-c05a" name="For Valour! [3.06]" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
@@ -6035,6 +6035,15 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5305-37d9-bf36-5c38" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e0ff-542c-aacc-5d2c" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Heavy Rolling Broadside" hidden="false" id="f221-78d3-a5a1-0ff6" collective="false" targetId="9ba0-93e0-a43a-742d" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" value="372f-19f1-09ed-e694" field="category"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f17-cd30-eaec-b436" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30f4-dac8-f239-31ff" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -6490,7 +6499,7 @@
         </infoGroup>
       </infoGroups>
       <infoLinks>
-        <infoLink id="cd92-1d98-5848-f0a8" name="Ablative Flank Armour [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
+        <infoLink id="cd92-1d98-5848-f0a8" name="Ablative Flank Armour [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
         <infoLink id="3ece-c89f-8362-14b7" name="Co-ordinated Support [3.06]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
         <infoLink id="4c59-0eb8-80ff-6a33" name="Advanced Repair Facilities (x) [3.07a]" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule">
           <modifiers>
@@ -6809,7 +6818,7 @@
         </infoGroup>
       </infoGroups>
       <infoLinks>
-        <infoLink id="c51b-332c-7488-9fe0" name="Ablative Flank Armour [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
+        <infoLink id="c51b-332c-7488-9fe0" name="Ablative Flank Armour [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
         <infoLink id="4f38-9a7a-43df-27c0" name="Co-ordinated Support [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
         <infoLink id="3e4c-e1a0-ec8a-1c9e" name="For Valour! [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
         <infoLink id="fd97-2729-ca26-fc62" name="Hammer Sweep [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
@@ -7015,7 +7024,7 @@
         <infoLink id="c1e8-b89a-aada-ddde" name="For Valour! [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
         <infoLink id="be99-3117-0f6a-867e" name="Hammer Sweep [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
         <infoLink id="b5e3-f83a-4d74-e39f" name="Spotter [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="063a-3229-1f27-a3c2" type="rule"/>
-        <infoLink id="f4f9-54b7-d43d-f0c8" name="Ablative Flank Armour [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
+        <infoLink id="f4f9-54b7-d43d-f0c8" name="Ablative Flank Armour [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
         <infoLink id="904f-5a22-9a89-de83" name="Scorpio" hidden="false" targetId="8899-fd9c-af1c-1773" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -7393,9 +7402,9 @@
       </infoGroups>
       <infoLinks>
         <infoLink id="cfd5-42f8-3055-c67b" name="Co-ordinated Support [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
-        <infoLink id="0687-10a4-bb54-91d9" name="Ablative Flank Armour [3.05]" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
+        <infoLink id="0687-10a4-bb54-91d9" name="Ablative Flank Armour [3.06]" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
         <infoLink id="ce78-712e-fef8-befc" name="Pugio" hidden="false" targetId="dfc1-4552-ab6e-912d" type="profile"/>
-        <infoLink id="f874-299c-0e29-397c" name="Hunter (x) [3.06]" hidden="false" targetId="a81f-96a2-3f13-18f9" type="rule">
+        <infoLink id="f874-299c-0e29-397c" name="Hunter (x) [3.06a]" hidden="false" targetId="a81f-96a2-3f13-18f9" type="rule">
           <modifiers>
             <modifier type="set" value="Hunter (Surface Unit)" field="name"/>
           </modifiers>
@@ -7685,7 +7694,7 @@
         </infoGroup>
       </infoGroups>
       <infoLinks>
-        <infoLink id="a9f0-431d-d7c5-82ad" name="Ablative Flank Armour [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
+        <infoLink id="a9f0-431d-d7c5-82ad" name="Ablative Flank Armour [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
         <infoLink id="0b90-9afc-ae7a-4abd" name="Co-ordinated Support [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
         <infoLink id="2c51-0417-9c23-6778" name="Focused Fire (x) [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="6c94-ad2b-60d8-2c4f" type="rule">
           <modifiers>
@@ -8118,6 +8127,17 @@
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="126"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Rolling Broadside" hidden="false" id="5c74-7ea4-46c8-b45b" collective="false" targetId="4a24-b555-4fec-a327" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" value="372f-19f1-09ed-e694" field="category"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ca0d-f976-b987-93c6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eaac-3a33-8204-2ce8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="0376-5f4b-4c12-a2fb" name="Jupiter" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -8141,7 +8161,7 @@
       </infoGroups>
       <infoLinks>
         <infoLink id="a4aa-9c2d-22a6-e170" name="Jupiter" hidden="false" targetId="5a76-84e3-6fdb-ff5e" type="profile"/>
-        <infoLink id="e7b6-5503-c2c8-b386" name="Ablative Flank Armour [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
+        <infoLink id="e7b6-5503-c2c8-b386" name="Ablative Flank Armour [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
         <infoLink id="fb40-c8b0-950d-3292" name="Co-ordinated Support [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
         <infoLink id="4407-541e-8dd2-1e78" name="SRS Mine Clearance [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
         <infoLink id="ce4b-e2cd-6c5d-25ab" name="SRS Recon [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
@@ -8216,7 +8236,7 @@
         <infoLink id="cac3-a24e-d9d0-6e19" name="Co-ordinated Support [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
         <infoLink id="9538-f87b-ddd4-ee14" name="For Valour! [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
         <infoLink id="ff93-bb1b-9859-d592" name="Levant Surge [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b78-1d53-06c0-1b42" type="rule"/>
-        <infoLink id="3350-e7da-d942-295a" name="Hunter (x) [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="a81f-96a2-3f13-18f9" type="rule">
+        <infoLink id="3350-e7da-d942-295a" name="Hunter (x) [3.06a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="a81f-96a2-3f13-18f9" type="rule">
           <modifiers>
             <modifier type="set" value="Hunter (Surface Unit)" field="name"/>
           </modifiers>
@@ -8413,7 +8433,7 @@
         </infoGroup>
       </infoGroups>
       <infoLinks>
-        <infoLink id="d9e9-b905-dcbb-c5d2" name="Ablative Flank Armour [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
+        <infoLink id="d9e9-b905-dcbb-c5d2" name="Ablative Flank Armour [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
         <infoLink id="b25a-a6e5-2fa1-43ea" name="Co-ordinated Support [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
         <infoLink id="f501-5965-0dc4-8f0b" name="For Valour! [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
         <infoLink id="c9d2-ff0a-a39e-5306" name="Sharpshooter [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="2c93-befd-f88b-0881" type="rule"/>
@@ -8661,7 +8681,7 @@
         <infoLink id="c721-0b2f-c510-c1c3" name="Rebel Yell [3.06]" hidden="false" targetId="6336-229a-7ed6-bb3d" type="rule"/>
         <infoLink id="f25c-e9f3-30e0-d19d" name="Saratoga" hidden="false" targetId="81df-8d0e-3a70-3242" type="profile"/>
         <infoLink id="c1af-bac0-e88d-42bc" name="Terminator Assault  [3.06]" hidden="false" targetId="449d-0011-bd00-b031" type="rule"/>
-        <infoLink id="8a18-b5b6-6e98-fd0d" name="Bombardment (x) [3.06]" hidden="false" targetId="fae5-d154-470a-ac54" type="rule">
+        <infoLink id="8a18-b5b6-6e98-fd0d" name="Bombardment (x) [3.06a]" hidden="false" targetId="fae5-d154-470a-ac54" type="rule">
           <modifiers>
             <modifier type="set" value="Bombardment (Gunnery)" field="name"/>
           </modifiers>
@@ -9458,6 +9478,17 @@
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="112"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Rolling Broadside" hidden="false" id="b6bb-9453-7554-24a6" collective="false" targetId="4a24-b555-4fec-a327" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" value="372f-19f1-09ed-e694" field="category"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6588-a717-997f-5dea" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34a5-0e14-326c-023f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="489b-e382-354a-a1b3" name="Pereira" publicationId="129d-da97-caec-1ddd" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -9952,7 +9983,7 @@
       </infoGroups>
       <infoLinks>
         <infoLink id="eff3-8dbb-3d1b-ccdf" name="Cestus" hidden="false" targetId="862c-242f-46ce-d3ab" type="profile"/>
-        <infoLink id="da68-e277-a749-ea2d" name="Ablative Flank Armour [3.05]" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
+        <infoLink id="da68-e277-a749-ea2d" name="Ablative Flank Armour [3.06]" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
         <infoLink id="f832-9e78-b1e8-18f7" name="Co-ordinated Support [3.06]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
         <infoLink id="f573-0899-62a0-de11" name="For Valour! [3.06]" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
         <infoLink id="9a78-3603-ac1a-ef3e" name="Focused Fire (x) [3.07a]" hidden="false" targetId="6c94-ad2b-60d8-2c4f" type="rule">
@@ -10017,7 +10048,7 @@
       </infoGroups>
       <infoLinks>
         <infoLink id="27c0-858d-cd86-fa0b" name="Auxilia" hidden="false" targetId="666f-f55d-815b-5ee3" type="profile"/>
-        <infoLink id="2a42-bdc0-bb67-a7b2" name="Ablative Flank Armour [3.05]" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
+        <infoLink id="2a42-bdc0-bb67-a7b2" name="Ablative Flank Armour [3.06]" hidden="false" targetId="940a-68a8-b107-96e4" type="rule"/>
         <infoLink id="df2b-ad0a-8670-c3be" name="Co-ordinated Support [3.06]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
         <infoLink id="032e-db27-d83d-5975" name="For Valour! [3.06]" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
         <infoLink id="8e23-0c03-9a6c-b537" name="Linear Dash [3.07a]" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
@@ -10958,11 +10989,17 @@
           <modifiers>
             <modifier type="add" value="372f-19f1-09ed-e694" field="category"/>
           </modifiers>
+          <categoryLinks>
+            <categoryLink name="1st" hidden="false" id="9056-64e8-64ef-d803" targetId="8dd5-28b8-39fb-6304" primary="false"/>
+          </categoryLinks>
         </entryLink>
         <entryLink import="true" name="Heavy Flak Broadside" hidden="false" id="a874-25f4-fc07-514e" collective="false" targetId="3e85-ccc4-d939-f7f8" type="selectionEntry">
           <modifiers>
             <modifier type="add" value="372f-19f1-09ed-e694" field="category"/>
           </modifiers>
+          <categoryLinks>
+            <categoryLink name="2nd" hidden="false" id="81a7-e2af-00dc-0475" targetId="2a6f-36d6-5d75-e9fc" primary="false"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <costs>
@@ -11544,7 +11581,7 @@
             <modifier type="set" value="Focused Fire (Gunnery)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink id="2ef7-2849-99c8-3979" name="Deceptive Deployment [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
+        <infoLink id="2ef7-2849-99c8-3979" name="Deceptive Deployment [3.06a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
         <infoLink id="9fb5-78fe-82a1-5c16" name="For Valour! [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
         <infoLink id="9765-c4c1-68f4-2b5b" name="Protected Gun Crews [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1108-5d87-5267-d3a4" type="rule"/>
         <infoLink id="bea8-e1f5-82ac-6219" name="Devil’s Own Luck [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="da8d-c041-fd15-a8de" type="rule"/>
@@ -11716,7 +11753,7 @@
         <infoLink id="25ea-5c38-4a5d-7b30" name="Charlemagne" hidden="false" targetId="215b-7ed4-73bb-2da0" type="profile"/>
         <infoLink id="91d4-128a-21bc-8bc4" name="Co-ordinated Support [3.06]" hidden="false" targetId="fdd3-3abf-14fe-d2de" type="rule"/>
         <infoLink id="9b7-2b7f-974c-1513" name="For Valour! [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="55be-dbb8-d350-5d2a" type="rule"/>
-        <infoLink id="dfae-90d9-53e2-e281" name="Bombardment (x) [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fae5-d154-470a-ac54" type="rule">
+        <infoLink id="dfae-90d9-53e2-e281" name="Bombardment (x) [3.06a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="fae5-d154-470a-ac54" type="rule">
           <modifiers>
             <modifier type="set" value="Bombardment (Aerial)" field="name"/>
           </modifiers>
@@ -12331,6 +12368,22 @@
             <categoryLink name="Front First" hidden="false" id="1c79-f143-4f66-64f4" targetId="62c7-5eb0-d38e-486" primary="false"/>
           </categoryLinks>
         </entryLink>
+        <entryLink import="true" name="Heavy Rolling Broadside" hidden="false" id="5ca7-aba3-d8ea-078f" collective="false" targetId="9ba0-93e0-a43a-742d" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" value="372f-19f1-09ed-e694" field="category"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="1st" hidden="false" id="77f6-be9a-89d6-b429" targetId="8dd5-28b8-39fb-6304" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Heavy Rolling Broadside" hidden="false" id="21a1-7ee8-beb1-30fc" collective="false" targetId="9ba0-93e0-a43a-742d" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" value="372f-19f1-09ed-e694" field="category"/>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="2nd" hidden="false" id="9941-cfe6-c1ed-675d" targetId="2a6f-36d6-5d75-e9fc" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="390"/>
@@ -12360,7 +12413,7 @@
           </modifiers>
         </infoLink>
         <infoLink id="2021-597b-9c5b-5365" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="8a09-a8f9-53ac-4c12" name="Hunter (x) [3.06]" hidden="false" targetId="a81f-96a2-3f13-18f9" type="rule">
+        <infoLink id="8a09-a8f9-53ac-4c12" name="Hunter (x) [3.06a]" hidden="false" targetId="a81f-96a2-3f13-18f9" type="rule">
           <modifiers>
             <modifier type="set" value="Hunter (Union)" field="name"/>
           </modifiers>
@@ -12473,8 +12526,11 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="839d-ebe8-8fda-99d3" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b533-63eb-1dc8-6b04" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="74c1-2729-a23a-e2c7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="74c1-2729-a23a-e2c7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
+      <modifiers>
+        <modifier type="decrement" value="1" field="74c1-2729-a23a-e2c7"/>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -12617,7 +12673,7 @@
         <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">6/6</characteristic>
         <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">4/3</characteristic>
         <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">6/6</characteristic>
-        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">12/11</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">13/11</characteristic>
         <characteristic name="ADV" typeId="6428-9828-bb2e-f923">4/2</characteristic>
         <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">4/2</characteristic>
         <characteristic name="Fray" typeId="4c54-804a-8993-7325">8/8</characteristic>
@@ -13509,6 +13565,9 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="false" id="61c6-a19a-5e4f-517e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink name="Battlefleet" hidden="false" id="3138-d8ce-9787-2c45" targetId="3226-5cb8-b2fb-ec2c" primary="true"/>
+      </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Battlefleet" hidden="false" id="1652-75f0-e971-8847" collective="false" targetId="6cf9-25df-c7f5-0fcb" type="selectionEntry">
       <categoryLinks>
