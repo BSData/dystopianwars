@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="adb2-8c90-0724-a27d" name="Empire v3.06" revision="13" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="adb2-8c90-0724-a27d" name="Empire v3.06" revision="14" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <comment>Empire ORBAT 3.06 (published 24/04/2024)</comment>
   <readme>Review 1.02.a0: Initial release
 Review 1.04.a0: add new unit and new profile from ORBAT 1.03, fixed Battlefleet bonus managment
@@ -13,9 +13,9 @@ Review 3.03.04: correction after the 3.03 Orbat update (date 2023-02-07)
 Review 3.04.00: correction after the 3.04 Orbat update (date 2023-08-31 rev3)
 Review 3.04.01: correction after the 3.04 Orbat update (date 2023-08-31 to be used in New Recruit)
 Review 3.05.00: 3.05 Orbat update (date 2023-01-30 to be used in New Recruit)
-Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
+Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)
+Review 3.06.00: 3.06 Orbat correction (date 2024-08-18)</readme>
   <categoryEntries>
-    <categoryEntry id="ce97-a91c-c2c9-c566" name="Empire" publicationId="7b2b-0f56-3962-5ec1" hidden="false"/>
     <categoryEntry id="0ad5-d3e2-dc61-f333" name="Chinese" publicationId="7b2b-0f56-3962-5ec1" hidden="false"/>
     <categoryEntry id="6074-770f-d87b-b41f" name="Japanese" publicationId="7b2b-0f56-3962-5ec1" hidden="false"/>
     <categoryEntry id="9183-ad08-3120-61c5" name="Ning Jing Class" publicationId="7b2b-0f56-3962-5ec1" hidden="false"/>
@@ -95,11 +95,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         </infoLink>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="40e9-39c9-646c-b823" name="Battlefleet" hidden="false" targetId="3226-5cb8-b2fb-ec2c" primary="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="false" id="8c68-4263-8676-16b0" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-        </categoryLink>
+        <categoryLink id="b548-aabe-3f0e-f65d" name="Fleet Abilities" hidden="false" targetId="dfe9-b90a-3878-78f5" primary="false"/>
         <categoryLink id="0aa7-175b-a1d9-77f2" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a287-1dbf-b947-34fa" type="min"/>
@@ -331,11 +327,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
     </forceEntry>
     <forceEntry id="bf89-ff21-760f-4a4e" name="Empire Draconic Colossus Battlefleet (Spec)" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
       <categoryLinks>
-        <categoryLink id="40e9-39c9-646c-b823" name="Battlefleet" hidden="false" targetId="3226-5cb8-b2fb-ec2c" primary="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="false" id="8c68-4263-8676-16b0" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-        </categoryLink>
+        <categoryLink id="b548-aabe-3f0e-f65d" name="Fleet Abilities" hidden="false" targetId="dfe9-b90a-3878-78f5" primary="false"/>
         <categoryLink id="0aa7-175b-a1d9-77f2" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a287-1dbf-b947-34fa" type="min"/>
@@ -423,11 +415,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         <infoLink id="d586-b588-31f9-9bac" name="Command Override [3.06]" hidden="false" targetId="78c8-6a85-daa7-3625" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="40e9-39c9-646c-b823" name="Battlefleet" hidden="false" targetId="3226-5cb8-b2fb-ec2c" primary="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="false" id="8c68-4263-8676-16b0" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-        </categoryLink>
+        <categoryLink id="b548-aabe-3f0e-f65d" name="Fleet Abilities" hidden="false" targetId="dfe9-b90a-3878-78f5" primary="false"/>
         <categoryLink id="0aa7-175b-a1d9-77f2" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a287-1dbf-b947-34fa" type="min"/>
@@ -440,7 +428,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
             <constraint field="selections" scope="force" value="3" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7805-ee59-93b5-75e9" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="8c51-3890-2c2c-5ed7" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="false" type="category">
+        <categoryLink id="8c51-3890-2c2c-5ed7" name="Skimming Unit" hidden="false" targetId="3b53-19a3-12fd-34b1" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b3c2-6064-88d3-4409" type="min"/>
             <constraint field="selections" scope="force" value="3" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="332a-680b-82b5-6a2f" type="max"/>
@@ -523,11 +511,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         <infoLink id="0156-33be-4b4c-531f" name="Cloud-Strike [3.06]" hidden="false" targetId="35b3-fbe5-344b-853b" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="40e9-39c9-646c-b823" name="Battlefleet" hidden="false" targetId="3226-5cb8-b2fb-ec2c" primary="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="false" id="8c68-4263-8676-16b0" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-        </categoryLink>
+        <categoryLink id="b548-aabe-3f0e-f65d" name="Fleet Abilities" hidden="false" targetId="dfe9-b90a-3878-78f5" primary="false"/>
         <categoryLink id="0aa7-175b-a1d9-77f2" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a287-1dbf-b947-34fa" type="min"/>
@@ -687,11 +671,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         <infoLink id="f1dd-3c46-2ff7-5466" name="Cloud-Strike [3.06]" hidden="false" targetId="35b3-fbe5-344b-853b" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="40e9-39c9-646c-b823" name="Battlefleet" hidden="false" targetId="3226-5cb8-b2fb-ec2c" primary="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="false" id="8c68-4263-8676-16b0" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-        </categoryLink>
+        <categoryLink id="b548-aabe-3f0e-f65d" name="Fleet Abilities" hidden="false" targetId="dfe9-b90a-3878-78f5" primary="false"/>
         <categoryLink id="9a24-1904-cd92-7795" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d94e-27f6-d497-e2c5" type="min"/>
@@ -858,11 +838,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         </infoLink>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="40e9-39c9-646c-b823" name="Battlefleet" hidden="false" targetId="3226-5cb8-b2fb-ec2c" primary="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="false" id="8c68-4263-8676-16b0" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-        </categoryLink>
+        <categoryLink id="b548-aabe-3f0e-f65d" name="Fleet Abilities" hidden="false" targetId="dfe9-b90a-3878-78f5" primary="false"/>
         <categoryLink id="633e-48b6-e8e3-0684" name="Flagship" hidden="false" targetId="fef3-1842-580c-4bef" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95b2-2096-108d-d3c8" type="min"/>
@@ -930,11 +906,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
     </forceEntry>
     <forceEntry name="Empire Fortification Battlefleet (Spec)" hidden="false" id="a26a-8c3f-7b95-d3a4" publicationId="7b2b-0f56-3962-5ec1">
       <categoryLinks>
-        <categoryLink id="40e9-39c9-646c-b823" name="Battlefleet" hidden="false" targetId="3226-5cb8-b2fb-ec2c" primary="false">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="false" id="8c68-4263-8676-16b0" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-        </categoryLink>
+        <categoryLink id="b548-aabe-3f0e-f65d" name="Fleet Abilities" hidden="false" targetId="dfe9-b90a-3878-78f5" primary="false"/>
         <categoryLink name="Flagship" hidden="false" id="ada8-399b-8733-b397" targetId="fef3-1842-580c-4bef" primary="false">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="f0a2-1894-6d90-702f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -3339,20 +3311,6 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="65cb-e23d-3614-4e5" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry id="b42f-a1a5-787b-8520" name="Guan Wenxiang, Ambassador for the Jade Mountain" publicationId="7b2b-0f56-3962-5ec1" hidden="false" collective="false" import="true" type="upgrade">
-      <rules>
-        <rule id="3a29-cbbd-72bd-a559" name="Guan Wenxiang, Ambassador for the Jade Mountain" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
-          <description>Once per Round after discarding a Victory &amp; Valour Card, you may return it to your hand but may not use it again that Round.</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="fda2-1845-4240-2d3b" name="Patron" hidden="false" targetId="d6e0-2055-9c1b-5e86" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="2"/>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="661c-1713-343-7b58" name="Naraka Support Battleship" publicationId="7b2b-0f56-3962-5ec1" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -3475,20 +3433,6 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="692b-7b6d-e073-5439" name="Empress Shinzua, The Blazinng Sun" publicationId="7b2b-0f56-3962-5ec1" hidden="false" collective="false" import="true" type="upgrade">
-      <rules>
-        <rule id="40d8-8f0a-aee4-b875" name="Empress Shinzua, The Blazinng Sun" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
-          <description>All Japanese Units in the Force gain the Disciplined rule.</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="2b28-a92f-9a12-645b" name="Patron" hidden="false" targetId="d6e0-2055-9c1b-5e86" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
-        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Hexie Hover Zebeks" hidden="true" id="7513-423d-adc7-ea64">
@@ -3875,20 +3819,6 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="26e5-4087-a97e-33d3" name="Aki Fujiwara, Admiral of Shield Group Musashi" publicationId="7b2b-0f56-3962-5ec1" hidden="false" collective="false" import="true" type="upgrade">
-      <rules>
-        <rule id="f1fe-a82c-26bc-ec7a" name="Aki Fujiwara, Admiral of Shield Group Musashi" publicationId="7b2b-0f56-3962-5ec1" hidden="false">
-          <description>Once per Round you may replace the Valour Condition on any Victory &amp; Valour Card. The replacement text is as follows: “You may re-roll any dice from any Defensive Dice Pool.”</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="2d67-1cd8-28de-5ae0" name="Patron" hidden="false" targetId="d6e0-2055-9c1b-5e86" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="2"/>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="47fb-9996-2cdc-4024" name="Qiang Medium Cruiser Squadron" publicationId="7b2b-0f56-3962-5ec1" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -4184,6 +4114,14 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Empire Patron" hidden="false" id="1d7d-4f60-9e21-f0a2">
+      <categoryLinks>
+        <categoryLink name="Fleet Abilities" hidden="false" id="3b69-28f5-652c-dd90" targetId="dfe9-b90a-3878-78f5" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Empire Patron" hidden="false" id="4410-2559-15ff-a85a" type="selectionEntryGroup" targetId="9097-780b-daee-e3ee"/>
+      </entryLinks>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="f24a-b762-77b4-55fb" name="Ning Jing" publicationId="7b2b-0f56-3962-5ec1" page="5" hidden="false" collective="false" import="true" type="model">
@@ -4214,7 +4152,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
           <selectionEntryGroups>
             <selectionEntryGroup id="309e-e0b2-2e86-f3f7" name="First Front" hidden="false" collective="false" import="true" defaultSelectionEntryId="f375-02bd-a49c-bd79">
               <modifiers>
-                <modifier type="set" field="3145-0d69-64b5-d7a3" value="0">
+                <modifier type="set" field="2c5f-f83c-d212-3649" value="0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25b9-7f26-cbd9-e68f" type="atLeast"/>
                   </conditions>
@@ -4336,7 +4274,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
             </selectionEntryGroup>
             <selectionEntryGroup id="1261-fe84-54df-ee33" name="Rear" hidden="false" collective="false" import="true" defaultSelectionEntryId="2e54-6dda-a7f5-68e5">
               <modifiers>
-                <modifier type="set" field="e0dd-7e52-5642-0db8" value="0">
+                <modifier type="set" field="3670-2ff1-257f-c445" value="0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25b9-7f26-cbd9-e68f" type="atLeast"/>
                   </conditions>
@@ -4381,7 +4319,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
             </selectionEntryGroup>
             <selectionEntryGroup id="ab11-d0d7-8cea-85d4" name="Front Second" hidden="false" collective="false" import="true" defaultSelectionEntryId="153e-a217-9bdd-aa6d">
               <modifiers>
-                <modifier type="set" field="d97a-78b2-d062-6577" value="0">
+                <modifier type="set" field="f94b-98f0-a071-3280" value="0">
                   <conditions>
                     <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25b9-7f26-cbd9-e68f" type="atLeast"/>
                   </conditions>
@@ -4527,7 +4465,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         <infoLink id="5294-10c8-f488-e78a" name="Logistical Support [3.07a]" hidden="false" targetId="408e-7b40-68d7-059f" type="rule"/>
         <infoLink id="1b68-cf80-d265-b6d2" name="Fortunes of War [3.07a]" hidden="false" targetId="949d-d37f-c7c8-1093" type="rule"/>
         <infoLink id="a46e-40e6-d891-4540" name="Contra Rotation [3.07a]" hidden="false" targetId="177e-3490-5f5e-f4b9" type="rule"/>
-        <infoLink name="Bombardment (x) [3.06]" id="53de-c634-817c-b66" hidden="false" targetId="fae5-d154-470a-ac54" type="rule">
+        <infoLink name="Bombardment (x) [3.06a]" id="53de-c634-817c-b66" hidden="false" targetId="fae5-d154-470a-ac54" type="rule">
           <modifiers>
             <modifier type="set" value="Bombardment (Gunnery)" field="name"/>
           </modifiers>
@@ -4717,7 +4655,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
       <infoLinks>
         <infoLink id="acfb-4ffd-a1cb-4258" name="Hachiman" hidden="false" targetId="50a4-2139-45d8-a7f8" type="profile"/>
         <infoLink id="3b29-f6df-c7f6-bb7b" name="Exosub Mine Clearance [3.06]" hidden="false" targetId="6d04-40f6-eafc-bf99" type="rule"/>
-        <infoLink id="0b9e-1bf0-14ab-83cd" name="Deceptive Deployment [3.06]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
+        <infoLink id="0b9e-1bf0-14ab-83cd" name="Deceptive Deployment [3.06a]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
         <infoLink id="dcf9-f7ea-40bd-8f7b" name="Mark of Yama [3.06]" hidden="false" targetId="ae1a-2537-27f6-15ce" type="rule"/>
         <infoLink id="aa53-46f1-aef1-cdf7" name="Elite Crew [3.07a]" hidden="false" targetId="4f7a-f51a-a60e-e6ba" type="rule"/>
         <infoLink id="913f-79a5-6614-85c0" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
@@ -4807,7 +4745,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         <infoLink id="def1-99f2-7cee-49db" name="Mark of Yama [3.06]" hidden="false" targetId="ae1a-2537-27f6-15ce" type="rule"/>
         <infoLink id="7556-1dfe-270a-9cde" name="Elite Crew [3.07a]" hidden="false" targetId="4f7a-f51a-a60e-e6ba" type="rule"/>
         <infoLink id="ccb3-f4d6-a0e2-1b7d" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="9ffd-224a-f7bb-e4a2" name="Deceptive Deployment [3.06]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
+        <infoLink id="9ffd-224a-f7bb-e4a2" name="Deceptive Deployment [3.06a]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="ade9-0ee1-a3fb-9989" name="Empire" hidden="false" targetId="ce97-a91c-c2c9-c566" primary="true"/>
@@ -5230,7 +5168,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         <infoLink id="5e95-cbb8-4440-d3f5" name="Gong" hidden="false" targetId="7e72-4ee8-b694-bd59" type="profile"/>
         <infoLink id="8829-df72-c76c-c03b" name="Contra Rotation [3.07a]" hidden="false" targetId="177e-3490-5f5e-f4b9" type="rule"/>
         <infoLink id="1b60-9051-958d-67bb" name="Shallow Draught [3.07a]" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
-        <infoLink id="a8db-210f-76c3-221a" name="Tracer Fire (x) [3.06]" hidden="false" targetId="6266-3217-d898-9935" type="rule">
+        <infoLink id="a8db-210f-76c3-221a" name="Tracer Fire (x) [3.06a]" hidden="false" targetId="6266-3217-d898-9935" type="rule">
           <modifiers>
             <modifier type="set" value="Tracer Fire (Aerial)" field="name"/>
           </modifiers>
@@ -5335,7 +5273,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
       </constraints>
       <infoLinks>
         <infoLink id="5c3e-ea0c-994f-2530" name="Hokkaido" hidden="false" targetId="3aeb-38df-9e81-c89d" type="profile"/>
-        <infoLink id="de03-050d-26dd-9a41" name="Deceptive Deployment [3.06]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
+        <infoLink id="de03-050d-26dd-9a41" name="Deceptive Deployment [3.06a]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
         <infoLink id="6995-5838-8dc3-7814" name="Mark of Yama [3.06]" hidden="false" targetId="ae1a-2537-27f6-15ce" type="rule"/>
         <infoLink id="9f44-fb90-f598-a468" name="Flak Barrage (x) [3.07a]" hidden="false" targetId="7b67-714d-bb2b-6297" type="rule">
           <modifiers>
@@ -5556,8 +5494,8 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3119-c17e-26eb-e723" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="2cfe-219f-41d0-fc8b" name="Deceptive Deployment [3.06]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
-        <infoLink id="d7c9-c912-1cb8-b4a3" name="Hunter (x) [3.06]" hidden="false" targetId="a81f-96a2-3f13-18f9" type="rule">
+        <infoLink id="2cfe-219f-41d0-fc8b" name="Deceptive Deployment [3.06a]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
+        <infoLink id="d7c9-c912-1cb8-b4a3" name="Hunter (x) [3.06a]" hidden="false" targetId="a81f-96a2-3f13-18f9" type="rule">
           <modifiers>
             <modifier type="set" value="Hunter (Surface Unit)" field="name"/>
           </modifiers>
@@ -5733,7 +5671,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         <infoLink id="b1a8-229d-8c19-e289" name="Moon Pool [3.06]" hidden="false" targetId="04b5-f23d-eaad-b786" type="rule"/>
         <infoLink id="ea5f-8270-35c7-1346" name="Mark of Yama [3.06]" hidden="false" targetId="ae1a-2537-27f6-15ce" type="rule"/>
         <infoLink id="48e7-434a-07b0-d812" name="Mine Layer [3.07a]" hidden="false" targetId="940f-44f3-71bf-f26c" type="rule"/>
-        <infoLink name="Deceptive Deployment [3.06]" id="40ee-205a-455e-9c1b" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
+        <infoLink name="Deceptive Deployment [3.06a]" id="40ee-205a-455e-9c1b" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5084-00c1-1ee3-a633" name="Empire" hidden="false" targetId="ce97-a91c-c2c9-c566" primary="true"/>
@@ -6100,7 +6038,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
       </constraints>
       <infoLinks>
         <infoLink id="0686-9def-daf3-52bf" name="Kanagawa" hidden="false" targetId="063e-a8d6-6a03-9eb4" type="profile"/>
-        <infoLink id="ed29-4850-2111-f6b2" name="Deceptive Deployment [3.06]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
+        <infoLink id="ed29-4850-2111-f6b2" name="Deceptive Deployment [3.06a]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
         <infoLink id="36b1-310e-77c7-f234" name="Mark of Yama [3.06]" hidden="false" targetId="ae1a-2537-27f6-15ce" type="rule"/>
         <infoLink id="7577-1329-f0a9-fc43" name="Maritime Patrol [3.07a]" hidden="false" targetId="0b7c-6003-8433-2817" type="rule"/>
         <infoLink id="9279-9f52-dbc9-bced" name="Elite Crew [3.07a]" hidden="false" targetId="4f7a-f51a-a60e-e6ba" type="rule"/>
@@ -6264,7 +6202,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         <infoLink id="598b-e37c-ff98-7816" name="Kyoto" hidden="false" targetId="ef08-24da-ca3a-b94f" type="profile"/>
         <infoLink id="4a8a-54de-565a-0e3b" name="Elite Crew [3.07a]" hidden="false" targetId="4f7a-f51a-a60e-e6ba" type="rule"/>
         <infoLink id="d2e2-93af-c7bf-cd25" name="Giant Slayer [3.07a]" hidden="false" targetId="0d99-00ae-4c22-20b7" type="rule"/>
-        <infoLink id="b396-8a64-7970-abc0" name="Deceptive Deployment [3.06]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
+        <infoLink id="b396-8a64-7970-abc0" name="Deceptive Deployment [3.06a]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
         <infoLink id="39db-3fc3-5ba1-49a8" name="Mark of Yama [3.06]" hidden="false" targetId="ae1a-2537-27f6-15ce" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -6537,7 +6475,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         <infoLink id="6175-77dc-9723-f98e" name="Forward Deployment [3.07a]" hidden="false" targetId="e8f8-a4d2-d40c-1467" type="rule"/>
         <infoLink id="e8ea-25f0-0940-0e46" name="Mark of Yama [3.06]" hidden="false" targetId="ae1a-2537-27f6-15ce" type="rule"/>
         <infoLink id="396d-f794-12a1-1369" name="SRS Mine Clearance [3.07a]" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
-        <infoLink id="1f-7935-b4e4-7342" name="Deceptive Deployment [3.06]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
+        <infoLink id="1f-7935-b4e4-7342" name="Deceptive Deployment [3.06a]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="388d-0793-e562-8e2e" name="Empire" hidden="false" targetId="ce97-a91c-c2c9-c566" primary="true"/>
@@ -6716,7 +6654,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
       <infoLinks>
         <infoLink id="39e6-a88b-6dc4-7541" name="Okinawa" hidden="false" targetId="61af-a07b-a3f5-20ea" type="profile"/>
         <infoLink id="3066-8079-bcd0-efba" name="Combat Air Patrol [3.07a]" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
-        <infoLink id="fb7b-176c-00f0-374f" name="Deceptive Deployment [3.06]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
+        <infoLink id="fb7b-176c-00f0-374f" name="Deceptive Deployment [3.06a]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
         <infoLink id="3633-26e3-47c7-0426" name="Mark of Yama [3.06]" hidden="false" targetId="ae1a-2537-27f6-15ce" type="rule"/>
         <infoLink id="2db7-f94a-f163-11d6" name="Vanguard [3.07a]" hidden="false" targetId="f721-8318-3875-0140" type="rule"/>
         <infoLink id="0beb-5489-02b4-e698" name="SRS Recon [3.07a]" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
@@ -6950,7 +6888,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
       </constraints>
       <infoLinks>
         <infoLink id="dde4-3bd9-231a-947d" name="Osaka" hidden="false" targetId="4e13-298f-c523-49cd" type="profile"/>
-        <infoLink id="791a-d59e-81c8-c8da" name="Deceptive Deployment [3.06]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
+        <infoLink id="791a-d59e-81c8-c8da" name="Deceptive Deployment [3.06a]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
         <infoLink id="fe09-7b2a-6b82-6979" name="Mark of Yama [3.06]" hidden="false" targetId="ae1a-2537-27f6-15ce" type="rule"/>
         <infoLink id="44f3-9159-ae09-dcd4" name="Focused Fire (x) [3.07a]" hidden="false" targetId="6c94-ad2b-60d8-2c4f" type="rule">
           <modifiers>
@@ -7168,7 +7106,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
       </constraints>
       <infoLinks>
         <infoLink id="7776-4ae5-5e4d-72a4" name="Shanghai" hidden="false" targetId="9394-864e-4414-5bba" type="profile"/>
-        <infoLink id="4c9e-9f34-3638-db3a" name="Hunter (x) [3.06]" hidden="false" targetId="a81f-96a2-3f13-18f9" type="rule">
+        <infoLink id="4c9e-9f34-3638-db3a" name="Hunter (x) [3.06a]" hidden="false" targetId="a81f-96a2-3f13-18f9" type="rule">
           <modifiers>
             <modifier type="set" value="Hunter (Surface Unit)" field="name"/>
           </modifiers>
@@ -8656,9 +8594,9 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
       </constraints>
       <infoLinks>
         <infoLink id="df08-87a6-4a06-4cd3" name="Umibozu" hidden="false" targetId="edae-77d0-f7f6-5977" type="profile"/>
-        <infoLink id="7210-0ba6-69d4-ca95" name="Deceptive Deployment [3.06]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
+        <infoLink id="7210-0ba6-69d4-ca95" name="Deceptive Deployment [3.06a]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
         <infoLink id="2472-4233-cf71-d10a" name="Deep Dive [3.07a]" hidden="false" targetId="3bf2-4bf2-c33d-95ab" type="rule"/>
-        <infoLink id="eaa1-1218-96c1-3ed8" name="Silent Stalker [3.06]" hidden="false" targetId="6eb5-5dd3-57d9-993f" type="rule"/>
+        <infoLink id="eaa1-1218-96c1-3ed8" name="Silent Stalker [3.06a]" hidden="false" targetId="6eb5-5dd3-57d9-993f" type="rule"/>
         <infoLink id="c22-4e1e-cd26-73c8" name="Hammer Sweep [3.07a]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
         <infoLink id="bd21-490b-4bcc-7b62" name="Elite Crew [3.07a]" hidden="false" targetId="4f7a-f51a-a60e-e6ba" type="rule"/>
         <infoLink id="5bcf-1fb7-c185-6c84" name="Terror From Below [3.07a]" hidden="false" targetId="405a-6e4d-45ad-b188" type="rule"/>
@@ -8694,8 +8632,8 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         <infoLink id="cb76-8cec-18d7-e293" name="Ryujin" hidden="false" targetId="3df5-7963-0f31-0fa1" type="profile"/>
         <infoLink id="3614-6a0e-d9dd-e9e8" name="Elite Crew [3.07a]" hidden="false" targetId="4f7a-f51a-a60e-e6ba" type="rule"/>
         <infoLink id="bbb2-db8e-1aa1-d8f7" name="Deep Dive [3.07a]" hidden="false" targetId="3bf2-4bf2-c33d-95ab" type="rule"/>
-        <infoLink name="Deceptive Deployment [3.06]" hidden="false" id="ce09-75a7-1825-78d9" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
-        <infoLink name="Tracer Fire (x) [3.06]" id="343b-bf64-1378-2401" hidden="false" targetId="6266-3217-d898-9935" type="rule">
+        <infoLink name="Deceptive Deployment [3.06a]" hidden="false" id="ce09-75a7-1825-78d9" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
+        <infoLink name="Tracer Fire (x) [3.06a]" id="343b-bf64-1378-2401" hidden="false" targetId="6266-3217-d898-9935" type="rule">
           <modifiers>
             <modifier type="set" value="Tracer Fire (Aerial)" field="name"/>
           </modifiers>
@@ -8767,7 +8705,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         <infoLink id="1a91-fbfc-afc0-6212" name="Elite Crew [3.07a]" hidden="false" targetId="4f7a-f51a-a60e-e6ba" type="rule"/>
         <infoLink id="0e55-5aa0-3caf-c1d1" name="Exosub Mine Clearance [3.06]" hidden="false" targetId="6d04-40f6-eafc-bf99" type="rule"/>
         <infoLink name="Deep Dive [3.07a]" hidden="false" id="f46a-efca-8aca-96c5" targetId="3bf2-4bf2-c33d-95ab" type="rule"/>
-        <infoLink name="Deceptive Deployment [3.06]" hidden="false" id="7a52-b011-b49b-aa0" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
+        <infoLink name="Deceptive Deployment [3.06a]" hidden="false" id="7a52-b011-b49b-aa0" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="13f1-afab-5aa6-1adc" name="Empire" hidden="false" targetId="ce97-a91c-c2c9-c566" primary="false"/>
@@ -8818,8 +8756,8 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         <infoLink id="fa54-f874-a0f4-9c78" name="Shokushu [3.06]" hidden="false" targetId="21eb-6e97-cfe9-30b0" type="rule"/>
         <infoLink id="65a1-6286-b644-e640" name="Terror From Below [3.07a]" hidden="false" targetId="405a-6e4d-45ad-b188" type="rule"/>
         <infoLink id="a1b4-207d-655b-3bda" name="Shadow Hunter [3.07a]" hidden="false" targetId="741b-a6ce-dbe7-9409" type="rule"/>
-        <infoLink id="71bf-65f9-5899-af1d" name="Silent Stalker [3.06]" hidden="false" targetId="6eb5-5dd3-57d9-993f" type="rule"/>
-        <infoLink name="Deceptive Deployment [3.06]" hidden="false" id="1b21-fab9-a5a2-736a" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
+        <infoLink id="71bf-65f9-5899-af1d" name="Silent Stalker [3.06a]" hidden="false" targetId="6eb5-5dd3-57d9-993f" type="rule"/>
+        <infoLink name="Deceptive Deployment [3.06a]" hidden="false" id="1b21-fab9-a5a2-736a" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
         <infoLink name="Deep Dive [3.07a]" hidden="false" id="60cd-9c53-d2cf-d831" targetId="3bf2-4bf2-c33d-95ab" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -8847,7 +8785,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         <infoLink id="dee0-532b-7b08-1194" name="Kansai" hidden="false" targetId="bbba-e90b-f6e7-7e5b" type="profile"/>
         <infoLink id="92f4-60c5-cc8a-97ca" name="Elite Crew [3.07a]" hidden="false" targetId="4f7a-f51a-a60e-e6ba" type="rule"/>
         <infoLink id="b6df-26d5-0da8-81be" name="Deep Dive [3.07a]" hidden="false" targetId="3bf2-4bf2-c33d-95ab" type="rule"/>
-        <infoLink name="Deceptive Deployment [3.06]" hidden="false" id="2a36-e40b-a5de-31a1" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
+        <infoLink name="Deceptive Deployment [3.06a]" hidden="false" id="2a36-e40b-a5de-31a1" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="b441-106a-ffd4-f39d" name="Empire" hidden="false" targetId="ce97-a91c-c2c9-c566" primary="true"/>
@@ -8920,7 +8858,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         <infoLink id="7e30-e014-f096-9cf2" name="Kagutsuchi" hidden="false" targetId="6752-64a0-4773-cddc" type="profile"/>
         <infoLink id="1717-d136-6105-bb21" name="Elite Crew [3.07a]" hidden="false" targetId="4f7a-f51a-a60e-e6ba" type="rule"/>
         <infoLink id="e869-cb2c-e9ed-c3ba" name="Deep Dive [3.07a]" hidden="false" targetId="3bf2-4bf2-c33d-95ab" type="rule"/>
-        <infoLink name="Deceptive Deployment [3.06]" hidden="false" id="3dc7-ac42-7754-1e03" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
+        <infoLink name="Deceptive Deployment [3.06a]" hidden="false" id="3dc7-ac42-7754-1e03" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="71a5-102b-117e-3e33" name="Empire" hidden="false" targetId="ce97-a91c-c2c9-c566" primary="true"/>
@@ -8957,7 +8895,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         <infoLink id="1ba3-a52b-848e-68aa" name="Elite Crew [3.07a]" hidden="false" targetId="4f7a-f51a-a60e-e6ba" type="rule"/>
         <infoLink id="5276-e0b7-5c0e-66f0" name="Deep Dive [3.07a]" hidden="false" targetId="3bf2-4bf2-c33d-95ab" type="rule"/>
         <infoLink id="0165-2b42-6bfb-da19" name="Chubu" hidden="false" targetId="4d26-8dd7-88c9-b503" type="profile"/>
-        <infoLink name="Deceptive Deployment [3.06]" hidden="false" id="abf7-b02c-beca-f4a1" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
+        <infoLink name="Deceptive Deployment [3.06a]" hidden="false" id="abf7-b02c-beca-f4a1" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="11ce-522b-be96-63c9" name="Empire" hidden="false" targetId="ce97-a91c-c2c9-c566" primary="true"/>
@@ -8983,7 +8921,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
       <infoLinks>
         <infoLink id="c9aa-5cd8-b91a-176e" name="Sakata" hidden="false" targetId="29b1-634c-8e13-16d1" type="profile"/>
         <infoLink id="83a2-ac5e-78b1-111c" name="Giant Slayer [3.07a]" hidden="false" targetId="0d99-00ae-4c22-20b7" type="rule"/>
-        <infoLink id="5542-af99-ab29-5d03" name="Deceptive Deployment [3.06]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
+        <infoLink id="5542-af99-ab29-5d03" name="Deceptive Deployment [3.06a]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
         <infoLink id="a362-cb62-d974-5a76" name="Mark of Yama [3.06]" hidden="false" targetId="ae1a-2537-27f6-15ce" type="rule"/>
         <infoLink id="e1a5-36b1-e5a0-f0ee" name="Elite Crew [3.07a]" hidden="false" targetId="4f7a-f51a-a60e-e6ba" type="rule"/>
       </infoLinks>
@@ -9031,7 +8969,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         <infoLink id="ce00-eb39-0a70-f450" name="Mark of Yama [3.06]" hidden="false" targetId="ae1a-2537-27f6-15ce" type="rule"/>
         <infoLink id="d71a-7656-f1af-21a2" name="Elite Crew [3.07a]" hidden="false" targetId="4f7a-f51a-a60e-e6ba" type="rule"/>
         <infoLink id="8efd-e70c-8707-7363" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
-        <infoLink id="d004-d640-2946-6165" name="Deceptive Deployment [3.06]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
+        <infoLink id="d004-d640-2946-6165" name="Deceptive Deployment [3.06a]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2049-2433-c172-e3a6" name="Empire" hidden="false" targetId="ce97-a91c-c2c9-c566" primary="true"/>
@@ -9623,7 +9561,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
       </constraints>
       <infoLinks>
         <infoLink id="1290-7cab-0a5e-52ae" name="Akita" hidden="false" targetId="c320-4459-ea9e-d970" type="profile"/>
-        <infoLink id="a491-92c9-eb0b-4d99" name="Deceptive Deployment [3.06]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
+        <infoLink id="a491-92c9-eb0b-4d99" name="Deceptive Deployment [3.06a]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
         <infoLink id="0060-218c-6065-cfea" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
         <infoLink id="f37b-8f04-fb29-0d39" name="Mark of Yama [3.06]" hidden="false" targetId="ae1a-2537-27f6-15ce" type="rule"/>
         <infoLink id="afc7-28ce-5f2e-a6f7" name="Priority Signals [3.07a]" hidden="false" targetId="4106-315d-4d5c-9e8f" type="rule"/>
@@ -10599,7 +10537,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         <infoLink id="533a-7db6-d010-3497" name="Mark of Yama [3.06]" hidden="false" targetId="ae1a-2537-27f6-15ce" type="rule"/>
         <infoLink id="e559-4333-d6d9-5cae" name="Elite Crew [3.07a]" hidden="false" targetId="4f7a-f51a-a60e-e6ba" type="rule"/>
         <infoLink id="a504-dfca-4da6-baa8" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
-        <infoLink id="67ff-0355-2824-3778" name="Deceptive Deployment [3.06]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
+        <infoLink id="67ff-0355-2824-3778" name="Deceptive Deployment [3.06a]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
         <infoLink id="9287-5c32-7a6f-a528" name="Inspirational [3.07a]" hidden="false" targetId="b48d-b4e0-19e8-d85a" type="rule"/>
         <infoLink id="4cfc-8fd0-1e99-ed60" name="Harokku Generator Array [3.06]" hidden="false" targetId="7b58-8bd9-9f4f-1fc3" type="rule"/>
       </infoLinks>
@@ -10689,7 +10627,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         <infoLink id="0dc4-53ef-afc4-b7f3" name="Mark of Yama [3.06]" hidden="false" targetId="ae1a-2537-27f6-15ce" type="rule"/>
         <infoLink id="ed3f-6e12-1790-598e" name="Elite Crew [3.07a]" hidden="false" targetId="4f7a-f51a-a60e-e6ba" type="rule"/>
         <infoLink id="637d-9f0e-6ea0-2deb" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="d511-303a-ccef-b099" name="Deceptive Deployment [3.06]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
+        <infoLink id="d511-303a-ccef-b099" name="Deceptive Deployment [3.06a]" hidden="false" targetId="fd5a-cf78-1cd5-6c63" type="rule"/>
         <infoLink id="0787-1498-da42-684c" name="Wani Terror Ship [3.05]" hidden="false" targetId="27e6-4b74-43ef-2c42" type="rule"/>
         <infoLink name="Focused Fire (x) [3.07a]" id="301a-52c0-cfeb-4ebb" hidden="false" targetId="6c94-ad2b-60d8-2c4f" type="rule">
           <modifiers>
@@ -11049,7 +10987,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
       </constraints>
       <infoLinks>
         <infoLink id="3b77-f223-1504-4202" name="Yaoji" hidden="false" targetId="1ac4-3f0a-8af4-9fec" type="profile"/>
-        <infoLink id="a16d-f3c0-e5dd-3d3f" name="Bombardment (x) [3.06]" hidden="false" targetId="fae5-d154-470a-ac54" type="rule">
+        <infoLink id="a16d-f3c0-e5dd-3d3f" name="Bombardment (x) [3.06a]" hidden="false" targetId="fae5-d154-470a-ac54" type="rule">
           <modifiers>
             <modifier type="set" value="Bombardment (Gunnery)" field="name"/>
           </modifiers>
@@ -11308,7 +11246,7 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e87-de15-7782-eb66" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="b03b-9aa7-3ddd-7d0c" name="Bombardment (x) [3.06]" hidden="false" targetId="fae5-d154-470a-ac54" type="rule">
+        <infoLink id="b03b-9aa7-3ddd-7d0c" name="Bombardment (x) [3.06a]" hidden="false" targetId="fae5-d154-470a-ac54" type="rule">
           <modifiers>
             <modifier type="set" value="Bombardment (Torrent)" field="name"/>
           </modifiers>
@@ -12354,6 +12292,60 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Aki Fujiwara, Admiral of Shield Group Musashi" hidden="false" id="26e5-4087-a97e-33d3" publicationId="7b2b-0f56-3962-5ec1" collective="false">
+      <rules>
+        <rule name="Aki Fujiwara, Admiral of Shield Group Musashi" id="f1fe-a82c-26bc-ec7a" hidden="false" publicationId="7b2b-0f56-3962-5ec1">
+          <description>Once per Round you may replace the Valour Condition on any Victory &amp; Valour Card. The replacement text is as follows: “You may re-roll any dice from any Defensive Dice Pool.”</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Patron" hidden="false" id="2d67-1cd8-28de-5ae0" targetId="d6e0-2055-9c1b-5e86" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="2"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad4b-6b30-01a4-2851" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="77bb-ef59-a5cd-6f80" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Empress Shinzua, The Blazinng Sun" hidden="false" id="692b-7b6d-e073-5439" publicationId="7b2b-0f56-3962-5ec1" collective="false">
+      <rules>
+        <rule name="Empress Shinzua, The Blazinng Sun" id="40d8-8f0a-aee4-b875" hidden="false" publicationId="7b2b-0f56-3962-5ec1">
+          <description>All Japanese Units in the Force gain the Disciplined rule.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Patron" hidden="false" id="2b28-a92f-9a12-645b" targetId="d6e0-2055-9c1b-5e86" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="1"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ced-4dac-a3d6-2a6c" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1594-c319-6a46-f406" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Guan Wenxiang, Ambassador for the Jade Mountain" hidden="false" id="b42f-a1a5-787b-8520" publicationId="7b2b-0f56-3962-5ec1" collective="false">
+      <rules>
+        <rule name="Guan Wenxiang, Ambassador for the Jade Mountain" id="3a29-cbbd-72bd-a559" hidden="false" publicationId="7b2b-0f56-3962-5ec1">
+          <description>Once per Round after discarding a Victory &amp; Valour Card, you may return it to your hand but may not use it again that Round.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink name="Patron" hidden="false" id="fda2-1845-4240-2d3b" targetId="d6e0-2055-9c1b-5e86" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="2"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97ff-b998-66aa-78d1" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3574-1ac8-b6b0-900f" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="eb02-7c30-761c-3f44" name="Chita Escort Token [3.05]" hidden="false" publicationId="7b2b-0f56-3962-5ec1">
@@ -13262,22 +13254,15 @@ Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)</readme>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d38d-8f54-959c-f50e" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Empire Patron" id="9097-780b-daee-e3ee" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Aki Fujiwara, Admiral of Shield Group Musashi" hidden="false" id="0419-a500-63e0-ca43" type="selectionEntry" targetId="26e5-4087-a97e-33d3"/>
+        <entryLink import="true" name="Empress Shinzua, The Blazinng Sun" hidden="false" id="0964-6ba0-da82-ee90" type="selectionEntry" targetId="692b-7b6d-e073-5439"/>
+        <entryLink import="true" name="Guan Wenxiang, Ambassador for the Jade Mountain" hidden="false" id="c9e8-7442-fd14-c8c0" type="selectionEntry" targetId="b42f-a1a5-787b-8520"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43a7-1486-751a-74ec" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
-  <entryLinks>
-    <entryLink import="true" name="Specialist Battlefleet" hidden="false" id="cca8-d1f9-cb81-292" collective="false" targetId="1158-6e57-cab4-d521" type="selectionEntry">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="false" id="7647-311f-a2ad-87b7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
-    </entryLink>
-    <entryLink import="true" name="Main Battlefleet" hidden="false" id="4f5a-ab69-8dca-45a9" collective="false" targetId="dd77-1355-2580-a469" type="selectionEntry">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="false" id="2180-60da-b927-5ad1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
-    </entryLink>
-    <entryLink import="true" name="Mercenary Battlefleet" hidden="false" id="5382-d49f-260b-31fe" collective="false" targetId="4276-0dac-62d7-f428" type="selectionEntry">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="false" id="2a97-1423-e613-31fc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
-    </entryLink>
-  </entryLinks>
 </catalogue>
