@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4724-2577-5b2d-0bfe" name="Crown v3.06a" revision="17" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="4724-2577-5b2d-0bfe" name="Crown v3.06a" revision="18" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <comment>Crown ORBAT 3.06a (published 22/07/2024)</comment>
   <readme>Review 1.02.a0: Initial release
 Review 1.02.a1: minor point correction
@@ -17,7 +17,8 @@ Review 3.04.00: first release of 3.04 Orbat (ORBAT 3.04 2023-09-08 rev4) to be u
 Review 3.04.01: correction of datafile for 3.04 Orbat (ORBAT 3.04 2023-09-08 to be used in New Recruit)
 Review 3.05.00: first release of 3.05a Orbat (ORBAT 3.05a 2024-01-23) rev5
 Review 3.06.a0: first release of 3.06a Orbat (ORBAT 3.05a 2024-08-11)
-Review 3.06.a1: release of 3.06a Orbat (ORBAT 3.05a 2024-08-18)</readme>
+Review 3.06.a1: release of 3.06a Orbat (ORBAT 3.06a 2024-08-18)
+Review 3.06.a2: release of 3.06a Orbat (ORBAT 3.06a 2024-08-19)</readme>
   <categoryEntries>
     <categoryEntry id="6427-c580-219d-c874" name="Britannia-Class" publicationId="dbca-8d57-b848-457e" hidden="false"/>
     <categoryEntry id="ddb5-f0d6-665c-3ac4" name="Protecteur-Class" publicationId="dbca-8d57-b848-457e" hidden="false"/>
@@ -542,20 +543,20 @@ Review 3.06.a1: release of 3.06a Orbat (ORBAT 3.05a 2024-08-18)</readme>
   <selectionEntries>
     <selectionEntry id="0e8c-af8d-bfbe-868f" name="Orca Hunter Submarines Squadron" hidden="true" collective="false" import="false" type="unit">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="012e-2bdb-8192-e8ca" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
         <modifier type="set" value="2" field="a6bc-c65e-3aba-0a1f">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f771-8c4b-877d-735f" shared="true"/>
           </conditions>
+        </modifier>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="012e-2bdb-8192-e8ca" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f771-8c4b-877d-735f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -1324,7 +1325,7 @@ Review 3.06.a1: release of 3.06a Orbat (ORBAT 3.05a 2024-08-18)</readme>
     </selectionEntry>
     <selectionEntry id="4dac-69da-5402-0fc9" name="Bonaventure Strike Cruiser Squadron" hidden="true" collective="false" import="false" type="unit">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -1353,17 +1354,12 @@ Review 3.06.a1: release of 3.06a Orbat (ORBAT 3.05a 2024-08-18)</readme>
     </selectionEntry>
     <selectionEntry id="abef-346e-d0cd-6a8d" name="Sabre Command Cruisers Squadron" hidden="false" collective="false" import="false" type="unit">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74f8-a93e-d127-d4f7" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8dbd-7b09-f7db-0eba" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2239-8cf9-77dd-6673" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b875-c5a1-3bf6-fb2a" type="instanceOf"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="012e-2bdb-8192-e8ca" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="7b54-608f-353d-8628" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1388,9 +1384,9 @@ Review 3.06.a1: release of 3.06a Orbat (ORBAT 3.05a 2024-08-18)</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="920f-8fbf-50eb-c5ea" name="HMS Ark Royal" hidden="false" collective="false" import="false" type="model">
+    <selectionEntry id="920f-8fbf-50eb-c5ea" name="HMS Ark Royal" hidden="true" collective="false" import="false" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -1484,19 +1480,14 @@ Review 3.06.a1: release of 3.06a Orbat (ORBAT 3.05a 2024-08-18)</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="34bd-52eb-4994-0bdf" name="The Lord&apos;s Hood" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="34bd-52eb-4994-0bdf" name="The Lord&apos;s Hood" hidden="true" collective="false" import="false" type="unit">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74f8-a93e-d127-d4f7" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8dbd-7b09-f7db-0eba" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2239-8cf9-77dd-6673" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b875-c5a1-3bf6-fb2a" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="012e-2bdb-8192-e8ca" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b54-608f-353d-8628" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1576,7 +1567,7 @@ Review 3.06.a1: release of 3.06a Orbat (ORBAT 3.05a 2024-08-18)</readme>
     </selectionEntry>
     <selectionEntry id="68f6-058b-4271-c693" name="Protecteur Submersible Carrier" hidden="true" collective="false" import="false" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -1703,7 +1694,7 @@ Review 3.06.a1: release of 3.06a Orbat (ORBAT 3.05a 2024-08-18)</readme>
     </selectionEntry>
     <selectionEntry id="6248-4ac6-5c17-9971" name="Prydain War Rotor Squadron" publicationId="dbca-8d57-b848-457e" hidden="true" collective="false" import="false" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -1728,21 +1719,6 @@ Review 3.06.a1: release of 3.06a Orbat (ORBAT 3.05a 2024-08-18)</readme>
     </selectionEntry>
     <selectionEntry id="6b36-0449-629d-bda3" name="Secace Frigates Squadron" publicationId="dbca-8d57-b848-457e" hidden="true" collective="false" import="false" type="unit">
       <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="012e-2bdb-8192-e8ca" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="7b54-608f-353d-8628" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="74f8-a93e-d127-d4f7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="2239-8cf9-77dd-6673" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f771-8c4b-877d-735f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f522-023c-74a9-5412" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b875-c5a1-3bf6-fb2a" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
         <modifier type="remove" value="fffb-149d-6db1-4439" field="category">
           <conditionGroups>
             <conditionGroup type="or">
@@ -1768,6 +1744,21 @@ Review 3.06.a1: release of 3.06a Orbat (ORBAT 3.05a 2024-08-18)</readme>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="force" childId="b875-c5a1-3bf6-fb2a" shared="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
+        </modifier>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="012e-2bdb-8192-e8ca" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="7b54-608f-353d-8628" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="74f8-a93e-d127-d4f7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="2239-8cf9-77dd-6673" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f771-8c4b-877d-735f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f522-023c-74a9-5412" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="b875-c5a1-3bf6-fb2a" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -1953,19 +1944,14 @@ Review 3.06.a1: release of 3.06a Orbat (ORBAT 3.05a 2024-08-18)</readme>
         <constraint type="max" value="1" field="selections" scope="force" shared="false" id="9c81-edbf-999e-bdc4" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry id="deae-94ca-e698-a659" name="Gloriana Dread-Naught" hidden="false" collective="false" import="false" type="model">
+    <selectionEntry id="deae-94ca-e698-a659" name="Gloriana Dread-Naught" hidden="true" collective="false" import="false" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="655a-768e-4dd7-479e" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f771-8c4b-877d-735f" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74f8-a93e-d127-d4f7" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8dbd-7b09-f7db-0eba" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f522-023c-74a9-5412" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2239-8cf9-77dd-6673" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b875-c5a1-3bf6-fb2a" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="012e-2bdb-8192-e8ca" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b54-608f-353d-8628" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2053,7 +2039,7 @@ Review 3.06.a1: release of 3.06a Orbat (ORBAT 3.05a 2024-08-18)</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0667-8f88-a502-b82c" name="Camelot High Guardian" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="false" type="model">
+    <selectionEntry id="0667-8f88-a502-b82c" name="Camelot High Guardian" publicationId="dbca-8d57-b848-457e" hidden="true" collective="false" import="false" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -2343,7 +2329,7 @@ Review 3.06.a1: release of 3.06a Orbat (ORBAT 3.05a 2024-08-18)</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9532-7169-de74-60f2" name="HMCS Tilloch Galt" hidden="false" collective="false" import="false" type="model">
+    <selectionEntry id="9532-7169-de74-60f2" name="HMCS Tilloch Galt" hidden="true" collective="false" import="false" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -2672,7 +2658,7 @@ Review 3.06.a1: release of 3.06a Orbat (ORBAT 3.05a 2024-08-18)</readme>
     </selectionEntry>
     <selectionEntry id="16c-83c6-b116-515c" name="Ganges Battlecruiser" hidden="true" collective="false" import="false" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -2860,7 +2846,7 @@ Review 3.06.a1: release of 3.06a Orbat (ORBAT 3.05a 2024-08-18)</readme>
         <constraint type="max" value="1" field="selections" scope="force" shared="false" id="6106-c038-bcb4-798a" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry id="c372-d633-b1fa-a96b" name="Godavari Littoral Cruiser Squadron" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="c372-d633-b1fa-a96b" name="Godavari Littoral Cruiser Squadron" hidden="true" collective="false" import="false" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
           <conditionGroups>
@@ -2910,7 +2896,7 @@ Review 3.06.a1: release of 3.06a Orbat (ORBAT 3.05a 2024-08-18)</readme>
         <constraint type="max" value="1" field="selections" scope="force" shared="false" id="261a-191f-5864-132a" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry id="2bf7-571-cc67-947c" name="Devaki Littoral Monitor Squadron" hidden="false" collective="false" import="false" type="unit">
+    <selectionEntry id="2bf7-571-cc67-947c" name="Devaki Littoral Monitor Squadron" hidden="true" collective="false" import="false" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="b20c-c6ec-bdc4-faed">
           <conditionGroups>
