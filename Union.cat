@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="caf4-134c-500d-0cd9" name="Union v3.07a" revision="13" battleScribeVersion="2.03" authorName="Riccardo Sipone, UrsinePatriarch" authorContact="siponeric@hotmail.com /// Discord: zharrpostingghoroth" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="caf4-134c-500d-0cd9" name="Union v3.07a" revision="14" battleScribeVersion="2.03" authorName="Riccardo Sipone, UrsinePatriarch" authorContact="siponeric@hotmail.com /// Discord: zharrpostingghoroth" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <comment>Union ORBAT 3.07a (published 19/04/2024)</comment>
   <readme>Review 1.03.00: Initial release
 Review 3.03.00: Update to Orbat 3.03
@@ -4558,7 +4558,7 @@ Review 3.07.a1: corrections (18/08/2024)</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d38f-2b6c-86b3-c210" name="California Supply Cruiser" publicationId="e6a1-85d3-8979-7880" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="d38f-2b6c-86b3-c210" name="California Supply Cruiser" publicationId="e6a1-85d3-8979-7880" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8c76-02bc-ae30-b408" type="max"/>
       </constraints>
@@ -9657,8 +9657,7 @@ Review 3.07.a1: corrections (18/08/2024)</readme>
                 <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
               </costs>
               <constraints>
-                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="fdbf-b0cb-619b-2cb0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="3" field="selections" scope="parent" shared="false" id="0f13-b726-7377-a951" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0f13-b726-7377-a951" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
                 <infoLink name="Lexington" id="db62-cbb2-a745-7b4f" hidden="false" targetId="9de9-ec3d-32c6-cf94" type="profile">
@@ -9677,6 +9676,13 @@ Review 3.07.a1: corrections (18/08/2024)</readme>
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <modifiers>
+                <modifier type="set" value="0" field="0f13-b726-7377-a951">
+                  <conditions>
+                    <condition type="greaterThan" value="1" field="selections" scope="parent" childId="e920-9314-a5da-61a1" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry id="e920-9314-a5da-61a1" name="[Basic Pattern]" publicationId="e6a1-85d3-8979-7880" hidden="false" collective="false" import="true" type="model" sortIndex="1">
               <entryLinks>
@@ -9741,8 +9747,7 @@ Review 3.07.a1: corrections (18/08/2024)</readme>
                 <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
               </costs>
               <constraints>
-                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="f040-acf5-5759-a744" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="3" field="selections" scope="parent" shared="false" id="9536-769a-622f-7a7e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="bccf-1f84-a633-0f77" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
                 <infoLink name="Lexington" id="8617-469a-3ac0-d55b" hidden="false" targetId="9de9-ec3d-32c6-cf94" type="profile">
@@ -9761,6 +9766,13 @@ Review 3.07.a1: corrections (18/08/2024)</readme>
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <modifiers>
+                <modifier type="set" value="0" field="bccf-1f84-a633-0f77">
+                  <conditions>
+                    <condition type="greaterThan" value="1" field="selections" scope="parent" childId="e47f-fb30-ed8a-7d66" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -11661,27 +11673,27 @@ Review 3.07.a1: corrections (18/08/2024)</readme>
       <entryLinks>
         <entryLink id="58eb-62a3-0d8b-29c0" name="Roanoke Strike Carrier Squadron" hidden="false" collective="false" import="true" targetId="ef70-fbbe-ddd5-ead6" type="selectionEntry">
           <categoryLinks>
-            <categoryLink id="af8f-c247-31ff-4bdb" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="false"/>
+            <categoryLink id="af8f-c247-31ff-4bdb" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
           </categoryLinks>
         </entryLink>
         <entryLink id="4ab5-af0c-a684-4b3e" name="Springfield Corvette Squadron" hidden="false" collective="false" import="true" targetId="405a-326a-ab31-7b7a" type="selectionEntry">
           <categoryLinks>
-            <categoryLink id="ecc2-1718-a7ab-3cb9" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="false"/>
+            <categoryLink id="ecc2-1718-a7ab-3cb9" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
           </categoryLinks>
         </entryLink>
         <entryLink id="2a1e-38ab-f272-7a32" name="Providence Merchantman" hidden="false" collective="false" import="true" targetId="0887-558f-85d0-1a08" type="selectionEntry">
           <categoryLinks>
-            <categoryLink id="dcb0-9d81-991d-5101" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="false"/>
+            <categoryLink id="dcb0-9d81-991d-5101" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
           </categoryLinks>
         </entryLink>
         <entryLink id="e5c7-4aa0-e841-6313" name="Montgomery Support Ship" hidden="false" collective="false" import="true" targetId="0b7f-bc4f-eed8-e4a4" type="selectionEntry">
           <categoryLinks>
-            <categoryLink id="43d9-8b14-6b04-79d3" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="false"/>
+            <categoryLink id="43d9-8b14-6b04-79d3" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
           </categoryLinks>
         </entryLink>
         <entryLink id="3e14-d778-511d-043c" name="California Supply Cruiser" hidden="false" collective="false" import="true" targetId="d38f-2b6c-86b3-c210" type="selectionEntry">
           <categoryLinks>
-            <categoryLink id="83e3-ee0d-575e-3c36" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="false"/>
+            <categoryLink id="83e3-ee0d-575e-3c36" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
           </categoryLinks>
         </entryLink>
       </entryLinks>

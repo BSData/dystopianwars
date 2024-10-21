@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f69c-988c-fae3-e664" name="Generator" revision="23" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="f69c-988c-fae3-e664" name="Generator" revision="24" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Review 1.00.00: generator collection
 Review 3.04.00: all generator included and updated
 Review 3.04.01: all generator included and updated. added 3.03 Orbat change
@@ -291,8 +291,40 @@ Review 3.06.09: Crown 3.06a</readme>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="639b-ec28-97e7-a357" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="fc3e-a3e1-8d44-8467" name="Portal generator" hidden="false" targetId="bbcb-e6ac-1e89-35d2" type="profile"/>
-        <infoLink id="3109-d308-bc05-03cd" name="Portal generator [3.06]" hidden="false" targetId="7934-e919-e869-4ef7" type="rule"/>
+        <infoLink id="fc3e-a3e1-8d44-8467" name="Portal generator" hidden="false" targetId="bbcb-e6ac-1e89-35d2" type="profile">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="(1)" field="name">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0c85-39c7-9145-efeb" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="(2)" field="name">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8901-cc02-f55e-2ee5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="(3)" field="name">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="179a-4bc3-c4d4-b5d5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="(4)" field="name">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5935-bcd7-b498-5f40" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="(8)" field="name">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="967e-22a1-ae69-7b4f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="3109-d308-bc05-03cd" name="Portal generator [3.07]" hidden="false" targetId="7934-e919-e869-4ef7" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="82f0-7580-ae32-45d6" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
@@ -454,7 +486,39 @@ Review 3.06.09: Crown 3.06a</readme>
       </constraints>
       <infoLinks>
         <infoLink id="dfdc-5b6b-4f22-3f28" name="Portal generator" hidden="false" targetId="bbcb-e6ac-1e89-35d2" type="profile"/>
-        <infoLink id="db7f-4832-4b14-d1de" name="Portal generator [3.06]" hidden="false" targetId="7934-e919-e869-4ef7" type="rule"/>
+        <infoLink id="db7f-4832-4b14-d1de" name="Portal generator [3.07]" hidden="false" targetId="7934-e919-e869-4ef7" type="rule">
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="(1)" field="name">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="0c85-39c7-9145-efeb" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="(2)" field="name">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="8901-cc02-f55e-2ee5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="(3)" field="name">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="179a-4bc3-c4d4-b5d5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="(4)" field="name">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="5935-bcd7-b498-5f40" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="(8)" field="name">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="967e-22a1-ae69-7b4f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3db9-a546-4d27-24be" name="Generator" hidden="false" targetId="25b9-7f26-cbd9-e68f" primary="false"/>
@@ -954,8 +1018,8 @@ Iceberg Obstacles may not be placed within 5” of an Enemy Model. Cryogenic Bla
         <modifier type="set" value="Mirage generator" field="name"/>
       </modifiers>
     </rule>
-    <rule id="7934-e919-e869-4ef7" name="Portal generator [3.06]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
-      <description>This Generator may be used by a Unit as a Special Operations Action. This Unit may place a 40mm Portal Token within 5” of itself. Each additional Portal Generator in this Unit increases the distance that each Portal Token may be deployed by +10” (to a maximum range of 25”). If there are three or more Models in the Unit with Portal Generators, the Unit may instead place up to two Portal Tokens within 5”. During the Round, any friendly Unit with the Sultanate Trait making an Attack with the Bomb or Broadside Qualities that has a friendly Portal Token within 4” of that Unit may measure the range of the Attack as though being made from any other friendly Portal Token. The Attacking Unit still requires Line of Sight to the Initial Target, but the weapon must replace their listed Fire Arc with a 360-degree Fire Arc if used with a Portal. Escort Tokens cannot provide a benefit to this Attack. Furthermore, during the Reserves Step of that Round, when a friendly Mass 2 or Mass 1 Unit deploys from reserves, it may be deployed in base contact with any friendly Portal Token rather than using any other deployment options. Each Model in the Reserve Unit must be deployed in base contact with the same Portal Token and receives a Level of Disorder. Remove the friendly Portal Token once a Reserve Unit has been deployed using it, or an Attack using the Bomb or Broadside Qualities has been measured from it. Finally, remove all remaining Portal Tokens from the Play Area at the start of the Maintenance Step. Joining Units cannot take Portal Generators. Generators listed on a Unit’s profile may not be removed or replaced unless specified.</description>
+    <rule id="7934-e919-e869-4ef7" name="Portal generator [3.07]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+      <description>As a Special Operations Action, this Unit may place number of 40mm Portal Tokens within 5” of a Model in this Unit with a Portal Generator. The number of Portal Tokens that may be Placed is indicated in brackets. Each additional Model with a Portal Generator in this Unit increases the distance that any Portal Token may be Placed by the Unit by +10” (to a maximum range of 20”).</description>
       <modifiers>
         <modifier type="set" value="Portal generator" field="name"/>
       </modifiers>
