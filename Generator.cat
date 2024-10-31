@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f69c-988c-fae3-e664" name="Generator" revision="24" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="f69c-988c-fae3-e664" name="Generator" revision="25" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Review 1.00.00: generator collection
 Review 3.04.00: all generator included and updated
 Review 3.04.01: all generator included and updated. added 3.03 Orbat change
@@ -22,7 +22,9 @@ Review 3.06.06: Empire 3.06 and new version of Imperium
 Review 3.06.07: Commonwealth 3.05
 Review 3.06.08: Alliance 3.06
 Review 3.06.08: Enlightened 3.06
-Review 3.06.09: Crown 3.06a</readme>
+Review 3.06.09: Crown 3.06a
+Review 3.06.09: Sultanate 3.07
+Review 3.06.09: Enlightened 3.07</readme>
   <categoryEntries>
     <categoryEntry id="0c85-39c7-9145-efeb" name="1" hidden="true"/>
     <categoryEntry id="8901-cc02-f55e-2ee5" name="2" hidden="false"/>
@@ -934,13 +936,13 @@ Review 3.06.09: Crown 3.06a</readme>
         <modifier type="set" value="Cai Xin Tower generator" field="name"/>
       </modifiers>
     </rule>
-    <rule id="a94e-7233-0f8b-6e68" name="Chrono generetor [3.06]" publicationId="908d-6feb-2e9e-843b" hidden="false">
+    <rule id="a94e-7233-0f8b-6e68" name="Chrono generetor [3.07]" publicationId="908d-6feb-2e9e-843b" hidden="false">
       <description>When a Unit with one or more Chrono Generators Activates, roll an Action die and apply the result to the Unit. You may choose to continue to roll dice and apply cumulative results, once for each Chrono Generator in the Unit.
 
-- Exploding Hit: Remove a single point of damage from every Model in the Unit.
-- Critical Hit: The Unit gains +1 to its Speed and Fray for the duration of the Activation.
-- Hit: The Unit gains +2 to a single Action Dice Pool this Activation.
-- Any Counter: The Unit gains no benefit.
+- Exploding Hit: Choose one of the below results and apply.
+- Critical Hit: Remove a single point of damage from every Model in the Unit.
+- Hit: The Unit gains +1 to its Speed and Fray for the duration of the Activation.
+- Any Counter: The Unit gains +2 to a single Action Dice Pool this Activation.
 - Blank: The Unit gains a Level of Disorder.</description>
       <modifiers>
         <modifier type="set" value="Chang’an Tower generator" field="name"/>
@@ -960,7 +962,7 @@ Iceberg Obstacles may not be placed within 5” of an Enemy Model. Cryogenic Bla
         <modifier type="set" value="Cryo generator" field="name"/>
       </modifiers>
     </rule>
-    <rule id="09b1-d883-924a-e86a" name="Diophantus Chaos-Orb [3.06]" publicationId="908d-6feb-2e9e-843b" hidden="false">
+    <rule id="09b1-d883-924a-e86a" name="Diophantus Chaos-Orb [3.07]" publicationId="908d-6feb-2e9e-843b" hidden="false">
       <description>In the Special Operations Step of the Operations Phase, all Enemy Models within 5” of this Model receive the Shredded Defences Critical Damage Marker unless they already have it. During the Special Operations Step of this Unit’s Activation, it may use its Diophantus Chaos-Orb to draw three Victory and Valour Cards, examine them, discard two and keep one to add to the Player’s hand for the Round. Then, during the End Phase, the player must discard a card of their choice from their hand. Furthermore, as a Valour Effect in the Shooting Step, the player may use the device as a Heavy Particle Cannon with a 360 Fire Arc. The Heavy Particle Cannon may also trigger its own Valour Effect in the same Step. A Model may not be Wavelurking while using a Diophantus Chaos-Orb. This device is unaffected by Generator Shutdown Critical Damage.</description>
       <modifiers>
         <modifier type="set" value="Chrono generetor" field="name"/>
@@ -1066,8 +1068,8 @@ Iceberg Obstacles may not be placed within 5” of an Enemy Model. Cryogenic Bla
         <modifier type="set" value="Trident generator" field="name"/>
       </modifiers>
     </rule>
-    <rule id="ee09-5a15-1ff5-a60d" name="Superior Void-Engine [3.06]" publicationId="908d-6feb-2e9e-843b" hidden="false">
-      <description>As a Special Operations Action during its Activation, this Unit may declare that it will activate its Superior Void Engines. The Unit may either target an Enemy or a Friendly Unit within 10”. If this Unit targets an Enemy Unit, it creates lethal spatial rift. The Active Player applies a Catastrophic Explosion to a Model in the targeted Unit, with an additional point of damage caused equal to the number of additional Models with this rule in this Unit. Alternatively, if this Unit targets either itself or a non-Immobile Friendly Unit, roll a number of Action dice equal to the number of Models in this Unit and choose one result as a Turbo Encabulation test (see Turbo Encabulation Drive). Apply the result of the test to the targeted Unit. The number of dice rolled in this specific test is not affected by the number of times a Turbo Encabulation test has already been made this Round, though it is still a Turbo Encabulation test and may affect other tests made that Round.</description>
+    <rule id="ee09-5a15-1ff5-a60d" name="Superior Void-Engine [3.07]" publicationId="908d-6feb-2e9e-843b" hidden="false">
+      <description>Once per Round, this Unit, or a Unit within 5” of this Unit, may re-roll a single blank result on a Turbo Encabulation roll. As a Special Operations Action during its Activation, this Unit may declare that it will activate its Superior Void Engines. The Unit may either target an Enemy or a Friendly Unit within 10”. If this Unit targets an Enemy Unit, it creates lethal spatial rift. The Active Player applies a Catastrophic Explosion to a Model in the targeted Unit, with an additional point of damage caused equal to the number of additional Models in this Unit. Alternatively, if this Unit targets either itself or a non-Immobile Friendly Unit, roll a number of Action dice equal to the number of Models in this Unit and choose one result as a Turbo Encabulation test (see Turbo Encabulation Drive). Apply the result of the test to the targeted Unit. The number of dice rolled in this specific test is not affected by the number of times a Turbo Encabulation test has already been made this Round, though it is still a Turbo Encabulation test and may affect other tests made that Round.</description>
       <modifiers>
         <modifier type="set" value="Superior Void-Engine" field="name"/>
       </modifiers>
@@ -1096,7 +1098,7 @@ Iceberg Obstacles may not be placed within 5” of an Enemy Model. Cryogenic Bla
         <modifier type="set" value="Gisela Shield Projector" field="name"/>
       </modifiers>
     </rule>
-    <rule id="5d2c-346f-ccb2-645b" name="Null-Clone generator [3.06]" publicationId="908d-6feb-2e9e-843b" hidden="false">
+    <rule id="5d2c-346f-ccb2-645b" name="Null-Clone generator [3.07]" publicationId="908d-6feb-2e9e-843b" hidden="false">
       <description>In the Special Operations Step of the Operations Phase, all Enemy Models that have Generators and are within 5” of this Model receive the Generator Shutdown Critical Damage Marker unless they already have it. Furthermore, in the same Step, this Unit may target a Model within 15&quot; of this Model. If the target has an Atomic, Fury, Magnetic, Repulsion Field, Shield or Shroud Generator then this Unit counts as having that Generator for the remainder of the Round.</description>
       <modifiers>
         <modifier type="set" value="Null-Clone generator" field="name"/>

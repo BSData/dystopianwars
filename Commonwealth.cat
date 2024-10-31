@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6719-1f83-56dd-91fe" name="Commonwealth v3.05" revision="24" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue" publicationId="e265-8c7f-a4b2-a48e">
+<catalogue id="6719-1f83-56dd-91fe" name="Commonwealth v3.05" revision="25" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue" publicationId="e265-8c7f-a4b2-a48e">
   <comment>Commonwealth ORBAT 3.05 (published 25/04/2024)</comment>
   <readme>Review 1.02.01: correct Rurik and Oleg unit max size
 Review 1.03.00: add new unit and new profile from ORBAT 1.03, fixed Battlefleet bonus managment
@@ -25,7 +25,9 @@ Review 3.04.03: correction datafile for ORBAT 3.04 published 31/08/2023 (to be u
 Review 3.04.04: v21 rev 3, minor correction
 Review 3.05.00: v22 updated datafile for ORBAT 3.05 published 25/04/2024
 Review 3.05.01: v22 rev1 (Orbat 3.05 25/04/2024 released 06/07/2024)
-Review 3.05.02: v23 (Orbat 3.05 25/04/2024 released 18/08/2024)</readme>
+Review 3.05.02: v23 (Orbat 3.05 25/04/2024 released 18/08/2024)
+Review 3.05.03: v24 (Orbat 3.05 25/04/2024 released 22/10/2024)
+Review 3.05.04: v25 (Orbat 3.05 25/04/2024 released 31/10/2024)</readme>
   <categoryEntries>
     <categoryEntry id="43a2-7e77-ff29-fb5c" name="Russian" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
     <categoryEntry id="10f8-2a4a-0324-de9d" name="Borodino-Class" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
@@ -914,12 +916,7 @@ Review 3.05.02: v23 (Orbat 3.05 25/04/2024 released 18/08/2024)</readme>
         <categoryLink id="934c-c28a-2b8a-aab2" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="4d2f-b988-5c0e-b171" name="Sineus" hidden="false" collective="false" import="true" targetId="a2c8-dcfb-9b72-fbe0" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b10-7901-7980-35f8" type="min"/>
-            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f54d-f8e8-8f3c-b651" type="max"/>
-          </constraints>
-        </entryLink>
+        <entryLink id="4d2f-b988-5c0e-b171" name="Sineus" hidden="false" collective="false" import="true" targetId="a2c8-dcfb-9b72-fbe0" type="selectionEntry"/>
         <entryLink import="true" name="Attached Unit [Black Wolf]" hidden="false" id="da06-a5e9-b018-6abd" type="selectionEntryGroup" targetId="54d1-4531-ffd1-4eb3"/>
       </entryLinks>
       <costs>
@@ -1438,9 +1435,9 @@ Review 3.05.02: v23 (Orbat 3.05 25/04/2024 released 18/08/2024)</readme>
         <categoryLink id="647a-bc04-9da3-7770" name="Submerged Unit" hidden="false" targetId="df3f-7b38-7940-f11e" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="9212-7770-dc7d-6d25" name="Akula" hidden="false" collective="false" import="true" targetId="7e7b-cc93-5aaf-b438" type="selectionEntry"/>
-        <entryLink import="true" name="Attached Unit [Ukrainian]" hidden="false" id="2bc8-b420-dd61-d95a" type="selectionEntryGroup" targetId="c673-b466-4c05-aa93"/>
-        <entryLink import="true" name="Attached Unit [Black Wolf]" hidden="false" id="682e-8079-5403-541c" type="selectionEntryGroup" targetId="54d1-4531-ffd1-4eb3"/>
+        <entryLink id="9212-7770-dc7d-6d25" name="Akula" hidden="false" collective="false" import="true" targetId="7e7b-cc93-5aaf-b438" type="selectionEntry" sortIndex="3"/>
+        <entryLink import="true" name="Attached Unit [Ukrainian]" hidden="false" id="2bc8-b420-dd61-d95a" type="selectionEntryGroup" targetId="c673-b466-4c05-aa93" sortIndex="2"/>
+        <entryLink import="true" name="Attached Unit [Black Wolf]" hidden="false" id="682e-8079-5403-541c" type="selectionEntryGroup" targetId="54d1-4531-ffd1-4eb3" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -2589,7 +2586,7 @@ Review 3.05.02: v23 (Orbat 3.05 25/04/2024 released 18/08/2024)</readme>
         <categoryLink id="394f-3cea-674c-59f3" name="Ukrainian" hidden="false" targetId="d7b3-10bd-20f0-4832" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="af5a-827b-a525-05d6" name="Escort model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="af5a-827b-a525-05d6" name="Escort model" hidden="false" collective="false" import="true" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f405-232c-c1ba-a531" type="max"/>
           </constraints>
@@ -2607,11 +2604,12 @@ Review 3.05.02: v23 (Orbat 3.05 25/04/2024 released 18/08/2024)</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="46cb-673a-c55d-1b6c" name="Kyiv" hidden="false" collective="false" import="true" targetId="a04e-2791-ffb3-2c07" type="selectionEntry">
+        <entryLink id="46cb-673a-c55d-1b6c" name="Kyiv" hidden="false" collective="false" import="true" targetId="a04e-2791-ffb3-2c07" type="selectionEntry" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Blomqvist Fortune of War" hidden="false" id="9e6-fbb1-3515-2080" type="selectionEntry" targetId="af60-b6ba-dc4b-d575"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Attached Unit [Ukrainian]" hidden="false" id="c001-40bc-ad85-e8e6" type="selectionEntryGroup" targetId="c673-b466-4c05-aa93" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -5376,7 +5374,7 @@ Review 3.05.02: v23 (Orbat 3.05 25/04/2024 released 18/08/2024)</readme>
             <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="2" field="6cc8-bdab-4931-ddde">
+        <modifier type="set" value="4" field="6cc8-bdab-4931-ddde">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -8370,6 +8368,16 @@ Review 3.05.02: v23 (Orbat 3.05 25/04/2024 released 18/08/2024)</readme>
             <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1022-4484-f676-a003" type="instanceOf"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="1" field="f322-93f2-caed-2c12">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7f4c-631a-bf63-e37f" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="88f0-7c2f-427d-2b2c" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc01-eb17-dd99-b026" type="min"/>
@@ -11149,6 +11157,7 @@ Review 3.05.02: v23 (Orbat 3.05 25/04/2024 released 18/08/2024)</readme>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f8d5-fb9d-e4a5-33ec" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="1c03-4ace-59f3-9637" shared="true"/>
               </conditions>
             </conditionGroup>
@@ -11190,16 +11199,56 @@ Review 3.05.02: v23 (Orbat 3.05 25/04/2024 released 18/08/2024)</readme>
             <categoryLink name="Surface Unit" hidden="false" id="69dc-81b4-dcbd-93c2" targetId="464e-890a-84b2-8ce9" primary="false"/>
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Rurik" hidden="false" id="b6e7-db01-41b0-a918" collective="false" targetId="e4b3-7155-20c6-819b" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" value="2" field="6cc8-bdab-4931-ddde"/>
-              </modifiers>
-            </entryLink>
+            <entryLink import="true" name="Rurik" hidden="false" id="b6e7-db01-41b0-a918" collective="false" targetId="e4b3-7155-20c6-819b" type="selectionEntry"/>
           </entryLinks>
           <costs>
             <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
             <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Krykun Shockwave Squadron" hidden="true" id="4599-f168-7191-6bc5" collective="false">
+          <modifiers>
+            <modifier type="add" value="79fe-c00f-c7c0-3c7a" field="category">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="1022-4484-f676-a003" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="remove" value="43a2-7e77-ff29-fb5c" field="category">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="1022-4484-f676-a003" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f8d5-fb9d-e4a5-33ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="4ca2-058e-2ae4-364f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="151b-55a6-aedf-b69f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="daec-c7fc-4ab4-114d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2286-183c-9545-9e58" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="1022-4484-f676-a003" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Surface Unit" hidden="false" id="009f-1992-bb94-e3a2" targetId="464e-890a-84b2-8ce9" primary="true"/>
+            <categoryLink name="Krykun-Class" hidden="false" id="22ed-d357-43cd-b275" targetId="7957-941d-d81a-ad34" primary="false"/>
+            <categoryLink name="Russian" hidden="false" id="6d6b-1f40-5c14-c8c0" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Krykun" hidden="false" id="7a12-8acc-e62d-f42f" collective="false" targetId="c9c8-eda1-3b4c-5bba" type="selectionEntry"/>
+            <entryLink import="true" name="Attached Unit [Black Wolf]" hidden="false" id="c569-d4e4-a949-19fa" type="selectionEntryGroup" targetId="54d1-4531-ffd1-4eb3"/>
+          </entryLinks>
+          <costs>
+            <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="false" id="3fde-d0f5-4027-0e73" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -11241,6 +11290,52 @@ Review 3.05.02: v23 (Orbat 3.05 25/04/2024 released 18/08/2024)</readme>
         </entryLink>
         <entryLink import="true" name="Rurik Frigate Squadron" hidden="false" id="a401-2884-20fc-c097" type="selectionEntry" targetId="fc08-88fc-3496-d534"/>
       </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Krykun Shockwave Squadron" hidden="true" id="ed89-041c-f3e7-a35a" collective="false">
+          <modifiers>
+            <modifier type="add" value="79fe-c00f-c7c0-3c7a" field="category">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="1022-4484-f676-a003" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="remove" value="43a2-7e77-ff29-fb5c" field="category">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="1022-4484-f676-a003" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f8d5-fb9d-e4a5-33ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="4ca2-058e-2ae4-364f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="151b-55a6-aedf-b69f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="daec-c7fc-4ab4-114d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2286-183c-9545-9e58" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="1022-4484-f676-a003" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Surface Unit" hidden="false" id="17d6-dd66-8737-8957" targetId="464e-890a-84b2-8ce9" primary="true"/>
+            <categoryLink name="Krykun-Class" hidden="false" id="499e-c0be-5f53-1b56" targetId="7957-941d-d81a-ad34" primary="false"/>
+            <categoryLink name="Russian" hidden="false" id="7f5f-a902-1859-76bc" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Krykun" hidden="false" id="03a6-6bf0-db69-3459" collective="false" targetId="c9c8-eda1-3b4c-5bba" type="selectionEntry"/>
+            <entryLink import="true" name="Attached Unit [Black Wolf]" hidden="false" id="64e5-0cd5-aebe-1d0d" type="selectionEntryGroup" targetId="54d1-4531-ffd1-4eb3"/>
+          </entryLinks>
+          <costs>
+            <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+            <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="false" id="de60-9b11-c6d7-8189" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>

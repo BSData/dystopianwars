@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7b3f-8541-c5c8-b666" name="Sultanate v3.07" revision="14" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="7b3f-8541-c5c8-b666" name="Sultanate v3.07" revision="15" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <comment>ORBAT 3.07 (published 08/05/2024)</comment>
   <readme>Review 0.03.a0: First version published
 Review 1.01.a0: Second release
@@ -14,7 +14,8 @@ Review 3.04.01: update to ORBAT 3.04 last release (date 2023-09-01 rev2)
 Review 3.05.00: update to ORBAT 3.05 last release (date 2023-10-19) rev2
 Review 3.05.01: correction after ORBAT 3.05 update (to be used with New Recruit)
 Review 3.06.00: update to ORBAT 3.06 rev2
-Review 3.07.00: update to ORBAT 3.07 (published 2408xx)</readme>
+Review 3.07.00: update to ORBAT 3.07 (published 240805)
+Review 3.07.01: correction</readme>
   <categoryEntries>
     <categoryEntry id="24d7-a2ac-a5bb-a77d" name="Temir-Class" publicationId="d854-a2d6-3d52-44c4" hidden="false"/>
     <categoryEntry id="03eb-089a-0c01-5751" name="Turkish" publicationId="d854-a2d6-3d52-44c4" hidden="false"/>
@@ -629,7 +630,7 @@ Review 3.07.00: update to ORBAT 3.07 (published 2408xx)</readme>
             <constraint field="selections" scope="force" value="0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6035-48eb-3f03-e366" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Titan-clas" hidden="false" id="7b2f-933f-fd62-57e3" targetId="63d9-de30-71f7-b539" type="category">
+        <categoryLink name="Titan-clas" hidden="false" id="7b2f-933f-fd62-57e3" targetId="63d9-de30-71f7-b539">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="false" id="db6a-4f4f-16ac-6490" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
@@ -2472,7 +2473,7 @@ Review 3.07.00: update to ORBAT 3.07 (published 2408xx)</readme>
         <constraint type="max" value="1" field="selections" scope="force" shared="false" id="f28c-0842-aa62-604f" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry id="ffd9-d460-9e9a-f76c" name="Hırka Skycutter Squadron" publicationId="d854-a2d6-3d52-44c4" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="ffd9-d460-9e9a-f76c" name="Hirka Skycutter Squadron" publicationId="d854-a2d6-3d52-44c4" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="remove" field="category" value="03eb-089a-0c01-5751">
           <conditions>
@@ -2510,7 +2511,7 @@ Review 3.07.00: update to ORBAT 3.07 (published 2408xx)</readme>
         <categoryLink id="6e09-52c7-c57b-1776" name="Turkish" hidden="false" targetId="03eb-089a-0c01-5751" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="00ba-1dfc-ad6e-ffdb" name="Hırka" hidden="false" collective="false" import="true" targetId="3f3c-df85-cd90-0071" type="selectionEntry"/>
+        <entryLink id="00ba-1dfc-ad6e-ffdb" name="Hirka" hidden="false" collective="false" import="true" targetId="3f3c-df85-cd90-0071" type="selectionEntry"/>
         <entryLink id="afdc-f2c4-306a-e1f4" name="Attached Unit [Turkish Aerial]" hidden="false" collective="false" import="true" targetId="2e7e-0328-269a-76cc" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -2982,7 +2983,7 @@ Review 3.07.00: update to ORBAT 3.07 (published 2408xx)</readme>
         <categoryLink name="Praxilla-Class" hidden="false" id="0cca-4311-4f4a-2736" targetId="21bf-83f5-3398-510b" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="4537-023a-9e58-79d8" name="Praxilla" hidden="false" collective="false" import="true" targetId="17b4-1966-685f-3f8e" type="selectionEntry"/>
+        <entryLink id="4537-023a-9e58-79d8" name="Praxilla" hidden="false" collective="false" import="true" targetId="074e-0a69-c00a-5d21" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -3016,7 +3017,7 @@ Review 3.07.00: update to ORBAT 3.07 (published 2408xx)</readme>
         <categoryLink name="Ketos-Class" hidden="false" id="cff5-edb2-ec26-6e9b" targetId="67a1-d92b-64f1-a7d7" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="0e28-d09e-e791-447f" name="Ketos" hidden="false" collective="false" import="true" targetId="f36e-9326-2451-2769" type="selectionEntry"/>
+        <entryLink id="0e28-d09e-e791-447f" name="Ketos" hidden="false" collective="false" import="true" targetId="ee5d-4891-a30d-c2e3" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="4"/>
@@ -3045,7 +3046,7 @@ Review 3.07.00: update to ORBAT 3.07 (published 2408xx)</readme>
         <categoryLink name="Lotan-Class" hidden="false" id="57d2-c3b7-7f86-e499" targetId="797c-79c2-9b15-1d46" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="e844-9c35-4ec5-bf56" name="Lotan" hidden="false" collective="false" import="true" targetId="a4a2-68dd-faf6-19f4" type="selectionEntry"/>
+        <entryLink id="e844-9c35-4ec5-bf56" name="Lotan" hidden="false" collective="false" import="true" targetId="2664-8ee6-6735-9728" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
@@ -8455,7 +8456,7 @@ Review 3.07.00: update to ORBAT 3.07 (published 2408xx)</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3f3c-df85-cd90-0071" name="Hırka" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="3f3c-df85-cd90-0071" name="Hirka" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9a18-5798-56e6-dbcd" type="min"/>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c8a0-d614-6c56-c2c5" type="max"/>
@@ -9981,181 +9982,6 @@ Review 3.07.00: update to ORBAT 3.07 (published 2408xx)</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a4a2-68dd-faf6-19f4" name="Lotan" publicationId="908d-6feb-2e9e-843b" hidden="false" collective="false" import="true" type="model">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10ea-c850-9c85-fff0" type="min"/>
-        <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b8a-b86c-1d46-d647" type="max"/>
-      </constraints>
-      <infoLinks>
-        <infoLink id="5c59-fecd-3ccf-c8ef" name="Lotan" hidden="false" targetId="13a3-0739-e1f4-6099" type="profile"/>
-        <infoLink id="2515-6bc9-7a5c-ac95" name="Amphibious [3.07a]" hidden="false" targetId="1d20-a887-16ac-7f4c" type="rule"/>
-        <infoLink id="0cc7-1e26-5917-130f" name="Submarauder [3.07a]" hidden="false" targetId="481e-dcda-510f-f32d" type="rule"/>
-        <infoLink id="ec48-3cac-c8f8-dc3b" name="Mechanical Soul [3.07a]" hidden="false" targetId="a278-bd16-046d-acb6" type="rule"/>
-        <infoLink id="67b6-d33a-b367-3695" name="Colossus [3.07a]" hidden="false" targetId="f9be-f519-a9c2-f311" type="rule"/>
-        <infoLink id="48dc-a562-e66c-3574" name="Enlightened Science [3.06]" hidden="false" targetId="95d3-c242-ee78-9b3b" type="rule"/>
-        <infoLink id="3116-05ad-4555-78c0" name="Apocalypse Protocol [3.06]" hidden="false" targetId="902a-02ab-5754-084d" type="rule"/>
-        <infoLink id="02db-afb1-91cc-cb30" name="Nemesis Protocol [3.06]" hidden="false" targetId="958a-c386-b88c-bdfe" type="rule"/>
-        <infoLink id="6b58-9bdd-7c51-adde" name="Transconductive Power Link [3.06]" hidden="false" targetId="271a-72c8-e925-8dec" type="rule"/>
-        <infoLink id="867f-2767-5196-fa39" name="Scything Strike [3.06]" hidden="false" targetId="d2f1-7efd-6678-9003" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="99df-aa27-bb07-410d" name="Myriapoda Colossus" hidden="false" targetId="df88-9193-acdf-316b" primary="false"/>
-        <categoryLink id="2bcf-975a-597e-f5b8" name="Crimson League" hidden="false" targetId="8f91-9e5a-36f5-036a" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="ee80-e33c-06e4-bad0" name="Ceous Shockmaw" hidden="false" collective="false" import="true" targetId="dc32-e823-4ed1-7601" type="selectionEntry">
-          <modifiers>
-            <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a376-c8ba-300b-3933" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4bca-032e-00e2-da1e" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="db58-a6c3-d947-5466" name="Ventral Atom Smashers" hidden="false" collective="false" import="true" targetId="8a63-5b08-c48e-5f15" type="selectionEntry">
-          <modifiers>
-            <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e267-d46e-08a7-fd2e" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e53e-4d71-de97-c728" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="136"/>
-        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="f36e-9326-2451-2769" name="Ketos" publicationId="908d-6feb-2e9e-843b" hidden="false" collective="false" import="true" type="model">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="007d-d584-c649-2089" type="min"/>
-        <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ec0-dd36-6785-772b" type="max"/>
-      </constraints>
-      <infoLinks>
-        <infoLink id="22b5-07f0-0197-a357" name="Ketos" hidden="false" targetId="c010-2e6e-9ff2-51f2" type="profile"/>
-        <infoLink id="7948-1678-9edc-908f" name="Mechanical Soul [3.07a]" hidden="false" targetId="a278-bd16-046d-acb6" type="rule"/>
-        <infoLink id="f81d-5c87-7f57-4a89" name="Submarauder [3.07a]" hidden="false" targetId="481e-dcda-510f-f32d" type="rule"/>
-        <infoLink id="42a7-5586-0bcc-73da" name="Transconductive Power Link [3.06]" hidden="false" targetId="271a-72c8-e925-8dec" type="rule"/>
-        <infoLink id="f17c-cc2c-3a15-8c40" name="Mine Layer [3.07a]" hidden="false" targetId="940f-44f3-71bf-f26c" type="rule"/>
-        <infoLink id="3c38-bb27-f003-5cd0" name="Apocalypse Protocol [3.06]" hidden="false" targetId="902a-02ab-5754-084d" type="rule"/>
-        <infoLink id="c477-7cad-fd4e-a446" name="Colossus [3.07a]" hidden="false" targetId="f9be-f519-a9c2-f311" type="rule"/>
-        <infoLink id="9fe2-328a-1d61-4a1d" name="Enlightened Science [3.06]" hidden="false" targetId="95d3-c242-ee78-9b3b" type="rule"/>
-        <infoLink id="647f-daf3-74bc-9d9a" name="Agitation Harmoniser [3.06]" hidden="false" targetId="53ad-7286-fd8e-bea9" type="rule"/>
-        <infoLink id="62e9-9ef6-752b-c7d3" name="Amphibious [3.07a]" hidden="false" targetId="1d20-a887-16ac-7f4c" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="084e-3f80-e87c-04ff" name="Myriapoda Colossus" hidden="false" targetId="df88-9193-acdf-316b" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="4f6c-e9d7-8091-9cbd" name="Ventral Atom Smashers" hidden="false" collective="false" import="true" targetId="8a63-5b08-c48e-5f15" type="selectionEntry">
-          <modifiers>
-            <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6b5b-0cf8-6bb2-f694" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6710-66c1-ec66-4a64" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="0240-bade-b7a5-3b49" name="Sturginium Agitator" hidden="false" collective="false" import="true" targetId="1517-4505-be0f-996f" type="selectionEntry">
-          <modifiers>
-            <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="157e-af88-36ff-9e66" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="35ca-0ebe-cde0-a5fd" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="128"/>
-        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="17b4-1966-685f-3f8e" name="Praxilla" publicationId="908d-6feb-2e9e-843b" hidden="false" collective="false" import="true" type="model">
-      <constraints>
-        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3f27-d16d-b246-a857" type="min"/>
-        <constraint field="selections" scope="parent" value="6" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="06cc-78b0-c92c-9b7e" type="max"/>
-      </constraints>
-      <infoLinks>
-        <infoLink id="ef25-a3c2-63fb-6a16" name="Terror From Below [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="405a-6e4d-45ad-b188" type="rule"/>
-        <infoLink id="0726-28f1-e901-0e3b" name="Deep Dive [3.07a]" publicationId="908d-6feb-2e9e-843b" hidden="false" targetId="3bf2-4bf2-c33d-95ab" type="rule"/>
-        <infoLink id="e948-5d18-fb35-d32c" name="Praxilla" hidden="false" targetId="b9ae-2c38-9920-a0bd" type="profile"/>
-        <infoLink id="6120-00b4-fc7b-a58e" name="Mechanical Soul [3.07a]" publicationId="908d-6feb-2e9e-843b" hidden="false" targetId="a278-bd16-046d-acb6" type="rule"/>
-        <infoLink id="1b1b-b1da-9304-51d4" name="Linear Dash [3.07a]" publicationId="908d-6feb-2e9e-843b" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
-        <infoLink id="d06d-9338-7f72-aa70" name="Hammer Sweep [3.07a]" publicationId="908d-6feb-2e9e-843b" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="66ab-b269-bf4f-700a" name="Automata" hidden="false" targetId="f143-0c0d-137b-1745" primary="false"/>
-        <categoryLink id="6023-916f-576b-17bb" name="Hunter Submarine" hidden="false" targetId="32fd-997a-72b6-f5cb" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="0d00-4046-f69d-9c98" name="Hydrothermic Borer" hidden="false" collective="false" import="true" targetId="ca7c-65fe-6217-04df" type="selectionEntry">
-          <modifiers>
-            <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="144d-ee2a-25ab-4236" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb4f-3d8d-043f-7dca" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="d907-fad3-75f3-03a2" name="Pulse Broadside" hidden="false" collective="false" import="true" targetId="e70f-ef5d-1b71-fdf6" type="selectionEntry">
-          <modifiers>
-            <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="49f6-9143-83be-5877" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cebd-5d2f-bf87-0330" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="34"/>
-        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="fb7f-9d8f-3fc5-0e8b" name="Diogenes" publicationId="908d-6feb-2e9e-843b" hidden="false" collective="false" import="true" type="model">
-      <constraints>
-        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1845-fef9-e0ad-320c" type="min"/>
-        <constraint field="selections" scope="parent" value="5" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1389-0b8a-591b-72c4" type="max"/>
-      </constraints>
-      <infoLinks>
-        <infoLink id="0adf-c959-42b6-9802" name="Mechanical Soul [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="a278-bd16-046d-acb6" type="rule"/>
-        <infoLink id="6274-3e34-7057-8830" name="Pack Hunter [3.07a]" hidden="false" targetId="112e-82cb-42a3-83d2" type="rule"/>
-        <infoLink id="32b2-74c3-f139-406f" name="Diogenes" hidden="false" targetId="91a8-7717-9f98-09dc" type="profile"/>
-        <infoLink id="6350-65cd-34db-82d6" name="Triangulated Solution [3.07a]" hidden="false" targetId="8d45-38e1-cce2-fbf2" type="rule"/>
-        <infoLink id="543f-383f-b7ea-bff8" name="Deep Dive [3.07a]" hidden="false" targetId="3bf2-4bf2-c33d-95ab" type="rule"/>
-        <infoLink id="ab9-630e-f174-63b7" name="Maritime Patrol [3.07a]" hidden="false" targetId="0b7c-6003-8433-2817" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="aaea-c637-0dce-54a6" name="Automata" hidden="false" targetId="f143-0c0d-137b-1745" primary="false"/>
-        <categoryLink id="3192-b9a7-c3b4-61ef" name="Torpedo Submarine" hidden="false" targetId="a0ca-a702-aa5f-5333" primary="false"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="1f5a-e966-b3c5-e6f3" name="Weirding Torpedo Salvo" hidden="false" collective="false" import="true" targetId="ea71-b8ba-ff93-8170" type="selectionEntry">
-          <modifiers>
-            <modifier type="add" field="category" value="dbb4-72d5-bceb-70b3"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aaf2-9911-58af-ee33" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7598-1fa3-6118-af38" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="d73d-3f4f-67c2-2aab" name="Pulse Broadside" hidden="false" collective="false" import="true" targetId="e70f-ef5d-1b71-fdf6" type="selectionEntry">
-          <modifiers>
-            <modifier type="add" field="category" value="372f-19f1-09ed-e694"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="161f-d2c1-64bc-6de9" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b965-12bd-cf6f-cd98" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="41"/>
-        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="8b86-c3f0-5464-c54d" name="Sabiha SRS" publicationId="d854-a2d6-3d52-44c4" hidden="false" collective="true" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8474-0ec2-b77f-44fb" type="max"/>
@@ -11496,7 +11322,7 @@ Review 3.07.00: update to ORBAT 3.07 (published 2408xx)</readme>
     <catalogueLink type="catalogue" name="Enlightened Automata" id="3311-2521-6809-4cb9" targetId="68f4-e16c-8755-4269"/>
   </catalogueLinks>
   <entryLinks>
-    <entryLink import="true" name="Titan Mass Conveyor" hidden="true" id="6674-20dd-d036-494c" collective="false" targetId="862a-f729-aadb-a068" type="selectionEntry">
+    <entryLink import="true" name="Titan" hidden="true" id="6674-20dd-d036-494c" collective="false" targetId="862a-f729-aadb-a068" type="selectionEntry">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
