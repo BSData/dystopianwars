@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="526f-06e7-edaa-02b8" name="Weapon" revision="27" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar, UrsinePatriarch" authorContact="siponeric@hotmail.com / Discord: zharrpostingghoroth" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="526f-06e7-edaa-02b8" name="Weapon" revision="28" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar, UrsinePatriarch" authorContact="siponeric@hotmail.com / Discord: zharrpostingghoroth" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Weapon collection
 Review v1: starting document
 Review v2: imprevment to follow ORBAT requirments
@@ -27,7 +27,8 @@ Review v23: rev1 modification for Alliance 3.06 Orbat (06/07/24)
 Review v24: modification for Enlightment 3.06 Orbat (xx/07/24)
 Review v25: modification for Crown 3.06a Orbat (22/07/24)
 Review v26: modification for Sultanate 3.07 Orbat (24/10/24)
-Review v27: correction (31/10/24)</readme>
+Review v27: correction (31/10/24)
+Review v28: modification for Sultanate 3.08 Orbat (24/10/24)</readme>
   <categoryEntries>
     <categoryEntry id="dbb4-72d5-bceb-70b3" name="F" hidden="false"/>
     <categoryEntry id="372f-19f1-09ed-e694" name="P&amp;S" hidden="false"/>
@@ -4021,8 +4022,7 @@ Review v27: correction (31/10/24)</readme>
       <infoLinks>
         <infoLink id="dc7e-3e7e-a65a-adbf" name="Aerial [3.05]" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
         <infoLink id="5ac7-6b55-74b9-7b2d" name="Blast [3.04]" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
-        <infoLink id="677a-1125-cd39-1c3f" name="Sustained [3.04]" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
-        <infoLink id="adca-5ecd-88ea-5260" name="Limited [3.04]" hidden="false" targetId="3bd4-7e14-0aa2-97db" type="rule"/>
+        <infoLink id="adca-5ecd-88ea-5260" name="Extreme Range [3.04]" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
         <infoLink id="986d-2381-acfa-2534" name="Salvo Missile Silo" hidden="false" targetId="10f4-a9d7-24c1-a973" type="profile">
           <modifierGroups>
             <modifierGroup>
@@ -4372,6 +4372,18 @@ Review v27: correction (31/10/24)</readme>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="append" value="(Front First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="62c7-5eb0-d38e-486" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Front Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c595-958b-800e-2c04" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </infoLink>
         <infoLink id="6d59-9dc1-5316-8ef5" name="Gunnery [3.04]" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
         <infoLink id="0ebc-1a02-ed53-65d1" name="Extreme Range [3.04]" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
@@ -5493,7 +5505,7 @@ Review v27: correction (31/10/24)</readme>
         </infoLink>
         <infoLink id="a4a0-a8a8-1fe5-b978" name="Blast [3.04]" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
         <infoLink id="8c72-fdae-4271-ae05" name="Piercing [3.04]" hidden="false" targetId="0f8e-056c-75a9-caee" type="rule"/>
-        <infoLink id="9fcf-9fab-1f79-84f5" name="Heavy Particle Cannon [3.05]" hidden="false" targetId="f28a-65ec-04cc-c66d" type="rule"/>
+        <infoLink id="9fcf-9fab-1f79-84f5" name="Heavy Particle Cannon [3.07]" hidden="false" targetId="f28a-65ec-04cc-c66d" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -6138,7 +6150,7 @@ Review v27: correction (31/10/24)</readme>
         </infoLink>
         <infoLink id="3789-314d-bc70-3132" name="Torrent [3.04]" hidden="false" targetId="8081-2eef-5594-eb78" type="rule"/>
         <infoLink id="4291-b153-f6df-823e" name="Hazardous [3.04]" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-        <infoLink id="b9a4-a784-7d96-54d7" name="Agitation [3.05]" hidden="false" targetId="8fc1-39b0-6392-bf2c" type="rule"/>
+        <infoLink id="b9a4-a784-7d96-54d7" name="Agitation [3.07]" hidden="false" targetId="8fc1-39b0-6392-bf2c" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -6223,7 +6235,7 @@ Review v27: correction (31/10/24)</readme>
           </modifierGroups>
         </infoLink>
         <infoLink id="945e-f007-c1ae-573b" name="Hazardous [3.04]" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
-        <infoLink id="1ab4-db3c-30f2-7b22" name="Agitation [3.05]" hidden="false" targetId="8fc1-39b0-6392-bf2c" type="rule"/>
+        <infoLink id="1ab4-db3c-30f2-7b22" name="Agitation [3.07]" hidden="false" targetId="8fc1-39b0-6392-bf2c" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -6688,7 +6700,7 @@ Review v27: correction (31/10/24)</readme>
             </modifierGroup>
           </modifierGroups>
         </infoLink>
-        <infoLink id="b2f2-422a-bcb1-c24b" name="Magneto Encapsulator [3.06]" hidden="false" targetId="0dda-8909-05d2-e7ac" type="rule"/>
+        <infoLink id="b2f2-422a-bcb1-c24b" name="Magneto Encapsulator [3.07]" hidden="false" targetId="0dda-8909-05d2-e7ac" type="rule"/>
         <infoLink id="add9-9b6d-6a75-9796" name="Magnetic [3.04]" hidden="false" targetId="8c21-7eac-4f35-4268" type="rule"/>
         <infoLink id="6d51-2240-bdbb-f3a6" name="Blast [3.04]" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
       </infoLinks>
@@ -6714,7 +6726,7 @@ Review v27: correction (31/10/24)</readme>
         </infoLink>
         <infoLink id="d7a5-2c4c-0770-d03b" name="Sustained [3.04]" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
         <infoLink id="4c2f-ab79-f9d8-d84e" name="Piercing [3.04]" hidden="false" targetId="0f8e-056c-75a9-caee" type="rule"/>
-        <infoLink id="61c7-2a24-222c-f1a4" name="Gravitronic Imperilator [3.05]" hidden="false" targetId="c865-1e57-eb77-0063" type="rule"/>
+        <infoLink id="61c7-2a24-222c-f1a4" name="Gravitronic Imperilator [3.07]" hidden="false" targetId="c865-1e57-eb77-0063" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -6739,7 +6751,7 @@ Review v27: correction (31/10/24)</readme>
         <infoLink id="93fb-9dc7-bf18-9493" name="Blast [3.04]" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
         <infoLink id="0d4a-2315-8ebd-f0da" name="Hazardous [3.04]" hidden="false" targetId="ee84-8367-93d5-8d3f" type="rule"/>
         <infoLink id="7741-bc7a-748b-3c7f" name="Piercing [3.04]" hidden="false" targetId="0f8e-056c-75a9-caee" type="rule"/>
-        <infoLink id="dd99-a6b2-b248-bf0f" name="Agitation [3.05]" hidden="false" targetId="8fc1-39b0-6392-bf2c" type="rule"/>
+        <infoLink id="dd99-a6b2-b248-bf0f" name="Agitation [3.07]" hidden="false" targetId="8fc1-39b0-6392-bf2c" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -6953,7 +6965,7 @@ Review v27: correction (31/10/24)</readme>
           </modifiers>
         </infoLink>
         <infoLink id="f401-8089-dd91-3cd3" name="Aerial [3.05]" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
-        <infoLink id="5ea6-2e1e-2994-a39" name="D-Cannon [3.06]" hidden="false" targetId="5f8b-1815-9738-ae2c" type="rule"/>
+        <infoLink id="5ea6-2e1e-2994-a39" name="D-Cannon [3.08]" hidden="false" targetId="5f8b-1815-9738-ae2c" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -7050,7 +7062,7 @@ Review v27: correction (31/10/24)</readme>
           </modifierGroups>
         </infoLink>
         <infoLink id="936a-ebc2-297f-9903" name="Aerial [3.05]" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
-        <infoLink id="668e-46b5-a3c2-6ca5" name="D-Cannon [3.06]" hidden="false" targetId="5f8b-1815-9738-ae2c" type="rule"/>
+        <infoLink id="668e-46b5-a3c2-6ca5" name="D-Cannon [3.08]" hidden="false" targetId="5f8b-1815-9738-ae2c" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -7176,7 +7188,7 @@ Review v27: correction (31/10/24)</readme>
         </infoLink>
         <infoLink id="24e8-6fc4-d30f-8ccc" name="Blast [3.04]" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
         <infoLink id="09c0-722b-c2ea-bb45" name="Piercing [3.04]" hidden="false" targetId="0f8e-056c-75a9-caee" type="rule"/>
-        <infoLink id="884b-7d60-3b74-b298" name="Heavy Particle Cannon [3.05]" hidden="false" targetId="f28a-65ec-04cc-c66d" type="rule"/>
+        <infoLink id="884b-7d60-3b74-b298" name="Heavy Particle Cannon [3.07]" hidden="false" targetId="f28a-65ec-04cc-c66d" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -7209,7 +7221,7 @@ Review v27: correction (31/10/24)</readme>
         </infoLink>
         <infoLink id="7403-e64b-b4b5-adb2" name="Sustained [3.04]" hidden="false" targetId="8615-72cb-cdb5-0b1e" type="rule"/>
         <infoLink id="5036-da10-b434-700f" name="Piercing [3.04]" hidden="false" targetId="0f8e-056c-75a9-caee" type="rule"/>
-        <infoLink id="4c44-abea-f23e-3d8b" name="Gravitronic Imperilator [3.05]" hidden="false" targetId="c865-1e57-eb77-0063" type="rule"/>
+        <infoLink id="4c44-abea-f23e-3d8b" name="Gravitronic Imperilator [3.07]" hidden="false" targetId="c865-1e57-eb77-0063" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -7240,7 +7252,7 @@ Review v27: correction (31/10/24)</readme>
             </modifierGroup>
           </modifierGroups>
         </infoLink>
-        <infoLink id="af90-5320-0e6b-7045" name="Magneto Encapsulator [3.06]" hidden="false" targetId="0dda-8909-05d2-e7ac" type="rule"/>
+        <infoLink id="af90-5320-0e6b-7045" name="Magneto Encapsulator [3.07]" hidden="false" targetId="0dda-8909-05d2-e7ac" type="rule"/>
         <infoLink id="93ed-4756-448b-0bff" name="Magnetic [3.04]" hidden="false" targetId="8c21-7eac-4f35-4268" type="rule"/>
         <infoLink id="d539-0549-4c6e-9477" name="Blast [3.04]" hidden="false" targetId="89d8-2e21-11be-005d" type="rule"/>
       </infoLinks>
@@ -9024,7 +9036,7 @@ Review v27: correction (31/10/24)</readme>
     <selectionEntry id="a36a-4723-412a-cd76" name="Heavy Swift Torpedo Turret" publicationId="dbca-8d57-b848-457e" hidden="false" collective="false" import="false" type="upgrade">
       <infoLinks>
         <infoLink id="dbc4-112b-524a-8751" name="Piercing [3.04]" hidden="false" targetId="0f8e-056c-75a9-caee" type="rule"/>
-        <infoLink id="5051-f02d-41ff-25af" name="Swift Torpedo Turret" hidden="false" targetId="f768-8134-e9f0-9ce1" type="profile">
+        <infoLink id="5051-f02d-41ff-25af" name="Heavy Swift Torpedo Turret" hidden="false" targetId="15e6-d3f2-fe0-957a" type="profile">
           <modifiers>
             <modifier type="append" field="faa3-d69c-5156-2acf" value="(Front First)">
               <conditions>
@@ -9180,7 +9192,7 @@ Review v27: correction (31/10/24)</readme>
       </constraints>
       <infoLinks>
         <infoLink id="ca7e-20b7-23ea-2d37" name="Piercing [3.04]" hidden="false" targetId="0f8e-056c-75a9-caee" type="rule"/>
-        <infoLink id="c48e-9ff1-f078-a328" name="Swift Torpedo Turret" hidden="false" targetId="f768-8134-e9f0-9ce1" type="profile">
+        <infoLink id="c48e-9ff1-f078-a328" name="Heavy Swift Torpedo Turret" hidden="false" targetId="15e6-d3f2-fe0-957a" type="profile">
           <modifiers>
             <modifier type="append" field="faa3-d69c-5156-2acf" value="(Front First)">
               <conditions>
@@ -9359,7 +9371,7 @@ Review v27: correction (31/10/24)</readme>
         </infoLink>
         <infoLink id="173c-b717-6527-c1e8" name="Torrent [3.04]" hidden="false" targetId="8081-2eef-5594-eb78" type="rule"/>
         <infoLink id="461d-705-438b-2362" name="Devastating [3.04]" hidden="false" targetId="d633-3476-6a40-e860" type="rule"/>
-        <infoLink name="Heavy Conodontic Flenser [3.06]" id="cef6-bda2-6ffb-87f9" hidden="false" targetId="9bf2-a945-5888-a99f" type="rule"/>
+        <infoLink name="Heavy Conodontic Flenser [3.07]" id="cef6-bda2-6ffb-87f9" hidden="false" targetId="9bf2-a945-5888-a99f" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -10019,6 +10031,7 @@ Review v27: correction (31/10/24)</readme>
         <infoLink id="6bb6-8ca2-ccf1-83ac" name="Magnetic [3.04]" hidden="false" targetId="8c21-7eac-4f35-4268" type="rule"/>
         <infoLink id="7c2b-3d23-4b58-fd26" name="Aerial [3.05]" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
         <infoLink id="a99a-11a3-9755-4959" name="Extreme Range [3.04]" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
+        <infoLink id="7b93-eae6-b51c-7815" name="Indirect [3.04]" hidden="false" targetId="a387-ad76-761a-509e" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -10147,7 +10160,7 @@ Review v27: correction (31/10/24)</readme>
     <rule id="a387-ad76-761a-509e" name="Indirect [3.04]" publicationId="7f09-e243-2307-78d0" hidden="false">
       <description>Actions made with this Quality do not require Line of Sight and may select any non-Aerial enemy Unit within range and Fire Arc as an Initial Target. Actions with Indirect Quality count their target as Obscured for the duration of that Action.</description>
       <modifiers>
-        <modifier type="set" value="Indirect" field="name"/>
+        <modifier type="set" value="Indirect (ignore Obscured)" field="name"/>
       </modifiers>
     </rule>
     <rule id="3bd4-7e14-0aa2-97db" name="Limited [3.04]" publicationId="7f09-e243-2307-78d0" hidden="false">
@@ -10234,7 +10247,7 @@ Review v27: correction (31/10/24)</readme>
         <modifier type="set" value="Magneto Encapsulator" field="name"/>
       </modifiers>
     </rule>
-    <rule id="5f8b-1815-9738-ae2c" name="D-Cannon [3.06]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
+    <rule id="5f8b-1815-9738-ae2c" name="D-Cannon [3.08]" publicationId="d854-a2d6-3d52-44c4" hidden="false">
       <description>D-Cannon Batteries ignore Shield Generators. As a Valour Effect, before targets are declared using this weapon, all D-Cannons in the Unit lose the Indirect Quality and instead gain the Devastating Quality.</description>
       <modifiers>
         <modifier type="set" value="D-Cannon" field="name"/>
@@ -11038,9 +11051,9 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">10(6) / 7(4)</characteristic>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">10(6) / 7(4)</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial, Blast, Sustained, Limited</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">12(6) / 7(4)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">12(6) / 7(4)</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial, Blast, Extreme Range</characteristic>
       </characteristics>
     </profile>
     <profile id="6244-3624-bb86-3bd6" name="Scalpel Lancette" publicationId="7b2b-0f56-3962-5ec1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
@@ -11394,7 +11407,7 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
     <profile id="0c4c-e745-c0b7-ec46" name="X-Ray Laser Bank" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">12(7) / 8(5)</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">10(6) / 8(5)</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">6(3) / 4(2)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Arc, Sustained</characteristic>
@@ -11566,9 +11579,9 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
         <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">-</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">9(5) / 7(4)</characteristic>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">9(5) / 7(4)</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial, Magnetic, Extreme Range</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">11(5) / 7(4)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">11(5) / 7(4)</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Indirect (ignore Obscured), Magnetic, Extreme Range</characteristic>
       </characteristics>
     </profile>
     <profile id="58f8-353d-f129-e3c9" name="Horus Heavy Particle Cannon" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
