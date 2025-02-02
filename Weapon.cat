@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="526f-06e7-edaa-02b8" name="Weapon" revision="28" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar, UrsinePatriarch" authorContact="siponeric@hotmail.com / Discord: zharrpostingghoroth" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="526f-06e7-edaa-02b8" name="Weapon" revision="29" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar, UrsinePatriarch" authorContact="siponeric@hotmail.com / Discord: zharrpostingghoroth" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Weapon collection
 Review v1: starting document
 Review v2: imprevment to follow ORBAT requirments
@@ -28,7 +28,8 @@ Review v24: modification for Enlightment 3.06 Orbat (xx/07/24)
 Review v25: modification for Crown 3.06a Orbat (22/07/24)
 Review v26: modification for Sultanate 3.07 Orbat (24/10/24)
 Review v27: correction (31/10/24)
-Review v28: modification for Sultanate 3.08 Orbat (24/10/24)</readme>
+Review v28: modification for Sultanate 3.08 Orbat (24/10/24)
+Review v29: modification for Union 3.08 Orbat (02/02/25)</readme>
   <categoryEntries>
     <categoryEntry id="dbb4-72d5-bceb-70b3" name="F" hidden="false"/>
     <categoryEntry id="372f-19f1-09ed-e694" name="P&amp;S" hidden="false"/>
@@ -4510,12 +4511,11 @@ Review v28: modification for Sultanate 3.08 Orbat (24/10/24)</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d0b8-5a30-f5a4-0957" name="Rocket Pod" publicationId="e6a1-85d3-8979-7880" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="d0b8-5a30-f5a4-0957" name="Chace Rocket Pod" publicationId="e6a1-85d3-8979-7880" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="29d0-40a9-e068-c4e4" name="Aerial [3.05]" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
-        <infoLink id="c6a3-8f9e-a484-5b28" name="Torpedo [3.04]" hidden="false" targetId="d673-c4da-202e-fbfc" type="rule"/>
-        <infoLink id="360e-c999-1bbc-6325" name="High Velocity [3.04]" hidden="false" targetId="5b8e-71d1-641d-73f9" type="rule"/>
-        <infoLink id="589f-c86e-ecee-5e88" name="Rocket Pod" hidden="false" targetId="71a8-e83e-baec-1566" type="profile">
+        <infoLink id="360e-c999-1bbc-6325" name="Limited [3.04]" hidden="false" targetId="3bd4-7e14-0aa2-97db" type="rule"/>
+        <infoLink id="589f-c86e-ecee-5e88" name="Chace Rocket Pod" hidden="false" targetId="71a8-e83e-baec-1566" type="profile">
           <modifierGroups>
             <modifierGroup>
               <modifiers>
@@ -5303,6 +5303,18 @@ Review v28: modification for Sultanate 3.08 Orbat (24/10/24)</readme>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="append" value="(Front First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="62c7-5eb0-d38e-486" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Front Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c595-958b-800e-2c04" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </infoLink>
         <infoLink id="9f6b-3ad7-efb4-bf82" name="Arc [3.04]" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
         <infoLink id="4913-5a82-65e7-c14d" name="Gunnery [3.04]" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
@@ -10071,6 +10083,82 @@ Review v28: modification for Sultanate 3.08 Orbat (24/10/24)</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="e77a-aae1-3ae2-7972" name="Electrocannon Battery" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1e22-4496-b23d-4a9f" name="Electrocannon Battery" hidden="false" targetId="b8a9-4973-726f-a5c8" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="e77a-aae1-3ae2-7972" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S/A">
+                  <conditions>
+                    <condition field="selections" scope="e77a-aae1-3ae2-7972" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="5b70-4095-b55c-9745" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/A">
+                  <conditions>
+                    <condition field="selections" scope="e77a-aae1-3ae2-7972" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="0cd5-1e4e-c51e-c338" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="e77a-aae1-3ae2-7972" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="4395-abdd-b03f-511c" name="Arc [3.04]" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
+        <infoLink id="c33c-4f28-bc16-7888" name="Gunnery [3.04]" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6401-31e9-c2a0-9b1f" name="Electrocannon Battery" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="89a6-2ca4-564c-34c6" name="Electrocannon Battery" hidden="false" targetId="b8a9-4973-726f-a5c8" type="profile">
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="6401-31e9-c2a0-9b1f" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S/A">
+                  <conditions>
+                    <condition field="selections" scope="6401-31e9-c2a0-9b1f" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="5b70-4095-b55c-9745" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/A">
+                  <conditions>
+                    <condition field="selections" scope="6401-31e9-c2a0-9b1f" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="0cd5-1e4e-c51e-c338" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="6401-31e9-c2a0-9b1f" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="01bb-9242-ece5-7b45" name="Arc [3.04]" hidden="false" targetId="6d56-fa67-1d6d-022b" type="rule"/>
+        <infoLink id="ea40-a73f-c8b4-6b1c" name="Gunnery [3.04]" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="c475-4c4f-de22-9080" name="Aerial [3.05]" publicationId="7f09-e243-2307-78d0" hidden="false">
@@ -10609,9 +10697,9 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
     <profile id="148e-6644-957f-1b53" name="Heavy Electrocannon Battery" publicationId="e6a1-85d3-8979-7880" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">10(6) / 6(2)</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">9(6) / 6(2)</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">8(5) / 6(3)</characteristic>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">8(5) / 6(3)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">7(4) / 6(3)</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Arc</characteristic>
       </characteristics>
     </profile>
@@ -11002,13 +11090,13 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial</characteristic>
       </characteristics>
     </profile>
-    <profile id="71a8-e83e-baec-1566" name="Rocket Pod" publicationId="e6a1-85d3-8979-7880" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="71a8-e83e-baec-1566" name="Chace Rocket Pod" publicationId="e6a1-85d3-8979-7880" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">3(2)</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">3(2)</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">4(3)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">4(3)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aereal</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aereal, Limited</characteristic>
       </characteristics>
     </profile>
     <profile id="44f4-ffed-a929-066f" name="Rolling Broadside" publicationId="129d-da97-caec-1ddd" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
@@ -11140,10 +11228,10 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
     <profile id="f2ed-b37c-7f10-c862" name="Sperry Torpedo Launcher" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">3(2) / 2(-)</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">3(2) / 2(1)</characteristic>
-        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">2(1) / 2(1)</characteristic>
-        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Submerged, Torpedo, Extreme Range</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">4(1) / 2(-)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">4(2) / 4(2)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">4(2) / 4(2)</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Submerged, Torpedo,</characteristic>
       </characteristics>
     </profile>
     <profile id="fec4-45e0-eefc-676f" name="Sturginium Agitator" publicationId="908d-6feb-2e9e-843b" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
@@ -11591,6 +11679,15 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">11(6) / 7(4)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">7(4) / 5(3)</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Piercing, Blast, Devastating</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b8a9-4973-726f-a5c8" name="Electrocannon Battery" publicationId="e6a1-85d3-8979-7880" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">4(3) / 3(2)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">3(2) / 3(1)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Arc</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

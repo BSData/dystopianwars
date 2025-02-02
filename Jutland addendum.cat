@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="82c-5b7d-a1e8-b68d" name="Jutland addendum" revision="3" battleScribeVersion="2.03" authorName="UrsinePatriarch / Siponer" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="33cf-b4a6-bff0-0d70" type="catalogue">
+<catalogue id="82c-5b7d-a1e8-b68d" name="Jutland addendum" revision="4" battleScribeVersion="2.03" authorName="UrsinePatriarch / Siponer" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="33cf-b4a6-bff0-0d70" type="catalogue">
   <readme>Version 3.06.00: new library with Jutland data
 Version 3.06.01: library Correction
-Version 3.06.02: library Correction</readme>
+Version 3.06.02: library Correction
+Version 3.06.03: library Correction</readme>
   <categoryEntries>
     <categoryEntry id="ea28-f0c6-7f02-85ca" name="Asgard in Scion Battlefleet" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
     <categoryEntry id="23ad-0c8f-26b7-f9f8" name="Asgard-class" publicationId="33cf-b4a6-bff0-0d70" hidden="false"/>
@@ -29,9 +30,9 @@ Version 3.06.02: library Correction</readme>
   <sharedSelectionEntries>
     <selectionEntry id="3801-ba38-98b1-9481" name="Angrboda Midget Sub Carrier Squadron" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="d6e4-554b-6479-7e96" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
-        <infoLink id="cd70-9818-6e19-68e1" name="Hammer Sweep [3.07a]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
-        <infoLink id="09d1-f583-c0b3-f7c2" name="Inductorium [3.07a]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
+        <infoLink id="d6e4-554b-6479-7e96" name="Vulnerable Stern [3.08]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="cd70-9818-6e19-68e1" name="Hammer Sweep [3.08]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
+        <infoLink id="09d1-f583-c0b3-f7c2" name="Inductorium [3.08]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
         <infoLink id="e824-c31d-5a64-5077" name="Wolves of the Sea [3.06]" hidden="false" targetId="6ccb-0ea0-6ce7-e987" type="rule"/>
         <infoLink name="Angrboda" id="43ce-8185-9145-9887" hidden="false" type="profile" targetId="86e6-2b9c-fee4-83ef"/>
         <infoLink name="Draugr [3.06]" id="a6b6-c4c3-6008-55cf" hidden="false" publicationId="e265-8c7f-a4b2-a48e" targetId="4737-3601-0486-d420" type="rule">
@@ -176,25 +177,28 @@ Version 3.06.02: library Correction</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="false" id="7501-1e1b-25b1-3c52" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="6f88-9e58-8350-7985" name="Asgard Rotor Tethership" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
         <infoLink id="7ca9-5057-9eb3-8afe" name="Asgard" hidden="false" targetId="fa46-5cf9-8d19-a723" type="profile"/>
-        <infoLink id="6c7e-8a65-d316-e24b" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
-        <infoLink id="5c0d-604c-5a40-1857" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="0f3e-c657-fdcb-45b9" name="Advanced Repair Facilities (x) [3.07a]" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule">
+        <infoLink id="6c7e-8a65-d316-e24b" name="Vulnerable Stern [3.08]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="5c0d-604c-5a40-1857" name="Heavy Firepower [3.08]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="0f3e-c657-fdcb-45b9" name="Advanced Repair Facilities (x) [3.08]" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Advanced Repair Facilities (3)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="2d35-9374-8fe8-ea50" name="Inductorium [3.07a]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
+        <infoLink id="2d35-9374-8fe8-ea50" name="Inductorium [3.08]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
         <infoLink id="d122-73f2-2749-7835" name="Ride of the Valkyrie [3.06]" hidden="false" targetId="879e-a9c3-d06e-b405" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Ride of the Valkyrie (2)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="1343-884b-cc76-685a" name="Hammer Sweep [3.07a]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
-        <infoLink id="9987-8b63-5af3-b9f2" name="Aerial Repair Platform [3.06]" hidden="false" targetId="63fd-1026-6a17-0bc9" type="rule"/>
+        <infoLink id="1343-884b-cc76-685a" name="Hammer Sweep [3.08]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
+        <infoLink id="9987-8b63-5af3-b9f2" name="Aerial Repair Platform [3.07]" hidden="false" targetId="63fd-1026-6a17-0bc9" type="rule"/>
         <infoLink id="4124-5437-c6d1-8326" name="Wolves of the Sea [3.06]" hidden="false" targetId="6ccb-0ea0-6ce7-e987" type="rule"/>
         <infoLink id="432f-22d4-9d05-3857" name="Hoved Targeting Array [3.06]" hidden="false" targetId="4328-ea2b-77b3-97c0" type="rule"/>
         <infoLink name="Draugr [3.06]" id="fac1-26c4-3e5b-5fb1" hidden="false" publicationId="e265-8c7f-a4b2-a48e" targetId="4737-3601-0486-d420" type="rule">
@@ -284,9 +288,9 @@ Version 3.06.02: library Correction</readme>
     </selectionEntry>
     <selectionEntry id="a7be-32d7-d157-aafc" name="Baldr Shock Raider Squadron" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="f2d3-4875-47f9-564b" name="Vanguard [3.07a]" hidden="false" targetId="f721-8318-3875-0140" type="rule"/>
-        <infoLink id="6e5c-6555-c474-45da" name="Hammer Sweep [3.07a]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
-        <infoLink id="b115-a517-7292-2d3a" name="Inductorium [3.07a]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
+        <infoLink id="f2d3-4875-47f9-564b" name="Vanguard [3.08]" hidden="false" targetId="f721-8318-3875-0140" type="rule"/>
+        <infoLink id="6e5c-6555-c474-45da" name="Hammer Sweep [3.08]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
+        <infoLink id="b115-a517-7292-2d3a" name="Inductorium [3.08]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
         <infoLink id="6770-ce3b-228e-7e0b" name="Rocket Barrage [3.06]" hidden="false" targetId="1042-355a-94f3-b6be" type="rule"/>
         <infoLink id="8eaf-10b5-f10d-fca0" name="Wolves of the Sea [3.06]" hidden="false" targetId="6ccb-0ea0-6ce7-e987" type="rule"/>
         <infoLink name="Baldr" id="8a83-a4b-205e-c55" hidden="false" type="profile" targetId="4e10-3529-86e5-a1f3"/>
@@ -302,7 +306,7 @@ Version 3.06.02: library Correction</readme>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Imperium" hidden="false" id="7ce-1732-597c-4da7" targetId="381f-fee3-786c-1414" primary="true"/>
-        <categoryLink name="Shock Rocket Frigate" hidden="false" id="8e22-1547-3eb-5135" targetId="bb8f-e8fe-1820-d3f2" primary="false"/>
+        <categoryLink name="Shock Raider" hidden="false" id="a96e-d66b-af8b-c023" targetId="bf38-f421-2003-fbf2" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="891f-2d85-d500-bf8b" name="Variants" hidden="false" collective="false" import="true" defaultSelectionEntryId="b734-4a9d-533c-ccd7" sortIndex="2">
@@ -393,19 +397,22 @@ Version 3.06.02: library Correction</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="false" id="8136-1179-a316-97f4" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="9150-ebc2-5283-7987" name="Bogmaor Flak Raider Squadron" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="2b88-6dfa-e9fd-48ff" name="Anti-Air Specialist [3.07a]" hidden="false" targetId="7baa-3e4c-35ea-5614" type="rule"/>
-        <infoLink id="639a-d639-d0f1-051b" name="Flak Barrage (x) [3.07a]" hidden="false" targetId="7b67-714d-bb2b-6297" type="rule">
+        <infoLink id="2b88-6dfa-e9fd-48ff" name="Anti-Air Specialist [3.08]" hidden="false" targetId="7baa-3e4c-35ea-5614" type="rule"/>
+        <infoLink id="639a-d639-d0f1-051b" name="Flak Barrage (x) [3.08]" hidden="false" targetId="7b67-714d-bb2b-6297" type="rule">
           <modifiers>
             <modifier type="set" value="Flak Barrage (5)" field="name"/>
           </modifiers>
         </infoLink>
         <infoLink id="26ac-5603-9cc8-8f6e" name="Freya Array [3.06]" hidden="false" targetId="ed63-d88a-ee61-eadb" type="rule"/>
-        <infoLink id="4b7f-9d29-abc8-5238" name="Hammer Sweep [3.07a]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
-        <infoLink id="4dd8-b321-7ed1-a172" name="Inductorium [3.07a]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
-        <infoLink id="9438-dbc7-40de-8da0" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="4b7f-9d29-abc8-5238" name="Hammer Sweep [3.08]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
+        <infoLink id="4dd8-b321-7ed1-a172" name="Inductorium [3.08]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
+        <infoLink id="9438-dbc7-40de-8da0" name="Vulnerable Stern [3.08]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
         <infoLink id="2183-3d9e-9a7f-c8ea" name="Wolves of the Sea [3.06]" hidden="false" targetId="6ccb-0ea0-6ce7-e987" type="rule"/>
         <infoLink name="Bogmaor" id="4215-5280-9833-8fdc" hidden="false" type="profile" targetId="3c90-fd59-4f54-45d8"/>
         <infoLink name="Draugr [3.06]" id="8099-7ccb-222-c3f3" hidden="false" publicationId="e265-8c7f-a4b2-a48e" targetId="4737-3601-0486-d420" type="rule">
@@ -462,15 +469,18 @@ Version 3.06.02: library Correction</readme>
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="false" id="14db-5f98-6c11-6618" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="2169-35f2-f557-22f0" name="Einherjar Colossus Squadron" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="b066-bd8c-13d7-daa3" name="Amphibious [3.07a]" hidden="false" targetId="1d20-a887-16ac-7f4c" type="rule"/>
-        <infoLink id="83ed-e8e0-471c-d20b" name="Inductorium [3.07a]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
-        <infoLink id="3bf5-97f4-928c-578b" name="Submarauder [3.07a]" hidden="false" targetId="481e-dcda-510f-f32d" type="rule"/>
+        <infoLink id="b066-bd8c-13d7-daa3" name="Amphibious [3.08]" hidden="false" targetId="1d20-a887-16ac-7f4c" type="rule"/>
+        <infoLink id="83ed-e8e0-471c-d20b" name="Inductorium [3.08]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
+        <infoLink id="3bf5-97f4-928c-578b" name="Submarauder [3.08]" hidden="false" targetId="481e-dcda-510f-f32d" type="rule"/>
         <infoLink id="0ef1-e10c-04fc-ea5d" name="Wolves of the Sea [3.06]" hidden="false" targetId="6ccb-0ea0-6ce7-e987" type="rule"/>
         <infoLink id="7b28-48f4-a5e9-2c67" name="Zornhau [3.06]" hidden="false" targetId="4a5b-4d6b-7a1f-4f0f" type="rule"/>
-        <infoLink id="a00b-ec7e-83e5-16db" name="Colossus [3.07a]" hidden="false" targetId="f9be-f519-a9c2-f311" type="rule"/>
+        <infoLink id="a00b-ec7e-83e5-16db" name="Colossus [3.08]" hidden="false" targetId="f9be-f519-a9c2-f311" type="rule"/>
         <infoLink name="Einherjar" id="fe99-cc0b-a108-a3f" hidden="false" type="profile" targetId="eb50-f481-3bc2-6c43"/>
         <infoLink id="3ef4-7e1c-8b70-284f" name="Blitzschlag [3.06]" hidden="false" targetId="5546-f9a9-21bf-1f4e" type="rule"/>
         <infoLink name="Draugr [3.06]" id="a12b-d070-fcf9-458c" hidden="false" publicationId="e265-8c7f-a4b2-a48e" targetId="4737-3601-0486-d420" type="rule">
@@ -725,14 +735,17 @@ Version 3.06.02: library Correction</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="false" id="6395-e509-a21b-5d61" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="b794-beed-6262-8461" name="Gefjon Merchantman Squadron" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="2fa9-1f50-2142-1a23" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
-        <infoLink id="7338-621e-6312-9f42" name="Hammer Sweep [3.07a]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
-        <infoLink id="50b1-abda-ee04-d3b7" name="Inductorium [3.07a]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
-        <infoLink id="f8dd-ed19-9abf-9c66" name="Landing Vessel [3.07a]" hidden="false" targetId="4869-03db-33f9-fa82" type="rule"/>
-        <infoLink id="aea0-6221-bbbc-4f1a" name="Logistical Support [3.07a]" hidden="false" targetId="408e-7b40-68d7-059f" type="rule"/>
+        <infoLink id="2fa9-1f50-2142-1a23" name="Vulnerable Stern [3.08]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="7338-621e-6312-9f42" name="Hammer Sweep [3.08]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
+        <infoLink id="50b1-abda-ee04-d3b7" name="Inductorium [3.08]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
+        <infoLink id="f8dd-ed19-9abf-9c66" name="Landing Vessel [3.08]" hidden="false" targetId="4869-03db-33f9-fa82" type="rule"/>
+        <infoLink id="aea0-6221-bbbc-4f1a" name="Logistical Support [3.08]" hidden="false" targetId="408e-7b40-68d7-059f" type="rule"/>
         <infoLink id="e9af-daba-3ab2-8f39" name="Wolves of the Sea [3.06]" hidden="false" targetId="6ccb-0ea0-6ce7-e987" type="rule"/>
         <infoLink name="Gefjon" id="4bc6-506f-57f-e008" hidden="false" type="profile" targetId="3fb3-3e6e-ea93-4cca"/>
         <infoLink name="Draugr [3.06]" id="3d77-2aff-d882-f232" hidden="false" publicationId="e265-8c7f-a4b2-a48e" targetId="4737-3601-0486-d420" type="rule">
@@ -831,13 +844,16 @@ Version 3.06.02: library Correction</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="false" id="0460-66d9-b579-5223" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="0c38-c457-dc93-4b64" name="Gungnir Raider Squadron" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="90b3-45f5-cc4a-c054" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
-        <infoLink id="52af-efce-d1f3-3f3b" name="Hammer Sweep [3.07a]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
-        <infoLink id="c44e-4ac5-dd64-8e62" name="Inductorium [3.07a]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
-        <infoLink id="6820-00e2-5a7d-6222" name="Powerslide [3.07a]" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
+        <infoLink id="90b3-45f5-cc4a-c054" name="Vulnerable Stern [3.08]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="52af-efce-d1f3-3f3b" name="Hammer Sweep [3.08]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
+        <infoLink id="c44e-4ac5-dd64-8e62" name="Inductorium [3.08]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
+        <infoLink id="6820-00e2-5a7d-6222" name="Powerslide [3.08]" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
         <infoLink id="6afe-a060-a1cf-bb7d" name="Wolves of the Sea [3.06]" hidden="false" targetId="6ccb-0ea0-6ce7-e987" type="rule"/>
         <infoLink name="Gungnir" id="5d33-e3da-7715-6c69" hidden="false" type="profile" targetId="56a8-c975-bbc7-3904"/>
         <infoLink name="Draugr [3.06]" id="fcfa-bc6f-e570-70b1" hidden="false" publicationId="e265-8c7f-a4b2-a48e" targetId="4737-3601-0486-d420" type="rule">
@@ -931,15 +947,18 @@ Version 3.06.02: library Correction</readme>
         <categoryLink name="Imperium" hidden="false" id="6254-c27e-1285-1aa1" targetId="381f-fee3-786c-1414" primary="true"/>
         <categoryLink name="Raider" hidden="false" id="c328-d68c-54d5-b689" targetId="a2fd-a5a3-9443-2fd5" primary="false"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="false" id="f9de-b05f-bc39-8a16" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="c7d1-107e-0e7e-b27d" name="Hoth Heavy Corvette Squadron" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="680e-346f-fdfa-87f0" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
-        <infoLink id="6147-6ac9-b545-90f9" name="Inductorium [3.07a]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
-        <infoLink id="5857-08a7-7f17-93f1" name="Accetable Attrition [3.07a]" hidden="false" targetId="f07b-4636-21d5-ac87" type="rule"/>
-        <infoLink id="e8b7-c4eb-9e00-eedc" name="Hammer Sweep [3.07a]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
+        <infoLink id="680e-346f-fdfa-87f0" name="Vulnerable Stern [3.08]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="6147-6ac9-b545-90f9" name="Inductorium [3.08]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
+        <infoLink id="5857-08a7-7f17-93f1" name="Accetable Attrition [3.08]" hidden="false" targetId="f07b-4636-21d5-ac87" type="rule"/>
+        <infoLink id="e8b7-c4eb-9e00-eedc" name="Hammer Sweep [3.08]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
         <infoLink id="6a12-ef94-a4ba-6947" name="Wolves of the Sea [3.06]" hidden="false" targetId="6ccb-0ea0-6ce7-e987" type="rule"/>
-        <infoLink id="5d2e-acf3-f90a-ba43" name="Corvette Duty [3.07a]" hidden="false" targetId="4836-a907-b316-55b2" type="rule"/>
+        <infoLink id="5d2e-acf3-f90a-ba43" name="Corvette Duty [3.08]" hidden="false" targetId="4836-a907-b316-55b2" type="rule"/>
         <infoLink id="8a9e-2ebe-9611-3d65" name="Draugr [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4737-3601-0486-d420" type="rule"/>
         <infoLink id="1279-b2db-91c3-d3f8" name="Advanced Sturmcoils [3.06]" hidden="false" targetId="e8ed-30fa-bca0-e124" type="rule"/>
         <infoLink name="Hoth" id="ed26-6505-f05d-98c0" hidden="false" type="profile" targetId="6a2a-4485-e12a-23cb"/>
@@ -1001,12 +1020,15 @@ Version 3.06.02: library Correction</readme>
           </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="false" id="b098-7445-1a51-1cb6" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="9cbd-74c6-ce1a-edb9" name="Heimdall Recon Raider Squadron" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="062e-2309-99a5-bef4" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
-        <infoLink id="2e5d-0968-75dc-e191" name="Hammer Sweep [3.07a]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
-        <infoLink id="d346-5e8c-8055-9e67" name="Inductorium [3.07a]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
+        <infoLink id="062e-2309-99a5-bef4" name="Vulnerable Stern [3.08]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="2e5d-0968-75dc-e191" name="Hammer Sweep [3.08]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
+        <infoLink id="d346-5e8c-8055-9e67" name="Inductorium [3.08]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
         <infoLink id="db57-6d14-fd00-601c" name="Wolves of the Sea [3.06]" hidden="false" targetId="6ccb-0ea0-6ce7-e987" type="rule"/>
         <infoLink id="a41c-8286-d67d-6e16" name="Draugr [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4737-3601-0486-d420" type="rule"/>
         <infoLink id="5140-7ada-1830-cbe2" name="Hoved Targeting Array [3.06]" hidden="false" targetId="4328-ea2b-77b3-97c0" type="rule"/>
@@ -1126,13 +1148,16 @@ Version 3.06.02: library Correction</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="false" id="c684-949d-82e7-47f3" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="b65a-90fc-2f65-f8ff" name="Jotunn Heavy Raider Squadron" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="6049-242c-187e-f3a6" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="6049-242c-187e-f3a6" name="Vulnerable Stern [3.08]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
         <infoLink id="cfed-5c21-46d7-33a2" name="Focused Gunnery [3.06]" hidden="false" targetId="9ec9-dd04-5a42-6864" type="rule"/>
-        <infoLink id="bedd-7e60-d6ee-e789" name="Hammer Sweep [3.07a]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
-        <infoLink id="f2db-47c6-13d7-c969" name="Inductorium [3.07a]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
+        <infoLink id="bedd-7e60-d6ee-e789" name="Hammer Sweep [3.08]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
+        <infoLink id="f2db-47c6-13d7-c969" name="Inductorium [3.08]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
         <infoLink id="e376-e9f2-396c-ec3a" name="Wolves of the Sea [3.06]" hidden="false" targetId="6ccb-0ea0-6ce7-e987" type="rule"/>
         <infoLink name="Jotunn" id="bc50-9ea-4053-369b" hidden="false" type="profile" targetId="ef8c-abce-5c21-9acb"/>
         <infoLink name="Draugr [3.06]" id="e323-359f-1f8f-1637" hidden="false" publicationId="e265-8c7f-a4b2-a48e" targetId="4737-3601-0486-d420" type="rule">
@@ -1411,12 +1436,15 @@ Version 3.06.02: library Correction</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="false" id="29db-3cab-d7c3-fbc6" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="bac8-c852-7325-c213" name="Loki Shadow Raider Squadron" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
-        <infoLink id="030d-d987-35ac-e94c" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
-        <infoLink id="41ea-fab5-85c0-07df" name="Hammer Sweep [3.07a]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
-        <infoLink id="2663-5e49-2b1a-700f" name="Inductorium [3.07a]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
+        <infoLink id="030d-d987-35ac-e94c" name="Vulnerable Stern [3.08]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="41ea-fab5-85c0-07df" name="Hammer Sweep [3.08]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
+        <infoLink id="2663-5e49-2b1a-700f" name="Inductorium [3.08]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
         <infoLink id="c521-55ca-9bde-e0f6" name="Shadow Hunter [3.07a]" hidden="false" targetId="741b-a6ce-dbe7-9409" type="rule"/>
         <infoLink id="2ef4-8375-a7c8-3030" name="Wolves of the Sea [3.06]" hidden="false" targetId="6ccb-0ea0-6ce7-e987" type="rule"/>
         <infoLink name="Loki" id="e8ec-58dd-78bc-cdf" hidden="false" type="profile" targetId="3fe5-5147-11c3-83e2"/>
@@ -1577,14 +1605,17 @@ Version 3.06.02: library Correction</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="false" id="e009-f09b-32a3-7dcb" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="75b6-7fa4-a8b2-a144" name="Odin Reaver Squadron" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="abe8-476e-5c19-3502" name="Hammer Sweep [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
+        <infoLink id="abe8-476e-5c19-3502" name="Hammer Sweep [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
         <infoLink id="debe-8b55-8e21-fa8e" name="Wolves of the Sea [3.06]" hidden="false" targetId="6ccb-0ea0-6ce7-e987" type="rule"/>
-        <infoLink id="ebf9-360b-9049-93b5" name="Vulnerable Stern [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
-        <infoLink id="2cc0-927a-8f20-e06e" name="Inductorium [3.07a]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
-        <infoLink id="d693-4c9a-992e-0d86" name="Vanguard [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="f721-8318-3875-0140" type="rule"/>
+        <infoLink id="ebf9-360b-9049-93b5" name="Vulnerable Stern [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="2cc0-927a-8f20-e06e" name="Inductorium [3.08]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
+        <infoLink id="d693-4c9a-992e-0d86" name="Vanguard [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="f721-8318-3875-0140" type="rule"/>
         <infoLink id="76b6-74cf-3c3c-1e4f" name="Huginn and Muninn [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="2b24-33b0-4be6-e24b" type="rule"/>
         <infoLink name="Odin" id="f52a-ab6d-eb03-ea36" hidden="false" type="profile" targetId="40ee-1ad4-ba00-5842"/>
         <infoLink name="Draugr [3.06]" id="97c4-a6ca-51f6-c426" hidden="false" publicationId="e265-8c7f-a4b2-a48e" targetId="4737-3601-0486-d420" type="rule">
@@ -1740,13 +1771,16 @@ Version 3.06.02: library Correction</readme>
         <categoryLink name="Imperium" hidden="false" id="d048-ca6b-4e5a-c94d" targetId="381f-fee3-786c-1414" primary="true"/>
         <categoryLink name="Reaver" hidden="false" id="d7a2-cf9e-e061-29d0" targetId="1ddc-aa2f-8fb6-36d4" primary="false"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="false" id="ba29-3fd7-6ccc-df02" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="c84d-bc40-9e8c-065b" name="Ragnarok Heavy Reaver" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
-        <infoLink id="d174-3822-fdeb-6244" name="Heavy Firepower [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="633e-983b-8918-ffb0" name="Inductorium [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
-        <infoLink id="7ac7-090e-c85c-defc" name="Vulnerable Stern [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
-        <infoLink id="86d7-1380-4036-278a" name="Hammer Sweep [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
+        <infoLink id="d174-3822-fdeb-6244" name="Heavy Firepower [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="633e-983b-8918-ffb0" name="Inductorium [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
+        <infoLink id="7ac7-090e-c85c-defc" name="Vulnerable Stern [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="86d7-1380-4036-278a" name="Hammer Sweep [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
         <infoLink id="29c2-6ea7-a38c-5efc" name="Wolves of the Sea [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="6ccb-0ea0-6ce7-e987" type="rule"/>
         <infoLink name="Ragnarok" id="4a0a-a8a2-78bb-96d9" hidden="false" type="profile" targetId="1816-3fb2-a023-dc0e"/>
         <infoLink name="Draugr [3.06]" id="ec21-8dd8-ab47-a68" hidden="false" publicationId="e265-8c7f-a4b2-a48e" targetId="4737-3601-0486-d420" type="rule">
@@ -1971,6 +2005,7 @@ Version 3.06.02: library Correction</readme>
     <selectionEntry id="bb05-1230-b037-0f66" name="Skagerrak" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="2370-2928-a2ee-b5d7" type="max"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="false" id="3a76-8380-5157-b550" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
       <infoLinks>
         <infoLink id="a66a-1500-702a-baac" name="Asgard" hidden="false" targetId="fa46-5cf9-8d19-a723" type="profile">
@@ -1978,21 +2013,21 @@ Version 3.06.02: library Correction</readme>
             <modifier type="set" field="name" value="Skagerrak"/>
           </modifiers>
         </infoLink>
-        <infoLink id="b8b8-6803-ec7a-12a1" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
-        <infoLink id="94e9-a720-8621-6e79" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="7c30-de3c-c027-3ee1" name="Advanced Repair Facilities (x) [3.07a]" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule">
+        <infoLink id="b8b8-6803-ec7a-12a1" name="Vulnerable Stern [3.08]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="94e9-a720-8621-6e79" name="Heavy Firepower [3.08]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="7c30-de3c-c027-3ee1" name="Advanced Repair Facilities (x) [3.08]" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Advanced Repair Facilities (4)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="cd2c-fb1f-5ef5-180c" name="Inductorium [3.07a]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
+        <infoLink id="cd2c-fb1f-5ef5-180c" name="Inductorium [3.08]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
         <infoLink id="c1d1-736e-d8d8-2113" name="Ride of the Valkyrie [3.06]" hidden="false" targetId="879e-a9c3-d06e-b405" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Ride of the Valkyrie (3)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="5c06-4f6d-c0f4-49b9" name="Hammer Sweep [3.07a]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
-        <infoLink id="2027-a3d1-519a-c562" name="Aerial Repair Platform [3.06]" hidden="false" targetId="63fd-1026-6a17-0bc9" type="rule"/>
+        <infoLink id="5c06-4f6d-c0f4-49b9" name="Hammer Sweep [3.08]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
+        <infoLink id="2027-a3d1-519a-c562" name="Aerial Repair Platform [3.07]" hidden="false" targetId="63fd-1026-6a17-0bc9" type="rule"/>
         <infoLink id="ed56-64cf-05c7-3f59" name="Wolves of the Sea [3.06]" hidden="false" targetId="6ccb-0ea0-6ce7-e987" type="rule"/>
         <infoLink id="018a-b76d-f089-484d" name="Draugr [3.06]" hidden="false" targetId="4737-3601-0486-d420" type="rule">
           <modifiers>
@@ -2080,19 +2115,19 @@ Version 3.06.02: library Correction</readme>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c74f-2850-3b34-c7cf" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="eee6-0964-faf8-dec0" name="Heavy Firepower [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="d7f3-71ca-b703-44bc" name="Inductorium [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
-        <infoLink id="a489-82b4-abb1-c1ca" name="Vulnerable Stern [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
-        <infoLink id="86a4-c8b9-f0ee-89e2" name="Aerial Repair Platform [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="63fd-1026-6a17-0bc9" type="rule"/>
+        <infoLink id="eee6-0964-faf8-dec0" name="Heavy Firepower [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="d7f3-71ca-b703-44bc" name="Inductorium [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
+        <infoLink id="a489-82b4-abb1-c1ca" name="Vulnerable Stern [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="86a4-c8b9-f0ee-89e2" name="Aerial Repair Platform [3.07]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="63fd-1026-6a17-0bc9" type="rule"/>
         <infoLink id="b61d-06db-03ce-7046" name="Draugr [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4737-3601-0486-d420" type="rule"/>
         <infoLink id="0928-97ae-c466-0bb0" name="Wolves of the Sea [3.06]" publicationId="33cf-b4a6-bff0-0d70" hidden="false" targetId="6ccb-0ea0-6ce7-e987" type="rule"/>
         <infoLink id="c684-b9e9-3852-fd54" name="Freya Array [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ed63-d88a-ee61-eadb" type="rule"/>
-        <infoLink id="5af3-a1f6-ba65-5336" name="Advanced Repair Facilities (x) [3.07a]" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule">
+        <infoLink id="5af3-a1f6-ba65-5336" name="Advanced Repair Facilities (x) [3.08]" hidden="false" targetId="6381-3c0e-84c8-6b3b" type="rule">
           <modifiers>
             <modifier type="append" field="name" value="Advanced Repair Facilities (2)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="76fb-3c8d-df18-34bd" name="Hammer Sweep [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
+        <infoLink id="76fb-3c8d-df18-34bd" name="Hammer Sweep [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
         <infoLink id="3dd4-528b-7a20-2fe7" name="Valkyrie Support [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="d150-aee0-09de-9393" type="rule"/>
         <infoLink name="Skjalden" id="89cc-e7bc-879d-719e" hidden="false" type="profile" targetId="63ce-4218-ac7b-094b"/>
       </infoLinks>
@@ -2197,14 +2232,14 @@ Version 3.06.02: library Correction</readme>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8574-9eb2-c342-eae5" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="1970-4fc2-d829-7a7b" name="Heavy Firepower [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="37c5-2296-834a-12b3" name="Inductorium [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
-        <infoLink id="c263-f87c-1bcb-026d" name="Vulnerable Stern [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
-        <infoLink id="7cc6-0d82-d253-6fe5" name="Devil’s Own Luck [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="da8d-c041-fd15-a8de" type="rule"/>
+        <infoLink id="1970-4fc2-d829-7a7b" name="Heavy Firepower [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="37c5-2296-834a-12b3" name="Inductorium [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
+        <infoLink id="c263-f87c-1bcb-026d" name="Vulnerable Stern [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="7cc6-0d82-d253-6fe5" name="Devil’s Own Luck [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="da8d-c041-fd15-a8de" type="rule"/>
         <infoLink id="e115-b2a0-4194-477d" name="Focused Gunnery [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="9ec9-dd04-5a42-6864" type="rule"/>
-        <infoLink id="971d-9811-da1f-a4cf" name="Disciplined [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecf0-d255-3339-4a1b" type="rule"/>
+        <infoLink id="971d-9811-da1f-a4cf" name="Disciplined [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecf0-d255-3339-4a1b" type="rule"/>
         <infoLink id="46b8-34e8-2fd4-1b42" name="Wolves of the Sea [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="6ccb-0ea0-6ce7-e987" type="rule"/>
-        <infoLink id="b746-57f1-879a-a5cb" name="Hammer Sweep [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
+        <infoLink id="b746-57f1-879a-a5cb" name="Hammer Sweep [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
         <infoLink name="SMS Danegeld" id="ae8e-4754-81c6-6046" hidden="false" type="profile" targetId="6350-0b53-01a6-077f"/>
         <infoLink name="Draugr [3.06]" id="66fa-7294-ca47-9eef" hidden="false" publicationId="e265-8c7f-a4b2-a48e" targetId="4737-3601-0486-d420" type="rule">
           <modifiers>
@@ -2296,10 +2331,10 @@ Version 3.06.02: library Correction</readme>
     </selectionEntry>
     <selectionEntry id="35c3-4624-eec6-2602" name="Thor Assault Raider Squadron" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="1843-fd0e-d584-3ad6" name="Hammer Sweep [3.07a]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
-        <infoLink id="d28d-e79e-f02a-616d" name="Inductorium [3.07a]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
+        <infoLink id="1843-fd0e-d584-3ad6" name="Hammer Sweep [3.08]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
+        <infoLink id="d28d-e79e-f02a-616d" name="Inductorium [3.08]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
         <infoLink id="f46f-57ee-a7da-ae5d" name="Storm Vanes [3.06]" hidden="false" targetId="347f-29f6-295e-e492" type="rule"/>
-        <infoLink id="4e65-280f-d1f9-a5cb" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="4e65-280f-d1f9-a5cb" name="Vulnerable Stern [3.08]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
         <infoLink id="d2c6-53b3-e3a1-a13a" name="Wolves of the Sea [3.06]" hidden="false" targetId="6ccb-0ea0-6ce7-e987" type="rule"/>
         <infoLink name="Thor" id="df0a-48e2-b661-975b" hidden="false" type="profile" targetId="87c4-4f50-27c2-a678"/>
         <infoLink name="Draugr [3.06]" id="c272-d16b-3480-7747" hidden="false" publicationId="e265-8c7f-a4b2-a48e" targetId="4737-3601-0486-d420" type="rule">
@@ -2453,11 +2488,11 @@ Version 3.06.02: library Correction</readme>
     </selectionEntry>
     <selectionEntry id="1e15-0492-6c0a-87ad" name="Valhalla Fast Dreadnought" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
-        <infoLink id="d202-6461-5c21-1e61" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
-        <infoLink id="0d0f-8c30-dfe5-681d" name="Heavy Firepower [3.07a]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="cbf3-8346-c401-48c0" name="Inductorium [3.07a]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
+        <infoLink id="d202-6461-5c21-1e61" name="Vulnerable Stern [3.08]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="0d0f-8c30-dfe5-681d" name="Heavy Firepower [3.08]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
+        <infoLink id="cbf3-8346-c401-48c0" name="Inductorium [3.08]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
         <infoLink id="95b1-2e72-3b3f-52ca" name="Wolves of the Sea [3.06]" hidden="false" targetId="6ccb-0ea0-6ce7-e987" type="rule"/>
-        <infoLink id="a3ec-e1f7-3bd1-5f46" name="Hammer Sweep [3.07a]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
+        <infoLink id="a3ec-e1f7-3bd1-5f46" name="Hammer Sweep [3.08]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
         <infoLink id="9880-bf4f-eea7-d2d5" name="Voltaic Decksweepers [3.06]" hidden="false" targetId="70ce-7325-c02f-02b9" type="rule"/>
         <infoLink name="Valhalla" id="a289-8805-c6e2-3b1a" hidden="false" type="profile" targetId="e992-bfd2-b501-e39d"/>
         <infoLink name="Draugr [3.06]" id="4c7b-1ecb-be8f-5679" hidden="false" publicationId="e265-8c7f-a4b2-a48e" targetId="4737-3601-0486-d420" type="rule">
@@ -2678,11 +2713,11 @@ Version 3.06.02: library Correction</readme>
     </selectionEntry>
     <selectionEntry id="5949-3878-9cf9-a367" name="Valkyrie Hunt Rotor Squadron" publicationId="33cf-b4a6-bff0-0d70" hidden="false" collective="false" import="false" type="unit">
       <infoLinks>
-        <infoLink id="c49b-55ea-234f-d771" name="Powerslide [3.07a]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
+        <infoLink id="c49b-55ea-234f-d771" name="Powerslide [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
         <infoLink id="07a3-779c-f3a2-1fd6" name="Wolves of the Sea [3.06]" hidden="false" targetId="6ccb-0ea0-6ce7-e987" type="rule"/>
-        <infoLink id="d1a1-2a42-6c04-a868" name="Inductorium [3.07a]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
-        <infoLink id="5a4c-4c62-3392-e82c" name="Vulnerable Stern [3.07a]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
-        <infoLink id="e482-b104-05dd-f38b" name="Agile [3.07a]" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
+        <infoLink id="d1a1-2a42-6c04-a868" name="Inductorium [3.08]" hidden="false" targetId="2ae7-9b96-fd1d-ef29" type="rule"/>
+        <infoLink id="5a4c-4c62-3392-e82c" name="Vulnerable Stern [3.08]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
+        <infoLink id="e482-b104-05dd-f38b" name="Agile [3.08]" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
         <infoLink id="5e06-2473-f7dd-6308" name="Draugr [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="true" targetId="4737-3601-0486-d420" type="rule"/>
         <infoLink name="Valkyrie" id="796c-4af3-2f3-ecae" hidden="false" type="profile" targetId="edce-f204-3895-3376"/>
         <infoLink name="Draugr [3.06]" id="5bb7-eb93-989c-eed5" hidden="false" publicationId="e265-8c7f-a4b2-a48e" targetId="4737-3601-0486-d420" type="rule">
