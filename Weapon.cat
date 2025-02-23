@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="526f-06e7-edaa-02b8" name="Weapon" revision="29" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar, UrsinePatriarch" authorContact="siponeric@hotmail.com / Discord: zharrpostingghoroth" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="526f-06e7-edaa-02b8" name="Weapon" revision="30" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar, UrsinePatriarch" authorContact="siponeric@hotmail.com / Discord: zharrpostingghoroth" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Weapon collection
 Review v1: starting document
 Review v2: imprevment to follow ORBAT requirments
@@ -29,7 +29,8 @@ Review v25: modification for Crown 3.06a Orbat (22/07/24)
 Review v26: modification for Sultanate 3.07 Orbat (24/10/24)
 Review v27: correction (31/10/24)
 Review v28: modification for Sultanate 3.08 Orbat (24/10/24)
-Review v29: modification for Union 3.08 Orbat (02/02/25)</readme>
+Review v29: modification for Union 3.08 Orbat (02/02/25)
+Review v30: modification for Commonwealth 3.06 Orbat (23/02/25)</readme>
   <categoryEntries>
     <categoryEntry id="dbb4-72d5-bceb-70b3" name="F" hidden="false"/>
     <categoryEntry id="372f-19f1-09ed-e694" name="P&amp;S" hidden="false"/>
@@ -1640,19 +1641,24 @@ Review v29: modification for Union 3.08 Orbat (02/02/25)</readme>
                 <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c595-958b-800e-2c04" type="instanceOf"/>
               </conditions>
             </modifier>
-            <modifier type="append" field="faa3-d69c-5156-2acf" value="(Rear First)">
+            <modifier type="append" value="(Front Third)" field="faa3-d69c-5156-2acf">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1305-ddc0-7c51-79ad" type="instanceOf"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d277-9bbf-3f7d-8f46" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </modifier>
-            <modifier type="append" field="faa3-d69c-5156-2acf" value="(Rear Second)">
+            <modifier type="append" value="(Rear First)" field="faa3-d69c-5156-2acf">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f47-ccb8-8fba-b472" type="instanceOf"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1305-ddc0-7c51-79ad" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </modifier>
-            <modifier type="append" field="faa3-d69c-5156-2acf" value="1st">
+            <modifier type="append" value="(Rear Second)" field="faa3-d69c-5156-2acf">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8dd5-28b8-39fb-6304" type="instanceOf"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8f47-ccb8-8fba-b472" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="1st" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8dd5-28b8-39fb-6304" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
             <modifier type="append" value="2nd" field="faa3-d69c-5156-2acf">
@@ -1832,6 +1838,16 @@ Review v29: modification for Union 3.08 Orbat (02/02/25)</readme>
         <infoLink id="ddb8-3938-5ff0-948b" name="Katyusha Rocket Salvo" hidden="false" targetId="fd90-c013-d36a-60b2" type="profile">
           <modifiers>
             <modifier type="set" field="8739-aae9-7e50-c8d0" value="F"/>
+            <modifier type="append" value="(Front First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="62c7-5eb0-d38e-486" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Front Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c595-958b-800e-2c04" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink id="9dd6-784e-0c82-503a" name="Aerial [3.05]" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
@@ -2878,14 +2894,19 @@ Review v29: modification for Union 3.08 Orbat (02/02/25)</readme>
                 <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c595-958b-800e-2c04" type="instanceOf"/>
               </conditions>
             </modifier>
-            <modifier type="append" field="faa3-d69c-5156-2acf" value="(Rear First)">
+            <modifier type="append" field="faa3-d69c-5156-2acf" value="(Front Third)">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1305-ddc0-7c51-79ad" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d277-9bbf-3f7d-8f46" type="instanceOf"/>
               </conditions>
             </modifier>
-            <modifier type="append" field="faa3-d69c-5156-2acf" value="(Rear Second)">
+            <modifier type="append" value="(Rear First)" field="faa3-d69c-5156-2acf">
               <conditions>
-                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f47-ccb8-8fba-b472" type="instanceOf"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1305-ddc0-7c51-79ad" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Rear Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8f47-ccb8-8fba-b472" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6468,7 +6489,7 @@ Review v29: modification for Union 3.08 Orbat (02/02/25)</readme>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6a76-8caf-98b2-bc14" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="7aa4-7c0e-2359-2389" name="Rocket Battery" hidden="false" targetId="90e8-0288-ed1a-f4fb" type="profile">
+        <infoLink id="7aa4-7c0e-2359-2389" name="Seeker Rocket Battery" hidden="false" targetId="9d52-19df-1515-2345" type="profile">
           <modifierGroups>
             <modifierGroup>
               <modifiers>
@@ -7818,14 +7839,19 @@ Review v29: modification for Union 3.08 Orbat (02/02/25)</readme>
                     <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c595-958b-800e-2c04" type="instanceOf"/>
                   </conditions>
                 </modifier>
-                <modifier type="append" field="faa3-d69c-5156-2acf" value="(Rear First)">
+                <modifier type="append" value="(Front Third)" field="faa3-d69c-5156-2acf">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1305-ddc0-7c51-79ad" type="instanceOf"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d277-9bbf-3f7d-8f46" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
-                <modifier type="append" field="faa3-d69c-5156-2acf" value="(Rear Second)">
+                <modifier type="append" value="(Rear First)" field="faa3-d69c-5156-2acf">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f47-ccb8-8fba-b472" type="instanceOf"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1305-ddc0-7c51-79ad" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="(Rear Second)" field="faa3-d69c-5156-2acf">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8f47-ccb8-8fba-b472" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7908,14 +7934,19 @@ Review v29: modification for Union 3.08 Orbat (02/02/25)</readme>
                     <condition field="selections" scope="58b1-5a36-1519-e457" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c595-958b-800e-2c04" type="instanceOf"/>
                   </conditions>
                 </modifier>
-                <modifier type="append" field="faa3-d69c-5156-2acf" value="(Rear First)">
+                <modifier type="append" value="(Front Third)" field="faa3-d69c-5156-2acf">
                   <conditions>
-                    <condition field="selections" scope="58b1-5a36-1519-e457" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1305-ddc0-7c51-79ad" type="instanceOf"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d277-9bbf-3f7d-8f46" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
-                <modifier type="append" field="faa3-d69c-5156-2acf" value="(Rear Second)">
+                <modifier type="append" value="(Rear First)" field="faa3-d69c-5156-2acf">
                   <conditions>
-                    <condition field="selections" scope="58b1-5a36-1519-e457" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f47-ccb8-8fba-b472" type="instanceOf"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="58b1-5a36-1519-e457" childId="1305-ddc0-7c51-79ad" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="(Rear Second)" field="faa3-d69c-5156-2acf">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="58b1-5a36-1519-e457" childId="8f47-ccb8-8fba-b472" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10159,6 +10190,467 @@ Review v29: modification for Union 3.08 Orbat (02/02/25)</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="5f05-b84c-111a-b617" name="Zhalo Rocket Battery " hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4c48-7e18-8e57-34ee" name="Zhalo Rocket Battery" hidden="false" targetId="5a2b-5663-8b2f-3be2" type="profile">
+          <modifiers>
+            <modifier type="append" value="1st" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8dd5-28b8-39fb-6304" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="2nd" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2a6f-36d6-5d75-e9fc" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="3rd" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="df04-304e-3eb9-52b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Front First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="62c7-5eb0-d38e-486" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Front Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c595-958b-800e-2c04" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Port First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="55de-fe5d-650a-2f4a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Port Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e1e9-a88-1bb-b8aa" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Port Third)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0c23-0110-ee82-8551" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Starboard First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="801-696b-9bb1-e4ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Starboard Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a036-e1b6-ee86-ebf7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Starboard Third)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cbe3-a4d6-4d7d-9a4c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A">
+                  <conditions>
+                    <condition field="selections" scope="5f05-b84c-111a-b617" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5888-87ac-f851-165d" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="5f05-b84c-111a-b617" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="5f05-b84c-111a-b617" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
+                  <conditions>
+                    <condition field="selections" scope="5f05-b84c-111a-b617" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ce6f-067d-9ad4-ddaa" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P">
+                  <conditions>
+                    <condition field="selections" scope="5f05-b84c-111a-b617" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S/A">
+                  <conditions>
+                    <condition field="selections" scope="5f05-b84c-111a-b617" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5b70-4095-b55c-9745" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/A">
+                  <conditions>
+                    <condition field="selections" scope="5f05-b84c-111a-b617" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0cd5-1e4e-c51e-c338" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="5f05-b84c-111a-b617" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P">
+                  <conditions>
+                    <condition field="selections" scope="5f05-b84c-111a-b617" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4e9e-7862-58ad-15e6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/S">
+                  <conditions>
+                    <condition field="selections" scope="5f05-b84c-111a-b617" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5347-4855-4421-ed77" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P/S">
+                  <conditions>
+                    <condition field="selections" scope="5f05-b84c-111a-b617" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f2af-2773-24ff-2e12" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="82ce-3a8a-6935-cc1c" name="Aerial [3.05]" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0787-d9cf-deaf-05c4" name="Zhalo Rocket Battery " hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1638-dff6-ecc8-1ad9" name="Zhalo Rocket Battery" hidden="false" targetId="5a2b-5663-8b2f-3be2" type="profile">
+          <modifiers>
+            <modifier type="append" value="1st" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8dd5-28b8-39fb-6304" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="2nd" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2a6f-36d6-5d75-e9fc" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Front First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="62c7-5eb0-d38e-486" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Front Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c595-958b-800e-2c04" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Port First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="55de-fe5d-650a-2f4a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Port Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e1e9-a88-1bb-b8aa" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Port Third)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0c23-0110-ee82-8551" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Starboard First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="801-696b-9bb1-e4ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Starboard Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a036-e1b6-ee86-ebf7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Starboard Third)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cbe3-a4d6-4d7d-9a4c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A">
+                  <conditions>
+                    <condition field="selections" scope="0787-d9cf-deaf-05c4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5888-87ac-f851-165d" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="0787-d9cf-deaf-05c4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="0787-d9cf-deaf-05c4" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
+                  <conditions>
+                    <condition field="selections" scope="0787-d9cf-deaf-05c4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ce6f-067d-9ad4-ddaa" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P">
+                  <conditions>
+                    <condition field="selections" scope="0787-d9cf-deaf-05c4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S/A">
+                  <conditions>
+                    <condition field="selections" scope="0787-d9cf-deaf-05c4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5b70-4095-b55c-9745" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/A">
+                  <conditions>
+                    <condition field="selections" scope="0787-d9cf-deaf-05c4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0cd5-1e4e-c51e-c338" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="0787-d9cf-deaf-05c4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P">
+                  <conditions>
+                    <condition field="selections" scope="0787-d9cf-deaf-05c4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4e9e-7862-58ad-15e6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/S">
+                  <conditions>
+                    <condition field="selections" scope="0787-d9cf-deaf-05c4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5347-4855-4421-ed77" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P/S">
+                  <conditions>
+                    <condition field="selections" scope="0787-d9cf-deaf-05c4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f2af-2773-24ff-2e12" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="c85f-7879-f799-3d1d" name="Aerial [3.05]" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0850-b3fb-e98d-deaa" name="Yastreb Missile Battery" hidden="false" collective="false" import="false" type="upgrade">
+      <infoLinks>
+        <infoLink id="1125-cc0c-6736-4c4c" name="Yastreb Missile Battery" hidden="false" targetId="4e2a-57bf-8821-d1a9" type="profile">
+          <modifiers>
+            <modifier type="append" field="faa3-d69c-5156-2acf" value="(Front First)">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="62c7-5eb0-d38e-486" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" field="faa3-d69c-5156-2acf" value="(Front Second)">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c595-958b-800e-2c04" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="1st" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8dd5-28b8-39fb-6304" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="2nd" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2a6f-36d6-5d75-e9fc" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="3rd" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="df04-304e-3eb9-52b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Port First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="55de-fe5d-650a-2f4a" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Port Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e1e9-a88-1bb-b8aa" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Starbord First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="801-696b-9bb1-e4ef" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Starbord Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a036-e1b6-ee86-ebf7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="0850-b3fb-e98d-deaa" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="0850-b3fb-e98d-deaa" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/S">
+                  <conditions>
+                    <condition field="selections" scope="0850-b3fb-e98d-deaa" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="5347-4855-4421-ed77" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P">
+                  <conditions>
+                    <condition field="selections" scope="0850-b3fb-e98d-deaa" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="4e9e-7862-58ad-15e6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="0850-b3fb-e98d-deaa" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P/S">
+                  <conditions>
+                    <condition field="selections" scope="0850-b3fb-e98d-deaa" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="f2af-2773-24ff-2e12" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
+                  <conditions>
+                    <condition field="selections" scope="0850-b3fb-e98d-deaa" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="ce6f-067d-9ad4-ddaa" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P">
+                  <conditions>
+                    <condition field="selections" scope="0850-b3fb-e98d-deaa" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="3ef2-ed79-fd58-120d" name="Aerial [3.05]" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="48e0-8e47-d69c-b1c3" name="Yastreb Missile Battery" hidden="false" collective="true" import="false" type="upgrade">
+      <infoLinks>
+        <infoLink id="b6c3-d789-7e17-87c3" name="Yastreb Missile Battery" hidden="false" targetId="4e2a-57bf-8821-d1a9" type="profile">
+          <modifiers>
+            <modifier type="append" field="faa3-d69c-5156-2acf" value="(Front First)">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="62c7-5eb0-d38e-486" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" field="faa3-d69c-5156-2acf" value="(Front Second)">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c595-958b-800e-2c04" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="1st" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8dd5-28b8-39fb-6304" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="2nd" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2a6f-36d6-5d75-e9fc" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="3rd" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="df04-304e-3eb9-52b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Port First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="55de-fe5d-650a-2f4a" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Port Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e1e9-a88-1bb-b8aa" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Starbord First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="801-696b-9bb1-e4ef" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Starbord Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a036-e1b6-ee86-ebf7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <modifiers>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="360°">
+                  <conditions>
+                    <condition field="selections" scope="48e0-8e47-d69c-b1c3" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="a4f6-2208-db34-4879" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F">
+                  <conditions>
+                    <condition field="selections" scope="48e0-8e47-d69c-b1c3" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="dbb4-72d5-bceb-70b3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/S">
+                  <conditions>
+                    <condition field="selections" scope="48e0-8e47-d69c-b1c3" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="5347-4855-4421-ed77" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P">
+                  <conditions>
+                    <condition field="selections" scope="48e0-8e47-d69c-b1c3" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="4e9e-7862-58ad-15e6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P/S">
+                  <conditions>
+                    <condition field="selections" scope="48e0-8e47-d69c-b1c3" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="db84-bb03-d026-c3a5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="A/P/S">
+                  <conditions>
+                    <condition field="selections" scope="48e0-8e47-d69c-b1c3" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="f2af-2773-24ff-2e12" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/S">
+                  <conditions>
+                    <condition field="selections" scope="48e0-8e47-d69c-b1c3" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="ce6f-067d-9ad4-ddaa" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8739-aae9-7e50-c8d0" value="F/P">
+                  <conditions>
+                    <condition field="selections" scope="48e0-8e47-d69c-b1c3" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" childId="c93d-a414-b1bc-7d2c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </infoLink>
+        <infoLink id="c925-068a-2dd9-20f6" name="Aerial [3.05]" hidden="false" targetId="c475-4c4f-de22-9080" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="c475-4c4f-de22-9080" name="Aerial [3.05]" publicationId="7f09-e243-2307-78d0" hidden="false">
@@ -10341,7 +10833,7 @@ Review v29: modification for Union 3.08 Orbat (02/02/25)</readme>
         <modifier type="set" value="D-Cannon" field="name"/>
       </modifiers>
     </rule>
-    <rule id="f063-dc19-1b5c-313e" name="Rail [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
+    <rule id="f063-dc19-1b5c-313e" name="Rail [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <description>The Citadel of the Initial Target receives a -1 against Actions with this Quality. Furthermore, when making an Action against Models with the Skimming Unit or Aerial Unit Positional Traits, each weapon or SRS Token with this Quality receives +1 Action Dice (to a maximum of +3). When making an Action against Models with the Submerged Unit Positional Trait, each weapon or SRS Token with this Quality receives -1 Action Dice (to a maximum of -3).</description>
       <modifiers>
         <modifier type="set" value="Rail" field="name"/>
@@ -11688,6 +12180,24 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">3(2) / 3(1)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Arc</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5a2b-5663-8b2f-3be2" name="Zhalo Rocket Battery" publicationId="e265-8c7f-a4b2-a48e" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">5(1) / 4(-)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">5(3) / 4(3)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">5(3) / 4(3)</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4e2a-57bf-8821-d1a9" name="Yastreb Missile Battery" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">7(1) / 5(-)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">9(4) / 6(3)</characteristic>
+        <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">10(4) / 6(4)</characteristic>
+        <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Aerial</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

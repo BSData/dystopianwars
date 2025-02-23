@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="1242-c30b-419f-8229" name="Dystopian Wars 3.0" revision="14" battleScribeVersion="2.03" authorName="Riccardo Sipone / Ruslan Zakirov" authorContact="siponeric@hotmail.com / ruslan.zakirov.2000@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem" hidden="false">
+<gameSystem id="1242-c30b-419f-8229" name="Dystopian Wars 3.0" revision="15" battleScribeVersion="2.03" authorName="Riccardo Sipone / Ruslan Zakirov" authorContact="siponeric@hotmail.com / ruslan.zakirov.2000@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem" hidden="false">
   <comment>The Dystopian Wars datafile are editied and mantained with Ruslan Zakirov, that with patience has start to managed all profile and debugging.</comment>
   <readme>Revision 1.01: added all ORBAT Publication
 Revision 1.02: managed correctlly Publication, corrected Command Reroll bonus
@@ -13,7 +13,8 @@ Revision 3.04.00: introduction of the 3.04 Orbats
 Revision 3.05.00: introduction of the 3.05 Orbats
 Revision 3.05.01: modification of the 3.05 Orbats (to be used with New Recruit)
 Revision 3.06.00: common categories for 3.06 Orbats
-Revision 3.08.00: common categories for 3.08 Orbats</readme>
+Revision 3.08.00: common categories for 3.08 Orbats
+Revision 3.08.01: common categories for 3.08 Orbats</readme>
   <publications>
     <publication id="7f09-e243-2307-78d0" name="Dystopian Rulebook"/>
     <publication id="e265-8c7f-a4b2-a48e" name="Commonwhealth ORBAT"/>
@@ -121,6 +122,7 @@ Revision 3.08.00: common categories for 3.08 Orbats</readme>
     <categoryEntry id="63d9-de30-71f7-b539" name="Titan-clas" hidden="false" publicationId="5a03-1c6f-8fc8-2be1"/>
     <categoryEntry name="Attached Unit" id="4cec-a877-ad69-0968" hidden="false"/>
     <categoryEntry id="f56a-3df4-17d2-db01" name="Main Battlefleet" publicationId="5a03-1c6f-8fc8-2be1" hidden="false"/>
+    <categoryEntry name="Front Third" hidden="false" id="d277-9bbf-3f7d-8f46"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="44e8-1fde-db6e-20f6" name="Battlefleet (generic don&apos;t use)" publicationId="7f09-e243-2307-78d0" hidden="true">

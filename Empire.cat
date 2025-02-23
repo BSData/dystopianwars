@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="adb2-8c90-0724-a27d" name="Empire v3.06" revision="15" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="adb2-8c90-0724-a27d" name="Empire v3.06" revision="16" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <comment>Empire ORBAT 3.06 (published 24/04/2024)</comment>
   <readme>Review 1.02.a0: Initial release
 Review 1.04.a0: add new unit and new profile from ORBAT 1.03, fixed Battlefleet bonus managment
@@ -15,7 +15,8 @@ Review 3.04.01: correction after the 3.04 Orbat update (date 2023-08-31 to be us
 Review 3.05.00: 3.05 Orbat update (date 2023-01-30 to be used in New Recruit)
 Review 3.06.00: 3.06 Orbat update (date 2024-04-24 rev 1)
 Review 3.06.01: 3.06 Orbat correction (date 2024-08-18)
-Review 3.06.02: 3.06 Orbat correction (date 2025-02-02)</readme>
+Review 3.06.02: 3.06 Orbat correction (date 2025-02-02)
+Review 3.06.03: 3.06 Orbat correction (date 2025-02-23)</readme>
   <categoryEntries>
     <categoryEntry id="0ad5-d3e2-dc61-f333" name="Chinese" publicationId="7b2b-0f56-3962-5ec1" hidden="false"/>
     <categoryEntry id="6074-770f-d87b-b41f" name="Japanese" publicationId="7b2b-0f56-3962-5ec1" hidden="false"/>
@@ -2599,7 +2600,7 @@ Review 3.06.02: 3.06 Orbat correction (date 2025-02-02)</readme>
         <entryLink id="9f18-95f3-81b1-e860" name="Koromodako" hidden="false" collective="false" import="true" targetId="63cf-5d01-0278-9962" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="10"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
       <selectionEntryGroups>
@@ -9578,7 +9579,7 @@ Review 3.06.02: 3.06 Orbat correction (date 2025-02-02)</readme>
             <constraint field="selections" scope="parent" value="4" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="649a-208d-dde2-55ff" type="max"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup id="faf5-c4ca-1541-0ddb" name="First First" hidden="false" collective="false" import="true" defaultSelectionEntryId="5bb8-4cd7-a97d-3e14">
+            <selectionEntryGroup id="faf5-c4ca-1541-0ddb" name="Front First" hidden="false" collective="false" import="true" defaultSelectionEntryId="5bb8-4cd7-a97d-3e14">
               <modifiers>
                 <modifier type="set" field="7f19-8a71-9a0e-186b" value="0">
                   <conditions>
@@ -9677,7 +9678,7 @@ Review 3.06.02: 3.06 Orbat correction (date 2025-02-02)</readme>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="4541-6ae2-d816-ca64" name="Rear First" hidden="false" collective="false" import="true" defaultSelectionEntryId="4457-574d-0f9b-7b34">
+            <selectionEntryGroup id="4541-6ae2-d816-ca64" name="Front Third" hidden="false" collective="false" import="true" defaultSelectionEntryId="4457-574d-0f9b-7b34">
               <modifiers>
                 <modifier type="set" field="6685-0089-bfd2-1841" value="0">
                   <conditions>
@@ -9692,7 +9693,7 @@ Review 3.06.02: 3.06 Orbat correction (date 2025-02-02)</readme>
               <entryLinks>
                 <entryLink id="4457-574d-0f9b-7b34" name="Heavy Gun Battery" hidden="false" collective="false" import="true" targetId="90c9-59e3-935f-7a20" type="selectionEntry">
                   <modifiers>
-                    <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
+                    <modifier type="add" value="db84-bb03-d026-c3a5" field="category"/>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9852-a4e0-f6fc-fdbb" type="max"/>
@@ -9700,7 +9701,7 @@ Review 3.06.02: 3.06 Orbat correction (date 2025-02-02)</readme>
                 </entryLink>
                 <entryLink id="8c1e-ab0b-2959-ae6e" name="Heavy Alchemical Rockets" hidden="false" collective="false" import="true" targetId="45e5-2e81-d438-26a6" type="selectionEntry">
                   <modifiers>
-                    <modifier type="add" field="category" value="f2af-2773-24ff-2e12"/>
+                    <modifier type="add" field="category" value="db84-bb03-d026-c3a5"/>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9774-6949-1ebd-7585" type="max"/>
@@ -9711,7 +9712,7 @@ Review 3.06.02: 3.06 Orbat correction (date 2025-02-02)</readme>
                 </entryLink>
                 <entryLink import="true" name="Heavy Huoqiang" hidden="false" id="3782-4cd1-4c85-b6fe" collective="false" targetId="58b1-5a36-1519-e457" type="selectionEntry">
                   <modifiers>
-                    <modifier type="add" value="f2af-2773-24ff-2e12" field="category"/>
+                    <modifier type="add" value="db84-bb03-d026-c3a5" field="category"/>
                   </modifiers>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="95a7-ec48-a1bb-cf62" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -9722,7 +9723,7 @@ Review 3.06.02: 3.06 Orbat correction (date 2025-02-02)</readme>
                 </entryLink>
               </entryLinks>
               <categoryLinks>
-                <categoryLink name="Rear First" hidden="false" id="298f-ca32-b0e7-b1f6" targetId="1305-ddc0-7c51-79ad" primary="false"/>
+                <categoryLink name="Front Third" hidden="false" id="6d12-9b81-04e9-6838" targetId="d277-9bbf-3f7d-8f46" primary="false"/>
               </categoryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="a455-edcb-9942-8616" name="Front Second" hidden="false" collective="false" import="true" defaultSelectionEntryId="d175-b1ee-d32f-9504">
@@ -9773,7 +9774,7 @@ Review 3.06.02: 3.06 Orbat correction (date 2025-02-02)</readme>
                 <categoryLink name="Front Second" hidden="false" id="72ac-9daf-5367-c164" targetId="c595-958b-800e-2c04" primary="false"/>
               </categoryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="61be-3195-9d1e-0e58" name="Rear Second" hidden="false" collective="false" import="true" defaultSelectionEntryId="39c0-6cc7-5d53-58c6">
+            <selectionEntryGroup id="61be-3195-9d1e-0e58" name="Rear" hidden="false" collective="false" import="true" defaultSelectionEntryId="39c0-6cc7-5d53-58c6">
               <modifiers>
                 <modifier type="set" field="00b0-cf2d-627c-1e8a" value="0">
                   <conditions>
@@ -9817,9 +9818,6 @@ Review 3.06.02: 3.06 Orbat correction (date 2025-02-02)</readme>
                   </costs>
                 </entryLink>
               </entryLinks>
-              <categoryLinks>
-                <categoryLink name="Rear Second" hidden="false" id="e2ec-cdd6-6c27-cfd3" targetId="8f47-ccb8-8fba-b472" primary="false"/>
-              </categoryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
