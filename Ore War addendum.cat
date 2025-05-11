@@ -95,6 +95,19 @@
         <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">10/4</characteristic>
       </characteristics>
     </profile>
+    <profile name="Gotham" typeId="4cb0-515e-e6e0-153a" typeName="Standard Model" hidden="false" id="7310-fe97-518b-96e4" publicationId="e6a1-85d3-8979-7880">
+      <characteristics>
+        <characteristic name="Mass" typeId="dbde-866b-70b0-d5e9">4/4</characteristic>
+        <characteristic name="Speed" typeId="9e4a-2ba1-f396-74b9">4/3</characteristic>
+        <characteristic name="Turn Limit" typeId="b9f6-2f65-e8c8-b906">2/2</characteristic>
+        <characteristic name="Armour" typeId="29a3-02bb-e7f3-0ddb">8/8</characteristic>
+        <characteristic name="Citadel" typeId="c141-3bcf-41f5-6c24">17/17</characteristic>
+        <characteristic name="ADV" typeId="6428-9828-bb2e-f923">7/6</characteristic>
+        <characteristic name="SDV" typeId="b001-8ebf-b7fe-74da">5/4</characteristic>
+        <characteristic name="Fray" typeId="4c54-804a-8993-7325">16/15</characteristic>
+        <characteristic name="Hull" typeId="ff43-364b-8da9-bce9">8/7</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="model" import="false" name="Sumter" hidden="false" id="db84-0ed1-1ce5-3de2" publicationId="e6a1-85d3-8979-7880" collective="false">
@@ -234,7 +247,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="278"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="260"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -309,7 +322,7 @@
         <categoryLink name="Paddlewheel" hidden="false" id="f4ac-9c05-07f9-21c7" targetId="efd3-b9c9-b144-de57" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Broadside" hidden="false" id="cd12-8ced-0a2a-c368" collective="false" targetId="0600-8fa9-227d-91ba" type="selectionEntry">
+        <entryLink import="true" name="Broadside" hidden="false" id="cd12-8ced-0a2a-c368" collective="false" targetId="0600-8fa9-227d-91ba" type="selectionEntry" sortIndex="1">
           <modifiers>
             <modifier type="add" value="372f-19f1-09ed-e694" field="category"/>
           </modifiers>
@@ -317,6 +330,41 @@
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="62"/>
+        <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Gotham" hidden="false" id="8e6d-5e51-b5ab-5ace" publicationId="129d-da97-caec-1ddd" collective="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b77-6f23-b797-4375" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a48d-d47a-2e24-f0cf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Gotham" id="9583-cfec-f63f-d053" hidden="false" targetId="7310-fe97-518b-96e4" type="profile"/>
+        <infoLink name="Contra Rotation [3.08]" id="4bb6-1920-a1bb-f4fa" hidden="false" targetId="177e-3490-5f5e-f4b9" type="rule"/>
+        <infoLink name="Shallow Draught [3.08]" id="ffa0-36f7-20a7-cbc8" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
+        <infoLink name="Flak Barrage (x) [3.08]" id="5292-704e-e850-b3d7" hidden="false" targetId="7b67-714d-bb2b-6297" type="rule">
+          <modifiers>
+            <modifier type="set" value="Flak Barrage (8)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Heavy Battleship" hidden="false" id="5cea-493d-7c28-c707" targetId="1fe5-12b2-2e30-7802" primary="false"/>
+        <categoryLink name="Paddlewheel" hidden="false" id="e0aa-290a-a6bb-7f98" targetId="efd3-b9c9-b144-de57" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Heavy Broadside" hidden="false" id="2195-be18-b146-2ef7" collective="false" targetId="9985-b088-fda6-36d4" type="selectionEntry" sortIndex="1">
+          <modifiers>
+            <modifier type="add" value="372f-19f1-09ed-e694" field="category"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4fb4-509f-6287-7e57" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a53-9435-2f7d-8463" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="260"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>

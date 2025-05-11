@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="caf4-134c-500d-0cd9" name="Union v3.08" revision="16" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="caf4-134c-500d-0cd9" name="Union v3.08" revision="17" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <comment>Union ORBAT 3.08 (published 02/02/2025)</comment>
   <readme>Review 1.03.00: Initial release
 Review 3.03.00: Update to Orbat 3.03
@@ -16,7 +16,8 @@ Review 3.07.a0: format overhaul via UrsinePatriarch (5/12/2024)
 Review 3.07.a1: corrections (18/08/2024)
 Review 3.07.a0: updated to Orbat 3.07a rev 1 (10/05/2024)
 Review 3.08.00: updated to Orbat 3.08 (published 08/01/2025)
-Review 3.08.01: corrections of Orbat 3.08 (published 08/01/2025)</readme>
+Review 3.08.01: corrections of Orbat 3.08 (published 08/01/2025)
+Review 3.08.02: corrections of Orbat 3.08 (published 11/05/2025)</readme>
   <categoryEntries>
     <categoryEntry id="165e-baac-9907-80de" name="Constitution-class" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
     <categoryEntry id="d17d-56a1-5363-7b8d" name="Enterprise Class" publicationId="e6a1-85d3-8979-7880" hidden="false"/>
@@ -9992,6 +9993,17 @@ Review 3.08.01: corrections of Orbat 3.08 (published 08/01/2025)</readme>
             <categoryLink name="Front Second" hidden="false" id="3fd6-6131-e082-39a1" targetId="c595-958b-800e-2c04" primary="false"/>
           </categoryLinks>
         </entryLink>
+        <entryLink import="true" name="Electrocannon Battery" hidden="false" id="3455-c66c-6056-79f0" collective="false" targetId="6401-31e9-c2a0-9b1f" type="selectionEntry" sortIndex="5">
+          <modifiers>
+            <modifier type="add" value="f2af-2773-24ff-2e12" field="category"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="22f4-ef8d-77ef-37eb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Front Second" hidden="false" id="6ca7-1d90-980d-4a3b" targetId="c595-958b-800e-2c04" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="158"/>
@@ -10174,7 +10186,7 @@ Review 3.08.01: corrections of Orbat 3.08 (published 08/01/2025)</readme>
         </entryLink>
         <entryLink id="304d-1b03-39ab-30ec" name="Sentinel Generators" hidden="false" collective="false" import="true" targetId="d0e6-f9ac-010c-f5ee" type="selectionEntry" sortIndex="1">
           <entryLinks>
-            <entryLink import="true" name="Heat Lance" hidden="false" id="de6f-4c3a-df9b-244" type="selectionEntry" targetId="6d2c-8cdd-4d3b-9ddd">
+            <entryLink import="true" name="Alliance Heat Lance" hidden="false" id="de6f-4c3a-df9b-244" type="selectionEntry" targetId="6d2c-8cdd-4d3b-9ddd">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="cfa4-4928-5479-3a4e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f933-6eea-c83-7ae8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -10593,7 +10605,7 @@ Review 3.08.01: corrections of Orbat 3.08 (published 08/01/2025)</readme>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c99f-4a98-0793-a630" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Heat Lance" hidden="false" id="f368-2605-6828-d462" type="selectionEntry" targetId="1382-9592-479f-f3b3">
+            <entryLink import="true" name="Alliance Heat Lance" hidden="false" id="f368-2605-6828-d462" type="selectionEntry" targetId="1382-9592-479f-f3b3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="1ed-659a-5797-dd98" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="cadc-f400-850b-b631" percentValue="false" includeChildSelections="false" includeChildForces="false"/>

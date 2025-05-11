@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="526f-06e7-edaa-02b8" name="Weapon" revision="30" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar, UrsinePatriarch" authorContact="siponeric@hotmail.com / Discord: zharrpostingghoroth" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="526f-06e7-edaa-02b8" name="Weapon" revision="31" battleScribeVersion="2.03" authorName="Riccardo Sipone, TrikkStar, UrsinePatriarch" authorContact="siponeric@hotmail.com / Discord: zharrpostingghoroth" library="true" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Weapon collection
 Review v1: starting document
 Review v2: imprevment to follow ORBAT requirments
@@ -30,7 +30,8 @@ Review v26: modification for Sultanate 3.07 Orbat (24/10/24)
 Review v27: correction (31/10/24)
 Review v28: modification for Sultanate 3.08 Orbat (24/10/24)
 Review v29: modification for Union 3.08 Orbat (02/02/25)
-Review v30: modification for Commonwealth 3.06 Orbat (23/02/25)</readme>
+Review v30: modification for Commonwealth 3.06 Orbat (23/02/25)
+Review v31: modification for Alliance 3.07 Orbat (11/05/25)</readme>
   <categoryEntries>
     <categoryEntry id="dbb4-72d5-bceb-70b3" name="F" hidden="false"/>
     <categoryEntry id="372f-19f1-09ed-e694" name="P&amp;S" hidden="false"/>
@@ -462,9 +463,9 @@ Review v30: modification for Commonwealth 3.06 Orbat (23/02/25)</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1382-9592-479f-f3b3" name="Heat Lance" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1382-9592-479f-f3b3" name="Alliance Heat Lance" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="1a79-0f0b-1668-7bd4" name="Heat Lance" hidden="false" targetId="f2e9-4fb6-4089-1574" type="profile">
+        <infoLink id="1a79-0f0b-1668-7bd4" name="Alliance Heat Lance" hidden="false" targetId="f2e9-4fb6-4089-1574" type="profile">
           <modifiers>
             <modifier type="append" field="faa3-d69c-5156-2acf" value="(Front First)">
               <conditions>
@@ -1822,7 +1823,7 @@ Review v30: modification for Commonwealth 3.06 Orbat (23/02/25)</readme>
         </infoLink>
         <infoLink id="1e02-aa6f-eb5e-0c50" name="Gunnery [3.04]" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
         <infoLink id="099e-54c1-a316-8b75" name="Extreme Range [3.04]" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-        <infoLink id="16e8-1cd1-ecaf-1dc7" name="Rail [3.05]" hidden="false" targetId="f063-dc19-1b5c-313e" type="rule"/>
+        <infoLink id="16e8-1cd1-ecaf-1dc7" name="Rail [3.06]" hidden="false" targetId="f063-dc19-1b5c-313e" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -2166,36 +2167,6 @@ Review v30: modification for Commonwealth 3.06 Orbat (23/02/25)</readme>
       <infoLinks>
         <infoLink id="8f38-3385-685c-09c6" name="Gun Battery" hidden="false" targetId="4039-8987-0943-016d" type="profile">
           <modifiers>
-            <modifier type="append" value="1st" field="faa3-d69c-5156-2acf">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8dd5-28b8-39fb-6304" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="2nd" field="faa3-d69c-5156-2acf">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2a6f-36d6-5d75-e9fc" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="3rd" field="faa3-d69c-5156-2acf">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="df04-304e-3eb9-52b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="4th" field="faa3-d69c-5156-2acf">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5650-1732-3d85-61a6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="(First)" field="faa3-d69c-5156-2acf">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8dd5-28b8-39fb-6304" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="(Second)" field="faa3-d69c-5156-2acf">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2a6f-36d6-5d75-e9fc" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
             <modifier type="append" value="(Front First)" field="faa3-d69c-5156-2acf">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="62c7-5eb0-d38e-486" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -2234,6 +2205,26 @@ Review v30: modification for Commonwealth 3.06 Orbat (23/02/25)</readme>
             <modifier type="append" value="(Starboard Third)" field="faa3-d69c-5156-2acf">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cbe3-a4d6-4d7d-9a4c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8dd5-28b8-39fb-6304" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2a6f-36d6-5d75-e9fc" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Third)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="df04-304e-3eb9-52b" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Forth)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5650-1732-3d85-61a6" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2364,7 +2355,7 @@ Review v30: modification for Commonwealth 3.06 Orbat (23/02/25)</readme>
           </modifierGroups>
         </infoLink>
         <infoLink id="d3ab-3ee3-ee17-7e87" name="Gunnery [3.04]" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-        <infoLink id="bd3e-e3e6-c57a-3e7a" name="Rail [3.05]" hidden="false" targetId="f063-dc19-1b5c-313e" type="rule"/>
+        <infoLink id="bd3e-e3e6-c57a-3e7a" name="Rail [3.06]" hidden="false" targetId="f063-dc19-1b5c-313e" type="rule"/>
         <infoLink id="aef5-70fb-3600-0fc0" name="Extreme Range [3.04]" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
       </infoLinks>
       <costs>
@@ -2563,7 +2554,7 @@ Review v30: modification for Commonwealth 3.06 Orbat (23/02/25)</readme>
           </modifiers>
         </infoLink>
         <infoLink id="482a-7235-08ed-03c0" name="Gunnery [3.04]" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-        <infoLink id="0145-b413-6898-c12a" name="Rail [3.05]" hidden="false" targetId="f063-dc19-1b5c-313e" type="rule"/>
+        <infoLink id="0145-b413-6898-c12a" name="Rail [3.06]" hidden="false" targetId="f063-dc19-1b5c-313e" type="rule"/>
         <infoLink id="9da3-c653-51ec-c32f" name="Extreme Range [3.04]" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
         <infoLink id="f694-c7b6-b70e-2753" name="Mag-Rail Axe [3.05]" hidden="false" targetId="7ee3-f310-e122-8b5d" type="rule"/>
       </infoLinks>
@@ -3100,10 +3091,10 @@ Review v30: modification for Commonwealth 3.06 Orbat (23/02/25)</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4688-bbd1-6ac5-f438" name="Heat Lancette" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4688-bbd1-6ac5-f438" name="Alliance Heat Lancette" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="0946-800a-85b1-106d" name="Gunnery [3.04]" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-        <infoLink id="a90e-63c8-3559-5361" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
+        <infoLink id="a90e-63c8-3559-5361" name="Alliance Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
           <modifiers>
             <modifier type="append" field="faa3-d69c-5156-2acf" value="(Front First)">
               <conditions>
@@ -3115,16 +3106,6 @@ Review v30: modification for Commonwealth 3.06 Orbat (23/02/25)</readme>
                 <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c595-958b-800e-2c04" type="instanceOf"/>
               </conditions>
             </modifier>
-            <modifier type="append" field="faa3-d69c-5156-2acf" value="(First)">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8dd5-28b8-39fb-6304" type="instanceOf"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" field="faa3-d69c-5156-2acf" value="(Second)">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2a6f-36d6-5d75-e9fc" type="instanceOf"/>
-              </conditions>
-            </modifier>
             <modifier type="append" field="faa3-d69c-5156-2acf" value="(Starboard First)">
               <conditions>
                 <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="801-696b-9bb1-e4ef" type="instanceOf"/>
@@ -3133,6 +3114,21 @@ Review v30: modification for Commonwealth 3.06 Orbat (23/02/25)</readme>
             <modifier type="append" field="faa3-d69c-5156-2acf" value="(Starboard Second)">
               <conditions>
                 <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a036-e1b6-ee86-ebf7" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(First)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8dd5-28b8-39fb-6304" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Second)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2a6f-36d6-5d75-e9fc" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Third)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="df04-304e-3eb9-52b" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4305,7 +4301,7 @@ Review v30: modification for Commonwealth 3.06 Orbat (23/02/25)</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fba5-ca79-6f57-9ef2" name="Heat Lancette" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="fba5-ca79-6f57-9ef2" name="Alliance Heat Lancette" hidden="false" collective="true" import="true" type="upgrade">
       <modifiers>
         <modifier type="add" field="category" value="cd25-d4e4-6b2a-208d">
           <conditions>
@@ -4324,7 +4320,7 @@ Review v30: modification for Commonwealth 3.06 Orbat (23/02/25)</readme>
       </constraints>
       <infoLinks>
         <infoLink id="13c9-52aa-99c0-890f" name="Gunnery [3.04]" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
-        <infoLink id="ae19-8ae1-1aef-9f9a" name="Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
+        <infoLink id="ae19-8ae1-1aef-9f9a" name="Alliance Heat Lancette" hidden="false" targetId="0b12-ea7f-69ca-8034" type="profile">
           <modifierGroups>
             <modifierGroup>
               <modifiers>
@@ -5302,7 +5298,7 @@ Review v30: modification for Commonwealth 3.06 Orbat (23/02/25)</readme>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e1e0-e41d-2728-a7e0" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="ada3-4c4c-c99e-b220" name="Heavy Electrocannon Battery" hidden="false" targetId="148e-6644-957f-1b53" type="profile">
+        <infoLink id="ada3-4c4c-c99e-b220" name="Electrocannon Battery" hidden="false" targetId="b8a9-4973-726f-a5c8" type="profile">
           <modifierGroups>
             <modifierGroup>
               <modifiers>
@@ -7481,6 +7477,16 @@ Review v30: modification for Commonwealth 3.06 Orbat (23/02/25)</readme>
                 <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2a6f-36d6-5d75-e9fc" type="instanceOf"/>
               </conditions>
             </modifier>
+            <modifier type="append" value="(Third)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="df04-304e-3eb9-52b" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Forth)" field="faa3-d69c-5156-2acf">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5650-1732-3d85-61a6" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <modifierGroups>
             <modifierGroup>
@@ -7547,7 +7553,7 @@ Review v30: modification for Commonwealth 3.06 Orbat (23/02/25)</readme>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6d2c-8cdd-4d3b-9ddd" name="Heat Lance" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="6d2c-8cdd-4d3b-9ddd" name="Alliance Heat Lance" hidden="false" collective="true" import="true" type="upgrade">
       <modifiers>
         <modifier type="add" field="category" value="cd25-d4e4-6b2a-208d">
           <conditions>
@@ -7565,7 +7571,7 @@ Review v30: modification for Commonwealth 3.06 Orbat (23/02/25)</readme>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3a82-e371-c9c6-ef12" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="88ca-8417-cef3-ddbe" name="Heat Lance" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="f2e9-4fb6-4089-1574" type="profile">
+        <infoLink id="88ca-8417-cef3-ddbe" name="Alliance Heat Lance" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="f2e9-4fb6-4089-1574" type="profile">
           <modifierGroups>
             <modifierGroup>
               <modifiers>
@@ -9869,7 +9875,7 @@ Review v30: modification for Commonwealth 3.06 Orbat (23/02/25)</readme>
         </infoLink>
         <infoLink id="c4c2-1dd7-a5a5-5c78" name="Gunnery [3.04]" hidden="false" targetId="c20b-cc1d-12bf-23a8" type="rule"/>
         <infoLink id="20be-d39d-bdb4-cc73" name="Extreme Range [3.04]" hidden="false" targetId="d3ac-5484-ad1a-0c87" type="rule"/>
-        <infoLink id="f2ed-205c-fd8f-45e5" name="Rail [3.05]" hidden="false" targetId="f063-dc19-1b5c-313e" type="rule"/>
+        <infoLink id="f2ed-205c-fd8f-45e5" name="Rail [3.06]" hidden="false" targetId="f063-dc19-1b5c-313e" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -10189,6 +10195,10 @@ Review v30: modification for Commonwealth 3.06 Orbat (23/02/25)</readme>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="65a9-deb7-10ee-e816" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="dc7a-9d3c-a2bf-6312" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="5f05-b84c-111a-b617" name="Zhalo Rocket Battery " hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -11141,19 +11151,19 @@ The attacking Player chooses which die result to apply. One of the Action Dice i
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Susteined, Extreme Range</characteristic>
       </characteristics>
     </profile>
-    <profile id="f2e9-4fb6-4089-1574" name="Heat Lance" publicationId="129d-da97-caec-1ddd" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="f2e9-4fb6-4089-1574" name="Alliance Heat Lance" publicationId="129d-da97-caec-1ddd" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">9(5) / 7(4)</characteristic>
-        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">7(4) / 5(3)</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">10(7) / 7(4)</characteristic>
+        <characteristic name="Closing" typeId="d025-b048-0c22-fad5">7(5) / 5(3)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">5(3) / 3(2)</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Hazardous, Devastating</characteristic>
       </characteristics>
     </profile>
-    <profile id="0b12-ea7f-69ca-8034" name="Heat Lancette" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
+    <profile id="0b12-ea7f-69ca-8034" name="Alliance Heat Lancette" publicationId="5a03-1c6f-8fc8-2be1" hidden="false" typeId="6c9b-5228-c790-9c90" typeName="Weapon">
       <characteristics>
         <characteristic name="Arc" typeId="8739-aae9-7e50-c8d0">-</characteristic>
-        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">7(4) / 5(3)</characteristic>
+        <characteristic name="Point Blank" typeId="4209-eb47-9807-b834">7(5) / 5(3)</characteristic>
         <characteristic name="Closing" typeId="d025-b048-0c22-fad5">5(3) / 3(2)</characteristic>
         <characteristic name="Long" typeId="06b8-7f5e-e2df-751a">-</characteristic>
         <characteristic name="Quality" typeId="faa3-d69c-5156-2acf">Gunnery, Hazardous, Devastating</characteristic>

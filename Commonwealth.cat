@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6719-1f83-56dd-91fe" name="Commonwealth v3.05" revision="27" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue" publicationId="e265-8c7f-a4b2-a48e">
+<catalogue id="6719-1f83-56dd-91fe" name="Commonwealth v3.06" revision="28" battleScribeVersion="2.03" authorName="Riccardo Sipone" authorContact="siponeric@hotmail.com" library="false" gameSystemId="1242-c30b-419f-8229" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue" publicationId="e265-8c7f-a4b2-a48e">
   <comment>Commonwealth ORBAT 3.05 (published 25/04/2024)</comment>
   <readme>Review 1.02.01: correct Rurik and Oleg unit max size
 Review 1.03.00: add new unit and new profile from ORBAT 1.03, fixed Battlefleet bonus managment
@@ -29,7 +29,8 @@ Review 3.05.02: v23 (Orbat 3.05 25/04/2024 released 18/08/2024)
 Review 3.05.03: v24 (Orbat 3.05 25/04/2024 released 22/10/2024)
 Review 3.05.04: v25 (Orbat 3.05 25/04/2024 released 31/10/2024)
 Review 3.05.05: v26 (Orbat 3.05 25/04/2024 released 23/11/2024)
-Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
+Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)
+Review 3.06.01: v28 (Orbat 3.06 01/02/2025 released 11/05/2025)</readme>
   <categoryEntries>
     <categoryEntry id="43a2-7e77-ff29-fb5c" name="Russian" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
     <categoryEntry id="10f8-2a4a-0324-de9d" name="Borodino-Class" publicationId="e265-8c7f-a4b2-a48e" hidden="false"/>
@@ -157,7 +158,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
             <constraint type="min" value="0" field="selections" scope="force" shared="false" id="5ae3-d4cc-ba4b-c610" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Krykun-Class" hidden="false" id="e32f-c0a4-7e6b-c058" targetId="7957-941d-d81a-ad34" type="categoryEntry">
+        <categoryLink name="Krykun-Class" hidden="false" id="e32f-c0a4-7e6b-c058" targetId="7957-941d-d81a-ad34">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="false" id="1812-8fca-39a5-f61b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
@@ -223,7 +224,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
     </forceEntry>
     <forceEntry id="151b-55a6-aedf-b69f" name="Polish-Lithuanian Battleflet (Spec)" publicationId="e265-8c7f-a4b2-a48e" hidden="true">
       <infoLinks>
-        <infoLink id="2424-98a9-c628-fefa" name="Swordwing Strike [3.05]" hidden="false" targetId="56b1-09f4-2c87-dc39" type="rule"/>
+        <infoLink id="2424-98a9-c628-fefa" name="Swordwing Strike [3.06]" hidden="false" targetId="56b1-09f4-2c87-dc39" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="cd72-fe9b-c373-2b2b" name="Fleet Abilities" hidden="false" targetId="dfe9-b90a-3878-78f5" primary="false"/>
@@ -701,7 +702,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <categoryLink id="57e8-9eaf-629c-1a80" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="ed02-b8a2-a0cf-240d" name="Escort Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="ed02-b8a2-a0cf-240d" name="Escort Model" hidden="false" collective="false" import="true" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b79-ad13-b6eb-4260" type="max"/>
           </constraints>
@@ -716,7 +717,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="19fa-b88e-f8dd-f272" name="Borodino" hidden="false" collective="false" import="true" targetId="639e-3c9d-35d4-522f" type="selectionEntry" sortIndex="2">
+        <entryLink id="19fa-b88e-f8dd-f272" name="Borodino" hidden="false" collective="false" import="true" targetId="639e-3c9d-35d4-522f" type="selectionEntry" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Blomqvist Fortune of War" hidden="false" id="79c8-e8d4-dfd0-d332" type="selectionEntry" targetId="af60-b6ba-dc4b-d575"/>
           </entryLinks>
@@ -748,7 +749,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <categoryLink id="c5c7-a437-a7d8-02e9" name="Mozhayski-Class" hidden="false" targetId="9bad-609b-b3cd-cd89" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="cb29-fd15-97ea-d8f7" name="Escort model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="cb29-fd15-97ea-d8f7" name="Escort model" hidden="false" collective="false" import="true" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d03-8670-9d16-90a3" type="max"/>
           </constraints>
@@ -766,12 +767,12 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="5c63-8318-e2d5-582f" name="Mozhayski" hidden="false" collective="false" import="true" targetId="3d8d-f32f-b4fe-b268" type="selectionEntry">
+        <entryLink id="5c63-8318-e2d5-582f" name="Mozhayski" hidden="false" collective="false" import="true" targetId="3d8d-f32f-b4fe-b268" type="selectionEntry" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Blomqvist Fortune of War" hidden="false" id="3293-9f0-94eb-c93d" type="selectionEntry" targetId="af60-b6ba-dc4b-d575"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Attached Unit [Russian, Flagship]" hidden="false" id="9c90-ee61-47ee-d4ea" type="selectionEntryGroup" targetId="88f0-7c2f-427d-2b2c"/>
+        <entryLink import="true" name="Attached Unit [Russian, Flagship]" hidden="false" id="9c90-ee61-47ee-d4ea" type="selectionEntryGroup" targetId="88f0-7c2f-427d-2b2c" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -798,7 +799,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <categoryLink id="0740-a7d5-fe70-748f" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="00cb-5228-2aa7-6a7a" name="Escort model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="00cb-5228-2aa7-6a7a" name="Escort model" hidden="false" collective="false" import="true" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="423d-d5f0-7f98-562f" type="max"/>
           </constraints>
@@ -821,7 +822,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
             <entryLink import="true" name="Blomqvist Fortune of War" hidden="false" id="9591-18f7-50ed-45ec" type="selectionEntry" targetId="af60-b6ba-dc4b-d575"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Attached Unit [Russian, Flagship]" hidden="false" id="95-2dee-80a2-61d0" type="selectionEntryGroup" targetId="88f0-7c2f-427d-2b2c"/>
+        <entryLink import="true" name="Attached Unit [Russian, Flagship]" hidden="false" id="95-2dee-80a2-61d0" type="selectionEntryGroup" targetId="88f0-7c2f-427d-2b2c" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -936,8 +937,9 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <categoryLink id="9b05-f3e3-d8b1-051c" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="4fb9-d8a2-57c5-d35a" name="Khatanga" hidden="false" collective="false" import="true" targetId="7ed3-64f6-5da3-dc59" type="selectionEntry" sortIndex="2"/>
-        <entryLink import="true" name="Attached Unit [Black Wolf]" hidden="false" id="6bc-3ae-b2af-29f3" type="selectionEntryGroup" targetId="54d1-4531-ffd1-4eb3" sortIndex="1"/>
+        <entryLink id="4fb9-d8a2-57c5-d35a" name="Khatanga" hidden="false" collective="false" import="true" targetId="7ed3-64f6-5da3-dc59" type="selectionEntry" sortIndex="3"/>
+        <entryLink import="true" name="Attached Unit [Black Wolf]" hidden="false" id="6bc-3ae-b2af-29f3" type="selectionEntryGroup" targetId="54d1-4531-ffd1-4eb3" sortIndex="2"/>
+        <entryLink import="true" name="Nation trait" hidden="false" id="9e51-99bc-0459-7524" type="selectionEntryGroup" targetId="9685-617a-faac-656e" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -979,8 +981,9 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <categoryLink id="934c-c28a-2b8a-aab2" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="4d2f-b988-5c0e-b171" name="Sineus" hidden="false" collective="false" import="true" targetId="a2c8-dcfb-9b72-fbe0" type="selectionEntry"/>
-        <entryLink import="true" name="Attached Unit [Black Wolf]" hidden="false" id="da06-a5e9-b018-6abd" type="selectionEntryGroup" targetId="54d1-4531-ffd1-4eb3"/>
+        <entryLink id="4d2f-b988-5c0e-b171" name="Sineus" hidden="false" collective="false" import="true" targetId="a2c8-dcfb-9b72-fbe0" type="selectionEntry" sortIndex="3"/>
+        <entryLink import="true" name="Attached Unit [Black Wolf]" hidden="false" id="da06-a5e9-b018-6abd" type="selectionEntryGroup" targetId="54d1-4531-ffd1-4eb3" sortIndex="2"/>
+        <entryLink import="true" name="Nation trait" hidden="false" id="a65a-9e27-c811-089a" type="selectionEntryGroup" targetId="9685-617a-faac-656e" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -1022,8 +1025,9 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <categoryLink id="4137-4cff-86ce-67bd" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="5087-eec3-ce99-f004" name="Oleg" hidden="false" collective="false" import="true" targetId="06be-2972-f4da-58f0" type="selectionEntry"/>
-        <entryLink import="true" name="Attached Unit [Black Wolf]" hidden="false" id="1226-fc8d-508b-3778" type="selectionEntryGroup" targetId="54d1-4531-ffd1-4eb3"/>
+        <entryLink id="5087-eec3-ce99-f004" name="Oleg" hidden="false" collective="false" import="true" targetId="06be-2972-f4da-58f0" type="selectionEntry" sortIndex="3"/>
+        <entryLink import="true" name="Attached Unit [Black Wolf]" hidden="false" id="1226-fc8d-508b-3778" type="selectionEntryGroup" targetId="54d1-4531-ffd1-4eb3" sortIndex="2"/>
+        <entryLink import="true" name="Nation trait" hidden="false" id="7d0d-d523-96d1-bfa2" type="selectionEntryGroup" targetId="9685-617a-faac-656e" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -1074,8 +1078,9 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <categoryLink id="b5be-2ebb-324b-d982" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="f4bf-4c95-c5ff-684b" name="Pravda" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" targetId="9ff2-ce9d-d681-41c3" type="selectionEntry"/>
-        <entryLink import="true" name="Attached Unit [Black Wolf]" hidden="false" id="806a-bead-a461-c516" type="selectionEntryGroup" targetId="54d1-4531-ffd1-4eb3"/>
+        <entryLink id="f4bf-4c95-c5ff-684b" name="Pravda" publicationId="e265-8c7f-a4b2-a48e" hidden="false" collective="false" import="true" targetId="9ff2-ce9d-d681-41c3" type="selectionEntry" sortIndex="3"/>
+        <entryLink import="true" name="Attached Unit [Black Wolf]" hidden="false" id="806a-bead-a461-c516" type="selectionEntryGroup" targetId="54d1-4531-ffd1-4eb3" sortIndex="2"/>
+        <entryLink import="true" name="Nation trait" hidden="false" id="b641-6cd6-7060-116c" type="selectionEntryGroup" targetId="9685-617a-faac-656e" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -1136,8 +1141,9 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <categoryLink id="3a02-0902-c09b-b405" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="c99f-2bb7-df46-9931" name="Kutsov" hidden="false" collective="false" import="true" targetId="32db-ea15-15e2-e595" type="selectionEntry"/>
-        <entryLink import="true" name="Attached Unit [Black Wolf]" hidden="false" id="6cda-baf0-a0a1-be39" type="selectionEntryGroup" targetId="54d1-4531-ffd1-4eb3"/>
+        <entryLink id="c99f-2bb7-df46-9931" name="Kutsov" hidden="false" collective="false" import="true" targetId="32db-ea15-15e2-e595" type="selectionEntry" sortIndex="3"/>
+        <entryLink import="true" name="Attached Unit [Black Wolf]" hidden="false" id="6cda-baf0-a0a1-be39" type="selectionEntryGroup" targetId="54d1-4531-ffd1-4eb3" sortIndex="2"/>
+        <entryLink import="true" name="Nation trait" hidden="false" id="cfa2-a109-0d36-d677" type="selectionEntryGroup" targetId="9685-617a-faac-656e" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -1179,8 +1185,9 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <categoryLink id="2b42-facc-a365-f209" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="45d3-6aaf-990b-fa6c" name="Norilsk" hidden="false" collective="false" import="true" targetId="df76-9315-5ef1-fe86" type="selectionEntry"/>
-        <entryLink import="true" name="Attached Unit [Black Wolf]" hidden="false" id="c2c3-12e1-4884-896" type="selectionEntryGroup" targetId="54d1-4531-ffd1-4eb3"/>
+        <entryLink id="45d3-6aaf-990b-fa6c" name="Norilsk" hidden="false" collective="false" import="true" targetId="df76-9315-5ef1-fe86" type="selectionEntry" sortIndex="3"/>
+        <entryLink import="true" name="Attached Unit [Black Wolf]" hidden="false" id="c2c3-12e1-4884-896" type="selectionEntryGroup" targetId="54d1-4531-ffd1-4eb3" sortIndex="2"/>
+        <entryLink import="true" name="Nation trait" hidden="false" id="8efd-4660-a991-4c5d" type="selectionEntryGroup" targetId="9685-617a-faac-656e" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -1210,7 +1217,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <categoryLink id="98ea-667a-c3d1-9cf4" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="d8d0-90fa-c302-b3da" name="Escort model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="d8d0-90fa-c302-b3da" name="Escort model" hidden="false" collective="false" import="true" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95bf-3aff-5ba5-f607" type="max"/>
           </constraints>
@@ -1228,12 +1235,12 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="b3c9-a888-7ac9-1c42" name="Murmansk" hidden="false" collective="false" import="true" targetId="720e-a75d-8687-6514" type="selectionEntry">
+        <entryLink id="b3c9-a888-7ac9-1c42" name="Murmansk" hidden="false" collective="false" import="true" targetId="720e-a75d-8687-6514" type="selectionEntry" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Blomqvist Fortune of War" hidden="false" id="2ce7-7b6f-14be-2289" type="selectionEntry" targetId="af60-b6ba-dc4b-d575"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Attached Unit [Russian, Flagship]" hidden="false" id="3498-21ff-d44d-1aeb" type="selectionEntryGroup" targetId="88f0-7c2f-427d-2b2c"/>
+        <entryLink import="true" name="Attached Unit [Russian, Flagship]" hidden="false" id="3498-21ff-d44d-1aeb" type="selectionEntryGroup" targetId="88f0-7c2f-427d-2b2c" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -1281,8 +1288,9 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <categoryLink id="86f1-d567-4ab5-98ba" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="0715-fa55-7540-8e0a" name="Morozko" hidden="false" collective="false" import="true" targetId="8290-2bfb-8673-33ca" type="selectionEntry"/>
-        <entryLink import="true" name="Attached Unit [Black Wolf]" hidden="false" id="cafb-68be-fcc5-458d" type="selectionEntryGroup" targetId="54d1-4531-ffd1-4eb3"/>
+        <entryLink id="0715-fa55-7540-8e0a" name="Morozko" hidden="false" collective="false" import="true" targetId="8290-2bfb-8673-33ca" type="selectionEntry" sortIndex="3"/>
+        <entryLink import="true" name="Attached Unit [Black Wolf]" hidden="false" id="cafb-68be-fcc5-458d" type="selectionEntryGroup" targetId="54d1-4531-ffd1-4eb3" sortIndex="2"/>
+        <entryLink import="true" name="Nation trait" hidden="false" id="ac01-6bda-4667-ca38" type="selectionEntryGroup" targetId="9685-617a-faac-656e" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -1386,6 +1394,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
       </categoryLinks>
       <entryLinks>
         <entryLink id="c711-4148-46b1-230d" name="Rurik" hidden="false" collective="false" import="true" targetId="e4b3-7155-20c6-819b" type="selectionEntry"/>
+        <entryLink import="true" name="Nation trait" hidden="false" id="ae1d-e56c-996e-33ce" type="selectionEntryGroup" targetId="9685-617a-faac-656e" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -1436,9 +1445,9 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <categoryLink id="a701-664b-a6f9-1320" name="Ukrainian" hidden="false" targetId="d7b3-10bd-20f0-4832" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="b9c4-e149-caa4-da1b" name="Khyzhak" hidden="false" collective="false" import="true" targetId="f106-de7d-1dfd-01b2" type="selectionEntry"/>
-        <entryLink import="true" name="Attached Unit [Ukrainian]" hidden="false" id="1cd0-140-a9d3-aba3" type="selectionEntryGroup" targetId="c673-b466-4c05-aa93"/>
-        <entryLink import="true" name="Attached Unit [Black Wolf]" hidden="false" id="5401-1bdf-742b-11fc" type="selectionEntryGroup" targetId="54d1-4531-ffd1-4eb3"/>
+        <entryLink id="b9c4-e149-caa4-da1b" name="Khyzhak" hidden="false" collective="false" import="true" targetId="f106-de7d-1dfd-01b2" type="selectionEntry" sortIndex="3"/>
+        <entryLink import="true" name="Attached Unit [Ukrainian]" hidden="false" id="1cd0-140-a9d3-aba3" type="selectionEntryGroup" targetId="c673-b466-4c05-aa93" sortIndex="2"/>
+        <entryLink import="true" name="Attached Unit [Black Wolf]" hidden="false" id="5401-1bdf-742b-11fc" type="selectionEntryGroup" targetId="54d1-4531-ffd1-4eb3" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
@@ -1630,7 +1639,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <categoryLink id="6333-f4e2-d531-f616" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="e512-ab64-e5a5-a016" name="Escort model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="e512-ab64-e5a5-a016" name="Escort model" hidden="false" collective="false" import="true" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4af-6fed-6c2f-6d4c" type="max"/>
           </constraints>
@@ -1648,12 +1657,12 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="251b-5727-8c4a-dc45" name="Moskva" hidden="false" collective="false" import="true" targetId="4fe2-0633-7cea-795a" type="selectionEntry">
+        <entryLink id="251b-5727-8c4a-dc45" name="Moskva" hidden="false" collective="false" import="true" targetId="4fe2-0633-7cea-795a" type="selectionEntry" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Blomqvist Fortune of War" hidden="false" id="79f9-8c10-c0de-16f7" type="selectionEntry" targetId="af60-b6ba-dc4b-d575"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Attached Unit [Russian, Flagship]" hidden="false" id="86ff-2c6a-a00d-e00f" type="selectionEntryGroup" targetId="88f0-7c2f-427d-2b2c"/>
+        <entryLink import="true" name="Attached Unit [Russian, Flagship]" hidden="false" id="86ff-2c6a-a00d-e00f" type="selectionEntryGroup" targetId="88f0-7c2f-427d-2b2c" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -1702,8 +1711,9 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <categoryLink id="c23b-5d8e-c1f9-b085" name="Surface Unit" hidden="false" targetId="464e-890a-84b2-8ce9" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="a3b5-38be-bd98-6d61" name="Boyar" hidden="false" collective="false" import="true" targetId="8138-f0dc-1e50-2ec3" type="selectionEntry" sortIndex="2"/>
-        <entryLink import="true" name="Attached Unit [Black Wolf]" hidden="false" id="55ad-8f1-1c0b-eec3" type="selectionEntryGroup" targetId="54d1-4531-ffd1-4eb3" sortIndex="1"/>
+        <entryLink id="a3b5-38be-bd98-6d61" name="Boyar" hidden="false" collective="false" import="true" targetId="8138-f0dc-1e50-2ec3" type="selectionEntry" sortIndex="3"/>
+        <entryLink import="true" name="Attached Unit [Black Wolf]" hidden="false" id="55ad-8f1-1c0b-eec3" type="selectionEntryGroup" targetId="54d1-4531-ffd1-4eb3" sortIndex="2"/>
+        <entryLink import="true" name="Nation trait" hidden="false" id="f4b3-1899-80d8-d952" type="selectionEntryGroup" targetId="9685-617a-faac-656e" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -2093,7 +2103,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <categoryLink id="cf88-6743-ccf8-fba2" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="7a2a-4893-a04e-3ebb" name="Escort Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="7a2a-4893-a04e-3ebb" name="Escort Model" hidden="false" collective="false" import="true" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db38-a540-946e-6266" type="max"/>
           </constraints>
@@ -2111,7 +2121,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="a7fd-c168-07d6-0c09" name="Prometheus" hidden="false" collective="false" import="true" targetId="2bc6-b2a1-3828-8384" type="selectionEntry"/>
+        <entryLink id="a7fd-c168-07d6-0c09" name="Prometheus" hidden="false" collective="false" import="true" targetId="2bc6-b2a1-3828-8384" type="selectionEntry" sortIndex="2"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -2193,7 +2203,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <categoryLink id="0520-2d65-7235-3bc7" name="Mongolian" hidden="false" targetId="6047-720c-1370-9d3b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="0c53-b336-1a72-deb1" name="Escort Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="0c53-b336-1a72-deb1" name="Escort Model" hidden="false" collective="false" import="true" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da85-8887-a2d7-45ee" type="max"/>
           </constraints>
@@ -2211,8 +2221,8 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="6adb-838a-a63d-253c" name="Ortoq" hidden="false" collective="false" import="true" targetId="1fcb-17f9-3d2a-8b93" type="selectionEntry"/>
-        <entryLink import="true" name="Attached Unit [Mongolian]" hidden="false" id="8cf3-2c1a-c384-6790" type="selectionEntryGroup" targetId="08fd-be4b-1073-f4ac"/>
+        <entryLink id="6adb-838a-a63d-253c" name="Ortoq" hidden="false" collective="false" import="true" targetId="1fcb-17f9-3d2a-8b93" type="selectionEntry" sortIndex="3"/>
+        <entryLink import="true" name="Attached Unit [Mongolian]" hidden="false" id="8cf3-2c1a-c384-6790" type="selectionEntryGroup" targetId="08fd-be4b-1073-f4ac" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -2323,7 +2333,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <categoryLink id="75c4-5f4b-9bc5-ea5f" name="Mongolian" hidden="false" targetId="6047-720c-1370-9d3b" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="3ce2-26c2-13a2-ad20" name="Escort Model" hidden="false" collective="false" import="true" sortIndex="2">
+        <selectionEntryGroup id="3ce2-26c2-13a2-ad20" name="Escort Model" hidden="false" collective="false" import="true" sortIndex="3">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2305-4086-bc77-23a9" type="max"/>
           </constraints>
@@ -2341,8 +2351,9 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="39c6-5e82-c587-868a" name="Khan" hidden="false" collective="false" import="true" targetId="36bc-1f0e-24ce-c847" type="selectionEntry" sortIndex="3"/>
-        <entryLink import="true" name="Attached Unit [Mongolian]" hidden="false" id="1aaf-ca4c-1629-76c3" type="selectionEntryGroup" targetId="08fd-be4b-1073-f4ac" sortIndex="1"/>
+        <entryLink id="39c6-5e82-c587-868a" name="Khan" hidden="false" collective="false" import="true" targetId="36bc-1f0e-24ce-c847" type="selectionEntry" sortIndex="4"/>
+        <entryLink import="true" name="Attached Unit [Mongolian]" hidden="false" id="1aaf-ca4c-1629-76c3" type="selectionEntryGroup" targetId="08fd-be4b-1073-f4ac" sortIndex="2"/>
+        <entryLink import="true" name="Nation trait" hidden="false" id="df48-c58e-a374-0bd9" type="selectionEntryGroup" targetId="9685-617a-faac-656e" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -2385,7 +2396,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <categoryLink id="3914-8985-b638-5fb0" name="Bogatyr" hidden="false" targetId="8841-dfb0-5120-0a8f" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="ccc5-dcf8-0ca6-4bdc" name="Escort Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="ccc5-dcf8-0ca6-4bdc" name="Escort Model" hidden="false" collective="false" import="true" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02d1-5dd9-7f88-36b0" type="max"/>
           </constraints>
@@ -2403,25 +2414,25 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="8ba3-7045-adb5-db35" name="The Bogatyr" hidden="false" collective="false" import="true" targetId="c4ae-cfd7-94f8-da7a" type="selectionEntry">
+        <entryLink id="8ba3-7045-adb5-db35" name="The Bogatyr" hidden="false" collective="false" import="true" targetId="c4ae-cfd7-94f8-da7a" type="selectionEntry" sortIndex="3">
           <modifiers>
             <modifier type="add" field="category" value="008d-d8b9-711e-b1a3"/>
             <modifier type="set" field="name" value="Anika Polianitsa"/>
           </modifiers>
         </entryLink>
-        <entryLink id="2ed0-df42-e538-0233" name="The Bogatyr" hidden="false" collective="false" import="true" targetId="c4ae-cfd7-94f8-da7a" type="selectionEntry">
+        <entryLink id="2ed0-df42-e538-0233" name="The Bogatyr" hidden="false" collective="false" import="true" targetId="c4ae-cfd7-94f8-da7a" type="selectionEntry" sortIndex="4">
           <modifiers>
             <modifier type="add" field="category" value="b485-2166-74b7-7c68"/>
             <modifier type="set" field="name" value="Alyosha Koldun"/>
           </modifiers>
         </entryLink>
-        <entryLink id="862d-9b28-a99e-9b35" name="The Bogatyr" hidden="false" collective="false" import="true" targetId="c4ae-cfd7-94f8-da7a" type="selectionEntry">
+        <entryLink id="862d-9b28-a99e-9b35" name="The Bogatyr" hidden="false" collective="false" import="true" targetId="c4ae-cfd7-94f8-da7a" type="selectionEntry" sortIndex="5">
           <modifiers>
             <modifier type="add" field="category" value="617e-b6e5-27bb-62f9"/>
             <modifier type="set" field="name" value="Ilya Muromets"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Attached Unit [Black Wolf]" hidden="false" id="7af7-708-8d1e-25f3" type="selectionEntryGroup" targetId="54d1-4531-ffd1-4eb3"/>
+        <entryLink import="true" name="Attached Unit [Black Wolf]" hidden="false" id="7af7-708-8d1e-25f3" type="selectionEntryGroup" targetId="54d1-4531-ffd1-4eb3" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -2451,7 +2462,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <categoryLink id="6d9c-aa25-c4f5-403b" name="Alexayev-Class" hidden="false" targetId="aeb5-114e-68cf-0e35" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="4881-a14f-0d00-2c68" name="Alexayev" hidden="false" collective="false" import="true" targetId="45ae-63d3-374a-1a1c" type="selectionEntry" sortIndex="2">
+        <entryLink import="true" name="Alexayev" hidden="false" id="4881-a14f-0d00-2c68" collective="false" targetId="45ae-63d3-374a-1a1c" type="selectionEntry">
           <entryLinks>
             <entryLink import="true" name="Blomqvist Fortune of War" hidden="false" id="2f93-a661-e05c-ead3" type="selectionEntry" targetId="af60-b6ba-dc4b-d575"/>
           </entryLinks>
@@ -2592,8 +2603,8 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <categoryLink id="2426-ea35-1f4b-d88f" name="Russian" hidden="false" targetId="43a2-7e77-ff29-fb5c" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="1858-c026-53be-5b10" name="Krykun" hidden="false" collective="false" import="true" targetId="c9c8-eda1-3b4c-5bba" type="selectionEntry"/>
-        <entryLink import="true" name="Attached Unit [Black Wolf]" hidden="false" id="c487-c1b8-c7f5-2f62" type="selectionEntryGroup" targetId="54d1-4531-ffd1-4eb3"/>
+        <entryLink id="1858-c026-53be-5b10" name="Krykun" hidden="false" collective="false" import="true" targetId="c9c8-eda1-3b4c-5bba" type="selectionEntry" sortIndex="2"/>
+        <entryLink import="true" name="Nation trait" hidden="false" id="c093-119c-b208-55f4" type="selectionEntryGroup" targetId="9685-617a-faac-656e" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
@@ -2711,7 +2722,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <categoryLink name="Flagship" hidden="false" id="caeb-d1ae-628f-aa76" targetId="fef3-1842-580c-4bef" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="587a-d2f5-c055-744" name="Escort Model" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="587a-d2f5-c055-744" name="Escort Model" hidden="false" collective="false" import="true" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a46-8f69-deb8-9f50" type="max"/>
           </constraints>
@@ -2729,12 +2740,12 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="7192-61f7-b637-ae0f" name="Khan" hidden="false" collective="false" import="true" targetId="36bc-1f0e-24ce-c847" type="selectionEntry">
+        <entryLink id="7192-61f7-b637-ae0f" name="Khan" hidden="false" collective="false" import="true" targetId="36bc-1f0e-24ce-c847" type="selectionEntry" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Blomqvist Fortune of War" hidden="false" id="951-faf-4460-b5e7" type="selectionEntry" targetId="af60-b6ba-dc4b-d575"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Attached Unit [Mongolian]" hidden="false" id="68a2-3368-4b70-1a31" type="selectionEntryGroup" targetId="08fd-be4b-1073-f4ac"/>
+        <entryLink import="true" name="Attached Unit [Mongolian]" hidden="false" id="68a2-3368-4b70-1a31" type="selectionEntryGroup" targetId="08fd-be4b-1073-f4ac" sortIndex="1"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="0"/>
@@ -3352,7 +3363,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="245"/>
+        <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="240"/>
         <cost name="Victory Points" typeId="426e-670d-6ddd-9631" value="0"/>
       </costs>
     </selectionEntry>
@@ -3368,7 +3379,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <infoLink id="4107-424d-4485-5c25" name="Pakhtusov" publicationId="e265-8c7f-a4b2-a48e" page="4" hidden="false" targetId="e9ed-ebd6-bbd3-8580" type="profile"/>
         <infoLink id="36f9-bef9-45c7-7d27" name="Ablative Armour [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
         <infoLink id="7022-6877-a917-177e" name="Mark of Fate [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="614d-6063-e572-5bcb" type="rule"/>
-        <infoLink id="82d0-29b5-75a3-62d7" name="Cryo-Capacitors [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="8e0c-5c25-228a-bccf" type="rule"/>
+        <infoLink id="82d0-29b5-75a3-62d7" name="Cryo-Capacitors [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="8e0c-5c25-228a-bccf" type="rule"/>
         <infoLink id="e7ee-64db-76d1-710d" name="Heavy Firepower [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
         <infoLink id="8623-6d70-ea8a-8c11" name="Inspirational [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b48d-b4e0-19e8-d85a" type="rule"/>
       </infoLinks>
@@ -3454,7 +3465,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <infoLink id="2317-5f64-8c98-0139" name="Khatanga" publicationId="e265-8c7f-a4b2-a48e" page="4" hidden="false" targetId="a77e-c54e-51a1-4b00" type="profile"/>
         <infoLink id="b832-534f-55a3-a974" name="Ablative Armour [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
         <infoLink id="9d3d-2cf8-f372-0c8a" name="Hammer Sweep [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
-        <infoLink id="4070-7f6d-3cb9-0c75" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="4070-7f6d-3cb9-0c75" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4ae8-6007-6ff9-f67f" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
@@ -3718,7 +3729,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <constraint field="selections" scope="parent" value="5" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8e05-8069-8f3a-28de" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="7aa5-bbe6-29c8-1b3e" name="Overthruster (x) [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="eff5-47db-113b-2340" type="rule">
+        <infoLink id="7aa5-bbe6-29c8-1b3e" name="Overthruster (x) [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="eff5-47db-113b-2340" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Overthruster (8)"/>
           </modifiers>
@@ -3731,7 +3742,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
             <modifier type="set" value="Bombardment (Aerial)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink id="92e6-438e-a6cf-92cc" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="92e6-438e-a6cf-92cc" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7a35-df47-54b1-d381" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
@@ -3834,8 +3845,8 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
             <modifier type="set" value="Bombardment (Hazardous)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink id="d56a-1455-41c7-cd13" name="Quantity is a Quality [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ad4c-d50d-de1f-b975" type="rule"/>
-        <infoLink id="b2ca-f3e8-607d-9171" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="d56a-1455-41c7-cd13" name="Quantity is a Quality [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ad4c-d50d-de1f-b975" type="rule"/>
+        <infoLink id="b2ca-f3e8-607d-9171" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="431a-21cd-215f-8788" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
@@ -4038,9 +4049,9 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <infoLink id="7f97-fe65-b96e-c518" name="Hammer Sweep [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
         <infoLink id="fdad-2de8-037b-05ab" name="Oleg" hidden="false" targetId="d208-f885-1f6d-bd4f" type="profile"/>
         <infoLink id="f6f2-87f1-d221-cfa9" name="Maritime Patrol [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b7c-6003-8433-2817" type="rule"/>
-        <infoLink id="7524-010e-321a-ed43" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="7524-010e-321a-ed43" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
         <infoLink id="0ab6-791c-9b1c-4e4f" name="Shallow Draught [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
-        <infoLink id="5fe2-109-cc42-7f1" name="Quantity is a Quality [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ad4c-d50d-de1f-b975" type="rule"/>
+        <infoLink id="5fe2-109-cc42-7f1" name="Quantity is a Quality [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ad4c-d50d-de1f-b975" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e583-8e56-4dcd-2777" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
@@ -4198,7 +4209,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <infoLink id="5681-c540-27c8-986e" name="Ablative Armour [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
         <infoLink id="5975-b354-f8cd-0ca8" name="SRS Mine Clearance [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
         <infoLink id="3f95-18a8-add3-4323" name="SRS Recon [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
-        <infoLink id="44c7-6129-f89e-57bf" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="44c7-6129-f89e-57bf" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5fcc-eff3-60cf-a52f" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
@@ -4311,8 +4322,8 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <infoLink id="e49e-03ef-f98a-135f" name="Ablative Armour [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
         <infoLink id="f485-a76f-3c9e-64d0" name="Hammer Sweep [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
         <infoLink id="816f-ac37-a4c8-ff9c" name="Kutsov" hidden="false" targetId="03a2-b333-4273-4e48" type="profile"/>
-        <infoLink id="9e4a-61cf-56a5-f0e4" name="Quantity is a Quality [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ad4c-d50d-de1f-b975" type="rule"/>
-        <infoLink id="26c9-bd1d-88ea-2436" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="9e4a-61cf-56a5-f0e4" name="Quantity is a Quality [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ad4c-d50d-de1f-b975" type="rule"/>
+        <infoLink id="26c9-bd1d-88ea-2436" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="501b-126d-8502-9fd5" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
@@ -4506,8 +4517,8 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
             <modifier type="set" value="Focused Fire (Gunnery)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink id="c667-e7a2-b15d-071f" name="Quantity is a Quality [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ad4c-d50d-de1f-b975" type="rule"/>
-        <infoLink id="77bd-2f33-4990-50d2" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="c667-e7a2-b15d-071f" name="Quantity is a Quality [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ad4c-d50d-de1f-b975" type="rule"/>
+        <infoLink id="77bd-2f33-4990-50d2" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="cd75-c9ae-d2a1-dc4f" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
@@ -4731,8 +4742,8 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <infoLink id="cbe2-3bef-7592-75b7" name="Ablative Armour [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
         <infoLink id="849e-f36e-ad03-584c" name="Hammer Sweep [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
         <infoLink id="7a1b-5b15-9af3-4ad0" name="Heavy Firepower [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="c863-f8ba-aeeb-f8aa" name="Cryo-Capacitors [3.05]" hidden="false" targetId="8e0c-5c25-228a-bccf" type="rule"/>
-        <infoLink id="4dfa-9737-c247-495d" name="Quantity is a Quality [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ad4c-d50d-de1f-b975" type="rule"/>
+        <infoLink id="c863-f8ba-aeeb-f8aa" name="Cryo-Capacitors [3.06]" hidden="false" targetId="8e0c-5c25-228a-bccf" type="rule"/>
+        <infoLink id="4dfa-9737-c247-495d" name="Quantity is a Quality [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ad4c-d50d-de1f-b975" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="03f2-3eb8-7c68-07fd" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
@@ -4785,7 +4796,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="80e6-bdbb-25bc-8415" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5"/>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -4933,7 +4944,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c5ea-1f74-95f2-6369" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="5"/>
+                    <cost name="Points" typeId="7c9b-6b09-b5ac-2249" value="3"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -4993,7 +5004,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <infoLink id="b589-6c2f-494d-b871" name="Heavy Firepower [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
         <infoLink id="5912-893d-f406-2d39" name="Unexpected Arrival [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="f4aa-042e-34e5-1938" type="rule"/>
         <infoLink id="822a-b309-96bb-96ad" name="Ablative Armour [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
-        <infoLink id="0ccf-bd55-b90b-7729" name="Cryo-Capacitors [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="8e0c-5c25-228a-bccf" type="rule"/>
+        <infoLink id="0ccf-bd55-b90b-7729" name="Cryo-Capacitors [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="8e0c-5c25-228a-bccf" type="rule"/>
         <infoLink id="2679-5d18-a03d-efd6" name="SRS Mine Clearance [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
         <infoLink id="7cda-9bab-16c2-8abe" name="SRS Recon [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
         <infoLink id="b748-4302-ff93-1ca9" name="Large Target [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="5b16-04f1-a7a8-d2e0" type="rule"/>
@@ -5435,11 +5446,11 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fd8-3d3d-b02f-618a" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="620d-8c4b-9307-affd" name="Cryo-Capacitors [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="8e0c-5c25-228a-bccf" type="rule"/>
+        <infoLink id="620d-8c4b-9307-affd" name="Cryo-Capacitors [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="8e0c-5c25-228a-bccf" type="rule"/>
         <infoLink id="5b88-007b-4899-f90b" name="Hammer Sweep [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
         <infoLink id="3232-8975-6731-164b" name="Morozko" hidden="false" targetId="2ba8-653c-6fe3-6489" type="profile"/>
-        <infoLink id="23f4-4f8f-77d0-3e6d" name="Quantity is a Quality [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ad4c-d50d-de1f-b975" type="rule"/>
-        <infoLink id="064d-8556-37c9-c6f6" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="23f4-4f8f-77d0-3e6d" name="Quantity is a Quality [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ad4c-d50d-de1f-b975" type="rule"/>
+        <infoLink id="064d-8556-37c9-c6f6" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
         <infoLink id="e5a5-e0de-5b3f-75de" name="Ablative Armour [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -5702,8 +5713,8 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <infoLink id="cb42-7225-6209-f98f" name="Ablative Armour [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
         <infoLink id="6e0e-32a4-9be6-f4be" name="Shallow Draught [3.08]" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
         <infoLink id="945a-9f3a-acbf-645c" name="Rurik" hidden="false" targetId="d106-113f-fe34-c060" type="profile"/>
-        <infoLink id="7b55-4e45-9d58-bce1" name="Quantity is a Quality [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ad4c-d50d-de1f-b975" type="rule"/>
-        <infoLink id="2097-0835-8350-28c5" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="7b55-4e45-9d58-bce1" name="Quantity is a Quality [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ad4c-d50d-de1f-b975" type="rule"/>
+        <infoLink id="2097-0835-8350-28c5" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9f2b-ed58-4ce7-1b8a" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
@@ -5795,8 +5806,8 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <infoLink id="97dc-535c-c16e-9d8b" name="Vanguard [3.08]" hidden="false" targetId="f721-8318-3875-0140" type="rule"/>
         <infoLink id="ce86-b711-19f7-b728" name="Piranya" hidden="false" targetId="375c-aafb-4334-ae60" type="profile"/>
         <infoLink id="acdc-dc68-9577-a784" name="Agile [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
-        <infoLink id="9cca-3c25-4267-1e59" name="Slava Ukraini! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="357c-e17f-6054-f320" type="rule"/>
-        <infoLink id="9474-fe06-78cb-9fe5" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="9cca-3c25-4267-1e59" name="Slava Ukraini! [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="357c-e17f-6054-f320" type="rule"/>
+        <infoLink id="9474-fe06-78cb-9fe5" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
         <infoLink id="73ee-585d-ada5-a14a" name="Deep Dive [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="3bf2-4bf2-c33d-95ab" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -5834,7 +5845,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a880-46f6-9c02-6362" type="min"/>
-        <constraint field="selections" scope="parent" value="3" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="50d1-e0e5-3969-6fb3" type="max"/>
+        <constraint field="selections" scope="parent" value="4" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="50d1-e0e5-3969-6fb3" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="28e0-1848-056f-0463" name="Full Steam Ahead [3.08]" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
@@ -5842,8 +5853,8 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <infoLink id="a33a-9e96-3dd0-8e9c" name="Khyzhak" hidden="false" targetId="1e9d-78e1-ce92-25f0" type="profile"/>
         <infoLink id="45ed-994c-b74d-15c5" name="Agile [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
         <infoLink id="2b83-fed9-21ec-80da" name="Mine Sweeper [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="3c38-dac5-4a88-5358" type="rule"/>
-        <infoLink id="8afd-bbaf-756c-a193" name="Slava Ukraini! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="357c-e17f-6054-f320" type="rule"/>
-        <infoLink id="446d-d30e-b274-d8f3" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="8afd-bbaf-756c-a193" name="Slava Ukraini! [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="357c-e17f-6054-f320" type="rule"/>
+        <infoLink id="446d-d30e-b274-d8f3" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
         <infoLink id="9ed6-acf5-c0d3-b8a9" name="Deep Dive [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="3bf2-4bf2-c33d-95ab" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -5934,9 +5945,9 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <infoLink id="a050-d94e-0708-3f2c" name="Hammer Sweep [3.08]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
         <infoLink id="ebcb-d5b1-5d8c-0707" name="Akula" hidden="false" targetId="087b-c52e-bb34-dd31" type="profile"/>
         <infoLink id="4feb-df98-1bc6-d1c1" name="Mine Layer [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940f-44f3-71bf-f26c" type="rule"/>
-        <infoLink id="fd1e-a5b1-7c88-a391" name="Slava Ukraini! [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="true" targetId="357c-e17f-6054-f320" type="rule"/>
+        <infoLink id="fd1e-a5b1-7c88-a391" name="Slava Ukraini! [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="true" targetId="357c-e17f-6054-f320" type="rule"/>
         <infoLink id="18e3-d39b-dd92-ad18" name="Temperamental Design [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="1ea8-5ef6-de30-f3ae" type="rule"/>
-        <infoLink id="cfee-b262-e0db-fcd9" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="cfee-b262-e0db-fcd9" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
         <infoLink id="4dfe-da16-e071-0821" name="Silent Stalker [3.08]" hidden="false" targetId="6eb5-5dd3-57d9-993f" type="rule"/>
         <infoLink id="ce73-a334-9cfa-a99d" name="Deep Dive [3.08]" hidden="false" targetId="3bf2-4bf2-c33d-95ab" type="rule"/>
       </infoLinks>
@@ -6086,13 +6097,13 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <infoLink id="75dc-d7c8-b75e-8ee3" name="Full Steam Ahead [3.08]" hidden="false" targetId="9111-7f5e-6eac-7cbe" type="rule"/>
         <infoLink id="ff66-3f00-d4c3-2a9c" name="Hammer Sweep [3.08]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
         <infoLink id="e6b7-7865-0c4a-1cb5" name="Death Bringer" hidden="false" targetId="8e13-8e7e-4435-3b9c" type="profile"/>
-        <infoLink id="498b-e094-e205-c18e" name="Black Wolf Mercenaries [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="498b-e094-e205-c18e" name="Black Wolf Mercenaries [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
         <infoLink id="d472-b017-ec97-42e1" name="Submarauder [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="481e-dcda-510f-f32d" type="rule"/>
         <infoLink id="8995-7f88-c038-482d" name="Mine Layer [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="940f-44f3-71bf-f26c" type="rule"/>
         <infoLink id="97ad-3dcf-97f5-c9f2" name="Dark Hand [3.08]" hidden="false" targetId="00c3-af87-0b9f-d939" type="rule"/>
-        <infoLink id="241a-4fbe-3239-5aa1" name="Breaker of Bows [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="7128-f088-fcc6-6b08" type="rule"/>
+        <infoLink id="241a-4fbe-3239-5aa1" name="Breaker of Bows [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="7128-f088-fcc6-6b08" type="rule"/>
         <infoLink id="c560-13e3-86b8-e2b2" name="Vulnerable Stern [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
-        <infoLink id="d5bd-fb45-0bfc-744d" name="Lone Wolf [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="381a-833b-bfd2-e1f5" type="rule"/>
+        <infoLink id="d5bd-fb45-0bfc-744d" name="Lone Wolf [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="381a-833b-bfd2-e1f5" type="rule"/>
         <infoLink id="1649-6c4f-108b-f299" name="Deep Dive [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="3bf2-4bf2-c33d-95ab" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -6288,7 +6299,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb6f-845b-8d5b-c1b8" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="c9f7-ea02-1aab-1703" name="Heavy Rocket Battery" hidden="false" collective="false" import="true" targetId="65b3-d9a8-e0a3-a028" type="selectionEntry">
+                <entryLink id="c9f7-ea02-1aab-1703" name="Yastreb Missile Battery" hidden="false" collective="false" import="true" targetId="0850-b3fb-e98d-deaa" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="5347-4855-4421-ed77"/>
                   </modifiers>
@@ -6326,7 +6337,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="87b6-5db1-be55-6a31" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="6767-bc3a-f2b7-1db5" name="Heavy Rocket Battery" hidden="false" collective="false" import="true" targetId="65b3-d9a8-e0a3-a028" type="selectionEntry">
+                <entryLink id="6767-bc3a-f2b7-1db5" name="Yastreb Missile Battery" hidden="false" collective="false" import="true" targetId="0850-b3fb-e98d-deaa" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
                   </modifiers>
@@ -6480,8 +6491,8 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
           </modifiers>
         </infoLink>
         <infoLink id="5c58-9a4d-fbd6-9750" name="Ablative Armour [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
-        <infoLink id="9c89-6d30-e776-c3d5" name="Black Wolf Mercenaries [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
-        <infoLink id="cc1f-f379-6905-801c" name="Cryo-Capacitors [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="8e0c-5c25-228a-bccf" type="rule"/>
+        <infoLink id="9c89-6d30-e776-c3d5" name="Black Wolf Mercenaries [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="cc1f-f379-6905-801c" name="Cryo-Capacitors [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="8e0c-5c25-228a-bccf" type="rule"/>
         <infoLink id="8c57-ed38-32c3-5ccc" name="SRS Mine Clearance [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
         <infoLink id="e9d5-4812-b13f-bef2" name="SRS Recon [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0a26-0b4a-261f-3db0" type="rule"/>
         <infoLink id="55c6-1f3e-5fe0-2150" name="Heavy Firepower [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
@@ -6999,9 +7010,9 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
       </constraints>
       <infoLinks>
         <infoLink id="ad88-3dda-4a47-8985" name="Ablative Armour [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
-        <infoLink id="b1f7-3061-7feb-c35f" name="Quantity is a Quality [3.05]" hidden="false" targetId="ad4c-d50d-de1f-b975" type="rule"/>
+        <infoLink id="b1f7-3061-7feb-c35f" name="Quantity is a Quality [3.06]" hidden="false" targetId="ad4c-d50d-de1f-b975" type="rule"/>
         <infoLink id="7649-af00-dbe1-552e" name="Boyar" hidden="false" targetId="7b8f-21e0-6562-5e3f" type="profile"/>
-        <infoLink id="fd84-2ed3-acf2-cde2" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="fd84-2ed3-acf2-cde2" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
         <infoLink id="4c80-c470-af88-8025" name="Bombardment (x) [3.08]" hidden="false" targetId="fae5-d154-470a-ac54" type="rule">
           <modifiers>
             <modifier type="set" value="Bombardment (Aerial)" field="name"/>
@@ -7115,7 +7126,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <infoLink id="fe04-34f9-7aac-b56f" name="Strategic Withdrawal [3.08]" hidden="false" targetId="950e-974b-d566-0e66" type="rule"/>
         <infoLink id="9ec6-71e7-9a58-eac1" name="Vulnerable Stern [3.08]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
         <infoLink id="e9eb-7bfb-c11c-4ecc" name="Low-Level Strike [3.08]" hidden="false" targetId="0054-ea91-5408-283a" type="rule"/>
-        <infoLink id="fd7f-44d0-0113-5b08" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="fd7f-44d0-0113-5b08" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
         <infoLink id="9469-25a0-80cc-9c7b" name="Tracer Fire (x) [3.08]" hidden="false" targetId="6266-3217-d898-9935" type="rule">
           <modifiers>
             <modifier type="set" value="Tracer Fire (Gunnery)" field="name"/>
@@ -7309,7 +7320,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
       <infoLinks>
         <infoLink id="0d88-badd-cc35-b110" name="Saransk" hidden="false" targetId="a377-5b14-82f6-cb3c" type="profile"/>
         <infoLink id="6e00-b9ed-ed26-9641" name="Ablative Armour [3.08]" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
-        <infoLink id="fa8e-0f23-7dd7-0a47" name="Azhdaya Berserkers [3.05]" hidden="false" targetId="ad15-2a18-161b-7a44" type="rule"/>
+        <infoLink id="fa8e-0f23-7dd7-0a47" name="Azhdaya Berserkers [3.06]" hidden="false" targetId="ad15-2a18-161b-7a44" type="rule"/>
         <infoLink id="51d4-f37c-3744-a8c1" name="Flak Barrage (x) [3.08]" hidden="false" targetId="7b67-714d-bb2b-6297" type="rule">
           <modifiers>
             <modifier type="append" field="name" value="Flak Barrage (7)"/>
@@ -7318,7 +7329,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <infoLink id="af52-f103-bc25-5468" name="Low-Level Strike [3.08]" hidden="false" targetId="0054-ea91-5408-283a" type="rule"/>
         <infoLink id="2755-dbd7-b1a4-0c75" name="Linear Dash [3.08]" hidden="false" targetId="db6c-61a0-22a6-0d7a" type="rule"/>
         <infoLink id="0000-6d27-6cc7-954d" name="Vulnerable Stern [3.08]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
-        <infoLink id="5cd9-5ba1-448a-af45" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="5cd9-5ba1-448a-af45" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7ac9-2831-d57d-ed81" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
@@ -7399,7 +7410,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <infoLink id="1214-9b75-3e70-3ea0" name="Low-Level Strike [3.08]" hidden="false" targetId="0054-ea91-5408-283a" type="rule"/>
         <infoLink id="dde4-e987-b51b-9a70" name="Terror From Above [3.08]" hidden="false" targetId="eabd-7cf1-b305-2fdb" type="rule"/>
         <infoLink id="49d6-be4d-125a-9b7b" name="Vulnerable Stern [3.08]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
-        <infoLink id="4a4b-b5be-02a1-84f4" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="4a4b-b5be-02a1-84f4" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
         <infoLink id="23f8-4b66-1c18-3fcf" name="Cloud Dive [3.08]" hidden="false" targetId="52c5-a8f6-6309-f95c" type="rule"/>
         <infoLink name="Flak Barrage (x) [3.08]" id="26d3-44c4-dde6-149d" hidden="false" targetId="7b67-714d-bb2b-6297" type="rule">
           <modifiers>
@@ -7445,7 +7456,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <infoLink id="15ad-506b-801d-8317" name="Zubr" hidden="false" targetId="0fad-1330-0841-74d3" type="profile"/>
         <infoLink id="f964-c05f-22ef-3c07" name="Ablative Armour [3.08]" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
         <infoLink id="1b8a-72b2-15d7-3260" name="Agile [3.08]" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
-        <infoLink id="832a-e10e-4c84-6d0c" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="832a-e10e-4c84-6d0c" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
         <infoLink id="f730-98a5-8e75-4abd" name="Powerslide [3.08]" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
         <infoLink id="d67e-20a8-2f16-e5b7" name="Tracer Fire (x) [3.08]" hidden="false" targetId="6266-3217-d898-9935" type="rule">
           <modifiers>
@@ -7511,9 +7522,9 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
       <infoLinks>
         <infoLink id="de7f-50a9-467e-1ddd" name="Yak" hidden="false" targetId="1c71-a651-cdde-f580" type="profile"/>
         <infoLink id="1a8c-f530-c8b8-c211" name="Ablative Armour [3.08]" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
-        <infoLink id="9696-8729-67c7-279b" name="Azhdaya Berserkers [3.05]" hidden="false" targetId="ad15-2a18-161b-7a44" type="rule"/>
+        <infoLink id="9696-8729-67c7-279b" name="Azhdaya Berserkers [3.06]" hidden="false" targetId="ad15-2a18-161b-7a44" type="rule"/>
         <infoLink id="ae89-368c-bca9-e683" name="Landing Vessel [3.08]" hidden="false" targetId="4869-03db-33f9-fa82" type="rule"/>
-        <infoLink id="f7eb-040c-ac9e-ab81" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="f7eb-040c-ac9e-ab81" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
         <infoLink id="bc25-b2de-b66-70bf" name="Agile [3.08]" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
         <infoLink id="71a9-1369-e19c-48f8" name="Powerslide [3.08]" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
       </infoLinks>
@@ -7637,7 +7648,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <infoLink id="8109-e227-b17c-774f" name="Giyena" hidden="false" targetId="dc73-f6e8-4d67-8b43" type="profile"/>
         <infoLink id="0dbd-67f2-82ba-80ad" name="Ablative Armour [3.08]" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
         <infoLink id="f9eb-82c7-17df-90b7" name="Agile [3.08]" hidden="false" targetId="93e6-1c0e-ac6b-0fc8" type="rule"/>
-        <infoLink id="65ce-97ca-e15f-732a" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="65ce-97ca-e15f-732a" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
         <infoLink id="b079-31e1-fbb6-58d7" name="Powerslide [3.08]" hidden="false" targetId="cd09-dbc0-dee4-b921" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -7787,12 +7798,12 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
             <modifier type="set" field="name" value="Flak Barrage (2)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="0054-6d5c-3542-83b9" name="Overthruster (x) [3.05]" hidden="false" targetId="eff5-47db-113b-2340" type="rule">
+        <infoLink id="0054-6d5c-3542-83b9" name="Overthruster (x) [3.06]" hidden="false" targetId="eff5-47db-113b-2340" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Overthruster (4)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="115a-6131-7b34-4cc8" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="115a-6131-7b34-4cc8" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
         <infoLink id="3e05-fb3b-348d-1ae" name="Maritime Patrol [3.08]" hidden="false" targetId="0b7c-6003-8433-2817" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -7935,7 +7946,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <infoLink id="2a68-ae0a-b6a4-e2cc" name="The Traitor’s Mark [3.06]" hidden="false" targetId="48ec-1da0-8d75-61fa" type="rule"/>
         <infoLink id="e746-ffbd-d86e-8e5b" name="Temperamental Design [3.08]" hidden="false" targetId="1ea8-5ef6-de30-f3ae" type="rule"/>
         <infoLink id="15e4-355e-482a-58d9" name="Experimental Generator Ship [3.06]" hidden="false" targetId="ad55-c026-6154-8aed" type="rule"/>
-        <infoLink id="d48d-6db8-da01-dea8" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="d48d-6db8-da01-dea8" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
         <infoLink id="59b9-6f2-ecea-5294" name="Experimental Shield Amplifier [3.06]" hidden="false" targetId="e3bb-c3f1-db9c-719c" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -8469,13 +8480,13 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
       </constraints>
       <infoLinks>
         <infoLink id="1243-fcf5-915c-60f2" name="Marena" hidden="false" targetId="8114-3b72-a5b5-5a5e" type="profile"/>
-        <infoLink id="25a3-e86d-3c29-3b99" name="Cryo-Capacitors [3.05]" hidden="false" targetId="8e0c-5c25-228a-bccf" type="rule"/>
-        <infoLink id="e96c-748b-6cd2-82ff" name="Aggressive Crew [3.05]" hidden="false" targetId="4028-cfc7-f428-5413" type="rule"/>
+        <infoLink id="25a3-e86d-3c29-3b99" name="Cryo-Capacitors [3.06]" hidden="false" targetId="8e0c-5c25-228a-bccf" type="rule"/>
+        <infoLink id="e96c-748b-6cd2-82ff" name="Aggressive Crew [3.06]" hidden="false" targetId="4028-cfc7-f428-5413" type="rule"/>
         <infoLink id="f38a-9588-c691-a571" name="Amphibious [3.08]" hidden="false" targetId="1d20-a887-16ac-7f4c" type="rule"/>
         <infoLink id="1488-597a-4ed4-9e34" name="Inspirational [3.08]" hidden="false" targetId="b48d-b4e0-19e8-d85a" type="rule"/>
-        <infoLink id="f518-b71c-1f07-d45d" name="Davka [3.05]" hidden="false" targetId="7f30-a427-0677-d65f" type="rule"/>
+        <infoLink id="f518-b71c-1f07-d45d" name="Davka [3.06]" hidden="false" targetId="7f30-a427-0677-d65f" type="rule"/>
         <infoLink id="d708-2639-569b-48af" name="Submarauder [3.08]" hidden="false" targetId="481e-dcda-510f-f32d" type="rule"/>
-        <infoLink id="7ae3-f4a1-68d2-76d9" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="7ae3-f4a1-68d2-76d9" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
         <infoLink id="2e7c-a29f-edc8-f0b0" name="Colossus [3.08]" hidden="false" targetId="f9be-f519-a9c2-f311" type="rule"/>
         <infoLink id="5cc1-a69f-3db9-341b" name="Ablative Armour [3.08]" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
       </infoLinks>
@@ -8649,7 +8660,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <infoLink id="5f1b-113f-7ea8-c51c" name="Krykun" hidden="false" targetId="e9b5-f576-71cc-0a57" type="profile"/>
         <infoLink id="16f1-b503-7f42-db1f" name="Ablative Armour [3.08]" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
         <infoLink id="38a2-5d14-5964-99fe" name="Shallow Draught [3.08]" hidden="false" targetId="1d26-a2a2-5fe2-1ff1" type="rule"/>
-        <infoLink id="0c07-0705-3d0e-186e" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="0c07-0705-3d0e-186e" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
         <infoLink id="a271-f140-f163-fcc9" name="Corvette Duty [3.08]" hidden="false" targetId="4836-a907-b316-55b2" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -8763,7 +8774,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <infoLink id="6033-78a2-34f1-b83f" name="Ablative Armour [3.08]" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
         <infoLink id="90da-a56e-ae34-61bc" name="Sharpshooter [3.08]" hidden="false" targetId="2c93-befd-f88b-0881" type="rule"/>
         <infoLink id="b98d-ff2b-5985-17f4" name="Colossus [3.08]" hidden="false" targetId="f9be-f519-a9c2-f311" type="rule"/>
-        <infoLink id="7e18-5de2-a1ac-c238" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="7e18-5de2-a1ac-c238" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6ecf-a291-186e-3f7a" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
@@ -9393,12 +9404,12 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
             </modifierGroup>
           </modifierGroups>
         </infoLink>
-        <infoLink id="512a-2945-e5fd-9c6a" name="Quantity is a Quality [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ad4c-d50d-de1f-b975" type="rule"/>
+        <infoLink id="512a-2945-e5fd-9c6a" name="Quantity is a Quality [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ad4c-d50d-de1f-b975" type="rule"/>
         <infoLink id="9e54-d557-d8c6-bd62" name="Ablative Armour [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
         <infoLink id="e3f0-9b98-636b-4892" name="Devil’s Own Luck [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="da8d-c041-fd15-a8de" type="rule"/>
         <infoLink id="36a1-6a88-3bc5-4b4c" name="Logistical Support [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="408e-7b40-68d7-059f" type="rule"/>
-        <infoLink id="d5dc-b41e-abf6-8efb" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
-        <infoLink id="4aea-2b5e-088b-e619" name="Cryo-Capacitors [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="8e0c-5c25-228a-bccf" type="rule"/>
+        <infoLink id="d5dc-b41e-abf6-8efb" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="4aea-2b5e-088b-e619" name="Cryo-Capacitors [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="8e0c-5c25-228a-bccf" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="cd9e-a0d2-6b30-c6a6" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
@@ -9475,10 +9486,10 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
           </modifiers>
         </infoLink>
         <infoLink id="0dae-cf7c-b678-8573" name="Skimmer Transport [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="d6e5-57de-cebc-3927" type="rule"/>
-        <infoLink id="1cc6-27d0-eb7c-7514" name="Ekranoplan [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="eed3-161a-7abb-124e" type="rule"/>
+        <infoLink id="1cc6-27d0-eb7c-7514" name="Ekranoplan [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="eed3-161a-7abb-124e" type="rule"/>
         <infoLink id="78d1-00d3-ba26-308a" name="Landing Vessel [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4869-03db-33f9-fa82" type="rule"/>
         <infoLink id="dd85-8eff-1d2a-e47f" name="Spotter [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="063a-3229-1f27-a3c2" type="rule"/>
-        <infoLink name="Overthruster (x) [3.05]" id="a210-53ab-67eb-3f6a" hidden="false" publicationId="e265-8c7f-a4b2-a48e" targetId="eff5-47db-113b-2340" type="rule">
+        <infoLink name="Overthruster (x) [3.06]" id="a210-53ab-67eb-3f6a" hidden="false" publicationId="e265-8c7f-a4b2-a48e" targetId="eff5-47db-113b-2340" type="rule">
           <modifiers>
             <modifier type="set" value="Overthruster (6)" field="name"/>
           </modifiers>
@@ -9847,7 +9858,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f1c6-4b3a-9e1f-0488" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="c99e-0dc1-b0e0-96e0" name="Heavy Rocket Battery" hidden="false" collective="false" import="true" targetId="65b3-d9a8-e0a3-a028" type="selectionEntry">
+                <entryLink id="c99e-0dc1-b0e0-96e0" name="Yastreb Missile Battery" hidden="false" collective="false" import="true" targetId="0850-b3fb-e98d-deaa" type="selectionEntry">
                   <modifiers>
                     <modifier type="add" field="category" value="a4f6-2208-db34-4879"/>
                   </modifiers>
@@ -9930,8 +9941,8 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <infoLink id="c2a5-baf6-00ee-5dd2" name="Ablative Armour [3.08]" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
         <infoLink id="dff4-edb2-0bcf-f949" name="Hammer Sweep [3.08]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
         <infoLink id="d64e-6de8-2958-bb6b" name="Heavy Firepower [3.08]" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
-        <infoLink id="e858-05e2-057d-96d2" name="Kinetic Dampers [3.05]" hidden="false" targetId="d7c8-6542-e5a8-d948" type="rule"/>
-        <infoLink id="e29d-fe20-eeb0-1d6b" name="Void Engine Magazine [3.05]" hidden="false" targetId="5418-a0b3-a205-775d" type="rule"/>
+        <infoLink id="e858-05e2-057d-96d2" name="Kinetic Dampers [3.06]" hidden="false" targetId="d7c8-6542-e5a8-d948" type="rule"/>
+        <infoLink id="e29d-fe20-eeb0-1d6b" name="Void Engine Magazine [3.06]" hidden="false" targetId="5418-a0b3-a205-775d" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="121b-fa91-69d1-c2cc" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
@@ -10111,7 +10122,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         </infoLink>
         <infoLink id="2029-ce62-db58-c7e1" name="Ablative Armour [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
         <infoLink id="3754-9d26-b371-0409" name="Priority Signals [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4106-315d-4d5c-9e8f" type="rule"/>
-        <infoLink id="1455-0c33-f2fc-a23f" name="Cryo-Capacitors [3.05]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="8e0c-5c25-228a-bccf" type="rule"/>
+        <infoLink id="1455-0c33-f2fc-a23f" name="Cryo-Capacitors [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="8e0c-5c25-228a-bccf" type="rule"/>
         <infoLink id="140a-965f-93a0-74c2" name="Heavy Firepower [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecfb-a5b5-1cb8-8e39" type="rule"/>
         <infoLink id="e9c-ab4f-4ef5-90ac" name="Maritime Patrol [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="0b7c-6003-8433-2817" type="rule"/>
       </infoLinks>
@@ -10199,7 +10210,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <infoLink id="467d-a74e-cb15-5771" name="Hammer Sweep [3.08]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
         <infoLink id="9374-9647-5c19-fa2e" name="Low-Level Strike [3.08]" hidden="false" targetId="0054-ea91-5408-283a" type="rule"/>
         <infoLink id="8917-113f-670f-6871" name="Vulnerable Stern [3.08]" hidden="false" targetId="ac3f-24c4-12e2-f3f1" type="rule"/>
-        <infoLink id="fffb-a985-d7aa-563e" name="Void Engine Magazine [3.05]" hidden="false" targetId="5418-a0b3-a205-775d" type="rule"/>
+        <infoLink id="fffb-a985-d7aa-563e" name="Void Engine Magazine [3.06]" hidden="false" targetId="5418-a0b3-a205-775d" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6a5f-c5bc-a8c2-b74b" name="Commonwealth" hidden="false" targetId="c7ca-90d2-5214-ece9" primary="true"/>
@@ -10732,7 +10743,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
       <infoLinks>
         <infoLink id="e01a-3137-3a76-a4e2" name="Krasnaya" hidden="false" targetId="4fce-9470-bbd9-2116" type="profile"/>
         <infoLink id="f259-d01-2103-9790" name="Ablative Armour [3.08]" hidden="false" targetId="b846-c841-35ad-caa2" type="rule"/>
-        <infoLink id="c90e-aac8-dece-65ff" name="Azhdaya Berserkers [3.05]" hidden="false" targetId="ad15-2a18-161b-7a44" type="rule"/>
+        <infoLink id="c90e-aac8-dece-65ff" name="Azhdaya Berserkers [3.06]" hidden="false" targetId="ad15-2a18-161b-7a44" type="rule"/>
         <infoLink id="bca0-f108-567d-f100" name="Hammer Sweep [3.08]" hidden="false" targetId="4a79-7f9b-ba17-59b8" type="rule"/>
         <infoLink id="474-f297-5f09-166a" name="Flak Barrage (x) [3.08]" hidden="false" targetId="7b67-714d-bb2b-6297" type="rule">
           <modifiers>
@@ -10970,13 +10981,13 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <infoLink name="Disciplined [3.08]" id="17c1-9e6d-92a3-a059" hidden="false" type="rule" targetId="ecf0-d255-3339-4a1b"/>
         <infoLink name="Lumbering [3.08]" id="1a4f-62b6-66e3-7684" hidden="false" type="rule" targetId="6b55-0f21-5c85-94cb"/>
         <infoLink name="SRS Mine Clearance [3.08]" id="dd2b-1fa3-ef1a-9890" hidden="false" type="rule" targetId="b8d7-281f-b227-a523"/>
-        <infoLink name="Overthruster (x) [3.05]" id="d063-f87a-ce1e-9be3" hidden="false" type="rule" targetId="eff5-47db-113b-2340">
+        <infoLink name="Overthruster (x) [3.06]" id="d063-f87a-ce1e-9be3" hidden="false" type="rule" targetId="eff5-47db-113b-2340">
           <modifiers>
             <modifier type="set" value=" Overthruster (4)" field="name"/>
           </modifiers>
         </infoLink>
         <infoLink name="SRS Recon [3.08]" id="1826-fff4-ff19-ea2e" hidden="false" type="rule" targetId="0a26-0b4a-261f-3db0"/>
-        <infoLink name="Destroyer Wing [3.08]" id="082c-a5f2-601e-d72e" hidden="false" type="rule" targetId="8884-b799-96eb-51f7"/>
+        <infoLink name="Destroyer Wing [3.06]" id="082c-a5f2-601e-d72e" hidden="false" type="rule" targetId="8884-b799-96eb-51f7"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Shield generator" hidden="false" id="f319-2848-0216-4b01" collective="false" targetId="596e-bbf7-4be2-d494" type="selectionEntry" sortIndex="1">
@@ -11254,10 +11265,15 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <infoLink id="cad1-7882-50de-26bf" name="Low-Level Strike [3.08]" hidden="false" targetId="0054-ea91-5408-283a" type="rule"/>
         <infoLink id="1c70-5720-1477-3104" name="Voivode" hidden="false" targetId="f04e-f510-47cd-6215" type="profile"/>
         <infoLink id="a426-d5ff-8972-901f" name="Dirigible Construction [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="24c5-f8af-aa5d-998e" type="rule"/>
-        <infoLink id="aa5c-2659-ff6e-7a41" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
-        <infoLink id="1ae0-bd66-acb4-1a90" name="Overthruster (x) [3.05]" hidden="false" targetId="eff5-47db-113b-2340" type="rule">
+        <infoLink id="aa5c-2659-ff6e-7a41" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="1ae0-bd66-acb4-1a90" name="Overthruster (x) [3.06]" hidden="false" targetId="eff5-47db-113b-2340" type="rule">
           <modifiers>
             <modifier type="set" value="Overthruster (4)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Focused Fire (x) [3.08]" id="81a0-8f97-23ec-ac61" hidden="false" publicationId="e265-8c7f-a4b2-a48e" targetId="6c94-ad2b-60d8-2c4f" type="rule">
+          <modifiers>
+            <modifier type="set" value="Focused Fire (Aerial)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -11498,8 +11514,8 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <infoLink id="3b88-5016-44a6-b1fe" name="SRS Mine Clearance [3.08]" hidden="false" targetId="b8d7-281f-b227-a523" type="rule"/>
         <infoLink id="d53c-23d9-a852-45c9" name="Szlachta" hidden="false" targetId="bb28-0837-38c3-f85d" type="profile"/>
         <infoLink id="3b80-5128-8d85-8c3b" name="Combat Air Patrol [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="5eca-214c-5274-55db" type="rule"/>
-        <infoLink id="580f-db3d-fd9b-5d95" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
-        <infoLink id="fdb9-a0d2-2aa5-e139" name="Overthruster (x) [3.05]" hidden="false" targetId="eff5-47db-113b-2340" type="rule">
+        <infoLink id="580f-db3d-fd9b-5d95" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="fdb9-a0d2-2aa5-e139" name="Overthruster (x) [3.06]" hidden="false" targetId="eff5-47db-113b-2340" type="rule">
           <modifiers>
             <modifier type="set" value="Overthruster (4)" field="name"/>
           </modifiers>
@@ -11703,8 +11719,8 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         <infoLink id="47b0-7e61-d821-c9d4" name="Landing Vessel [3.08]" hidden="false" targetId="4869-03db-33f9-fa82" type="rule"/>
         <infoLink id="eb1f-3934-a805-66c1" name="Stanislaw" hidden="false" targetId="625b-9db5-4325-6c16" type="profile"/>
         <infoLink id="20b0-f399-1730-9e41" name="Elite Crew [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="4f7a-f51a-a60e-e6ba" type="rule"/>
-        <infoLink id="9284-306b-6939-2b1b" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
-        <infoLink id="d9b5-fa12-cd16-cc4d" name="Overthruster (x) [3.05]" hidden="false" targetId="eff5-47db-113b-2340" type="rule">
+        <infoLink id="9284-306b-6939-2b1b" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="d9b5-fa12-cd16-cc4d" name="Overthruster (x) [3.06]" hidden="false" targetId="eff5-47db-113b-2340" type="rule">
           <modifiers>
             <modifier type="set" value="Overthruster (4)" field="name"/>
           </modifiers>
@@ -11901,8 +11917,8 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
       <infoLinks>
         <infoLink id="049e-9b1b-9c12-9090" name="Disciplined [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecf0-d255-3339-4a1b" type="rule"/>
         <infoLink id="19be-adbe-542c-e38e" name="Smok" hidden="false" targetId="19c8-cbfc-a946-8d08" type="profile"/>
-        <infoLink id="04dd-f140-4af1-8cf7" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
-        <infoLink id="e7e1-76ec-addb-ee27" name="Overthruster (x) [3.05]" hidden="false" targetId="eff5-47db-113b-2340" type="rule">
+        <infoLink id="04dd-f140-4af1-8cf7" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="e7e1-76ec-addb-ee27" name="Overthruster (x) [3.06]" hidden="false" targetId="eff5-47db-113b-2340" type="rule">
           <modifiers>
             <modifier type="set" value="Overthruster (6)" field="name"/>
           </modifiers>
@@ -12025,8 +12041,8 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
       <infoLinks>
         <infoLink id="04c5-c19a-3d5a-c107" name="Disciplined [3.08]" publicationId="e265-8c7f-a4b2-a48e" hidden="false" targetId="ecf0-d255-3339-4a1b" type="rule"/>
         <infoLink id="8566-a108-d964-cbc3" name="Jadwiga" hidden="false" targetId="08ee-d54d-e0f9-4dfe" type="profile"/>
-        <infoLink id="4d9a-ef5a-e06a-f418" name="Black Wolf Mercenaries [3.05]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
-        <infoLink id="c4fc-2e01-49e0-520c" name="Overthruster (x) [3.05]" hidden="false" targetId="eff5-47db-113b-2340" type="rule">
+        <infoLink id="4d9a-ef5a-e06a-f418" name="Black Wolf Mercenaries [3.06]" hidden="false" targetId="b195-faa8-ae64-9494" type="rule"/>
+        <infoLink id="c4fc-2e01-49e0-520c" name="Overthruster (x) [3.06]" hidden="false" targetId="eff5-47db-113b-2340" type="rule">
           <modifiers>
             <modifier type="set" value="Overthruster (6)" field="name"/>
           </modifiers>
@@ -12430,7 +12446,7 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
         </modifier>
         <modifier type="set" value="Slava Ukraini!" field="name"/>
       </modifiers>
-      <description> This rule can only be used if this Model is within 10” of one or more other friendly Submerged Units with the UKRAINIAN Trait. Crippled Models with this rule still use the Battle Ready value of their weapons with the Submerged Quality and may re-roll Blank Results when the Initial Target of an Assault. </description>
+      <description>This rule can only be used if this Model is within 10” of one or more other friendly Submerged Units with the UKRAINIAN Trait. Crippled Models with this rule still use the Battle Ready value of their weapons with the Submerged Quality and may re-roll Blank Results when the Initial Target of an Assault.</description>
     </rule>
     <rule id="b195-faa8-ae64-9494" name="Black Wolf Mercenaries [3.06]" publicationId="e265-8c7f-a4b2-a48e" hidden="false">
       <modifiers>
@@ -13252,6 +13268,14 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="1022-4484-f676-a003" shared="true"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f8d5-fb9d-e4a5-33ec" shared="true"/>
+                    <condition type="greaterThan" value="0" field="selections" scope="parent" childId="d7b3-10bd-20f0-4832" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -13388,6 +13412,40 @@ Review 3.06.00: v27 (Orbat 3.06 01/02/2025 released 23/02/2025)</readme>
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Nation trait" id="9685-617a-faac-656e" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Polish-Lithuanian" hidden="false" id="8ee3-6222-a96e-a1d9" sortIndex="2">
+          <modifiers>
+            <modifier type="remove" value="43a2-7e77-ff29-fb5c" field="category"/>
+            <modifier type="add" value="77c4-eda2-551b-295e" field="category"/>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2039-9ebd-f4dc-e65c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ukrainian" hidden="false" id="e042-4eac-f720-8143" sortIndex="3">
+          <modifiers>
+            <modifier type="remove" value="43a2-7e77-ff29-fb5c" field="category"/>
+            <modifier type="add" value="d7b3-10bd-20f0-4832" field="category"/>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2614-9da7-a761-3b29" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mongolian" hidden="false" id="291a-c963-86d9-7b8d" sortIndex="1">
+          <modifiers>
+            <modifier type="remove" value="43a2-7e77-ff29-fb5c" field="category"/>
+            <modifier type="add" value="6047-720c-1370-9d3b" field="category"/>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce2b-2d5d-f818-4b54" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1991-1ec1-591d-43c5" includeChildSelections="false"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>
